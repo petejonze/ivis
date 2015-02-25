@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class__substitutes_8c" kind="file">
+    <compoundname>class_substitutes.c</compoundname>
+    <innerclass refid="classmatrix" prot="public">matrix</innerclass>
+    <innerclass refid="classsparsematrix" prot="public">sparsematrix</innerclass>
+    <innerclass refid="classhandle" prot="public">handle</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="73" refid="classmatrix" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classmatrix" kindref="compound" tooltip="A matlab matrix.">matrix</ref><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81" refid="classsparsematrix" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classsparsematrix" kindref="compound" tooltip="A matlab sparse matrix.">sparsematrix</ref></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classmatrix" kindref="compound" tooltip="A matlab matrix.">::matrix</ref><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classhandle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhandle" kindref="compound" tooltip="Matlab&amp;#39;s base handle class (documentation generation substitute)">handle</ref><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="106" refid="classhandle_1aa72d46799b8792edbf8acb7349680c15" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1aa72d46799b8792edbf8acb7349680c15" kindref="member" tooltip="Creates a listener for the specified event and assigns a callback function to execute when the event ...">addlistener</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="classhandle_1a8cfc3dab9d3ecc55b0b3449c2c7afd6f" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a8cfc3dab9d3ecc55b0b3449c2c7afd6f" kindref="member" tooltip="Broadcast a notice that a specific event is occurring on a specified handle object or array of handle...">notify</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classhandle_1a1d55d41c7af285b8fe7ab17ed5e176f6" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="classhandle_1adedb524cfbdf6a5d946cc57ef6745099" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1adedb524cfbdf6a5d946cc57ef6745099" kindref="member" tooltip="Handle object disp method which is called by the display method. See the MATLAB disp function...">disp</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="classhandle_1a2e26be32e99b2b98db18bb538638b814" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a2e26be32e99b2b98db18bb538638b814" kindref="member" tooltip="Handle object display method called when MATLAB software interprets an expression returning a handle ...">display</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="classhandle_1a000398ac90dd973b4618c739e6fd64a9" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a000398ac90dd973b4618c739e6fd64a9" kindref="member" tooltip="Finds objects matching the specified conditions from the input array of handle objects.">findobj</ref>;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="classhandle_1ab4b410e2df940296c9d2563898c951fe" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1ab4b410e2df940296c9d2563898c951fe" kindref="member" tooltip="Returns a meta.property objects associated with the specified property name.">findprop</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="classhandle_1ad9c0557345e68bd933889c28b2a9484b" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1ad9c0557345e68bd933889c28b2a9484b" kindref="member" tooltip="Returns a cell array of string containing the names of public properties.">fields</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="classhandle_1a7086577f3953d4bd9ce17b07c4f6e141" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a7086577f3953d4bd9ce17b07c4f6e141" kindref="member" tooltip="Returns a cell array of string containing the names of public properties. See the MATLAB fieldnames f...">fieldnames</ref>;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="classhandle_1a72617e83dc9643b61ed8af63e5058ccf" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a72617e83dc9643b61ed8af63e5058ccf" kindref="member" tooltip="Returns a logical array in which elements are true if the corresponding elements in the input array a...">isvalid</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="classhandle_1a2fb018cd603a5ced1783bfb20c6cce86" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a2fb018cd603a5ced1783bfb20c6cce86" kindref="member" tooltip="Relational functions example. See details for more information.">eq</ref>;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="classhandle_1acd9b55f206750374c4dfca508cfff084" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1acd9b55f206750374c4dfca508cfff084" kindref="member" tooltip="Transposes the elements of the handle object array.">transpose</ref>;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="classhandle_1a6dc9f59313af54f392d8e273d71ace7b" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1a6dc9f59313af54f392d8e273d71ace7b" kindref="member" tooltip="Rearranges the dimensions of the handle object array. See the MATLAB permute function.">permute</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="classhandle_1acef58ae5e52255411835a4fcaf2edd49" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1acef58ae5e52255411835a4fcaf2edd49" kindref="member" tooltip="hanges the dimensions of the handle object array to the specified dimensions. See the MATLAB reshape ...">reshape</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="classhandle_1ad11b0be4c173a9d31122c1298eb96a97" refkind="member"><highlight class="normal">matlabtypesubstitute<sp/><ref refid="classhandle_1ad11b0be4c173a9d31122c1298eb96a97" kindref="member" tooltip="ort the handle objects in any array in ascending or descending order.">sort</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="InputHandler::finishUp" name="InputHandler::finishUp">
+<area shape="rect" id="node3" href="$class_singleton.html#a4fbb83cfbc5e23be2e5c019530e6f202" title="Singleton::finishUpSingleton" alt="" coords="221,5,424,35"/>
+<area shape="rect" id="node5" href="$class_singleton_manager.html#a2f7cb33c83983e49ab21703827d51d31" title="SingletonManager::remove" alt="" coords="473,5,666,35"/>
+</map>

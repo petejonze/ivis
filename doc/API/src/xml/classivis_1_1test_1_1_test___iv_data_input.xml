@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1test_1_1_test___iv_data_input" kind="class" prot="public">
+    <compoundname>ivis::test::Test_IvDataInput</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1ab64723ce71d5e876cf78c663489ee71d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::test::Test_IvDataInput::Test_IvDataInput</definition>
+        <argsstring>(matlabtypesubstitute name)</argsstring>
+        <name>Test_IvDataInput</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1test_1_1_test___iv_data_input" kindref="compound">Test_IvDataInput</ref> constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>self TestCase</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="56" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1ab287b57a5760e9d3d552115b0d3cf41a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvDataInput::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Testcase setup. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="72" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1a9c449859bab452d7d6169f1bc8d35aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvDataInput::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <briefdescription>
+<para>Testcase teardown. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="86" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1aca5775b8baa128b8786aeaeb5c880cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvDataInput::testDummy</definition>
+        <argsstring>()</argsstring>
+        <name>testDummy</name>
+        <briefdescription>
+<para>Dummy method. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="100" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1a7c29469c45d6b62c9365fecafb4a5882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvDataInput::testDummy2</definition>
+        <argsstring>()</argsstring>
+        <name>testDummy2</name>
+        <briefdescription>
+<para>Dummy method. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="113" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="113" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>xUnit tests for <ref refid="classivis_1_1eyetracker_1_1_iv_data_input" kindref="compound">ivis.eyetracker.IvDataInput</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>ivis.log.IvDataInput</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>runtests <ref refid="namespaceivis_1_1test" kindref="compound">ivis.test</ref> -verbose</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
+ 1.0 PJ 02/2011 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000023"><xreftitle>Todo</xreftitle><xrefdescription><para>write me</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="815">
+        <label>ivis::test::Test_IvDataInput</label>
+        <link refid="classivis_1_1test_1_1_test___iv_data_input"/>
+        <childnode refid="816" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="816">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="817">
+        <label>ivis::test::Test_IvDataInput</label>
+        <link refid="classivis_1_1test_1_1_test___iv_data_input"/>
+        <childnode refid="818" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="818">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="19" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classivis_1_1test_1_1_test___iv_data_input_1ab287b57a5760e9d3d552115b0d3cf41a" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>setUp</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_data_input_1a9c449859bab452d7d6169f1bc8d35aff" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>tearDown</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_data_input_1ab64723ce71d5e876cf78c663489ee71d" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>Test_IvDataInput</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_data_input_1aca5775b8baa128b8786aeaeb5c880cf2" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>testDummy</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_data_input_1a7c29469c45d6b62c9365fecafb4a5882" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>testDummy2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<map id="CStack::isempty" name="CStack::isempty">
+<area shape="rect" id="node2" href="$ellipse_8m.html#a418d86f59e5191683b2323ab32420d5a" title="Ellipse adds ellipses to the current plot." alt="" coords="237,68,296,95"/>
+<area shape="rect" id="node5" href="$enable_disable_fig_8m.html#a93d2f1e2a72e3fef110437c0c224066e" title="enableDisableFig enable or disable an entire figure window" alt="" coords="207,119,326,145"/>
+<area shape="rect" id="node6" href="$findjobj_8m.html#a8311fcd5b4cbed7c1adaac0251cbf4d8" title="findjobj Find java objects contained within a specified java container or Matlab GUI handle..." alt="" coords="234,169,299,196"/>
+<area shape="rect" id="node11" href="$getjframe_8m.html#ad0bc460bbca1ba653976170df814b673" title="getjframe Retrieves the underlying Java frame for a figure" alt="" coords="227,220,306,247"/>
+<area shape="rect" id="node12" href="$get_tween_8m.html#a9b9b2b260387b1220b952981823a8fba" title="Interpolates between two known points, val1 and val2 based on a specified function, with steps according to a given duration &amp; framerate." alt="" coords="227,271,306,297"/>
+<area shape="rect" id="node13" href="$hline_8m.html#a4bd5b5d17c6595c5d211993ca71c1e3c" title="hline" alt="" coords="242,321,291,348"/>
+<area shape="rect" id="node15" href="$enable_disable_fig_8m.html#a21725488d1c3ecaa966a3b9050f6e237" title="mtoc_subst_enableDisable\lFig_m_tsbus_cotm_getJFrame" alt="" coords="169,373,365,414"/>
+<area shape="rect" id="node16" href="$getjframe_8m.html#ab535839ebaaff6fc9b9ff5bb1f537a6e" title="mtoc_subst_getjframe\l_m_tsbus_cotm_getJFrame" alt="" coords="177,438,356,479"/>
+<area shape="rect" id="node3" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a1852857f3f7ee73c75931dcd2f2e8505" title="ivis::math::pdf::IvHfGauss2\lD::plot" alt="" coords="414,5,594,46"/>
+<area shape="rect" id="node4" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a98468e561e6483d534cd0391c2f6706c" title="Update the GUI element." alt="" coords="414,70,594,111"/>
+<area shape="rect" id="node7" href="$setfigdocked_8m.html#a3dc30ac14476ef1bc0000535e7dc89ce" title="mtoc_subst_setfigdocked\l_m_tsbus_cotm_findjobj" alt="" coords="421,153,587,194"/>
+<area shape="rect" id="node8" href="$setfigdocked_8m.html#a230b1643b241438d233d6015a786bffe" title="SETFIGDOCKED docks figures at specified positions in group of figures whose structure is defined by p..." alt="" coords="457,219,551,245"/>
+<area shape="rect" id="node9" href="$classivis_1_1gui_1_1_iv_g_u_i.html#afb316451f71e0b69446629ef2520d530" title="### blaaaah." alt="" coords="643,178,818,219"/>
+<area shape="rect" id="node10" href="$classivis_1_1gui_1_1_iv_g_u_i.html#a2bb471153c6aaaeb8871516907b7717a" title="### blaaaah." alt="" coords="643,243,818,285"/>
+<area shape="rect" id="node14" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l.html#a58cccbdafce5c9f4534cc0a1bda1728e" title="IvGUIclassifierLL Constructor." alt="" coords="425,314,583,355"/>
+</map>

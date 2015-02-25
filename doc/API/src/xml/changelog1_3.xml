@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="changelog1_3" kind="page">
+    <compoundname>changelog1_3</compoundname>
+    <title>Changes in ivis Version 1.3</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="changelog1_3_1_changelog1_3000001"/>Class <ref refid="class_matlab_doc_maker" kindref="compound">MatlabDocMaker</ref>  </term></varlistentry>
+<listitem><para>(dw, 2012-02-16)<itemizedlist>
+<listitem><para>Now also collecting error messages from mtocpp_post and adding them to the warnings.log file.</para></listitem><listitem><para>Added the directive &quot;LD_LIBRARY_PATH= &quot; for unix systems, as MatLab sets it inside its executing environment. This can lead to errors if doxygen and/or mtoc++ have been built using never GLIBC (libstd) versions than the one shipped with MatLab.</para></listitem></itemizedlist>
+</para><para>(dw, 2012-01-16)<itemizedlist>
+<listitem><para>Properly using the correct file separators everywhere now</para></listitem><listitem><para>Hyperlinked the log file so it can be opened directly</para></listitem></itemizedlist>
+</para><para>(dw, 2012-01-14) Not displaying the &quot;generated warnings&quot;-text if there have not been any during documentation creation.</para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

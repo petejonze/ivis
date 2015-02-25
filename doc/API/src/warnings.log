@@ -1,0 +1,6 @@
+/Users/petejonze/Dropbox/MatlabToolkits/ivis/Contents.m:24: warning: the name `Contents.m' supplied as the second argument in the \file statement matches the following input files:
+   /Users/petejonze/Dropbox/MatlabToolkits/ivis/Contents.m
+   /Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/Contents.m
+Please use a more specific name by including a (larger) part of the path!
+a^H/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m:426: warning: argument 'fullFn' of command @param is not found in the argument list of ivis::eyetracker::IvTobii::readRawLog()
+/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m:426: warning: argument 'fullFn' of command @param is not found in the argument list of ivis::eyetracker::IvTobii::readRawLog()

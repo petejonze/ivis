@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_a86ed13aab1e81c3a268cb26998453bf" kind="dir">
+    <compoundname>src/+ivis/+test</compoundname>
+    <innerfile refid="run_8m">run.m</innerfile>
+    <innerfile refid="_test___iv_classifier_l_l_8m">Test_IvClassifierLL.m</innerfile>
+    <innerfile refid="_test___iv_data_input_8m">Test_IvDataInput.m</innerfile>
+    <innerfile refid="_test___iv_main_8m">Test_IvMain.m</innerfile>
+    <innerfile refid="_test___iv_mouse_8m">Test_IvMouse.m</innerfile>
+    <innerfile refid="_test___iv_unit_handler_8m">Test_IvUnitHandler.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/"/>
+  </compounddef>
+</doxygen>

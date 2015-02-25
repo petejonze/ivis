@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_23c5c915afc5076209d1f8d82aec7c6a" kind="dir">
+    <compoundname>ivisDemos</compoundname>
+    <innerdir refid="dir_27b438717a9c7457494088c67ffe9d03">ivisDemos/demoResources</innerdir>
+    <innerfile refid="ivis_demo001__check_installed_8m">ivisDemo001_checkInstalled.m</innerfile>
+    <innerfile refid="ivis_demo002__keyboard_handling_8m">ivisDemo002_keyboardHandling.m</innerfile>
+    <innerfile refid="ivis_demo003__mouse_tracking_8m">ivisDemo003_mouseTracking.m</innerfile>
+    <innerfile refid="ivis_demo004__eye_tracking_8m">ivisDemo004_eyeTracking.m</innerfile>
+    <innerfile refid="ivis_demo005__usinga_p_t_b_screen_8m">ivisDemo005_usingaPTBScreen.m</innerfile>
+    <innerfile refid="ivis_demo006__trackbox_visualisation_8m">ivisDemo006_trackboxVisualisation.m</innerfile>
+    <innerfile refid="ivis_demo007__classifying_fixations_8m">ivisDemo007_classifyingFixations.m</innerfile>
+    <innerfile refid="ivis_demo008__playing_videos_8m">ivisDemo008_playingVideos.m</innerfile>
+    <innerfile refid="ivis_demo009__streaming_webcams_8m">ivisDemo009_streamingWebcams.m</innerfile>
+    <innerfile refid="ivis_demo010__reading_raw_gaze_data_8m">ivisDemo010_readingRawGazeData.m</innerfile>
+    <innerfile refid="ivis_demo011__advanced_classifiers_8m">ivisDemo011_advancedClassifiers.m</innerfile>
+    <innerfile refid="ivis_demo012__external_config_files_8m">ivisDemo012_externalConfigFiles.m</innerfile>
+    <innerfile refid="ivis_demo013__calibration_8m">ivisDemo013_calibration.m</innerfile>
+    <innerfile refid="ivis_demo0_x_x__identifying_saccades_8m">ivisDemo0XX_identifyingSaccades.m</innerfile>
+    <innerfile refid="ivis_demo__audio_8m">ivisDemo_audio.m</innerfile>
+    <innerfile refid="ivis_demos__runall_8m">ivisDemos_runall.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/"/>
+  </compounddef>
+</doxygen>

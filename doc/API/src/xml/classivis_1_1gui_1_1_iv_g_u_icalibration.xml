@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1gui_1_1_iv_g_u_icalibration" kind="class" prot="public">
+    <compoundname>ivis::gui::IvGUIcalibration</compoundname>
+    <basecompoundref refid="classivis_1_1gui_1_1_iv_g_u_ielement" prot="public" virt="non-virtual">ivis::gui::IvGUIelement</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a7fa024166ba6bd386e31a73efe82983e" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::gui::IvGUIcalibration::FIG_NAME</definition>
+        <argsstring></argsstring>
+        <name>FIG_NAME</name>
+        <initializer>= &quot;IvGUIcalibration&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="65" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1aabca57787b1ff294523cab5478244b73" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::targCoordinates</definition>
+        <argsstring></argsstring>
+        <name>targCoordinates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="70" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1ae034686de9e07aa197f79216bafccb1f" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::targCoordinates_px</definition>
+        <argsstring></argsstring>
+        <name>targCoordinates_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="71" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a40c33a2dddddcb93a9680238d6a806e3" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::presentationFcn</definition>
+        <argsstring></argsstring>
+        <name>presentationFcn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="72" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a38f7c2c16728c4337c4300c1a9ac2d9b" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::jButton</definition>
+        <argsstring></argsstring>
+        <name>jButton</name>
+        <initializer>= {&quot;&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="73" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a6e20d85605db8f35d834a67904216821" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIcalibration::hStatusFrame</definition>
+        <argsstring></argsstring>
+        <name>hStatusFrame</name>
+        <briefdescription>
+<para>handles </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="75" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a74588dbc2814bc2109f8c3ff622613a8" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::hRawUsed</definition>
+        <argsstring></argsstring>
+        <name>hRawUsed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="85" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1ae5daf8959ffe4101dba6a0ff412ff717" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::hRawExcluded</definition>
+        <argsstring></argsstring>
+        <name>hRawExcluded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="86" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1ab9748b7d7d4c6ac5a746e661c998e6fc" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIcalibration::showingMeasurements</definition>
+        <argsstring></argsstring>
+        <name>showingMeasurements</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="87" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1ad4f9ace39e925aa4423b6236622e2380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::gui::IvGUIcalibration::IvGUIcalibration</definition>
+        <argsstring>(matlabtypesubstitute GUIidx, matlabtypesubstitute targCoordinates, matlabtypesubstitute presentationFcn)</argsstring>
+        <name>IvGUIcalibration</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>GUIidx</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>targCoordinates</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>presentationFcn</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1gui_1_1_iv_g_u_icalibration" kindref="compound">IvGUIcalibration</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GUIidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>numeric gui panel index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>targCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>user specified calibration coordinates (2 column matrix of xy, in pixels) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>presentationFcn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>handle to stim presentation function </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj <ref refid="classivis_1_1gui_1_1_iv_g_u_icalibration" kindref="compound">IvGUIcalibration</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="98" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="98" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a0b1b274ba2cbf3876c6a0287135c6676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIcalibration::delete</definition>
+        <argsstring>()</argsstring>
+        <name>delete</name>
+        <briefdescription>
+<para><ref refid="classivis_1_1gui_1_1_iv_g_u_icalibration" kindref="compound">IvGUIcalibration</ref> Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="195" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="195" bodyend="204"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a68fea4ec0e20eecaffd5def4484b59c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIcalibration::callbackMeasurePoint</definition>
+        <argsstring>(matlabtypesubstitute src, matlabtypesubstitute event, matlabtypesubstitute i)</argsstring>
+        <name>callbackMeasurePoint</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Method to execute once an intruction to measure a specific coordinate is recorded; start data gathering and log the results. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="224" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="224" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1aeb8839dbfe5044ce0311779bfc04bc57" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIcalibration::callbackMouseClick</definition>
+        <argsstring>(matlabtypesubstitute src, matlabtypesubstitute event)</argsstring>
+        <name>callbackMouseClick</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Method to execute once a mouse click occurs; if a right click, proceed to compute a new calibration given all existing measurements. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="255" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="255" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1af334ec74300ae5a663bf76572b9dcb23" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIcalibration::showMeasurements</definition>
+        <argsstring>()</argsstring>
+        <name>showMeasurements</name>
+        <briefdescription>
+<para>Visualise raw measurements in the GUI. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="294" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="294" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a53fd8d86f057312a4ebf88254a9c5824" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIcalibration::showButtons</definition>
+        <argsstring>()</argsstring>
+        <name>showButtons</name>
+        <briefdescription>
+<para>Visualise measurement-trigger-buttons in the GUI. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="332" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="332" bodyend="337"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a078670254cebc62a4734a5238c6c759c" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIcalibration::getSetSingleton</definition>
+        <argsstring>(matlabtypesubstitute obj)</argsstring>
+        <name>getSetSingleton</name>
+        <reimplements refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3">getSetSingleton</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para><heading level="6">.</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="note"><para>This method has non-standard access specifiers: <computeroutput>Access = (<ref refid="class_singleton" kindref="compound">Singleton</ref>)</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="356" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="356" bodyend="360"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a868cafda5ffacc682d30dacb7b3e44dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIcalibration::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="364" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="364" bodyend="366"/>
+        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="191" endline="206">Singleton::getInstanceSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_icalibration_1a8a974bd32c54301ce38ceb057b2405d1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>static noret::substitute ivis::gui::IvGUIcalibration::finishUp</definition>
+        <argsstring>()</argsstring>
+        <name>finishUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="368" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="368" bodyend="370"/>
+        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="223" endline="234">Singleton::finishUpSingleton</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_singleton" kindref="compound">Singleton</ref> for displaying calibration interactive panel and fit results. </para>    </briefdescription>
+    <detaileddescription>
+<para><verbatim> Click individual swing icons to trigger calibration, right click
+ on the background to trigger a calibration computation.
+</verbatim></para><para><simplesect kind="par"><title>IvGUIcalibration Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1gui_1_1_iv_g_u_icalibration" kindref="compound">IvGUIcalibration</ref> - Constructor.</para></listitem><listitem><para>callbackMeasurePoint - Method to execute once an intruction to measure a specific coordinate is recorded; start data gathering and log the results.</para></listitem><listitem><para>callbackMouseClick - Method to execute once a mouse click occurs; if a right click, proceed to compute a new calibration given all existing measurements..</para></listitem><listitem><para>showMeasurements - Visualise raw measurements in the GUI.</para></listitem><listitem><para>showButtons - Visualise measurement-trigger-buttons in the GUI..</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2013 : converted to <ref refid="class_singleton" kindref="compound">Singleton</ref><linebreak/>
+ 1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+£todo add <computeroutput>clear calib</computeroutput> button?</para><para>Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="628">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="629" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="629">
+        <label>handle</label>
+      </node>
+      <node id="626">
+        <label>ivis::gui::IvGUIcalibration</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_icalibration"/>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="627">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="628" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="632">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>handle</label>
+      </node>
+      <node id="630">
+        <label>ivis::gui::IvGUIcalibration</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_icalibration"/>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="631">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="632" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIcalibration.m" bodystart="19" bodyend="374"/>
+    <listofallmembers>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a68fea4ec0e20eecaffd5def4484b59c8" prot="private" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>callbackMeasurePoint</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1aeb8839dbfe5044ce0311779bfc04bc57" prot="private" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>callbackMouseClick</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a0b1b274ba2cbf3876c6a0287135c6676" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>delete</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a7fa024166ba6bd386e31a73efe82983e" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>FIG_NAME</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a8a974bd32c54301ce38ceb057b2405d1" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>finishUp</name></member>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a868cafda5ffacc682d30dacb7b3e44dc" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>getInstanceSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a078670254cebc62a4734a5238c6c759c" prot="protected" virt="virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>hFig</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1ae5daf8959ffe4101dba6a0ff412ff717" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>hRawExcluded</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a74588dbc2814bc2109f8c3ff622613a8" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>hRawUsed</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a6e20d85605db8f35d834a67904216821" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>hStatusFrame</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1affdefad6611e9543314166e05c3446b6" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>init</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>isinit</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1ad4f9ace39e925aa4423b6236622e2380" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>IvGUIcalibration</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a38f7c2c16728c4337c4300c1a9ac2d9b" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>jButton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a40c33a2dddddcb93a9680238d6a806e3" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>presentationFcn</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a53fd8d86f057312a4ebf88254a9c5824" prot="private" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>showButtons</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1ab9748b7d7d4c6ac5a746e661c998e6fc" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>showingMeasurements</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1af334ec74300ae5a663bf76572b9dcb23" prot="private" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>showMeasurements</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1aabca57787b1ff294523cab5478244b73" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>targCoordinates</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1ae034686de9e07aa197f79216bafccb1f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIcalibration</scope><name>targCoordinates_px</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ROOT>
+	<main>
+		<ivVersion>0.8</ivVersion>	
+		<dataInput>Tobii</dataInput> <!-- Mouse, Tobii -->
+		<verbosity>9</verbosity>
+	</main>
+    
+	<graphics>
+		<targFrameRate>30</targFrameRate>
+		<testScreenNum>2</testScreenNum>
+		<fullScreen>true</fullScreen>
+		<testScreenWidth>1680</testScreenWidth> <!-- 1280 -->
+		<testScreenHeight>1050</testScreenHeight> <!-- 1024 -->
+		<useScreen>true</useScreen>
+		<monitorWidth_cm>64</monitorWidth_cm>
+		<viewDist_cm>60</viewDist_cm>
+	</graphics>
+        
+	<eyetracker>
+		<id>TX120-203-81900130.local.</id>
+		<sampleRate>60</sampleRate>
+		<GUIidx>2</GUIidx>
+		<runMeanWinWidth>3</runMeanWinWidth>
+		<showLastNPoints>30</showLastNPoints>
+		<saccade>
+			<distanceCriterion>10</distanceCriterion>
+			<velocityCriterion>250</velocityCriterion>
+			<accelCriterion>75</accelCriterion>
+			<timeCriterion>.3</timeCriterion>
+			<doBeep>false</doBeep>
+			<GUIidx>3</GUIidx>
+			<blinkExclusionT>125</blinkExclusionT> <!-- minimum number of seconds to suppress saccades after 1 is detected -->
+			<prevSacExclusionT>125</prevSacExclusionT> <!-- minimum number of seconds to suppress saccades after 1 is detected -->
+		</saccade>	
+		<objectClassification>
+			<temporalWindow>100</temporalWindow>
+			<lMagThresh>200</lMagThresh>
+			<onsetRampStart>0.3</onsetRampStart>
+			<onsetRampDuration>0.3</onsetRampDuration>
+			<GUIidx>1</GUIidx>
+		</objectClassification>		
+		<fixationMarker>none</fixationMarker> <!-- none, cursor, texture -->
+		<rawLog>
+			<mode>auto</mode> <!-- off, auto, manual -->
+			<dir>$iv/logs/raw</dir> <!-- if want to overwrite then can manually load in the param and edit the structure -->
+			<filename>IvRaw-$time.raw</filename>
+		</rawLog> 
+		<debugMode>0</debugMode>
+		<calib>
+			<points>[0.1 0.1];[.1 .9];[.9 .9];[.9 .1]</points>
+			<calibFcn>ivis.eyetracker.calib.IvBasicCalib</calibFcn>
+			<GUIidx>4</GUIidx>		
+		</calib>
+	</eyetracker>
+	
+
+	
+	<GUI>
+		<useGUI>true</useGUI>  <!-- implement -->	
+		<screenNum>1</screenNum>
+		<dockFlag>1</dockFlag>
+	</GUI>
+	
+	<dataLog>
+		<dir>$iv/logs/data</dir>
+		<filename>IvData-$time.csv</filename>
+		<arraySize>10000</arraySize>
+		<expansionFactor>2</expansionFactor>
+	</dataLog>
+	
+	<audio>
+		<isConnected>false</isConnected>
+		<isEnabled>false</isEnabled>
+		<devMode>true</devMode> <!-- useful for debugging -->
+
+		<runMode>0</runMode>
+		<reqlatencyclass>0</reqlatencyclass>
+				
+		<Fs>44100</Fs> <!-- should be same as stimParams.Fs, below -->
+		<devID></devID>
+							
+		<calibFn></calibFn>
+		<tolerance>10</tolerance>
+		<devName></devName>
+		<headID></headID>
+		<outChans>[0 1]</outChans>
+	</audio>
+		
+	<adapt>
+		<standard>66</standard>
+		<initialDifference>0</initialDifference>
+		<stepValIsAbs>true</stepValIsAbs>
+		<maxN>99</maxN>
+		<minVal>0</minVal>
+		<maxVal>80</maxVal>
+
+		<leadIn_nUp>1</leadIn_nUp>
+		<leadIn_nDown>1</leadIn_nDown>
+		<leadIn_stepSize>6</leadIn_stepSize>
+		<leadIn_nReversalsLim>1</leadIn_nReversalsLim>
+		<leadIn_finalDirection>1</leadIn_finalDirection>
+
+		<main_nUp>1</main_nUp>
+		<main_nDown>2</main_nDown>
+		<main_stepSize>3</main_stepSize>
+		<main_nReversalsLim>4</main_nReversalsLim>
+		<nReversals_analysis>4</nReversals_analysis>
+			
+		<verbosity>2</verbosity>
+	</adapt>
+</ROOT>

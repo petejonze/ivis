@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="newfeat1_4" kind="page">
+    <compoundname>newfeat1_4</compoundname>
+    <title>New features in ivis Version 1.4</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="newfeat1_4_1_newfeat1_4000001"/>Class <ref refid="class_matlab_doc_maker" kindref="compound">MatlabDocMaker</ref>  </term></varlistentry>
+<listitem><para>(dw, 2012-10-16)<itemizedlist>
+<listitem><para>Added two more configuration variables &quot;ProjectDescription&quot; and &quot;ProjectLogo&quot; for easier configuration of the <ref refid="class_matlab_doc_maker" kindref="compound">MatlabDocMaker</ref> in many cases. Thanks to Wolfgang Mennerich <ulink url="http://www.mathworks.com/matlabcentral/fileexchange/authors/272859">http://www.mathworks.com/matlabcentral/fileexchange/authors/272859</ulink> for the suggestion.</para></listitem><listitem><para>Restructured the configuration, now only the project name function has to be implemented (the preferences tag depends on it, there might be more than one project within the same Matlab installation whos documentation is created using this tool). The rest can be provided either at setup time or later via suitable setters for the version, description and logo.</para></listitem><listitem><para>Automatically setting HaveDot in the doxygen config whenever its found on the environment path.</para></listitem><listitem><para>Added basic support for LaTeX documentation creation. Using the parameter <computeroutput>latex</computeroutput>=true for the create method creates the LaTeX version of the documentation in a folder &quot;latex&quot; in the OutputDirectory (default behaviour)</para></listitem></itemizedlist>
+</para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

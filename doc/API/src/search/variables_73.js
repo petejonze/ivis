@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['saccade',['saccade',['../classivis_1_1main_1_1_iv_params.html#ae499426ae0f751a858adce35eeece49d',1,'ivis::main::IvParams']]],
+  ['saccade_5foff_5fcode',['SACCADE_OFF_CODE',['../classivis_1_1eyetracker_1_1_iv_data_input.html#ad194776294a2f6d7a0e8e2e955d3c3ca',1,'ivis::eyetracker::IvDataInput']]],
+  ['saccade_5fon_5fcode',['SACCADE_ON_CODE',['../classivis_1_1eyetracker_1_1_iv_data_input.html#a0d1e2dc5e6464acb2a812998a91f2d63',1,'ivis::eyetracker::IvDataInput']]],
+  ['saccadecounter',['saccadeCounter',['../classivis_1_1eyetracker_1_1_iv_data_input.html#aca5ef783a1bb71855cb584c9915a95fe',1,'ivis::eyetracker::IvDataInput']]],
+  ['saccades',['saccades',['../classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal.html#af232dd16b6ae3427f31ce23189274533',1,'ivis::gui::IvGUIeyetrackTemporal']]],
+  ['savedata',['SaveData',['../classivis_1_1broadcaster_1_1_iv_broadcaster.html#adb00b0dbb174f3507685f885438fbce4',1,'ivis::broadcaster::IvBroadcaster']]],
+  ['screennum',['screenNum',['../classivis_1_1gui_1_1_iv_g_u_i.html#a7a8854594ad1b961dc0f34be7bae7e29',1,'ivis::gui::IvGUI']]],
+  ['screenwidth_5fcm',['screenWidth_cm',['../classivis_1_1math_1_1_iv_unit_handler.html#a22a92caf6a5f36b9bcadf853f471cf02',1,'ivis::math::IvUnitHandler']]],
+  ['screenwidth_5fdg',['screenWidth_dg',['../classivis_1_1math_1_1_iv_unit_handler.html#a0486441d1f3137765853648ab459c6a3',1,'ivis::math::IvUnitHandler']]],
+  ['screenwidth_5fpx',['screenWidth_px',['../classivis_1_1math_1_1_iv_unit_handler.html#a7b2d6782d740b4b77e4441f19a52fe6c',1,'ivis::math::IvUnitHandler']]],
+  ['shader',['shader',['../classivis_1_1video_1_1_iv_video.html#a1fe3b0f6142248becdfac32b1a8fcb59',1,'ivis::video::IvVideo']]],
+  ['showfixations',['showFixations',['../classivis_1_1eyetracker_1_1_iv_data_input.html#a0e5de1b59c166623036ed22c3a7e3b70',1,'ivis::eyetracker::IvDataInput']]],
+  ['showingmeasurements',['showingMeasurements',['../classivis_1_1gui_1_1_iv_g_u_icalibration.html#ab9748b7d7d4c6ac5a746e661c998e6fc',1,'ivis::gui::IvGUIcalibration']]],
+  ['showlastnpoints',['showLastNPoints',['../classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial.html#a03c64132c0ceb01f7030e8d64bd1c4dc',1,'ivis::gui::IvGUIeyetrackSpatial']]],
+  ['sigma',['sigma',['../classivis_1_1math_1_1pdf_1_1_iv_hf_gauss.html#a47134fd4af2c041f5d7f6fb81941fede',1,'ivis::math::pdf::IvHfGauss::sigma()'],['../classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#ad2bac40e5e536539d84750fefcd95f9d',1,'ivis::math::pdf::IvHfGauss2D::sigma()'],['../class_lennard_jones_potential.html#a70aea10db32db719e575b3cf70957dc1',1,'LennardJonesPotential::sigma()']]],
+  ['spatialguielement',['spatialGuiElement',['../classivis_1_1eyetracker_1_1_iv_data_input.html#a516a96882b56f0a1da4f017ae404d976',1,'ivis::eyetracker::IvDataInput']]],
+  ['srcrect',['srcrect',['../classivis_1_1graphic_1_1_iv_graphic.html#adae28c33ac874ec3df068e2f45c5ecb0',1,'ivis::graphic::IvGraphic']]],
+  ['starttime',['startTime',['../classivis_1_1classifier_1_1_iv_classifier.html#a318c53b5461df7bee0d22ab35ba3896b',1,'ivis::classifier::IvClassifier']]],
+  ['status',['status',['../classivis_1_1classifier_1_1_iv_classifier.html#a22fbd634f55bb0e3d309fe70e891c7e4',1,'ivis::classifier::IvClassifier']]],
+  ['status_5fhit',['STATUS_HIT',['../classivis_1_1classifier_1_1_iv_classifier.html#a36c07d58bbde6dc266c33585a568ef16',1,'ivis::classifier::IvClassifier']]],
+  ['status_5fmiss',['STATUS_MISS',['../classivis_1_1classifier_1_1_iv_classifier.html#a1c637cfd67f0b5983067ce031420211e',1,'ivis::classifier::IvClassifier']]],
+  ['status_5fretired',['STATUS_RETIRED',['../classivis_1_1classifier_1_1_iv_classifier.html#a3714485364881f0fe28db41312cf48b2',1,'ivis::classifier::IvClassifier']]],
+  ['status_5fundecided',['STATUS_UNDECIDED',['../classivis_1_1classifier_1_1_iv_classifier.html#acb55fc7574b19e02281722feea940639',1,'ivis::classifier::IvClassifier']]],
+  ['subclass',['subclass',['../classivis_1_1eyetracker_1_1_iv_data_input.html#a92b4378260540ea3a19ccf20a4febe94',1,'ivis::eyetracker::IvDataInput']]]
+];

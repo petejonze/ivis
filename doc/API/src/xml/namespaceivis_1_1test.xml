@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis_1_1test" kind="namespace">
+    <compoundname>ivis::test</compoundname>
+    <innerclass refid="classivis_1_1test_1_1_test___iv_classifier_l_l" prot="public">ivis::test::Test_IvClassifierLL</innerclass>
+    <innerclass refid="classivis_1_1test_1_1_test___iv_data_input" prot="public">ivis::test::Test_IvDataInput</innerclass>
+    <innerclass refid="classivis_1_1test_1_1_test___iv_main" prot="public">ivis::test::Test_IvMain</innerclass>
+    <innerclass refid="classivis_1_1test_1_1_test___iv_mouse" prot="public">ivis::test::Test_IvMouse</innerclass>
+    <innerclass refid="classivis_1_1test_1_1_test___iv_unit_handler" prot="public">ivis::test::Test_IvUnitHandler</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceivis_1_1test_1a8915392f7f43b8bcdcabbb04c9352015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+<para><heading level="1">requires XUNIT 3.1</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/run.m" line="19" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/run.m" bodystart="19" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/run.m" line="2"/>
+  </compounddef>
+</doxygen>

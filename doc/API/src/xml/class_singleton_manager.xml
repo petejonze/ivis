@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_singleton_manager" kind="class" prot="public">
+    <compoundname>SingletonManager</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_singleton_manager_1aa3cf88e0544b38dd50cb51686be4b813" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute SingletonManager::getSetIndex</definition>
+        <argsstring>(matlabtypesubstitute addFlag, matlabtypesubstitute classname, matlabtypesubstitute verbosity)</argsstring>
+        <name>getSetIndex</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>addFlag</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>classname</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>verbosity</declname>
+        </param>
+        <briefdescription>
+<para><heading level="6">##.</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addFlag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>classname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>verbosity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" line="51" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" bodystart="51" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_singleton_manager_1a445d64603590d1ade17ca6532ad6e897" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute SingletonManager::add</definition>
+        <argsstring>(matlabtypesubstitute classname)</argsstring>
+        <name>add</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>classname</declname>
+        </param>
+        <briefdescription>
+<para>Register specified <ref refid="class_singleton" kindref="compound">Singleton</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing child class name</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" line="114" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" bodystart="114" bodyend="116"/>
+        <referencedby refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" compoundref="_singleton_8m" startline="84" endline="92">Singleton::Singleton</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_singleton_manager_1a4fbae2126445a86b3dc99db82575f3d7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute SingletonManager::remove</definition>
+        <argsstring>(matlabtypesubstitute classname)</argsstring>
+        <name>remove</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>classname</declname>
+        </param>
+        <briefdescription>
+<para>Delete specified <ref refid="class_singleton" kindref="compound">Singleton</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>classname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>String containing child class name</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" line="130" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" bodystart="130" bodyend="132"/>
+        <referencedby refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="223" endline="234">Singleton::finishUpSingleton</referencedby>
+        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1a14aa59be5e4a510977aca634e260295e" compoundref="_iv_data_input_8m" startline="945" endline="1001">ivis::eyetracker::IvDataInput::init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_singleton_manager_1ac2af0ef8b8934134aebd8b3d33dc7dec" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute SingletonManager::clearAll</definition>
+        <argsstring>(matlabtypesubstitute verbosity)</argsstring>
+        <name>clearAll</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>verbosity</declname>
+        </param>
+        <briefdescription>
+<para>Delete all Singletons. Print info to the console. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>verbosity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numeric verbosity flag</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" line="146" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" bodystart="146" bodyend="151"/>
+        <referencedby refid="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" compoundref="_iv_main_8m" startline="467" endline="565">ivis::main::IvMain::finishUp</referencedby>
+        <referencedby refid="classivis_1_1test_1_1_test___iv_unit_handler_1a2dbe72c0f2438a915f92b23246c428da" compoundref="_test___iv_unit_handler_8m" startline="70" endline="77">ivis::test::Test_IvUnitHandler::setUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_singleton_manager_1a3539c196fe731989cd967653e7a58289" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute SingletonManager::listAll</definition>
+        <argsstring>()</argsstring>
+        <name>listAll</name>
+        <briefdescription>
+<para>Print the names of all extant Singletons to the console. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" line="165" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" bodystart="165" bodyend="167"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_singleton" kindref="compound">Singleton</ref> manager class that maintains references to each <ref refid="class_singleton" kindref="compound">Singleton</ref> object (and provides a mechanism to find and/or delete all Singletons). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Singleton Static Methods</title><para><itemizedlist>
+<listitem><para>add - Register specified <ref refid="class_singleton" kindref="compound">Singleton</ref>.</para></listitem><listitem><para>remove - Delete specified <ref refid="class_singleton" kindref="compound">Singleton</ref>.</para></listitem><listitem><para>clearAll - Delete all Singletons.</para></listitem><listitem><para>listAll - Print the names of all extant singletons to the console.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+ 1.1 PJ 06/2013 : updated documentation<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/SingletonManager.m" bodystart="17" bodyend="180"/>
+    <listofallmembers>
+      <member refid="class_singleton_manager_1a445d64603590d1ade17ca6532ad6e897" prot="public" virt="non-virtual"><scope>SingletonManager</scope><name>add</name></member>
+      <member refid="class_singleton_manager_1ac2af0ef8b8934134aebd8b3d33dc7dec" prot="public" virt="non-virtual"><scope>SingletonManager</scope><name>clearAll</name></member>
+      <member refid="class_singleton_manager_1aa3cf88e0544b38dd50cb51686be4b813" prot="private" virt="non-virtual"><scope>SingletonManager</scope><name>getSetIndex</name></member>
+      <member refid="class_singleton_manager_1a3539c196fe731989cd967653e7a58289" prot="public" virt="non-virtual"><scope>SingletonManager</scope><name>listAll</name></member>
+      <member refid="class_singleton_manager_1a4fbae2126445a86b3dc99db82575f3d7" prot="public" virt="non-virtual"><scope>SingletonManager</scope><name>remove</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

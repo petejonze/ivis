@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1test_1_1_test___iv_main" kind="class" prot="public">
+    <compoundname>ivis::test::Test_IvMain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1a8600f21ccfc09b79190e1ead7f0a70e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::test::Test_IvMain::Test_IvMain</definition>
+        <argsstring>(matlabtypesubstitute name)</argsstring>
+        <name>Test_IvMain</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Test_Test_IvClassifierLL constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>self TestCase</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="54" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1a3d9b2e72e67024cda5f433d0ca0dff78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMain::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Testcase setup. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="70" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="70" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1ade6ff79365d32fbfec3fe27f1de59ccd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMain::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <briefdescription>
+<para>Testcase teardown. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="82" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1aad2e2324cb5e5c42ed9944e6034dc74c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMain::testTiming</definition>
+        <argsstring>()</argsstring>
+        <name>testTiming</name>
+        <briefdescription>
+<para>Validate cycle overhead. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="96" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="96" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>xUnit tests for <ref refid="classivis_1_1main_1_1_iv_main" kindref="compound">ivis.main.IvMain</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>ivis.log.Test_IvClassifierLL</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>runtests <ref refid="namespaceivis_1_1test" kindref="compound">ivis.test</ref> -verbose</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
+ 1.0 PJ 02/2011 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="820">
+        <label>TestCase</label>
+      </node>
+      <node id="819">
+        <label>ivis::test::Test_IvMain</label>
+        <link refid="classivis_1_1test_1_1_test___iv_main"/>
+        <childnode refid="820" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="822">
+        <label>TestCase</label>
+      </node>
+      <node id="821">
+        <label>ivis::test::Test_IvMain</label>
+        <link refid="classivis_1_1test_1_1_test___iv_main"/>
+        <childnode refid="822" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="19" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classivis_1_1test_1_1_test___iv_main_1a3d9b2e72e67024cda5f433d0ca0dff78" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMain</scope><name>setUp</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_main_1ade6ff79365d32fbfec3fe27f1de59ccd" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMain</scope><name>tearDown</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_main_1a8600f21ccfc09b79190e1ead7f0a70e8" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMain</scope><name>Test_IvMain</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_main_1aad2e2324cb5e5c42ed9944e6034dc74c" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMain</scope><name>testTiming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

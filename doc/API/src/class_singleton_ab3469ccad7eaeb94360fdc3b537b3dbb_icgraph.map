@@ -1,0 +1,25 @@
+<map id="Singleton::getInstanceSingleton" name="Singleton::getInstanceSingleton">
+<area shape="rect" id="node3" href="$class_my_demo_input_handler.html#af5b31fa30521399138ee0c79c08d3931" title="MyDemoInputHandler\l::getInstance" alt="" coords="294,4,456,54"/>
+<area shape="rect" id="node5" href="$classivis_1_1gui_1_1_iv_g_u_iwebcam.html#aef1376a6b0ddb75a9b9b7336c49bb1a7" title="ivis::gui::IvGUIwebcam\l::getInstance" alt="" coords="292,78,457,128"/>
+<area shape="rect" id="node7" href="$classivis_1_1broadcaster_1_1_iv_broadcaster.html#a12aee46c3fc48e7e1480d6d7f3a3362a" title="ivis::broadcaster::\lIvBroadcaster::getInstance" alt="" coords="280,151,470,201"/>
+<area shape="rect" id="node9" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_vector.html#a2a647ab2cc2e0fb28af98fb53ebaac4a" title="ivis::gui::IvGUIclassifier\lVector::getInstance" alt="" coords="290,224,459,274"/>
+<area shape="rect" id="node11" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_box.html#a2f50911151eb84ca2169ee3968a1853f" title="ivis::gui::IvGUIclassifier\lBox::getInstance" alt="" coords="290,298,459,348"/>
+<area shape="rect" id="node13" href="$classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial.html#a204ab4163670df26b8e2e418c01735ff" title="ivis::gui::IvGUIeyetrack\lSpatial::getInstance" alt="" coords="291,371,458,421"/>
+<area shape="rect" id="node15" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a942ead59ad7f0cf3451e3fc2ac3c1f3f" title="ivis::gui::IvGUIclassifier\lGrid::getInstance" alt="" coords="290,444,459,494"/>
+<area shape="rect" id="node17" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l.html#ae7684f86ae88b8b5cfddfe39454268f1" title="ivis::gui::IvGUIclassifier\lLL::getInstance" alt="" coords="290,518,459,568"/>
+<area shape="rect" id="node19" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5d81acf07654de4e16bb1f4bbcf6b64e" title="ivis::gui::IvGUIclassifier\l::getInstance" alt="" coords="290,591,459,641"/>
+<area shape="rect" id="node21" href="$classivis_1_1video_1_1_iv_webcam.html#add92a087b29439e1a9213c43f9665653" title="ivis::video::IvWebcam\l::getInstance" alt="" coords="296,664,454,714"/>
+<area shape="rect" id="node23" href="$classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal.html#aa1dbb37638f880e44bf9f500a5683219" title="ivis::gui::IvGUIeyetrack\lTemporal::getInstance" alt="" coords="291,738,458,788"/>
+<area shape="rect" id="node25" href="$classivis_1_1log_1_1_iv_raw_log.html#a93a717c3dd97d8e4f6c20761316f0fb5" title="ivis::log::IvRawLog\l::getInstance" alt="" coords="305,811,444,861"/>
+<area shape="rect" id="node27" href="$classivis_1_1math_1_1_iv_unit_handler.html#a2a693063594215bcae5fbf15fc24ded8" title="ivis::math::IvUnitHandler\l::getInstance" alt="" coords="285,884,464,934"/>
+<area shape="rect" id="node29" href="$classivis_1_1gui_1_1_iv_g_u_i.html#a5e1fde50dc191845df58a4255147e764" title="ivis::gui::IvGUI::getInstance" alt="" coords="277,958,472,989"/>
+<area shape="rect" id="node31" href="$classivis_1_1gui_1_1_iv_g_u_icalibration.html#a868cafda5ffacc682d30dacb7b3e44dc" title="ivis::gui::IvGUIcalibration\l::getInstance" alt="" coords="284,1012,465,1062"/>
+<area shape="rect" id="node33" href="$classivis_1_1log_1_1_iv_data_log.html#a1bd05b9810b21fdd3f14027005c40068" title="ivis::log::IvDataLog\l::getInstance" alt="" coords="303,1086,446,1136"/>
+<area shape="rect" id="node35" href="$classivis_1_1calibration_1_1_iv_calibration.html#a2b24b9d18f664a8419454733d2d1b7f3" title="ivis::calibration::\lIvCalibration::getInstance" alt="" coords="282,1159,467,1209"/>
+<area shape="rect" id="node37" href="$classivis_1_1main_1_1_iv_params.html#a585be903f73199977df02b4284e966c9" title="ivis::main::IvParams\l::getInstance" alt="" coords="301,1232,449,1282"/>
+<area shape="rect" id="node41" href="$classivis_1_1video_1_1_iv_video.html#a26c4c55f584cabe7c67ad952629fa984" title="ivis::video::IvVideo\l::getInstance" alt="" coords="304,1306,445,1356"/>
+<area shape="rect" id="node43" href="$classivis_1_1video_1_1_track_box.html#a491ce776c155fad3260e456fcfc69587" title="ivis::video::TrackBox\l::getInstance" alt="" coords="299,1379,451,1429"/>
+<area shape="rect" id="node45" href="$classivis_1_1audio_1_1_iv_audio.html#aa79b6ce80c5a1c2edf8b5213436973e0" title="ivis::audio::IvAudio\l::getInstance" alt="" coords="303,1452,446,1502"/>
+<area shape="rect" id="node47" href="$classivis_1_1eyetracker_1_1_iv_data_input.html#a8b0a6e62c48978a9f7d450c21a55a584" title="ivis::eyetracker::IvData\lInput::getInstance" alt="" coords="292,1526,458,1576"/>
+<area shape="rect" id="node39" href="$classivis_1_1main_1_1_iv_main.html#a5d3af355bfbb345d455bef88e922d8a9" title="Open connections and ready outputs." alt="" coords="520,1232,653,1282"/>
+</map>

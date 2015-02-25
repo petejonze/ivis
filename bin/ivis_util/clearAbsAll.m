@@ -1,0 +1,3 @@
+%  Clear command window:
+%  clc;
+%

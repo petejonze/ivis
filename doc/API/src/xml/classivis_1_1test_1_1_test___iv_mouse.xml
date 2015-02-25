@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1test_1_1_test___iv_mouse" kind="class" prot="public">
+    <compoundname>ivis::test::Test_IvMouse</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_mouse_1ab147dfdf637d57ba6fe33c660ed3b449" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::test::Test_IvMouse::Test_IvMouse</definition>
+        <argsstring>(matlabtypesubstitute name)</argsstring>
+        <name>Test_IvMouse</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Test_Test_IvMouse constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>self TestCase</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" line="56" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_mouse_1a08b070e83e0725d8f1e59023ba9eaabe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMouse::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Testcase setup. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" line="72" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" bodystart="72" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_mouse_1acc0bd292498b6359ad93f07f14009d98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMouse::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <briefdescription>
+<para>Testcase teardown. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" line="84" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" bodystart="84" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_mouse_1a0f7aa0f84df3a0a563d753237d3de377" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMouse::testDummy</definition>
+        <argsstring>()</argsstring>
+        <name>testDummy</name>
+        <briefdescription>
+<para>Dummy method. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" line="97" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" bodystart="97" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_mouse_1a367af0f68dc55c0262583bcf61aeb580" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvMouse::testDummy2</definition>
+        <argsstring>()</argsstring>
+        <name>testDummy2</name>
+        <briefdescription>
+<para>Dummy method. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" line="110" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" bodystart="110" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>xUnit tests for <ref refid="classivis_1_1eyetracker_1_1_iv_mouse" kindref="compound">ivis.eyetracker.IvMouse</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>ivis.log.Test_IvMouse</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>runtests <ref refid="namespaceivis_1_1test" kindref="compound">ivis.test</ref> -verbose</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
+ 1.0 PJ 02/2011 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000024"><xreftitle>Todo</xreftitle><xrefdescription><para>write me</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="824">
+        <label>TestCase</label>
+      </node>
+      <node id="823">
+        <label>ivis::test::Test_IvMouse</label>
+        <link refid="classivis_1_1test_1_1_test___iv_mouse"/>
+        <childnode refid="824" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="826">
+        <label>TestCase</label>
+      </node>
+      <node id="825">
+        <label>ivis::test::Test_IvMouse</label>
+        <link refid="classivis_1_1test_1_1_test___iv_mouse"/>
+        <childnode refid="826" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m" bodystart="19" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classivis_1_1test_1_1_test___iv_mouse_1a08b070e83e0725d8f1e59023ba9eaabe" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMouse</scope><name>setUp</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_mouse_1acc0bd292498b6359ad93f07f14009d98" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMouse</scope><name>tearDown</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_mouse_1ab147dfdf637d57ba6fe33c660ed3b449" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMouse</scope><name>Test_IvMouse</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_mouse_1a0f7aa0f84df3a0a563d753237d3de377" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMouse</scope><name>testDummy</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_mouse_1a367af0f68dc55c0262583bcf61aeb580" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMouse</scope><name>testDummy2</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

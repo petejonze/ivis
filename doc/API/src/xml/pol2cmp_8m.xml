@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="pol2cmp_8m" kind="file">
+    <compoundname>pol2cmp.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pol2cmp_8m_1a3af66f5a93e8b99c879a38ac4c2ca2c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, cmp &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, cmp &gt; pol2cmp</definition>
+        <argsstring>(matlabtypesubstitute th)</argsstring>
+        <name>pol2cmp</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>th</declname>
+        </param>
+        <briefdescription>
+<para>POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise radians with zero at x-axis) to compass reading (clockwise degrees with zero at north). </para>        </briefdescription>
+        <detaileddescription>
+<para>cmp = pol2cmp(th)</para><para>th = input of polar coordinate angle in radians cmp = compass reading (0-360)</para><para>EXAMPLE: You have current or wind velocities in u (east) and v (north), and want to find the compass reading. The magnitude and angle in polar coordinates is found by [TH,R] = CART2POL(u,v). The compass reading can then be found by CMP = POL2CMP(th).</para><para><simplesect kind="see"><para>CART2POL POL2CART </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m" bodystart="17" bodyend="34"/>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_vector_1af253e6edc6fe74ec5e27d17980367cc1" compoundref="_iv_classifier_vector_8m" startline="268" endline="299">ivis::classifier::IvClassifierVector::updateEvidence</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise radians with zero at x-axis) to compass reading (clockwise degrees with zero at north). </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="pol2cmp_8m_1a3af66f5a93e8b99c879a38ac4c2ca2c7" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,cmp&gt;<sp/><ref refid="pol2cmp_8m_1a3af66f5a93e8b99c879a38ac4c2ca2c7" kindref="member" tooltip="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra...">pol2cmp</ref>(matlabtypesubstitute<sp/>th)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Time-stamp:&lt;Last<sp/>updated<sp/>on<sp/>02/09/23<sp/>at<sp/>15:39:49<sp/>by<sp/>even@gfi.uib.no&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*File:&lt;d:/home/matlab/pol2cmp.m&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">cmp=pi/2-th;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>flip<sp/>and<sp/>rotate<sp/>90<sp/>deg</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">idx<sp/>=<sp/>cmp&lt;0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">cmp(idx)=cmp(idx)+2*pi;<sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>negative<sp/>results<sp/>(range<sp/>0-2pi)</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">cmp=cmp*180/pi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>to<sp/>degrees<sp/>for<sp/>compass<sp/>out</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m"/>
+  </compounddef>
+</doxygen>

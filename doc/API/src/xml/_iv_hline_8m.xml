@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_iv_hline_8m" kind="file">
+    <compoundname>IvHline.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_iv_hline_8m_1a1dfc3b6dda6277294726fc33a6dbe70a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, h &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,h&gt; IvHline</definition>
+        <argsstring>(matlabtypesubstitute y, matlabtypesubstitute linetype, matlabtypesubstitute labeltext, matlabtypesubstitute linecolor, matlabtypesubstitute labelXposition)</argsstring>
+        <name>IvHline</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>linetype</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>labeltext</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>linecolor</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>labelXposition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/IvHline.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/IvHline.m" bodystart="17" bodyend="71"/>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1ad7ffdf69fd2463d975129deda9989d59" compoundref="_iv_g_u_iclassifier_box_8m" startline="81" endline="138">ivis::gui::IvGUIclassifierBox::IvGUIclassifierBox</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a2c2ded9d132b114835fa7beb14a9fbb7" compoundref="_iv_g_u_iclassifier_grid_8m" startline="88" endline="150">ivis::gui::IvGUIclassifierGrid::IvGUIclassifierGrid</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a58cccbdafce5c9f4534cc0a1bda1728e" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="85" endline="150">ivis::gui::IvGUIclassifierLL::IvGUIclassifierLL</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_iv_hline_8m_1ae9e1593d1bcc2a1eeb8704ffc5117dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, h &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,h&gt; mtoc_subst_IvHline_m_tsbus_cotm_plotLine</definition>
+        <argsstring>(matlabtypesubstitute y, matlabtypesubstitute linetype, matlabtypesubstitute label, matlabtypesubstitute linecolor, matlabtypesubstitute labelXPos)</argsstring>
+        <name>mtoc_subst_IvHline_m_tsbus_cotm_plotLine</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>linetype</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>linecolor</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>labelXPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/IvHline.m" line="73" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/IvHline.m" bodystart="73" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_iv_hline_8m_1a1dfc3b6dda6277294726fc33a6dbe70a" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,h&gt;<sp/><ref refid="_iv_hline_8m_1a1dfc3b6dda6277294726fc33a6dbe70a" kindref="member">IvHline</ref>(matlabtypesubstitute<sp/>y,matlabtypesubstitute<sp/>linetype,matlabtypesubstitute<sp/>labeltext,matlabtypesubstitute<sp/>linecolor,matlabtypesubstitute<sp/>labelXposition)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>parse<sp/>inputs,<sp/>validate,<sp/>insert<sp/>defaults</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>nObjs<sp/>=<sp/>length(y);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>c<sp/>=<sp/>cell(1,nObjs);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>2<sp/>||<sp/>isempty(linetype)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linetype<sp/>=<sp/>cellfun(@(x)</highlight><highlight class="stringliteral">&quot;<sp/>:<sp/>&quot;</highlight><highlight class="normal">,c,</highlight><highlight class="stringliteral">&quot;<sp/>UniformOut<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>cell<sp/>of<sp/>&apos;:&apos;</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>3<sp/>||<sp/>isempty(labeltext)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labeltext<sp/>=<sp/>cellfun(@(x),c,</highlight><highlight class="stringliteral">&quot;<sp/>UniformOut<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>cell<sp/>of<sp/>&apos;&apos;</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>4<sp/>||<sp/>isempty(linecolor)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linecolor<sp/>=<sp/>num2cell(jet(length(y)),2);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>5<sp/>||<sp/>isempty(labelXposition)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xlims<sp/>=<sp/>xlim();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>linspace(xlims(1),xlims(2),length(y)+1);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x(end)<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>x+0.02*(xlims(2)-xlims(1));<sp/></highlight><highlight class="comment">/*<sp/><sp/>nudge<sp/>right</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labelXposition<sp/>=<sp/>x;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>end<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>scalars<sp/>to<sp/>cell<sp/>arrays<sp/>(&amp;<sp/>auto<sp/>expand<sp/>to<sp/>number<sp/>of<sp/>objects)</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~iscell(linetype)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linetype<sp/>=<sp/>cellfun(@(x)linetype,c,</highlight><highlight class="stringliteral">&quot;<sp/>UniformOut<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>=<sp/>{linetype};</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~iscell(labeltext)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>labeltext<sp/>=<sp/>cellfun(@(x)labeltext,c,</highlight><highlight class="stringliteral">&quot;<sp/>UniformOut<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>{labeltext};</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~iscell(linecolor)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>linecolor<sp/>=<sp/>cellfun(@(x)linecolor,c,</highlight><highlight class="stringliteral">&quot;<sp/>UniformOut<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>{linecolor};</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>plot</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/>nan(nObjs,<sp/>1);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>g=ishold(gca);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>hold<sp/>on</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1:nObjs</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h(i)=plotLine(y(i),<sp/>linetype[i],<sp/>labeltext[i],<sp/>linecolor[i],<sp/>labelXposition(i));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>g==0</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hold<sp/>off</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_iv_hline_8m_1ae9e1593d1bcc2a1eeb8704ffc5117dad" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,h&gt;<sp/><ref refid="_iv_hline_8m_1ae9e1593d1bcc2a1eeb8704ffc5117dad" kindref="member">mtoc_subst_IvHline_m_tsbus_cotm_plotLine</ref>(matlabtypesubstitute<sp/>y,matlabtypesubstitute<sp/>linetype,matlabtypesubstitute<sp/>label,matlabtypesubstitute<sp/>linecolor,matlabtypesubstitute<sp/>labelXPos)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>x=</highlight><highlight class="keyword">get</highlight><highlight class="normal">(gca,</highlight><highlight class="stringliteral">&quot;<sp/>xlim<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/>plot(x,[y<sp/>y],linetype,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,linecolor);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(label)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yy=</highlight><highlight class="keyword">get</highlight><highlight class="normal">(gca,</highlight><highlight class="stringliteral">&quot;<sp/>ylim<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yrange=yy(2)-yy(1);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yunit=(y-yy(1))/yrange;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>yunit&lt;0.2</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(labelXPos,y+0.02*yrange,label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(labelXPos,y+0.02*yrange,label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>text(labelXPos,y-0.02*yrange,label,&apos;color&apos;,get(h,&apos;color&apos;))</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>tag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>IvHline<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>handlevisibility<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>off<sp/>&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">/*<sp/><sp/>this<sp/>last<sp/>part<sp/>is<sp/>so<sp/>that<sp/>it<sp/>doesn&apos;t<sp/>show<sp/>up<sp/>on<sp/>legends</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/IvHline.m"/>
+  </compounddef>
+</doxygen>

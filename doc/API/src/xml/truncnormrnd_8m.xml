@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="truncnormrnd_8m" kind="file">
+    <compoundname>truncnormrnd.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="truncnormrnd_8m_1a495bb78cb7e7b94949b5ec6cde96eba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, z &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, z &gt; truncnormrnd</definition>
+        <argsstring>(matlabtypesubstitute N, matlabtypesubstitute mu, matlabtypesubstitute sig, matlabtypesubstitute xlo, matlabtypesubstitute xhi)</argsstring>
+        <name>truncnormrnd</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>sig</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>xlo</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>xhi</declname>
+        </param>
+        <briefdescription>
+<para>truncnormrnd: truncated normal deviate generator usage:z=truncnormrnd(N,mu,sig,xlo,xhi) </para>        </briefdescription>
+        <detaileddescription>
+<para>(assumes the statistics toolbox, its easy to do without that toolbox though)</para><para>arguments: (input) N - size of the resulting array of deviates (note, if N is a scalar, then the result will be NxN.) mu - scalar - Mean of underlying normal distribution sig - scalar - Standard deviation of underlying normal distribution xlo - scalar - Low truncation point, if any xhi - scalar - High truncation point, if any</para><para>arguments: (output) z - array of truncated normal deviates, size(z)==N </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m" bodystart="17" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>truncnormrnd: truncated normal deviate generator usage:z=truncnormrnd(N,mu,sig,xlo,xhi) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="truncnormrnd_8m_1a495bb78cb7e7b94949b5ec6cde96eba5" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,z&gt;<sp/><ref refid="truncnormrnd_8m_1a495bb78cb7e7b94949b5ec6cde96eba5" kindref="member" tooltip="truncnormrnd: truncated normal deviate generator usage:z=truncnormrnd(N,mu,sig,xlo,xhi)">truncnormrnd</ref>(matlabtypesubstitute<sp/>N,matlabtypesubstitute<sp/>mu,matlabtypesubstitute<sp/>sig,matlabtypesubstitute<sp/>xlo,matlabtypesubstitute<sp/>xhi)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>defaults</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;2)||isempty(mu)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>mu=0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;3)||isempty(sig)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>sig=0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;4)||isempty(xlo)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>xlo=-inf;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>plo=0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>plo=normcdf((xlo-mu)/sig);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;5)||isempty(xhi)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>xhi=inf;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>phi=1;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>phi=normcdf((xhi-mu)/sig);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>test<sp/>if<sp/>trunation<sp/>points<sp/>are<sp/>reversed</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>xlo&gt;xhi</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>error<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Must<sp/>have<sp/>xlo<sp/>&lt;=<sp/>xhi<sp/>if<sp/>both<sp/>provided<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>generate<sp/>uniform<sp/>[0,1]<sp/>random<sp/>deviates</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">r=rand(N);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>scale<sp/>to<sp/>[plo,phi]</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">r=plo+(phi-plo)*r;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Invert<sp/>through<sp/>standard<sp/>normal</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">z=norminv(r);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>apply<sp/>shift<sp/>and<sp/>scale</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">z=mu+z*sig;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m"/>
+  </compounddef>
+</doxygen>

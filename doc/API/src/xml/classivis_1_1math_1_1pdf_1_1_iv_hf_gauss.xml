@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss" kind="class" prot="public">
+    <compoundname>ivis::math::pdf::IvHfGauss</compoundname>
+    <basecompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" prot="public" virt="non-virtual">ivis::math::pdf::IvHitFunc</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a50565ab7f34ad0cc4e0211cb7d91fcc5" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHfGauss::muOffset</definition>
+        <argsstring></argsstring>
+        <name>muOffset</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>user specified parameters additive bias in the distribution mean </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> <linebreak/>
+<bold>Default:</bold> 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="62" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a47134fd4af2c041f5d7f6fb81941fede" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHfGauss::sigma</definition>
+        <argsstring></argsstring>
+        <name>sigma</name>
+        <briefdescription>
+<para>distribution standard deviation </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="73" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a7f5b7aab2108267ca64995fb52eaea97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::math::pdf::IvHfGauss::IvHfGauss</definition>
+        <argsstring>(matlabtypesubstitute muOffset, matlabtypesubstitute sigma)</argsstring>
+        <name>IvHfGauss</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>muOffset</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss" kindref="compound">IvHfGauss</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>muOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>additive offset of gaussian (pixels) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>standard deviation of gaussian (pixels) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj <ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss" kindref="compound">IvHfGauss</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+validate params </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="94" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="94" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1abec7d5422b3e5e84c5a478101f9a877f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, P &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, x &gt; &gt;</type>
+        <definition>mlhsSubst&lt;mlhsInnerSubst&lt;matlabtypesubstitute,P&gt; ,mlhsInnerSubst&lt;matlabtypesubstitute,x&gt; &gt; ivis::math::pdf::IvHfGauss::getPDF</definition>
+        <argsstring>(matlabtypesubstitute x, matlabtypesubstitute mu)</argsstring>
+        <name>getPDF</name>
+        <reimplements refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab59258aee640a41aed16538bbf2a052b">getPDF</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para>Get the probability of each value, x, given the probability density function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of values to evaluate PDF at </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>varargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any additional values the subclass requires </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y probability density values</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="124" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="124" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1aa04c15f959da386142f23432aae5705b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,y&gt; ivis::math::pdf::IvHfGauss::getRand</definition>
+        <argsstring>(matlabtypesubstitute n, matlabtypesubstitute mu)</argsstring>
+        <name>getRand</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="145" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a82f1a36ee7d66cfeea6dbdeefbcde617" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, h &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,h&gt; ivis::math::pdf::IvHfGauss::plot</definition>
+        <argsstring>(matlabtypesubstitute mu, matlabtypesubstitute color)</argsstring>
+        <name>plot</name>
+        <reimplements refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a60304ed8a490d8ea89d66b83fee6d347">plot</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+<para>Initialise the GUI element. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any bias in the distribution </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>plot color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>h plot handle</para></simplesect>
+<xrefsect id="todo_1_todo000020"><xreftitle>Todo</xreftitle><xrefdescription><para>change mu to be stored internally? </para></xrefdescription></xrefsect><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="151" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="151" bodyend="168"/>
+        <references refid="vline_8m_1a93cf8d0c941df7f6479bdb0c4ee61d97" compoundref="vline_8m" startline="17" endline="115">vline</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a3c47933de72a57ef3eca7a3d2e3a7722" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::math::pdf::IvHfGauss::updatePlot</definition>
+        <argsstring>(matlabtypesubstitute mu)</argsstring>
+        <name>updatePlot</name>
+        <reimplements refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a01921b287b37ceb979bc98723b04ed9d">updatePlot</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+<para>Update the GUI element. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>any bias in the distribution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="todo_1_todo000021"><xreftitle>Todo</xreftitle><xrefdescription><para>change mu to be stored internally?</para></xrefdescription></xrefsect></para><para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="171" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="171" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Univariate Gaussian probabilty distribution function for the likelihood-based classifier(s). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvHfGauss Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss" kindref="compound">IvHfGauss</ref> - Constructor.</para></listitem><listitem><para>getPDF - Get the probability of each value, x, given the probability density function.</para></listitem><listitem><para>getRand - Generate a column vector of n random values, given the probability density function.</para></listitem><listitem><para>plot - Initialise the GUI element.</para></listitem><listitem><para>updatePlot - update the GUI element.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000019"><xreftitle>Todo</xreftitle><xrefdescription><para>truncate</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="767">
+        <label>handle</label>
+      </node>
+      <node id="765">
+        <label>ivis::math::pdf::IvHfGauss</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss"/>
+        <childnode refid="766" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="766">
+        <label>ivis::math::pdf::IvHitFunc</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func"/>
+        <childnode refid="767" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="770">
+        <label>handle</label>
+      </node>
+      <node id="768">
+        <label>ivis::math::pdf::IvHfGauss</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss"/>
+        <childnode refid="769" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>ivis::math::pdf::IvHitFunc</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func"/>
+        <childnode refid="770" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="21" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" bodystart="20" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1abec7d5422b3e5e84c5a478101f9a877f" prot="public" virt="virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>getPDF</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1aa04c15f959da386142f23432aae5705b" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>getRand</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa6b693c0909ff2510fc17f5c583dd2c9" prot="public" virt="pure-virtual" ambiguityscope="ivis::math::pdf::IvHitFunc::"><scope>ivis::math::pdf::IvHfGauss</scope><name>getRand</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a10c70369c29497f72f7dbd24f61cda98" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>hPlot</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a7f5b7aab2108267ca64995fb52eaea97" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>IvHfGauss</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1add8c148ebcf5bc0a009a5762c19204f4" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>IvHitFunc</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a50565ab7f34ad0cc4e0211cb7d91fcc5" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>muOffset</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa38ba1764d7a0e7f43f8c028c3613317" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>N</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8da3cb47921e4dc9059ff992f47b37eb" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>pdf_xy</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a82f1a36ee7d66cfeea6dbdeefbcde617" prot="public" virt="virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>plot</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a47134fd4af2c041f5d7f6fb81941fede" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>sigma</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a3c47933de72a57ef3eca7a3d2e3a7722" prot="public" virt="virtual"><scope>ivis::math::pdf::IvHfGauss</scope><name>updatePlot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis_1_1math" kind="namespace">
+    <compoundname>ivis::math</compoundname>
+    <innerclass refid="classivis_1_1math_1_1_iv_unit_handler" prot="public">ivis::math::IvUnitHandler</innerclass>
+    <innernamespace refid="namespaceivis_1_1math_1_1pdf">ivis::math::pdf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss.m" line="2"/>
+  </compounddef>
+</doxygen>

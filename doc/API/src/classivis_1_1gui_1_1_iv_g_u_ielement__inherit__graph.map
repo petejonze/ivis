@@ -1,0 +1,12 @@
+<map id="ivis::gui::IvGUIelement" name="ivis::gui::IvGUIelement">
+<area shape="rect" id="node7" href="$classivis_1_1gui_1_1_iv_g_u_icalibration.html" title="Singleton for displaying calibration interactive panel and fit results." alt="" coords="464,31,645,62"/>
+<area shape="rect" id="node9" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier.html" title="Generic class for displaying classifier parameters and status, to be instantiated by a subclass..." alt="" coords="470,86,639,117"/>
+<area shape="rect" id="node19" href="$classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial.html" title="Singleton for displaying gaze&#45;location as a function of space." alt="" coords="471,140,638,190"/>
+<area shape="rect" id="node21" href="$classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal.html" title="Singleton for displaying gaze&#45;location as a function of time." alt="" coords="471,214,638,264"/>
+<area shape="rect" id="node23" href="$classivis_1_1gui_1_1_iv_g_u_iwebcam.html" title="Singleton for displaying webcam feed in a GUI." alt="" coords="472,287,637,318"/>
+<area shape="rect" id="node2" href="$class_singleton.html" title="A pseudo&#45;singleton class pattern for Matlab." alt="" coords="120,150,202,181"/>
+<area shape="rect" id="node11" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_box.html" title="Singleton for displaying box classifier parameters and status." alt="" coords="696,5,888,35"/>
+<area shape="rect" id="node13" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html" title="Singleton for displaying grid classifier parameters and status." alt="" coords="694,59,890,90"/>
+<area shape="rect" id="node15" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l.html" title="Singleton for displaying log&#45;likelihood classifier parameters and status." alt="" coords="701,114,883,145"/>
+<area shape="rect" id="node17" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_vector.html" title="Singleton for displaying vector classifier parameters and status." alt="" coords="708,168,876,218"/>
+</map>

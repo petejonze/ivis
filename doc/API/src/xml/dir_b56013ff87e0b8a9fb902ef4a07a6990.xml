@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_b56013ff87e0b8a9fb902ef4a07a6990" kind="dir">
+    <compoundname>admin</compoundname>
+    <innerdir refid="dir_7a2e4c5fbdcc40dd5bf6f543242a4309">admin/config</innerdir>
+    <innerfile refid="deploypcode_8m">deploypcode.m</innerfile>
+    <innerfile refid="_matlab_doc_maker_8m">MatlabDocMaker.m</innerfile>
+    <innerfile refid="_r_u_n___m_e_8m">RUN_ME.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/"/>
+  </compounddef>
+</doxygen>

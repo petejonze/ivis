@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classinteger" kind="class" prot="public">
+    <compoundname>integer</compoundname>
+    <briefdescription>
+<para>An integer value. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is an artificially created class in doxygen to allow more precise type declarations. Matlab types associated with this class are all int-types (int8, uint8 etc). </para>    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="12"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

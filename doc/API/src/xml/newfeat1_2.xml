@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="newfeat1_2" kind="page">
+    <compoundname>newfeat1_2</compoundname>
+    <title>New features in ivis Version 1.2</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="newfeat1_2_1_newfeat1_2000001"/>Class <ref refid="class_matlab_doc_maker" kindref="compound">MatlabDocMaker</ref>  </term></varlistentry>
+<listitem><para>(dw, 2011-10-13) Added this class and moved documentation related stuff here from the KerMor class.</para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

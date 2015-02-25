@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1broadcaster_1_1_iv_event_data" kind="class" prot="public">
+    <compoundname>ivis::broadcaster::IvEventData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">EventData</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1broadcaster_1_1_iv_event_data_1a3fc7f92c883c68a42ed753a5845477bb" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::broadcaster::IvEventData::Data</definition>
+        <argsstring></argsstring>
+        <name>Data</name>
+        <briefdescription>
+<para>Event data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvEventData.m" line="55" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvEventData.m" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1broadcaster_1_1_iv_event_data_1a31b60593d66f8386f6f482d58cf46d5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::broadcaster::IvEventData::IvEventData</definition>
+        <argsstring>(matlabtypesubstitute data)</argsstring>
+        <name>IvEventData</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1broadcaster_1_1_iv_event_data" kindref="compound">IvEventData</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>info to be stored in obj.Data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj <ref refid="classivis_1_1broadcaster_1_1_iv_event_data" kindref="compound">IvEventData</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvEventData.m" line="73" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvEventData.m" bodystart="73" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simple Event object wrapper specifying what properties an event should store (currently just a generic parameter called obj.Data). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvEventData Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1broadcaster_1_1_iv_event_data" kindref="compound">IvEventData</ref> - Constructor.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="469">
+        <label>ivis::broadcaster::IvEventData</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_event_data"/>
+        <childnode refid="470" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>event::EventData</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="471">
+        <label>ivis::broadcaster::IvEventData</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_event_data"/>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>event::EventData</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvEventData.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvEventData.m" bodystart="19" bodyend="91"/>
+    <listofallmembers>
+      <member refid="classivis_1_1broadcaster_1_1_iv_event_data_1a3fc7f92c883c68a42ed753a5845477bb" prot="public" virt="non-virtual"><scope>ivis::broadcaster::IvEventData</scope><name>Data</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_event_data_1a31b60593d66f8386f6f482d58cf46d5e" prot="public" virt="non-virtual"><scope>ivis::broadcaster::IvEventData</scope><name>IvEventData</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1graphic_1_1_iv_prior" kind="class" prot="public">
+    <compoundname>ivis::graphic::IvPrior</compoundname>
+    <basecompoundref refid="classivis_1_1graphic_1_1_iv_screen_object" prot="public" virt="non-virtual">ivis::graphic::IvScreenObject</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_prior_1afc312e930939217ef12d1bf676ca5e4f" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::graphic::IvPrior::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <initializer>= &apos;prior&apos;</initializer>
+        <briefdescription>
+<para>other internal parameters </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> <linebreak/>
+<bold>Default:</bold> &apos;prior&apos; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="60" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a4810145bdb9e51ef74f70d21b1117530" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::graphic::IvPrior::IvPrior</definition>
+        <argsstring>()</argsstring>
+        <name>IvPrior</name>
+        <briefdescription>
+<para><ref refid="classivis_1_1graphic_1_1_iv_prior" kindref="compound">IvPrior</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>obj <ref refid="classivis_1_1graphic_1_1_iv_prior" kindref="compound">IvPrior</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="82" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="82" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a8b8daca36497cbbe3087335dd323e91c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt; ivis::graphic::IvPrior::getXY</definition>
+        <argsstring>(matlabtypesubstitute unused1)</argsstring>
+        <name>getXY</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused1</declname>
+        </param>
+        <briefdescription>
+<para>Dummy method; does nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>xy empty array</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unused1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="105" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a8ae061a49b980535ff7c0977ae47275d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, x &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, x &gt; ivis::graphic::IvPrior::getX</definition>
+        <argsstring>(matlabtypesubstitute unused1)</argsstring>
+        <name>getX</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused1</declname>
+        </param>
+        <briefdescription>
+<para>Dummy method; does nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>xy empty array</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unused1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="123" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="123" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a947d7330e18448ae8ac3c13e4f7a73b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt; ivis::graphic::IvPrior::getY</definition>
+        <argsstring>(matlabtypesubstitute unused1)</argsstring>
+        <name>getY</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused1</declname>
+        </param>
+        <briefdescription>
+<para>Dummy method; does nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>xy empty array</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unused1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="141" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1aca0f10732619f3b6ad9f53b6862fed30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::graphic::IvPrior::reset</definition>
+        <argsstring>(matlabtypesubstitute unused1, matlabtypesubstitute unused2, matlabtypesubstitute unused3, matlabtypesubstitute unused4)</argsstring>
+        <name>reset</name>
+        <reimplements refid="classivis_1_1graphic_1_1_iv_screen_object_1a4a40af212e1c1fd5fddd2023e6c00cfc">reset</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused1</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused2</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused3</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>unused4</declname>
+        </param>
+        <briefdescription>
+<para>Dummy method; does nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unused1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unused2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unused3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>unused4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Marked as &quot;~&quot; in original m-file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="159" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="159" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1aea9a5db707ad770c7a0b5eed87e016c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::graphic::IvPrior::draw</definition>
+        <argsstring>(matlabtypesubstitute varargin)</argsstring>
+        <name>draw</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para>Dummy method; does nothing. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="177" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="177" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Degenerate graphic object that doesn&apos;t move or resize. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvPrior Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1graphic_1_1_iv_prior" kindref="compound">IvPrior</ref> - Constructor.</para></listitem><listitem><para>getXY - Dummy method; does nothing.</para></listitem><listitem><para>reset - Dummy method; does nothing.</para></listitem><listitem><para>draw - Dummy method; does nothing.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">ivis.graphic.IvGraphic</ref></para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>with the introduction of the stationary flag in the <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> class, this is rapidly becoming redundant. Maybe should subclass <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref>?</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="606">
+        <label>handle</label>
+      </node>
+      <node id="605">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="603">
+        <label>ivis::graphic::IvPrior</label>
+        <link refid="classivis_1_1graphic_1_1_iv_prior"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="604">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="605" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="610">
+        <label>handle</label>
+      </node>
+      <node id="609">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="607">
+        <label>ivis::graphic::IvPrior</label>
+        <link refid="classivis_1_1graphic_1_1_iv_prior"/>
+        <childnode refid="608" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="609" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="19" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>delete</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1aea9a5db707ad770c7a0b5eed87e016c2" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>draw</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a0018ceb2329f408d21d5672c974936bc" prot="public" virt="pure-virtual" ambiguityscope="ivis::graphic::IvScreenObject::"><scope>ivis::graphic::IvPrior</scope><name>draw</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a14390bf4fcaaa602c45c74d850e78e1a" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>eventNames</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1a8ae061a49b980535ff7c0977ae47275d" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>getX</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1a8b8daca36497cbbe3087335dd323e91c" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>getXY</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1a947d7330e18448ae8ac3c13e4f7a73b9" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>getY</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1a4810145bdb9e51ef74f70d21b1117530" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>IvPrior</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a6882f0ad0c3d66144d1732d5baa673b4" prot="protected" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>IvScreenObject</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1add0a7baf0385630c2ccb69d3fe35896e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>listenerHandles</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1afc312e930939217ef12d1bf676ca5e4f" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>name</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_prior_1aca0f10732619f3b6ad9f53b6862fed30" prot="public" virt="virtual"><scope>ivis::graphic::IvPrior</scope><name>reset</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a7fe2988ce0ff2dc4e2d39981a2a5104e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>startListening</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a4059911a950ad01e8ae73abcc6d5cd64" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>startListeningTo</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ae63aa8d8e7e569d83e1b29d050c31bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>stopListening</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a50d1ac805a94af66ffb9bff3b4b0b934" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>toggleListening</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a447f995570459bb1d96964215358622e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>type</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a53ab6604b15a564fb6b3509ae74db3dd" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>TYPE_GRAPHIC</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>TYPE_GRAPHICCOMPOUND</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a2d10135dc6c9ed7ac46dc2f4e2b41abb" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>TYPE_PRIOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

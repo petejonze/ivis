@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<ROOT>
+
+	<main>
+		<ivVersion>0.8</ivVersion>
+		<dataInput>Tobii</dataInput> <!-- Mouse, Tobii -->
+		<verbosity>9</verbosity>
+	</main>
+
+	<graphics>
+		<useScreen>true</useScreen>
+		<targFrameRate>30</targFrameRate>
+		<testScreenNum>1</testScreenNum>
+		<fullScreen>true</fullScreen>
+		<testScreenWidth>1920</testScreenWidth>
+		<testScreenHeight>1080</testScreenHeight>
+		<monitorWidth_cm>59.5</monitorWidth_cm>
+		<viewDist_cm>60</viewDist_cm>
+	</graphics>
+	
+	<eyetracker>
+		<id>TX120-301-22300547.local</id> <!-- office: TX120-301-22300547.local -->
+		<sampleRate>60</sampleRate>
+		<GUIidx>2</GUIidx>
+		<runMeanWinWidth>3</runMeanWinWidth>
+		<showLastNPoints>30</showLastNPoints>
+		<saccade>
+			<distanceCriterion>10</distanceCriterion>
+			<velocityCriterion>250</velocityCriterion>
+			<accelCriterion>75</accelCriterion>
+			<timeCriterion>.3</timeCriterion>
+			<doBeep>false</doBeep>
+			<GUIidx>3</GUIidx>
+			<blinkExclusionT>125</blinkExclusionT> <!-- minimum number of seconds to suppress saccades after 1 is detected -->
+			<prevSacExclusionT>125</prevSacExclusionT> <!-- minimum number of seconds to suppress saccades after 1 is detected -->
+		</saccade>	
+		<objectClassification>
+			<temporalWindow>100</temporalWindow>
+			<lMagThresh>200</lMagThresh>
+			<onsetRampStart>0.4</onsetRampStart>
+			<onsetRampDuration>.4</onsetRampDuration>
+			<GUIidx>1</GUIidx>
+		</objectClassification>		
+		<fixationMarker>tmp2</fixationMarker> <!-- none, cursor, texture -->
+		<rawLog>
+			<mode>off</mode> <!-- off, auto, manual -->
+			<dir>$iv/logs/raw</dir> <!-- if want to overwrite then can manually load in the param and edit the structure -->
+			<filename>IvRaw-$time.raw</filename>
+		</rawLog> 
+		<debugMode>0</debugMode>
+		<calib>
+			<points>[0.1 0.1];[.1 .9];[.9 .9];[.9 .1]</points>
+			<calibFcn>ivis.eyetracker.calib.IvFarmCalib</calibFcn>
+			<GUIidx>4</GUIidx>		
+		</calib>
+		<driftCorrection>
+			<correctForDrift>true</correctForDrift>
+			<maxDriftCorrection>6</maxDriftCorrection> <!-- in degrees -->
+			<driftWeight>1</driftWeight> <!-- implement -->
+		</driftCorrection>
+	</eyetracker>
+
+	<GUI>
+		<useGUI>false</useGUI>  <!-- overrides others -->	
+		<screenNum>2</screenNum>
+		<dockFlag>1</dockFlag>
+	</GUI>
+	
+	<dataLog>
+		<dir>$iv/logs/data</dir>
+		<filename>IvData-$time.csv</filename>
+		<arraySize>10000</arraySize>
+		<expansionFactor>2</expansionFactor>
+	</dataLog>
+	
+	<audio>
+		<isConnected>true</isConnected>
+		<isEnabled>true</isEnabled>
+		<devMode>true</devMode> <!-- useful for debugging -->
+
+		<runMode>0</runMode>
+		<reqlatencyclass>0</reqlatencyclass>
+				
+		<Fs>44100</Fs> <!-- should be same as stimParams.Fs, below -->
+		<devID></devID>
+							
+		<calibFn></calibFn>
+		<tolerance>10</tolerance>
+		<devName></devName>
+		<headID></headID>
+		<outChans>[0 1]</outChans>
+	</audio>
+
+</ROOT>

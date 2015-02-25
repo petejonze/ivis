@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="ivis_demo009__streaming_webcams_8m" kind="file">
+    <compoundname>ivisDemo009_streamingWebcams.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ivis_demo009__streaming_webcams_8m_1ae02594fdc2dbadbc699fce5e153eced7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivisDemo009_streamingWebcams</definition>
+        <argsstring>()</argsstring>
+        <name>ivisDemo009_streamingWebcams</name>
+        <briefdescription>
+<para>ivisDemo009_streamingWebcams. Stream a webcam feed into an ivis GUI window. </para>        </briefdescription>
+        <detaileddescription>
+<para>Output will be displayed in the GUI</para><para>Requires: ivis toolbox v1.3</para><para>Matlab: v2012 onwards</para><para><simplesect kind="see"><para><ref refid="ivis_demo008__playing_videos_8m" kindref="compound">ivisDemo008_playingVideos.m</ref> <ref refid="ivis_demo010__reading_raw_gaze_data_8m" kindref="compound">ivisDemo010_readingRawGazeData.m</ref></para></simplesect>
+Author(s): Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para><para>Version History: 1.0.1 PJ 02/08/2013 Simplified/neatened/updated. 1.0.0 PJ 22/06/2013 Initial build. 1.1.0 PJ 18/10/2013 General tidy up (ivis 1.4).</para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo009_streamingWebcams.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo009_streamingWebcams.m" bodystart="17" bodyend="54"/>
+        <references refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" compoundref="clear_abs_all_8m" startline="17" endline="82">clearAbsAll</references>
+        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="31">ivis::broadcaster::Screen</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ivisDemo009_streamingWebcams. Stream a webcam feed into an ivis GUI window. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="ivis_demo009__streaming_webcams_8m_1ae02594fdc2dbadbc699fce5e153eced7" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="ivis_demo009__streaming_webcams_8m_1ae02594fdc2dbadbc699fce5e153eced7" kindref="member" tooltip="ivisDemo009_streamingWebcams. Stream a webcam feed into an ivis GUI window.">ivisDemo009_streamingWebcams</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Clear<sp/>memory<sp/>and<sp/>set<sp/>workspace<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" kindref="member" tooltip="Clear command window: clc;.">clearAbsAll</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ivis.main.*<sp/>ivis.control.*<sp/>ivis.video.*;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Verify,<sp/>initialise,<sp/>and<sp/>launch<sp/>the<sp/>ivis<sp/>toolbox<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>IvMain.disableScreenChecks();<sp/></highlight><highlight class="comment">/*<sp/><sp/>not<sp/>appropriate<sp/>in<sp/>a<sp/>real<sp/>experiment<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>IvMain.initialise(IvParams.getDefaultConfig(</highlight><highlight class="stringliteral">&quot;<sp/>webcam.enable<sp/>&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>[eyetracker,<sp/>~,<sp/>InH,<sp/>winhandle]<sp/>=<sp/>IvMain.launch();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Main<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/><sp/>wrap<sp/>in<sp/>try..catch<sp/>to<sp/>ensure<sp/>a<sp/>graceful<sp/>exit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Open<sp/>video<sp/>and<sp/>start<sp/>playing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IvVideo.getInstance().open(IvVideo.getInstance().defaultVidFns[2]);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IvVideo.getInstance().play(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>true<sp/>for<sp/>fullscreen<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Idle<sp/>until<sp/>keypress<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>Press<sp/>SPACE<sp/>to<sp/>exit\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>~any(InH.getInput()<sp/>==<sp/>InH.INPT_SPACE.code)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" kindref="member" tooltip="SCREEN wrapper for PTB&amp;#39;s Screen command.">Screen</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>Flip<sp/>&quot;</highlight><highlight class="normal">,<sp/>winhandle);<sp/></highlight><highlight class="comment">/*<sp/><sp/>n.b.,<sp/>requires<sp/>that<sp/>ivis.broadcaster.*<sp/>has<sp/>been<sp/>imported<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eyetracker.refresh(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>false<sp/>to<sp/>suppress<sp/>data<sp/>logging<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WaitSecs(1/60);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Stop<sp/>video<sp/>and<sp/>close<sp/>the<sp/>file<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IvVideo.getInstance().close();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>ME</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IvMain.finishUp();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rethrow(ME);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>That&apos;s<sp/>it!<sp/>Close<sp/>windows<sp/>and<sp/>release<sp/>memory<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>IvMain.finishUp();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo009_streamingWebcams.m"/>
+  </compounddef>
+</doxygen>

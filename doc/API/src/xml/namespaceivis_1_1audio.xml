@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis_1_1audio" kind="namespace">
+    <compoundname>ivis::audio</compoundname>
+    <innerclass refid="classivis_1_1audio_1_1_iv_audio" prot="public">ivis::audio::IvAudio</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+audio/IvAudio.m" line="2"/>
+  </compounddef>
+</doxygen>

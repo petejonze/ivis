@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1gui_1_1_iv_g_u_iclassifier" kind="class" prot="public" abstract="yes">
+    <compoundname>ivis::gui::IvGUIclassifier</compoundname>
+    <basecompoundref refid="classivis_1_1gui_1_1_iv_g_u_ielement" prot="public" virt="non-virtual">ivis::gui::IvGUIelement</basecompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box" prot="public" virt="non-virtual">ivis::gui::IvGUIclassifierBox</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid" prot="public" virt="non-virtual">ivis::gui::IvGUIclassifierGrid</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l" prot="public" virt="non-virtual">ivis::gui::IvGUIclassifierLL</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector" prot="public" virt="non-virtual">ivis::gui::IvGUIclassifierVector</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a841fd076b6e901f09c56bc3a2d81c028" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::gui::IvGUIclassifier::BUFFER_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>BUFFER_LENGTH</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="65" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5e37a65f2c03f1a53f0da42c5728164c" prot="protected" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIclassifier::plot1Data</definition>
+        <argsstring></argsstring>
+        <name>plot1Data</name>
+        <briefdescription>
+<para>data buffers top panel data (location) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="71" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a18a734487515cf8634b5184f80756b81" prot="protected" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIclassifier::plot2Data</definition>
+        <argsstring></argsstring>
+        <name>plot2Data</name>
+        <briefdescription>
+<para>bottom panel data (evidence) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="78" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a16096932c5c6124fffeebc13848ffca2" prot="protected" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIclassifier::nAlternatives</definition>
+        <argsstring></argsstring>
+        <name>nAlternatives</name>
+        <briefdescription>
+<para>integer num hypotheses handles </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="84" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1aa36a4461985dbb79396de8c1c4230bba" prot="protected" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIclassifier::hPlot1Data</definition>
+        <argsstring></argsstring>
+        <name>hPlot1Data</name>
+        <briefdescription>
+<para>top panel data handle </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="91" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a1a565b4092e42f20ac136eba0f634fc5" prot="protected" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIclassifier::hPlot2Data</definition>
+        <argsstring></argsstring>
+        <name>hPlot2Data</name>
+        <briefdescription>
+<para>bottom panel data handle </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="97" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a9e8e452ff369aef7a345b05f848397d4" prot="protected" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIclassifier::hPlot2Text</definition>
+        <argsstring></argsstring>
+        <name>hPlot2Text</name>
+        <briefdescription>
+<para>bottom panel text handle </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="103" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1ac6d6faf78c5ff010c673aced95a05d5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIclassifier::update</definition>
+        <argsstring>(matlabtypesubstitute newPlot1Dat, matlabtypesubstitute plot2Dat, matlabtypesubstitute varargin)=0</argsstring>
+        <name>update</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>newPlot1Dat</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>plot2Dat</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para>Update figure window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newPlot1Dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>plot2Dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>varargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0cbbb3b8e6e73dc4321b52510cb90a93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIclassifier::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Reset the classifier panel; clear any accumulated data. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="145" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="145" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a3a76218f08b9b621f763baac90887cbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIclassifier::printStatus</definition>
+        <argsstring>(matlabtypesubstitute statusCode, matlabtypesubstitute gObjLookingAt)</argsstring>
+        <name>printStatus</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>statusCode</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>gObjLookingAt</declname>
+        </param>
+        <briefdescription>
+<para>Write the classification estimate to the panel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>statusCode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gObjLookingAt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="par"><title>Required fields of gObjLookingAt:</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="170" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="170" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1adaca87a349c83e6c832ed5d967e53d77" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIclassifier::getSetSingleton</definition>
+        <argsstring>(matlabtypesubstitute obj)</argsstring>
+        <name>getSetSingleton</name>
+        <reimplements refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3">getSetSingleton</reimplements>
+        <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1a5a510235db8c9c7adbfb84f7776cca14">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1ad67c2db3081faf5490fa658af5e2bc80">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1aa76eeb03a382bf1c6c62baebd4773a8a">getSetSingleton</reimplementedby>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para><heading level="6">.</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="note"><para>This method has non-standard access specifiers: <computeroutput>Access = (<ref refid="class_singleton" kindref="compound">Singleton</ref>)</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="209" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="209" bodyend="213"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5d81acf07654de4e16bb1f4bbcf6b64e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIclassifier::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="217" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="217" bodyend="219"/>
+        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="191" endline="206">Singleton::getInstanceSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0b1a163cc964e5aaf79a591dd512ef88" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>static noret::substitute ivis::gui::IvGUIclassifier::finishUp</definition>
+        <argsstring>()</argsstring>
+        <name>finishUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="221" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="221" bodyend="223"/>
+        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="223" endline="234">Singleton::finishUpSingleton</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic class for displaying classifier parameters and status, to be instantiated by a subclass. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvGUIclassifier Abstract Methods</title><para><itemizedlist>
+<listitem><para>update - Update figure window.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="par"><title>IvGUIclassifier Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1gui_1_1_iv_g_u_iclassifier" kindref="compound">IvGUIclassifier</ref> - Constructor.</para></listitem><listitem><para>reset - Reset the classifier panel; clear any accumulated data.</para></listitem><listitem><para>printStatus - Write the classification estimate to the panel.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2013 : converted to <ref refid="class_singleton" kindref="compound">Singleton</ref><linebreak/>
+ 1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000011"><xreftitle>Todo</xreftitle><xrefdescription><para>rename plots with discriptive names (spatial/temporal rather than plot1 plot2)</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="636">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="637" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="637">
+        <label>handle</label>
+      </node>
+      <node id="641">
+        <label>ivis::gui::IvGUIclassifierVector</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector"/>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>ivis::gui::IvGUIclassifierGrid</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid"/>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="640">
+        <label>ivis::gui::IvGUIclassifierLL</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l"/>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>ivis::gui::IvGUIclassifierBox</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box"/>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="635">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="636" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>ivis::gui::IvGUIclassifier</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier"/>
+        <childnode refid="635" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="644">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="645" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="645">
+        <label>handle</label>
+      </node>
+      <node id="643">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="642">
+        <label>ivis::gui::IvGUIclassifier</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier"/>
+        <childnode refid="643" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIclassifier.m" bodystart="19" bodyend="227"/>
+    <listofallmembers>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a841fd076b6e901f09c56bc3a2d81c028" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>BUFFER_LENGTH</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1afa9e744b4702fd984c2e03655a1fbf07" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>delete</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1af6ac3d0625d2f1ebff950b5e71ff7506" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>FIG_NAME</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0b1a163cc964e5aaf79a591dd512ef88" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>finishUp</name></member>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5d81acf07654de4e16bb1f4bbcf6b64e" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>getInstanceSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1adaca87a349c83e6c832ed5d967e53d77" prot="protected" virt="virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>hFig</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1aa36a4461985dbb79396de8c1c4230bba" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>hPlot1Data</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a1a565b4092e42f20ac136eba0f634fc5" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>hPlot2Data</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a9e8e452ff369aef7a345b05f848397d4" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>hPlot2Text</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1affdefad6611e9543314166e05c3446b6" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>init</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>isinit</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a16096932c5c6124fffeebc13848ffca2" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>nAlternatives</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5e37a65f2c03f1a53f0da42c5728164c" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>plot1Data</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a18a734487515cf8634b5184f80756b81" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>plot2Data</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a3a76218f08b9b621f763baac90887cbc" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>printStatus</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0cbbb3b8e6e73dc4321b52510cb90a93" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>reset</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1ac6d6faf78c5ff010c673aced95a05d5f" prot="public" virt="pure-virtual"><scope>ivis::gui::IvGUIclassifier</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

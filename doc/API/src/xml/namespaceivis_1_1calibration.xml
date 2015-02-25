@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis_1_1calibration" kind="namespace">
+    <compoundname>ivis::calibration</compoundname>
+    <innerclass refid="classivis_1_1calibration_1_1_iv_calibration" prot="public">ivis::calibration::IvCalibration</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceivis_1_1calibration_1aab6715ea1a22194740e753fd52626691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, resp &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, resp &gt; ivis::calibration::measurePoint</definition>
+        <argsstring>(matlabtypesubstitute x, matlabtypesubstitute y)</argsstring>
+        <name>measurePoint</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Dummy method simulating noisy (and sometimes biased) gaze measurements at a given x/y coordinate. </para>        </briefdescription>
+        <detaileddescription>
+<para><verbatim>    x       float   target coordinate, x location (pixels)
+
+    y       float   target coordinate, y location (pixels)
+</verbatim></para><para>Returns: <verbatim>   resp    [n,2]   gaze location observations
+</verbatim></para><para>Usage: resp = measurePoint(x, y) Example: resp = measurePoint(100, 200)</para><para>Requires: none</para><para><simplesect kind="see"><para>none</para></simplesect>
+Matlab: v2008 onwards</para><para>Author(s): Pete R Jones</para><para>Version History: v1.0.0 18/06/14 Initial build.</para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/measurePoint.m" line="19" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/measurePoint.m" bodystart="19" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/IvCalibration.m" line="2"/>
+  </compounddef>
+</doxygen>

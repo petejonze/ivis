@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1graphic_1_1_iv_graphic_compound" kind="class" prot="public">
+    <compoundname>ivis::graphic::IvGraphicCompound</compoundname>
+    <basecompoundref refid="classivis_1_1graphic_1_1_iv_screen_object" prot="public" virt="non-virtual">ivis::graphic::IvScreenObject</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a8c849478d753547443920e6c8757733b" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::graphic::IvGraphicCompound::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>user specified parameters </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="56" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1af4283a7c7131754a3bba95f1e93f8b02" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::graphic::IvGraphicCompound::graphicObjs</definition>
+        <argsstring></argsstring>
+        <name>graphicObjs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="65" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a20ff3635f8dc471db11368eaa923be7d" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::graphic::IvGraphicCompound::nGraphicObjs</definition>
+        <argsstring></argsstring>
+        <name>nGraphicObjs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="66" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a21c269c0cc8cf44ccce32fbafa46df86" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::graphic::IvGraphicCompound::plotColour</definition>
+        <argsstring></argsstring>
+        <name>plotColour</name>
+        <initializer>= &apos;b&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="72" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_graphic_compound_1aa73d4e5e18bdcc6a3f245167c9e597f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::graphic::IvGraphicCompound::IvGraphicCompound</definition>
+        <argsstring>(matlabtypesubstitute name, matlabtypesubstitute varargin)</argsstring>
+        <name>IvGraphicCompound</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1graphic_1_1_iv_graphic_compound" kindref="compound">IvGraphicCompound</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>varargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic_compound" kindref="compound">IvGraphicCompound</ref></para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="85" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="85" bodyend="96"/>
+        <references refid="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" compoundref="_iv_screen_object_8m" startline="61">ivis::graphic::IvScreenObject::TYPE_GRAPHICCOMPOUND</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::graphic::IvGraphicCompound::draw</definition>
+        <argsstring>(matlabtypesubstitute winhandle, matlabtypesubstitute varargin)</argsstring>
+        <name>draw</name>
+        <reimplements refid="classivis_1_1graphic_1_1_iv_screen_object_1a0018ceb2329f408d21d5672c974936bc">draw</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>winhandle</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para>Forward the <ref refid="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8" kindref="member">draw()</ref> command onto all constituent <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>winhandle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>varargin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="113" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="113" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a6c74b8f43e8ced7c7068e64a1a79f503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::graphic::IvGraphicCompound::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>Forward the <ref refid="classivis_1_1graphic_1_1_iv_graphic_compound_1a6c74b8f43e8ced7c7068e64a1a79f503" kindref="member">reset()</ref> command onto all constituent <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> objects. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="142" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="142" bodyend="149"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Conglomoration of <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> objects, all of which should be treated as one <computeroutput>unit</computeroutput> by the classifier. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvGraphicCompound Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1graphic_1_1_iv_graphic_compound" kindref="compound">IvGraphicCompound</ref> - Constructor.</para></listitem><listitem><para>draw - Forward the <ref refid="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8" kindref="member">draw()</ref> command onto all constituent <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> objects.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">ivis.graphic.IvGraphic</ref></para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="598">
+        <label>handle</label>
+      </node>
+      <node id="595">
+        <label>ivis::graphic::IvGraphicCompound</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
+        <childnode refid="596" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="598" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="597" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="602">
+        <label>handle</label>
+      </node>
+      <node id="599">
+        <label>ivis::graphic::IvGraphicCompound</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
+        <childnode refid="600" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="601" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="19" bodyend="162"/>
+    <listofallmembers>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>delete</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8" prot="public" virt="virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>draw</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a14390bf4fcaaa602c45c74d850e78e1a" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>eventNames</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1af4283a7c7131754a3bba95f1e93f8b02" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>graphicObjs</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1aa73d4e5e18bdcc6a3f245167c9e597f2" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>IvGraphicCompound</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a6882f0ad0c3d66144d1732d5baa673b4" prot="protected" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>IvScreenObject</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1add0a7baf0385630c2ccb69d3fe35896e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>listenerHandles</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1a8c849478d753547443920e6c8757733b" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>name</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1a20ff3635f8dc471db11368eaa923be7d" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>nGraphicObjs</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1a21c269c0cc8cf44ccce32fbafa46df86" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>plotColour</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1a6c74b8f43e8ced7c7068e64a1a79f503" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>reset</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a4a40af212e1c1fd5fddd2023e6c00cfc" prot="public" virt="pure-virtual" ambiguityscope="ivis::graphic::IvScreenObject::"><scope>ivis::graphic::IvGraphicCompound</scope><name>reset</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a7fe2988ce0ff2dc4e2d39981a2a5104e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>startListening</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a4059911a950ad01e8ae73abcc6d5cd64" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>startListeningTo</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ae63aa8d8e7e569d83e1b29d050c31bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>stopListening</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a50d1ac805a94af66ffb9bff3b4b0b934" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>toggleListening</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a447f995570459bb1d96964215358622e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>type</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a53ab6604b15a564fb6b3509ae74db3dd" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>TYPE_GRAPHIC</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>TYPE_GRAPHICCOMPOUND</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a2d10135dc6c9ed7ac46dc2f4e2b41abb" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>TYPE_PRIOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
