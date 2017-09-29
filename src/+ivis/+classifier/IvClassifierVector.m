@@ -164,7 +164,7 @@ classdef IvClassifierVector < ivis.classifier.IvClassifier
         function [] = updateParams(~) % interface implementation        
         end
         
-        function [] = updateEvidence(obj, xyt) % interface implementation
+        function [] = updateEvidence(obj, xyt, varargin) % interface implementation
             % add to buffer
             obj.rawbuffer.put(xyt(:,1:2));
             

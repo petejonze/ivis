@@ -16,9 +16,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="79" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="79" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
-        <referencedby refid="logsum_8m_1a0d3e7edbc57befeface31c4397afdce1" compoundref="logsum_8m" startline="17" endline="85">logsum</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="79" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="79" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
+        <referencedby refid="logsum_8m_1a0d3e7edbc57befeface31c4397afdce1" compoundref="logsum_8m" startline="17" endline="82">logsum</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1ae003122d56f26b05216df007e35c6ef7" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -31,11 +31,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="88" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="88" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="88" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="88" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
         <referencedby refid="logadd_8m_1a9337be272d9b20104b1234e14169c916" compoundref="logadd_8m" startline="17" endline="32">logadd</referencedby>
-        <referencedby refid="logsubtract_8m_1a694ffe06a428c197760ace85a623bc40" compoundref="logsubtract_8m" startline="17" endline="35">logsubtract</referencedby>
-        <referencedby refid="logsum_8m_1a0d3e7edbc57befeface31c4397afdce1" compoundref="logsum_8m" startline="17" endline="85">logsum</referencedby>
+        <referencedby refid="logsubtract_8m_1a694ffe06a428c197760ace85a623bc40" compoundref="logsubtract_8m" startline="17" endline="34">logsubtract</referencedby>
+        <referencedby refid="logsum_8m_1a0d3e7edbc57befeface31c4397afdce1" compoundref="logsum_8m" startline="17" endline="82">logsum</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a278ba2522f190bdafc45cfd3ba71a440" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -48,8 +48,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="89" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="89" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="89" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1ac9dc9cb76d310627100848e852d77a6e" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -62,8 +62,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="90" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="90" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="90" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a8436fafa63ecf520c83f62272768e3cb" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -76,8 +76,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="91" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="91" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="91" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a8abab53a05be51d8883fea6883fa8bf8" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -91,7 +91,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="92" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="92" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="92" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a5cc62da12f914a7827e56b09a06476ff" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -105,8 +105,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="101" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="101" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="101" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a70aea10db32db719e575b3cf70957dc1" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -122,8 +122,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="110" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="110" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="110" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a8777f21e10cff4183408c1dcf9d593ad" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -139,8 +139,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="120" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="120" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="120" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="120" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a5b4a4d23b8dd36f4613a0a0a98406777" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -156,8 +156,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="130" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="130" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="130" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a56dbe693468af6c542c8d7083ce112ef" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -171,8 +171,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="140" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="140" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="140" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="140" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a452b697c1a3876507d6082f9bb0c6e3b" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -186,7 +186,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="142" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="142" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="142" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a6d3916dc5f3e3fd39c5e48191de72658" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="152" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="152" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="152" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1af932ffd783b05a327c48dc52b3dc14df" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="154" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="154" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="154" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1ab5bf5325450c436966eb32dae991c151" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="156" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="156" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="156" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1aac83506ff4c04254fc096ed613f4ffdd" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="158" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="158" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="158" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1ad1a5d5f082e473624754fcae4afda11e" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -254,9 +254,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="160" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="160" bodyend="-1"/>
-        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="226">LennardJonesPotential</referencedby>
-        <referencedby refid="setfigdocked_8m_1a230b1643b241438d233d6015a786bffe" compoundref="setfigdocked_8m" startline="17" endline="257">setfigdocked</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="160" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="160" bodyend="-1"/>
+        <referencedby refid="class_lennard_jones_potential_1a9243d4de52743868ccaa7f91828cf2f2" compoundref="_lennard_jones_potential_8m" startline="197" endline="232">LennardJonesPotential</referencedby>
+        <referencedby refid="setfigdocked_8m_1a230b1643b241438d233d6015a786bffe" compoundref="setfigdocked_8m" startline="17" endline="272">setfigdocked</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a98c6b3bc841a05130b09086782d2958d" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -270,7 +270,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="170" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="170" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="170" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_lennard_jones_potential_1a5bd9a62b738479c2fe1acfd9f0f429bc" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -284,7 +284,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="179" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="179" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="179" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="179" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -413,7 +413,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="197" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="197" bodyend="226"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="197" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="197" bodyend="232"/>
         <references refid="class_lennard_jones_potential_1a5cc62da12f914a7827e56b09a06476ff" compoundref="_lennard_jones_potential_8m" startline="101">borders</references>
         <references refid="class_lennard_jones_potential_1a8777f21e10cff4183408c1dcf9d593ad" compoundref="_lennard_jones_potential_8m" startline="120">dt</references>
         <references refid="class_lennard_jones_potential_1a5b4a4d23b8dd36f4613a0a0a98406777" compoundref="_lennard_jones_potential_8m" startline="130">epsilon</references>
@@ -440,7 +440,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="250" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="250" bodyend="319"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="256" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="256" bodyend="334"/>
       </memberdef>
       <memberdef kind="function" id="class_lennard_jones_potential_1a5af4fbf9c63677895e0f73948a6da2e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -455,7 +455,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="337" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="337" bodyend="364"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="352" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="352" bodyend="387"/>
       </memberdef>
       <memberdef kind="function" id="class_lennard_jones_potential_1afb54b634060ec22657f259324f49407c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -493,7 +493,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="376" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="376" bodyend="405"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="399" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="399" bodyend="432"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -529,28 +529,28 @@
 Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="856">
+      <node id="873">
         <label>handle</label>
       </node>
-      <node id="855">
+      <node id="872">
         <label>LennardJonesPotential</label>
         <link refid="class_lennard_jones_potential"/>
-        <childnode refid="856" relation="public-inheritance">
+        <childnode refid="873" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="858">
+      <node id="875">
         <label>handle</label>
       </node>
-      <node id="857">
+      <node id="874">
         <label>LennardJonesPotential</label>
         <link refid="class_lennard_jones_potential"/>
-        <childnode refid="858" relation="public-inheritance">
+        <childnode refid="875" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="18" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="17" bodyend="422"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" line="18" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/LennardJonesPotential.m" bodystart="17" bodyend="449"/>
     <listofallmembers>
       <member refid="class_lennard_jones_potential_1a5cc62da12f914a7827e56b09a06476ff" prot="public" virt="non-virtual"><scope>LennardJonesPotential</scope><name>borders</name></member>
       <member refid="class_lennard_jones_potential_1a558e2e44f24aa835312c42f5ce947cf2" prot="public" virt="non-virtual"><scope>LennardJonesPotential</scope><name>calcNextTimestep</name></member>

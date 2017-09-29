@@ -44,13 +44,13 @@
 <codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>-----STATIC<sp/>METHODS<sp/>(protected)-----</highlight></codeline>
 <codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">/*<sp/>(<sp/>Static<sp/>)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">/*<sp/>(<sp/>Static<sp/>)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65" refid="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>mlhsInnerSubst&lt;matlabtypesubstitute,fullFn&gt;<sp/><ref refid="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" kindref="member" tooltip="Confirm whether file can be found, and append path if necessary. If not initially found based on the ...">validateFn</ref>(matlabtypesubstitute<sp/>fullFn,matlabtypesubstitute<sp/>logType)<sp/>{</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~exist(fullFn,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>file<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>try<sp/>to<sp/>fix<sp/>by<sp/>prepending<sp/>default<sp/>log<sp/>path<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fullerFn<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>logs<sp/>&quot;</highlight><highlight class="normal">,<sp/>logType,<sp/>fullFn);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fullerFn<sp/>=<sp/>fullfile(ivisdir(),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>logs<sp/>&quot;</highlight><highlight class="normal">,<sp/>logType,<sp/>fullFn);</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~exist(fullerFn,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>file<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>file<sp/>not<sp/>found:<sp/>%s\nNor<sp/>could<sp/>we<sp/>find:<sp/>%s<sp/>&quot;</highlight><highlight class="normal">,<sp/>fullFn,<sp/>fullerFn);</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
@@ -64,6 +64,6 @@
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m"/>
   </compounddef>
 </doxygen>

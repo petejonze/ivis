@@ -3,6 +3,7 @@
   <compounddef id="namespaceivis_1_1classifier" kind="namespace">
     <compoundname>ivis::classifier</compoundname>
     <innerclass refid="classivis_1_1classifier_1_1_iv_classifier" prot="public">ivis::classifier::IvClassifier</innerclass>
+    <innerclass refid="classivis_1_1classifier_1_1_iv_classifier_box" prot="public">ivis::classifier::IvClassifierBox</innerclass>
     <innerclass refid="classivis_1_1classifier_1_1_iv_classifier_grid" prot="public">ivis::classifier::IvClassifierGrid</innerclass>
     <innerclass refid="classivis_1_1classifier_1_1_iv_classifier_l_l" prot="public">ivis::classifier::IvClassifierLL</innerclass>
     <innerclass refid="classivis_1_1classifier_1_1_iv_classifier_vector" prot="public">ivis::classifier::IvClassifierVector</innerclass>
@@ -10,6 +11,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifier.m" line="2"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifier.m" line="2"/>
   </compounddef>
 </doxygen>

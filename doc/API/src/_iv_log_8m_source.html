@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/+ivis/+log/IvLog.m Source File</title>
+<title>ivis: +ivis/+log/IvLog.m Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -128,28 +128,28 @@ $(document).ready(function(){initNavTree('_iv_log_8m_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classivis_1_1log_1_1_iv_log.html" title="Abstract interface for data storage.">IvLog</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public .Singleton {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public ::Singleton {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     *  -----PROPERTIES-----</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html#a77086270b0c765b296a66f7eadf9122d">   54</a></span>&#160;                <a class="code" href="classivis_1_1log_1_1_iv_log.html#a77086270b0c765b296a66f7eadf9122d">homeDir</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html#a2c685a3134efa6beb336136ed53949b6">   55</a></span>&#160;    <a class="code" href="classivis_1_1log_1_1_iv_log.html#a2c685a3134efa6beb336136ed53949b6">fnPattern</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html#a77086270b0c765b296a66f7eadf9122d">   54</a></span>&#160;                matlabtypesubstitute <a class="code" href="classivis_1_1log_1_1_iv_log.html#a77086270b0c765b296a66f7eadf9122d">homeDir</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html#a2c685a3134efa6beb336136ed53949b6">   55</a></span>&#160;    matlabtypesubstitute <a class="code" href="classivis_1_1log_1_1_iv_log.html#a2c685a3134efa6beb336136ed53949b6">fnPattern</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     *  -----STATIC METHODS (protected)-----</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">protected</span>: <span class="comment">/* ( Static ) */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Static ) */</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html#a54e71e6a66005be148fbc393af4d7247">   65</a></span>&#160;        <span class="keyword">static</span> function fullFn = <a class="code" href="classivis_1_1log_1_1_iv_log.html#a54e71e6a66005be148fbc393af4d7247" title="Confirm whether file can be found, and append path if necessary. If not initially found based on the ...">validateFn</a>(fullFn,logType) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classivis_1_1log_1_1_iv_log.html#a54e71e6a66005be148fbc393af4d7247">   65</a></span>&#160;        <span class="keyword">static</span> mlhsInnerSubst&lt;matlabtypesubstitute,fullFn&gt; <a class="code" href="classivis_1_1log_1_1_iv_log.html#a54e71e6a66005be148fbc393af4d7247" title="Confirm whether file can be found, and append path if necessary. If not initially found based on the ...">validateFn</a>(matlabtypesubstitute fullFn,matlabtypesubstitute logType) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> ~exist(fullFn, <span class="stringliteral">&quot; file &quot;</span>)</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="comment">/*  try to fix by prepending default log path */</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                fullerFn = fullfile(<a class="code" href="ivisdir_8m.html#aed802197769db954482085af54e9fa00">ivisdir</a>(), <span class="stringliteral">&quot; logs &quot;</span>, logType, fullFn);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                fullerFn = fullfile(ivisdir(), <span class="stringliteral">&quot; logs &quot;</span>, logType, fullFn);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">if</span> ~exist(fullerFn, <span class="stringliteral">&quot; file &quot;</span>)</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    error(<span class="stringliteral">&quot; file not found: %s\nNor could we find: %s &quot;</span>, fullFn, fullerFn);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="keywordflow">else</span></div>
@@ -167,8 +167,8 @@ $(document).ready(function(){initNavTree('_iv_log_8m_source.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b1fc417f0740629bd4971c68e72b5ce0.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_1896cdbc6d638bece3c5cf420b9a82a7.html">+log</a></li><li class="navelem"><a class="el" href="_iv_log_8m.html">IvLog.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:40 for ivis by
+    <li class="navelem"><a class="el" href="dir_ff8247d13baa4c7278b64786bdcd0aa5.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_a4ef7f5fc982e5c7d2d9a74dfcc7e276.html">+log</a></li><li class="navelem"><a class="el" href="_iv_log_8m.html">IvLog.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:09 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

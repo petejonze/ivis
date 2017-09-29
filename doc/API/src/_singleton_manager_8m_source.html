@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/ivis_util/SingletonManager.m Source File</title>
+<title>ivis: ivis_util/SingletonManager.m Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('_singleton_manager_8m_source.html','')
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">private</span>: <span class="comment">/* ( Static ) */</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static</span> function  getSetIndex(addFlag,classname,verbosity) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">static</span> noret::substitute getSetIndex(matlabtypesubstitute addFlag,matlabtypesubstitute classname,matlabtypesubstitute verbosity) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            persistent index;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> nargin == 0</div>
@@ -179,19 +179,19 @@ $(document).ready(function(){initNavTree('_singleton_manager_8m_source.html','')
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Static ) */</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#a445d64603590d1ade17ca6532ad6e897">  114</a></span>&#160;        <span class="keyword">static</span> function  <a class="code" href="class_singleton_manager.html#a445d64603590d1ade17ca6532ad6e897" title="Register specified Singleton.">add</a>(classname) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#a445d64603590d1ade17ca6532ad6e897">  114</a></span>&#160;        <span class="keyword">static</span> noret::substitute <a class="code" href="class_singleton_manager.html#a445d64603590d1ade17ca6532ad6e897" title="Register specified Singleton.">add</a>(matlabtypesubstitute classname) {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="class_singleton_manager.html" title="Singleton manager class that maintains references to each Singleton object (and provides a mechanism ...">SingletonManager</a>.getSetIndex(1, classname);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#a4fbae2126445a86b3dc99db82575f3d7">  130</a></span>&#160;        <span class="keyword">static</span> function  <span class="keyword">remove</span>(classname) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#a4fbae2126445a86b3dc99db82575f3d7">  130</a></span>&#160;        <span class="keyword">static</span> noret::substitute <span class="keyword">remove</span>(matlabtypesubstitute classname) {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="class_singleton_manager.html" title="Singleton manager class that maintains references to each Singleton object (and provides a mechanism ...">SingletonManager</a>.getSetIndex(0, classname);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec">  146</a></span>&#160;        <span class="keyword">static</span> function  <a class="code" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec" title="Delete all Singletons. Print info to the console.">clearAll</a>(verbosity) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec">  146</a></span>&#160;        <span class="keyword">static</span> noret::substitute <a class="code" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec" title="Delete all Singletons. Print info to the console.">clearAll</a>(matlabtypesubstitute verbosity) {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 1</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                verbosity = 1;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            end</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="class_singleton_manager.html" title="Singleton manager class that maintains references to each Singleton object (and provides a mechanism ...">SingletonManager</a>.getSetIndex([], [], verbosity);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#a3539c196fe731989cd967653e7a58289">  165</a></span>&#160;        <span class="keyword">static</span> function  <a class="code" href="class_singleton_manager.html#a3539c196fe731989cd967653e7a58289" title="Print the names of all extant Singletons to the console.">listAll</a>() {</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="code" href="class_singleton_manager.html#a3539c196fe731989cd967653e7a58289">  165</a></span>&#160;        <span class="keyword">static</span> noret::substitute <a class="code" href="class_singleton_manager.html#a3539c196fe731989cd967653e7a58289" title="Print the names of all extant Singletons to the console.">listAll</a>() {</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <a class="code" href="class_singleton_manager.html" title="Singleton manager class that maintains references to each Singleton object (and provides a mechanism ...">SingletonManager</a>.getSetIndex();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;};</div>
@@ -202,8 +202,8 @@ $(document).ready(function(){initNavTree('_singleton_manager_8m_source.html','')
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ad6252dc1f7015853f32048412c9f73e.html">ivis_util</a></li><li class="navelem"><a class="el" href="_singleton_manager_8m.html">SingletonManager.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:40 for ivis by
+    <li class="navelem"><a class="el" href="dir_8248032291ee15c3f092b1111a949a27.html">ivis_util</a></li><li class="navelem"><a class="el" href="_singleton_manager_8m.html">SingletonManager.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:12 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -1,5 +1,8 @@
 %  Singleton for displaying gaze-location as a function of time.
 % 
+%    NB: will only display if data is being logged (e.g.,
+%    eyetracker.update(false) will result in a flat line)
+% 
 %  IvGUIeyetrackTemporal Methods:
 %    * IvGUIeyetrackTemporal - Constructor.
 %    * update                - Update figure window.
@@ -22,4 +25,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %  
+%
+%    Reference page in Doc Center
+%       doc ivis.gui.IvGUIeyetrackTemporal
+%
 %

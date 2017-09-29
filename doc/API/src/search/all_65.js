@@ -13,5 +13,5 @@ var searchData=
   ['expansionfactor',['expansionFactor',['../class_c_expandable_buffer.html#ae443329efce96b7791bc7d250c9e5c80',1,'CExpandableBuffer']]],
   ['expectedlatency_5fsec',['expectedLatency_sec',['../classivis_1_1eyetracker_1_1_iv_data_input.html#a1963d14659912d260dc5f8a1c89e4859',1,'ivis::eyetracker::IvDataInput']]],
   ['eyes',['eyes',['../classivis_1_1eyetracker_1_1_iv_data_input.html#a8df07712eabcff179a14910274c00803',1,'ivis::eyetracker::IvDataInput']]],
-  ['eyetracker',['eyetracker',['../classivis_1_1main_1_1_iv_params.html#abf032d2fd571e0b8df6667b5311f0304',1,'ivis::main::IvParams::eyetracker()'],['../classivis_1_1test_1_1_test___iv_classifier_l_l.html#a4c6deb3d608defe47786c88a08bebc47',1,'ivis::test::Test_IvClassifierLL::eyetracker()'],['../classivis_1_1video_1_1_track_box.html#af7ea983a96d0fc3344088b43d0948639',1,'ivis::video::TrackBox::eyeTracker()']]]
+  ['eyetracker',['eyeTracker',['../classivis_1_1calibration_1_1_track_box.html#a0d8255b798082e3d3ff04c474840f89f',1,'ivis::calibration::TrackBox::eyeTracker()'],['../classivis_1_1main_1_1_iv_params.html#abf032d2fd571e0b8df6667b5311f0304',1,'ivis::main::IvParams::eyetracker()'],['../classivis_1_1test_1_1_test___iv_classifier_l_l.html#a4c6deb3d608defe47786c88a08bebc47',1,'ivis::test::Test_IvClassifierLL::eyetracker()']]]
 ];

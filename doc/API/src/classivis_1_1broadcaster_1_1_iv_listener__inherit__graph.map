@@ -1,13 +1,14 @@
 <map id="ivis::broadcaster::IvListener" name="ivis::broadcaster::IvListener">
-<area shape="rect" id="node5" href="$classivis_1_1classifier_1_1_iv_classifier.html" title="Generic class for maintaining the level of evidence in favour of each potential Area of Interest..." alt="" coords="314,91,497,122"/>
-<area shape="rect" id="node13" href="$classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic)." alt="" coords="304,219,507,250"/>
-<area shape="rect" id="node21" href="$classivis_1_1video_1_1_iv_video.html" title="Video singleton for loading, playing and controlling videos." alt="" coords="335,274,476,305"/>
-<area shape="rect" id="node23" href="$classivis_1_1video_1_1_iv_webcam.html" title="Webcam singleton for displaying webcam feed in a GUI." alt="" coords="326,329,484,359"/>
-<area shape="rect" id="node25" href="$classivis_1_1video_1_1_track_box.html" title="Display Tobii eyetracker box schema and current eyeball info." alt="" coords="329,383,481,414"/>
-<area shape="rect" id="node7" href="$classivis_1_1classifier_1_1_iv_classifier_grid.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli..." alt="" coords="555,5,765,35"/>
-<area shape="rect" id="node9" href="$classivis_1_1classifier_1_1_iv_classifier_l_l.html" title="Singleton instantiation of IvClassifier, in which the decision variable is weighted cumulative&#45;loglik..." alt="" coords="561,59,759,90"/>
-<area shape="rect" id="node11" href="$classivis_1_1classifier_1_1_iv_classifier_vector.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the additive movement vect..." alt="" coords="568,114,752,164"/>
-<area shape="rect" id="node15" href="$classivis_1_1graphic_1_1_iv_graphic.html" title="Screenobject responsible for remembering the position of an image at each point in time..." alt="" coords="576,187,744,218"/>
-<area shape="rect" id="node17" href="$classivis_1_1graphic_1_1_iv_graphic_compound.html" title="Conglomoration of IvGraphic objects, all of which should be treated as one unit by the classifier..." alt="" coords="576,242,744,292"/>
-<area shape="rect" id="node19" href="$classivis_1_1graphic_1_1_iv_prior.html" title="Degenerate graphic object that doesn&#39;t move or resize." alt="" coords="586,315,734,346"/>
+<area shape="rect" id="node3" href="$classivis_1_1calibration_1_1_track_box.html" title="Display Tobii eyetracker box schema and current eyeball info." alt="" coords="326,70,445,111"/>
+<area shape="rect" id="node4" href="$classivis_1_1classifier_1_1_iv_classifier.html" title="Generic class for maintaining the level of evidence in favour of each potential Area of Interest..." alt="" coords="299,136,471,163"/>
+<area shape="rect" id="node9" href="$classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic)." alt="" coords="291,224,480,251"/>
+<area shape="rect" id="node13" href="$classivis_1_1video_1_1_iv_video.html" title="Video singleton for loading, playing and controlling videos." alt="" coords="319,275,451,301"/>
+<area shape="rect" id="node14" href="$classivis_1_1video_1_1_iv_webcam.html" title="Webcam singleton for displaying webcam feed in a GUI." alt="" coords="310,325,461,352"/>
+<area shape="rect" id="node5" href="$classivis_1_1classifier_1_1_iv_classifier_box.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli..." alt="" coords="529,5,721,32"/>
+<area shape="rect" id="node6" href="$classivis_1_1classifier_1_1_iv_classifier_grid.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli..." alt="" coords="528,56,723,83"/>
+<area shape="rect" id="node7" href="$classivis_1_1classifier_1_1_iv_classifier_l_l.html" title="Singleton instantiation of IvClassifier, in which the decision variable is weighted cumulative&#45;loglik..." alt="" coords="533,107,717,133"/>
+<area shape="rect" id="node8" href="$classivis_1_1classifier_1_1_iv_classifier_vector.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the additive movement vect..." alt="" coords="539,158,711,199"/>
+<area shape="rect" id="node10" href="$classivis_1_1graphic_1_1_iv_graphic.html" title="Screenobject responsible for remembering the position of an image at each point in time..." alt="" coords="548,224,703,251"/>
+<area shape="rect" id="node11" href="$classivis_1_1graphic_1_1_iv_graphic_compound.html" title="Conglomoration of IvGraphic objects, all of which should be treated as one unit by the classifier..." alt="" coords="548,275,703,317"/>
+<area shape="rect" id="node12" href="$classivis_1_1graphic_1_1_iv_prior.html" title="Degenerate graphic object that doesn&#39;t move or resize." alt="" coords="556,341,695,368"/>
 </map>

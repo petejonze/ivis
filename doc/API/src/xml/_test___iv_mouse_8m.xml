@@ -32,33 +32,32 @@
 <codeline lineno="20"><highlight class="normal"><sp/><sp/>:public<sp/>::TestCase<sp/>{</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>====================================================================</highlight></codeline>
 <codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>-----PUBLIC<sp/>METHODS-----</highlight></codeline>
-<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================</highlight></codeline>
-<codeline lineno="50"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56" refid="classivis_1_1test_1_1_test___iv_mouse_1ab147dfdf637d57ba6fe33c660ed3b449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1ab147dfdf637d57ba6fe33c660ed3b449" kindref="member" tooltip="Test_Test_IvMouse constructor.">Test_IvMouse</ref>(matlabtypesubstitute<sp/>name)<sp/>{</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">@TestCase(name);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="72" refid="classivis_1_1test_1_1_test___iv_mouse_1a08b070e83e0725d8f1e59023ba9eaabe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1a08b070e83e0725d8f1e59023ba9eaabe" kindref="member" tooltip="Testcase setup.">setUp</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="84" refid="classivis_1_1test_1_1_test___iv_mouse_1acc0bd292498b6359ad93f07f14009d98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1acc0bd292498b6359ad93f07f14009d98" kindref="member" tooltip="Testcase teardown.">tearDown</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="97" refid="classivis_1_1test_1_1_test___iv_mouse_1a0f7aa0f84df3a0a563d753237d3de377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1a0f7aa0f84df3a0a563d753237d3de377" kindref="member" tooltip="Dummy method.">testDummy</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEqual(1,1);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="110" refid="classivis_1_1test_1_1_test___iv_mouse_1a367af0f68dc55c0262583bcf61aeb580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1a367af0f68dc55c0262583bcf61aeb580" kindref="member" tooltip="Dummy method.">testDummy2</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEqual(1,1);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55" refid="classivis_1_1test_1_1_test___iv_mouse_1ab147dfdf637d57ba6fe33c660ed3b449" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1ab147dfdf637d57ba6fe33c660ed3b449" kindref="member" tooltip="Test_Test_IvMouse constructor.">Test_IvMouse</ref>(matlabtypesubstitute<sp/>name)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal"><sp/>=<sp/></highlight><highlight class="keyword">self</highlight><highlight class="normal">@TestCase(name);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71" refid="classivis_1_1test_1_1_test___iv_mouse_1a08b070e83e0725d8f1e59023ba9eaabe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1a08b070e83e0725d8f1e59023ba9eaabe" kindref="member" tooltip="Testcase setup.">setUp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83" refid="classivis_1_1test_1_1_test___iv_mouse_1acc0bd292498b6359ad93f07f14009d98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1acc0bd292498b6359ad93f07f14009d98" kindref="member" tooltip="Testcase teardown.">tearDown</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96" refid="classivis_1_1test_1_1_test___iv_mouse_1a0f7aa0f84df3a0a563d753237d3de377" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1a0f7aa0f84df3a0a563d753237d3de377" kindref="member" tooltip="Dummy method.">testDummy</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEqual(1,1);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109" refid="classivis_1_1test_1_1_test___iv_mouse_1a367af0f68dc55c0262583bcf61aeb580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1test_1_1_test___iv_mouse_1a367af0f68dc55c0262583bcf61aeb580" kindref="member" tooltip="Dummy method.">testDummy2</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>assertEqual(1,1);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
 <codeline lineno="127"><highlight class="normal"></highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMouse.m"/>
   </compounddef>
 </doxygen>

@@ -3,6 +3,10 @@
 %   	Intercepts Screen command and inserts a PreFlip broadcast event before
 %   	any 'Flip' commands
 % 
+%    Note, because further objects may be drawn just prior to the final
+%    'Flip', it is important NOT to use: Screen('DrawingFinished',
+%    winhandle) in your script!
+% 
 %  Parameters:             
 % 
 %      	varargin   whatever PTB's Screen() requires

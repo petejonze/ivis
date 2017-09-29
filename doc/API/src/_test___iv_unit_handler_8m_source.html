@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/+ivis/+test/Test_IvUnitHandler.m Source File</title>
+<title>ivis: +ivis/+test/Test_IvUnitHandler.m Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -128,52 +128,51 @@ $(document).ready(function(){initNavTree('_test___iv_unit_handler_8m_source.html
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html" title="xUnit tests for ivis.math.IvUnitHandler.">Test_IvUnitHandler</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public .TestCase {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public ::TestCase {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a102dfd07b6c87e63fff90dbf739f3b11">   54</a></span>&#160;        <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a102dfd07b6c87e63fff90dbf739f3b11" title="Test_IvUnitHandler constructor.">Test_IvUnitHandler</a>(name) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keyword">self</span> = <span class="keyword">self</span>@TestCase(name);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a2dbe72c0f2438a915f92b23246c428da">   70</a></span>&#160;        function  <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a2dbe72c0f2438a915f92b23246c428da" title="Testcase setup.">setUp</a>() {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="class_singleton_manager.html" title="Singleton manager class that maintains references to each Singleton object (and provides a mechanism ...">SingletonManager</a>.<a class="code" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec" title="Delete all Singletons. Print info to the console.">clearAll</a>(0); <span class="comment">/*  in case any previous crashed</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            screenWidth_cm = 59.5;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            screenWidth_px = 1280;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            viewingDist_cm = 60;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            ivis.math.IvUnitHandler(screenWidth_cm, screenWidth_px, viewingDist_cm);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a47b00e8b501e80b5200a0eaff4b7e1d5">   88</a></span>&#160;        function  <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a47b00e8b501e80b5200a0eaff4b7e1d5" title="Testcase teardown.">tearDown</a>() {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            ivis.math.IvUnitHandler.finishUp;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#adb01de614eb444f94b8442afd4230cca">  102</a></span>&#160;        function  <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#adb01de614eb444f94b8442afd4230cca" title="Validate degrees-to-cm conversion (to 4 dp).">testDeg2cm</a>() {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            assertElementsAlmostEqual(ivis.math.IvUnitHandler.getInstance().deg2cm(6), 6.2889, <span class="stringliteral">&quot; relative &quot;</span>, 1.0000e-05)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a5d9a4be795a20d348688724e6ddad407">  115</a></span>&#160;        function  <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a5d9a4be795a20d348688724e6ddad407" title="Validate cm-to-degree conversion (to 4 dp).">testCm2deg</a>() {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            assertElementsAlmostEqual(ivis.math.IvUnitHandler.getInstance().cm2deg(20), 18.9246, <span class="stringliteral">&quot; relative &quot;</span>, 1.0000e-05)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a7f2501b5936e4ad37438ce68551f2ef2">  128</a></span>&#160;        function  <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a7f2501b5936e4ad37438ce68551f2ef2" title="Validate that IvUnitHandler must be initialised before requesting a singleton object.">testNotInitialised</a>() {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            ivis.math.IvUnitHandler.finishUp();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            assertExceptionThrown(@ivis.math.IvUnitHandler.getInstance, <span class="stringliteral">&quot; IvUnitHandler:FailedToGetSingleton_notInitialised &quot;</span>)</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a102dfd07b6c87e63fff90dbf739f3b11">   53</a></span>&#160;        <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a102dfd07b6c87e63fff90dbf739f3b11" title="Test_IvUnitHandler constructor.">Test_IvUnitHandler</a>(matlabtypesubstitute name) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keyword">self</span> = <span class="keyword">self</span>@TestCase(name);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a2dbe72c0f2438a915f92b23246c428da">   69</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a2dbe72c0f2438a915f92b23246c428da" title="Testcase setup.">setUp</a>() {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="class_singleton_manager.html" title="Singleton manager class that maintains references to each Singleton object (and provides a mechanism ...">SingletonManager</a>.<a class="code" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec" title="Delete all Singletons. Print info to the console.">clearAll</a>(0); <span class="comment">/*  in case any previous crashed */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            screenWidth_cm = 59.5;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            screenWidth_px = 1280;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            viewingDist_cm = 60;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            ivis.math.IvUnitHandler(screenWidth_cm, screenWidth_px, viewingDist_cm);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a47b00e8b501e80b5200a0eaff4b7e1d5">   87</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a47b00e8b501e80b5200a0eaff4b7e1d5" title="Testcase teardown.">tearDown</a>() {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            ivis.math.IvUnitHandler.finishUp;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#adb01de614eb444f94b8442afd4230cca">  101</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#adb01de614eb444f94b8442afd4230cca" title="Validate degrees-to-cm conversion (to 4 dp).">testDeg2cm</a>() {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            assertElementsAlmostEqual(ivis.math.IvUnitHandler.getInstance().deg2cm(6), 6.2889, <span class="stringliteral">&quot; relative &quot;</span>, 1.0000e-05)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a5d9a4be795a20d348688724e6ddad407">  114</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a5d9a4be795a20d348688724e6ddad407" title="Validate cm-to-degree conversion (to 4 dp).">testCm2deg</a>() {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            assertElementsAlmostEqual(ivis.math.IvUnitHandler.getInstance().cm2deg(20), 18.9246, <span class="stringliteral">&quot; relative &quot;</span>, 1.0000e-05)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a7f2501b5936e4ad37438ce68551f2ef2">  127</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1test_1_1_test___iv_unit_handler.html#a7f2501b5936e4ad37438ce68551f2ef2" title="Validate that IvUnitHandler must be initialised before requesting a singleton object.">testNotInitialised</a>() {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            ivis.math.IvUnitHandler.finishUp();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            assertExceptionThrown(@ivis.math.IvUnitHandler.getInstance, <span class="stringliteral">&quot; IvUnitHandler:FailedToGetSingleton_notInitialised &quot;</span>)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b1fc417f0740629bd4971c68e72b5ce0.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_a86ed13aab1e81c3a268cb26998453bf.html">+test</a></li><li class="navelem"><a class="el" href="_test___iv_unit_handler_8m.html">Test_IvUnitHandler.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:40 for ivis by
+    <li class="navelem"><a class="el" href="dir_ff8247d13baa4c7278b64786bdcd0aa5.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_a87c9a1b8075271d5949e6cb865ba700.html">+test</a></li><li class="navelem"><a class="el" href="_test___iv_unit_handler_8m.html">Test_IvUnitHandler.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:10 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

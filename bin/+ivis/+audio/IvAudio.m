@@ -18,9 +18,10 @@
 %    * setLevel       - Calibrate the specified audio vector to play at a specified level, given a pre-computed rms-db mapping.
 %    * setDefaultLevel- Set the default output level, e.g., if no level is specified when calling obj.play().
 %    * wavload        - Load audio stream from specified .wav file.    
+%    * loadAll        - Helper/convenience function for loading all sounds with a given extension, and in a given directory.
+%    * getNewSlave    - Create a new audio slave, for multitrack mixing.
 % 
 %  IvAudio Static Methods:
-%    * loadAll       - Helper/convenience function for loading all sounds with a given extension, and in a given directory.
 %    * getPureTone   - Get a sine wave with a given frequency/duration.
 %    * padChannels   - Expand audio vector/matrix so that rows match N out channels (filling extra channels with zeros).
 %    * setRMS        - Set root-mean-square power to a specified value.
@@ -37,7 +38,16 @@
 %    1.1 PJ 06/2013 : updated documentation\n
 % 
 % 
+%  @TODO: should probably split PsychPortAudio and MatlabBuiltIn sound
+%  into seperate subclasses (i.e., rather than use of switch..case) --
+%  NB: affects constructor(), destructor(), enable(), disable(), play(),
+%  stop()
+% 
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 % 
+%
+%    Reference page in Doc Center
+%       doc ivis.audio.IvAudio
+%
 %

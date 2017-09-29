@@ -1,6 +1,7 @@
 var searchData=
 [
   ['calibration',['calibration',['../classivis_1_1main_1_1_iv_params.html#ac6984a9e495c663339db99aa2b8a1c2d',1,'ivis::main::IvParams']]],
+  ['calibrationdata',['CalibrationData',['../classivis_1_1eyetracker_1_1_iv_smi.html#a60c1a1329c54f01f5353c325d6c948ed',1,'ivis::eyetracker::IvSmi']]],
   ['capacity',['capacity',['../class_c_circular_buffer.html#a514b50528ca59b2ab52839fba30d8ad3',1,'CCircularBuffer::capacity()'],['../class_c_expandable_buffer.html#aa65ff4a2d35e248f4fd66e8b9a48834c',1,'CExpandableBuffer::capacity()']]],
   ['categoryobjs',['categoryObjs',['../classivis_1_1classifier_1_1_iv_classifier_grid.html#aa883bb4975e6801a050242c1d9877ba1',1,'ivis::classifier::IvClassifierGrid::categoryObjs()'],['../classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a30ec93cf048d135de4e1d22d36d42770',1,'ivis::gui::IvGUIclassifierGrid::categoryObjs()']]],
   ['classifier',['classifier',['../classivis_1_1main_1_1_iv_params.html#a78d8756554b95d18c32b68cc0db07ee8',1,'ivis::main::IvParams']]],

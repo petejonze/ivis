@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/+ivis/+classifier/IvClassifierVector.m Source File</title>
+<title>ivis: +ivis/+classifier/IvClassifierVector.m Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -128,176 +128,179 @@ $(document).ready(function(){initNavTree('_iv_classifier_vector_8m_source.html',
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the additive movement vect...">IvClassifierVector</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public .ivis.classifier.IvClassifier {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public ::ivis::classifier::IvClassifier {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">     *  -----PROPERTIES-----</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a63dd6622f4576fb1a2f86ee22b41fd3e">   69</a></span>&#160;                <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a63dd6622f4576fb1a2f86ee22b41fd3e" title="user specified parameters ">targDirection_deg</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a881776c3008221b31279e61c57aec1ce">   79</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a881776c3008221b31279e61c57aec1ce">margin_deg</a>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a7723f0f97a889c633a938dcd5f04cfc1">   88</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a7723f0f97a889c633a938dcd5f04cfc1">observedTheta</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ac83ee952686c0a097638c1c5d427e0cf">   97</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ac83ee952686c0a097638c1c5d427e0cf">observedDeg</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#afba471ca24c880557e5b46d40789d24e">  106</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#afba471ca24c880557e5b46d40789d24e" title="for drawing">observedRho</a>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a3c94a050515ca3c0b99d01b82439d315">  116</a></span>&#160;        drawColor = <span class="stringliteral">&quot;[255 100 255]&quot;</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1c7e7ab3b19f6ecda8cf663eb76365f6">  126</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1c7e7ab3b19f6ecda8cf663eb76365f6">mx</a>;</div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a133ff280e250ea4aee99d9d805a73956">  135</a></span>&#160;    <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a133ff280e250ea4aee99d9d805a73956">my</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a63dd6622f4576fb1a2f86ee22b41fd3e">   68</a></span>&#160;                matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a63dd6622f4576fb1a2f86ee22b41fd3e" title="user specified parameters ">targDirection_deg</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a881776c3008221b31279e61c57aec1ce">   78</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a881776c3008221b31279e61c57aec1ce">margin_deg</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a7723f0f97a889c633a938dcd5f04cfc1">   87</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a7723f0f97a889c633a938dcd5f04cfc1">observedTheta</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ac83ee952686c0a097638c1c5d427e0cf">   96</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ac83ee952686c0a097638c1c5d427e0cf">observedDeg</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#afba471ca24c880557e5b46d40789d24e">  105</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#afba471ca24c880557e5b46d40789d24e" title="for drawing">observedRho</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a3c94a050515ca3c0b99d01b82439d315">  115</a></span>&#160;        matlabtypesubstitute drawColor = <span class="stringliteral">&quot;[255 100 255]&quot;</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1c7e7ab3b19f6ecda8cf663eb76365f6">  125</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1c7e7ab3b19f6ecda8cf663eb76365f6">mx</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a133ff280e250ea4aee99d9d805a73956">  134</a></span>&#160;    matlabtypesubstitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a133ff280e250ea4aee99d9d805a73956">my</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ae31301f2465dd3d657ea7c8e72c23293">  153</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ae31301f2465dd3d657ea7c8e72c23293" title="IvClassifierVector Constructor.">IvClassifierVector</a>(matlabtypesubstitute targDirection_deg,matlabtypesubstitute margin_deg,matlabtypesubstitute rqdMagnitude,matlabtypesubstitute nsecs,matlabtypesubstitute bufferlength,matlabtypesubstitute GUIidx) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ae31301f2465dd3d657ea7c8e72c23293">  156</a></span>&#160;        <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#ae31301f2465dd3d657ea7c8e72c23293" title="IvClassifierVector Constructor.">IvClassifierVector</a>(targDirection_deg,margin_deg,rqdMagnitude,nsecs,bufferlength,GUIidx) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="comment">/*  parse inputs</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            params = ivis.main.IvParams.getInstance();</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 2 || isempty(margin_deg)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                margin_deg = params.classifier.vector.margin_deg;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            end</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 3 || isempty(rqdMagnitude)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                rqdMagnitude = params.classifier.vector.rqdMagnitude;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            end</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 4 || isempty(nsecs)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                nsecs = params.classifier.vector.nsecs;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            end</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 5 || isempty(bufferlength)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                bufferlength = params.classifier.vector.bufferLength;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            end</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 6</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                GUIidx = params.classifier.GUIidx;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            end</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="comment">/*  call superclass</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            obj = obj@ivis.classifier.IvClassifier(length(targDirection_deg), rqdMagnitude, nsecs, bufferlength);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="comment">/*  wrap any negative values (and any &gt; 360)</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="comment">/*  parse inputs */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            params = ivis.main.IvParams.getInstance();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 2 || isempty(margin_deg)</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                margin_deg = params.classifier.vector.margin_deg;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            end</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 3 || isempty(rqdMagnitude)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                rqdMagnitude = params.classifier.vector.rqdMagnitude;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            end</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 4 || isempty(nsecs)</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                nsecs = params.classifier.vector.nsecs;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            end</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 5 || isempty(bufferlength)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                bufferlength = params.classifier.vector.bufferLength;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            end</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 6</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                GUIidx = params.classifier.GUIidx;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            end</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="comment">/*  validate */</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">if</span> ~isempty(GUIidx) &amp;&amp; ~params.GUI.useGUI</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;               fprintf(<span class="stringliteral">&quot; IvClassifier: GUI is disabled, so specified GUI index will be ignored\n &quot;</span>); </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;               GUIidx = [];</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            end</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="comment">/*  call superclass */</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            obj = obj@ivis.classifier.IvClassifier(length(targDirection_deg), rqdMagnitude, nsecs, bufferlength);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="comment">/*  wrap any negative values (and any &gt; 360) */</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            targDirection_deg = mod(targDirection_deg,360);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="comment">/*  store</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            obj.targDirection_deg= targDirection_deg;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            obj.margin_deg= margin_deg;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="comment">/*  initialise rawbuffer</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            obj.rawbuffer= <a class="code" href="class_c_circular_buffer.html" title="circular-buffer (or: ring buffer) data-structure.">CCircularBuffer</a>(obj.bufferLength, 2); <span class="comment">/* [xy]</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="comment">/*  initialise GUI element if GUIidx specified</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            <span class="keywordflow">if</span> ~isempty(GUIidx)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                obj.guiElement= ivis.gui.IvGUIclassifierVector(GUIidx, rqdMagnitude, targDirection_deg);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            end</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a6c5b0430d3ab7a2a4cba556af789ee6e">  222</a></span>&#160;        function  <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a6c5b0430d3ab7a2a4cba556af789ee6e" title="Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic)...">draw</a>(unused1,unused2) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">if</span> isempty(obj.winhandle)</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <span class="comment">/*  get winhandle</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                params = ivis.main.IvParams.getInstance();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                obj.winhandle= params.graphics.winhandle;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                <span class="comment">/*  for convenience, to avoid have to compute on every draw()</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="comment">                 * command</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                obj.mx= params.graphics.mx;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                obj.my= params.graphics.my;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            end</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="comment">/*  get values</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            [x,y] = pol2cart(obj.observedTheta, obj.observedRho);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="comment">/*  draw</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <a class="code" href="namespaceivis_1_1broadcaster.html#a035702262427ed8c3b5b3d6d6d025b02" title="SCREEN wrapper for PTB&#39;s Screen command.">Screen</a>(<span class="stringliteral">&quot; DrawLine &quot;</span>, obj.winhandle, obj.drawColor, obj.mx, obj.my, obj.mx+x, obj.my-y, 5);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="comment">/*  store */</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            obj.targDirection_deg= targDirection_deg;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            obj.margin_deg= margin_deg;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="comment">/*  initialise rawbuffer */</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            obj.rawbuffer= <a class="code" href="class_c_circular_buffer.html" title="circular-buffer (or: ring buffer) data-structure.">CCircularBuffer</a>(obj.bufferLength, 2); <span class="comment">/* [xy] */</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="comment">/*  initialise GUI element if GUIidx specified */</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="keywordflow">if</span> ~isempty(GUIidx)</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                obj.guiElement= ivis.gui.IvGUIclassifierVector(GUIidx, rqdMagnitude, targDirection_deg);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            end</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a6c5b0430d3ab7a2a4cba556af789ee6e">  219</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a6c5b0430d3ab7a2a4cba556af789ee6e" title="Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic)...">draw</a>(matlabtypesubstitute unused1,matlabtypesubstitute unused2) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            </div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">if</span> isempty(obj.winhandle)</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="comment">/*  get winhandle */</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                params = ivis.main.IvParams.getInstance();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                obj.winhandle= params.graphics.winhandle;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <span class="comment">/*  for convenience, to avoid have to compute on every draw()</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="comment">                 * command */</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                obj.mx= params.graphics.mx;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                obj.my= params.graphics.my;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            end</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="comment">/*  get values */</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            [x,y] = pol2cart(obj.observedTheta, obj.observedRho);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">if</span> ~isempty(x)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <span class="comment">/*  draw */</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <a class="code" href="namespaceivis_1_1broadcaster.html#a035702262427ed8c3b5b3d6d6d025b02" title="SCREEN wrapper for PTB&#39;s Screen command.">Screen</a>(<span class="stringliteral">&quot; DrawLine &quot;</span>, obj.winhandle, obj.drawColor, obj.mx, obj.my, obj.mx+x, obj.my-y, 5);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="comment">/*  additional (debug) info */</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                DrawFormattedText(obj.winhandle, sprintf(<span class="stringliteral">&quot; %1.2f  -  %1.2f  -  %1.2f &quot;</span>, <a class="code" href="pol2cmp_8m.html#a3af66f5a93e8b99c879a38ac4c2ca2c7" title="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra...">pol2cmp</a>(obj.observedTheta), obj.observedRho, obj.evidence(1)), [], [], 1);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                warning(<span class="stringliteral">&quot; No data to draw?? &quot;</span>);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            end</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">/* % ====================================================================</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">     *  -----PROTECTED METHODS-----</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      </div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a0819270155e5c5cd311bcd89fc689692">  256</a></span>&#160;        function  <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a0819270155e5c5cd311bcd89fc689692">updateGUI</a>(xy,lookingAt) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            obj.guiElement.update(xy, obj.evidence, obj.observedTheta, obj.observedRho)</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">if</span> (obj.status ~= obj.STATUS_UNDECIDED)</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                obj.guiElement.printStatus(obj.status, lookingAt);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            end</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1bd4dd6307c3b168788ad3537280655d">  264</a></span>&#160;        function  <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1bd4dd6307c3b168788ad3537280655d" title="Update classifier parameters (e.g., if graphics have moved). N.b., this is done separately from updat...">updateParams</a>() {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#af253e6edc6fe74ec5e27d17980367cc1">  268</a></span>&#160;        function  <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#af253e6edc6fe74ec5e27d17980367cc1">updateEvidence</a>(xyt) {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            idx = (xyt(:,3) - ivis.eyetracker.IvDataInput.getInstance().mostRecentSaccadeTime()) &lt; .4;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="comment">/*  sum(idx)</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            xyt(idx,:) = NaN;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="comment">/*  add to buffer</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            obj.rawbuffer.put(xyt(:,1:2));</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="comment">/* % ====================================================================</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment">     *  -----PROTECTED METHODS-----</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a0819270155e5c5cd311bcd89fc689692">  254</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a0819270155e5c5cd311bcd89fc689692">updateGUI</a>(matlabtypesubstitute xy,matlabtypesubstitute lookingAt) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            obj.guiElement.update(xy, obj.evidence, obj.observedTheta, obj.observedRho)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordflow">if</span> (obj.status ~= obj.STATUS_UNDECIDED)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                obj.guiElement.printStatus(obj.status, lookingAt);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            end</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1bd4dd6307c3b168788ad3537280655d">  262</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1bd4dd6307c3b168788ad3537280655d" title="Update classifier parameters (e.g., if graphics have moved). N.b., this is done separately from updat...">updateParams</a>() {</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a44fa52e201614cc41dfa6619e5e23c6e">  266</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a44fa52e201614cc41dfa6619e5e23c6e" title="add to buffer">updateEvidence</a>(matlabtypesubstitute xyt,matlabtypesubstitute varargin) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            obj.rawbuffer.put(xyt(:,1:2));</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            <span class="comment">/*  sum first-derivative to get current direction-of-change vector */</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            dxdy = diff(obj.rawbuffer.get(),[],1);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            dxdy = nansum(dxdy,1);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            <span class="comment">/*  convert to polar coordinates */</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            [obj.observedTheta, obj.observedRho] = cart2pol(dxdy(1), -dxdy(2)); <span class="comment">/* [direction speed/ma] */</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            obj.observedDeg= <a class="code" href="pol2cmp_8m.html#a3af66f5a93e8b99c879a38ac4c2ca2c7" title="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra...">pol2cmp</a>(obj.observedTheta); <span class="comment">/*  convert to 0-360 deg reference (0 == north) */</span></div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="comment">/*  sum first-derivative to get current direction-of-change vector</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            dxdy = diff(obj.rawbuffer.get());</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            dxdy(abs(dxdy)&gt;100) = NaN;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            dxdy = nansum(dxdy,1);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="comment">/*  calculate deviations */</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            err = obj.targDirection_deg - obj.observedDeg; <span class="comment">/*  deviation between targets and observed */</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            err = mod(err,360); <span class="comment">/*  e.g. so -358 =&gt; 2 */</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">/*  convert to polar coordinates</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            [obj.observedTheta, obj.observedRho] = cart2pol(dxdy(1), -dxdy(2)); <span class="comment">/* [direction speed/ma]          </span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            obj.observedDeg= <a class="code" href="pol2cmp_8m.html#a3af66f5a93e8b99c879a38ac4c2ca2c7" title="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra...">pol2cmp</a>(obj.observedTheta); <span class="comment">/*  convert to 0-360 deg reference (0 == north)</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="comment">/*  calculate deviations</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            err = obj.targDirection_deg - obj.observedDeg; <span class="comment">/*  deviation between targets and observed</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            err = mod(err,360); <span class="comment">/*  e.g. so -358 =&gt; 2</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            obj.evidence= (err &lt; obj.margin_deg) * obj.observedRho;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;</div>
-<div class="line"><a name="l00302"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a98e9e43ed5408eeb3e7e0d4aaf3b80e6">  302</a></span>&#160;        function o = <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a98e9e43ed5408eeb3e7e0d4aaf3b80e6" title="Return the object at index i. Each object is a possible area of interest.">getClassObj</a>(i) {</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            x = obj.targDirection_deg(i);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            o = <span class="keyword">struct</span>(<span class="stringliteral">&quot; name &quot;</span>,num2str(x));</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            obj.evidence= (err &lt; obj.margin_deg) * obj.observedRho;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        }</div>
+<div class="line"><a name="l00294"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a98e9e43ed5408eeb3e7e0d4aaf3b80e6">  294</a></span>&#160;        mlhsInnerSubst&lt;matlabtypesubstitute,o&gt; <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a98e9e43ed5408eeb3e7e0d4aaf3b80e6" title="Return the object at index i. Each object is a possible area of interest.">getClassObj</a>(matlabtypesubstitute i) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            x = obj.targDirection_deg(i);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            o = <span class="keyword">struct</span>(<span class="stringliteral">&quot; name &quot;</span>,num2str(x));</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno"><a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#aeed9bcf9c1116599a0f1a387725af91b">  300</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#aeed9bcf9c1116599a0f1a387725af91b">classifierSpecificReset</a>(matlabtypesubstitute newTargDirection_deg,matlabtypesubstitute newCriteria,matlabtypesubstitute startXY) {</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="comment">/* </span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="comment">            obj.targDirection_deg = mod(newTargDirection_deg, 360); */</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="comment">/* </span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="comment">            if length(newCriteria)==1 */</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                newCriteria = repmat(newCriteria,1,obj.nAlternatives); <span class="comment">/*  assume same for all */</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;};</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;}</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;}</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            end</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            obj.criterion= newCriteria;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="comment">/* </span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="comment">            obj.rawbuffer.put(startXY); */</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    </div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;};</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;}</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b1fc417f0740629bd4971c68e72b5ce0.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_c8d51911d84f20b3beef08bbdb189adc.html">+classifier</a></li><li class="navelem"><a class="el" href="_iv_classifier_vector_8m.html">IvClassifierVector.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:39 for ivis by
+    <li class="navelem"><a class="el" href="dir_ff8247d13baa4c7278b64786bdcd0aa5.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_73ef90a042eeab54faeaf7e328fab7b3.html">+classifier</a></li><li class="navelem"><a class="el" href="_iv_classifier_vector_8m.html">IvClassifierVector.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:08 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

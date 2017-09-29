@@ -26,8 +26,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/hline.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/hline.m" bodystart="17" bodyend="102"/>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a58cccbdafce5c9f4534cc0a1bda1728e" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="85" endline="150">ivis::gui::IvGUIclassifierLL::IvGUIclassifierLL</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/hline.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/hline.m" bodystart="17" bodyend="102"/>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ab2dd88ef29dcf566bec9716d9426c5ec" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="85" endline="156">ivis::gui::IvGUIclassifierLL::IvGUIclassifierLL</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -54,8 +54,8 @@
 <codeline lineno="17" refid="hline_8m_1a4bd5b5d17c6595c5d211993ca71c1e3c" refkind="member"><highlight class="normal">mlhsSubst&lt;mlhsInnerSubst&lt;matlabtypesubstitute,hhh&gt;<sp/>,mlhsInnerSubst&lt;matlabtypesubstitute,hTxt&gt;<sp/>&gt;<sp/><ref refid="hline_8m_1a4bd5b5d17c6595c5d211993ca71c1e3c" kindref="member">hline</ref>(matlabtypesubstitute<sp/>y,matlabtypesubstitute<sp/>in1,matlabtypesubstitute<sp/>in2)<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(y)&gt;1<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>vector<sp/>input</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(y)&gt;1<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>vector<sp/>input<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>I=1:length(y)</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>nargin</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1</highlight></codeline>
@@ -118,19 +118,19 @@
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yrange=yy(2)-yy(1);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yunit=(y-yy(1))/yrange;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>yunit&lt;0.2</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x(1)+0.02*(x(2)-x(1)),y+0.02*yrange,label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x(1)+0.02*(x(2)-x(1)),y+0.035*yrange,label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x(1)+0.02*(x(2)-x(1)),y-0.02*yrange,label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x(1)+0.02*(x(2)-x(1)),y-0.035*yrange,label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>g==0</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>hold<sp/>off</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>tag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>hline<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>handlevisibility<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>off<sp/>&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">/*<sp/><sp/>this<sp/>last<sp/>part<sp/>is<sp/>so<sp/>that<sp/>it<sp/>doesn&apos;t<sp/>show<sp/>up<sp/>on<sp/>legends</highlight></codeline>
-<codeline lineno="94"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal">end<sp/></highlight><highlight class="comment">/*<sp/><sp/>else</highlight></codeline>
-<codeline lineno="96"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>tag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>hline<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>handlevisibility<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>off<sp/>&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">/*<sp/><sp/>this<sp/>last<sp/>part<sp/>is<sp/>so<sp/>that<sp/>it<sp/>doesn&apos;t<sp/>show<sp/>up<sp/>on<sp/>legends<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">end<sp/></highlight><highlight class="comment">/*<sp/><sp/>else<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargout</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>hhh=h;</highlight></codeline>
@@ -140,6 +140,6 @@
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/hline.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/hline.m"/>
   </compounddef>
 </doxygen>

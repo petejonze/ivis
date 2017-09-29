@@ -18,6 +18,5 @@ var searchData=
   ['mtoc_5fsubst_5ftruncatedgaussian_5fm_5ftsbus_5fcotm_5fscz',['mtoc_subst_TruncatedGaussian_m_tsbus_cotm_scz',['../_truncated_gaussian_8m.html#ae0da2a4d57b558883ee165e69209b807',1,'TruncatedGaussian.m']]],
   ['mtoc_5fsubst_5ftruncatedgaussian_5fm_5ftsbus_5fcotm_5fstdtrunc',['mtoc_subst_TruncatedGaussian_m_tsbus_cotm_stdtrunc',['../_truncated_gaussian_8m.html#adb0b500d3bd7906865c93d7582c1471a',1,'TruncatedGaussian.m']]],
   ['mtoc_5fsubst_5ftruncatedgaussian_5fm_5ftsbus_5fcotm_5fvartrunc',['mtoc_subst_TruncatedGaussian_m_tsbus_cotm_vartrunc',['../_truncated_gaussian_8m.html#a896c2f9b4f174c1a74fcbaba3aba8a04',1,'TruncatedGaussian.m']]],
-  ['mydemoinputhandler',['MyDemoInputHandler',['../class_my_demo_input_handler.html#aac51b154fe46e4d408c8bcad2ee9560d',1,'MyDemoInputHandler']]],
   ['myflip',['myFlip',['../my_flip_8m.html#a10d7ee8d65f4059a6cc62dc2f39aa21e',1,'myFlip.m']]]
 ];

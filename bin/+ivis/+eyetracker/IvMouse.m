@@ -13,8 +13,7 @@
 %    * readRawLog- Parse data stored in a .raw binary file (hardware-brand specific format).
 %    * validate  - Validate initialisation parameters.
 % 
-%  IvMouse Static Methods:    
-%    * initialiseSDK	- ffffff.
+%  IvMouse Static Methods:
 %    * readRawLog    - Parse data stored in a .raw binary file (hardware-brand specific format).
 % 
 %  See Also:
@@ -33,4 +32,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 % 
+%
+%    Reference page in Doc Center
+%       doc ivis.eyetracker.IvMouse
+%
 %

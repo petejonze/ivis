@@ -38,12 +38,23 @@
 %    1.0 PJ 02/2013 : first_build\n
 % 
 %  @todo discard old points (particularly useful for avoiding
-%  @todo slowdowns/dropped-frames
+%        slowdowns/dropped-frames?
 %  @todo transfer hardcoded values to IvConfig
 %  @todo discard samples where only 1 eye is available? (re: Sam Wass)
 %  @todo make px2deg mapping dynamic based on subject movement?
+%  @todo in the long run the eyeball z data should be filtered/buffered
+%        through this class too. At the moment the logic is internal to each
+%        eyetracker, since some trackers don't return this information.
+%        But most do now, and it would be good to deal with it properly.
+%        This would allow proper retrieval (e.g., get last points since
+%        T), and should improve accuracy too (e.g., low pass filtering).
+%  @todo allow setting of trackerInFrontMonitor_mm
 % 
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %  
+%
+%    Reference page in Doc Center
+%       doc ivis.eyetracker.IvDataInput
+%
 %

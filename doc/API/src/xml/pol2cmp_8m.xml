@@ -19,8 +19,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m" bodystart="17" bodyend="34"/>
-        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_vector_1af253e6edc6fe74ec5e27d17980367cc1" compoundref="_iv_classifier_vector_8m" startline="268" endline="299">ivis::classifier::IvClassifierVector::updateEvidence</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m" bodystart="17" bodyend="33"/>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a6c5b0430d3ab7a2a4cba556af789ee6e" compoundref="_iv_classifier_vector_8m" startline="219" endline="242">ivis::classifier::IvClassifierVector::draw</referencedby>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a44fa52e201614cc41dfa6619e5e23c6e" compoundref="_iv_classifier_vector_8m" startline="266" endline="286">ivis::classifier::IvClassifierVector::updateEvidence</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -48,21 +49,20 @@
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Time-stamp:&lt;Last<sp/>updated<sp/>on<sp/>02/09/23<sp/>at<sp/>15:39:49<sp/>by<sp/>even@gfi.uib.no&gt;</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/>*File:&lt;d:/home/matlab/pol2cmp.m&gt;</highlight></codeline>
-<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal">cmp=pi/2-th;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>flip<sp/>and<sp/>rotate<sp/>90<sp/>deg</highlight></codeline>
-<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">idx<sp/>=<sp/>cmp&lt;0;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal">cmp(idx)=cmp(idx)+2*pi;<sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>negative<sp/>results<sp/>(range<sp/>0-2pi)</highlight></codeline>
-<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal">cmp=cmp*180/pi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>to<sp/>degrees<sp/>for<sp/>compass<sp/>out</highlight></codeline>
-<codeline lineno="32"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*File:&lt;d:/home/matlab/pol2cmp.m&gt;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">cmp=pi/2-th;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>flip<sp/>and<sp/>rotate<sp/>90<sp/>deg<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">idx<sp/>=<sp/>cmp&lt;0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">cmp(idx)=cmp(idx)+2*pi;<sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>negative<sp/>results<sp/>(range<sp/>0-2pi)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">cmp=cmp*180/pi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>convert<sp/>to<sp/>degrees<sp/>for<sp/>compass<sp/>out<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/pol2cmp.m"/>
   </compounddef>
 </doxygen>

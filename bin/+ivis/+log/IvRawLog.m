@@ -24,3 +24,7 @@
 %  *********************************************************************
 %  
 %
+%    Reference page in Doc Center
+%       doc ivis.log.IvRawLog
+%
+%

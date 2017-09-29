@@ -4,7 +4,7 @@
 % 
 %  IvGUIeyetrackSpatial Methods:
 %    * IvGUIeyetrackSpatial  - Constructor.
-%    * update                - ffffff.
+%    * update                - Update figure window.
 % 
 %  See Also:
 %    IvGUIeyetrackTemporal
@@ -25,4 +25,8 @@
 %  *********************************************************************
 %  
 %  should more properly be termed IvGUIDataInput?
+%
+%    Reference page in Doc Center
+%       doc ivis.gui.IvGUIeyetrackSpatial
+%
 %

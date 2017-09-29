@@ -39,6 +39,11 @@ classdef (Sealed) IvAudio < Singleton
     %   1.1 PJ 06/2013 : updated documentation\n
     %
     %
+    % *TODO: should probably split PsychPortAudio and MatlabBuiltIn sound
+    % into seperate subclasses (i.e., rather than use of switch..case) --
+    % NB: affects constructor(), destructor(), enable(), disable(), play(),
+    % stop()
+    %
     % Copyright 2014 : P R Jones
     % *********************************************************************
     %
@@ -52,6 +57,8 @@ classdef (Sealed) IvAudio < Singleton
     end
     
     properties (GetAccess = public, SetAccess = private)
+        interface
+        %
         isEnabled = 0   % whether or not linked to the audio device
         devID           % hardware device number (empty for best guess)
         Fs              % audio card sampling rate (e.g., 44100)
@@ -65,11 +72,12 @@ classdef (Sealed) IvAudio < Singleton
       	% simple utility sounds
         BAD_SND
         GOOD_SND
+        % ####
+        pahandle        % PsychPortAudio handle to audio device
     end
     
     properties (GetAccess = private, SetAccess = private)
-        pahandle        % PsychPortAudio handle to audio device
-        pamaster
+        %pamaster
         rms2db_raw      % calibration: raw rms-db measurements (2 columns)
         db2rms_fcn      % calibration: db-rms input-output function
     end
@@ -103,25 +111,33 @@ classdef (Sealed) IvAudio < Singleton
             end
             
             % store params
-            obj.devID = audioParams.devID;
-            obj.Fs = audioParams.Fs;
-            obj.outChans = audioParams.outChans;
-            obj.runMode = audioParams.runMode;
-            obj.reqlatencyclass = audioParams.reqlatencyclass;
-            obj.latbias_secs = audioParams.latbias_secs;
-            obj.useCalibration = audioParams.useCalibration;
+            obj.interface       = audioParams.interface;
+            obj.devID           = audioParams.devID;
+            obj.Fs              = audioParams.Fs;
+            obj.outChans        = audioParams.outChans;
+            obj.runMode       	= audioParams.runMode;
+            obj.reqlatencyclass	= audioParams.reqlatencyclass;
+            obj.latbias_secs    = audioParams.latbias_secs;
+            obj.useCalibration  = audioParams.useCalibration;
             if ~isempty(audioParams.defaultLevel_db)
                 obj.defaultLevel_db = audioParams.defaultLevel_db;
             end
             
-            % Initialize driver, request low-latency preinit:
-            InitializePsychSound(0);
-            
-            % close any extant audio handles
-            PsychPortAudio('Close');
-            
-            % high verbosity
-            PsychPortAudio('Verbosity', verbosity);
+            switch lower(obj.interface)
+                case 'psychportaudio'
+                    % Initialize driver, request low-latency preinit:
+                    InitializePsychSound(obj.runMode);
+                    
+                    % close any extant audio handles
+                    PsychPortAudio('Close');
+                    
+                    % high verbosity
+                    PsychPortAudio('Verbosity', verbosity);
+                case 'matlabbuiltin'
+                    % do nothing
+                otherwise
+                    error('Sound API not recognised: %s\nRecognised value: PsychPortAudio, MatlabBuiltIn', obj.interface);
+            end
             
             % Get calibration if raw measurement specified
             if obj.useCalibration
@@ -150,7 +166,16 @@ classdef (Sealed) IvAudio < Singleton
             if obj.isEnabled
                 obj.disable();
             end
-            PsychPortAudio('Close')
+            
+           	% close connection, release memory
+            switch lower(obj.interface)
+                case 'psychportaudio'
+                    PsychPortAudio('Close')
+                case 'matlabbuiltin'
+                    clear obj.pahandle;
+                otherwise
+                    warning('Sound API not recognised: %s\nRecognised value: PsychPortAudio, MatlabBuiltIn', obj.interface);
+            end
         end
         
         %% == METHODS =====================================================
@@ -167,33 +192,60 @@ classdef (Sealed) IvAudio < Singleton
                 error('IvAudio:InvalidCall', 'Audio already enabled');
             end
             
-            % pahandle = PsychPortAudio('Open' [, deviceid][,runMode][,reqlatencyclass][,freq][, channels][, buffersize][, suggestedLatency][, selectchannels]);
-            
-            % by opening up the primary output device as a slave of a
-            % master handle, we reserve the ability to open up additional
-            % slave later on, for easy mixing. See getSlave().
-            obj.pamaster = PsychPortAudio('Open', obj.devID, 1+8, obj.reqlatencyclass, obj.Fs, max(obj.outChans)+1,[],[],[]);
-            
-            % Start master immediately, wait for it to be started. We won't stop the
-            % master until the end of the session.
-            PsychPortAudio('Start', obj.pamaster, 0, 0, 1);
-            
-            % open the primary slave, that will be used for playback
-            % (though users can request to create new slaves if they want
-            % to mix tracks)
-            obj.pahandle = PsychPortAudio('OpenSlave', obj.pamaster, 1);
-            
-            
-            % Tell driver about hardwares inherent latency, determined via calibration
-            if ~isempty(obj.latbias_secs)
-                PsychPortAudio('LatencyBias', obj.pahandle, obj.latbias_secs);
-            end
-            
-            % runMode 1 will slightly increase the cpu load and general
-            % system load, but provide better timing and even lower sound
-            % onset latencies under certain conditions.
-            if ~isempty(obj.runMode)
-                PsychPortAudio('RunMode', obj.pahandle, obj.runMode);
+            switch lower(obj.interface)
+                case 'psychportaudio'
+                    %pahandle = PsychPortAudio('Open' [, deviceid][, mode][, reqlatencyclass][, freq][, channels][, buffersize][, suggestedLatency][, selectchannels][, specialFlags=0]);
+                    obj.pahandle = PsychPortAudio('Open', obj.devID, [], obj.reqlatencyclass, obj.Fs, max(obj.outChans)+1,[],[],[]);
+                    
+                    
+                    %             % by opening up the primary output device as a slave of a
+                    %             % master handle, we reserve the ability to open up additional
+                    %             % slave later on, for easy mixing. See getSlave().
+                    %             obj.pamaster = PsychPortAudio('Open', obj.devID, [], obj.reqlatencyclass, obj.Fs, max(obj.outChans)+1,[],[],[])
+                    %
+                    %             % Start master immediately, wait for it to be started. We won't stop the
+                    %             % master until the end of the session.
+                    %             %PsychPortAudio('Start', obj.pamaster, 0, 0, 1)
+                    %
+                    %             % open the primary slave, that will be used for playback
+                    %             % (though users can request to create new slaves if they want
+                    %             % to mix tracks)
+                    %             obj.pahandle = PsychPortAudio('OpenSlave', obj.pamaster, 1)
+                    
+                    
+                    % Tell driver about hardwares inherent latency, determined via calibration
+                    if ~isempty(obj.latbias_secs)
+                        PsychPortAudio('LatencyBias', obj.pahandle, obj.latbias_secs);
+                    end
+                    
+                    % runMode 1 will slightly increase the cpu load and general
+                    % system load, but provide better timing and even lower sound
+                    % onset latencies under certain conditions.
+                    if ~isempty(obj.runMode)
+                        PsychPortAudio('RunMode', obj.pahandle, obj.runMode);
+                    end
+                    
+                    % set sample rate to default, if none was specified by user
+                    if isempty(obj.Fs)
+                        s = PsychPortAudio('GetStatus', obj.pahandle);
+                        obj.Fs = s.SampleRate;
+                    end
+                case 'matlabbuiltin'
+                    if ~isempty(obj.devID)
+                        warning('Device ID not supported by MatlabBuiltIn sound. Ignoring specified value (%1.2f)', obj.devID);
+                    end
+                    if ~isempty(obj.latbias_secs)
+                        warning('Latency Bias not supported by MatlabBuiltIn sound. Ignoring specified value (%1.2f)', obj.latbias_secs);
+                    end
+                    if ~isempty(obj.runMode)
+                        warning('Run Mode not supported by MatlabBuiltIn sound. Ignoring specified value (%1.2f)', obj.runMode);
+                    end
+                    % set sample rate to default, if none was specified by user
+                    if isempty(obj.Fs)
+                        obj.Fs = 22050;
+                    end
+                otherwise
+                    error('Sound API not recognised: %s\nRecognised value: PsychPortAudio, MatlabBuiltIn', obj.interface);
             end
             
             % store on/off flag
@@ -207,12 +259,19 @@ classdef (Sealed) IvAudio < Singleton
             % @author   PRJ
             %
             if ~obj.isEnabled || isempty(obj.pahandle)
-                error('IvAudio:InvalidCall', 'No audio enabled?');
+                error('IvAudio:InvalidCall', 'Cannot disable: No audio enabled?');
             end
             
-            % fprintf('\n\n\n\n\nDEBUG INFO: DISABLING AUDIO\n\n\n\n');
-            PsychPortAudio('Stop', obj.pahandle, 2);
-            PsychPortAudio('Close', obj.pahandle)
+         	% fprintf('\n\n\n\n\nDEBUG INFO: DISABLING AUDIO\n\n\n\n');
+            switch lower(obj.interface)
+                case 'psychportaudio'
+                    PsychPortAudio('Stop', obj.pahandle, 2*(obj.runMode>0));
+                    PsychPortAudio('Close', obj.pahandle)
+                case 'matlabbuiltin'
+                    % do nothing
+                otherwise
+                    error('Sound API not recognised: %s\nRecognised value: PsychPortAudio, MatlabBuiltIn', obj.interface);
+            end
             
             % store new values
             obj.pahandle = [];
@@ -236,12 +295,12 @@ classdef (Sealed) IvAudio < Singleton
             
             % create 1 1kHz sound of duration d
             d = .1;           	% duration, in seconds
-            testChans = 0;  	% channel 0 [left ear?] only
+            testChans = obj.outChans;  	% all channels
             lvlFactor = 0.01;    % attenuate it to some arbitrarily low level to avoid blowing anybody's eardrums
             x = obj.rampOnOff(obj.padChannels(obj.getPureTone(1000,obj.Fs,d)*lvlFactor, testChans, obj.outChans));
             
             % play it
-            obj.play(x, dB);
+            obj.play(x, dB, false);
         end
         
         function [] = calibrate(obj, rms2db_fnOrMatrix, doPlot)
@@ -336,22 +395,36 @@ classdef (Sealed) IvAudio < Singleton
             obj.useCalibration = true;
         end
         
+        
         function [] = stop(obj)
             % Stop audio stream; wrapper for PsychPortAudio('Stop')
             %
             % @date     26/06/14
             % @author   PRJ
             %
-            status = PsychPortAudio('GetStatus', obj.pahandle);
-            if status.Active == 1 % if active..
-                PsychPortAudio('Stop', obj.pahandle, 2); % ..immediately stop any playing sounds
-                WaitSecs(0.05);
-            end
-            if status.Active == 1 % if active..
-                PsychPortAudio('Stop', obj.pahandle, 2); % ..immediately stop any playing sounds
-                WaitSecs(0.05);
+            
+            switch lower(obj.interface)
+                case 'psychportaudio'
+                    status = PsychPortAudio('GetStatus', obj.pahandle);
+                    if status.Active == 1 % if active..
+                        PsychPortAudio('Stop', obj.pahandle, 2*(obj.runMode>0)); % ..immediately stop any playing sounds
+                        WaitSecs(0.05);
+                        % try once more
+                        status = PsychPortAudio('GetStatus', obj.pahandle);
+                        if status.Active == 1 % if active..
+                            PsychPortAudio('Stop', obj.pahandle, 2*(obj.runMode>0)); % ..immediately stop any playing sounds
+                            WaitSecs(0.05);
+                        end
+                    end
+                case 'matlabbuiltin'
+                    if isa(obj.pahandle, 'audioplayer')
+                        obj.pahandle.stop();
+                    end
+                otherwise
+                    error('Sound API not recognised: %s\nRecognised value: PsychPortAudio, MatlabBuiltIn', obj.interface);
             end
         end
+        
         
         function [] = play(obj, x, dB, blocking)
             % Helper/convenience function for playing a sound immediately,
@@ -377,7 +450,8 @@ classdef (Sealed) IvAudio < Singleton
             
             % validate
             if ~obj.isEnabled
-                error('Cannot play sound because audio is not enabled');
+                warning('Cannot play sound because audio is not enabled');
+                return;
             end
             
             % calibrate, if so requested
@@ -386,22 +460,49 @@ classdef (Sealed) IvAudio < Singleton
             end
             
             % play immediately
-            status = PsychPortAudio('GetStatus', obj.pahandle);
-            if status.Active == 1 % if active..
-                PsychPortAudio('Stop', obj.pahandle, 2); % ..immediately stop any playing sounds
-                WaitSecs(0.05);
+            switch lower(obj.interface)
+                case 'psychportaudio'
+                    % check initialized
+                    if isempty(obj.pahandle)
+                        error('pahandle is empty? IvAudio must be initialised first before calling play()');
+                    end
+                    
+                    % stop if already playing
+                    status = PsychPortAudio('GetStatus', obj.pahandle);
+                    if status.Active == 1 % if active..
+                        PsychPortAudio('Stop', obj.pahandle, 2*(obj.runMode>0)); % ..immediately stop any playing sounds
+                        WaitSecs(0.05);
+                        % try once more
+                        status = PsychPortAudio('GetStatus', obj.pahandle);
+                        if status.Active == 1 % if active..
+                            PsychPortAudio('Stop', obj.pahandle, 2*(obj.runMode>0)); % ..immediately stop any playing sounds
+                            WaitSecs(0.05);
+                        end
+                    end
+                    PsychPortAudio('FillBuffer', obj.pahandle, x);   	% Fill audio buffer with data:
+                    PsychPortAudio('Start', obj.pahandle, 1, 0, 1); % play
+                    
+                    % if in blocking mode, wait for sound to finish before
+                    % continuing
+                    if blocking
+                        d = length(x)/obj.Fs;
+                        WaitSecs(d);                             	% pause for stimulus duration (this could also be set in the call to PPA)
+                        status = PsychPortAudio('GetStatus', obj.pahandle);
+                        if status.Active == 1 % if active..
+                            PsychPortAudio('Stop', obj.pahandle, 2*(obj.runMode>0))	% explicitly tell to stop (defensive)
+                        end
+                    end
+                case 'matlabbuiltin'
+                    obj.pahandle = audioplayer(x, obj.Fs);
+                    if blocking
+                        obj.pahandle.playblocking();
+                    else
+                        obj.pahandle.play();
+                    end
+                otherwise
+                    error('Sound API not recognised: %s\nRecognised value: PsychPortAudio, MatlabBuiltIn', obj.interface);
             end
-            if status.Active == 1 % if active..
-                PsychPortAudio('Stop', obj.pahandle, 2); % ..immediately stop any playing sounds
-                WaitSecs(0.05);
-            end
-            PsychPortAudio('FillBuffer', obj.pahandle, x);   	% Fill audio buffer with data:
-            PsychPortAudio('Start', obj.pahandle, 1, [],[],[]); % play
-            if blocking
-                d = length(x)/obj.Fs;
-                WaitSecs(d);                             	% pause for stimulus duration (this could also be set in the call to PPA)
-                PsychPortAudio('Stop', obj.pahandle, 1);	% explicitly tell to stop (defensive)
-            end
+
         end
         
         function x = rampOnOff(obj, x, wd, Fs)
@@ -502,7 +603,7 @@ classdef (Sealed) IvAudio < Singleton
             end
 
             % load data
-            [x,xFs] = wavread(char(fn));
+            [x,xFs] = audioread(char(fn));
             
             % set sampling rate
             if xFs ~= obj.Fs
@@ -528,6 +629,7 @@ classdef (Sealed) IvAudio < Singleton
             %
             % @param    directory   directory to search in
             % @param    pattern    	optional file pattern (default: *.wav)
+            % @param	magnMod     scalar to multiply the amplitude by
             % @return	snds        cell contained sound waves
             % @return	sndFullFns  cell contained source files (with path)
             %
@@ -535,6 +637,9 @@ classdef (Sealed) IvAudio < Singleton
             % @author   PRJ
             %
             
+            if nargin < 3
+                pattern = '*.wav';
+            end
             if nargin < 4 || isempty(magnMod)
                 magnMod = 1;
             end
@@ -564,8 +669,13 @@ classdef (Sealed) IvAudio < Singleton
             % @date     22/07/14
             % @author   PRJ
             %
-            pahandle = PsychPortAudio('OpenSlave', obj.pamaster, 1);;
+            error('Not currently supported!')
+            pahandle = PsychPortAudio('OpenSlave', obj.pamaster, 1);
         end
+        
+%         function rms = getTargRMS(obj, dB)
+%             rms = obj.db2rms_fcn(dB);
+%         end
     end
     
     

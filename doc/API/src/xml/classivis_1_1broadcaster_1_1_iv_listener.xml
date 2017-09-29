@@ -3,11 +3,11 @@
   <compounddef id="classivis_1_1broadcaster_1_1_iv_listener" kind="class" prot="public">
     <compoundname>ivis::broadcaster::IvListener</compoundname>
     <basecompoundref prot="public" virt="non-virtual">handle</basecompoundref>
+    <derivedcompoundref refid="classivis_1_1calibration_1_1_track_box" prot="public" virt="non-virtual">ivis::calibration::TrackBox</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1classifier_1_1_iv_classifier" prot="public" virt="non-virtual">ivis::classifier::IvClassifier</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1graphic_1_1_iv_screen_object" prot="public" virt="non-virtual">ivis::graphic::IvScreenObject</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1video_1_1_iv_video" prot="public" virt="non-virtual">ivis::video::IvVideo</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1video_1_1_iv_webcam" prot="public" virt="non-virtual">ivis::video::IvWebcam</derivedcompoundref>
-    <derivedcompoundref refid="classivis_1_1video_1_1_track_box" prot="public" virt="non-virtual">ivis::video::TrackBox</derivedcompoundref>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="classivis_1_1broadcaster_1_1_iv_listener_1add0a7baf0385630c2ccb69d3fe35896e" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -23,8 +23,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="58" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="58" bodyend="-1"/>
-        <referencedby refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" compoundref="_iv_listener_8m" startline="90" endline="102">delete</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="57" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" compoundref="_iv_listener_8m" startline="87" endline="97">delete</referencedby>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1broadcaster_1_1_iv_listener_1a14390bf4fcaaa602c45c74d850e78e1a" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -40,7 +40,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="68" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="68" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="67" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="67" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -57,8 +57,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="90" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="90" bodyend="102"/>
-        <references refid="classivis_1_1broadcaster_1_1_iv_listener_1add0a7baf0385630c2ccb69d3fe35896e" compoundref="_iv_listener_8m" startline="58">listenerHandles</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="87" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="87" bodyend="97"/>
+        <references refid="classivis_1_1broadcaster_1_1_iv_listener_1add0a7baf0385630c2ccb69d3fe35896e" compoundref="_iv_listener_8m" startline="57">listenerHandles</references>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1broadcaster_1_1_iv_listener_1a7fe2988ce0ff2dc4e2d39981a2a5104e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -96,7 +96,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="114" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="114" bodyend="131"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="109" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="109" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1broadcaster_1_1_iv_listener_1ae63aa8d8e7e569d83e1b29d050c31bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -123,7 +123,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="147" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="147" bodyend="166"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="138" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="138" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1broadcaster_1_1_iv_listener_1a50d1ac805a94af66ffb9bff3b4b0b934" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -161,7 +161,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="180" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="180" bodyend="187"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="167" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="167" bodyend="174"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1broadcaster_1_1_iv_listener_1a4059911a950ad01e8ae73abcc6d5cd64" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -221,7 +221,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="203" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="203" bodyend="215"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="190" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="190" bodyend="199"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -239,94 +239,100 @@ Copyright 2014 : P R Jones <hruler/>
 </para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="478">
+      <node id="488">
         <label>ivis::classifier::IvClassifierVector</label>
         <link refid="classivis_1_1classifier_1_1_iv_classifier_vector"/>
-        <childnode refid="475" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="480">
-        <label>ivis::graphic::IvGraphic</label>
-        <link refid="classivis_1_1graphic_1_1_iv_graphic"/>
-        <childnode refid="479" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="474">
-        <label>handle</label>
-      </node>
-      <node id="477">
-        <label>ivis::classifier::IvClassifierLL</label>
-        <link refid="classivis_1_1classifier_1_1_iv_classifier_l_l"/>
-        <childnode refid="475" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="481">
-        <label>ivis::graphic::IvGraphicCompound</label>
-        <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
-        <childnode refid="479" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="476">
-        <label>ivis::classifier::IvClassifierGrid</label>
-        <link refid="classivis_1_1classifier_1_1_iv_classifier_grid"/>
-        <childnode refid="475" relation="public-inheritance">
+        <childnode refid="484" relation="public-inheritance">
         </childnode>
       </node>
       <node id="485">
-        <label>ivis::video::TrackBox</label>
-        <link refid="classivis_1_1video_1_1_track_box"/>
-        <childnode refid="473" relation="public-inheritance">
+        <label>ivis::classifier::IvClassifierBox</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier_box"/>
+        <childnode refid="484" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="473">
-        <label>ivis::broadcaster::IvListener</label>
-        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="474" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="484">
-        <label>ivis::video::IvWebcam</label>
-        <link refid="classivis_1_1video_1_1_iv_webcam"/>
-        <childnode refid="473" relation="public-inheritance">
+      <node id="490">
+        <label>ivis::graphic::IvGraphic</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic"/>
+        <childnode refid="489" relation="public-inheritance">
         </childnode>
       </node>
       <node id="482">
-        <label>ivis::graphic::IvPrior</label>
-        <link refid="classivis_1_1graphic_1_1_iv_prior"/>
-        <childnode refid="479" relation="public-inheritance">
+        <label>handle</label>
+      </node>
+      <node id="487">
+        <label>ivis::classifier::IvClassifierLL</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier_l_l"/>
+        <childnode refid="484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="491">
+        <label>ivis::graphic::IvGraphicCompound</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>ivis::classifier::IvClassifierGrid</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier_grid"/>
+        <childnode refid="484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
       <node id="483">
+        <label>ivis::calibration::TrackBox</label>
+        <link refid="classivis_1_1calibration_1_1_track_box"/>
+        <childnode refid="481" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="494">
+        <label>ivis::video::IvWebcam</label>
+        <link refid="classivis_1_1video_1_1_iv_webcam"/>
+        <childnode refid="481" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>ivis::graphic::IvPrior</label>
+        <link refid="classivis_1_1graphic_1_1_iv_prior"/>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
         <label>ivis::video::IvVideo</label>
         <link refid="classivis_1_1video_1_1_iv_video"/>
-        <childnode refid="473" relation="public-inheritance">
+        <childnode refid="481" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="475">
+      <node id="484">
         <label>ivis::classifier::IvClassifier</label>
         <link refid="classivis_1_1classifier_1_1_iv_classifier"/>
-        <childnode refid="473" relation="public-inheritance">
+        <childnode refid="481" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="479">
+      <node id="489">
         <label>ivis::graphic::IvScreenObject</label>
         <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
-        <childnode refid="473" relation="public-inheritance">
+        <childnode refid="481" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="487">
+      <node id="496">
         <label>handle</label>
       </node>
-      <node id="486">
+      <node id="495">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="487" relation="public-inheritance">
+        <childnode refid="496" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="19" bodyend="233"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvListener.m" bodystart="19" bodyend="217"/>
     <listofallmembers>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" prot="public" virt="non-virtual"><scope>ivis::broadcaster::IvListener</scope><name>delete</name></member>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a14390bf4fcaaa602c45c74d850e78e1a" prot="public" virt="non-virtual"><scope>ivis::broadcaster::IvListener</scope><name>eventNames</name></member>

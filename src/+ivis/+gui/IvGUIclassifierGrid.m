@@ -106,8 +106,8 @@ classdef (Sealed) IvGUIclassifierGrid < ivis.gui.IvGUIclassifier
                 end
 
                 % plot data
-                obj.plot1Data = CCircularBuffer(obj.BUFFER_LENGTH,2);
-                obj.plot1Data.put(nan(obj.BUFFER_LENGTH,2));
+                obj.plot1Data = CCircularBuffer(obj.BUFFER_LENGTH_PLOT1,2);
+                obj.plot1Data.put(nan(obj.BUFFER_LENGTH_PLOT1,2));
                 obj.hPlot1Data = plot(obj.plot1Data.get(),'kx'); % plot on top
             hold off
             set(gca,'drawmode','fast')

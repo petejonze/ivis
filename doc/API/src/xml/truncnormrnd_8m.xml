@@ -34,7 +34,7 @@
 <para>(assumes the statistics toolbox, its easy to do without that toolbox though)</para><para>arguments: (input) N - size of the resulting array of deviates (note, if N is a scalar, then the result will be NxN.) mu - scalar - Mean of underlying normal distribution sig - scalar - Standard deviation of underlying normal distribution xlo - scalar - Low truncation point, if any xhi - scalar - High truncation point, if any</para><para>arguments: (output) z - array of truncated normal deviates, size(z)==N </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m" bodystart="17" bodyend="66"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m" bodystart="17" bodyend="60"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -61,54 +61,48 @@
 <codeline lineno="17" refid="truncnormrnd_8m_1a495bb78cb7e7b94949b5ec6cde96eba5" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,z&gt;<sp/><ref refid="truncnormrnd_8m_1a495bb78cb7e7b94949b5ec6cde96eba5" kindref="member" tooltip="truncnormrnd: truncated normal deviate generator usage:z=truncnormrnd(N,mu,sig,xlo,xhi)">truncnormrnd</ref>(matlabtypesubstitute<sp/>N,matlabtypesubstitute<sp/>mu,matlabtypesubstitute<sp/>sig,matlabtypesubstitute<sp/>xlo,matlabtypesubstitute<sp/>xhi)<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>defaults</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;2)||isempty(mu)</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/>mu=0;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;3)||isempty(sig)</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/>sig=0;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;4)||isempty(xlo)</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/>xlo=-inf;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/>plo=0;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/>plo=normcdf((xlo-mu)/sig);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;5)||isempty(xhi)</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/>xhi=inf;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>phi=1;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/>phi=normcdf((xhi-mu)/sig);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>test<sp/>if<sp/>trunation<sp/>points<sp/>are<sp/>reversed</highlight></codeline>
-<codeline lineno="45"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>xlo&gt;xhi</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/>error<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Must<sp/>have<sp/>xlo<sp/>&lt;=<sp/>xhi<sp/>if<sp/>both<sp/>provided<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>generate<sp/>uniform<sp/>[0,1]<sp/>random<sp/>deviates</highlight></codeline>
-<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal">r=rand(N);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>defaults<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;2)||isempty(mu)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>mu=0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;3)||isempty(sig)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>sig=0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;4)||isempty(xlo)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>xlo=-inf;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>plo=0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>plo=normcdf((xlo-mu)/sig);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nargin&lt;5)||isempty(xhi)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>xhi=inf;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>phi=1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>phi=normcdf((xhi-mu)/sig);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>test<sp/>if<sp/>trunation<sp/>points<sp/>are<sp/>reversed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>xlo&gt;xhi</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>error<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Must<sp/>have<sp/>xlo<sp/>&lt;=<sp/>xhi<sp/>if<sp/>both<sp/>provided<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>generate<sp/>uniform<sp/>[0,1]<sp/>random<sp/>deviates<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">r=rand(N);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>scale<sp/>to<sp/>[plo,phi]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">r=plo+(phi-plo)*r;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>scale<sp/>to<sp/>[plo,phi]</highlight></codeline>
-<codeline lineno="55"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal">r=plo+(phi-plo)*r;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Invert<sp/>through<sp/>standard<sp/>normal</highlight></codeline>
-<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal">z=norminv(r);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>apply<sp/>shift<sp/>and<sp/>scale</highlight></codeline>
-<codeline lineno="63"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal">z=mu+z*sig;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Invert<sp/>through<sp/>standard<sp/>normal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">z=norminv(r);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>apply<sp/>shift<sp/>and<sp/>scale<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">z=mu+z*sig;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/truncnormrnd.m"/>
   </compounddef>
 </doxygen>

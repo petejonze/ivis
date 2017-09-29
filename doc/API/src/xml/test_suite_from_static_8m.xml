@@ -18,9 +18,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/testSuiteFromStatic.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/testSuiteFromStatic.m" bodystart="17" bodyend="32"/>
-        <referencedby refid="class_c_circular_buffer_1a91040c34319c02b2eb5541853305afc0" compoundref="_c_circular_buffer_8m" startline="286" endline="289">CCircularBuffer::unitTests</referencedby>
-        <referencedby refid="class_c_expandable_buffer_1aa8a196edaf4d159d21bf9e7eec750f9b" compoundref="_c_expandable_buffer_8m" startline="442" endline="445">CExpandableBuffer::unitTests</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/testSuiteFromStatic.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/testSuiteFromStatic.m" bodystart="17" bodyend="33"/>
+        <referencedby refid="class_c_circular_buffer_1a91040c34319c02b2eb5541853305afc0" compoundref="_c_circular_buffer_8m" startline="282" endline="285">CCircularBuffer::unitTests</referencedby>
+        <referencedby refid="class_c_expandable_buffer_1aa8a196edaf4d159d21bf9e7eec750f9b" compoundref="_c_expandable_buffer_8m" startline="479" endline="482">CExpandableBuffer::unitTests</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -49,18 +49,19 @@
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>suite<sp/>=<sp/>TestSuite(name);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>mco<sp/>=<sp/>meta.class.fromName(name);<sp/></highlight><highlight class="comment">/*<sp/><sp/>e.g.,<sp/>?CCircularBuffer<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>staticMethods<sp/>=<sp/>mco.MethodList([mco.MethodList.Static]);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>staticMethodNames<sp/>=<sp/>[staticMethods.Name];</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>isTest<sp/>=<sp/>xunit.utils.isTestString(staticMethodNames)<sp/>&amp;<sp/>strcmpi(</highlight><highlight class="stringliteral">&quot;<sp/>public<sp/>&quot;</highlight><highlight class="normal">,<sp/>[staticMethods.Access]);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>testMethodNames<sp/>=<sp/>fliplr([staticMethods(isTest).Name]);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>1:numel(testMethodNames)</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fcn<sp/>=<sp/>[mco.Name<sp/>&quot;<sp/>.<sp/>&quot;<sp/>testMethodNames[k]];</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>suite.add(FunctionHandleTestCase(str2func(fcn),<sp/>[],<sp/>[]));</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>staticMethods<sp/>=<sp/>mco.MethodList([mco.MethodList.Static]);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>staticMethodNames<sp/>=<sp/>[staticMethods.Name];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>isTest<sp/>=<sp/>xunit.utils.isTestString(staticMethodNames)<sp/>&amp;<sp/>strcmpi(</highlight><highlight class="stringliteral">&quot;<sp/>public<sp/>&quot;</highlight><highlight class="normal">,<sp/>[staticMethods.Access]);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>testMethodNames<sp/>=<sp/>fliplr([staticMethods(isTest).Name]);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>1:numel(testMethodNames)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fcn<sp/>=<sp/>[mco.Name<sp/>&quot;<sp/>.<sp/>&quot;<sp/>testMethodNames[k]];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>suite.add(FunctionHandleTestCase(str2func(fcn),<sp/>[],<sp/>[]));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/testSuiteFromStatic.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/testSuiteFromStatic.m"/>
   </compounddef>
 </doxygen>

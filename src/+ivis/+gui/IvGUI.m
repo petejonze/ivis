@@ -39,16 +39,14 @@ classdef (Sealed) IvGUI < Singleton
     properties (GetAccess = public, SetAccess = private)
         % user specified parameters
         screenNum
-        dockFlag
-        % other internal parameters
-        hFig
     end
     
     properties (GetAccess = private, SetAccess = private)
         % other internal parameters
-        guiName
-        monitorAnchor
-        guiLayout = [2 3];
+        guiLayout       = [2 3];
+        gui_x0y0wh_prop = [0 0.6 .9 .4];    % total extent of gui, in proportion of the screen width/height
+        gui_x0y0wh_px   = [NaN NaN NaN NaN]
+        resizeMatlabDesktop = false;
     end
     
     %% ====================================================================
@@ -59,43 +57,36 @@ classdef (Sealed) IvGUI < Singleton
         
         %% == CONSTRUCTOR =================================================
         
-        function obj = IvGUI(screenNum, dockFlag)
+        function obj = IvGUI(screenNum)
             % IvGUI Constructor.
             %
             % @param    screenNum 	screen index to place GUI on
-            % @param    dockFlag 	whether to dock the GUI in the Matlab IDE
             % @return   obj         IvGUI object
             %
             % @date     26/06/14
             % @author   PRJ
             %
             
+            % validate
+            if sum(obj.gui_x0y0wh_prop([1 3]))>1
+                warning('total GUI horizontal dimensions shouldnt exceed 1, clipping..');
+                obj.gui_x0y0wh_prop(3) = 1 - obj.gui_x0y0wh_prop(1);
+            elseif sum(obj.gui_x0y0wh_prop([2 4]))>1
+                warning('total GUI vertical dimensions shouldnt exceed 1, clipping..');
+                obj.gui_x0y0wh_prop(4) = 1 - obj.gui_x0y0wh_prop(2);
+            end
+          
             obj.screenNum = screenNum;
-            obj.dockFlag = dockFlag;
-            
-            % set toolkit name
-            params = ivis.main.IvParams.getInstance();
-            obj.guiName = sprintf('%s %s GUI', params.main.ivName, num2str(params.main.ivVersion));
-            
-            obj.hFig = nan(1, prod(obj.guiLayout)); % init
-            
+
             obj = obj.createGUI();
         end
         
-        function delete(obj)
+        function delete(~)
             % IvGUI Destructor.
             %
             % @date     26/06/14
             % @author   PRJ
             %
-            
-            % close figure panel window
-            try
-                desktop = com.mathworks.mde.desk.MLDesktop.getInstance;      % Matlab 7+
-            catch ME %#ok
-                desktop = com.mathworks.ide.desktop.MLDesktop.getMLDesktop;  % Matlab 6
-            end
-            desktop.removeGroup(obj.guiName); % e.g., so no longer returned by "desktop.getGroupTitles"
             
             % set focus on command window(?)
             commandwindow();
@@ -103,50 +94,65 @@ classdef (Sealed) IvGUI < Singleton
         
         %% == METHODS =====================================================
 
-        function obj = addFigurePanel(obj, figIndex, figName)
-            % Create a new java window and at it to the GUI frame, at the
-            % specified index location.
+        function hFig = subfigure(obj, p, figName)
+            % Create a new java window covering the specified extent of the
+            % GUI 'frame'
             %
-            % @param    figIndex 	GUI frame index (determines position)
+            % @param    p           figure position (in same syle as
+            %                       subplot, though does not need to be int
             % @param    figName 	figure title
-            % @return   obj         IvGUI object
+            % @return   hFig        figure window handle
             %
             % @date     26/06/14
             % @author   PRJ
             %   
+
+            % validate input
+            if any(p<1)
+                error('Invalid figure position: Figure position should not be < 1')
+            elseif any(p>prod(obj.guiLayout))
+                error('Invalid figure position: Figure position should not exceed prod(obj.guiLayout)')  
+            end
             
-            obj.hFig(figIndex) = figure('visible','off', 'Name',figName,'NumberTitle','off');
-            if obj.dockFlag == 0
-                set(obj.hFig(figIndex),'position', obj.monitorAnchor + get(obj.hFig(figIndex),'position').*[0 0 1 1]);
-            else
-                %add items to group
-                setfigdocked('GroupName',obj.guiName,'Figure',obj.hFig(figIndex),'Figindex',figIndex);
+            % determine position
+            unitwidth = obj.gui_x0y0wh_px(3)/obj.guiLayout(2);
+            unitheight = obj.gui_x0y0wh_px(4)/obj.guiLayout(1);
+            x0y0x1y1_px = nan(length(p), 4);
+            for k = 1:length(p)
+                [x,y] = ind2sub([obj.guiLayout(2),obj.guiLayout(1)],p(k));
+                y = obj.guiLayout(1)-(y-1); % flip y so 1==toprow, 2==2ndrow, etc.
+                x0y0x1y1_px(k,:) = [(x-1)*unitwidth (y-1)*unitheight x*unitwidth y*unitheight];
             end
-            % draw
-            set(obj.hFig(figIndex),'visible','on');
-            drawnow();
+            x0y0x1y1_px = [min(x0y0x1y1_px(:,1:2),[],1) max(x0y0x1y1_px(:,3:4),[],1)]; % find total extent
+            x0y0wh_px = [obj.gui_x0y0wh_px(1:2)+x0y0x1y1_px(1:2) x0y0x1y1_px(3:4)-x0y0x1y1_px(1:2)]; % convert to x0y0wh coordinate system, and place within gui area
+
+            % create
+            hFig = figure('Name',figName, 'NumberTitle','off', 'OuterPosition',x0y0wh_px, 'MenuBar','None');
+
+            % update screen
+            drawnow();    
         end 
-        
-        function obj = addFigureToPanel(obj, hFig, figIndex)
-            % Add an existing java window to the GUI frame, at the specified
-            % index location.
-            %
-            % @param    hFig        handle of Matlab figure window
-            % @param    figIndex 	GUI frame index
-            % @return   obj         IvGUI object
-            %
-            % @date     26/06/14
-            % @author   PRJ
-            %               
-            obj.hFig(figIndex) = hFig;
-            if obj.dockFlag == 0
-                set(obj.hFig(figIndex),'position', obj.monitorAnchor + get(obj.hFig(figIndex),'position').*[0 0 1 1]);
-            else
-                %add items to group
-                setfigdocked('GroupName',obj.guiName,'Figure',obj.hFig(figIndex),'Figindex',figIndex);
+
+        function hFig = addAsSubfigure(obj, hFig, p)
+            % determine position
+            unitwidth = obj.gui_x0y0wh_px(3)/obj.guiLayout(2);
+            unitheight = obj.gui_x0y0wh_px(4)/obj.guiLayout(1);
+            x0y0x1y1_px = nan(length(p), 4);
+            for k = 1:length(p)
+                [x,y] = ind2sub([obj.guiLayout(2),obj.guiLayout(1)],p(k));
+                y = obj.guiLayout(1)-(y-1); % flip y so 1==toprow, 2==2ndrow, etc.
+                x0y0x1y1_px(k,:) = [(x-1)*unitwidth (y-1)*unitheight x*unitwidth y*unitheight];
             end
-            drawnow();
-        end 
+            x0y0x1y1_px = [min(x0y0x1y1_px(:,1:2),[],1) max(x0y0x1y1_px(:,3:4),[],1)]; % find total extent
+            x0y0wh_px = [obj.gui_x0y0wh_px(1:2)+x0y0x1y1_px(1:2) x0y0x1y1_px(3:4)-x0y0x1y1_px(1:2)]; % convert to x0y0wh coordinate system, and place within gui area
+
+            % move
+            set(hFig, 'NumberTitle','off', 'OuterPosition',x0y0wh_px, 'MenuBar','None');
+
+            % update screen
+            drawnow();    
+        end
+            
     end
     
     
@@ -168,89 +174,95 @@ classdef (Sealed) IvGUI < Singleton
             
             fprintf('IVIS: constructing GUI...\n');
             
-            % init
-            monitorPositions = get(0,'MonitorPositions');
+            % Get dimensions of all monitors
+            screens = Screen('Screens');
+            if IsWin && length(screens)>1 % on Windows dual-screen setups, 0 is all monitors, 1=monitor 1, 2=monitor 2, etc.
+                screens(1) = [];
+                %obj.screenNum = obj.screenNum + 1; % automatically increment by 1 (for consistency with Mac)
+                if obj.screenNum==0
+                    warning('DANGER!')
+                end
+            end
+            
+            % monitorPositions = get(0,'MonitorPositions') % !NOT STABLE!
+            monitorPositions = nan(length(screens), 4);
+            for i = 1:length(screens)
+                monitorPositions(i,:) = Screen('Rect', screens(i));
+                if i > 1
+                    monitorPositions(i,1) = monitorPositions(i-1,1)+monitorPositions(i-1,3)+1;
+                end
+            end
+
+            % Get monitor screen properties
             if obj.screenNum < 0 || obj.screenNum > size(monitorPositions,1)
                 error('createGUI:badMonitorNumber','Specified monitor number (%i) is outside No. of monitors (%i)',obj.screenNum,size(monitorPositions,1));
             end
-            close all
-            
-            monitorIdx = max(1,obj.screenNum);
-            
-            obj.monitorAnchor = [monitorPositions(monitorIdx, 1:2)+99 0 0];
-            %             set(0, 'DefaultFigureVisible', 'off');
-            
-            if obj.dockFlag < 1
-                return % do nothing
+            monitorIdx = find(screens==obj.screenNum, 1);
+            if isempty(monitorIdx)
+                error('GUI screenNum %i does not correspond to any of the detected screens (%s)', obj.screenNum, strjoin1(',',screens));
             end
             
-            % seriously, i think i'm gonna cry...
-            close all
-            
-            % get handle to the Matlab desktop
-            try
-                desktop = com.mathworks.mde.desk.MLDesktop.getInstance;      % Matlab 7+
-            catch ME %#ok
-                desktop = com.mathworks.ide.desktop.MLDesktop.getMLDesktop;  % Matlab 6
-            end
-            if isempty(desktop)
-                error('a:b','failed to retrieve desktop object');
-            end
-            
-            % make figure group
-            % remove previous figure groups
-            if desktop.hasGroup(obj.guiName)
-                fprintf('Clearning old GUI group');
-                desktop.removeGroup(obj.guiName); % remove any old (defensive) e.g., so no longer returned by "desktop.getGroupTitles"
-                while desktop.hasGroup(obj.guiName)
-                    fprintf(' .');
-                    WaitSecs(0.01);
-                end
-                fprintf('\n');
-            end
+            % get ACTUAL monitor dimensions
+            monitor_x_px = monitorPositions(monitorIdx, 1);
+            monitor_y_px = monitorPositions(monitorIdx, 2);
+            monitor_w_px = monitorPositions(monitorIdx, 3);
+            monitor_h_px = monitorPositions(monitorIdx, 4);
+            %
+            obj.gui_x0y0wh_px = [monitor_x_px + obj.gui_x0y0wh_prop(1)*monitor_w_px
+                                monitor_y_px + obj.gui_x0y0wh_prop(2)*monitor_h_px
+                                obj.gui_x0y0wh_prop(3)*monitor_w_px
+                                obj.gui_x0y0wh_prop(4)*monitor_h_px
+                             ]';
 
-            % create new figure group
-            setfigdocked('GroupName',obj.guiName,'GridSize',obj.guiLayout,'SpanCell',[1 1 2 1]); % tmp hack [row col occupiedrows occupiedcols]
-                 
-            % Dock the figure container inside the Matlab system GUI
-            % (or not if dockFlag ~= 1)
-            try
-                %fprintf('Try to dock I\n');
-                javaMethod('setGroupDocked',obj.guiName,obj.dockFlag==1);
-            catch ME %#ok
-                %fprintf('Try to dock II\n');
-                desktop.setGroupDocked(obj.guiName,obj.dockFlag==1);
-            end
+            % for debugging only:
+            %warning('FOR DEBUGGING/DEVELOPMENT ONLY');
+            %figure('OuterPosition', obj.gui_x0y0wh_px)
+            %fprintf('%1.2f\n', get(gcf,'OuterPosition'))
             
-            if obj.dockFlag == 1
+
+            % move Matlab Command Window to specificied monitor, and
+            % maximise
+            if obj.resizeMatlabDesktop
+                desktop = com.mathworks.mde.desk.MLDesktop.getInstance(); % get handle to the Matlab desktop
                 desktopMainFrame = desktop.getMainFrame;
                 z = desktopMainFrame.getLocation;
-                z.setLocation(monitorPositions(monitorIdx,1), monitorPositions(monitorIdx,2));
-                desktopMainFrame.setLocation(z);
-                desktopMainFrame.setSize(monitorPositions(monitorIdx, 3)-monitorPositions(monitorIdx, 1),monitorPositions(monitorIdx, 4));
-                desktopMainFrame.setMaximized(true);
-                
-            elseif obj.dockFlag > 1
-                
-                % plot a dummy figure so we have a container to play
-                % with
-                obj.hFig(1) = figure('visible','off', 'Name','null','NumberTitle','off');
-                setfigdocked('GroupName',obj.guiName,'Figure',obj.hFig(1),'Figindex',1);
-                
-                % get handle
-                container = desktop.getGroupContainer(obj.guiName).getTopLevelAncestor;
-                
-                % set size &  position(/monitor)
-                if obj.dockFlag == 2
-                    container.setMaximized(false);
-                    container.setLocation(obj.monitorAnchor(1),obj.monitorAnchor(2));
-                    container.setSize(1000,600);
-                elseif obj.dockFlag == 3
-                    container.setLocation(monitorPositions(monitorIdx, 1), monitorPositions(monitorIdx, 2));
-                    container.setSize(monitorPositions(monitorIdx, 3)-monitorPositions(monitorIdx, 1),monitorPositions(monitorIdx, 4));
-                    container.setMaximized(true);
+                if obj.gui_x0y0wh_prop(4)<=0.8
+                    z.setLocation(monitor_x_px, monitor_h_px - monitor_h_px*obj.gui_x0y0wh_prop(2));
+% warning('tmp hack! required when using surface and trying to put the GUI on the non-main-display (AAAAAARGH!)')
+% z.setLocation(5115,964);
+                    desktopMainFrame.setLocation(z);
+                    desktopMainFrame.setSize(monitor_w_px, monitor_h_px*(1-obj.gui_x0y0wh_prop(4)));
+                    desktopMainFrame.setMaximized(false)
+                else
+                    z.setLocation(monitor_x_px, monitor_y_px);
+                    desktopMainFrame.setLocation(z);
+                    desktopMainFrame.setSize(monitor_w_px, monitor_h_px);
+                    desktopMainFrame.setMaximized(true);
                 end
             end
+            
+            % get MATLAB ESTIMATED monitor dimensions (applicable for
+            % figure window positioning) -- necessary due to stupid bugs in
+            % Matlab..
+            if ismac
+                monitorPositions = flipud(get(0,'MonitorPositions')); % is this really correct??
+            else
+                monitorPositions = get(0,'MonitorPositions');
+            end
+            monitor_x_px = monitorPositions(monitorIdx, 1);
+            monitor_y_px = monitorPositions(monitorIdx, 2);
+%             if IsWin
+%                 monitor_w_px = monitorPositions(monitorIdx, 3)-monitorPositions(monitorIdx, 1)
+%             else % ismac or isunix
+                monitor_w_px = monitorPositions(monitorIdx, 3);
+%             end
+            monitor_h_px = monitorPositions(monitorIdx, 4);
+            %
+            obj.gui_x0y0wh_px = [monitor_x_px + obj.gui_x0y0wh_prop(1)*monitor_w_px
+                                monitor_y_px + obj.gui_x0y0wh_prop(2)*monitor_h_px
+                                obj.gui_x0y0wh_prop(3)*monitor_w_px
+                                obj.gui_x0y0wh_prop(4)*monitor_h_px
+                             ]';
         end
     end
     

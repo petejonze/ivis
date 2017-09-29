@@ -13,7 +13,7 @@ classdef IvHfUniform2D < ivis.math.pdf.IvHitFunc
     %   none
     %
     % Example:
-    %   none
+    %   clearAbsAll; x = ivis.math.pdf.IvHfUniform2D([0 0], [100 100]), x.getPDF([-9991 -9991]), x.getPDF([-1 -1])
     %
     % Author:
     %   Pete R Jones <petejonze@gmail.com>
@@ -29,19 +29,9 @@ classdef IvHfUniform2D < ivis.math.pdf.IvHitFunc
     %% ====================================================================
     %  -----PROPERTIES-----
     %$ ====================================================================
-    
-    properties (Constant)
-        MIN_VAL = 0.0000000000000000001; % for the sake of IvClassifierLL
-    end
-    
-    properties (GetAccess = public, SetAccess = private)
-        % user specified parameters
-        xmin    % minimum x value, in pixels
-        ymin    % minimum y value, in pixels        
-        xmax  	% maximum x value, in pixels
-        ymax  	% maximum y value, in pixels        
+       
+    properties (GetAccess = public, SetAccess = private)     
         % other internal parameters
-        P_unifConstant % the constant value that is returned when xmin <= x <= xmax
     end
     
     
@@ -53,70 +43,36 @@ classdef IvHfUniform2D < ivis.math.pdf.IvHitFunc
         
         %% == CONSTRUCTOR =================================================
         
-        function obj = IvHfUniform2D(xmin, ymin, xmax, ymax)
+        function obj = IvHfUniform2D(minmaxBounds_px)
             % IvHfUniform2D Constructor.
             %
-            % @param    xmin  minimum x value, in pixels
-            % @param    ymin  minimum y value, in pixels
-            % @param    xmax  maximum x value, in pixels
-            % @param    ymax  maximum y value, in pixels
+            % @param    minmaxBounds_px  4 element vector specifying min/max bounds [xmix_px ymin_px xmax_px ymax_px]
             % @return   obj   IvHfUniform2D object
             %
             % @date     26/06/14
             % @author   PRJ
             %
-            
-            % validate params [25% bigger than actual screen by default]
-            if nargin < 1 || isempty(xmin)
-                w = ivis.main.IvParams.getInstance().graphics.testScreenWidth;
-                xmin = -round(w*.25); % 0;
-            end
-            if nargin < 2 || isempty(ymin)
-                h = ivis.main.IvParams.getInstance().graphics.testScreenHeight;
-                ymin = -round(h*.25); % 0;
-            end
-            if nargin < 3 || isempty(xmax)
-                w = ivis.main.IvParams.getInstance().graphics.testScreenWidth;
-                xmax = w + round(w*.25); % ivis.main.IvParams.getInstance().graphics.testScreenWidth;
-            end
-            if nargin < 4 || isempty(ymax)
-                h = ivis.main.IvParams.getInstance().graphics.testScreenHeight;
-                ymax = h + round(h*.25); % ivis.main.IvParams.getInstance().graphics.testScreenHeight;
-            end
-            
-            % store params
-            obj.xmin = xmin;
-            obj.ymin = ymin;
-            obj.xmax = xmax;
-            obj.ymax = ymax;
-            
-            % calc P constant
-            obj.P_unifConstant = pdf('unid', 1, xmax, xmin) * pdf('unid', 1, ymax, ymin);
+
+            % explicitly invoke superclass constructor. This will cause any
+            % min/max values not stated explicitly to default to their
+            % preset values (e.g., screen width +/- a margin of X%)
+            if nargin < 1, minmaxBounds_px = []; end
+            obj@ivis.math.pdf.IvHitFunc(minmaxBounds_px, 0);
+
+            % create Probability Distribution objects (independent for x
+            % and y domain)
+            obj.probdistr_x = makedist('Uniform', obj.xmin_px, obj.xmax_px);
+            obj.probdistr_y = makedist('Uniform', obj.ymin_px, obj.ymax_px);
         end
         
         %% == METHODS =====================================================
-        
-        function [P,xy] = getPDF(obj, xy, varargin) % interface implementation
-            if nargin < 2 || isempty(xy) % parse inputs
-                xy = obj.pdf_xy;
-            end
-            xy = ceil(xy); % ceil since for 0, P = 0
-            
-            % calc bivartiate pdf
-            inRange = (xy(:,1)<=obj.xmax & xy(:,1)>=obj.xmin & xy(:,2)<=obj.ymax & xy(:,2)>=obj.ymin);
-            P = inRange * obj.P_unifConstant + ~inRange * obj.MIN_VAL;
-        end
 
-        function xy = getRand(obj, n) % interface implementation
-            xy = [unifrnd(obj.xmin, obj.xmax, [n 1]) unifrnd(obj.ymin, obj.ymax, [n 1])];
-        end
-        
-        function h = plot(obj, ~, color) % interface implementation
-            h = patch([obj.xmin obj.xmin obj.xmax obj.xmax], [obj.ymin obj.ymax obj.ymax obj.ymin], color);
+        function h = plot(obj, color) % interface implementation
+            h = patch([obj.xmin_px obj.xmin_px obj.xmax_px obj.xmax_px], [obj.ymin_px obj.ymax_px obj.ymax_px obj.ymin_px], color);
             set(h,'FaceAlpha',.2);
         end
         
-        function [] = updatePlot(obj, mu) %#ok interface implementation (do nothing)
+        function [] = update(obj, ~) %#ok interface implementation (do nothing)
         end
     end
     

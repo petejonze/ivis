@@ -16,7 +16,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="56" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="56" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="55" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1af4283a7c7131754a3bba95f1e93f8b02" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="65" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="65" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="64" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a20ff3635f8dc471db11368eaa923be7d" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -42,21 +42,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="66" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="66" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="65" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a21c269c0cc8cf44ccce32fbafa46df86" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
         <definition>matlabtypesubstitute ivis::graphic::IvGraphicCompound::plotColour</definition>
         <argsstring></argsstring>
         <name>plotColour</name>
-        <initializer>= &apos;b&apos;</initializer>
+        <initializer>= &quot;b&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="72" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="71" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="69" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="69" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -81,24 +81,24 @@
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para></parameterdescription>
+<para>compound graphic name </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>varargin</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para></parameterdescription>
+<para><ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> object </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic_compound" kindref="compound">IvGraphicCompound</ref></para></simplesect>
+<simplesect kind="return"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic_compound" kindref="compound">IvGraphicCompound</ref> <ref refid="classivis_1_1graphic_1_1_iv_graphic_compound" kindref="compound">IvGraphicCompound</ref> object</para></simplesect>
 <simplesect kind="date"><para>26/06/14 </para></simplesect>
 <simplesect kind="author"><para>PRJ </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="85" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="85" bodyend="96"/>
-        <references refid="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" compoundref="_iv_screen_object_8m" startline="61">ivis::graphic::IvScreenObject::TYPE_GRAPHICCOMPOUND</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="80" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="80" bodyend="89"/>
+        <references refid="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" compoundref="_iv_screen_object_8m" startline="58">ivis::graphic::IvScreenObject::TYPE_GRAPHICCOMPOUND</references>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>noret::substitute</type>
@@ -122,14 +122,14 @@
 <parametername>winhandle</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para></parameterdescription>
+<para>PTB screen handle </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>varargin</parametername>
 </parameternamelist>
 <parameterdescription>
-<para></para></parameterdescription>
+<para>optional drawing parameters</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="date"><para>26/06/14 </para></simplesect>
@@ -137,7 +137,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="113" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="113" bodyend="126"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="106" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="106" bodyend="117"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_graphic_compound_1a6c74b8f43e8ced7c7068e64a1a79f503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -152,7 +152,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="142" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="142" bodyend="149"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="133" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="133" bodyend="139"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -169,52 +169,52 @@
 Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="598">
+      <node id="651">
         <label>handle</label>
       </node>
-      <node id="595">
+      <node id="648">
         <label>ivis::graphic::IvGraphicCompound</label>
         <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
-        <childnode refid="596" relation="public-inheritance">
+        <childnode refid="649" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="597">
+      <node id="650">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="598" relation="public-inheritance">
+        <childnode refid="651" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="596">
+      <node id="649">
         <label>ivis::graphic::IvScreenObject</label>
         <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
-        <childnode refid="597" relation="public-inheritance">
+        <childnode refid="650" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="602">
+      <node id="655">
         <label>handle</label>
       </node>
-      <node id="599">
+      <node id="652">
         <label>ivis::graphic::IvGraphicCompound</label>
         <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
-        <childnode refid="600" relation="public-inheritance">
+        <childnode refid="653" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="601">
+      <node id="654">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="602" relation="public-inheritance">
+        <childnode refid="655" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="600">
+      <node id="653">
         <label>ivis::graphic::IvScreenObject</label>
         <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
-        <childnode refid="601" relation="public-inheritance">
+        <childnode refid="654" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="19" bodyend="162"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphicCompound.m" bodystart="19" bodyend="152"/>
     <listofallmembers>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>delete</name></member>
       <member refid="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8" prot="public" virt="virtual"><scope>ivis::graphic::IvGraphicCompound</scope><name>draw</name></member>

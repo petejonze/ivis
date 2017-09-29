@@ -63,11 +63,11 @@ classdef (Abstract) IvGUIelement < Singleton
           
     methods (Access = protected)
         
-        function [effectiveFDims, fDims, aDims] = init(obj, idx, normaliseDims, bgcolor)
+        function [effectiveFDims, fDims, aDims] = init(obj, GUIidx, normaliseDims, bgcolor)
             % Initialise the GUI element; set the renderer and compute the
             % plot area dimensions.
             %
-            % @param    idx             GUI frame index
+            % @param    GUIidx        	GUI frame index
             % @param    normaliseDims   normalised figure dimensions
             % @param    bgcolor         figure background colour
             % @return   effectiveFDims  effective figure dimensions
@@ -97,9 +97,8 @@ classdef (Abstract) IvGUIelement < Singleton
             end
             
             % open figure component and embed in GUI
-            ivis.gui.IvGUI.getInstance().addFigurePanel(idx, obj.FIG_NAME);
-            obj.hFig = ivis.gui.IvGUI.getInstance().hFig(idx)';
-            
+            obj.hFig = ivis.gui.IvGUI.getInstance().subfigure(GUIidx, obj.FIG_NAME);
+
             % set renderer
             set(obj.hFig, 'Renderer', 'Painters'); % OpenGL conflicts with psychtoolbox
              
@@ -114,7 +113,7 @@ classdef (Abstract) IvGUIelement < Singleton
                 effectiveFDims = fDims .* nfDims; % ala guiCalib
 
                 % set colour, scale, direction of axes
-                axes('Color', bgcolor, 'Units', 'normalize', 'Position', [[1 1]-nfDims nfDims], 'DrawMode', 'fast', 'XTick', [], 'YTick', []);
+                axes('Color', bgcolor, 'Units', 'normalize', 'Position', [[1 1]-nfDims nfDims], 'XTick', [], 'YTick', []); % 'DrawMode','fast'   =>  'SortMethod','depth' X (removed, seemed to slow things down)
                 % axis ij; % specify "matrix" axes mode. Coordinate system origin is at upper left corner.
                 set(gca, 'YDir', 'reverse');
                 xlim([0 1]); ylim([0 1]); % fix axes

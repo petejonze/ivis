@@ -69,7 +69,7 @@ classdef (Sealed) IvBroadcaster < Singleton
             % @date     26/06/14
             % @author   PRJ
             %     
-            clear IvBroadcaster
+%             clear IvBroadcaster
         end
         
         %% == METHODS =====================================================

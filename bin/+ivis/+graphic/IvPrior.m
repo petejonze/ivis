@@ -3,6 +3,8 @@
 %  IvPrior Methods:
 %    * IvPrior   - Constructor.
 %    * getXY     - Dummy method; does nothing.
+%    * getX      - Dummy method; does nothing.
+%    * getY      - Dummy method; does nothing.
 %    * reset     - Dummy method; does nothing.
 %    * draw      - Dummy method; does nothing.
 % 
@@ -24,4 +26,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %    
+%
+%    Reference page in Doc Center
+%       doc ivis.graphic.IvPrior
+%
 %

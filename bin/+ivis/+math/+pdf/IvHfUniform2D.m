@@ -12,7 +12,7 @@
 %    none
 % 
 %  Example:
-%    none
+%    clearAbsAll; x = ivis.math.pdf.IvHfUniform2D([0 0], [100 100]), x.getPDF([-9991 -9991]), x.getPDF([-1 -1])
 % 
 %  Author:
 %    Pete R Jones <petejonze@gmail.com>
@@ -24,4 +24,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 % 
+%
+%    Reference page in Doc Center
+%       doc ivis.math.pdf.IvHfUniform2D
+%
 %

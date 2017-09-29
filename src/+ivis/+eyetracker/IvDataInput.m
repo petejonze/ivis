@@ -39,10 +39,17 @@ classdef (Abstract) IvDataInput < Singleton
     %   1.0 PJ 02/2013 : first_build\n
     %
     % @todo discard old points (particularly useful for avoiding
-    % @todo slowdowns/dropped-frames
+    %       slowdowns/dropped-frames?
     % @todo transfer hardcoded values to IvConfig
     % @todo discard samples where only 1 eye is available? (re: Sam Wass)
     % @todo make px2deg mapping dynamic based on subject movement?
+    % @todo in the long run the eyeball z data should be filtered/buffered
+    %       through this class too. At the moment the logic is internal to each
+    %       eyetracker, since some trackers don't return this information.
+    %       But most do now, and it would be good to deal with it properly.
+    %       This would allow proper retrieval (e.g., get last points since
+    %       T), and should improve accuracy too (e.g., low pass filtering).
+    % @todo allow setting of trackerInFrontMonitor_mm
     %
     % Copyright 2014 : P R Jones
     % *********************************************************************
@@ -73,7 +80,7 @@ classdef (Abstract) IvDataInput < Singleton
         % @date     26/06/14
         % @author   PRJ
         %
-        n = refresh(obj, logData)
+        [n,saccadeOnTime,blinkTime] = refresh(obj, logData)
         
         % Query the eyetracker for new data; discard.
         %
@@ -113,10 +120,27 @@ classdef (Abstract) IvDataInput < Singleton
 
     properties (GetAccess = public, SetAccess = private)
         mostRecentSaccadeTime = -inf;
+        mostRecentBlinkTime = -inf;
         
         % internal parameter for computing speed parameters (shouldn't
         % really be got externally, but is currently used by TrackBox)
         lastXYTV = [NaN NaN NaN NaN];
+        
+        % current eyeball location estimates (N.B. distance info is also
+        % sotred in the main data buffer, but this record bypasses the
+        % buffering process, for added speed). It only records the last
+        % known location, however.
+        lEyeball_xyzt = [NaN NaN NaN NaN];
+        rEyeball_xyzt = [NaN NaN NaN NaN];
+        % raw values for trackbox visualisation, where we are happy for
+        % values to be blank/invalid (i.e., not interested in last known
+        % 'good' value, but want a real time feed)
+        lEyeball_xyzt_raw = [NaN NaN NaN NaN];
+        rEyeball_xyzt_raw = [NaN NaN NaN NaN];
+        
+        % z offset (e.g., for TrackBox visualisation)
+        trackerInFrontMonitor_mm = 20;
+        zCalibrationOffset_mm = 0; % trueDistance_mm - currentEstimatedDistance_mm; [NB: should probably not be applied to TrackBox visualisations, in future updates]
     end
 
     properties (Access = protected)
@@ -141,9 +165,10 @@ classdef (Abstract) IvDataInput < Singleton
 
         % ---- TAGGING ----
         enableTagging
-        SACCADE_ON_CODE
-        SACCADE_OFF_CODE
-        BLINK_CODE
+        includeTagsInRawOutput
+        SACCADE_ON_BITPOS
+        SACCADE_OFF_BITPOS
+        BLINK_BITPOS
         nDataPoints
         nDataPointsPerCycle
         nCycles
@@ -169,6 +194,7 @@ classdef (Abstract) IvDataInput < Singleton
         buffer2
         buffer3
         pixel_per_dg
+        blinkTemporalMin_secs = 1; % 0.3;
         
         % ---- TIMING ----
         expectedLatency_sec = 0;
@@ -295,7 +321,8 @@ classdef (Abstract) IvDataInput < Singleton
             %
             % @param	trueXY          the "true" xy gaze coordinate 
             % @param	estXY           the observed xy gaze coordinate
-            % @param	maxCorrection	the maximum acceptable deviation   
+            % @param	maxCorrection	the maximum acceptable deviation 
+            % @param	weight          amount of weight to give drift correction (0 to 1)    
             %
             % @todo     check that this works!
             % @todo     could weight the difference differently depending on the location on the screen?
@@ -311,7 +338,56 @@ classdef (Abstract) IvDataInput < Singleton
             
             ivis.calibration.IvCalibration.getInstance().updateDriftCorrection(trueXY, estXY, maxCorrection, weight);
         end
-
+ 
+        function [lEyeball_xyzt, rEyeball_xyzt] = getEyeballLocations(obj)
+            % Get cartesian coordinates for each eyeball, in millimeters.
+            %
+            % @return   lEyeball_xyzt	Cartesian coords (mm) + timestamp
+         	% @return   rEyeball_xyzt   Cartesian coords (mm) + timestamp
+            %
+            % @date     21/07/14
+            % @author   PRJ
+            %
+            
+            lEyeball_xyzt = obj.lEyeball_xyzt;
+           	rEyeball_xyzt = obj.rEyeball_xyzt;
+        end
+        function [lastKnownViewingDistance_mm, t] = getLastKnownViewingDistance(obj)
+            % Compute last known viewing distance (averaging across
+            % eyeballs).
+            %            
+         	% @return   lastKnownViewingDistance_cm 	distance from eyetracker to eyeball (mm)
+            %
+            % @date     21/07/14
+            % @author   PRJ
+            %
+            
+            % get values
+            lastKnownViewingDistance_mm = nanmean([obj.lEyeball_xyzt(3) obj.rEyeball_xyzt(3)]);
+            t = nanmean([obj.lEyeball_xyzt(4) obj.rEyeball_xyzt(4)]);
+        end
+        
+        function ok = calibrateDistanceToScreen(obj, trueDistance_mm)
+            
+            [currentEstimatedDistance_mm, t] = obj.getLastKnownViewingDistance();
+            
+            % ensure that this estimate was made sufficiently recently
+            if (GetSecs()-t) > 0.5
+                obj.zCalibrationOffset_mm
+                obj.lEyeball_xyzt
+                obj.rEyeball_xyzt
+                fprintf('%1.9f\n', GetSecs())
+                fprintf('%1.9f\n', t)
+                GetSecs()-t
+                warning('IvDataFailed to set distance calibration: Last known timestamp is %1.2f seconds old\n', GetSecs()-t);
+                ok = false;
+                return;
+            end
+            
+            % set zOffset value
+            obj.zCalibrationOffset_mm = trueDistance_mm - currentEstimatedDistance_mm;
+            ok = true;
+        end
     end
 
     
@@ -346,9 +422,9 @@ classdef (Abstract) IvDataInput < Singleton
             obj.doBeep = params.saccade.doBeep;
 
             % general params
-            obj.SACCADE_ON_CODE = 9; % completely arbitrary values (change later)
-            obj.SACCADE_OFF_CODE = 7;
-            obj.BLINK_CODE = 22;
+            obj.SACCADE_ON_BITPOS   = 1; % completely arbitrary values (change later)
+            obj.SACCADE_OFF_BITPOS  = 2;
+            obj.BLINK_BITPOS        = 3;
             obj.nDataPoints = 150; % simulation params
             obj.nDataPointsPerCycle = 3; % n values 'returned from eyetracker' per cycle
             obj.nCycles = obj.nDataPoints/obj.nDataPointsPerCycle;
@@ -380,14 +456,18 @@ classdef (Abstract) IvDataInput < Singleton
             obj.lagPeriod = obj.p1_Npost + obj.p2_Npost + obj.p3_Npost;
             
             % init storage
-            obj.buffer1 = nan(obj.p1_Npre,11);
-            obj.buffer2 = nan(obj.p2_Npre,11);
-            obj.buffer3 = nan(obj.p3_Npre,11);
+            obj.buffer1 = nan(obj.p1_Npre,13); % 13 columns by default
+            obj.buffer2 = nan(obj.p2_Npre,13);
+            obj.buffer3 = nan(obj.p3_Npre,13);
+            % flags must be int for bitget/bitset
+            obj.buffer1(:,6) = 0;
+            obj.buffer2(:,6) = 0;
+            obj.buffer3(:,6) = 0;
 
             % store params
             obj.id = params.eyetracker.id;
             obj.Fs = params.eyetracker.sampleRate;
-            obj.debugMode = false;
+            obj.debugMode = params.eyetracker.debugMode;
             
             % set log params
             obj.LOG_RAW_DATA = params.eyetracker.logRawData; 
@@ -397,7 +477,7 @@ classdef (Abstract) IvDataInput < Singleton
             end
         end
         
-        function saccadeOnTime = processData(obj, x, y, t, vldty, p, logData)
+        function [saccadeOnTime, blinkTime] = processData(obj, x, y, t, vldty, p, zL_mm,zR_mm, logData)
             % Interpolate, smooth, log the data, update the GUI and any
             % fixation marker.
             %
@@ -407,11 +487,13 @@ classdef (Abstract) IvDataInput < Singleton
             %
             % n.b., input vectors must be columns
             %
-            % @param    x : x position (in pixels)
-            % @param    y : y position (in pixels)
-            % @param    t : timestamp (in seconds)
-            % @param    vldty : some kind of validity measure
-            % @param    p : pupil diameter
+            % @param    x       : x position (in pixels)
+            % @param    y       : y position (in pixels)
+            % @param    t       : timestamp (in seconds)
+            % @param    vldty   : some kind of validity measure
+            % @param    p       : pupil diameter
+            % @param    zL_mm  	: left eyeball distance
+            % @param    zR_mm  	: right eyeball distance
             % @param    logData
             % @return   saccadeOnTime
             %
@@ -423,63 +505,121 @@ classdef (Abstract) IvDataInput < Singleton
             %
             % c : eye-event code (see IvEventCode)
             
-            if nargin < 7 || isempty(logData)
+                
+            if nargin < 9 || isempty(logData)
                 logData = true;
             end
             
-            % new raw data
-            newData = [x y t-obj.expectedLatency_sec vldty p nan(length(x),4) x y]; % x/y added again in the last two columns so that a COMPLETELY unprocessed copy of each is preserved
+          	saccadeOnTime = [];
+            blinkTime = [];
             
+            %-------------Get new data------------------------------------- 
+            % new raw data - inlcude 4 dummy columns that will contain
+            % derived values (event-code, delta, velocity, acceleration).
+            % NB: eventcode 'dummy' val is 0, not NaN (i.e., as must be int
+            % for bitget/bitset)
+            newData = [x y t-obj.expectedLatency_sec vldty p zeros(length(x),1) nan(length(x),3) zL_mm zR_mm x y]; % x/y added again in the last two columns so that a COMPLETELY unprocessed copy of each is preserved
+
             % apply calibration
             newData(:,1:2) = ivis.calibration.IvCalibration.getInstance().apply(newData(:,1:2));
 
+            % tmp
+         	obj.lastXYTV = [newData(end,1:3) NaN];
+                
             % smooth & interpolate
             newData = smoothAndInterpolate(obj, newData);
             
-            % compute speed parameters
-            if ~isempty(newData)
-                d = sqrt(sum(diff([obj.lastXYTV(1:2); newData(:,1:2)],1).^2,2)); % calc euclidean distance in points
-                d = d / obj.pixel_per_dg; % ivis.math.IvUnitHandler.getInstance().px2deg(d);% convert to degrees visual angle
-                dt = diff([obj.lastXYTV(3); newData(:,3)]); % calc time diff in seconds
-                v = d./dt; % calc velocity (deg/sec)
-                A = diff([obj.lastXYTV(4); v]); % calc acceleration (deg/sec)^2
-                % store
-                newData(:,7:9) = [d v A];
-                obj.lastXYTV = [newData(end,1:3) v(end)];
-            end
-            
-            % tag events
-            if obj.enableTagging
-                newData = tagEvents(obj, newData);
-                newData = postHocCleanEvents(obj, newData);
-            end
-            
             % no point continuing if no new (processed) data
             if isempty(newData)
-                saccadeOnTime = [];
                 return;
             end
             
-            % retrieve latest, post-processed, values
-            xy = newData(:,1:2);
-            t = newData(:,3);
-            vldty = newData(:,4);
-            pd = newData(:,5);
-            c = newData(:,6);
-            d = newData(:,7);
-            v = newData(:,8);
-            A = newData(:,9);
-            xy_raw = newData(:,10:11);
+            %-------------Compute temporal params--------------------------
+            % compute speed parameters
+            d = sqrt(sum(diff([obj.lastXYTV(1:2); newData(:,1:2)],1).^2,2)); % calc euclidean distance in points
+            d = d / obj.pixel_per_dg; % ivis.math.IvUnitHandler.getInstance().px2deg(d);% convert to degrees visual angle
+            dt = diff([obj.lastXYTV(3); newData(:,3)]); % calc time diff in seconds
+            v = d./dt; % calc velocity (deg/sec)
+            A = diff([obj.lastXYTV(4); v]); % calc acceleration (deg/sec)^2
+            % store
+            newData(:,7:9) = [d v A];
+            obj.lastXYTV(4) = v(end);
+            
+            % tag events
+            if obj.enableTagging
+                
+                if obj.includeTagsInRawOutput
+                    newData = obj.postHocCleanEvents(obj.tagEvents(newData));
+                    taggedData = newData;
+                else
+                    taggedData = obj.postHocCleanEvents(obj.tagEvents(newData));
+                end
+                
+                if ~isempty(taggedData)
+                    t = taggedData(:,3);
+                    c = taggedData(:,6);
+
+                    % check for saccades
+                    idx = bitget(c, obj.SACCADE_ON_BITPOS)==1;
+                    if any(idx)
+                        saccadeOnTime = t(idx);
+                        obj.mostRecentSaccadeTime = saccadeOnTime(end);
+                        if obj.doBeep % beep if a saccde onset is detected (useful for testing/debugging)
+                            sound(getPureTone(1000,22050,0.01));
+                        end
+                    end
+                    
+                    % check for blinks
+                    idx =  bitget(c, obj.BLINK_BITPOS)==1;
+                    if any(idx)
+                        blinkTime = t(idx);
+                        obj.mostRecentBlinkTime = blinkTime(end);
+                        if obj.doBeep % beep if a saccde onset is detected (useful for testing/debugging)
+                            sound(getPureTone(400,22050,0.01));
+                        end
+                    end
+                end
+            end
+
+            % no point continuing if no new (processed) data
+            if isempty(newData)
+                return;
+            end
+            
+            
+            %-------------Get final/updated raw data-----------------------
+         	% retrieve latest, post-processed, values
+            xy      = newData(:,1:2);
+            t       = newData(:,3);
+            vldty   = newData(:,4);
+            pd      = newData(:,5);
+            c       = newData(:,6);
+            d       = newData(:,7);
+            v       = newData(:,8);
+            A       = newData(:,9);
+            zL_mm   = newData(:,10);
+            zR_mm   = newData(:,11);
+            xy_raw  = newData(:,12:13);
+            
+%             if any(t<360000)
+%                 tmp = [xy t t<360000]
+%                 xy
+%                 t
+%                 t = t<360000
+%                 xy_raw
+%                 fprintf('%1.2f\n', xy_raw(:,1));
+%                 dfdfdfdf
+%             end
             
             %-------------Save data----------------------------------------         
             if logData             
-                ivis.log.IvDataLog.getInstance().add(xy(:,1),xy(:,2),t,vldty,pd,c,d,v,A,xy_raw(:,1),xy_raw(:,2)); % store data in buffer (could precache the singleton to speed things up)
+                ivis.log.IvDataLog.getInstance().add(xy(:,1),xy(:,2),t,vldty,pd,c,d,v,A,zL_mm,zR_mm,xy_raw(:,1),xy_raw(:,2)); % store data in buffer (could precache the singleton to speed things up)
             end
 
             
             %-------------Update GUI---------------------------------------
-            if ~isempty(obj.spatialGuiElement)               
-                obj.spatialGuiElement.update(xy(end,:));
+            if ~isempty(obj.spatialGuiElement)
+                obj.spatialGuiElement.update(xy(end,1:2));
             end
             if ~isempty(obj.temporalGuiElement)
                 obj.temporalGuiElement.update();
@@ -488,22 +628,15 @@ classdef (Abstract) IvDataInput < Singleton
             
             %-------------Give user feedback-------------------------------
             drawnow('update');
-            
-            % beep if a saccde onset is detected (useful for testing/debugging)
-            saccadeOnTime = t(obj.SACCADE_ON_CODE==c);
-            if ~isempty(saccadeOnTime)
-                obj.mostRecentSaccadeTime = saccadeOnTime(end);
-                if obj.doBeep
-                    beep();
-                end
-            end
+
             % show current fixation estimate on screen
             if obj.showFixations
                 obj.updateFixationMarker(round(xy(end,:))); % n.b. round to whole pixel value
             end
             % print text info to screen
-            if obj.debugMode > 0 && ~isempty(ivis.main.IvParams.getInstance().graphics.winhandle)
-                if any(obj.SACCADE_ON_CODE==c)
+            if obj.debugMode > 1
+                %if any(obj.SACCADE_ON_CODE==c)
+                if any(bitget(c, obj.SACCADE_ON_BITPOS)==1)
                     obj.saccadeCounter = obj.saccadeCounter + 1;
                 end
                 info = {
@@ -512,9 +645,46 @@ classdef (Abstract) IvDataInput < Singleton
                     'N saccade: ', obj.saccadeCounter, '%i'
                     ' N Buffer: ', ivis.log.IvDataLog.getInstance().getN, '%i'
                     };
-                obj.printInfoToScreen(info);
+                if isempty(ivis.main.IvParams.getInstance().graphics.winhandle)
+                    disp(info)
+                else
+                    obj.printInfoToPTBScreen(info);
+                end
             end
         end
+        
+        function [] = setEyeballLocations(obj, lEye_xyz_mm, rEye_xyz_mm, t)
+            % Set cartesian coordinates for each eyeball, in millimeters.
+            %
+            % @param    lEye_xyz_mm     Cartesian coordinates (mm)
+            % @param    rEye_xyz_mm     Cartesian coordinates (mm)
+            % @param    t               Timestamp
+            %
+            % @date     21/07/14
+            % @author   PRJ
+            %
+
+            % apply additive calibration factor to map the estimated
+            % distance from eyeball to SCREEN is correct
+            lEye_xyz_mm(:,3) = lEye_xyz_mm(:,3) + obj.zCalibrationOffset_mm;
+            rEye_xyz_mm(:,3) = rEye_xyz_mm(:,3) + obj.zCalibrationOffset_mm;
+            
+            % store left
+            isvalid = (lEye_xyz_mm(:,3)>100) & (lEye_xyz_mm(:,3)<2000) & ~isnan(lEye_xyz_mm(:,3)); % distance (z) must be between 100 and 2000 mm, and non-NaN
+            idx = find(isvalid,1,'last');
+            if ~isempty(idx)
+                obj.lEyeball_xyzt = [lEye_xyz_mm(idx, 1:3) t(idx)];
+            end
+            obj.lEyeball_xyzt_raw = [lEye_xyz_mm(end, 1:3) t(end)];
+            
+            % repeat for right
+            isvalid = (rEye_xyz_mm(:,3)>100) & (rEye_xyz_mm(:,3)<2000) & ~isnan(rEye_xyz_mm(:,3)); % distance (z) must be between 100 and 2000 mm, and non-NaN
+            idx = find(isvalid,1,'last');
+            if ~isempty(idx)
+                obj.rEyeball_xyzt = [rEye_xyz_mm(idx, 1:3) t(idx)];
+            end
+            obj.rEyeball_xyzt_raw = [rEye_xyz_mm(end, 1:3) t(end)];
+        end 
   	end
 
     
@@ -554,7 +724,6 @@ classdef (Abstract) IvDataInput < Singleton
                 for xy = 1:2
                     k = 1;
                     while isnan(obj.buffer1(i,xy)) && k <= obj.p1_iw
-                        %buffer1(i,xy) = (buffer1(i-1,xy) + buffer1(i+k,xy)) / 2;
                         obj.buffer1(i,xy) = obj.buffer1(i-1,xy)*(1-1/(k+1)) + obj.buffer1(i+k,xy)*(1/(k+1));
                         k = k+1;
                     end
@@ -570,6 +739,7 @@ classdef (Abstract) IvDataInput < Singleton
                 if ~any(isnan(xysmoothed))
                     obj.buffer1(i,1:2) = xysmoothed;
                 end
+                % could also do z-smoothing at this point
             end
             
             % update data store, return any items that 'overflow' the
@@ -605,6 +775,9 @@ classdef (Abstract) IvDataInput < Singleton
             A = obj.buffer2(:,9);  	% acceleration (deg/sec)^2
             distmetric_deg = sqrt(sum((obj.buffer2(idx-obj.p2_dOffsetPrev,1:2)-obj.buffer2(idx+obj.p2_dOffsetPost,1:2)).^2,2));
             distmetric_deg = distmetric_deg / obj.pixel_per_dg; % ivis.math.IvUnitHandler.getInstance().px2deg(distmetric_deg);% convert to degrees visual angle
+            if obj.debugMode > 0
+                fprintf('v=%1.2f; A=%1.2f; d=%1.2f\n', v(end), A(end), distmetric_deg(end));
+            end
             
             % calculate the times when (any) saccades occured by looking
             % for changes in acceleration greater than a given cutoff (default
@@ -615,10 +788,11 @@ classdef (Abstract) IvDataInput < Singleton
             % identify blink as any instance with a nan in both X and Y
             % coordinates
             % (transient missing data points will have been interpolated above) (probably a cleaner way of doing this)
-            isBlink = all(isnan(obj.buffer2(idx,1:2)),2);
+            isBlink = all(isnan(obj.buffer2(idx,1:2)),2);           % Tobii
+            isBlink = isBlink | any(diff(obj.buffer2(:,3)) > obj.blinkTemporalMin_secs);    % EyeX
             
-            % set
-            obj.buffer2(idx,6) = 0 + isSaccadeOn*obj.SACCADE_ON_CODE + isSaccadeOff*obj.SACCADE_OFF_CODE + isBlink*obj.BLINK_CODE;
+            % set bit-flags
+            obj.buffer2(idx,6) = 0 + isSaccadeOn*2^(obj.SACCADE_ON_BITPOS-1) + isSaccadeOff*2^(obj.SACCADE_OFF_BITPOS-1) + isBlink*2^(obj.BLINK_BITPOS-1); % ALT: bitset.m
             
             %             % tmp?, store
             obj.buffer2(idx,7) = distmetric_deg;
@@ -653,16 +827,27 @@ classdef (Abstract) IvDataInput < Singleton
                 return;
             end
             
-            % for (any) content data, process
+            % for (any) content data, process [NB: cannot be vectorized as
+            % relies on sequentially updated values]
             for i = idx
                 % remove any saccades that fall too close to a prior saccade,
                 % or too close to a preceding/succeeding blink
-                if obj.buffer3(i,6)==obj.SACCADE_ON_CODE % change to switch if more conditions arise
-                    
-                    if sum(obj.buffer3((i-obj.prevSaccadeWindow):i,6) == obj.SACCADE_ON_CODE) > 1
-                        obj.buffer3(i,6) = 0;
-                    elseif sum(obj.buffer3(i-obj.prevBlinkWindow:i+obj.postBlinkWindow,6) == obj.BLINK_CODE) > 0
-                        obj.buffer3(i,6) = 0;
+                if bitget(obj.buffer3(i,6), obj.SACCADE_ON_BITPOS)==1 % change to switch if more conditions arise
+                    if sum(bitget(obj.buffer3((i-obj.prevSaccadeWindow):i,6), obj.SACCADE_ON_BITPOS)==1) > 1
+                        obj.buffer3(i,6) = bitset(obj.buffer3(i,6), obj.SACCADE_ON_BITPOS, 0);
+                    elseif sum(bitget(obj.buffer3((i-obj.prevBlinkWindow):(i+obj.postBlinkWindow),6), obj.BLINK_BITPOS)==1) > 0
+                        obj.buffer3(i,6) = bitset(obj.buffer3(i,6), obj.SACCADE_ON_BITPOS, 0);
+                    end
+                end
+                
+                % remve any blinks that fall to close to a prior blink (NB:
+                % this is currently a bit of a hack, and is intended for
+                % TobiiEyeX style ('callback') updating rather than Tobii
+                % style polling
+                if bitget(obj.buffer3(i,6), obj.BLINK_BITPOS)==1 % change to switch if more conditions arise
+                    %if sum(bitget(obj.buffer3((i-obj.prevBlinkWindow):(i-1),6), obj.BLINK_BITPOS)==1) > 0
+                    if sum(bitget(obj.buffer3(1:(i-1),6), obj.BLINK_BITPOS)==1) > 0 % important because if eyes closed may be accumulating #############
+                        obj.buffer3(i,6) = bitset(obj.buffer3(i,6), obj.BLINK_BITPOS, 0);
                     end
                 end
             end
@@ -695,7 +880,7 @@ classdef (Abstract) IvDataInput < Singleton
             end
         end
         
-        function [] = printInfoToScreen(obj, info)
+        function [] = printInfoToPTBScreen(obj, info)
             % Convenience function to print text to a PTB OpenGL screen.
             %
             % @param    info
@@ -742,12 +927,29 @@ classdef (Abstract) IvDataInput < Singleton
                  error('use [], not "none" if you want to set your eyetracker manually');
              end
              
+             % try to find appropriate class definition in the
+             % ivis.eyetracker package
+             files = what('ivis/eyetracker');
+             % strip out any unecessary user characters (E.g., IvTobii.m =>
+             % Tobii)
+             inputTypeStr = regexprep(inputTypeStr, '^Iv', '');
+             inputTypeStr = regexprep(inputTypeStr, '\.m$', '');
+             fnpattern = sprintf('Iv%s(?=.m)', inputTypeStr);
+             % perform match
+             tmp = regexpi(files.m, fnpattern, 'match', 'once');
+             classname = [tmp{:}];
+             
+             % check if any valid class name is found
+             if isempty(classname)
+                 error('Could not find an appropriate eyetracker class definition in ivis.eyetracker.\n\n      Detected classfiles are:\n            %s\n\n      You specified:\n            %s (raw input: %s)', sprintf('%s,',files.m{:}), fnpattern, params.type);
+             end
+             
              % perform common checks here
              try
-                 feval(sprintf('ivis.eyetracker.Iv%s.validate',capital(inputTypeStr)), params); % e.g. ivis.eyetracker.IvTobii.validate(params)
+                 feval(sprintf('ivis.eyetracker.%s.validate',classname), params); % e.g. ivis.eyetracker.IvTobii.validate(params)
              catch ME
                  dispStruct(params);
-                 sprintf('ivis.eyetracker.Iv%s.validate',capital(inputTypeStr))
+                 sprintf('ivis.eyetracker.%s.validate',classname)
                  rethrow(ME);
              end
          end
@@ -803,7 +1005,12 @@ classdef (Abstract) IvDataInput < Singleton
              datIn.expectedLatency_sec = eyetracker.expectedLatency_ms/1000;
              
              % enable tagging if requested
-             datIn.enableTagging = saccade.enableTagging;
+             datIn.enableTagging            = saccade.enableTagging;
+             datIn.includeTagsInRawOutput   = saccade.includeTagsInRawOutput;
+             if datIn.enableTagging && datIn.includeTagsInRawOutput
+                 warning('Currently inlcuding tags directly in raw output causes BLOCKING. Some lag will occur.')
+             end
+                 
              
              % initialise GUI element if figIndex specified
              if ~isempty(eyetracker.GUIidx)
@@ -835,7 +1042,6 @@ classdef (Abstract) IvDataInput < Singleton
              % get data
              dataStruct = csv2struct(fullFn);
          end
-         
          
          function lag_msec = estimateLag(params, withTagging, withGUI, Fs)
              % Estimate expected lag given a specified set of parameters.

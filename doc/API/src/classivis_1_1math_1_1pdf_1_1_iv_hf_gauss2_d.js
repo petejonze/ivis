@@ -1,10 +1,9 @@
 var classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d =
 [
-    [ "IvHfGauss2D", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a84c2ead151588285a83e6ecdca556123", null ],
-    [ "getPDF", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#ac5c879f88e022f40128747e87b86c0f1", null ],
-    [ "getRand", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a75a478325e4517eeae5e8a12d43ae8c5", null ],
-    [ "plot", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a1852857f3f7ee73c75931dcd2f2e8505", null ],
-    [ "updatePlot", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a98468e561e6483d534cd0391c2f6706c", null ],
-    [ "muOffset", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#acd20b5ab851e9f254e0fbd60e474ae2f", null ],
-    [ "sigma", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#ad2bac40e5e536539d84750fefcd95f9d", null ]
+    [ "IvHfGauss2D", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a94583c2f7de0b35f842f40a0248185b2", null ],
+    [ "plot", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a83ebce4170a470a119fadb39f69ef11b", null ],
+    [ "update", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a109681eaa10f0633f85e9caa55284921", null ],
+    [ "mu_px", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a22bfd2ab31ca0b089ec19c53a828f9d4", null ],
+    [ "pedestal_p", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#ae2c52520543fcde4c99bc151307b6e95", null ],
+    [ "sigma_px", "classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html#a3d0ceebce041c0ac9048332d38a6d424", null ]
 ];

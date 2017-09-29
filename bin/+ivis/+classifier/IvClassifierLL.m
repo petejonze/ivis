@@ -19,7 +19,7 @@
 %  http://www-structmed.cimr.cam.ac.uk/Course/Likelihood/likelihood.html
 % 
 %  IvClassifierLL Methods:
-%    * IvClassifierLL	- Constructor.
+%    * IvClassifierLL- Constructor.
 %    * start         - Start accruing evidence towards each alternative.
 %    * update        - Update evidence.
 %    * getStatus     - Get current status code.
@@ -45,4 +45,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %  
+%
+%    Reference page in Doc Center
+%       doc ivis.classifier.IvClassifierLL
+%
 %

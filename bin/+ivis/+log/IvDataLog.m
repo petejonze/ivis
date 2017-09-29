@@ -9,6 +9,7 @@
 %    * save    	 - Dump the buffer to an external file; prompt IvGraphic objects to do likewise.
 %    * reset  	 - Clear the buffer.
 %    * getN    	 - Get the N samples held in the buffer.
+%    * getLastKnownXY     - Convenience wrapper for getLastN, that extracts the last N [xy,t] values (raw or processed, with or without NaNs).      
 %        
 %  See Also:
 %    none
@@ -26,4 +27,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %  
+%
+%    Reference page in Doc Center
+%       doc ivis.log.IvDataLog
+%
 %

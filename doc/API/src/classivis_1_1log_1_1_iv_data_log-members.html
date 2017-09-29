@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classivis_1_1log_1_1_iv_data_log.html'
 
 <p>This is the complete list of members for <a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a604b8275f35820b5f0eaa9fb5331fc4c">add</a>(x, y, t, vldty, p, c, d, v, A)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a7d516f6f8929ccf4a25474d5c4a5f8e9">add</a>(x, y, t, vldty, p, c, d, v, A, z1, z2, X, Y)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a5e4f17d6ac7a303fc150dee665f020e4">buffer</a></td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a99c9cd14410fd4e45430d73440a167dc">delete</a>()</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a2f743ecbb85fde5a95c582329321454f">finishUp</a>()</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
@@ -121,11 +121,13 @@ $(document).ready(function(){initNavTree('classivis_1_1log_1_1_iv_data_log.html'
   <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html#a2c685a3134efa6beb336136ed53949b6">fnPattern</a></td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html">ivis.log.IvLog</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a1bd05b9810b21fdd3f14027005c40068">getInstance</a>()</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_singleton.html#ab3469ccad7eaeb94360fdc3b537b3dbb">getInstanceSingleton</a>(classname, varargin)</td><td class="entry"><a class="el" href="class_singleton.html">Singleton</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a8a2183c09b356fd686a9e54697001d1c">getLastN</a>(n, c)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a5d34eec5478e4d41c64a7a4c7908282c">getLastKnownXY</a>(n, useRaw, allowNan)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#af5551c86933ae758f294c723bd8ce549">getLastKnownZ</a>(allowNan)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#ac9d05e38f2ab84771ef1fc2c127b491d">getLastN</a>(n, c, excludeRowsWithNaNs)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#aba83dcb1e4783c6439d6ebb4af98603e">getN</a>()</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a5ad6b897a4b6f5db288e3da0cee1848d">getSetSingleton</a>(obj)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a60de03e376e3353f5e7019f8361603eb">getSinceT</a>(t, c)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a506e0b4177e1036bbef330cb1b38ef60">getTmpBuff</a>(c)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a35043c134ab298e6433d6137b4f3b785">getSinceT</a>(t, c)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a788319cc4bcd36ed9576d001afbf0437">getTmpBuff</a>(c)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html#a77086270b0c765b296a66f7eadf9122d">homeDir</a></td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html">ivis.log.IvLog</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_singleton.html#a7001949d1270fb90a10e44f06759edaf">initialise</a>(classname, varargin)</td><td class="entry"><a class="el" href="class_singleton.html">Singleton</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_singleton.html#abbdb598397d4c5455dfb0941400cd8f5">isinit</a>(classname)</td><td class="entry"><a class="el" href="class_singleton.html">Singleton</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
@@ -134,13 +136,13 @@ $(document).ready(function(){initNavTree('classivis_1_1log_1_1_iv_data_log.html'
   <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a0605149a67897ce98b7bf52cc70ebe10">save</a>(fn, saveGraphics)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_singleton.html#a0e21dfc9afab45b0a6a70f6665ce5819">Singleton</a>()</td><td class="entry"><a class="el" href="class_singleton.html">Singleton</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html#a62c98a243a2dcd854c5aa4d259ef592f">tmpBuff</a></td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_data_log.html">ivis.log.IvDataLog</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html#a54e71e6a66005be148fbc393af4d7247">validateFn</a>(fullFn, logType)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html">ivis.log.IvLog</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html#a54e71e6a66005be148fbc393af4d7247">validateFn</a>(fullFn, logType)</td><td class="entry"><a class="el" href="classivis_1_1log_1_1_iv_log.html">ivis.log.IvLog</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:42 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:15 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

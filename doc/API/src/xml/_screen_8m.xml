@@ -29,21 +29,19 @@
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19" refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,varargout&gt;<sp/><ref refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" kindref="member" tooltip="SCREEN wrapper for PTB&amp;#39;s Screen command.">Screen</ref>(matlabtypesubstitute<sp/>varargin)<sp/>{</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>strcmpi(varargin[1],</highlight><highlight class="stringliteral">&quot;<sp/>flip<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>update<sp/>graphics<sp/>as<sp/>appropriate</highlight></codeline>
-<codeline lineno="22"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal">ivis.broadcaster.IvBroadcaster.getInstance().notify(</highlight><highlight class="stringliteral">&quot;<sp/>PreFlip<sp/>&quot;</highlight><highlight class="normal">,<sp/>ivis.broadcaster.IvEventData(GetSecs())<sp/>)<sp/></highlight><highlight class="comment">/*<sp/><sp/>e.g.,<sp/>update<sp/>classifier,<sp/>TrackBox,<sp/>etc.</highlight></codeline>
-<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>forward<sp/>onwards</highlight></codeline>
-<codeline lineno="28"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>[varargout[1:nargout]]<sp/>=<sp/><ref refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" kindref="member" tooltip="SCREEN wrapper for PTB&amp;#39;s Screen command.">Screen</ref>(<sp/>varargin[:]<sp/>);<sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>update<sp/>graphics<sp/>as<sp/>appropriate<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">ivis.broadcaster.IvBroadcaster.getInstance().notify(</highlight><highlight class="stringliteral">&quot;<sp/>PreFlip<sp/>&quot;</highlight><highlight class="normal">,<sp/>ivis.broadcaster.IvEventData(GetSecs())<sp/>)<sp/></highlight><highlight class="comment">/*<sp/><sp/>e.g.,<sp/>update<sp/>classifier,<sp/>TrackBox,<sp/>etc.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>forward<sp/>onwards<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>[varargout[1:nargout]]<sp/>=<sp/><ref refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" kindref="member" tooltip="SCREEN wrapper for PTB&amp;#39;s Screen command.">Screen</ref>(<sp/>varargin[:]<sp/>);<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/Screen.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/Screen.m"/>
   </compounddef>
 </doxygen>

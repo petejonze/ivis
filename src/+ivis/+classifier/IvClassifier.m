@@ -96,7 +96,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
         % @date     26/06/14
         % @author   PRJ
         %
-        updateEvidence(obj)
+        updateEvidence(obj, xyt, varargin)
         
         % Return the object at index i. Each object is a possible area of
         % interest.
@@ -248,7 +248,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             obj.criterion = criterion;
         end
         
-        function t = start(obj, varargin)
+        function t = start(obj, resettime, varargin)
             % Start accruing evidence towards each alternative.
             %
             % @return   t   time when classification commenced (secs)
@@ -256,9 +256,15 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             % @date     26/06/14
             % @author   PRJ
             %
+            if nargin < 2 || isempty(resettime)
+                resettime = true;
+            end
+            
+            if resettime
+                obj.startTime = GetSecs();
+            end
+            
             obj.reset(varargin{:});
-            t = GetSecs();
-            obj.startTime = t;
         end
         
         function status = update(obj)
@@ -274,7 +280,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             end
             
             % get data
-            xyt = obj.getData();
+            [xyt,v] = obj.getData();
 
             % update the classification parameters (e.g., hitbox position,
             % used to visualise the hitbox on the screen). n.b., this is
@@ -285,7 +291,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             % don't bother coninuing if no new data
             if ~isempty(xyt)
                 % update evidence
-                obj.updateEvidence(xyt);
+                obj.updateEvidence(xyt, v);
                 
                 % check that during the evidence update the subclass
                 % classifier hasn't forced a decision (e.g., a path
@@ -328,12 +334,13 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             isund = obj.status==obj.STATUS_UNDECIDED;
         end
         
-        function mostLikelyGraphicObj = interogate(obj, forcedChoice)
+        function [mostLikelyGraphicObj, propComplete] = interogate(obj, forcedChoice)
             % Make an (optionally forced) response, based on current level
             % of evidence (if unforced may return obj.NULL_OBJ).
             %
             % @param    forcedChoice    whether to force the choice
             % @return   mostLikelyObj   the most likely fixation object
+            % @return   propComplete    vector with proportion complete for each object (NB: can be < 0)
             %
             % @date     26/06/14
             % @author   PRJ
@@ -344,6 +351,9 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
                 forcedChoice = false;
             end
             
+            % get % complete
+            propComplete = obj.evidence ./ obj.criterion;
+
             % check for timeout
             if obj.status == obj.STATUS_RETIRED
                 mostLikelyGraphicObj = obj.TIMEOUT_OBJ;
@@ -401,12 +411,38 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
         end
         
         function [] = forceAnswer(obj, i)
+        	% ###########
+            %
+            % @date     26/06/14
+            % @author   PRJ
+            %
             if i == 0
                 obj.updateStatus(ivis.graphic.IvPrior());
             else
                 obj.evidence(i) = obj.criterion(i) + 1;
                 obj.updateStatus(obj.interogate());
             end  
+        end
+        
+        function [] = resetOnsetRampParams(obj, onsetRampStart, onsetRampDuration)
+        	% ###########
+            %
+            % @date     26/06/14
+            % @author   PRJ
+            %
+            
+            % parse inputs
+            params = ivis.main.IvParams.getInstance();        
+            if nargin < 2 || isempty(onsetRampStart)
+                onsetRampStart = params.classifier.onsetRampStart;
+            end
+            if nargin < 3 || isempty(onsetRampDuration)
+                onsetRampDuration = params.classifier.onsetRampDuration;
+            end
+            
+            obj.onsetRampStart      = onsetRampStart;
+            obj.onsetRampDuration   = onsetRampDuration;
+            obj.onsetRampEnd        = onsetRampStart + onsetRampDuration;
         end
         
     end
@@ -465,7 +501,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
           	obj.classifierSpecificReset(varargin{:});
         end
        
-        function xyt = getData(obj) %#ok
+        function [xyt, v] = getData(obj) %#ok
             % GETDATA dfdfdf.
             %
             % @return   xyt     latest xyt gaze data (+timestamp)
@@ -476,6 +512,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             
             % get recent data (not previously processed)
             xyt = ivis.log.IvDataLog.getInstance().getTmpBuff(1:3); % n.b., this will include and drift-correction, etc
+            v = ivis.log.IvDataLog.getInstance().getTmpBuff(8); % n.b., this will include and drift-correction, etc
             
             % ALT(?):
             % xyt = ivis.log.IvDataLog.getInstance().getSinceT(obj.lastEvaluatedTimepoint, 1:3);
@@ -483,7 +520,9 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             
             % remove any NaN points to prevent them screwing up the PDF
             % calc later
-            xyt(any(isnan(xyt),2),:) = []; %ALT: xyt = xyt(~any(isnan(xyt),2),:);
+            idx = any(isnan(xyt),2);
+            xyt(idx,:) = []; %ALT: xyt = xyt(~any(isnan(xyt),2),:);
+            v(idx) = [];
         end
         
         function w = getOnsetRamp(obj, t)
@@ -519,7 +558,7 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
             % @date     26/06/14
             % @author   PRJ
             %
-            if (GetSecs()-obj.startTime) > obj.timeout;
+            if (GetSecs()-obj.startTime) > obj.timeout
                 status = obj.STATUS_RETIRED; % give up
             else
                 switch lower(gObj.name)

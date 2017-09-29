@@ -34,3 +34,7 @@
 %  at some point this should be refactored, into 1 parent abstract class,
 %  and 2 instances: model-based and data-based
 %
+%    Reference page in Doc Center
+%       doc ivis.eyetracker.IvSimulator
+%
+%

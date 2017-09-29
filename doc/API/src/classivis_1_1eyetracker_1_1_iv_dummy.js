@@ -1,7 +1,7 @@
 var classivis_1_1eyetracker_1_1_iv_dummy =
 [
     [ "IvDummy", "classivis_1_1eyetracker_1_1_iv_dummy.html#a317d178f99923f40b07e318d6ee40122", null ],
-    [ "connect", "classivis_1_1eyetracker_1_1_iv_dummy.html#af6bd0668419d255a34699650382a5f34", null ],
+    [ "connect", "classivis_1_1eyetracker_1_1_iv_dummy.html#a1613f924d41b84b1da241b4cc13f1a76", null ],
     [ "flush", "classivis_1_1eyetracker_1_1_iv_dummy.html#ad7e4a5c74d796fb9b50c576697aa9853", null ],
     [ "readRawLog", "classivis_1_1eyetracker_1_1_iv_dummy.html#a17d482e48800e8a10292a436deccd18a", null ],
     [ "reconnect", "classivis_1_1eyetracker_1_1_iv_dummy.html#a62a61c6862382a061e05981eb91239ca", null ],

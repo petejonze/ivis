@@ -121,7 +121,7 @@ classdef CExpandableBuffer < handle
             end
         end
         
-        function y = get(obj, ni, mi)
+        function [y, ni] = get(obj, ni, mi)
             % get Get rows at specified indices (blank input for all).
             %
             %   y = obj.get([ni][, mi])
@@ -254,9 +254,11 @@ classdef CExpandableBuffer < handle
             end
             
             % For each element of A, find the nearest smaller-or-equal value in B:
-            B = obj.buffer(:,testCol);
+            %B = obj.buffer(:,testCol);
+            [B, ni] = obj.get([],testCol);
             [~,ib] = histc(A, [-inf; B; inf]);
-            y = obj.buffer(ib-1,mi);
+
+            y = obj.buffer(ni(ib-1),mi);
         end
     
         function y = getAfterX(obj, X, testCol, mi)

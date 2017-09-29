@@ -65,11 +65,11 @@ classdef (Sealed) IvGUIclassifierVector < ivis.gui.IvGUIclassifier
             obj.nAlternatives = numel(rqdMagnitude);
             
             % init data
-            obj.plot1Data = CCircularBuffer(obj.BUFFER_LENGTH,2);
-            obj.plot2Data = CCircularBuffer(obj.BUFFER_LENGTH,obj.nAlternatives);
+            obj.plot1Data = CCircularBuffer(obj.BUFFER_LENGTH_PLOT1,2);
+            obj.plot2Data = CCircularBuffer(obj.BUFFER_LENGTH_PLOT1,obj.nAlternatives);
             % fill up with nans to start with
-            obj.plot1Data.put(nan(obj.BUFFER_LENGTH,2));
-            obj.plot2Data.put(nan(obj.BUFFER_LENGTH,obj.nAlternatives));
+            obj.plot1Data.put(nan(obj.BUFFER_LENGTH_PLOT1,2));
+            obj.plot2Data.put(nan(obj.BUFFER_LENGTH_PLOT1,obj.nAlternatives));
             
             % init plots
             % plot1

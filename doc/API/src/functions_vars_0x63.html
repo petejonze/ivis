@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -109,6 +109,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_vars_0x77.html#index_w"><span>w</span></a></li>
       <li><a href="functions_vars_0x78.html#index_x"><span>x</span></a></li>
       <li><a href="functions_vars_0x79.html#index_y"><span>y</span></a></li>
+      <li><a href="functions_vars_0x7a.html#index_z"><span>z</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -145,30 +146,33 @@ $(document).ready(function(){initNavTree('functions_vars_0x63.html','');});
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>calibration
-: <a class="el" href="classivis_1_1main_1_1_iv_params.html#ac6984a9e495c663339db99aa2b8a1c2d">ivis.main.IvParams</a>
+: <a class="el" href="classivis_1_1main_1_1_iv_params.html#ac6984a9e495c663339db99aa2b8a1c2d">ivis::main::IvParams</a>
+</li>
+<li>CalibrationData
+: <a class="el" href="classivis_1_1eyetracker_1_1_iv_smi.html#a60c1a1329c54f01f5353c325d6c948ed">ivis::eyetracker::IvSmi</a>
 </li>
 <li>capacity
-: <a class="el" href="class_c_circular_buffer.html#a514b50528ca59b2ab52839fba30d8ad3">CCircularBuffer</a>
-, <a class="el" href="class_c_expandable_buffer.html#aa65ff4a2d35e248f4fd66e8b9a48834c">CExpandableBuffer</a>
+: <a class="el" href="class_c_expandable_buffer.html#aa65ff4a2d35e248f4fd66e8b9a48834c">CExpandableBuffer</a>
+, <a class="el" href="class_c_circular_buffer.html#a514b50528ca59b2ab52839fba30d8ad3">CCircularBuffer</a>
 </li>
 <li>categoryObjs
-: <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_grid.html#aa883bb4975e6801a050242c1d9877ba1">ivis.classifier.IvClassifierGrid</a>
-, <a class="el" href="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a30ec93cf048d135de4e1d22d36d42770">ivis.gui.IvGUIclassifierGrid</a>
+: <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_grid.html#aa883bb4975e6801a050242c1d9877ba1">ivis::classifier::IvClassifierGrid</a>
+, <a class="el" href="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a30ec93cf048d135de4e1d22d36d42770">ivis::gui::IvGUIclassifierGrid</a>
 </li>
 <li>classifier
-: <a class="el" href="classivis_1_1main_1_1_iv_params.html#a78d8756554b95d18c32b68cc0db07ee8">ivis.main.IvParams</a>
+: <a class="el" href="classivis_1_1main_1_1_iv_params.html#a78d8756554b95d18c32b68cc0db07ee8">ivis::main::IvParams</a>
 </li>
 <li>counter
-: <a class="el" href="classivis_1_1eyetracker_1_1_iv_manual.html#aee4c8b2f2cd614a3af184271db236051">ivis.eyetracker.IvManual</a>
+: <a class="el" href="classivis_1_1eyetracker_1_1_iv_manual.html#aee4c8b2f2cd614a3af184271db236051">ivis::eyetracker::IvManual</a>
 </li>
 <li>criterion
-: <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#aaf798aaeb32d77ab08510d4e107acde1">ivis.classifier.IvClassifier</a>
+: <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#aaf798aaeb32d77ab08510d4e107acde1">ivis::classifier::IvClassifier</a>
 </li>
 <li>cx
-: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#afc897c66a2b9442c1fad2d5b61add243">ivis.calibration.IvCalibration</a>
+: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#afc897c66a2b9442c1fad2d5b61add243">ivis::calibration::IvCalibration</a>
 </li>
 <li>cy
-: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a60506a58dba5b3c43da301fa5088e07f">ivis.calibration.IvCalibration</a>
+: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a60506a58dba5b3c43da301fa5088e07f">ivis::calibration::IvCalibration</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -176,7 +180,7 @@ $(document).ready(function(){initNavTree('functions_vars_0x63.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:43 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:16 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

@@ -1,7 +1,7 @@
 %  Singleton instantiation of IvDataInput, designed to link to a Eyelink
 %  eyetracker.
 % 
-%    long_description
+%    Validated with Eyelink 1000
 % 
 %  IvEyelink Methods:
 %    * IvEyelink	- Constructor.
@@ -30,4 +30,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 % 
+%
+%    Reference page in Doc Center
+%       doc ivis.eyetracker.IvEyelink
+%
 %

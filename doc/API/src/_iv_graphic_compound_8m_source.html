@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/+ivis/+graphic/IvGraphicCompound.m Source File</title>
+<title>ivis: +ivis/+graphic/IvGraphicCompound.m Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -128,81 +128,71 @@ $(document).ready(function(){initNavTree('_iv_graphic_compound_8m_source.html','
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html" title="Conglomoration of IvGraphic objects, all of which should be treated as one unit by the classifier...">IvGraphicCompound</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public .IvScreenObject {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public ::IvScreenObject {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     *  -----PROPERTIES-----</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a8c849478d753547443920e6c8757733b">   56</a></span>&#160;                <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a8c849478d753547443920e6c8757733b" title="user specified parameters">name</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#af4283a7c7131754a3bba95f1e93f8b02">   65</a></span>&#160;        <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#af4283a7c7131754a3bba95f1e93f8b02">graphicObjs</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a20ff3635f8dc471db11368eaa923be7d">   66</a></span>&#160;    <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a20ff3635f8dc471db11368eaa923be7d">nGraphicObjs</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a21c269c0cc8cf44ccce32fbafa46df86">   71</a></span>&#160;            plotColour = <span class="charliteral">&#39;b&#39;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a8c849478d753547443920e6c8757733b">   55</a></span>&#160;                matlabtypesubstitute <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a8c849478d753547443920e6c8757733b" title="user specified parameters">name</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#af4283a7c7131754a3bba95f1e93f8b02">   64</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#af4283a7c7131754a3bba95f1e93f8b02">graphicObjs</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a20ff3635f8dc471db11368eaa923be7d">   65</a></span>&#160;    matlabtypesubstitute <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a20ff3635f8dc471db11368eaa923be7d">nGraphicObjs</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a21c269c0cc8cf44ccce32fbafa46df86">   69</a></span>&#160;            matlabtypesubstitute plotColour = <span class="stringliteral">&quot;b&quot;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#aa73d4e5e18bdcc6a3f245167c9e597f2">   80</a></span>&#160;        <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#aa73d4e5e18bdcc6a3f245167c9e597f2" title="IvGraphicCompound Constructor.">IvGraphicCompound</a>(matlabtypesubstitute name,matlabtypesubstitute varargin) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="comment">/*  call superclass constructor */</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            obj@<a class="code" href="classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic).">IvScreenObject</a>(<a class="code" href="classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic).">IvScreenObject</a>.<a class="code" href="classivis_1_1graphic_1_1_iv_screen_object.html#afc8ce79a1590aa636fd88a3aac675ffa">TYPE_GRAPHICCOMPOUND</a>)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#aa73d4e5e18bdcc6a3f245167c9e597f2">   85</a></span>&#160;        <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#aa73d4e5e18bdcc6a3f245167c9e597f2" title="IvGraphicCompound Constructor.">IvGraphicCompound</a>(name,varargin) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="comment">/*  call superclass constructor</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            obj@<a class="code" href="classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic).">IvScreenObject</a>(<a class="code" href="classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic).">IvScreenObject</a>.<a class="code" href="classivis_1_1graphic_1_1_iv_screen_object.html#afc8ce79a1590aa636fd88a3aac675ffa">TYPE_GRAPHICCOMPOUND</a>)</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">/*  validate params</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            obj.name= name;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            obj.graphicObjs= varargin;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            obj.nGraphicObjs= length(obj.graphicObjs);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#adcc253f460e53f66487d707c0177b4f8">  113</a></span>&#160;        function  <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#adcc253f460e53f66487d707c0177b4f8" title="Forward the draw() command onto all constituent IvGraphic objects.">draw</a>(winhandle,varargin) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="comment">/*  parse inputs</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 2 || isempty(winhandle)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                winhandle = [];</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            end</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="comment">/*  execute</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">for</span> i = 1:obj.nGraphicObjs</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                obj.graphicObjs[i].draw(winhandle, varargin[:]);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            end</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a6c74b8f43e8ced7c7068e64a1a79f503">  142</a></span>&#160;        function  <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a6c74b8f43e8ced7c7068e64a1a79f503" title="Forward the reset() command onto all constituent IvGraphic objects.">reset</a>() {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="comment">/*  execute</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keywordflow">for</span> i = 1:obj.nGraphicObjs</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                obj.graphicObjs[i].reset();</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            end</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">/*  validate params */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            obj.name= name;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            obj.graphicObjs= varargin;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            obj.nGraphicObjs= length(obj.graphicObjs);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#adcc253f460e53f66487d707c0177b4f8">  106</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#adcc253f460e53f66487d707c0177b4f8" title="Forward the draw() command onto all constituent IvGraphic objects.">draw</a>(matlabtypesubstitute winhandle,matlabtypesubstitute varargin) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="comment">/*  parse inputs */</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">if</span> nargin &lt; 2 || isempty(winhandle)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                winhandle = [];</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            end</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="comment">/*  execute */</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">for</span> i = 1:obj.nGraphicObjs</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                obj.graphicObjs[i].draw(winhandle, varargin[:]);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            end</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a6c74b8f43e8ced7c7068e64a1a79f503">  133</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1graphic_1_1_iv_graphic_compound.html#a6c74b8f43e8ced7c7068e64a1a79f503" title="Forward the reset() command onto all constituent IvGraphic objects.">reset</a>() {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="comment">/*  execute */</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keywordflow">for</span> i = 1:obj.nGraphicObjs</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                obj.graphicObjs[i].reset();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            end</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;};</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b1fc417f0740629bd4971c68e72b5ce0.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_3d944ce0a9c7fff169d368019f51aa96.html">+graphic</a></li><li class="navelem"><a class="el" href="_iv_graphic_compound_8m.html">IvGraphicCompound.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:39 for ivis by
+    <li class="navelem"><a class="el" href="dir_ff8247d13baa4c7278b64786bdcd0aa5.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_871a3925931b9a906938f18fb7ec32bb.html">+graphic</a></li><li class="navelem"><a class="el" href="_iv_graphic_compound_8m.html">IvGraphicCompound.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:09 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

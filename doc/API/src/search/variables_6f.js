@@ -7,5 +7,5 @@ var searchData=
   ['onsetrampend',['onsetRampEnd',['../classivis_1_1classifier_1_1_iv_classifier.html#a34e699d786c5a727aa849016da64e22a',1,'ivis::classifier::IvClassifier']]],
   ['onsetrampstart',['onsetRampStart',['../classivis_1_1classifier_1_1_iv_classifier.html#a3dba59809b9b3ba7d6b4717fcf188a28',1,'ivis::classifier::IvClassifier']]],
   ['outchans',['outChans',['../classivis_1_1audio_1_1_iv_audio.html#a270e15f0aab63409cca064076fb8d64f',1,'ivis::audio::IvAudio']]],
-  ['outlierthresh_5fdeg',['outlierThresh_deg',['../classivis_1_1calibration_1_1_iv_calibration.html#ae76f728b3ad04ef76311e9bdc95fc498',1,'ivis::calibration::IvCalibration']]]
+  ['outlierthresh_5fpx',['outlierThresh_px',['../classivis_1_1calibration_1_1_iv_calibration.html#a28fa87a7c2808b0dffcca74e15d7c1ef',1,'ivis::calibration::IvCalibration']]]
 ];

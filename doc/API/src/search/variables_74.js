@@ -11,10 +11,12 @@ var searchData=
   ['tex',['tex',['../classivis_1_1video_1_1_iv_video.html#abeee463ad6ed1291b9e601f782ba4257',1,'ivis::video::IvVideo']]],
   ['texture',['texture',['../classivis_1_1graphic_1_1_iv_graphic.html#af7a2180922ea2a91e5b6b1105da3ba03',1,'ivis::graphic::IvGraphic']]],
   ['timeout',['timeout',['../classivis_1_1classifier_1_1_iv_classifier.html#a409cb2e4f2e96b0889c9627317281338',1,'ivis::classifier::IvClassifier']]],
+  ['timeout_5fobj',['TIMEOUT_OBJ',['../classivis_1_1classifier_1_1_iv_classifier.html#adc9d2ac83d19a5e62571adcf9ee1f70f',1,'ivis::classifier::IvClassifier']]],
   ['tmpbuff',['tmpBuff',['../classivis_1_1log_1_1_iv_data_log.html#a62c98a243a2dcd854c5aa4d259ef592f',1,'ivis::log::IvDataLog']]],
   ['tmpobj',['tmpObj',['../classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial.html#af5bed063ef13a9415ffcc099002dd7da',1,'ivis::gui::IvGUIeyetrackSpatial']]],
-  ['tobiidist',['tobiidist',['../classivis_1_1video_1_1_track_box.html#ac16f4de34a853fbf710aaca3a7d12550',1,'ivis::video::TrackBox']]],
   ['toolboxhomedir',['toolboxHomedir',['../classivis_1_1main_1_1_iv_params.html#aab0f92283c8df67b8134bb114053f84a',1,'ivis::main::IvParams']]],
+  ['trackbox_5fsize_5fmm',['TRACKBOX_SIZE_MM',['../classivis_1_1eyetracker_1_1_iv_mouse.html#a6f32e3abd22b7825f5af2f6913ef0c5a',1,'ivis::eyetracker::IvMouse::TRACKBOX_SIZE_MM()'],['../classivis_1_1eyetracker_1_1_iv_tobii_eye_x.html#ab0dddec53666b17a80d5fa895ae7c569',1,'ivis::eyetracker::IvTobiiEyeX::TRACKBOX_SIZE_MM()']]],
+  ['trackerinfrontmonitor_5fmm',['trackerInFrontMonitor_mm',['../classivis_1_1calibration_1_1_track_box.html#a5ac01e6ad43af3d7a0da198f1525d324',1,'ivis::calibration::TrackBox::trackerInFrontMonitor_mm()'],['../classivis_1_1eyetracker_1_1_iv_data_input.html#ac4e0d01daa92d1dd36c149eae4c60c21',1,'ivis::eyetracker::IvDataInput::trackerInFrontMonitor_mm()']]],
   ['type_5fgraphic',['TYPE_GRAPHIC',['../classivis_1_1graphic_1_1_iv_screen_object.html#a53ab6604b15a564fb6b3509ae74db3dd',1,'ivis::graphic::IvScreenObject']]],
   ['type_5fgraphiccompound',['TYPE_GRAPHICCOMPOUND',['../classivis_1_1graphic_1_1_iv_screen_object.html#afc8ce79a1590aa636fd88a3aac675ffa',1,'ivis::graphic::IvScreenObject']]],
   ['type_5fprior',['TYPE_PRIOR',['../classivis_1_1graphic_1_1_iv_screen_object.html#a2d10135dc6c9ed7ac46dc2f4e2b41abb',1,'ivis::graphic::IvScreenObject']]]

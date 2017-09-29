@@ -22,7 +22,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="56" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="56" bodyend="58"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="55" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="55" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1ab287b57a5760e9d3d552115b0d3cf41a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -37,7 +37,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="72" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="72" bodyend="75"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="71" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="71" bodyend="74"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1a9c449859bab452d7d6169f1bc8d35aff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -52,7 +52,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="86" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="86" bodyend="88"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="85" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="85" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1aca5775b8baa128b8786aeaeb5c880cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -67,7 +67,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="100" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="100" bodyend="102"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="99" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="99" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_data_input_1a7c29469c45d6b62c9365fecafb4a5882" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -82,7 +82,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="113" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="113" bodyend="115"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="112" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="112" bodyend="114"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -94,31 +94,31 @@
 <simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
  1.0 PJ 02/2011 : first_build<linebreak/>
 </para></simplesect>
-<xrefsect id="todo_1_todo000023"><xreftitle>Todo</xreftitle><xrefdescription><para>write me</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+<xrefsect id="todo_1_todo000025"><xreftitle>Todo</xreftitle><xrefdescription><para>write me</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="815">
+      <node id="840">
         <label>ivis::test::Test_IvDataInput</label>
         <link refid="classivis_1_1test_1_1_test___iv_data_input"/>
-        <childnode refid="816" relation="public-inheritance">
+        <childnode refid="841" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="816">
+      <node id="841">
         <label>TestCase</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="817">
+      <node id="842">
         <label>ivis::test::Test_IvDataInput</label>
         <link refid="classivis_1_1test_1_1_test___iv_data_input"/>
-        <childnode refid="818" relation="public-inheritance">
+        <childnode refid="843" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="818">
+      <node id="843">
         <label>TestCase</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="19" bodyend="127"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvDataInput.m" bodystart="19" bodyend="126"/>
     <listofallmembers>
       <member refid="classivis_1_1test_1_1_test___iv_data_input_1ab287b57a5760e9d3d552115b0d3cf41a" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>setUp</name></member>
       <member refid="classivis_1_1test_1_1_test___iv_data_input_1a9c449859bab452d7d6169f1bc8d35aff" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvDataInput</scope><name>tearDown</name></member>

@@ -14,21 +14,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/clearAbsAll.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/clearAbsAll.m" bodystart="17" bodyend="82"/>
-        <references refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" compoundref="_c_expandable_buffer_8m" startline="415" endline="418">CExpandableBuffer::clear</references>
-        <referencedby refid="ivis_demo002__keyboard_handling_8m_1a61b9e537f5081f54d546db6d05e73fe1" compoundref="ivis_demo002__keyboard_handling_8m" startline="17" endline="94">ivisDemo002_keyboardHandling</referencedby>
-        <referencedby refid="ivis_demo003__mouse_tracking_8m_1a7b21997e05dfdfe0dade454cf3f2c5e7" compoundref="ivis_demo003__mouse_tracking_8m" startline="17" endline="59">ivisDemo003_mouseTracking</referencedby>
-        <referencedby refid="ivis_demo004__eye_tracking_8m_1a4d4ed849e39d7c10f5e78fbd1505f989" compoundref="ivis_demo004__eye_tracking_8m" startline="17" endline="46">ivisDemo004_eyeTracking</referencedby>
-        <referencedby refid="ivis_demo005__usinga_p_t_b_screen_8m_1aaf5367b43a15b2b4b86b17682f028dec" compoundref="ivis_demo005__usinga_p_t_b_screen_8m" startline="17" endline="85">ivisDemo005_usingaPTBScreen</referencedby>
-        <referencedby refid="ivis_demo006__trackbox_visualisation_8m_1a4e7365b3738cf81696ab2fc42ce6b0f0" compoundref="ivis_demo006__trackbox_visualisation_8m" startline="17" endline="53">ivisDemo006_trackboxVisualisation</referencedby>
-        <referencedby refid="ivis_demo007__classifying_fixations_8m_1a17a796f63f8c3101d922d39e10b873e7" compoundref="ivis_demo007__classifying_fixations_8m" startline="17" endline="59">ivisDemo007_classifyingFixations</referencedby>
-        <referencedby refid="ivis_demo008__playing_videos_8m_1ac1155ae56bc31d14421d52291f88c5cb" compoundref="ivis_demo008__playing_videos_8m" startline="17" endline="64">ivisDemo008_playingVideos</referencedby>
-        <referencedby refid="ivis_demo009__streaming_webcams_8m_1ae02594fdc2dbadbc699fce5e153eced7" compoundref="ivis_demo009__streaming_webcams_8m" startline="17" endline="54">ivisDemo009_streamingWebcams</referencedby>
-        <referencedby refid="ivis_demo010__reading_raw_gaze_data_8m_1adca3dc5a3153fac7e524deed340c1679" compoundref="ivis_demo010__reading_raw_gaze_data_8m" startline="17" endline="77">ivisDemo010_readingRawGazeData</referencedby>
-        <referencedby refid="ivis_demo011__advanced_classifiers_8m_1a89a492ec440e442b6ab8caddd9f9e05c" compoundref="ivis_demo011__advanced_classifiers_8m" startline="17" endline="149">ivisDemo011_advancedClassifiers</referencedby>
-        <referencedby refid="ivis_demo012__external_config_files_8m_1aa6c5940513a9f3eb5a254d640e60d0ee" compoundref="ivis_demo012__external_config_files_8m" startline="17" endline="48">ivisDemo012_externalConfigFiles</referencedby>
-        <referencedby refid="ivis_demo__audio_8m_1a321e38fdec869d50663f8c5fb4de06f8" compoundref="ivis_demo__audio_8m" startline="17" endline="58">ivisDemo_audio</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_main_1a33b5f86f1d81c8a3ee2ad920bcc342c8" compoundref="_iv_main_8m" startline="577" endline="582">ivis::main::IvMain::totalClear</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/clearAbsAll.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/clearAbsAll.m" bodystart="17" bodyend="76"/>
+        <references refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" compoundref="_c_expandable_buffer_8m" startline="453" endline="456">CExpandableBuffer::clear</references>
+        <referencedby refid="classivis_1_1main_1_1_iv_main_1a33b5f86f1d81c8a3ee2ad920bcc342c8" compoundref="_iv_main_8m" startline="530" endline="535">ivis::main::IvMain::totalClear</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -54,71 +42,65 @@
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17" refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" kindref="member" tooltip="Clear command window: clc;.">clearAbsAll</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Close<sp/>figures:</highlight></codeline>
-<codeline lineno="20"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/>close(</highlight><highlight class="stringliteral">&quot;<sp/>all<sp/>&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>hidden<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>do<sp/>nothing</highlight></codeline>
-<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Closing<sp/>figures<sp/>might<sp/>fail<sp/>if<sp/>the<sp/>CloseRequestFcn<sp/>of<sp/>a<sp/>figure</highlight></codeline>
-<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>blocks<sp/>the<sp/>execution.<sp/>Fallback:</highlight></codeline>
-<codeline lineno="29"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">AllFig<sp/>=<sp/>allchild(0);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(AllFig)</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(AllFig,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>CloseRequestFcn<sp/>&quot;</highlight><highlight class="normal">,<sp/>,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>DeleteFcn<sp/>&quot;</highlight><highlight class="normal">,<sp/>);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(AllFig);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Clear<sp/>loaded<sp/>functions:</highlight></codeline>
-<codeline lineno="37"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref><sp/>all;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>functions<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>classes<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>global<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>clear(&apos;import&apos;);<sp/><sp/>%<sp/>Not<sp/>from<sp/>inside<sp/>a<sp/>function!</highlight></codeline>
-<codeline lineno="43"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>variables<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>java<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Stop<sp/>and<sp/>delete<sp/>timers:</highlight></codeline>
-<codeline lineno="48"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal">AllTimer<sp/>=<sp/>timerfindall;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(AllTimer)<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>EDITED:<sp/>added<sp/>check</highlight></codeline>
-<codeline lineno="51"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/>stop(AllTimer);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(AllTimer);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Unlock<sp/>M-files:</highlight></codeline>
-<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal">LoadedM<sp/>=<sp/>inmem;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>iLoadedM<sp/>=<sp/>1:length(LoadedM)</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>EDITED:<sp/>Use<sp/>STRTOK<sp/>to<sp/>consider<sp/>OO<sp/>methods:</highlight></codeline>
-<codeline lineno="61"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/>aLoadedM<sp/>=<sp/>strtok(LoadedM[iLoadedM],<sp/></highlight><highlight class="stringliteral">&quot;<sp/>.<sp/>&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>munlock(aLoadedM);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">,<sp/>end</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(aLoadedM);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal">end<sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Close<sp/>open<sp/>files:</highlight></codeline>
-<codeline lineno="70"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal">fclose(</highlight><highlight class="stringliteral">&quot;<sp/>all<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>final<sp/>pass</highlight></codeline>
-<codeline lineno="74"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal">clear<sp/>all;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>functions<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>classes<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>global<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>variables<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>java<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Close<sp/>figures:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>close(</highlight><highlight class="stringliteral">&quot;<sp/>all<sp/>&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>hidden<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>do<sp/>nothing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Closing<sp/>figures<sp/>might<sp/>fail<sp/>if<sp/>the<sp/>CloseRequestFcn<sp/>of<sp/>a<sp/>figure</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>blocks<sp/>the<sp/>execution.<sp/>Fallback:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">AllFig<sp/>=<sp/>allchild(0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(AllFig)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(AllFig,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>CloseRequestFcn<sp/>&quot;</highlight><highlight class="normal">,<sp/>,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>DeleteFcn<sp/>&quot;</highlight><highlight class="normal">,<sp/>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(AllFig);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Clear<sp/>loaded<sp/>functions:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">warning<sp/>off</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref><sp/>all;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>functions<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>classes<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>global<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>variables<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>java<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">warning<sp/>on</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Stop<sp/>and<sp/>delete<sp/>timers:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">AllTimer<sp/>=<sp/>timerfindall;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(AllTimer)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/>stop(AllTimer);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(AllTimer);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Unlock<sp/>M-files:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">LoadedM<sp/>=<sp/>inmem;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>iLoadedM<sp/>=<sp/>1:length(LoadedM)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>EDITED:<sp/>Use<sp/>STRTOK<sp/>to<sp/>consider<sp/>OO<sp/>methods:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/>aLoadedM<sp/>=<sp/>strtok(LoadedM[iLoadedM],<sp/></highlight><highlight class="stringliteral">&quot;<sp/>.<sp/>&quot;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>munlock(aLoadedM);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">,<sp/>end</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>warning<sp/>off</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(aLoadedM);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>warning<sp/>on</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">end<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Close<sp/>open<sp/>files:<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">fclose(</highlight><highlight class="stringliteral">&quot;<sp/>all<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>final<sp/>pass<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">warning<sp/>off</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">clear<sp/>all;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>functions<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>classes<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>global<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>variables<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" kindref="member" tooltip="clear Reset counters and set all elements to NaN (maintain final capacity).">clear</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>java<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">warning<sp/>on</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/clearAbsAll.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/clearAbsAll.m"/>
   </compounddef>
 </doxygen>

@@ -3,145 +3,163 @@
   <compounddef id="classivis_1_1math_1_1pdf_1_1_iv_hit_func" kind="class" prot="public" abstract="yes">
     <compoundname>ivis::math::pdf::IvHitFunc</compoundname>
     <basecompoundref prot="public" virt="non-virtual">handle</basecompoundref>
-    <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss" prot="public" virt="non-virtual">ivis::math::pdf::IvHfGauss</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d" prot="public" virt="non-virtual">ivis::math::pdf::IvHfGauss2D</derivedcompoundref>
-    <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix" prot="public" virt="non-virtual">ivis::math::pdf::IvHfGUmix</derivedcompoundref>
-    <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d" prot="public" virt="non-virtual">ivis::math::pdf::IvHfGUmix2D</derivedcompoundref>
-    <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform" prot="public" virt="non-virtual">ivis::math::pdf::IvHfUniform</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d" prot="public" virt="non-virtual">ivis::math::pdf::IvHfUniform2D</derivedcompoundref>
-      <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa38ba1764d7a0e7f43f8c028c3613317" prot="protected" static="no" mutable="no">
-        <type>matlabtypesubstitute</type>
-        <definition>ivis::math::pdf::IvHitFunc::N</definition>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a7a7b82d7db4e9164d1491ce482c6c822" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::MIN_VAL</definition>
         <argsstring></argsstring>
-        <name>N</name>
-        <initializer>= 20</initializer>
+        <name>MIN_VAL</name>
+        <initializer>= 0.0000000000000000001</initializer>
         <briefdescription>
-<para>number of points used to compute pdf_xy with </para>        </briefdescription>
+<para>for the sake of IvClassifierLL </para>        </briefdescription>
         <detaileddescription>
 <para><linebreak/>
-<bold>Default:</bold> 20 </para>        </detaileddescription>
+<bold>Default:</bold> 0.0000000000000000001 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="58" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="58" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="57" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="57" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8da3cb47921e4dc9059ff992f47b37eb" prot="protected" static="no" mutable="no">
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab8036a7af636f0056f46b94e6805cafa" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
-        <definition>ivis::math::pdf::IvHitFunc::pdf_xy</definition>
+        <definition>ivis::math::pdf::IvHitFunc::xmin_px</definition>
         <argsstring></argsstring>
-        <name>pdf_xy</name>
+        <name>xmin_px</name>
         <briefdescription>
-<para>precache an evaluation of the PDF at some set values, for easy visualisation </para>        </briefdescription>
+<para>(optinally) user specified parameters minimum x value, in pixels </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="67" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a47363e4e00c46cf95c1ae2062d760e18" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::ymin_px</definition>
+        <argsstring></argsstring>
+        <name>ymin_px</name>
+        <briefdescription>
+<para>minimum y value, in pixels </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="77" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2798573594bcb888fe9f72b5445ea815" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::xmax_px</definition>
+        <argsstring></argsstring>
+        <name>xmax_px</name>
+        <briefdescription>
+<para>maximum x value, in pixels </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="86" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a3d5ec94dbdd90b71fdb1be781c3c2f69" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::ymax_px</definition>
+        <argsstring></argsstring>
+        <name>ymax_px</name>
+        <briefdescription>
+<para>maximum y value, in pixels </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="95" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a063385fb9dcd9c7a9a949a8530334a79" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::probdistr_x</definition>
+        <argsstring></argsstring>
+        <name>probdistr_x</name>
+        <briefdescription>
+<para>key internal params as returned by makedist.m </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="105" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a6fbd66a630d095ba8b693134f5f56631" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::probdistr_y</definition>
+        <argsstring></argsstring>
+        <name>probdistr_y</name>
+        <briefdescription>
+<para>as returned by makedist.m </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="115" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a3ccb9c477b25387152c2f6fec58b73d8" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::math::pdf::IvHitFunc::pedestalMix_p</definition>
+        <argsstring></argsstring>
+        <name>pedestalMix_p</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>pedestal magnitude (0&lt;=x&lt;=1) </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> <linebreak/>
+<bold>Default:</bold> 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="124" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2e473615415482e78616a38292eab855" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::math::pdf::IvHitFunc::pedestalConstants_xy</definition>
+        <argsstring></argsstring>
+        <name>pedestalConstants_xy</name>
+        <initializer>= &quot;[0 0]&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="65" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="65" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="134" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="134" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a10c70369c29497f72f7dbd24f61cda98" prot="protected" static="no" mutable="no">
+      <memberdef kind="variable" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a10c70369c29497f72f7dbd24f61cda98" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
         <definition>ivis::math::pdf::IvHitFunc::hPlot</definition>
         <argsstring></argsstring>
         <name>hPlot</name>
         <briefdescription>
-<para>handle to GUI plot </para>        </briefdescription>
+<para>handle to GUI plot, as returned by figure.m </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Protected, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="71" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="71" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="135" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="135" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab59258aee640a41aed16538bbf2a052b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>mlhsInnerSubst&lt; matlabtypesubstitute, P &gt;</type>
-        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, P &gt; ivis::math::pdf::IvHitFunc::getPDF</definition>
-        <argsstring>(matlabtypesubstitute x, matlabtypesubstitute varargin)=0</argsstring>
-        <name>getPDF</name>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1abec7d5422b3e5e84c5a478101f9a877f">getPDF</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1ac5c879f88e022f40128747e87b86c0f1">getPDF</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a927497563caa63e015ff1dc1d5a3ad01">getPDF</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1a6d89ffbdb0a365f6ddabde31b308827e">getPDF</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4b3b05cf42a9f17c8bbf093b9db0f8e5">getPDF</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a5405ef14114bcadaa7f35443c8881927">getPDF</reimplementedby>
-        <param>
-          <type>matlabtypesubstitute</type>
-          <declname>x</declname>
-        </param>
-        <param>
-          <type>matlabtypesubstitute</type>
-          <declname>varargin</declname>
-        </param>
-        <briefdescription>
-<para>Get the probability of each value, x, given the probability density function. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>x</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>vector of values to evaluate PDF at </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>varargin</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>any additional values the subclass requires </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>y probability density values</para></simplesect>
-<simplesect kind="date"><para>26/06/14 </para></simplesect>
-<simplesect kind="author"><para>PRJ </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="88"/>
-      </memberdef>
-      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa6b693c0909ff2510fc17f5c583dd2c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt;</type>
-        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt; ivis::math::pdf::IvHitFunc::getRand</definition>
-        <argsstring>(matlabtypesubstitute n)=0</argsstring>
-        <name>getRand</name>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ab10fa94eed2f0df7dd8df703e02ba031">getRand</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a0557c5bb99d7573fc44c5a34132ae794">getRand</reimplementedby>
-        <param>
-          <type>matlabtypesubstitute</type>
-          <declname>n</declname>
-        </param>
-        <briefdescription>
-<para>Generate a column vector of n random values, given the probability density function. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>n</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>number of random values of generate (integer) </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>xy random values [n by 1], or [n by 2], in size</para></simplesect>
-<simplesect kind="date"><para>26/06/14 </para></simplesect>
-<simplesect kind="author"><para>PRJ </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="106"/>
-      </memberdef>
-      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a60304ed8a490d8ea89d66b83fee6d347" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8985cb5538f472bfcc9363a6d8504f2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, h &gt;</type>
         <definition>mlhsInnerSubst&lt; matlabtypesubstitute, h &gt; ivis::math::pdf::IvHitFunc::plot</definition>
-        <argsstring>(matlabtypesubstitute mu, matlabtypesubstitute color)=0</argsstring>
+        <argsstring>(matlabtypesubstitute color)=0</argsstring>
         <name>plot</name>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a82f1a36ee7d66cfeea6dbdeefbcde617">plot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a8e65747b266ee9970f791452c699ac4f">plot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1afa71f76e6ab76bf719baa6cb3b25e505">plot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1af037b5e7aed7833e2f5c3c317c3f1d52">plot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a2cb5ac45e42555b966e9d0217a9c79db">plot</reimplementedby>
-        <param>
-          <type>matlabtypesubstitute</type>
-          <declname>mu</declname>
-        </param>
+        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a42b661979f6bd3c1775adf79fef185f2">plot</reimplementedby>
+        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a83ebce4170a470a119fadb39f69ef11b">plot</reimplementedby>
         <param>
           <type>matlabtypesubstitute</type>
           <declname>color</declname>
@@ -151,13 +169,6 @@
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>mu</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>any bias in the distribution </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
 <parametername>color</parametername>
 </parameternamelist>
 <parameterdescription>
@@ -165,63 +176,121 @@
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>h plot handle</para></simplesect>
-<xrefsect id="todo_1_todo000020"><xreftitle>Todo</xreftitle><xrefdescription><para>change mu to be stored internally? </para></xrefdescription></xrefsect><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<xrefsect id="todo_1_todo000022"><xreftitle>Todo</xreftitle><xrefdescription><para>change mu to be stored internally? </para></xrefdescription></xrefsect><simplesect kind="date"><para>26/06/14 </para></simplesect>
 <simplesect kind="author"><para>PRJ </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="123"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="153"/>
       </memberdef>
-      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a01921b287b37ceb979bc98723b04ed9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aed3e75b0ba55b53fc5f12915cad6d638" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>noret::substitute</type>
-        <definition>noret::substitute ivis::math::pdf::IvHitFunc::updatePlot</definition>
-        <argsstring>(matlabtypesubstitute mu)=0</argsstring>
-        <name>updatePlot</name>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a41f901012556ffbf0df998f8f3258c26">updatePlot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1a309520fb4c680fd9704dcf7fbd5a45d9">updatePlot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a3c47933de72a57ef3eca7a3d2e3a7722">updatePlot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a98468e561e6483d534cd0391c2f6706c">updatePlot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ae8daee029fce304f8f25a545b2833ab7">updatePlot</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a3b736e664127b1c9125d8db4ec879a36">updatePlot</reimplementedby>
+        <definition>noret::substitute ivis::math::pdf::IvHitFunc::update</definition>
+        <argsstring>(matlabtypesubstitute mu_px)=0</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a8a3e1879e84de597327294d1ad6e50c0">update</reimplementedby>
+        <reimplementedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a109681eaa10f0633f85e9caa55284921">update</reimplementedby>
         <param>
           <type>matlabtypesubstitute</type>
-          <declname>mu</declname>
+          <declname>mu_px</declname>
         </param>
         <briefdescription>
-<para>Update the GUI element. </para>        </briefdescription>
+<para>Update the model params &amp; GUI element. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>mu</parametername>
+<parametername>mu_px</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>any bias in the distribution </para></parameterdescription>
 </parameteritem>
 </parameterlist>
-<xrefsect id="todo_1_todo000021"><xreftitle>Todo</xreftitle><xrefdescription><para>change mu to be stored internally?</para></xrefdescription></xrefsect></para><para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<xrefsect id="todo_1_todo000023"><xreftitle>Todo</xreftitle><xrefdescription><para>change mu to be stored internally?</para></xrefdescription></xrefsect></para><para><simplesect kind="date"><para>26/06/14 </para></simplesect>
 <simplesect kind="author"><para>PRJ </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="141"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="170"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1add8c148ebcf5bc0a009a5762c19204f4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>ivis::math::pdf::IvHitFunc::IvHitFunc</definition>
-        <argsstring>()</argsstring>
-        <name>IvHitFunc</name>
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2cd3a73d2174e9bf9e93867b79f96df3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, P &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt; &gt;</type>
+        <definition>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, P &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt; &gt; ivis::math::pdf::IvHitFunc::getPDF</definition>
+        <argsstring>(matlabtypesubstitute xy, matlabtypesubstitute w)</argsstring>
+        <name>getPDF</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>xy</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>w</declname>
+        </param>
         <briefdescription>
-<para><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" kindref="compound">IvHitFunc</ref> Constructor. </para>        </briefdescription>
+<para>Get the probability of each value, x, given the probability density function. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>obj <ref refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" kindref="compound">IvHitFunc</ref> object</para></simplesect>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>xy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector of values to evaluate PDF at </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>two-element vector specifying weights (0&lt;=x&lt;=1) for x/y distributions e.g., [1 1] </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y probability density values</para></simplesect>
 <simplesect kind="date"><para>26/06/14 </para></simplesect>
 <simplesect kind="author"><para>PRJ </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="166" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="166" bodyend="170"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="193" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="193" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a57477fc75f4a30ec969e31e0e271e077" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::math::pdf::IvHitFunc::IvHitFunc</definition>
+        <argsstring>(matlabtypesubstitute minmaxBounds_px, matlabtypesubstitute pedestalMix_p)</argsstring>
+        <name>IvHitFunc</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>minmaxBounds_px</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>pedestalMix_p</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" kindref="compound">IvHitFunc</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minmaxBounds_px</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>4 element vector specifying min/max bounds [xmix_px ymin_px xmax_px ymax_px] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pedestalMix_p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[0&lt;=x&lt;=1] uniform pedestal to mix with main distribution </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj <ref refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" kindref="compound">IvHitFunc</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="250" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="250" bodyend="283"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -239,73 +308,55 @@ Copyright 2014 : P R Jones <hruler/>
 </para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="805">
-        <label>ivis::math::pdf::IvHfGUmix</label>
-        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix"/>
-        <childnode refid="801" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="804">
+      <node id="832">
         <label>ivis::math::pdf::IvHfGauss2D</label>
         <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d"/>
-        <childnode refid="801" relation="public-inheritance">
+        <childnode refid="830" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="806">
-        <label>ivis::math::pdf::IvHfGUmix2D</label>
-        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d"/>
-        <childnode refid="801" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="802">
+      <node id="831">
         <label>handle</label>
       </node>
-      <node id="808">
+      <node id="833">
         <label>ivis::math::pdf::IvHfUniform2D</label>
         <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d"/>
-        <childnode refid="801" relation="public-inheritance">
+        <childnode refid="830" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="803">
-        <label>ivis::math::pdf::IvHfGauss</label>
-        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss"/>
-        <childnode refid="801" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="801">
+      <node id="830">
         <label>ivis::math::pdf::IvHitFunc</label>
         <link refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func"/>
-        <childnode refid="802" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="807">
-        <label>ivis::math::pdf::IvHfUniform</label>
-        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform"/>
-        <childnode refid="801" relation="public-inheritance">
+        <childnode refid="831" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="810">
+      <node id="835">
         <label>handle</label>
       </node>
-      <node id="809">
+      <node id="834">
         <label>ivis::math::pdf::IvHitFunc</label>
         <link refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func"/>
-        <childnode refid="810" relation="public-inheritance">
+        <childnode refid="835" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="21" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="20" bodyend="184"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" line="21" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHitFunc.m" bodystart="20" bodyend="300"/>
     <listofallmembers>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab59258aee640a41aed16538bbf2a052b" prot="public" virt="pure-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>getPDF</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa6b693c0909ff2510fc17f5c583dd2c9" prot="public" virt="pure-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>getRand</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a10c70369c29497f72f7dbd24f61cda98" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>hPlot</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1add8c148ebcf5bc0a009a5762c19204f4" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>IvHitFunc</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa38ba1764d7a0e7f43f8c028c3613317" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>N</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8da3cb47921e4dc9059ff992f47b37eb" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>pdf_xy</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a60304ed8a490d8ea89d66b83fee6d347" prot="public" virt="pure-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>plot</name></member>
-      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a01921b287b37ceb979bc98723b04ed9d" prot="public" virt="pure-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>updatePlot</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2cd3a73d2174e9bf9e93867b79f96df3" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>getPDF</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a10c70369c29497f72f7dbd24f61cda98" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>hPlot</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a57477fc75f4a30ec969e31e0e271e077" prot="protected" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>IvHitFunc</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a7a7b82d7db4e9164d1491ce482c6c822" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>MIN_VAL</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2e473615415482e78616a38292eab855" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>pedestalConstants_xy</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a3ccb9c477b25387152c2f6fec58b73d8" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>pedestalMix_p</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8985cb5538f472bfcc9363a6d8504f2e" prot="public" virt="pure-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>plot</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a063385fb9dcd9c7a9a949a8530334a79" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>probdistr_x</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a6fbd66a630d095ba8b693134f5f56631" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>probdistr_y</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aed3e75b0ba55b53fc5f12915cad6d638" prot="public" virt="pure-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>update</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2798573594bcb888fe9f72b5445ea815" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>xmax_px</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab8036a7af636f0056f46b94e6805cafa" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>xmin_px</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a3d5ec94dbdd90b71fdb1be781c3c2f69" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>ymax_px</name></member>
+      <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a47363e4e00c46cf95c1ae2062d760e18" prot="public" virt="non-virtual"><scope>ivis::math::pdf::IvHitFunc</scope><name>ymin_px</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -3,9 +3,9 @@
   <compounddef id="vline_8m" kind="file">
     <compoundname>vline.m</compoundname>
       <sectiondef kind="func">
-      <memberdef kind="function" id="vline_8m_1a93cf8d0c941df7f6479bdb0c4ee61d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>mlhsInnerSubst&lt; matlabtypesubstitute, hhh &gt;</type>
-        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,hhh&gt; vline</definition>
+      <memberdef kind="function" id="vline_8m_1a110fddad779836022c9a6e26580e8ae9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, hhh &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, hTxt &gt; &gt;</type>
+        <definition>mlhsSubst&lt;mlhsInnerSubst&lt;matlabtypesubstitute,hhh&gt; ,mlhsInnerSubst&lt;matlabtypesubstitute,hTxt&gt; &gt; vline</definition>
         <argsstring>(matlabtypesubstitute x, matlabtypesubstitute in1, matlabtypesubstitute in2)</argsstring>
         <name>vline</name>
         <param>
@@ -26,8 +26,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/vline.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/vline.m" bodystart="17" bodyend="115"/>
-        <referencedby refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a82f1a36ee7d66cfeea6dbdeefbcde617" compoundref="_iv_hf_gauss_8m" startline="151" endline="168">ivis::math::pdf::IvHfGauss::plot</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/vline.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/vline.m" bodystart="17" bodyend="116"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -51,14 +50,14 @@
 <codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
 <codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="vline_8m_1a93cf8d0c941df7f6479bdb0c4ee61d97" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,hhh&gt;<sp/><ref refid="vline_8m_1a93cf8d0c941df7f6479bdb0c4ee61d97" kindref="member">vline</ref>(matlabtypesubstitute<sp/>x,matlabtypesubstitute<sp/>in1,matlabtypesubstitute<sp/>in2)<sp/>{</highlight></codeline>
+<codeline lineno="17" refid="vline_8m_1a110fddad779836022c9a6e26580e8ae9" refkind="member"><highlight class="normal">mlhsSubst&lt;mlhsInnerSubst&lt;matlabtypesubstitute,hhh&gt;<sp/>,mlhsInnerSubst&lt;matlabtypesubstitute,hTxt&gt;<sp/>&gt;<sp/><ref refid="vline_8m_1a110fddad779836022c9a6e26580e8ae9" kindref="member">vline</ref>(matlabtypesubstitute<sp/>x,matlabtypesubstitute<sp/>in1,matlabtypesubstitute<sp/>in2)<sp/>{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">labelAtTop<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">/*<sp/><sp/>pj:<sp/>hack</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">labelAtTop<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">/*<sp/><sp/>pj:<sp/>hack<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(x)&gt;1<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>vector<sp/>input</highlight></codeline>
-<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(x)&gt;1<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>vector<sp/>input<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>I=1:length(x)</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>nargin</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1</highlight></codeline>
@@ -92,7 +91,7 @@
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>label=in2[I];</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h(I)=<ref refid="vline_8m_1a93cf8d0c941df7f6479bdb0c4ee61d97" kindref="member">vline</ref>(x(I),linetype,label);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h(I)=<ref refid="vline_8m_1a110fddad779836022c9a6e26580e8ae9" kindref="member">vline</ref>(x(I),linetype,label);</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>nargin</highlight></codeline>
@@ -119,40 +118,41 @@
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h=plot([x<sp/>x],y,linetype);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(label)</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xx=</highlight><highlight class="keyword">get</highlight><highlight class="normal">(gca,</highlight><highlight class="stringliteral">&quot;<sp/>xlim<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xrange=xx(2)-xx(1);</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xunit=(x-xx(1))/xrange;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>xunit&lt;0.8</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>labelAtTop</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(x+0.01*xrange,y(2)-0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(x+0.01*xrange,y(1)+0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>labelAtTop</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(x-.05*xrange,y(2)-0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text(x-.05*xrange,y(1)+0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>end<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>g==0</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>hold<sp/>off</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>tag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>vline<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>handlevisibility<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>off<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="108"><highlight class="normal">end<sp/></highlight><highlight class="comment">/*<sp/><sp/>else</highlight></codeline>
-<codeline lineno="109"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(label)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xx=</highlight><highlight class="keyword">get</highlight><highlight class="normal">(gca,</highlight><highlight class="stringliteral">&quot;<sp/>xlim<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xrange=xx(2)-xx(1);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xunit=(x-xx(1))/xrange;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>xunit&lt;0.8</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>labelAtTop</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x+0.01*xrange,y(2)-0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x+0.01*xrange,y(1)+0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>labelAtTop</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x-.05*xrange,y(2)-0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hTxt<sp/>=<sp/>text(x-.05*xrange,y(1)+0.1*(y(2)-y(1)),label,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">get</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>color<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>end<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>g==0</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>hold<sp/>off</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>tag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>vline<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>handlevisibility<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>off<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">end<sp/></highlight><highlight class="comment">/*<sp/><sp/>else<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargout</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>hhh=h;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargout</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>hhh=h;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/vline.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/vline.m"/>
   </compounddef>
 </doxygen>

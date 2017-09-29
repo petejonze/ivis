@@ -4,11 +4,10 @@
     <compoundname>ivis::video</compoundname>
     <innerclass refid="classivis_1_1video_1_1_iv_video" prot="public">ivis::video::IvVideo</innerclass>
     <innerclass refid="classivis_1_1video_1_1_iv_webcam" prot="public">ivis::video::IvWebcam</innerclass>
-    <innerclass refid="classivis_1_1video_1_1_track_box" prot="public">ivis::video::TrackBox</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+video/IvVideo.m" line="2"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+video/IvVideo.m" line="2"/>
   </compounddef>
 </doxygen>

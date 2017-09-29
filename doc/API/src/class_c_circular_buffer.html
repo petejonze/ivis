@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -144,10 +144,12 @@ Public Member Functions</h2></td></tr>
   y  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_circular_buffer.html#a371b5c278db1c39b28cd442b66cfb9e4">getN</a> (n, mi)</td></tr>
 <tr class="memdesc:a371b5c278db1c39b28cd442b66cfb9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">getN return the specified number of elements.  <a href="#a371b5c278db1c39b28cd442b66cfb9e4">More...</a><br/></td></tr>
 <tr class="separator:a371b5c278db1c39b28cd442b66cfb9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477ffa55edf0ff84e1772cb45ae5f73c"><td class="memItemLeft" align="right" valign="top">function 
-  y  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_circular_buffer.html#a477ffa55edf0ff84e1772cb45ae5f73c">get</a> (ni, mi)</td></tr>
-<tr class="memdesc:a477ffa55edf0ff84e1772cb45ae5f73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get return the elements at specified indices  <a href="#a477ffa55edf0ff84e1772cb45ae5f73c">More...</a><br/></td></tr>
-<tr class="separator:a477ffa55edf0ff84e1772cb45ae5f73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a1d01ad580d54f4292c7881f3b1015"><td class="memItemLeft" align="right" valign="top">function [ 
+  y ,<br class="typebreak"/>
+
+  idx  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_circular_buffer.html#a34a1d01ad580d54f4292c7881f3b1015">get</a> (ni, mi)</td></tr>
+<tr class="memdesc:a34a1d01ad580d54f4292c7881f3b1015"><td class="mdescLeft">&#160;</td><td class="mdescRight">get return the elements at specified indices  <a href="#a34a1d01ad580d54f4292c7881f3b1015">More...</a><br/></td></tr>
+<tr class="separator:a34a1d01ad580d54f4292c7881f3b1015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b7e23cabfb7a79de1284c73a72d913b"><td class="memItemLeft" align="right" valign="top">function [ 
   n ,<br class="typebreak"/>
 
@@ -181,6 +183,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1ead1f532a1c654e1476afb7d1fd44bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_circular_buffer.html#a1ead1f532a1c654e1476afb7d1fd44bf">ncols</a></td></tr>
 <tr class="memdesc:a1ead1f532a1c654e1476afb7d1fd44bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">n data columns  <a href="#a1ead1f532a1c654e1476afb7d1fd44bf">More...</a><br/></td></tr>
 <tr class="separator:a1ead1f532a1c654e1476afb7d1fd44bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef1fab2fbffc91eaf2b3f8d5b2c68b48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_circular_buffer.html#aef1fab2fbffc91eaf2b3f8d5b2c68b48">i</a> = 0</td></tr>
+<tr class="memdesc:aef1fab2fbffc91eaf2b3f8d5b2c68b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal nElements counter  <a href="#aef1fab2fbffc91eaf2b3f8d5b2c68b48">More...</a><br/></td></tr>
+<tr class="separator:aef1fab2fbffc91eaf2b3f8d5b2c68b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>circular-buffer (or: <code>ring buffer</code>) data-structure. </p>
@@ -242,9 +247,9 @@ Public Attributes</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00108">108</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00107">107</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
-<p>Referenced by <a class="el" href="_c_circular_buffer_8m_source.html#l00364">testMatrix()</a>, <a class="el" href="_c_circular_buffer_8m_source.html#l00393">testSpeed()</a>, and <a class="el" href="_c_circular_buffer_8m_source.html#l00301">testVector()</a>.</p>
+<p>Referenced by <a class="el" href="_c_circular_buffer_8m_source.html#l00350">testMatrix()</a>, <a class="el" href="_c_circular_buffer_8m_source.html#l00377">testSpeed()</a>, and <a class="el" href="_c_circular_buffer_8m_source.html#l00297">testVector()</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -276,16 +281,16 @@ Here is the caller graph for this function:</div>
 </pre><dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00261">261</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00258">258</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a477ffa55edf0ff84e1772cb45ae5f73c"></a>
+<a class="anchor" id="a34a1d01ad580d54f4292c7881f3b1015"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">function   y  = CCircularBuffer.get </td>
+          <td class="memname">function [   y ,   idx  ] = CCircularBuffer.get </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>ni</em>, </td>
@@ -317,7 +322,7 @@ Here is the caller graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00207">207</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00203">203</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
@@ -358,7 +363,7 @@ Here is the caller graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00176">176</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00172">172</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
@@ -383,7 +388,7 @@ m ncols</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00241">241</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00238">238</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
@@ -413,7 +418,7 @@ m ncols</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00139">139</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00136">136</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
@@ -442,9 +447,9 @@ m ncols</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00364">364</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00350">350</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
-<p>References <a class="el" href="_c_circular_buffer_8m_source.html#l00108">CCircularBuffer()</a>.</p>
+<p>References <a class="el" href="_c_circular_buffer_8m_source.html#l00107">CCircularBuffer()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -482,9 +487,9 @@ Here is the call graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00393">393</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00377">377</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
-<p>References <a class="el" href="_c_circular_buffer_8m_source.html#l00108">CCircularBuffer()</a>.</p>
+<p>References <a class="el" href="_c_circular_buffer_8m_source.html#l00107">CCircularBuffer()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -522,9 +527,9 @@ Here is the call graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00301">301</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00297">297</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
-<p>References <a class="el" href="_c_circular_buffer_8m_source.html#l00108">CCircularBuffer()</a>.</p>
+<p>References <a class="el" href="_c_circular_buffer_8m_source.html#l00107">CCircularBuffer()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -562,7 +567,7 @@ Here is the call graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00286">286</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00282">282</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 <p>References <a class="el" href="test_suite_from_static_8m_source.html#l00017">testSuiteFromStatic()</a>.</p>
 
@@ -593,7 +598,27 @@ Here is the call graph for this function:</div>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00079">79</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00070">70</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef1fab2fbffc91eaf2b3f8d5b2c68b48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCircularBuffer.i = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>internal nElements counter </p>
+<dl class="section note"><dt>Note</dt><dd>This property has non-standard access specifiers: <code>SetAccess = Private, GetAccess = Public</code> </dd>
+<dd>
+<a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> <br/>
+<b>Default:</b> 0 </dd></dl>
+
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00088">88</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
@@ -612,12 +637,12 @@ Here is the call graph for this function:</div>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00088">88</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
+<p>Definition at line <a class="el" href="_c_circular_buffer_8m_source.html#l00079">79</a> of file <a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/ivis_util/<a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a></li>
+<li>ivis_util/<a class="el" href="_c_circular_buffer_8m_source.html">CCircularBuffer.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -625,7 +650,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_c_circular_buffer.html">CCircularBuffer</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:41 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:13 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

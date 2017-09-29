@@ -31,6 +31,10 @@ classdef (Sealed) IvParams < Singleton
     %  -----PROPERTIES-----
     %$ ====================================================================
       
+    properties (Constant)
+        ALLOW_IMPLICIT_CONSTRUCTION = true; % whether getInstance() can be called prior to init()
+    end
+    
     properties (GetAccess = public, SetAccess = private)
         toolboxHomedir
         %
@@ -154,7 +158,6 @@ classdef (Sealed) IvParams < Singleton
             
             params.GUI.useGUI = true;
             params.GUI.screenNum = []; % max(0,params.graphics.testScreenNum-1); % min(Screen('Screens'));
-            params.GUI.dockFlag = 1;
             
             params.keyboard.handlerClass = [];
             params.keyboard.isAsynchronous = false;
@@ -169,8 +172,8 @@ classdef (Sealed) IvParams < Singleton
             params.eyetracker.id = [];
             params.eyetracker.sampleRate = 60;
             params.eyetracker.GUIidx = 2;
-            params.eyetracker.runMeanWinWidth = 8; % n samples (change to msecs?)
-            params.eyetracker.interpWinWidth = 4;
+            params.eyetracker.runMeanWinWidth = 4; % n samples (change to msecs?)
+            params.eyetracker.interpWinWidth = 2;
             params.eyetracker.showLastNPoints = 30;
             params.eyetracker.debugMode = 0;
            	params.eyetracker.fixationMarker = 'whitedot'; % none, cursor, or the name of any m-file in ivis\resources\images\FixationTextures\
@@ -178,22 +181,23 @@ classdef (Sealed) IvParams < Singleton
             params.eyetracker.expectedLatency_ms = 10;
             params.eyetracker.eyes = 2; %0==left, 1==right, 2==both
             
-            params.saccade.enableTagging = false;
-            params.saccade.distanceCriterion_deg = 7;
-            params.saccade.velocityCriterion_degsec = 250;
-            params.saccade.accelCriterion_degsec2 = 75;
-            params.saccade.timeCriterion_secs = .3;
-            params.saccade.doBeep = false;
-            params.saccade.GUIidx = []; % 3;
-            params.saccade.preBlinkWindow_secs = 0.17;
-            params.saccade.postBlinkWindow_secs = 0.17;
+            params.saccade.enableTagging            = true;
+            params.saccade.includeTagsInRawOutput   = false;
+            params.saccade.distanceCriterion_deg    = 5; % 7;
+            params.saccade.velocityCriterion_degsec = 100; % 250;
+            params.saccade.accelCriterion_degsec2   = 50; % 75;
+            params.saccade.timeCriterion_secs       = .3;
+            params.saccade.doBeep                   = false;
+            params.saccade.GUIidx                   = []; % 6; % 3;
+            params.saccade.preBlinkWindow_secs      = 0.17;
+            params.saccade.postBlinkWindow_secs     = 0.17;
 
           	params.classifier.nsecs = 5;
-            params.classifier.bufferLength = 100;
-            params.classifier.onsetRampStart = 0.4;
-            params.classifier.onsetRampDuration = 0.4;
-            params.classifier.GUIidx = 1;
-            params.classifier.loglikelihood.lMagThresh = 200;
+            params.classifier.bufferLength = 50;
+            params.classifier.onsetRampStart = 0.3;
+            params.classifier.onsetRampDuration = 0.2;
+            params.classifier.GUIidx = [1 4];
+            params.classifier.loglikelihood.likelihoodThresh = 100;
             params.classifier.box.margin_deg = 2;
             params.classifier.box.npoints = 50;
             params.classifier.grid.npoints = 50;
@@ -205,7 +209,7 @@ classdef (Sealed) IvParams < Singleton
             params.calibration.targCoordinates = [0.1,0.1;.1,.5;.1,.9; 0.5,0.1;.5,.5;.5,.9; 0.9,0.1;.9,.5;.9,.9]; % with [0 0] == top-left
             params.calibration.presentationFcn = 'ivis.calibration.measurePoint';
             params.calibration.nRecursions = 1;
-            params.calibration.outlierThresh_px = 100;
+            params.calibration.outlierThresh_px = 200;
             params.calibration.GUIidx = []; % 4;
             params.calibration.drift.maxDriftCorrection_deg = 6;
             params.calibration.drift.driftWeight = 1;
@@ -217,13 +221,14 @@ classdef (Sealed) IvParams < Singleton
             params.log.data.arraySize = 10000; % also used for any graphics
             params.log.data.expansionFactor = 2;
             
+            params.audio.interface = 'MatlabBuiltIn'; %ALT: ASIO
             params.audio.isConnected = true;
             params.audio.isEnabled = true;
             params.audio.devID = [];
             params.audio.Fs = 44100;
             params.audio.outChans = [0 1];
-            params.audio.runMode = [];
-            params.audio.reqlatencyclass = [];
+            params.audio.runMode = 0;
+            params.audio.reqlatencyclass = 0;
             params.audio.latbias_secs = [];
             params.audio.useCalibration = false;
             params.audio.rms2db_fnOrMatrix = [];
@@ -308,8 +313,10 @@ classdef (Sealed) IvParams < Singleton
             
             % init
             if nargin < 1 || isempty(paramStructOrXmlFullFileName)
-                [path,~,~] = fileparts(which('ivis'));
-                paramStructOrXmlFullFileName = fullfile(path, 'IvConfig.xml');
+                warning('Naughty!');
+                %[path,~,~] = fileparts(which('ivis'));
+                %paramStructOrXmlFullFileName = fullfile(path, 'IvConfig.xml');
+                paramStructOrXmlFullFileName = ivis.main.IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'graphics.testScreenNum',0, 'GUI.screenNum',0);
             end
             if nargin < 2
                 verbosity = [];
@@ -436,11 +443,14 @@ classdef (Sealed) IvParams < Singleton
                 % still have a go at detecting likely screen dimensions,
                 % since may still want to represent screen dimensions in
                 % various GUIs
+                if isempty(params.graphics.testScreenNum)
+                    error('PJ: Should this ever happen?')
+                    max(Screen('Screens'))
+                end
                 if params.graphics.testScreenNum > max(Screen('Screens'))
                     params.graphics.testScreenNum = max(Screen('Screens'));
                 end
-                [params.graphics.testScreenWidth, params.graphics.testScreenHeight] = Screen('WindowSize', max(Screen('Screens')));
-                
+                [params.graphics.testScreenWidth, params.graphics.testScreenHeight] = Screen('WindowSize', params.graphics.testScreenNum);
             end
 
             % input
@@ -471,16 +481,10 @@ classdef (Sealed) IvParams < Singleton
             else
                 if ~isfield(params.GUI,'screenNum') || isempty(params.GUI.screenNum)
                     fprintf('No GUI screen specified. Attempting to guess an appropriate screen\n');
-                    params.GUI.screenNum = max(1,min(Screen('Screens')));
-                    if (params.GUI.screenNum == params.graphics.testScreenNum) && params.GUI.screenNum > 0 % if multiple screens available and picked the same one
-                        screens = Screen('Screens');
-                        params.GUI.screenNum = screens(find(params.graphics.testScreenNum~=screens,1,'last')); % find greatest not equal                
-                    end
+                     % guess largest screen number other than test screen
+                     screens = Screen('Screens');
+                     params.GUI.screenNum = screens(find(params.graphics.testScreenNum~=screens,1,'last'));
                 end
-                if ~isfield(params.GUI,'dockFlag') || isempty(params.GUI.dockFlag)
-                    fprintf('No dockFlag specified. Reverting to default (1)\n');
-                    params.GUI.dockFlag = 1; % recommended
-                end   
             end
                     
             % store ------------------------------------

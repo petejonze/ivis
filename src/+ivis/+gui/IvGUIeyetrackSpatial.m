@@ -81,6 +81,7 @@ classdef (Sealed) IvGUIeyetrackSpatial < ivis.gui.IvGUIelement
             
             % init figure
             obj.normaliseDims = [ivis.main.IvParams.getInstance().graphics.testScreenWidth, ivis.main.IvParams.getInstance().graphics.testScreenHeight];
+
             [~, ~, aDims] = obj.init(GUIidx, obj.normaliseDims, bgcolor);
             
             % init content
@@ -121,7 +122,7 @@ classdef (Sealed) IvGUIeyetrackSpatial < ivis.gui.IvGUIelement
                 set(obj.hHistory,'XData',xy_hist(:,1)/obj.normaliseDims(1),'YData',xy_hist(:,2)/obj.normaliseDims(2));
             end
             
-            if any(isnan(xy))
+            if all(isnan(xy))
                 statusLightColor = 'r';
             elseif xx<0 || xx>1 || yy<0 || yy>1
                 statusLightColor = [1 0.5 0.2]; % orange

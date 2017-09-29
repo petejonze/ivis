@@ -22,7 +22,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="54" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="54" bodyend="56"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="53" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="53" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1a3d9b2e72e67024cda5f433d0ca0dff78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -37,7 +37,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="70" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="70" bodyend="71"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="69" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="69" bodyend="70"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1ade6ff79365d32fbfec3fe27f1de59ccd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -52,7 +52,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="82" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="82" bodyend="84"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="81" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="81" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_main_1aad2e2324cb5e5c42ed9944e6034dc74c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -67,7 +67,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="96" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="96" bodyend="138"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="95" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="95" bodyend="135"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -82,28 +82,28 @@
 Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="820">
+      <node id="845">
         <label>TestCase</label>
       </node>
-      <node id="819">
+      <node id="844">
         <label>ivis::test::Test_IvMain</label>
         <link refid="classivis_1_1test_1_1_test___iv_main"/>
-        <childnode refid="820" relation="public-inheritance">
+        <childnode refid="845" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="822">
+      <node id="847">
         <label>TestCase</label>
       </node>
-      <node id="821">
+      <node id="846">
         <label>ivis::test::Test_IvMain</label>
         <link refid="classivis_1_1test_1_1_test___iv_main"/>
-        <childnode refid="822" relation="public-inheritance">
+        <childnode refid="847" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="19" bodyend="150"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvMain.m" bodystart="19" bodyend="147"/>
     <listofallmembers>
       <member refid="classivis_1_1test_1_1_test___iv_main_1a3d9b2e72e67024cda5f433d0ca0dff78" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMain</scope><name>setUp</name></member>
       <member refid="classivis_1_1test_1_1_test___iv_main_1ade6ff79365d32fbfec3fe27f1de59ccd" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvMain</scope><name>tearDown</name></member>

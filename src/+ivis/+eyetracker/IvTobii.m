@@ -58,10 +58,6 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
     end
     
     properties (GetAccess = public, SetAccess = private)
-        leyeSpatialPosition = [NaN NaN NaN];
-        reyeSpatialPosition = [NaN NaN NaN];
-        leyeSpatialPosition_nonNaN = [-inf -inf -inf];
-        reyeSpatialPosition_nonNaN = [-inf -inf -inf];
     end
     
     
@@ -180,7 +176,7 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
                 logData = true;
             end
             
-            %-----------Extract Raw Data---------------------------------
+            %-----------Extract Raw Data-----------------------------------
             timeReceived = GetSecs();
             if nargin < 3
                 % get data from hardware
@@ -192,21 +188,6 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
             saccadeOnTime = [];
             if n == 0
                 return;
-            end
-            
-            % tmp (for trackbox)
-            obj.leyeSpatialPosition = lefteye(end, 1:3);
-            obj.reyeSpatialPosition = righteye(end, 1:3);
-            %   
-            obj.leyeSpatialPosition(all(obj.leyeSpatialPosition==0,2),:) = NaN; % replace any rows of all 0's, with NaNs
-            obj.reyeSpatialPosition(all(obj.reyeSpatialPosition==0,2),:) = NaN; % replace any rows of all 0's, with NaNs
-            %
-            %idx = find(~all(lefteye(:,1:3)==0,2),1,'last');
-            idx = find(lefteye(:,3)<1000 & lefteye(:,3)>600,1,'last'); % distance (z) must be between 600 and 1000mm
-
-            if ~isempty(idx)
-                obj.leyeSpatialPosition_nonNaN = lefteye(idx, 1:3);
-                obj.reyeSpatialPosition_nonNaN = righteye(idx, 1:3);
             end
             
             % map itrack timestamp to matlab's clock
@@ -250,11 +231,18 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
             % convert to monitor position (pixels)
             xy = xy .* repmat([obj.testScreenWidth obj.testScreenHeight], n, 1);
             
+         	% invent some placeholder depth data (tmp hack)
+            zL_mm = nan(size(vldty));
+            zR_mm = nan(size(vldty));
+            
             %-----------Send Data to Buffer------------------------------
+        	% set eyeball locations in physical space (e.g., for trackbox)
+            obj.setEyeballLocations(lefteye(:, 1:3), righteye(:, 1:3), timestamp);
+            
             % send the data to an internal buffer which handles filtering
             % and feature extraction, and then passes the data along to the
             % central DataLog and any relevant GUI elements
-            saccadeOnTime = obj.processData(xy(:,1),xy(:,2),CPUtime,vldty,pd, logData);
+            saccadeOnTime = obj.processData(xy(:,1),xy(:,2),CPUtime,vldty,pd, zL_mm,zR_mm, logData);
             
             % log data if requested in launch params (and not countermanded
             % by user's refresh call)
@@ -268,66 +256,7 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
             n = size(lefteye,1); % compute n data points received
             obj.refresh(false);
         end
-        
-        function [left_xyz_mm, right_xyz_mm] = getEyeballLocations(obj, allowNaN)
-            % Get cartesian coordinates for each eyeball, in millimeters.
-            % If allowNaN==false then will return most recent valid
-            % measurement (or minus infinity if no valid location has ever
-            % been recorded).
-            %
-            % @param    allowNaN        Boolean (default=false)
-            % @return   left_xyz_mm     Cartesian coordinates (mm)
-         	% @return   right_xyz_mm    Cartesian coordinates (mm)
-            %
-            % @date     21/07/14
-            % @author   PRJ
-            %
-            
-            if nargin < 2 || isempty(allowNaN)
-                allowNaN = true;
-            end
-            
-            if allowNaN
-                left_xyz_mm = obj.leyeSpatialPosition;
-                right_xyz_mm = obj.reyeSpatialPosition;
-            else
-                left_xyz_mm = obj.leyeSpatialPosition_nonNaN;
-                right_xyz_mm = obj.reyeSpatialPosition_nonNaN;
-            end
-            
-        end
-        
-        function [lastKnownViewingDistance_cm] = getLastKnownViewingDistance(obj)
-            % Compute last known viewing distance (averaging across
-            % eyeballs). Will return NaN if no valid location has ever been
-            % recorded.
-            %
-         	% @return   lastKnownViewingDistance_cm    distance from Tobii to mean eyeball location (cm)
-            %
-            % @date     21/07/14
-            % @author   PRJ
-            %
-            
-            % get values
-            [left_xyz_mm, right_xyz_mm] = getEyeballLocations(obj, false);
-            
-            
-            % compute
-            mean_xyz_mm = nanmean([left_xyz_mm; right_xyz_mm]);
-            lastKnownViewingDistance_cm = mean_xyz_mm(3)/10;
-            
-            % validation
-            if isnan(lastKnownViewingDistance_cm)
-                error('Internal ivis error');
-            end
-            
-            % replace '-1' with 'NaN'
-            if lastKnownViewingDistance_cm == -1
-                lastKnownViewingDistance_cm = NaN;
-            end
-   
-        end
-        
+
     end
     
     
@@ -390,7 +319,6 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
             headers = ivis.eyetracker.IvTobii.RAWLOG_HEADERS;
             structure = cell2struct(num2cell(data, 1), headers, 2);
         end
-        
     end
     
     
@@ -443,11 +371,11 @@ classdef (Sealed) IvTobii < ivis.eyetracker.IvDataInput
                 
                 valididx = ismember(id, trackeraddresses);
                 if ~any(valididx)
-                    fprintf('Specified tracker ID(s) (%s) does not match any of the available trackers (%s)\n', strjoin(',',id{:}), strjoin(',',trackeraddresses{:}) );
+                    fprintf('Specified tracker ID(s) (%s) does not match any of the available trackers (%s)\n', strjoin1(',',id{:}), strjoin1(',',trackeraddresses{:}) );
                     if getLogicalInput(sprintf('Temporarily replace with %s? (Not recommended): ', trackeraddresses{1}) )
                         id = trackeraddresses{1};
                     else
-                        error('IvTobii:FailedInit','Specified tracker ID (%s) does not match any of the available trackers (%s)\nEdit the XML config file and try again.', strjoin(',',id{:}), strjoin(',',trackeraddresses{:}));
+                        error('IvTobii:FailedInit','Specified tracker ID (%s) does not match any of the available trackers (%s)\nEdit the XML config file and try again.', strjoin1(',',id{:}), strjoin1(',',trackeraddresses{:}));
                     end
                 else
                     % select the first valid tracker

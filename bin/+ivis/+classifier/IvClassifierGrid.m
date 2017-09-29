@@ -31,3 +31,7 @@
 %  *********************************************************************
 % 
 %
+%    Reference page in Doc Center
+%       doc ivis.classifier.IvClassifierGrid
+%
+%

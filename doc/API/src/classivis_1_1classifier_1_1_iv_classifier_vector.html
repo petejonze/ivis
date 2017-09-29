@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae31301f2465dd3d657ea7c8e72c23293"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the additive movement vect...">IvClassifierVector</a> Constructor.  <a href="#ae31301f2465dd3d657ea7c8e72c23293">More...</a><br/></td></tr>
 <tr class="separator:ae31301f2465dd3d657ea7c8e72c23293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c5b0430d3ab7a2a4cba556af789ee6e"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a6c5b0430d3ab7a2a4cba556af789ee6e">draw</a> (unused1, unused2)</td></tr>
-<tr class="memdesc:a6c5b0430d3ab7a2a4cba556af789ee6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic).  <a href="#a6c5b0430d3ab7a2a4cba556af789ee6e">More...</a><br/></td></tr>
+<tr class="memdesc:a6c5b0430d3ab7a2a4cba556af789ee6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic). N.b., if this does not work, ensure that you have called "import.broadcaster.*" in your script, and that you have NOT used Screen(<code>DrawingFinished</code>).  <a href="#a6c5b0430d3ab7a2a4cba556af789ee6e">More...</a><br/></td></tr>
 <tr class="separator:a6c5b0430d3ab7a2a4cba556af789ee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classivis_1_1classifier_1_1_iv_classifier')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html">ivis.classifier.IvClassifier</a></td></tr>
 <tr class="memitem:ab5d9fe2b1e17840cc08cd36367111f40 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ab5d9fe2b1e17840cc08cd36367111f40">IvClassifier</a> (graphicObjsOrNAlternatives, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#aaf798aaeb32d77ab08510d4e107acde1">criterion</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a409cb2e4f2e96b0889c9627317281338">timeout</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a49388187ca41891cd86a2718e58f121b">bufferLength</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a3dba59809b9b3ba7d6b4717fcf188a28">onsetRampStart</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#abf893e81fc7c1406fc5ac53341065fa6">onsetRampDuration</a>)</td></tr>
@@ -148,10 +148,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a339c72a28860e2904fb547bfde43f5c2 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a339c72a28860e2904fb547bfde43f5c2">delete</a> ()</td></tr>
 <tr class="memdesc:a339c72a28860e2904fb547bfde43f5c2 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html" title="Generic class for maintaining the level of evidence in favour of each potential Area of Interest...">IvClassifier</a> Destructor.  <a href="#a339c72a28860e2904fb547bfde43f5c2">More...</a><br/></td></tr>
 <tr class="separator:a339c72a28860e2904fb547bfde43f5c2 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa694bc9b8ae48854b9f3873be0db3508 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
-  t  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#aa694bc9b8ae48854b9f3873be0db3508">start</a> ()</td></tr>
-<tr class="memdesc:aa694bc9b8ae48854b9f3873be0db3508 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start accruing evidence towards each alternative.  <a href="#aa694bc9b8ae48854b9f3873be0db3508">More...</a><br/></td></tr>
-<tr class="separator:aa694bc9b8ae48854b9f3873be0db3508 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a325e3b530353341493705f0390901c73 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a325e3b530353341493705f0390901c73">setCriterion</a> (<a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#aaf798aaeb32d77ab08510d4e107acde1">criterion</a>)</td></tr>
+<tr class="memdesc:a325e3b530353341493705f0390901c73 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify decision criteria.  <a href="#a325e3b530353341493705f0390901c73">More...</a><br/></td></tr>
+<tr class="separator:a325e3b530353341493705f0390901c73 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a6dc65fbd3dde3ddcbf3b38d088a57 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
+  t  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a30a6dc65fbd3dde3ddcbf3b38d088a57">start</a> (resettime, varargin)</td></tr>
+<tr class="memdesc:a30a6dc65fbd3dde3ddcbf3b38d088a57 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start accruing evidence towards each alternative.  <a href="#a30a6dc65fbd3dde3ddcbf3b38d088a57">More...</a><br/></td></tr>
+<tr class="separator:a30a6dc65fbd3dde3ddcbf3b38d088a57 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aa7349ba7f1c3a31d34f1c641ff4a14 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
   <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a22fbd634f55bb0e3d309fe70e891c7e4">status</a>  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a0aa7349ba7f1c3a31d34f1c641ff4a14">update</a> ()</td></tr>
 <tr class="memdesc:a0aa7349ba7f1c3a31d34f1c641ff4a14 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update evidence.  <a href="#a0aa7349ba7f1c3a31d34f1c641ff4a14">More...</a><br/></td></tr>
@@ -165,17 +168,28 @@ STATUS_CODE  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
   isund  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ac744744cdf9527d414d9d8540bd8d661">isUndecided</a> ()</td></tr>
 <tr class="memdesc:ac744744cdf9527d414d9d8540bd8d661 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience wrapper for: obj.status == obj.STATUS_UNDECIDED.  <a href="#ac744744cdf9527d414d9d8540bd8d661">More...</a><br/></td></tr>
 <tr class="separator:ac744744cdf9527d414d9d8540bd8d661 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cba4ff042d53f4dc9e915352b1f24e7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
+<tr class="memitem:a1b91a666d804ecb5e6a7f2658b30c15d inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function [ 
   <br class="typebreak"/>
-mostLikelyGraphicObj  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a5cba4ff042d53f4dc9e915352b1f24e7">interogate</a> (forcedChoice)</td></tr>
-<tr class="memdesc:a5cba4ff042d53f4dc9e915352b1f24e7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an (optionally forced) response, based on current level of evidence (if unforced may return obj.NULL_OBJ).  <a href="#a5cba4ff042d53f4dc9e915352b1f24e7">More...</a><br/></td></tr>
-<tr class="separator:a5cba4ff042d53f4dc9e915352b1f24e7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+mostLikelyGraphicObj ,<br class="typebreak"/>
+
+  <br class="typebreak"/>
+propComplete  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a1b91a666d804ecb5e6a7f2658b30c15d">interogate</a> (forcedChoice)</td></tr>
+<tr class="memdesc:a1b91a666d804ecb5e6a7f2658b30c15d inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an (optionally forced) response, based on current level of evidence (if unforced may return obj.NULL_OBJ).  <a href="#a1b91a666d804ecb5e6a7f2658b30c15d">More...</a><br/></td></tr>
+<tr class="separator:a1b91a666d804ecb5e6a7f2658b30c15d inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6c41fc965dee637d55c51d4110485a7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ae6c41fc965dee637d55c51d4110485a7">show</a> ()</td></tr>
 <tr class="memdesc:ae6c41fc965dee637d55c51d4110485a7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable automatic PTB screen texture drawing, allowing the observer to see the classification area(s).  <a href="#ae6c41fc965dee637d55c51d4110485a7">More...</a><br/></td></tr>
 <tr class="separator:ae6c41fc965dee637d55c51d4110485a7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf313ca7e05baa02ddcb9be8ceca37a7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#adf313ca7e05baa02ddcb9be8ceca37a7">hide</a> ()</td></tr>
 <tr class="memdesc:adf313ca7e05baa02ddcb9be8ceca37a7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable automatic PTB screen texture drawing.  <a href="#adf313ca7e05baa02ddcb9be8ceca37a7">More...</a><br/></td></tr>
 <tr class="separator:adf313ca7e05baa02ddcb9be8ceca37a7 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f7d455f29c8ae8feb704787e6afed6 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ab7f7d455f29c8ae8feb704787e6afed6">forceAnswer</a> (i)</td></tr>
+<tr class="memdesc:ab7f7d455f29c8ae8feb704787e6afed6 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h6></h6>
+ <a href="#ab7f7d455f29c8ae8feb704787e6afed6">More...</a><br/></td></tr>
+<tr class="separator:ab7f7d455f29c8ae8feb704787e6afed6 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057922b37d62caa36b6f0f604b60b3c9 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a057922b37d62caa36b6f0f604b60b3c9">resetOnsetRampParams</a> (<a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a3dba59809b9b3ba7d6b4717fcf188a28">onsetRampStart</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#abf893e81fc7c1406fc5ac53341065fa6">onsetRampDuration</a>)</td></tr>
+<tr class="memdesc:a057922b37d62caa36b6f0f604b60b3c9 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight"><h6></h6>
+ <a href="#a057922b37d62caa36b6f0f604b60b3c9">More...</a><br/></td></tr>
+<tr class="separator:a057922b37d62caa36b6f0f604b60b3c9 inherit pub_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classivis_1_1broadcaster_1_1_iv_listener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classivis_1_1broadcaster_1_1_iv_listener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classivis_1_1broadcaster_1_1_iv_listener.html">ivis.broadcaster.IvListener</a></td></tr>
 <tr class="memitem:ad5f33e1dc17f907588af17d1c2b06bd5 inherit pub_methods_classivis_1_1broadcaster_1_1_iv_listener"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1broadcaster_1_1_iv_listener.html#ad5f33e1dc17f907588af17d1c2b06bd5">delete</a> ()</td></tr>
 <tr class="memdesc:ad5f33e1dc17f907588af17d1c2b06bd5 inherit pub_methods_classivis_1_1broadcaster_1_1_iv_listener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object destructor.  <a href="#ad5f33e1dc17f907588af17d1c2b06bd5">More...</a><br/></td></tr>
@@ -281,26 +295,39 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a1bd4dd6307c3b168788ad3537280655d"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a1bd4dd6307c3b168788ad3537280655d">updateParams</a> ()</td></tr>
 <tr class="memdesc:a1bd4dd6307c3b168788ad3537280655d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update classifier parameters (e.g., if graphics have moved). N.b., this is done separately from updateEvidence because we want to update the GUI regularly even if the classifier isn't being refreshed.  <a href="#a1bd4dd6307c3b168788ad3537280655d">More...</a><br/></td></tr>
 <tr class="separator:a1bd4dd6307c3b168788ad3537280655d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af253e6edc6fe74ec5e27d17980367cc1"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#af253e6edc6fe74ec5e27d17980367cc1">updateEvidence</a> (xyt)</td></tr>
-<tr class="separator:af253e6edc6fe74ec5e27d17980367cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44fa52e201614cc41dfa6619e5e23c6e"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a44fa52e201614cc41dfa6619e5e23c6e">updateEvidence</a> (xyt, varargin)</td></tr>
+<tr class="memdesc:a44fa52e201614cc41dfa6619e5e23c6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">add to buffer  <a href="#a44fa52e201614cc41dfa6619e5e23c6e">More...</a><br/></td></tr>
+<tr class="separator:a44fa52e201614cc41dfa6619e5e23c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98e9e43ed5408eeb3e7e0d4aaf3b80e6"><td class="memItemLeft" align="right" valign="top">function 
   o  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#a98e9e43ed5408eeb3e7e0d4aaf3b80e6">getClassObj</a> (i)</td></tr>
 <tr class="memdesc:a98e9e43ed5408eeb3e7e0d4aaf3b80e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the object at index i. Each object is a possible area of interest.  <a href="#a98e9e43ed5408eeb3e7e0d4aaf3b80e6">More...</a><br/></td></tr>
 <tr class="separator:a98e9e43ed5408eeb3e7e0d4aaf3b80e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeed9bcf9c1116599a0f1a387725af91b"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#aeed9bcf9c1116599a0f1a387725af91b">classifierSpecificReset</a> (newTargDirection_deg, newCriteria, startXY)</td></tr>
+<tr class="separator:aeed9bcf9c1116599a0f1a387725af91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classivis_1_1classifier_1_1_iv_classifier')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html">ivis.classifier.IvClassifier</a></td></tr>
-<tr class="memitem:a72a2130b89430b5f753476c8ded3a542 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">virtual function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a72a2130b89430b5f753476c8ded3a542">updateEvidence</a> ()</td></tr>
-<tr class="memdesc:a72a2130b89430b5f753476c8ded3a542 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update evidence in favour of each alternative / classification hypothesis.  <a href="#a72a2130b89430b5f753476c8ded3a542">More...</a><br/></td></tr>
-<tr class="separator:a72a2130b89430b5f753476c8ded3a542 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ed2c1a7e0118b868b712a0d6211cf3 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">virtual function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ab3ed2c1a7e0118b868b712a0d6211cf3">classifierSpecificReset</a> (varargin)</td></tr>
+<tr class="memdesc:ab3ed2c1a7e0118b868b712a0d6211cf3 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform any resetting specific to each classifier type - pass in any user-supplied arguments (i.e., from myClassifier.start()).  <a href="#ab3ed2c1a7e0118b868b712a0d6211cf3">More...</a><br/></td></tr>
+<tr class="separator:ab3ed2c1a7e0118b868b712a0d6211cf3 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a925e3abf49c782b81ca0aba90ba895dc inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a925e3abf49c782b81ca0aba90ba895dc">updateGUI</a> (xy, lookingAt)</td></tr>
 <tr class="memdesc:a925e3abf49c782b81ca0aba90ba895dc inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh any associated GUI window.  <a href="#a925e3abf49c782b81ca0aba90ba895dc">More...</a><br/></td></tr>
 <tr class="separator:a925e3abf49c782b81ca0aba90ba895dc inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2819ff50ff11d99a79051be116c710 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a5b2819ff50ff11d99a79051be116c710">reset</a> ()</td></tr>
-<tr class="memdesc:a5b2819ff50ff11d99a79051be116c710 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the classifier; clear buffers and graphics.  <a href="#a5b2819ff50ff11d99a79051be116c710">More...</a><br/></td></tr>
-<tr class="separator:a5b2819ff50ff11d99a79051be116c710 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5454bcf7b2fb99537959f64b541e7a inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
-  xyt  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#afc5454bcf7b2fb99537959f64b541e7a">getData</a> ()</td></tr>
-<tr class="memdesc:afc5454bcf7b2fb99537959f64b541e7a inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">GETDATA dfdfdf.  <a href="#afc5454bcf7b2fb99537959f64b541e7a">More...</a><br/></td></tr>
-<tr class="separator:afc5454bcf7b2fb99537959f64b541e7a inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1218a671793dc9a8f210d104e1b5f198 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a1218a671793dc9a8f210d104e1b5f198">reset</a> (varargin)</td></tr>
+<tr class="memdesc:a1218a671793dc9a8f210d104e1b5f198 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the classifier; clear buffers and graphics.  <a href="#a1218a671793dc9a8f210d104e1b5f198">More...</a><br/></td></tr>
+<tr class="separator:a1218a671793dc9a8f210d104e1b5f198 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ca5ea0084ecb6b3c81de4b36f52c50 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function [ 
+  xyt ,<br class="typebreak"/>
+
+  v  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a16ca5ea0084ecb6b3c81de4b36f52c50">getData</a> ()</td></tr>
+<tr class="memdesc:a16ca5ea0084ecb6b3c81de4b36f52c50 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">GETDATA dfdfdf.  <a href="#a16ca5ea0084ecb6b3c81de4b36f52c50">More...</a><br/></td></tr>
+<tr class="separator:a16ca5ea0084ecb6b3c81de4b36f52c50 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa96c64cefcf383b74f1edb4a5cf32594 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
+  w  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#aa96c64cefcf383b74f1edb4a5cf32594">getOnsetRamp</a> (t)</td></tr>
+<tr class="memdesc:aa96c64cefcf383b74f1edb4a5cf32594 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute an on-ramp to weight evidence by (to prevent early/ spurious decisions).  <a href="#aa96c64cefcf383b74f1edb4a5cf32594">More...</a><br/></td></tr>
+<tr class="separator:aa96c64cefcf383b74f1edb4a5cf32594 inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ce582ce5fa9aee80a98d7f22e21f1c inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">function 
+  <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a22fbd634f55bb0e3d309fe70e891c7e4">status</a>  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ac9ce582ce5fa9aee80a98d7f22e21f1c">updateStatus</a> (gObj)</td></tr>
+<tr class="memdesc:ac9ce582ce5fa9aee80a98d7f22e21f1c inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the current classification estimate, check if any evidence/time criteria have been reached (obj.STATUS_UNDECIDED if no decision yet reached).  <a href="#ac9ce582ce5fa9aee80a98d7f22e21f1c">More...</a><br/></td></tr>
+<tr class="separator:ac9ce582ce5fa9aee80a98d7f22e21f1c inherit pro_methods_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -315,6 +342,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a1c637cfd67f0b5983067ce031420211e inherit pub_static_attribs_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83c14ce979c9a2fdcb9312e33dd99dce inherit pub_static_attribs_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">static const &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a83c14ce979c9a2fdcb9312e33dd99dce">NULL_OBJ</a> = struct(&quot;'name', 'nothing'&quot;)</td></tr>
 <tr class="separator:a83c14ce979c9a2fdcb9312e33dd99dce inherit pub_static_attribs_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9d2ac83d19a5e62571adcf9ee1f70f inherit pub_static_attribs_classivis_1_1classifier_1_1_iv_classifier"><td class="memItemLeft" align="right" valign="top">static const &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#adc9d2ac83d19a5e62571adcf9ee1f70f">TIMEOUT_OBJ</a> = struct(&quot;'name', '<a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a409cb2e4f2e96b0889c9627317281338">timeout</a>'&quot;)</td></tr>
+<tr class="separator:adc9d2ac83d19a5e62571adcf9ee1f70f inherit pub_static_attribs_classivis_1_1classifier_1_1_iv_classifier"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_singleton.html" title="A pseudo-singleton class pattern for Matlab.">Singleton</a> instantiation of <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html" title="Generic class for maintaining the level of evidence in favour of each potential Area of Interest...">IvClassifier</a>, in which the decision variable is the additive movement vector, with a direction that must lie within some prescribed bin, and a magnitude that must exceed some arbitrary threshold. </p>
@@ -330,7 +359,7 @@ Additional Inherited Members</h2></td></tr>
 <li>hide - Disable automatic PTB screen texture drawing.</li>
 </ul>
 </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd>IvClassifierBox, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_grid.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli...">IvClassifierGrid</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_l_l.html" title="Singleton instantiation of IvClassifier, in which the decision variable is weighted cumulative-loglik...">IvClassifierLL</a></dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_box.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli...">IvClassifierBox</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_grid.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli...">IvClassifierGrid</a>, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_l_l.html" title="Singleton instantiation of IvClassifier, in which the decision variable is weighted cumulative-loglik...">IvClassifierLL</a></dd></dl>
 <dl class="section user"><dt>Example</dt><dd>none</dd></dl>
 <dl class="section user"><dt>Author</dt><dd>Pete R Jones <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'ej'+'onz'+'e@'+'gma'+'il'+'.co'+'m'; return false;">petej<span style="display: none;">.nosp@m.</span>onze<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a></dd></dl>
 <dl class="section user"><dt>Verinfo</dt><dd>1.0 PJ 02/2013 : first_build<br/>
@@ -405,11 +434,53 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00156">156</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00153">153</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aeed9bcf9c1116599a0f1a387725af91b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">function  ivis.classifier.IvClassifierVector.classifierSpecificReset </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>newTargDirection_deg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>newCriteria</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>startXY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00300">300</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6c5b0430d3ab7a2a4cba556af789ee6e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -442,7 +513,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic). </p>
+<p>Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic). N.b., if this does not work, ensure that you have called "import.broadcaster.*" in your script, and that you have NOT used Screen(<code>DrawingFinished</code>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>Event source </td></tr>
@@ -455,16 +526,16 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ac10941b9d85cb4c69ca2072b0afe5534">ivis.classifier.IvClassifier</a>.</p>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00222">222</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00219">219</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
-<p>References <a class="el" href="_screen_8m_source.html#l00019">ivis.broadcaster.Screen()</a>.</p>
+<p>References <a class="el" href="pol2cmp_8m_source.html#l00017">pol2cmp()</a>, and <a class="el" href="_screen_8m_source.html#l00019">ivis.broadcaster.Screen()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classivis_1_1classifier_1_1_iv_classifier_vector_a6c5b0430d3ab7a2a4cba556af789ee6e_cgraph.png" border="0" usemap="#classivis_1_1classifier_1_1_iv_classifier_vector_a6c5b0430d3ab7a2a4cba556af789ee6e_cgraph" alt=""/></div>
 <map name="classivis_1_1classifier_1_1_iv_classifier_vector_a6c5b0430d3ab7a2a4cba556af789ee6e_cgraph" id="classivis_1_1classifier_1_1_iv_classifier_vector_a6c5b0430d3ab7a2a4cba556af789ee6e_cgraph">
-<area shape="rect" id="node2" href="namespaceivis_1_1broadcaster.html#a035702262427ed8c3b5b3d6d6d025b02" title="SCREEN wrapper for PTB&#39;s Screen command." alt="" coords="227,5,355,46"/></map>
+<area shape="rect" id="node2" href="pol2cmp_8m.html#a3af66f5a93e8b99c879a38ac4c2ca2c7" title="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra..." alt="" coords="255,5,326,32"/><area shape="rect" id="node3" href="namespaceivis_1_1broadcaster.html#a035702262427ed8c3b5b3d6d6d025b02" title="SCREEN wrapper for PTB&#39;s Screen command." alt="" coords="227,57,355,98"/></map>
 </div>
 </p>
 
@@ -504,11 +575,11 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a25bc6a8a9644938f5bbd2bfcc01f5fd8">ivis.classifier.IvClassifier</a>.</p>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00302">302</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00294">294</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="af253e6edc6fe74ec5e27d17980367cc1"></a>
+<a class="anchor" id="a44fa52e201614cc41dfa6619e5e23c6e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -519,27 +590,41 @@ Here is the call graph for this function:</div>
           <td class="memname">function  ivis.classifier.IvClassifierVector.updateEvidence </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>xyt</em></td><td>)</td>
+          <td class="paramname"><em>xyt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>varargin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00268">268</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>add to buffer </p>
+
+<p>Implements <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a835a86e08b7ff8accf99327c823f1a11">ivis.classifier.IvClassifier</a>.</p>
+
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00266">266</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 <p>References <a class="el" href="pol2cmp_8m_source.html#l00017">pol2cmp()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classivis_1_1classifier_1_1_iv_classifier_vector_af253e6edc6fe74ec5e27d17980367cc1_cgraph.png" border="0" usemap="#classivis_1_1classifier_1_1_iv_classifier_vector_af253e6edc6fe74ec5e27d17980367cc1_cgraph" alt=""/></div>
-<map name="classivis_1_1classifier_1_1_iv_classifier_vector_af253e6edc6fe74ec5e27d17980367cc1_cgraph" id="classivis_1_1classifier_1_1_iv_classifier_vector_af253e6edc6fe74ec5e27d17980367cc1_cgraph">
-<area shape="rect" id="node3" href="pol2cmp_8m.html#a3af66f5a93e8b99c879a38ac4c2ca2c7" title="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra..." alt="" coords="237,14,315,45"/></map>
+<div class="center"><img src="classivis_1_1classifier_1_1_iv_classifier_vector_a44fa52e201614cc41dfa6619e5e23c6e_cgraph.png" border="0" usemap="#classivis_1_1classifier_1_1_iv_classifier_vector_a44fa52e201614cc41dfa6619e5e23c6e_cgraph" alt=""/></div>
+<map name="classivis_1_1classifier_1_1_iv_classifier_vector_a44fa52e201614cc41dfa6619e5e23c6e_cgraph" id="classivis_1_1classifier_1_1_iv_classifier_vector_a44fa52e201614cc41dfa6619e5e23c6e_cgraph">
+<area shape="rect" id="node2" href="pol2cmp_8m.html#a3af66f5a93e8b99c879a38ac4c2ca2c7" title="POL2CMP Polar coordinate angle to compass reading Converts regular matlab angles (counterclockwise ra..." alt="" coords="227,12,298,39"/></map>
 </div>
 </p>
 
@@ -577,7 +662,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00256">256</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00254">254</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -608,7 +693,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#a8661e693047d2847bc6a2cd0ae0169c5">ivis.classifier.IvClassifier</a>.</p>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00264">264</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00262">262</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -630,7 +715,7 @@ Here is the call graph for this function:</div>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> <br/>
 <b>Default:</b> "[255 100 255]" </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00116">116</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00115">115</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -650,7 +735,7 @@ Here is the call graph for this function:</div>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00079">79</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00078">78</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -670,7 +755,7 @@ Here is the call graph for this function:</div>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00126">126</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00125">125</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -690,7 +775,7 @@ Here is the call graph for this function:</div>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00135">135</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00134">134</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -710,7 +795,7 @@ Here is the call graph for this function:</div>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00097">97</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00096">96</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -730,7 +815,7 @@ for drawing </p>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00106">106</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00105">105</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -750,7 +835,7 @@ for drawing </p>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00088">88</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00087">87</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
@@ -771,12 +856,12 @@ for drawing </p>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00069">69</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_classifier_vector_8m_source.html#l00068">68</a> of file <a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/+ivis/+classifier/<a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a></li>
+<li>+ivis/+classifier/<a class="el" href="_iv_classifier_vector_8m_source.html">IvClassifierVector.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -784,7 +869,7 @@ for drawing </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceivis.html">ivis</a></li><li class="navelem"><a class="el" href="namespaceivis_1_1classifier.html">classifier</a></li><li class="navelem"><a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html">IvClassifierVector</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:42 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:14 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

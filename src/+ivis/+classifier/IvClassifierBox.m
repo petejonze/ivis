@@ -60,9 +60,10 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
         path_enabled = false
         path_maxDeviation_px             % for constructing valid vector corridors
         path_n
-        path_criterion = 60; % in future versions this should be user-specifiable
+        path_criterion_n = 60; % in future versions this should be user-specifiable [was 60]
         path_xyStart_px
         path_xyEnd_px
+        stationarity_criterion_degsec = 60;  % in future versions this should be user-specifiable
     end
     
     
@@ -77,11 +78,12 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
         function obj = IvClassifierBox(graphicObjs, margin_deg, npoints, nsecs, GUIidx, path_maxDeviation_px)
             % IvClassifierBox Constructor.
             %
-            % @param    graphicObjs	IvGraphic object(s) to classify
-            % @param    margin_deg 	margin to place around the object (deg)
-            % @param    npoints  	num gaze points required inside box
-            % @param    nsecs       num secs to run before concluding Miss
-            % @param    GUIidx    	GUI panel number
+            % @param    graphicObjs             IvGraphic object(s) to classify
+            % @param    margin_deg              margin to place around the object (deg)
+            % @param    npoints                 num gaze points required inside box
+            % @param    nsecs                   num secs to run before concluding Miss
+            % @param    GUIidx                  GUI panel number
+            % @param    path_maxDeviation_px 	amount of deviation allowed from a straight line vector from the starting position to the target position
             % @return 	obj         IvClassifierBox object
             %
             % @date     26/06/14
@@ -118,33 +120,9 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
           	% call superclass
             obj = obj@ivis.classifier.IvClassifier(graphicObjs, npoints, nsecs);
 
-            % expand margin if necessary
-            if numel(margin_deg) == 1
-                margin_deg = repmat(margin_deg, 1, 4);
-            end
-            if ~all(size(margin_deg) == [1 4])
-                error('IvClassifierBox:InvalidInput','Margin must be a scalar, or a 1x4 row vector (left, bottom, right, top)');
-            end
-            % convert to pixels & store
-            obj.margin_px = ivis.math.IvUnitHandler.getInstance().deg2px(margin_deg);
-            % make left and bottom negative (for easy addition below)
-            obj.margin_px([1 2]) = -obj.margin_px([1 2]);
-            obj.margin_px([3 4]) = obj.margin_px([3 4]);
-            
-            % construct polygons
-            n = length(obj.graphicObjs);
-            obj.nullrects = cell(n, 1);
-            obj.xyrects_xywh = cell(1, n);
-            obj.xyrects_xyxy = cell(1, n);
-            for i = 1:n
-                obj.nullrects{i} = [0 0 obj.graphicObjs{i}.width obj.graphicObjs{i}.height] + obj.margin_px; % [x y w h]
-                obj.xyrects_xywh{i} = obj.nullrects{i} + [obj.graphicObjs{i}.getX0Y0() 0 0]; % [x y w h] format
-                obj.xyrects_xyxy{i} = obj.nullrects{i} + [obj.graphicObjs{i}.getX0Y0() obj.graphicObjs{i}.getX0Y0()]; % [x0 y0 x1 y1] format
-                % listen for any updates to the "nullrect" property in this
-                % object
-                obj.startListeningTo(obj.graphicObjs{i}, 'nullrect',  'PostSet', @obj.graphicChangeEventHandler)
-            end
-            
+            % convert to pixels and set
+            obj.setBoxMargins(ivis.math.IvUnitHandler.getInstance().deg2px(margin_deg));
+
             % initialise GUI element if GUIidx specified
             if ~isempty(GUIidx)
                 obj.guiElement = ivis.gui.IvGUIclassifierBox(GUIidx, obj.criterion, obj.xyrects_xywh);
@@ -178,6 +156,40 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
             % draw
             Screen('FrameRect', obj.winhandle, obj.rectColour, dstRect, 3);
         end    
+        
+        function [] = setBoxMargins(obj, margin_px)
+            
+            % expand margin if necessary (i.e., if only supplied a single
+            % scalar value, assuming the user wants uniform margins)
+            switch numel(margin_px)
+                case 1
+                    obj.margin_px = repmat(margin_px, 1, 4);
+                case 2
+                    obj.margin_px = [margin_px margin_px];
+                case 4
+                    obj.margin_px = margin_px;
+                otherwise
+                    error('IvClassifierBox:InvalidInput','Margin must be a scalar, a 1x2 vector (left/right, top/bottom), or a 1x4 row vector (left, bottom, right, top)');
+            end
+
+            % convert to additive values
+            obj.margin_px([1 2]) = -obj.margin_px([1 2]);
+            obj.margin_px([3 4]) = obj.margin_px([3 4]);
+            
+            % (re)construct polygons
+            n = length(obj.graphicObjs);
+            obj.nullrects = cell(n, 1);
+            obj.xyrects_xywh = cell(1, n);
+            obj.xyrects_xyxy = cell(1, n);
+            for i = 1:n
+                obj.nullrects{i} = [0 0 obj.graphicObjs{i}.width obj.graphicObjs{i}.height] + obj.margin_px; % [x y w h]
+                obj.xyrects_xywh{i} = obj.nullrects{i} + [obj.graphicObjs{i}.getX0Y0() 0 0]; % [x y w h] format
+                obj.xyrects_xyxy{i} = obj.nullrects{i} + [obj.graphicObjs{i}.getX0Y0() obj.graphicObjs{i}.getX0Y0()]; % [x0 y0 x1 y1] format                
+                % listen for any updates to the "nullrect" property in this
+                % object
+                obj.startListeningTo(obj.graphicObjs{i}, 'nullrect',  'PostSet', @obj.graphicChangeEventHandler)
+            end
+        end
     end
 
     
@@ -202,7 +214,7 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
             end                 
         end
         
-        function [] = updateEvidence(obj, xyt) % interface implementation
+        function [] = updateEvidence(obj, xyt, v) % interface implementation
             for i = 1:length(obj.graphicObjs)
                 % count n observations in each
                 gObjX0Y0_prior = obj.graphicObjs{i}.getX0Y0(xyt(:,3)); % get x0y0 prior to each datum
@@ -211,7 +223,8 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
                         & (rect(:,3) > xyt(:,1)) ...
                         & (rect(:,2) < xyt(:,2)) ...
                         & (rect(:,4) > xyt(:,2));
-                obj.evidence(i) = obj.evidence(i) + sum(inrect);  
+                isStationary = v < obj.stationarity_criterion_degsec;
+                obj.evidence(i) = obj.evidence(i) + sum(inrect & isStationary);  
             end
             
             if obj.path_enabled
@@ -231,7 +244,7 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
                 obj.path_n = obj.path_n + n; 
                 
                 % check if counter has exceeded a criterion
-                if obj.path_n > obj.path_criterion
+                if obj.path_n > obj.path_criterion_n
                     fprintf('IvClassifierBox: Path deviation detected. Forcing a miss\n')
                     obj.updateStatus(ivis.graphic.IvPrior()); % force classifier to report obj.STATUS_MISS
                 end
@@ -281,7 +294,7 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
     methods (Access = private)
         
         function [] = graphicChangeEventHandler(obj, src, evt) %#ok
-          	% dfdfdff.
+          	% Fired any time a IvGraphic object is resized.
             %
             % @param    src  broadcast source
             % @param    evt  broadcast event          

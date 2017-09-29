@@ -56,7 +56,7 @@ classdef (Sealed) IvRawLog < ivis.log.IvLog
             %             
 
             obj.homeDir = regexprep(homeDir, '\$iv', escape(ivis.main.IvParams.getInstance().toolboxHomedir), 'ignorecase');
-obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\raw'      
+% obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\raw'      
             % check that raw log dir exists
             if ~exist(obj.homeDir, 'dir')
                 error('IvRawLog:FailedToInit','Specified raw log directory could not be found: %s ', obj.homeDir);

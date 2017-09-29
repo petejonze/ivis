@@ -1,6 +1,9 @@
 classdef (Sealed) IvGUIeyetrackTemporal < ivis.gui.IvGUIelement
 	% Singleton for displaying gaze-location as a function of time.
     %
+    %   NB: will only display if data is being logged (e.g.,
+    %   eyetracker.update(false) will result in a flat line)
+    %
     % IvGUIeyetrackTemporal Methods:
     %   * IvGUIeyetrackTemporal - Constructor.
 	%   * update                - Update figure window.
@@ -42,7 +45,7 @@ classdef (Sealed) IvGUIeyetrackTemporal < ivis.gui.IvGUIelement
         hCriterion
         saccades % 1 for onset, -1 for offsets, NaN otherwise
         %
-        varFlag = 1; % will actually increment to 2 when first set
+        varFlag = 0; % will actually increment to 1 (velocity) when first set
     end
     
 

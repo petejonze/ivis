@@ -18,8 +18,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/cmp2pol.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/cmp2pol.m" bodystart="17" bodyend="-1"/>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1ad542263e54e283b55646c6770b98cf46" compoundref="_iv_g_u_iclassifier_vector_8m" startline="76" endline="124">ivis::gui::IvGUIclassifierVector::IvGUIclassifierVector</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/cmp2pol.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/cmp2pol.m" bodystart="17" bodyend="23"/>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1ad542263e54e283b55646c6770b98cf46" compoundref="_iv_g_u_iclassifier_vector_8m" startline="76" endline="127">ivis::gui::IvGUIclassifierVector::IvGUIclassifierVector</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -44,12 +44,15 @@
 <codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17" refid="cmp2pol_8m_1aabe0f1c7a18cb545b99f6f923230fe81" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,theta&gt;<sp/><ref refid="cmp2pol_8m_1aabe0f1c7a18cb545b99f6f923230fe81" kindref="member">cmp2pol</ref>(matlabtypesubstitute<sp/>cmp)<sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>cmp<sp/>=<sp/>-cmp+90;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>flip<sp/>and<sp/>rotate<sp/>90<sp/>deg<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">cmp=-cmp+90;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>flip<sp/>and<sp/>rotate<sp/>90<sp/>deg</highlight></codeline>
-<codeline lineno="21"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal">theta<sp/>=<sp/>(pi/180)*cmp;<sp/></highlight><highlight class="comment">/*<sp/><sp/>ALT:<sp/>deg2rad(cmp);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>theta<sp/>=<sp/>(pi/180)*cmp;<sp/></highlight><highlight class="comment">/*<sp/><sp/>ALT:<sp/>deg2rad(cmp);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/cmp2pol.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/cmp2pol.m"/>
   </compounddef>
 </doxygen>

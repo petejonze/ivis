@@ -1,6 +1,5 @@
-%  Interpolates between two known points, val1 and val2
-%  based on a specified function, with steps according to
-%  a given duration & framerate.
+%  Interpolates between two known points, val1 and val2 based on a specified
+%  function, with steps according to a given duration & framerate.
 % 
 %  Skips val1/start point. Always ends at val2.
 %  Valid functions: linear, exp, exp10, log, log10, norm
@@ -33,4 +32,8 @@
 %      y = tween(:,2);
 %      rot = tween(:,3);
 %      alpha = tween(:,4);
+% 
+%  Copyright 2014 : P R Jones
+%  *********************************************************************
+% 
 %

@@ -22,7 +22,7 @@
 <para>e.g.</para><para>x1 = 10 x2 = 5 logsubtract(x1,x2) for comaprison </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/logsubtract.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/logsubtract.m" bodystart="17" bodyend="35"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/logsubtract.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/logsubtract.m" bodystart="17" bodyend="34"/>
         <references refid="class_lennard_jones_potential_1ae003122d56f26b05216df007e35c6ef7" compoundref="_lennard_jones_potential_8m" startline="88">LennardJonesPotential::y</references>
       </memberdef>
       </sectiondef>
@@ -53,20 +53,19 @@
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(x1<sp/>&lt;=<sp/>x2)</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_lennard_jones_potential_1ae003122d56f26b05216df007e35c6ef7" kindref="member">y</ref><sp/>=<sp/>x2;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>error(&apos;logsubtract:invalidInput&apos;,<sp/>&apos;computing<sp/>the<sp/>log<sp/>of<sp/>a<sp/>negative<sp/>number&apos;)</highlight></codeline>
-<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinf(x2)</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_lennard_jones_potential_1ae003122d56f26b05216df007e35c6ef7" kindref="member">y</ref><sp/>=<sp/>x1;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>x1<sp/>+<sp/>log(1-exp(x2-x1));</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>error(&apos;logsubtract:invalidInput&apos;,<sp/>&apos;computing<sp/>the<sp/>log<sp/>of<sp/>a<sp/>negative<sp/>number&apos;)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinf(x2)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_lennard_jones_potential_1ae003122d56f26b05216df007e35c6ef7" kindref="member">y</ref><sp/>=<sp/>x1;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>x1<sp/>+<sp/>log(1-exp(x2-x1));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/logsubtract.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/logsubtract.m"/>
   </compounddef>
 </doxygen>

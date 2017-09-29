@@ -205,11 +205,15 @@ classdef (Sealed) IvEyelink < ivis.eyetracker.IvDataInput
             vldty = v1*10 + v2; % mean
             pd = nanmean(cat(3,p1,p2),3); % combine
             
+         	% invent some placeholder depth data (tmp hack)
+            zL_mm = nan(size(vldty));
+            zR_mm = nan(size(vldty));
+            
             %-----------Send Data to Buffer------------------------------
             % send the data to an internal buffer which handles filtering
             % and feature extraction, and then passes the data along to the
             % central DataLog and any relevant GUI elements
-            saccadeOnTime = obj.processData(xy(:,1),xy(:,2),t,vldty,pd, logData);
+            saccadeOnTime = obj.processData(xy(:,1),xy(:,2),t,vldty,pd, zL_mm,zR_mm, logData);
             
             % log data if requested in launch params (and not countermanded
             % by user's refresh call)

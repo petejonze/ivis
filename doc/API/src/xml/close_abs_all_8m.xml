@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/closeAbsAll.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/closeAbsAll.m" bodystart="17" bodyend="20"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/closeAbsAll.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/closeAbsAll.m" bodystart="17" bodyend="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -43,6 +43,6 @@
 <codeline lineno="19"><highlight class="normal">close<sp/>all<sp/>hidden;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/closeAbsAll.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/closeAbsAll.m"/>
   </compounddef>
 </doxygen>

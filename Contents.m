@@ -1,7 +1,7 @@
 % ivis
-% Version 1.4 23-July-2013
+% Version 1.5 13-March-2015
 %
-% @mainpage Ivis 1.4
+% @mainpage Ivis 1.5
 % A toolbox for doing extracting, processing, classifying, visualising, and
 % storing eyetracking data.
 %
@@ -27,7 +27,7 @@
 % present work is cited, and (2) the derivative work is licensed under the
 % same terms.
 %
-% Copyright 2014 : P R Jones
+% Copyright 2015 : P R Jones
 % *********************************************************************
 % 
 

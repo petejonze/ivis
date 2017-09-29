@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/ivis_util/getTween.m File Reference</title>
+<title>ivis: ivis_util/getTween.m File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -119,10 +119,10 @@ $(document).ready(function(){initNavTree('get_tween_8m.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b9b2b260387b1220b952981823a8fba"><td class="memItemLeft" align="right" valign="top">function [ 
-  y ,<br class="typebreak"/>
-
-  n  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="get_tween_8m.html#a9b9b2b260387b1220b952981823a8fba">getTween</a> (val1, val2, d, Fr, func, N)</td></tr>
+<tr class="memitem:a9b9b2b260387b1220b952981823a8fba"><td class="memItemLeft" align="right" valign="top">mlhsSubst&lt; mlhsInnerSubst<br class="typebreak"/>
+&lt; matlabtypesubstitute, y &gt;<br class="typebreak"/>
+,mlhsInnerSubst<br class="typebreak"/>
+&lt; matlabtypesubstitute, n &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="get_tween_8m.html#a9b9b2b260387b1220b952981823a8fba">getTween</a> (matlabtypesubstitute val1, matlabtypesubstitute val2, matlabtypesubstitute d, matlabtypesubstitute Fr, matlabtypesubstitute func, matlabtypesubstitute N)</td></tr>
 <tr class="memdesc:a9b9b2b260387b1220b952981823a8fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpolates between two known points, val1 and val2 based on a specified function, with steps according to a given duration &amp; framerate.  <a href="#a9b9b2b260387b1220b952981823a8fba">More...</a><br/></td></tr>
 <tr class="separator:a9b9b2b260387b1220b952981823a8fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -136,39 +136,39 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">function [   y ,   n  ] = getTween </td>
+          <td class="memname">mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, n &gt; &gt; getTween </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">matlabtypesubstitute&#160;</td>
           <td class="paramname"><em>val1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">matlabtypesubstitute&#160;</td>
           <td class="paramname"><em>val2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">matlabtypesubstitute&#160;</td>
           <td class="paramname"><em>d</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">matlabtypesubstitute&#160;</td>
           <td class="paramname"><em>Fr</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">matlabtypesubstitute&#160;</td>
           <td class="paramname"><em>func</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">matlabtypesubstitute&#160;</td>
           <td class="paramname"><em>N</em>&#160;</td>
         </tr>
         <tr>
@@ -191,8 +191,10 @@ N       ???
 </pre><dl class="section user"><dt>EXAMPLE1</dt><dd>start_coords = [1 4]; end_coords = [8 7];</dd></dl>
 <p>close all figure(); hold on plot([start_coords(1) end_coords(1)],[start_coords(2) end_coords(2)],<code>-</code>);</p>
 <p>tween = getTween(start_coords,end_coords,1,30,<code>inorm</code>); plot(tween(:,1),tween(:,2),<code>ro</code>);</p>
-<dl class="section user"><dt>EXAMPLE2</dt><dd>shift right, spin round 4 times and fadeout tween = getTween([100 10 0 0],[500 10 360*4 1],1,30,<code>log</code>) x = tween(:,1); y = tween(:,2); rot = tween(:,3); alpha = tween(:,4); </dd></dl>
-
+<dl class="section user"><dt>EXAMPLE2</dt><dd>shift right, spin round 4 times and fadeout tween = getTween([100 10 0 0],[500 10 360*4 1],1,30,<code>log</code>) x = tween(:,1); y = tween(:,2); rot = tween(:,3); alpha = tween(:,4);</dd></dl>
+<p>Copyright 2014 : P R Jones </p>
+<hr/>
+ 
 <p>Definition at line <a class="el" href="get_tween_8m_source.html#l00017">17</a> of file <a class="el" href="get_tween_8m_source.html">getTween.m</a>.</p>
 
 </div>
@@ -202,8 +204,8 @@ N       ???
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ad6252dc1f7015853f32048412c9f73e.html">ivis_util</a></li><li class="navelem"><a class="el" href="get_tween_8m.html">getTween.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:41 for ivis by
+    <li class="navelem"><a class="el" href="dir_8248032291ee15c3f092b1111a949a27.html">ivis_util</a></li><li class="navelem"><a class="el" href="get_tween_8m.html">getTween.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:13 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

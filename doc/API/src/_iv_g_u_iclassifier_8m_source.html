@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>ivis: src/+ivis/+gui/IvGUIclassifier.m Source File</title>
+<title>ivis: +ivis/+gui/IvGUIclassifier.m Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -128,110 +128,101 @@ $(document).ready(function(){initNavTree('_iv_g_u_iclassifier_8m_source.html',''
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html" title="Generic class for displaying classifier parameters and status, to be instantiated by a subclass...">IvGUIclassifier</a></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public .ivis.gui.IvGUIelement {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  :public ::ivis::gui::IvGUIelement {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     *  -----PROPERTIES-----</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Constant ) */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a841fd076b6e901f09c56bc3a2d81c028">   65</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> BUFFER_LENGTH = 100;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5e37a65f2c03f1a53f0da42c5728164c">   71</a></span>&#160;                <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5e37a65f2c03f1a53f0da42c5728164c" title="data buffers top panel data (location)">plot1Data</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a18a734487515cf8634b5184f80756b81">   78</a></span>&#160;        <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a18a734487515cf8634b5184f80756b81" title="bottom panel data (evidence)">plot2Data</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a16096932c5c6124fffeebc13848ffca2">   84</a></span>&#160;          <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a16096932c5c6124fffeebc13848ffca2" title="integer num hypotheses handles">nAlternatives</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#aa36a4461985dbb79396de8c1c4230bba">   91</a></span>&#160;        <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#aa36a4461985dbb79396de8c1c4230bba" title="top panel data handle">hPlot1Data</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a1a565b4092e42f20ac136eba0f634fc5">   97</a></span>&#160;        <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a1a565b4092e42f20ac136eba0f634fc5" title="bottom panel data handle">hPlot2Data</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a9e8e452ff369aef7a345b05f848397d4">  103</a></span>&#160;    <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a9e8e452ff369aef7a345b05f848397d4" title="bottom panel text handle">hPlot2Text</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">     *  -----Abstract PUBLIC METHODS-----</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;          </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Abstract ) */</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keyword">virtual</span> function  update(newPlot1Dat,plot2Dat,varargin) = 0;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;          </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0cbbb3b8e6e73dc4321b52510cb90a93">  145</a></span>&#160;        function  <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0cbbb3b8e6e73dc4321b52510cb90a93" title="Reset the classifier panel; clear any accumulated data.">reset</a>() {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="comment">/*  plot distributions and data</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            obj.plot1Data= <a class="code" href="class_c_circular_buffer.html" title="circular-buffer (or: ring buffer) data-structure.">CCircularBuffer</a>(obj.BUFFER_LENGTH,2);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            obj.plot2Data= <a class="code" href="class_c_circular_buffer.html" title="circular-buffer (or: ring buffer) data-structure.">CCircularBuffer</a>(obj.BUFFER_LENGTH,obj.nAlternatives);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="comment">/*  fill up with nans to start with</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            obj.plot1Data.put(nan(obj.BUFFER_LENGTH,2));</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            obj.plot2Data.put(nan(obj.BUFFER_LENGTH,obj.nAlternatives));</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <span class="comment">/*  clear status text</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keyword">set</span>(obj.hPlot2Text, <span class="stringliteral">&quot; String &quot;</span>, );</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
-<div class="line"><a name="l00170"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a3a76218f08b9b621f763baac90887cbc">  170</a></span>&#160;        function  <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a3a76218f08b9b621f763baac90887cbc" title="Write the classification estimate to the panel.">printStatus</a>(statusCode,gObjLookingAt) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">switch</span> statusCode</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">case</span> ivis.classifier.IvClassifier.STATUS_RETIRED</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    exitStr = <span class="stringliteral">&quot; Unknown (retirement) &quot;</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                <span class="keywordflow">case</span> ivis.classifier.IvClassifier.STATUS_MISS <span class="comment">/*  ALT: if gObjLookingAt.type == ivis.graphic.IvScreenObject.TYPE_PRIOR</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    exitStr = sprintf(<span class="stringliteral">&quot; Miss (%s) &quot;</span>,gObjLookingAt.name);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="keywordflow">case</span> ivis.classifier.IvClassifier.STATUS_HIT</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    exitStr = sprintf(<span class="stringliteral">&quot; Hit! : %s &quot;</span>, gObjLookingAt.name);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                otherwise</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    error(<span class="stringliteral">&quot; a:b &quot;</span>,<span class="stringliteral">&quot; Unknown status code: &#39;%s&#39; &quot;</span>,statusCode);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            end</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            str = sprintf(<span class="stringliteral">&quot; ANSWER = %s &quot;</span>,exitStr);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keyword">set</span>(obj.hPlot2Text, <span class="stringliteral">&quot; String &quot;</span>, str);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">     *  -----SINGLETON BLURB-----</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">     *$ ====================================================================</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">protected</span>: <span class="comment">/* ( Static ) */</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#adaca87a349c83e6c832ed5d967e53d77">  209</a></span>&#160;        <span class="keyword">static</span> function obj = <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#adaca87a349c83e6c832ed5d967e53d77" title=".">getSetSingleton</a>(obj) {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            persistent singleObj</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">if</span> nargin &gt; 0, singleObj = obj; end</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            obj = singleObj;</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Static ) */</span></div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
-<div class="line"><a name="l00217"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5d81acf07654de4e16bb1f4bbcf6b64e">  217</a></span>&#160;        <span class="keyword">static</span> function obj = <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5d81acf07654de4e16bb1f4bbcf6b64e">getInstance</a>() {</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            obj = <a class="code" href="class_singleton.html" title="A pseudo-singleton class pattern for Matlab.">Singleton</a>.<a class="code" href="class_singleton.html#ab3469ccad7eaeb94360fdc3b537b3dbb" title="Get object (only 1 can exist).">getInstanceSingleton</a>(mfilename(<span class="stringliteral">&quot; class &quot;</span>));</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0b1a163cc964e5aaf79a591dd512ef88">  221</a></span>&#160;        <span class="keyword">static</span> function  <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0b1a163cc964e5aaf79a591dd512ef88">finishUp</a>() {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <a class="code" href="class_singleton.html" title="A pseudo-singleton class pattern for Matlab.">Singleton</a>.<a class="code" href="class_singleton.html#a2c9595cf36bb535d4109ae28253237c3" title="Delete object.">finishUpSingleton</a>(mfilename(<span class="stringliteral">&quot; class &quot;</span>));</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        }</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;};</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;}</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;}</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Constant ) */</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a52e5106c8c60de89ed83aa79e9a17921">   64</a></span>&#160;                <span class="keyword">static</span> <span class="keyword">const</span> matlabtypesubstitute BUFFER_LENGTH_PLOT1 = 3;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0c5fe8d4852da9dc3ac25a15ad0485be">   71</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> matlabtypesubstitute BUFFER_LENGTH_PLOT2 = 100;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5e37a65f2c03f1a53f0da42c5728164c">   81</a></span>&#160;                matlabtypesubstitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5e37a65f2c03f1a53f0da42c5728164c" title="data buffers top panel data (location)">plot1Data</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a18a734487515cf8634b5184f80756b81">   88</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a18a734487515cf8634b5184f80756b81" title="bottom panel data (evidence)">plot2Data</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a16096932c5c6124fffeebc13848ffca2">   94</a></span>&#160;          matlabtypesubstitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a16096932c5c6124fffeebc13848ffca2" title="integer num hypotheses handles">nAlternatives</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#aa36a4461985dbb79396de8c1c4230bba">  101</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#aa36a4461985dbb79396de8c1c4230bba" title="top panel data handle">hPlot1Data</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a1a565b4092e42f20ac136eba0f634fc5">  107</a></span>&#160;        matlabtypesubstitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a1a565b4092e42f20ac136eba0f634fc5" title="bottom panel data handle">hPlot2Data</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a9e8e452ff369aef7a345b05f848397d4">  113</a></span>&#160;    matlabtypesubstitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a9e8e452ff369aef7a345b05f848397d4" title="bottom panel text handle">hPlot2Text</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">     *  -----Abstract PUBLIC METHODS-----</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;          </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Abstract ) */</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">virtual</span> noret::substitute update(matlabtypesubstitute newPlot1Dat,matlabtypesubstitute plot2Dat,matlabtypesubstitute varargin) = 0;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">     *  -----PUBLIC METHODS-----</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;          </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0cbbb3b8e6e73dc4321b52510cb90a93">  152</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0cbbb3b8e6e73dc4321b52510cb90a93" title="Reset the classifier panel; clear any accumulated data.">reset</a>() {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">/*  plot distributions and data */</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            obj.plot1Data= <a class="code" href="class_c_circular_buffer.html" title="circular-buffer (or: ring buffer) data-structure.">CCircularBuffer</a>(obj.BUFFER_LENGTH_PLOT1,2);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            obj.plot2Data= <a class="code" href="class_c_circular_buffer.html" title="circular-buffer (or: ring buffer) data-structure.">CCircularBuffer</a>(obj.BUFFER_LENGTH_PLOT2,obj.nAlternatives);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="comment">/*  fill up with nans to start with */</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            obj.plot1Data.put(nan(obj.BUFFER_LENGTH_PLOT1,2));</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            obj.plot2Data.put(nan(obj.BUFFER_LENGTH_PLOT2,obj.nAlternatives));</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">/*  clear status text */</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keyword">set</span>(obj.hPlot2Text, <span class="stringliteral">&quot; String &quot;</span>, );</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a3a76218f08b9b621f763baac90887cbc">  174</a></span>&#160;        noret::substitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a3a76218f08b9b621f763baac90887cbc" title="Write the classification estimate to the panel.">printStatus</a>(matlabtypesubstitute statusCode,matlabtypesubstitute gObjLookingAt) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keywordflow">switch</span> statusCode</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">case</span> ivis.classifier.IvClassifier.STATUS_RETIRED</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    exitStr = <span class="stringliteral">&quot; Unknown (retirement) &quot;</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">case</span> ivis.classifier.IvClassifier.STATUS_MISS <span class="comment">/*  ALT: if gObjLookingAt.type == ivis.graphic.IvScreenObject.TYPE_PRIOR */</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    exitStr = sprintf(<span class="stringliteral">&quot; Miss (%s) &quot;</span>,gObjLookingAt.name);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="keywordflow">case</span> ivis.classifier.IvClassifier.STATUS_HIT</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    exitStr = sprintf(<span class="stringliteral">&quot; Hit! : %s &quot;</span>, gObjLookingAt.name);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                otherwise</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    error(<span class="stringliteral">&quot; a:b &quot;</span>,<span class="stringliteral">&quot; Unknown status code: &#39;%s&#39; &quot;</span>,statusCode);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            end</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            str = sprintf(<span class="stringliteral">&quot; ANSWER = %s &quot;</span>,exitStr);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keyword">set</span>(obj.hPlot2Text, <span class="stringliteral">&quot; String &quot;</span>, str);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="comment">/* % ====================================================================</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment">     *  -----SINGLETON BLURB-----</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">     *$ ==================================================================== */</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keyword">protected</span>: <span class="comment">/* ( Static ) */</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#adaca87a349c83e6c832ed5d967e53d77">  212</a></span>&#160;        <span class="keyword">static</span> mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#adaca87a349c83e6c832ed5d967e53d77" title=".">getSetSingleton</a>(matlabtypesubstitute obj) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            persistent singleObj</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">if</span> nargin &gt; 0, singleObj = obj; end</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            obj = singleObj;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keyword">public</span>: <span class="comment">/* ( Static ) */</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5d81acf07654de4e16bb1f4bbcf6b64e">  220</a></span>&#160;        <span class="keyword">static</span> mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a5d81acf07654de4e16bb1f4bbcf6b64e">getInstance</a>() {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            obj = <a class="code" href="class_singleton.html" title="A pseudo-singleton class pattern for Matlab.">Singleton</a>.<a class="code" href="class_singleton.html#ab3469ccad7eaeb94360fdc3b537b3dbb" title="Get object (only 1 can exist).">getInstanceSingleton</a>(mfilename(<span class="stringliteral">&quot; class &quot;</span>));</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0b1a163cc964e5aaf79a591dd512ef88">  224</a></span>&#160;        <span class="keyword">static</span> noret::substitute <a class="code" href="classivis_1_1gui_1_1_iv_g_u_iclassifier.html#a0b1a163cc964e5aaf79a591dd512ef88">finishUp</a>() {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <a class="code" href="class_singleton.html" title="A pseudo-singleton class pattern for Matlab.">Singleton</a>.<a class="code" href="class_singleton.html#a2c9595cf36bb535d4109ae28253237c3" title="Delete object.">finishUpSingleton</a>(mfilename(<span class="stringliteral">&quot; class &quot;</span>));</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;};</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;}</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b1fc417f0740629bd4971c68e72b5ce0.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_35edf40296798bee028d21a1f0556a3d.html">+gui</a></li><li class="navelem"><a class="el" href="_iv_g_u_iclassifier_8m.html">IvGUIclassifier.m</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:39 for ivis by
+    <li class="navelem"><a class="el" href="dir_ff8247d13baa4c7278b64786bdcd0aa5.html">+ivis</a></li><li class="navelem"><a class="el" href="dir_9e87b9a0b0e1da34880034255061bb5e.html">+gui</a></li><li class="navelem"><a class="el" href="_iv_g_u_iclassifier_8m.html">IvGUIclassifier.m</a></li>
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:09 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

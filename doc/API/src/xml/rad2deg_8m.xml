@@ -18,10 +18,11 @@
 <para>RAD2DEG has been replaced by RADTODEG.</para><para>angleInDegrees = RAD2DEG(angleInRadians) converts angle units from radians to degrees. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/rad2deg.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/rad2deg.m" bodystart="17" bodyend="25"/>
-        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1ac8d95e72c283ef02a4500221948cf8b7" compoundref="_iv_unit_handler_8m" startline="227" endline="236">ivis::math::IvUnitHandler::deg2px</referencedby>
-        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1a1b0fda3e0f4940fbe8d41ee5c61cc93c" compoundref="_iv_unit_handler_8m" startline="143" endline="166">ivis::math::IvUnitHandler::IvUnitHandler</referencedby>
-        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1a4e393674608cde379c34baf9d5dcef54" compoundref="_iv_unit_handler_8m" startline="201" endline="210">ivis::math::IvUnitHandler::px2deg</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/rad2deg.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/rad2deg.m" bodystart="17" bodyend="25"/>
+        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1ac65386c4a9c4926ebc852678e11bc98f" compoundref="_iv_unit_handler_8m" startline="287" endline="293">ivis::math::IvUnitHandler::cm2deg</referencedby>
+        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1ac8d95e72c283ef02a4500221948cf8b7" compoundref="_iv_unit_handler_8m" startline="238" endline="247">ivis::math::IvUnitHandler::deg2px</referencedby>
+        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1a1b0fda3e0f4940fbe8d41ee5c61cc93c" compoundref="_iv_unit_handler_8m" startline="147" endline="157">ivis::math::IvUnitHandler::IvUnitHandler</referencedby>
+        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1a4e393674608cde379c34baf9d5dcef54" compoundref="_iv_unit_handler_8m" startline="211" endline="221">ivis::math::IvUnitHandler::px2deg</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -55,6 +56,6 @@
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/rad2deg.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/rad2deg.m"/>
   </compounddef>
 </doxygen>

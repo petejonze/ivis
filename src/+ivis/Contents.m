@@ -1,5 +1,5 @@
 % =========================================================================
-% ivis package listing [Version 1.4 23-July-2013]
+% ivis package listing [Version 1.6 23-Feb-2017]
 % =========================================================================
 %
 % VerHistory:	0.1	01-Jan-2013 First iteration [newcastle].
@@ -19,6 +19,12 @@
 %                               documentation, standardised gui code, refactored logging
 %                               and calibration functionality to packages separate from the
 %                               datainput class
+%               ...
+%               1.4 24-Jan-2014 Version used for Acuity IOVS paper, and
+%                               visfield version 1
+%               1.5 13-Mar-2015 Added viewing distance logic to the IvDataInput class
+%               1.6 23-Feb-2017 New version for Matlab 2016. Misc
+%                               modifications, changes to classifier logic(?)
 %
 % ivis.audio        - For loading, buffering and playing sounds (via PsychPortAudio).
 % ivis.broadcaster	- Mechanism for propogating update commands throughout the system.

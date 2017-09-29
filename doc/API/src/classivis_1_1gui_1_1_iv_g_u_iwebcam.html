@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -183,15 +183,15 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classivis_1_1gui_1_1_iv_g_u_ielement.html">ivis.gui.IvGUIelement</a></td></tr>
-<tr class="memitem:affdefad6611e9543314166e05c3446b6 inherit pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td class="memItemLeft" align="right" valign="top">function [ 
+<tr class="memitem:a1404d0c78b5319c7e8863f4fc7aa8a6a inherit pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td class="memItemLeft" align="right" valign="top">function [ 
   <br class="typebreak"/>
 effectiveFDims ,<br class="typebreak"/>
 
   fDims ,<br class="typebreak"/>
 
-  aDims  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1gui_1_1_iv_g_u_ielement.html#affdefad6611e9543314166e05c3446b6">init</a> (idx, normaliseDims, bgcolor)</td></tr>
-<tr class="memdesc:affdefad6611e9543314166e05c3446b6 inherit pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the GUI element; set the renderer and compute the plot area dimensions.  <a href="#affdefad6611e9543314166e05c3446b6">More...</a><br/></td></tr>
-<tr class="separator:affdefad6611e9543314166e05c3446b6 inherit pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td class="memSeparator" colspan="2">&#160;</td></tr>
+  aDims  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1gui_1_1_iv_g_u_ielement.html#a1404d0c78b5319c7e8863f4fc7aa8a6a">init</a> (GUIidx, normaliseDims, bgcolor)</td></tr>
+<tr class="memdesc:a1404d0c78b5319c7e8863f4fc7aa8a6a inherit pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the GUI element; set the renderer and compute the plot area dimensions.  <a href="#a1404d0c78b5319c7e8863f4fc7aa8a6a">More...</a><br/></td></tr>
+<tr class="separator:a1404d0c78b5319c7e8863f4fc7aa8a6a inherit pro_methods_classivis_1_1gui_1_1_iv_g_u_ielement"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_singleton.html" title="A pseudo-singleton class pattern for Matlab.">Singleton</a> for displaying webcam feed in a GUI. </p>
@@ -205,7 +205,7 @@ effectiveFDims ,<br class="typebreak"/>
 <dl class="section user"><dt>Author</dt><dd>Pete R Jones <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'ej'+'onz'+'e@'+'gma'+'il'+'.co'+'m'; return false;">petej<span style="display: none;">.nosp@m.</span>onze<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a></dd></dl>
 <dl class="section user"><dt>Verinfo</dt><dd>1.0 PJ 07/2013 : first_build<br/>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd>add pausetoggle button(s)</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo:</a></b></dt><dd>add pausetoggle button(s)</dd></dl>
 <p>Copyright 2014 : P R Jones </p>
 <hr/>
 <dl class="section note"><dt>Note</dt><dd>This class has the class property <code>Sealed</code> and cannot be derived from. </dd></dl>
@@ -239,8 +239,8 @@ effectiveFDims ,<br class="typebreak"/>
 <p>IvWebcam Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">GUIidx</td><td></td></tr>
-    <tr><td class="paramname">resolution</td><td></td></tr>
+    <tr><td class="paramname">GUIidx</td><td>GUI frame index </td></tr>
+    <tr><td class="paramname">resolution</td><td>expected image size (pixels) </td></tr>
   </table>
   </dd>
 </dl>
@@ -248,7 +248,7 @@ effectiveFDims ,<br class="typebreak"/>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00076">76</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00072">72</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
 </div>
 </div>
@@ -274,9 +274,9 @@ effectiveFDims ,<br class="typebreak"/>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00134">134</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00129">129</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
-<p>References <a class="el" href="_singleton_8m_source.html#l00223">Singleton.finishUpSingleton()</a>.</p>
+<p>References <a class="el" href="_singleton_8m_source.html#l00228">Singleton.finishUpSingleton()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -310,9 +310,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00130">130</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00125">125</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
-<p>References <a class="el" href="_singleton_8m_source.html#l00191">Singleton.getInstanceSingleton()</a>.</p>
+<p>References <a class="el" href="_singleton_8m_source.html#l00188">Singleton.getInstanceSingleton()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -355,7 +355,7 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="class_singleton.html#a338c7e82475ead2f89a5256391e7e7f3">Singleton</a>.</p>
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00122">122</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00117">117</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
 </div>
 </div>
@@ -376,14 +376,14 @@ Here is the call graph for this function:</div>
 <p>Update figure window. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">tex</td><td></td></tr>
+    <tr><td class="paramname">tex</td><td>image texture</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00098">98</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00094">94</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
 <p>References <a class="el" href="_screen_8m_source.html#l00019">ivis.broadcaster.Screen()</a>.</p>
 
@@ -417,7 +417,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00057">57</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00056">56</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
 </div>
 </div>
@@ -431,12 +431,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00063">63</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_g_u_iwebcam_8m_source.html#l00061">61</a> of file <a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/+ivis/+gui/<a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a></li>
+<li>+ivis/+gui/<a class="el" href="_iv_g_u_iwebcam_8m_source.html">IvGUIwebcam.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -444,7 +444,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceivis.html">ivis</a></li><li class="navelem"><a class="el" href="namespaceivis_1_1gui.html">gui</a></li><li class="navelem"><a class="el" href="classivis_1_1gui_1_1_iv_g_u_iwebcam.html">IvGUIwebcam</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:42 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:15 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

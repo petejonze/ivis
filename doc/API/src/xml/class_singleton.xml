@@ -6,6 +6,7 @@
     <derivedcompoundref refid="classivis_1_1audio_1_1_iv_audio" prot="public" virt="non-virtual">ivis::audio::IvAudio</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1broadcaster_1_1_iv_broadcaster" prot="public" virt="non-virtual">ivis::broadcaster::IvBroadcaster</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1calibration_1_1_iv_calibration" prot="public" virt="non-virtual">ivis::calibration::IvCalibration</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1calibration_1_1_track_box" prot="public" virt="non-virtual">ivis::calibration::TrackBox</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1eyetracker_1_1_iv_data_input" prot="public" virt="non-virtual">ivis::eyetracker::IvDataInput</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_i" prot="public" virt="non-virtual">ivis::gui::IvGUI</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_ielement" prot="public" virt="non-virtual">ivis::gui::IvGUIelement</derivedcompoundref>
@@ -14,7 +15,6 @@
     <derivedcompoundref refid="classivis_1_1math_1_1_iv_unit_handler" prot="public" virt="non-virtual">ivis::math::IvUnitHandler</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1video_1_1_iv_video" prot="public" virt="non-virtual">ivis::video::IvVideo</derivedcompoundref>
     <derivedcompoundref refid="classivis_1_1video_1_1_iv_webcam" prot="public" virt="non-virtual">ivis::video::IvWebcam</derivedcompoundref>
-    <derivedcompoundref refid="classivis_1_1video_1_1_track_box" prot="public" virt="non-virtual">ivis::video::TrackBox</derivedcompoundref>
       <sectiondef kind="protected-func">
       <memberdef kind="function" id="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -29,7 +29,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="84" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="84" bodyend="92"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="83" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="83" bodyend="91"/>
         <references refid="class_singleton_manager_1a445d64603590d1ade17ca6532ad6e897" compoundref="_singleton_manager_8m" startline="114" endline="116">SingletonManager::add</references>
       </memberdef>
       </sectiondef>
@@ -44,19 +44,20 @@
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1a5a510235db8c9c7adbfb84f7776cca14">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1ad67c2db3081faf5490fa658af5e2bc80">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial_1a0e4a6ad762825a18678a735f474588ad">getSetSingleton</reimplementedby>
-        <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1aa76eeb03a382bf1c6c62baebd4773a8a">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a8604b3910c1fd0451f7f995a5422fc4a">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1adaca87a349c83e6c832ed5d967e53d77">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1video_1_1_iv_webcam_1a2f9c4397612c35b84ebae4b9fc5d1e95">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1aa76eeb03a382bf1c6c62baebd4773a8a">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a9a797ea2c0a4275cf82e50d4cd9663ad">getSetSingleton</reimplementedby>
-        <reimplementedby refid="classivis_1_1math_1_1_iv_unit_handler_1a3b9f678c7c3ce99082680fa67996f003">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1log_1_1_iv_raw_log_1a210dd54fa8d37a87b82170d2a3784c65">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1math_1_1_iv_unit_handler_1a3b9f678c7c3ce99082680fa67996f003">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_i_1a931c9a0a8683caef630993d7def3e17d">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a078670254cebc62a4734a5238c6c759c">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1log_1_1_iv_data_log_1a5ad6b897a4b6f5db288e3da0cee1848d">getSetSingleton</reimplementedby>
-        <reimplementedby refid="classivis_1_1calibration_1_1_iv_calibration_1af8f759bb731ad56fd0abe13aa36704f4">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1main_1_1_iv_params_1a4fc135f707dd6afa98af03143da0bfca">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1video_1_1_iv_video_1a1dac2764b94f89b756afe37aaba3b4a7">getSetSingleton</reimplementedby>
-        <reimplementedby refid="classivis_1_1video_1_1_track_box_1a51317070bcd291f680c4b4e17247cbdf">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1calibration_1_1_track_box_1ab217009ba09e7c04463793ec154ad599">getSetSingleton</reimplementedby>
+        <reimplementedby refid="classivis_1_1calibration_1_1_iv_calibration_1af8f759bb731ad56fd0abe13aa36704f4">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1audio_1_1_iv_audio_1a2c3c062cd7aa93a4a3e8a1bb154bf5ab">getSetSingleton</reimplementedby>
         <reimplementedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa338f0a3be26e5fc48065263df0998c2">getSetSingleton</reimplementedby>
         <param>
@@ -73,7 +74,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="114"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="112"/>
       </memberdef>
       <memberdef kind="function" id="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
@@ -112,9 +113,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="140" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="140" bodyend="149"/>
-        <references refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" compoundref="_singleton_8m" startline="167" endline="175">isinit</references>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1aa700571f19408e4fba2f0a029690fdc5" compoundref="_iv_video_8m" startline="633" endline="635">ivis::video::IvVideo::init</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="137" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="137" bodyend="146"/>
+        <references refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" compoundref="_singleton_8m" startline="164" endline="172">isinit</references>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1aa700571f19408e4fba2f0a029690fdc5" compoundref="_iv_video_8m" startline="620" endline="622">ivis::video::IvVideo::init</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, init &gt;</type>
@@ -142,8 +143,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="167" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="167" bodyend="175"/>
-        <referencedby refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" compoundref="_singleton_8m" startline="140" endline="149">initialise</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="164" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="164" bodyend="172"/>
+        <referencedby refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" compoundref="_singleton_8m" startline="137" endline="146">initialise</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
@@ -182,29 +183,28 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="191" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="191" bodyend="206"/>
-        <referencedby refid="class_my_demo_input_handler_1af5b31fa30521399138ee0c79c08d3931" compoundref="_my_demo_input_handler_8m" startline="94" endline="96">MyDemoInputHandler::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1aef1376a6b0ddb75a9b9b7336c49bb1a7" compoundref="_iv_g_u_iwebcam_8m" startline="130" endline="132">ivis::gui::IvGUIwebcam::getInstance</referencedby>
-        <referencedby refid="classivis_1_1broadcaster_1_1_iv_broadcaster_1a12aee46c3fc48e7e1480d6d7f3a3362a" compoundref="_iv_broadcaster_8m" startline="148" endline="150">ivis::broadcaster::IvBroadcaster::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1a2a647ab2cc2e0fb28af98fb53ebaac4a" compoundref="_iv_g_u_iclassifier_vector_8m" startline="184" endline="186">ivis::gui::IvGUIclassifierVector::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1a2f50911151eb84ca2169ee3968a1853f" compoundref="_iv_g_u_iclassifier_box_8m" startline="196" endline="198">ivis::gui::IvGUIclassifierBox::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial_1a204ab4163670df26b8e2e418c01735ff" compoundref="_iv_g_u_ieyetrack_spatial_8m" startline="198" endline="200">ivis::gui::IvGUIeyetrackSpatial::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a942ead59ad7f0cf3451e3fc2ac3c1f3f" compoundref="_iv_g_u_iclassifier_grid_8m" startline="206" endline="208">ivis::gui::IvGUIclassifierGrid::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ae7684f86ae88b8b5cfddfe39454268f1" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="210" endline="212">ivis::gui::IvGUIclassifierLL::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5d81acf07654de4e16bb1f4bbcf6b64e" compoundref="_iv_g_u_iclassifier_8m" startline="217" endline="219">ivis::gui::IvGUIclassifier::getInstance</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1add92a087b29439e1a9213c43f9665653" compoundref="_iv_webcam_8m" startline="220" endline="222">ivis::video::IvWebcam::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1aa1dbb37638f880e44bf9f500a5683219" compoundref="_iv_g_u_ieyetrack_temporal_8m" startline="250" endline="252">ivis::gui::IvGUIeyetrackTemporal::getInstance</referencedby>
-        <referencedby refid="classivis_1_1log_1_1_iv_raw_log_1a93a717c3dd97d8e4f6c20761316f0fb5" compoundref="_iv_raw_log_8m" startline="291" endline="293">ivis::log::IvRawLog::getInstance</referencedby>
-        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1a2a693063594215bcae5fbf15fc24ded8" compoundref="_iv_unit_handler_8m" startline="291" endline="293">ivis::math::IvUnitHandler::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_i_1a5e1fde50dc191845df58a4255147e764" compoundref="_iv_g_u_i_8m" startline="344" endline="346">ivis::gui::IvGUI::getInstance</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a868cafda5ffacc682d30dacb7b3e44dc" compoundref="_iv_g_u_icalibration_8m" startline="364" endline="366">ivis::gui::IvGUIcalibration::getInstance</referencedby>
-        <referencedby refid="classivis_1_1log_1_1_iv_data_log_1a1bd05b9810b21fdd3f14027005c40068" compoundref="_iv_data_log_8m" startline="395" endline="397">ivis::log::IvDataLog::getInstance</referencedby>
-        <referencedby refid="classivis_1_1calibration_1_1_iv_calibration_1a2b24b9d18f664a8419454733d2d1b7f3" compoundref="_iv_calibration_8m" startline="618" endline="620">ivis::calibration::IvCalibration::getInstance</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_params_1a585be903f73199977df02b4284e966c9" compoundref="_iv_params_8m" startline="619" endline="621">ivis::main::IvParams::getInstance</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1a26c4c55f584cabe7c67ad952629fa984" compoundref="_iv_video_8m" startline="637" endline="639">ivis::video::IvVideo::getInstance</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_track_box_1a491ce776c155fad3260e456fcfc69587" compoundref="_track_box_8m" startline="646" endline="648">ivis::video::TrackBox::getInstance</referencedby>
-        <referencedby refid="classivis_1_1audio_1_1_iv_audio_1aa79b6ce80c5a1c2edf8b5213436973e0" compoundref="_iv_audio_8m" startline="868" endline="870">ivis::audio::IvAudio::getInstance</referencedby>
-        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8b0a6e62c48978a9f7d450c21a55a584" compoundref="_iv_data_input_8m" startline="1131" endline="1136">ivis::eyetracker::IvDataInput::getInstance</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="188" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="188" bodyend="211"/>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1aef1376a6b0ddb75a9b9b7336c49bb1a7" compoundref="_iv_g_u_iwebcam_8m" startline="125" endline="127">ivis::gui::IvGUIwebcam::getInstance</referencedby>
+        <referencedby refid="classivis_1_1broadcaster_1_1_iv_broadcaster_1a12aee46c3fc48e7e1480d6d7f3a3362a" compoundref="_iv_broadcaster_8m" startline="142" endline="144">ivis::broadcaster::IvBroadcaster::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1a2a647ab2cc2e0fb28af98fb53ebaac4a" compoundref="_iv_g_u_iclassifier_vector_8m" startline="188" endline="190">ivis::gui::IvGUIclassifierVector::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1a2f50911151eb84ca2169ee3968a1853f" compoundref="_iv_g_u_iclassifier_box_8m" startline="201" endline="203">ivis::gui::IvGUIclassifierBox::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial_1a204ab4163670df26b8e2e418c01735ff" compoundref="_iv_g_u_ieyetrack_spatial_8m" startline="205" endline="207">ivis::gui::IvGUIeyetrackSpatial::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a942ead59ad7f0cf3451e3fc2ac3c1f3f" compoundref="_iv_g_u_iclassifier_grid_8m" startline="212" endline="214">ivis::gui::IvGUIclassifierGrid::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5d81acf07654de4e16bb1f4bbcf6b64e" compoundref="_iv_g_u_iclassifier_8m" startline="220" endline="222">ivis::gui::IvGUIclassifier::getInstance</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1add92a087b29439e1a9213c43f9665653" compoundref="_iv_webcam_8m" startline="221" endline="223">ivis::video::IvWebcam::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ae7684f86ae88b8b5cfddfe39454268f1" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="221" endline="223">ivis::gui::IvGUIclassifierLL::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1aa1dbb37638f880e44bf9f500a5683219" compoundref="_iv_g_u_ieyetrack_temporal_8m" startline="238" endline="240">ivis::gui::IvGUIeyetrackTemporal::getInstance</referencedby>
+        <referencedby refid="classivis_1_1log_1_1_iv_raw_log_1a93a717c3dd97d8e4f6c20761316f0fb5" compoundref="_iv_raw_log_8m" startline="300" endline="302">ivis::log::IvRawLog::getInstance</referencedby>
+        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1a2a693063594215bcae5fbf15fc24ded8" compoundref="_iv_unit_handler_8m" startline="325" endline="327">ivis::math::IvUnitHandler::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_i_1a5e1fde50dc191845df58a4255147e764" compoundref="_iv_g_u_i_8m" startline="364" endline="366">ivis::gui::IvGUI::getInstance</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a868cafda5ffacc682d30dacb7b3e44dc" compoundref="_iv_g_u_icalibration_8m" startline="372" endline="374">ivis::gui::IvGUIcalibration::getInstance</referencedby>
+        <referencedby refid="classivis_1_1log_1_1_iv_data_log_1a1bd05b9810b21fdd3f14027005c40068" compoundref="_iv_data_log_8m" startline="522" endline="524">ivis::log::IvDataLog::getInstance</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_params_1a585be903f73199977df02b4284e966c9" compoundref="_iv_params_8m" startline="611" endline="613">ivis::main::IvParams::getInstance</referencedby>
+        <referencedby refid="classivis_1_1calibration_1_1_track_box_1acaa6c724b47d4ff1295520128594649e" compoundref="_track_box_8m" startline="620" endline="622">ivis::calibration::TrackBox::getInstance</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1a26c4c55f584cabe7c67ad952629fa984" compoundref="_iv_video_8m" startline="624" endline="626">ivis::video::IvVideo::getInstance</referencedby>
+        <referencedby refid="classivis_1_1calibration_1_1_iv_calibration_1a2b24b9d18f664a8419454733d2d1b7f3" compoundref="_iv_calibration_8m" startline="681" endline="683">ivis::calibration::IvCalibration::getInstance</referencedby>
+        <referencedby refid="classivis_1_1audio_1_1_iv_audio_1aa79b6ce80c5a1c2edf8b5213436973e0" compoundref="_iv_audio_8m" startline="1078" endline="1080">ivis::audio::IvAudio::getInstance</referencedby>
+        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8b0a6e62c48978a9f7d450c21a55a584" compoundref="_iv_data_input_8m" startline="1409" endline="1415">ivis::eyetracker::IvDataInput::getInstance</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -231,30 +231,29 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="223" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="223" bodyend="234"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="228" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="228" bodyend="241"/>
         <references refid="class_singleton_manager_1a4fbae2126445a86b3dc99db82575f3d7" compoundref="_singleton_manager_8m" startline="130" endline="132">SingletonManager::remove</references>
-        <referencedby refid="class_my_demo_input_handler_1aed2df91598256e1ad41e7f8b1bd65bfb" compoundref="_my_demo_input_handler_8m" startline="98" endline="100">MyDemoInputHandler::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a353dd10e36508fbb606f93ee252a4f30" compoundref="_iv_g_u_iwebcam_8m" startline="134" endline="136">ivis::gui::IvGUIwebcam::finishUp</referencedby>
-        <referencedby refid="classivis_1_1broadcaster_1_1_iv_broadcaster_1a4c09cc21b6e04ac4064350b9b1f5e7cd" compoundref="_iv_broadcaster_8m" startline="152" endline="154">ivis::broadcaster::IvBroadcaster::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1aef7d8d56c6c70955adeaf2165ec12944" compoundref="_iv_g_u_iclassifier_vector_8m" startline="188" endline="190">ivis::gui::IvGUIclassifierVector::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1a204276b86f9f1b636fc639a4a6648093" compoundref="_iv_g_u_iclassifier_box_8m" startline="200" endline="202">ivis::gui::IvGUIclassifierBox::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial_1a957b77b2cf1a583decccbfa3c28fcef4" compoundref="_iv_g_u_ieyetrack_spatial_8m" startline="202" endline="204">ivis::gui::IvGUIeyetrackSpatial::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a36d555e65e3578601337ad90d16f6092" compoundref="_iv_g_u_iclassifier_grid_8m" startline="210" endline="212">ivis::gui::IvGUIclassifierGrid::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a7802368f2ba3c8118f61cf39e1b27c8d" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="214" endline="216">ivis::gui::IvGUIclassifierLL::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0b1a163cc964e5aaf79a591dd512ef88" compoundref="_iv_g_u_iclassifier_8m" startline="221" endline="223">ivis::gui::IvGUIclassifier::finishUp</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1ac67f5328ce4b5005281492aa7f9ab577" compoundref="_iv_webcam_8m" startline="224" endline="226">ivis::video::IvWebcam::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a1b1fea08e8751d124da39816a900620c" compoundref="_iv_g_u_ieyetrack_temporal_8m" startline="254" endline="256">ivis::gui::IvGUIeyetrackTemporal::finishUp</referencedby>
-        <referencedby refid="classivis_1_1log_1_1_iv_raw_log_1aa8adcb057e19c514589e960f8378de69" compoundref="_iv_raw_log_8m" startline="295" endline="297">ivis::log::IvRawLog::finishUp</referencedby>
-        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1ad4708d729b3eaf4590ef922a598daf7e" compoundref="_iv_unit_handler_8m" startline="295" endline="297">ivis::math::IvUnitHandler::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_i_1ae7feaa94d608afb9effdc3a951eaa41d" compoundref="_iv_g_u_i_8m" startline="348" endline="350">ivis::gui::IvGUI::finishUp</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a8a974bd32c54301ce38ceb057b2405d1" compoundref="_iv_g_u_icalibration_8m" startline="368" endline="370">ivis::gui::IvGUIcalibration::finishUp</referencedby>
-        <referencedby refid="classivis_1_1log_1_1_iv_data_log_1a2f743ecbb85fde5a95c582329321454f" compoundref="_iv_data_log_8m" startline="399" endline="401">ivis::log::IvDataLog::finishUp</referencedby>
-        <referencedby refid="classivis_1_1calibration_1_1_iv_calibration_1a0b78c5c6e0bf854672a0a0a24b949d6e" compoundref="_iv_calibration_8m" startline="622" endline="624">ivis::calibration::IvCalibration::finishUp</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_params_1a1b0713ebbfc58f297bea3baf1ae35b9c" compoundref="_iv_params_8m" startline="623" endline="625">ivis::main::IvParams::finishUp</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1a09b8ab7c8169d310ca1501641b5e8740" compoundref="_iv_video_8m" startline="641" endline="643">ivis::video::IvVideo::finishUp</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_track_box_1ad69fbb279099e71225a7cfb20a96a1f2" compoundref="_track_box_8m" startline="650" endline="652">ivis::video::TrackBox::finishUp</referencedby>
-        <referencedby refid="classivis_1_1audio_1_1_iv_audio_1a77d0b891461828519b933a8849f05181" compoundref="_iv_audio_8m" startline="872" endline="874">ivis::audio::IvAudio::finishUp</referencedby>
-        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1a20c85a21ccd456316306340d6943c8b8" compoundref="_iv_data_input_8m" startline="1138" endline="1149">ivis::eyetracker::IvDataInput::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a353dd10e36508fbb606f93ee252a4f30" compoundref="_iv_g_u_iwebcam_8m" startline="129" endline="131">ivis::gui::IvGUIwebcam::finishUp</referencedby>
+        <referencedby refid="classivis_1_1broadcaster_1_1_iv_broadcaster_1a4c09cc21b6e04ac4064350b9b1f5e7cd" compoundref="_iv_broadcaster_8m" startline="146" endline="148">ivis::broadcaster::IvBroadcaster::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector_1aef7d8d56c6c70955adeaf2165ec12944" compoundref="_iv_g_u_iclassifier_vector_8m" startline="192" endline="194">ivis::gui::IvGUIclassifierVector::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box_1a204276b86f9f1b636fc639a4a6648093" compoundref="_iv_g_u_iclassifier_box_8m" startline="205" endline="207">ivis::gui::IvGUIclassifierBox::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial_1a957b77b2cf1a583decccbfa3c28fcef4" compoundref="_iv_g_u_ieyetrack_spatial_8m" startline="209" endline="211">ivis::gui::IvGUIeyetrackSpatial::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a36d555e65e3578601337ad90d16f6092" compoundref="_iv_g_u_iclassifier_grid_8m" startline="216" endline="218">ivis::gui::IvGUIclassifierGrid::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0b1a163cc964e5aaf79a591dd512ef88" compoundref="_iv_g_u_iclassifier_8m" startline="224" endline="226">ivis::gui::IvGUIclassifier::finishUp</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1ac67f5328ce4b5005281492aa7f9ab577" compoundref="_iv_webcam_8m" startline="225" endline="227">ivis::video::IvWebcam::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a7802368f2ba3c8118f61cf39e1b27c8d" compoundref="_iv_g_u_iclassifier_l_l_8m" startline="225" endline="227">ivis::gui::IvGUIclassifierLL::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a1b1fea08e8751d124da39816a900620c" compoundref="_iv_g_u_ieyetrack_temporal_8m" startline="242" endline="244">ivis::gui::IvGUIeyetrackTemporal::finishUp</referencedby>
+        <referencedby refid="classivis_1_1log_1_1_iv_raw_log_1aa8adcb057e19c514589e960f8378de69" compoundref="_iv_raw_log_8m" startline="304" endline="306">ivis::log::IvRawLog::finishUp</referencedby>
+        <referencedby refid="classivis_1_1math_1_1_iv_unit_handler_1ad4708d729b3eaf4590ef922a598daf7e" compoundref="_iv_unit_handler_8m" startline="329" endline="331">ivis::math::IvUnitHandler::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_i_1ae7feaa94d608afb9effdc3a951eaa41d" compoundref="_iv_g_u_i_8m" startline="368" endline="370">ivis::gui::IvGUI::finishUp</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a8a974bd32c54301ce38ceb057b2405d1" compoundref="_iv_g_u_icalibration_8m" startline="376" endline="378">ivis::gui::IvGUIcalibration::finishUp</referencedby>
+        <referencedby refid="classivis_1_1log_1_1_iv_data_log_1a2f743ecbb85fde5a95c582329321454f" compoundref="_iv_data_log_8m" startline="526" endline="528">ivis::log::IvDataLog::finishUp</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_params_1a1b0713ebbfc58f297bea3baf1ae35b9c" compoundref="_iv_params_8m" startline="615" endline="617">ivis::main::IvParams::finishUp</referencedby>
+        <referencedby refid="classivis_1_1calibration_1_1_track_box_1ac94d5782eb47cc0897af4f9fae9664ed" compoundref="_track_box_8m" startline="624" endline="626">ivis::calibration::TrackBox::finishUp</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1a09b8ab7c8169d310ca1501641b5e8740" compoundref="_iv_video_8m" startline="628" endline="630">ivis::video::IvVideo::finishUp</referencedby>
+        <referencedby refid="classivis_1_1calibration_1_1_iv_calibration_1a0b78c5c6e0bf854672a0a0a24b949d6e" compoundref="_iv_calibration_8m" startline="685" endline="687">ivis::calibration::IvCalibration::finishUp</referencedby>
+        <referencedby refid="classivis_1_1audio_1_1_iv_audio_1a77d0b891461828519b933a8849f05181" compoundref="_iv_audio_8m" startline="1082" endline="1084">ivis::audio::IvAudio::finishUp</referencedby>
+        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1a20c85a21ccd456316306340d6943c8b8" compoundref="_iv_data_input_8m" startline="1417" endline="1430">ivis::eyetracker::IvDataInput::finishUp</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -277,202 +276,220 @@ Copyright 2014 : P R Jones <hruler/>
 </para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="867">
+      <node id="880">
         <label>ivis::calibration::IvCalibration</label>
         <link refid="classivis_1_1calibration_1_1_iv_calibration"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="872">
-        <label>ivis::eyetracker::IvMouse</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_mouse"/>
-        <childnode refid="868" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="863">
-        <label>Singleton</label>
-        <link refid="class_singleton"/>
-        <childnode refid="864" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="874">
-        <label>ivis::eyetracker::IvTobii</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_tobii"/>
-        <childnode refid="868" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="864">
-        <label>handle</label>
-      </node>
-      <node id="882">
-        <label>ivis::gui::IvGUIclassifierVector</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector"/>
-        <childnode refid="878" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="884">
-        <label>ivis::gui::IvGUIeyetrackTemporal</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal"/>
-        <childnode refid="876" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="893">
-        <label>ivis::video::TrackBox</label>
-        <link refid="classivis_1_1video_1_1_track_box"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="880">
-        <label>ivis::gui::IvGUIclassifierGrid</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid"/>
-        <childnode refid="878" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="871">
-        <label>ivis::eyetracker::IvManual</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_manual"/>
-        <childnode refid="868" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="866">
-        <label>ivis::broadcaster::IvBroadcaster</label>
-        <link refid="classivis_1_1broadcaster_1_1_iv_broadcaster"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="868">
-        <label>ivis::eyetracker::IvDataInput</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_data_input"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="869">
-        <label>ivis::eyetracker::IvDummy</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_dummy"/>
-        <childnode refid="868" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="889">
-        <label>ivis::main::IvParams</label>
-        <link refid="classivis_1_1main_1_1_iv_params"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="873">
-        <label>ivis::eyetracker::IvSimulator</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_simulator"/>
-        <childnode refid="868" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="890">
-        <label>ivis::math::IvUnitHandler</label>
-        <link refid="classivis_1_1math_1_1_iv_unit_handler"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="877">
-        <label>ivis::gui::IvGUIcalibration</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_icalibration"/>
-        <childnode refid="876" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="892">
-        <label>ivis::video::IvWebcam</label>
-        <link refid="classivis_1_1video_1_1_iv_webcam"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="886">
-        <label>ivis::log::IvLog</label>
-        <link refid="classivis_1_1log_1_1_iv_log"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="888">
-        <label>ivis::log::IvRawLog</label>
-        <link refid="classivis_1_1log_1_1_iv_raw_log"/>
-        <childnode refid="886" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="883">
-        <label>ivis::gui::IvGUIeyetrackSpatial</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial"/>
         <childnode refid="876" relation="public-inheritance">
         </childnode>
       </node>
       <node id="887">
-        <label>ivis::log::IvDataLog</label>
-        <link refid="classivis_1_1log_1_1_iv_data_log"/>
-        <childnode refid="886" relation="public-inheritance">
+        <label>ivis::eyetracker::IvMouse</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_mouse"/>
+        <childnode refid="882" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="891">
-        <label>ivis::video::IvVideo</label>
-        <link refid="classivis_1_1video_1_1_iv_video"/>
-        <childnode refid="863" relation="public-inheritance">
+      <node id="876">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="877" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="890">
+        <label>ivis::eyetracker::IvTobii</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_tobii"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>handle</label>
+      </node>
+      <node id="899">
+        <label>ivis::gui::IvGUIclassifierVector</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector"/>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="901">
+        <label>ivis::gui::IvGUIeyetrackTemporal</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal"/>
+        <childnode refid="893" relation="public-inheritance">
         </childnode>
       </node>
       <node id="885">
-        <label>ivis::gui::IvGUIwebcam</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_iwebcam"/>
+        <label>ivis::eyetracker::IvEyeTribe</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_eye_tribe"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="897">
+        <label>ivis::gui::IvGUIclassifierGrid</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid"/>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="886">
+        <label>ivis::eyetracker::IvManual</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_manual"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="879">
+        <label>ivis::broadcaster::IvBroadcaster</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_broadcaster"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>ivis::eyetracker::IvSmi</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_smi"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="882">
+        <label>ivis::eyetracker::IvDataInput</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_data_input"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="891">
+        <label>ivis::eyetracker::IvTobiiEyeX</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>ivis::eyetracker::IvDummy</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_dummy"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>ivis::main::IvParams</label>
+        <link refid="classivis_1_1main_1_1_iv_params"/>
         <childnode refid="876" relation="public-inheritance">
         </childnode>
       </node>
       <node id="881">
-        <label>ivis::gui::IvGUIclassifierLL</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l"/>
-        <childnode refid="878" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="870">
-        <label>ivis::eyetracker::IvEyelink</label>
-        <link refid="classivis_1_1eyetracker_1_1_iv_eyelink"/>
-        <childnode refid="868" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="865">
-        <label>ivis::audio::IvAudio</label>
-        <link refid="classivis_1_1audio_1_1_iv_audio"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="879">
-        <label>ivis::gui::IvGUIclassifierBox</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box"/>
-        <childnode refid="878" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="876">
-        <label>ivis::gui::IvGUIelement</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
-        <childnode refid="863" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="878">
-        <label>ivis::gui::IvGUIclassifier</label>
-        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier"/>
+        <label>ivis::calibration::TrackBox</label>
+        <link refid="classivis_1_1calibration_1_1_track_box"/>
         <childnode refid="876" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="875">
+      <node id="888">
+        <label>ivis::eyetracker::IvSimulator</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_simulator"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="907">
+        <label>ivis::math::IvUnitHandler</label>
+        <link refid="classivis_1_1math_1_1_iv_unit_handler"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>ivis::gui::IvGUIcalibration</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_icalibration"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="909">
+        <label>ivis::video::IvWebcam</label>
+        <link refid="classivis_1_1video_1_1_iv_webcam"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="903">
+        <label>ivis::log::IvLog</label>
+        <link refid="classivis_1_1log_1_1_iv_log"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="905">
+        <label>ivis::log::IvRawLog</label>
+        <link refid="classivis_1_1log_1_1_iv_raw_log"/>
+        <childnode refid="903" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="900">
+        <label>ivis::gui::IvGUIeyetrackSpatial</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="904">
+        <label>ivis::log::IvDataLog</label>
+        <link refid="classivis_1_1log_1_1_iv_data_log"/>
+        <childnode refid="903" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="908">
+        <label>ivis::video::IvVideo</label>
+        <link refid="classivis_1_1video_1_1_iv_video"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="902">
+        <label>ivis::gui::IvGUIwebcam</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iwebcam"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>ivis::gui::IvGUIclassifierLL</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l"/>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="884">
+        <label>ivis::eyetracker::IvEyelink</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_eyelink"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="878">
+        <label>ivis::audio::IvAudio</label>
+        <link refid="classivis_1_1audio_1_1_iv_audio"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="896">
+        <label>ivis::gui::IvGUIclassifierBox</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box"/>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="893">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>ivis::gui::IvGUIclassifier</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="892">
         <label>ivis::gui::IvGUI</label>
         <link refid="classivis_1_1gui_1_1_iv_g_u_i"/>
-        <childnode refid="863" relation="public-inheritance">
+        <childnode refid="876" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="894">
+      <node id="910">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="895" relation="public-inheritance">
+        <childnode refid="911" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="895">
+      <node id="911">
         <label>handle</label>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="18" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="17" bodyend="249"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" line="18" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/Singleton.m" bodystart="17" bodyend="256"/>
     <listofallmembers>
       <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>Singleton</scope><name>finishUpSingleton</name></member>
       <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>Singleton</scope><name>getInstanceSingleton</name></member>

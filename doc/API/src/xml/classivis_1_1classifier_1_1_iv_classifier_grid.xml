@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="67" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="66" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="65" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1classifier_1_1_iv_classifier_grid_1a1fc90be7a5a2eae973b94de26bcd0c44" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="68" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="68" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="66" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1classifier_1_1_iv_classifier_grid_1aa883bb4975e6801a050242c1d9877ba1" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="70" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="70" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="68" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1classifier_1_1_iv_classifier_grid_1a59a784ad8fc7ad546bd1318aa0c09f5e" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="71" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="71" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="69" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1classifier_1_1_iv_classifier_grid_1a4996c4abcd6845e0241b126f95bdd9ac" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="73" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="73" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="71" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="71" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -134,7 +134,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="87" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="87" bodyend="167"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="83" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="83" bodyend="158"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1classifier_1_1_iv_classifier_grid_1a6d52b8496c5aa7e7b9ec5e26d7ceb38d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>noret::substitute</type>
@@ -151,7 +151,7 @@
           <declname>evnt</declname>
         </param>
         <briefdescription>
-<para>Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic). </para>        </briefdescription>
+<para>Visualise classifier on a PTB OpenGL screen (e.g., draw a hit-box rectangle around the graphic). N.b., if this does not work, ensure that you have called &quot;import.broadcaster.*&quot; in your script, and that you have NOT used Screen(<computeroutput>DrawingFinished</computeroutput>). </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -173,8 +173,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="186" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="186" bodyend="213"/>
-        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="31">ivis::broadcaster::Screen</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="177" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="177" bodyend="201"/>
+        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="29">ivis::broadcaster::Screen</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -192,24 +192,31 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="225" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="225" bodyend="226"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="212" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="212" bodyend="213"/>
       </memberdef>
-      <memberdef kind="function" id="classivis_1_1classifier_1_1_iv_classifier_grid_1a72f57917c7be55f093febf2671a49ca4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classivis_1_1classifier_1_1_iv_classifier_grid_1a13a1240570ca014642d7de124fcfa7d5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>noret::substitute</type>
         <definition>noret::substitute ivis::classifier::IvClassifierGrid::updateEvidence</definition>
-        <argsstring>(matlabtypesubstitute xyt)</argsstring>
+        <argsstring>(matlabtypesubstitute xyt, matlabtypesubstitute varargin)</argsstring>
         <name>updateEvidence</name>
+        <reimplements refid="classivis_1_1classifier_1_1_iv_classifier_1a835a86e08b7ff8accf99327c823f1a11">updateEvidence</reimplements>
         <param>
           <type>matlabtypesubstitute</type>
           <declname>xyt</declname>
         </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
         <briefdescription>
-        </briefdescription>
+<para>Update evidence in favour of each alternative / classification hypothesis. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="229" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="229" bodyend="267"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="216" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="216" bodyend="250"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1classifier_1_1_iv_classifier_grid_1acc53c3d3f4c37c75b16a1208be95f7b0" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, o &gt;</type>
@@ -237,7 +244,20 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="270" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="270" bodyend="272"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="253" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="253" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1classifier_1_1_iv_classifier_grid_1aee5af4542d91fd88e9d7b4d3566286cc" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::classifier::IvClassifierGrid::classifierSpecificReset</definition>
+        <argsstring>()</argsstring>
+        <name>classifierSpecificReset</name>
+        <briefdescription>
+<para>do nothing </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="258" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="258" bodyend="259"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -246,7 +266,7 @@
 <para><simplesect kind="par"><title>IvClassifierGrid Methods</title><para><itemizedlist>
 <listitem><para><ref refid="classivis_1_1classifier_1_1_iv_classifier_grid" kindref="compound">IvClassifierGrid</ref> - Constructor.</para></listitem><listitem><para>start - Start accruing evidence towards each alternative.</para></listitem><listitem><para>update - Update evidence.</para></listitem><listitem><para>getStatus - Get current status code.</para></listitem><listitem><para>isUndecided - Convenience wrapper for: obj.status == obj.STATUS_UNDECIDED.</para></listitem><listitem><para>interogate - Make an (optionally forced) response, based on current level of evidence (if unforced may return obj.NULL_OBJ).</para></listitem><listitem><para>draw - Visualise classifier on a PTB OpenGL screen.</para></listitem><listitem><para>show - Enable automatic PTB screen texture drawing, allowing the observer to see the classification area(s).</para></listitem><listitem><para>hide - Disable automatic PTB screen texture drawing.</para></listitem></itemizedlist>
 </para></simplesect>
-<simplesect kind="see"><para>IvClassifierBox, <ref refid="classivis_1_1classifier_1_1_iv_classifier_l_l" kindref="compound">IvClassifierLL</ref>, <ref refid="classivis_1_1classifier_1_1_iv_classifier_vector" kindref="compound">IvClassifierVector</ref></para></simplesect>
+<simplesect kind="see"><para><ref refid="classivis_1_1classifier_1_1_iv_classifier_box" kindref="compound">IvClassifierBox</ref>, <ref refid="classivis_1_1classifier_1_1_iv_classifier_l_l" kindref="compound">IvClassifierLL</ref>, <ref refid="classivis_1_1classifier_1_1_iv_classifier_vector" kindref="compound">IvClassifierVector</ref></para></simplesect>
 <simplesect kind="par"><title>Example</title><para>none</para></simplesect>
 <simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
 <simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
@@ -254,69 +274,73 @@
 <xrefsect id="todo_1_todo000004"><xreftitle>Todo</xreftitle><xrefdescription><para>classification with graphicalObjects as input is shaky at best</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="506">
+      <node id="532">
         <label>handle</label>
       </node>
-      <node id="503">
+      <node id="529">
         <label>ivis::classifier::IvClassifierGrid</label>
         <link refid="classivis_1_1classifier_1_1_iv_classifier_grid"/>
-        <childnode refid="504" relation="public-inheritance">
+        <childnode refid="530" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="505">
+      <node id="531">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="506" relation="public-inheritance">
+        <childnode refid="532" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="504">
+      <node id="530">
         <label>ivis::classifier::IvClassifier</label>
         <link refid="classivis_1_1classifier_1_1_iv_classifier"/>
-        <childnode refid="505" relation="public-inheritance">
+        <childnode refid="531" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="510">
+      <node id="536">
         <label>handle</label>
       </node>
-      <node id="507">
+      <node id="533">
         <label>ivis::classifier::IvClassifierGrid</label>
         <link refid="classivis_1_1classifier_1_1_iv_classifier_grid"/>
-        <childnode refid="508" relation="public-inheritance">
+        <childnode refid="534" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="509">
+      <node id="535">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="510" relation="public-inheritance">
+        <childnode refid="536" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="508">
+      <node id="534">
         <label>ivis::classifier::IvClassifier</label>
         <link refid="classivis_1_1classifier_1_1_iv_classifier"/>
-        <childnode refid="509" relation="public-inheritance">
+        <childnode refid="535" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="19" bodyend="276"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/IvClassifierGrid.m" bodystart="19" bodyend="267"/>
     <listofallmembers>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a49388187ca41891cd86a2718e58f121b" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>bufferLength</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1aa883bb4975e6801a050242c1d9877ba1" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>categoryObjs</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1aee5af4542d91fd88e9d7b4d3566286cc" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>classifierSpecificReset</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1ab3ed2c1a7e0118b868b712a0d6211cf3" prot="protected" virt="pure-virtual" ambiguityscope="ivis::classifier::IvClassifier::"><scope>ivis::classifier::IvClassifierGrid</scope><name>classifierSpecificReset</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1aaf798aaeb32d77ab08510d4e107acde1" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>criterion</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a339c72a28860e2904fb547bfde43f5c2" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>delete</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a6d52b8496c5aa7e7b9ec5e26d7ceb38d" prot="public" virt="virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>draw</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a4996c4abcd6845e0241b126f95bdd9ac" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>drawColor</name></member>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a14390bf4fcaaa602c45c74d850e78e1a" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>eventNames</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a1662b970742e9be6114a98d73b3a6857" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>evidence</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1ab7f7d455f29c8ae8feb704787e6afed6" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>forceAnswer</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1acc53c3d3f4c37c75b16a1208be95f7b0" prot="protected" virt="virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>getClassObj</name></member>
-      <member refid="classivis_1_1classifier_1_1_iv_classifier_1afc5454bcf7b2fb99537959f64b541e7a" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>getData</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a16ca5ea0084ecb6b3c81de4b36f52c50" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>getData</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1aa96c64cefcf383b74f1edb4a5cf32594" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>getOnsetRamp</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a3e0e31ec59ec5eb5c6b6f9fdcfb113d6" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>getStatus</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1aaae807e9af7e4c425ea8f8703251b0cd" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>graphicObjNames</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a04a59983d24bc68387ae546793d47378" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>graphicObjs</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a971dc0f91435da88070aa9cf94718152" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>guiElement</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1adf313ca7e05baa02ddcb9be8ceca37a7" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>hide</name></member>
-      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a5cba4ff042d53f4dc9e915352b1f24e7" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>interogate</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a1b91a666d804ecb5e6a7f2658b30c15d" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>interogate</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac744744cdf9527d414d9d8540bd8d661" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>isUndecided</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1ab5d9fe2b1e17840cc08cd36367111f40" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>IvClassifier</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a16a00ffaf407af5ae55560be42bad754" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>IvClassifierGrid</name></member>
@@ -330,9 +354,11 @@
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1ae18c33df9e6c390cefb0b8f357cee4c6" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>poly</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a59a784ad8fc7ad546bd1318aa0c09f5e" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>PTB_xy</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a8c82fa6991798a613e18e428c5ea0784" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>rawbuffer</name></member>
-      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a5b2819ff50ff11d99a79051be116c710" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>reset</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a1218a671793dc9a8f210d104e1b5f198" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>reset</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a057922b37d62caa36b6f0f604b60b3c9" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>resetOnsetRampParams</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a325e3b530353341493705f0390901c73" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>setCriterion</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1ae6c41fc965dee637d55c51d4110485a7" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>show</name></member>
-      <member refid="classivis_1_1classifier_1_1_iv_classifier_1aa694bc9b8ae48854b9f3873be0db3508" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>start</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a30a6dc65fbd3dde3ddcbf3b38d088a57" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>start</name></member>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a7fe2988ce0ff2dc4e2d39981a2a5104e" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>startListening</name></member>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a4059911a950ad01e8ae73abcc6d5cd64" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>startListeningTo</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a318c53b5461df7bee0d22ab35ba3896b" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>startTime</name></member>
@@ -343,12 +369,13 @@
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1acb55fc7574b19e02281722feea940639" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>STATUS_UNDECIDED</name></member>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ae63aa8d8e7e569d83e1b29d050c31bd5" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>stopListening</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a409cb2e4f2e96b0889c9627317281338" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>timeout</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1adc9d2ac83d19a5e62571adcf9ee1f70f" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>TIMEOUT_OBJ</name></member>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a50d1ac805a94af66ffb9bff3b4b0b934" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>toggleListening</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a0aa7349ba7f1c3a31d34f1c641ff4a14" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>update</name></member>
-      <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a72f57917c7be55f093febf2671a49ca4" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>updateEvidence</name></member>
-      <member refid="classivis_1_1classifier_1_1_iv_classifier_1a72a2130b89430b5f753476c8ded3a542" prot="protected" virt="pure-virtual" ambiguityscope="ivis::classifier::IvClassifier::"><scope>ivis::classifier::IvClassifierGrid</scope><name>updateEvidence</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a13a1240570ca014642d7de124fcfa7d5" prot="protected" virt="virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>updateEvidence</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1a925e3abf49c782b81ca0aba90ba895dc" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>updateGUI</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a21cb05012b3a1ede0f49ef42b46af667" prot="protected" virt="virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>updateParams</name></member>
+      <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac9ce582ce5fa9aee80a98d7f22e21f1c" prot="protected" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>updateStatus</name></member>
       <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac392882774599174a21d59e889f7d844" prot="public" virt="non-virtual"><scope>ivis::classifier::IvClassifierGrid</scope><name>winhandle</name></member>
     </listofallmembers>
   </compounddef>

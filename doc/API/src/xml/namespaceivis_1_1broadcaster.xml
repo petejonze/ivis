@@ -20,54 +20,48 @@
         <detaileddescription>
 <para><verbatim>Intercepts Screen command and inserts a PreFlip broadcast event before
 any &lt;tt&gt;Flip&lt;/tt&gt; commands
-
-    varargin   whatever PTB&apos;s Screen() requires
+</verbatim></para><para>Note, because further objects may be drawn just prior to the final <computeroutput>Flip</computeroutput>, it is important NOT to use: Screen(<computeroutput>DrawingFinished</computeroutput>, winhandle) in your script! <verbatim> varargin   whatever PTB&apos;s Screen() requires
 </verbatim></para><para>Returns: <verbatim>   varargout   whatever PTB&apos;s Screen() returns
 </verbatim></para><para>Requires: none</para><para><simplesect kind="see"><para>none</para></simplesect>
 Matlab: v2008 onwards</para><para>Author(s): Pete R Jones</para><para>Version History: v1.0.0 18/06/14 Initial build. v1.0.1 20/01/11 ######</para><para>Copyright 2014 : P R Jones <hruler/>
  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/Screen.m" line="19" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/Screen.m" bodystart="19" bodyend="31"/>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1a2714b39fd77bc6320a8f0397b11041a7" compoundref="_iv_video_8m" startline="518" endline="538">ivis::video::IvVideo::close</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/Screen.m" line="19" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/Screen.m" bodystart="19" bodyend="29"/>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1a2714b39fd77bc6320a8f0397b11041a7" compoundref="_iv_video_8m" startline="504" endline="524">ivis::video::IvVideo::close</referencedby>
         <referencedby refid="classivis_1_1video_1_1_iv_webcam_1a7d978b3002c07252b92ff4893c8e0393" compoundref="_iv_webcam_8m" startline="156" endline="158">ivis::video::IvWebcam::delete</referencedby>
         <referencedby refid="classivis_1_1graphic_1_1_iv_graphic_1a1692ec2c6c465534860b7b5e05571e43" compoundref="_iv_graphic_8m" startline="190" endline="205">ivis::graphic::IvGraphic::delete</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1a9740cc6e456fed1b6a6a6a452b82090d" compoundref="_iv_webcam_8m" startline="162" endline="168">ivis::video::IvWebcam::draw</referencedby>
-        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a6d52b8496c5aa7e7b9ec5e26d7ceb38d" compoundref="_iv_classifier_grid_8m" startline="186" endline="213">ivis::classifier::IvClassifierGrid::draw</referencedby>
-        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a243ec6b882dc7dc4453f9158a24ad967" compoundref="_iv_classifier_l_l_8m" startline="216" endline="233">ivis::classifier::IvClassifierLL::draw</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1a9740cc6e456fed1b6a6a6a452b82090d" compoundref="_iv_webcam_8m" startline="162" endline="169">ivis::video::IvWebcam::draw</referencedby>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a6d52b8496c5aa7e7b9ec5e26d7ceb38d" compoundref="_iv_classifier_grid_8m" startline="177" endline="201">ivis::classifier::IvClassifierGrid::draw</referencedby>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a243ec6b882dc7dc4453f9158a24ad967" compoundref="_iv_classifier_l_l_8m" startline="209" endline="219">ivis::classifier::IvClassifierLL::draw</referencedby>
         <referencedby refid="classivis_1_1graphic_1_1_iv_graphic_1abb39f2e888a64df9b228abcde414c916" compoundref="_iv_graphic_8m" startline="217" endline="232">ivis::graphic::IvGraphic::draw</referencedby>
-        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a6c5b0430d3ab7a2a4cba556af789ee6e" compoundref="_iv_classifier_vector_8m" startline="222" endline="243">ivis::classifier::IvClassifierVector::draw</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_track_box_1a5b12dcc39beef7295fc4e4b97fb6a7fa" compoundref="_track_box_8m" startline="312" endline="412">ivis::video::TrackBox::draw</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" compoundref="_iv_main_8m" startline="467" endline="565">ivis::main::IvMain::finishUp</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_params_1ac09c1481b6e504284f0f53d66457cef9" compoundref="_iv_params_8m" startline="155" endline="277">ivis::main::IvParams::getDefaultConfig</referencedby>
-        <referencedby refid="ivis_demo005__usinga_p_t_b_screen_8m_1aaf5367b43a15b2b4b86b17682f028dec" compoundref="ivis_demo005__usinga_p_t_b_screen_8m" startline="17" endline="85">ivisDemo005_usingaPTBScreen</referencedby>
-        <referencedby refid="ivis_demo006__trackbox_visualisation_8m_1a4e7365b3738cf81696ab2fc42ce6b0f0" compoundref="ivis_demo006__trackbox_visualisation_8m" startline="17" endline="53">ivisDemo006_trackboxVisualisation</referencedby>
-        <referencedby refid="ivis_demo007__classifying_fixations_8m_1a17a796f63f8c3101d922d39e10b873e7" compoundref="ivis_demo007__classifying_fixations_8m" startline="17" endline="59">ivisDemo007_classifyingFixations</referencedby>
-        <referencedby refid="ivis_demo008__playing_videos_8m_1ac1155ae56bc31d14421d52291f88c5cb" compoundref="ivis_demo008__playing_videos_8m" startline="17" endline="64">ivisDemo008_playingVideos</referencedby>
-        <referencedby refid="ivis_demo009__streaming_webcams_8m_1ae02594fdc2dbadbc699fce5e153eced7" compoundref="ivis_demo009__streaming_webcams_8m" startline="17" endline="54">ivisDemo009_streamingWebcams</referencedby>
-        <referencedby refid="ivis_demo011__advanced_classifiers_8m_1a89a492ec440e442b6ab8caddd9f9e05c" compoundref="ivis_demo011__advanced_classifiers_8m" startline="17" endline="149">ivisDemo011_advancedClassifiers</referencedby>
-        <referencedby refid="ivis_demo012__external_config_files_8m_1aa6c5940513a9f3eb5a254d640e60d0ee" compoundref="ivis_demo012__external_config_files_8m" startline="17" endline="48">ivisDemo012_externalConfigFiles</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_params_1ae0a05ac6884aa82f394ca5246538b1d3" compoundref="_iv_params_8m" startline="361" endline="585">ivis::main::IvParams::IvParams</referencedby>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a6c5b0430d3ab7a2a4cba556af789ee6e" compoundref="_iv_classifier_vector_8m" startline="219" endline="242">ivis::classifier::IvClassifierVector::draw</referencedby>
+        <referencedby refid="classivis_1_1classifier_1_1_iv_classifier_box_1a4b01aa38724a5e1ec3c56cecb909fbee" compoundref="_iv_classifier_box_8m" startline="261" endline="274">ivis::classifier::IvClassifierBox::draw</referencedby>
+        <referencedby refid="classivis_1_1calibration_1_1_track_box_1ac0759f4d6d92a83d8ea6aba6d62ff5dd" compoundref="_track_box_8m" startline="296" endline="386">ivis::calibration::TrackBox::draw</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" compoundref="_iv_main_8m" startline="431" endline="518">ivis::main::IvMain::finishUp</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_params_1ac09c1481b6e504284f0f53d66457cef9" compoundref="_iv_params_8m" startline="176" endline="301">ivis::main::IvParams::getDefaultConfig</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_params_1ae0a05ac6884aa82f394ca5246538b1d3" compoundref="_iv_params_8m" startline="378" endline="578">ivis::main::IvParams::IvParams</referencedby>
+        <referencedby refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a6c316a26a71bd620bf4bcfaa90dcc1e3" compoundref="_iv_tobii_eye_x_8m" startline="118" endline="134">ivis::eyetracker::IvTobiiEyeX::IvTobiiEyeX</referencedby>
         <referencedby refid="classivis_1_1video_1_1_iv_webcam_1a55a6c4806e583c8feefe2b2ebf6f3dc0" compoundref="_iv_webcam_8m" startline="108" endline="140">ivis::video::IvWebcam::IvWebcam</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_main_1a5d3af355bfbb345d455bef88e922d8a9" compoundref="_iv_main_8m" startline="194" endline="428">ivis::main::IvMain::launch</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1a564486449c0e493623d2c9efa56edfce" compoundref="_iv_webcam_8m" startline="191" endline="194">ivis::video::IvWebcam::listDevices</referencedby>
-        <referencedby refid="classivis_1_1graphic_1_1_iv_graphic_1af292f49ce39918628a7df56ead4cfe7a" compoundref="_iv_graphic_8m" startline="504" endline="527">ivis::graphic::IvGraphic::loadAll</referencedby>
-        <referencedby refid="my_flip_8m_1a10d7ee8d65f4059a6cc62dc2f39aa21e" compoundref="my_flip_8m" startline="17" endline="78">myFlip</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1a324b0c1c07a9768659abeb83a53a0c76" compoundref="_iv_video_8m" startline="337" endline="363">ivis::video::IvVideo::open</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1a0c0cf0df8f2a6808cbe7dd0722587197" compoundref="_iv_video_8m" startline="549" endline="561">ivis::video::IvVideo::pause</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1a1ba6f5b52d0cbde689fcf4d8da336bec" compoundref="_iv_video_8m" startline="380" endline="422">ivis::video::IvVideo::play</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1ad0ca143506fb691cf1977d9eb25ca803" compoundref="_iv_video_8m" startline="437" endline="475">ivis::video::IvVideo::playFrame</referencedby>
-        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1abaea0b42f3c39d440513768c050b9fe6" compoundref="_iv_data_input_8m" startline="312" endline="373">ivis::eyetracker::IvDataInput::setFixationMarker</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_track_box_1a302304c98dc6c3eb3b163e20042b93b9" compoundref="_track_box_8m" startline="182" endline="284">ivis::video::TrackBox::TrackBox</referencedby>
-        <referencedby refid="classivis_1_1video_1_1_iv_video_1add26e6ac59fa97ae971a5451ea72c3b0" compoundref="_iv_video_8m" startline="575" endline="582">ivis::video::IvVideo::unpause</referencedby>
-        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a8faa60e12ff2a9bb334bc724fe3385e1" compoundref="_iv_g_u_iwebcam_8m" startline="98" endline="100">ivis::gui::IvGUIwebcam::update</referencedby>
-        <referencedby refid="classivis_1_1main_1_1_iv_params_1a90297a52529a4eeb21f7e61fa66be174" compoundref="_iv_params_8m" startline="89" endline="141">ivis::main::IvParams::updateGraphicParams</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" compoundref="_iv_main_8m" startline="183" endline="392">ivis::main::IvMain::launch</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_webcam_1a564486449c0e493623d2c9efa56edfce" compoundref="_iv_webcam_8m" startline="192" endline="195">ivis::video::IvWebcam::listDevices</referencedby>
+        <referencedby refid="classivis_1_1graphic_1_1_iv_graphic_1af292f49ce39918628a7df56ead4cfe7a" compoundref="_iv_graphic_8m" startline="545" endline="570">ivis::graphic::IvGraphic::loadAll</referencedby>
+        <referencedby refid="my_flip_8m_1a10d7ee8d65f4059a6cc62dc2f39aa21e" compoundref="my_flip_8m" startline="17" endline="73">myFlip</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1a324b0c1c07a9768659abeb83a53a0c76" compoundref="_iv_video_8m" startline="327" endline="356">ivis::video::IvVideo::open</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1a0c0cf0df8f2a6808cbe7dd0722587197" compoundref="_iv_video_8m" startline="535" endline="547">ivis::video::IvVideo::pause</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1a1ba6f5b52d0cbde689fcf4d8da336bec" compoundref="_iv_video_8m" startline="373" endline="407">ivis::video::IvVideo::play</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1ad0ca143506fb691cf1977d9eb25ca803" compoundref="_iv_video_8m" startline="425" endline="465">ivis::video::IvVideo::playFrame</referencedby>
+        <referencedby refid="classivis_1_1main_1_1_iv_params_1a2d1bc5bf2162b31a97968a56b1ecea68" compoundref="_iv_params_8m" startline="95" endline="162">ivis::main::IvParams::registerScreen</referencedby>
+        <referencedby refid="classivis_1_1eyetracker_1_1_iv_data_input_1abaea0b42f3c39d440513768c050b9fe6" compoundref="_iv_data_input_8m" startline="384" endline="454">ivis::eyetracker::IvDataInput::setFixationMarker</referencedby>
+        <referencedby refid="classivis_1_1calibration_1_1_track_box_1abe4043b18a77b44b36ac5cf009a61b66" compoundref="_track_box_8m" startline="176" endline="268">ivis::calibration::TrackBox::TrackBox</referencedby>
+        <referencedby refid="classivis_1_1video_1_1_iv_video_1add26e6ac59fa97ae971a5451ea72c3b0" compoundref="_iv_video_8m" startline="562" endline="569">ivis::video::IvVideo::unpause</referencedby>
+        <referencedby refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a8faa60e12ff2a9bb334bc724fe3385e1" compoundref="_iv_g_u_iwebcam_8m" startline="94" endline="96">ivis::gui::IvGUIwebcam::update</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvBroadcaster.m" line="2"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/IvBroadcaster.m" line="2"/>
   </compounddef>
 </doxygen>

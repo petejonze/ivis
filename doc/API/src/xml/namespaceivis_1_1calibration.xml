@@ -3,6 +3,7 @@
   <compounddef id="namespaceivis_1_1calibration" kind="namespace">
     <compoundname>ivis::calibration</compoundname>
     <innerclass refid="classivis_1_1calibration_1_1_iv_calibration" prot="public">ivis::calibration::IvCalibration</innerclass>
+    <innerclass refid="classivis_1_1calibration_1_1_track_box" prot="public">ivis::calibration::TrackBox</innerclass>
       <sectiondef kind="func">
       <memberdef kind="function" id="namespaceivis_1_1calibration_1aab6715ea1a22194740e753fd52626691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, resp &gt;</type>
@@ -29,13 +30,13 @@ Matlab: v2008 onwards</para><para>Author(s): Pete R Jones</para><para>Version Hi
  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/measurePoint.m" line="19" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/measurePoint.m" bodystart="19" bodyend="37"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/measurePoint.m" line="19" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/measurePoint.m" bodystart="19" bodyend="37"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/IvCalibration.m" line="2"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/IvCalibration.m" line="2"/>
   </compounddef>
 </doxygen>

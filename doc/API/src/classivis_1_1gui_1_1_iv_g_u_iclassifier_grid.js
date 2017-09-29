@@ -3,6 +3,7 @@ var classivis_1_1gui_1_1_iv_g_u_iclassifier_grid =
     [ "IvGUIclassifierGrid", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a2c2ded9d132b114835fa7beb14a9fbb7", null ],
     [ "finishUp", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a36d555e65e3578601337ad90d16f6092", null ],
     [ "getInstance", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a942ead59ad7f0cf3451e3fc2ac3c1f3f", null ],
+    [ "getSetSingleton", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a8604b3910c1fd0451f7f995a5422fc4a", null ],
     [ "update", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a728553cf499ed81e72c508df7ca150bf", null ],
     [ "categoryObjs", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a30ec93cf048d135de4e1d22d36d42770", null ],
     [ "FIG_NAME", "classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html#a7be0a51bd1275725da6285152117a498", null ],

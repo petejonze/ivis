@@ -63,7 +63,7 @@
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104" refid="classivis_1_1eyetracker_1_1_iv_dummy_1af6bd0668419d255a34699650382a5f34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mlhsInnerSubst&lt;matlabtypesubstitute,n&gt;<sp/><ref refid="classivis_1_1eyetracker_1_1_iv_dummy_1af6bd0668419d255a34699650382a5f34" kindref="member" tooltip="Establish a link to the eyetracking hardware.">connect</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="104" refid="classivis_1_1eyetracker_1_1_iv_dummy_1a1613f924d41b84b1da241b4cc13f1a76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1eyetracker_1_1_iv_dummy_1a1613f924d41b84b1da241b4cc13f1a76" kindref="member" tooltip="Establish a link to the eyetracking hardware.">connect</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dbs<sp/>=<sp/>dbstack();</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>\n\n<sp/><sp/><sp/><sp/>**this<sp/>is<sp/>where<sp/>you<sp/>would<sp/>attempt<sp/>to<sp/>connect<sp/>to<sp/>the<sp/>tracker**\n<sp/><sp/><sp/><sp/>|\n<sp/><sp/><sp/><sp/>|-<sp/>Calling<sp/>history:<sp/><sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>%s<sp/>&lt;-<sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>dbs.name)</highlight></codeline>
@@ -133,6 +133,6 @@
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvDummy.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvDummy.m"/>
   </compounddef>
 </doxygen>

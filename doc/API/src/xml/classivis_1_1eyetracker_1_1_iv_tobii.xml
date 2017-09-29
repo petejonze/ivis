@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="69" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="69" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="70" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1eyetracker_1_1_iv_tobii_1a047abadeb711ac2b9df0cf774453db4f" prot="public" static="yes" mutable="no">
         <type>const matlabtypesubstitute</type>
@@ -31,7 +31,7 @@
 <bold>Default:</bold> &quot;single&quot; </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="71" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="71" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="72" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1eyetracker_1_1_iv_tobii_1aa54fe04d87de0d72abff6cdb92c790e8" prot="public" static="yes" mutable="no">
         <type>const matlabtypesubstitute</type>
@@ -46,38 +46,30 @@
 <bold>Default:</bold> 28 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="78" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="78" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="79" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="79" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1eyetracker_1_1_iv_tobii_1a023a27fc2ba486cdc0f870991eb54d06" prot="public" static="yes" mutable="no">
         <type>const matlabtypesubstitute</type>
         <definition>ivis::eyetracker::IvTobii::RAWLOG_HEADERS</definition>
         <argsstring></argsstring>
         <name>RAWLOG_HEADERS</name>
-        <initializer>= {&quot;
-\
-            &apos;left_EyePosition3d_x&apos;, &apos;left_EyePosition3d_y&apos;, &apos;left_EyePosition3d_z&apos;, &apos;left_EyePosition3dRelative_x&apos;, &apos;left_EyePosition3dRelative_y&apos;, &apos;left_EyePosition3dRelative_z&apos;    
-\
-            , &apos;left_GazePoint2d_x&apos;, &apos;left_GazePoint2d_y&apos;    
-\
-            , &apos;left_GazePoint3d_x&apos;, &apos;left_GazePoint3d_y&apos;, &apos;left_GazePoint3d_z&apos;, &apos;left_PupilDiameter&apos;, &apos;left_Validity&apos;    
-\
-            , &apos;right_EyePosition3d_x&apos;, &apos;right_EyePosition3d_y&apos;, &apos;right_EyePosition3d_z&apos;, &apos;right_EyePosition3dRelative_x&apos;, &apos;right_EyePosition3dRelative_y&apos;, &apos;right_EyePosition3dRelative_z&apos;    
-\
-            , &apos;right_GazePoint2d_x&apos;, &apos;right_GazePoint2d_y&apos;    
-\
-            , &apos;right_GazePoint3d_x&apos;, &apos;right_GazePoint3d_y&apos;, &apos;right_GazePoint3d_z&apos;, &apos;right_PupilDiameter&apos;, &apos;right_Validity&apos;    
-\
-            , &apos;Timestamp&apos;, &apos;CPUtime&apos;
-\
+        <initializer>= {&quot;\
+            &apos;left_EyePosition3d_x&apos;, &apos;left_EyePosition3d_y&apos;, &apos;left_EyePosition3d_z&apos;, &apos;left_EyePosition3dRelative_x&apos;, &apos;left_EyePosition3dRelative_y&apos;, &apos;left_EyePosition3dRelative_z&apos;    \
+            , &apos;left_GazePoint2d_x&apos;, &apos;left_GazePoint2d_y&apos;    \
+            , &apos;left_GazePoint3d_x&apos;, &apos;left_GazePoint3d_y&apos;, &apos;left_GazePoint3d_z&apos;, &apos;left_PupilDiameter&apos;, &apos;left_Validity&apos;    \
+            , &apos;right_EyePosition3d_x&apos;, &apos;right_EyePosition3d_y&apos;, &apos;right_EyePosition3d_z&apos;, &apos;right_EyePosition3dRelative_x&apos;, &apos;right_EyePosition3dRelative_y&apos;, &apos;right_EyePosition3dRelative_z&apos;    \
+            , &apos;right_GazePoint2d_x&apos;, &apos;right_GazePoint2d_y&apos;    \
+            , &apos;right_GazePoint3d_x&apos;, &apos;right_GazePoint3d_y&apos;, &apos;right_GazePoint3d_z&apos;, &apos;right_PupilDiameter&apos;, &apos;right_Validity&apos;    \
+            , &apos;Timestamp&apos;, &apos;CPUtime&apos;\
             &quot;}</initializer>
         <briefdescription>
 <para>from pp.61-62 of the Tobii SDK 3.0 handbook </para>        </briefdescription>
         <detaileddescription>
-<para><verbatim>&lt;br/&gt;@b Default: {&quot;
-</verbatim> \ &apos;left_EyePosition3d_x&apos;, &apos;left_EyePosition3d_y&apos;, &apos;left_EyePosition3d_z&apos;, &apos;left_EyePosition3dRelative_x&apos;, &apos;left_EyePosition3dRelative_y&apos;, &apos;left_EyePosition3dRelative_z&apos; \ , &apos;left_GazePoint2d_x&apos;, &apos;left_GazePoint2d_y&apos; \ , &apos;left_GazePoint3d_x&apos;, &apos;left_GazePoint3d_y&apos;, &apos;left_GazePoint3d_z&apos;, &apos;left_PupilDiameter&apos;, &apos;left_Validity&apos; \ , &apos;right_EyePosition3d_x&apos;, &apos;right_EyePosition3d_y&apos;, &apos;right_EyePosition3d_z&apos;, &apos;right_EyePosition3dRelative_x&apos;, &apos;right_EyePosition3dRelative_y&apos;, &apos;right_EyePosition3dRelative_z&apos; \ , &apos;right_GazePoint2d_x&apos;, &apos;right_GazePoint2d_y&apos; \ , &apos;right_GazePoint3d_x&apos;, &apos;right_GazePoint3d_y&apos;, &apos;right_GazePoint3d_z&apos;, &apos;right_PupilDiameter&apos;, &apos;right_Validity&apos; \ , &apos;Timestamp&apos;, &apos;CPUtime&apos; \ "} </para>        </detaileddescription>
+<para><linebreak/>
+<bold>Default:</bold> {"\ &apos;left_EyePosition3d_x&apos;, &apos;left_EyePosition3d_y&apos;, &apos;left_EyePosition3d_z&apos;, &apos;left_EyePosition3dRelative_x&apos;, &apos;left_EyePosition3dRelative_y&apos;, &apos;left_EyePosition3dRelative_z&apos; \ , &apos;left_GazePoint2d_x&apos;, &apos;left_GazePoint2d_y&apos; \ , &apos;left_GazePoint3d_x&apos;, &apos;left_GazePoint3d_y&apos;, &apos;left_GazePoint3d_z&apos;, &apos;left_PupilDiameter&apos;, &apos;left_Validity&apos; \ , &apos;right_EyePosition3d_x&apos;, &apos;right_EyePosition3d_y&apos;, &apos;right_EyePosition3d_z&apos;, &apos;right_EyePosition3dRelative_x&apos;, &apos;right_EyePosition3dRelative_y&apos;, &apos;right_EyePosition3dRelative_z&apos; \ , &apos;right_GazePoint2d_x&apos;, &apos;right_GazePoint2d_y&apos; \ , &apos;right_GazePoint3d_x&apos;, &apos;right_GazePoint3d_y&apos;, &apos;right_GazePoint3d_z&apos;, &apos;right_PupilDiameter&apos;, &apos;right_Validity&apos; \ , &apos;Timestamp&apos;, &apos;CPUtime&apos;\ "} </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="101" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="85" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="94" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1eyetracker_1_1_iv_tobii_1ab45e5c5927fee070692e63b07e5970fc" prot="public" static="yes" mutable="no">
         <type>const matlabtypesubstitute</type>
@@ -92,37 +84,7 @@
 <bold>Default:</bold> false </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="124" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="124" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classivis_1_1eyetracker_1_1_iv_tobii_1aba02140103854f0a36b21468a48198f1" prot="public" static="no" mutable="no">
-        <type>matlabtypesubstitute</type>
-        <definition>matlabtypesubstitute ivis::eyetracker::IvTobii::leyeSpatialPosition</definition>
-        <argsstring></argsstring>
-        <name>leyeSpatialPosition</name>
-        <initializer>= &quot;[NaN NaN NaN]&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="135" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="135" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classivis_1_1eyetracker_1_1_iv_tobii_1acd569e04d29ad59de73195bf81d16a90" prot="public" static="no" mutable="no">
-        <type>matlabtypesubstitute</type>
-        <definition>matlabtypesubstitute ivis::eyetracker::IvTobii::reyeSpatialPosition</definition>
-        <argsstring></argsstring>
-        <name>reyeSpatialPosition</name>
-        <initializer>= &quot;[NaN NaN NaN]&quot;</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="137" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="137" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="109" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="109" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -140,7 +102,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="151" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="151" bodyend="170"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="129" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="129" bodyend="145"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1aa7c6eb0c6dad4fe6b6a63313958853b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -155,7 +117,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="183" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="183" bodyend="209"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="158" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="158" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1ac4251457850ceb7a9d6793ac3c627803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>noret::substitute</type>
@@ -171,7 +133,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="221" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="221" bodyend="260"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="193" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="193" bodyend="228"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1a952075a86afa5d675c8d495e42450a4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>noret::substitute</type>
@@ -187,7 +149,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="263" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="263" bodyend="271"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="231" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="231" bodyend="239"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1a8a1d6fb2e8a4419b8e176b8df90450e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, n &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, saccadeOnTime &gt; &gt;</type>
@@ -216,7 +178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="274" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="274" bodyend="369"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="242" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="242" bodyend="328"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1adeb1a02307d09ad575884fc73172a266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, n &gt;</type>
@@ -232,13 +194,35 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="372" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="372" bodyend="404"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="331" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="331" bodyend="336"/>
       </memberdef>
-      <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1a3313a875013728e82af074f5a88fb0b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1afe1d3f16f728e18605006f6a85a84666" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::eyetracker::IvTobii::initialiseSDK</definition>
+        <argsstring>()</argsstring>
+        <name>initialiseSDK</name>
+        <briefdescription>
+<para>Ensure toolkit is initialised (will throw an error if not). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="348" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="348" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1eyetracker_1_1_iv_tobii_1aeef03a61588846a64a79572f4545bf9d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
         <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, structure &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, lefteye &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, righteye &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, timestamp &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, CPUtime &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, headers &gt; &gt;</type>
         <definition>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, structure &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, lefteye &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, righteye &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, timestamp &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, CPUtime &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, headers &gt; &gt; ivis::eyetracker::IvTobii::readRawLog</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(matlabtypesubstitute fullFn)</argsstring>
         <name>readRawLog</name>
+        <reimplements refid="classivis_1_1eyetracker_1_1_iv_data_input_1a76e38f50c7f797675688d9765b362fb2">readRawLog</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>fullFn</declname>
+        </param>
         <briefdescription>
 <para>Parse data stored in a .raw binary file (hardware-brand specific format). </para>        </briefdescription>
         <detaileddescription>
@@ -258,7 +242,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="407" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="407" bodyend="424"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="374" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="374" bodyend="388"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-static-func">
@@ -277,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="458" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="458" bodyend="537"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="421" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="421" bodyend="492"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -292,14 +276,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="548" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="548" bodyend="561"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="502" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="502" bodyend="515"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para><ref refid="class_singleton" kindref="compound">Singleton</ref> instantiation of <ref refid="classivis_1_1eyetracker_1_1_iv_data_input" kindref="compound">IvDataInput</ref>, designed to link to a Tobii eyetracker. </para>    </briefdescription>
     <detaileddescription>
 <para>long_description</para><para><simplesect kind="par"><title>IvTobii Methods</title><para><itemizedlist>
-<listitem><para>connect - Establish a link to the eyetracking hardware.</para></listitem><listitem><para>reconnect - Disconnect and re-establish link to eyetracker.</para></listitem><listitem><para>refresh - Query the eyetracker for new data; process and store.</para></listitem><listitem><para>flush - Query the eyetracker for new data; discard.</para></listitem><listitem><para>validate - Validate initialisation parameters.</para></listitem></itemizedlist>
+<listitem><para>connect - Establish a link to the eyetracking hardware.</para></listitem><listitem><para>reconnect - Disconnect and re-establish link to eyetracker.</para></listitem><listitem><para>refresh - Query the eyetracker for new data; process and store.</para></listitem><listitem><para>flush - Query the eyetracker for new data; discard.</para></listitem><listitem><para>validate - Validate initialisation parameters.</para></listitem><listitem><para>getEyeballLocations - Get cartesian coordinates for each eyeball, in millimeters.</para></listitem><listitem><para>getLastKnownViewingDistance - Compute last known viewing distance (averaging across eyeballs)</para></listitem></itemizedlist>
 </para></simplesect>
 <simplesect kind="par"><title>IvTobii Static Methods</title><para><itemizedlist>
 <listitem><para>initialiseSDK - Ensure toolkit is initialised (will throw an error if not).</para></listitem><listitem><para>readRawLog - Parse data stored in a .raw binary file (hardware-brand specific format).</para></listitem></itemizedlist>
@@ -310,62 +294,64 @@
 <simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2013 : Added support for raw data logging and trackbox visualisation<linebreak/>
  1.0 PJ 02/2013 : first_build<linebreak/>
 </para></simplesect>
-<xrefsect id="todo_1_todo000008"><xreftitle>Todo</xreftitle><xrefdescription><para>switch to single precision? </para><para>protect constructor?</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+<xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>switch to single precision? </para><para>protect constructor?</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
 </para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="581">
+      <node id="626">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="582" relation="public-inheritance">
+        <childnode refid="627" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="579">
+      <node id="624">
         <label>ivis::eyetracker::IvTobii</label>
         <link refid="classivis_1_1eyetracker_1_1_iv_tobii"/>
-        <childnode refid="580" relation="public-inheritance">
+        <childnode refid="625" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="582">
+      <node id="627">
         <label>handle</label>
       </node>
-      <node id="580">
+      <node id="625">
         <label>ivis::eyetracker::IvDataInput</label>
         <link refid="classivis_1_1eyetracker_1_1_iv_data_input"/>
-        <childnode refid="581" relation="public-inheritance">
+        <childnode refid="626" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="585">
+      <node id="630">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="586" relation="public-inheritance">
+        <childnode refid="631" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="583">
+      <node id="628">
         <label>ivis::eyetracker::IvTobii</label>
         <link refid="classivis_1_1eyetracker_1_1_iv_tobii"/>
-        <childnode refid="584" relation="public-inheritance">
+        <childnode refid="629" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="586">
+      <node id="631">
         <label>handle</label>
       </node>
-      <node id="584">
+      <node id="629">
         <label>ivis::eyetracker::IvDataInput</label>
         <link refid="classivis_1_1eyetracker_1_1_iv_data_input"/>
-        <childnode refid="585" relation="public-inheritance">
+        <childnode refid="630" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="19" bodyend="565"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/IvTobii.m" bodystart="19" bodyend="519"/>
     <listofallmembers>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a507bd53d1ad3d4291b87d0093c562778" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>accelCriterion</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a2665564a8e2f38c396f768e550f1edc8" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>BLINK_CODE</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0bc2a3cdd4bf59de709f0bed9f59baf6" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>BLINK_BITPOS</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1add963943d4e15ce92b9a4eb0c9ca2740" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>blinkTemporalMin_secs</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a973cc1119665a1b4993b592490f7946d" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>buffer1</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a32aa11fcf75233619b97a73713bad66e" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>buffer2</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a3e57072e65652b9b5a8a281ef020fc31" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>buffer3</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0d2889db7e2b909037600c8bbe21424d" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>calibrateDistanceToScreen</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1ac4251457850ceb7a9d6793ac3c627803" prot="public" virt="virtual"><scope>ivis::eyetracker::IvTobii</scope><name>connect</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ad1adfd06a2ebaa7d94ccce0aa25d4cc7" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>debugMode</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aa7c6eb0c6dad4fe6b6a63313958853b0" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>delete</name></member>
@@ -383,23 +369,25 @@
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1af8c354f5e471ca630f257dcb6cf21c93" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>fixationTextureRect</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1adeb1a02307d09ad575884fc73172a266" prot="public" virt="virtual"><scope>ivis::eyetracker::IvTobii</scope><name>flush</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a36a50401b8a64a022f6cc953f131e9db" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>Fs</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a75d2955f26d57921ac6448612a70d3b8" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>getEyeballLocations</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8b0a6e62c48978a9f7d450c21a55a584" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>getInstance</name></member>
       <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>getInstanceSingleton</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a9a583f4b5ff607184c7873b8469a8b58" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>getLastKnownXY</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ab106c0e1073b69cedc0a004ddbaec47b" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>getLastKnownViewingDistance</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa338f0a3be26e5fc48065263df0998c2" prot="protected" virt="virtual"><scope>ivis::eyetracker::IvTobii</scope><name>getSetSingleton</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a9ee804615c36df2cbd63fb4cb6f8f0b5" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>id</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ae6154ac748eec0e4d485026b8118693d" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>includeTagsInRawOutput</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a14aa59be5e4a510977aca634e260295e" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>init</name></member>
       <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>initialise</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1afe1d3f16f728e18605006f6a85a84666" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>initialiseSDK</name></member>
       <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>isinit</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8a9031a70b149a7e54cd55945d5ce491" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>IvDataInput</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a71e9aee7763b7d2523eac5336e99e3e7" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>IvTobii</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a2be00560b3ab93833e31d63b5b6462b4" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lagPeriod</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a75dd8e1b2dfbadb33c6e4c132b52e329" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lastXYT</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac086a9a54cfbc048e37c4fbebee261fc" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lastXYT_nonNaN</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a89ce783469e063300397634f5d555375" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lastXYT_raw</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1abcf2b6ee3fe80664647ce7e3cfe08174" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lastXYT_raw_nonNaN</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aba02140103854f0a36b21468a48198f1" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>leyeSpatialPosition</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1af6ca037ade2e5599928b5d9b78161c32" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lastXYTV</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa20f2b653e0eca77fce935d5ab968849" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lEyeball_xyzt</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a65e232c04928f4debbca4e3a2b098c61" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>lEyeball_xyzt_raw</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8c9b00752e70c4e640ded992d38db55e" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>LOG_RAW_DATA</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a255cfebf3a8a7ebcf047e27256f794b2" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>mostRecentBlinkTime</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a35e0d84e9185091eb163e913bb9c43e8" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>mostRecentSaccadeTime</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1ac2e04f79c1789bf5e223c49c4081f1f9" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>NAME</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a069614924c281ceee78978b90fbd95c4" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>nCycles</name></member>
@@ -420,21 +408,22 @@
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a6244d15e1338948568513d64c0b1a527" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>postBlinkWindow</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8d508903e3e409326349189dab69fa4d" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>prevBlinkWindow</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a87c6ad07deb0d6bb8f943dd0e7d62317" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>prevSaccadeWindow</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a51c37af2d1a616cf0d6ee9a028b0237e" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>processData</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ad3993a950a17fbcf4fe3ebfe7f4ba79c" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>processData</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a7a9dee508c203904beb648403fb8e04e" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>RAWLOG</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a023a27fc2ba486cdc0f870991eb54d06" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>RAWLOG_HEADERS</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aa54fe04d87de0d72abff6cdb92c790e8" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>RAWLOG_NCOLS</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a047abadeb711ac2b9df0cf774453db4f" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>RAWLOG_PRECISION</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a64b111b9681ff8db593fc9b924fd6903" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>readDataLog</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a3313a875013728e82af074f5a88fb0b2" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>readRawLog</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a76e38f50c7f797675688d9765b362fb2" prot="public" virt="pure-virtual" ambiguityscope="ivis::eyetracker::IvDataInput::"><scope>ivis::eyetracker::IvTobii</scope><name>readRawLog</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aeef03a61588846a64a79572f4545bf9d" prot="public" virt="virtual"><scope>ivis::eyetracker::IvTobii</scope><name>readRawLog</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a952075a86afa5d675c8d495e42450a4e" prot="public" virt="virtual"><scope>ivis::eyetracker::IvTobii</scope><name>reconnect</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a8a1d6fb2e8a4419b8e176b8df90450e9" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>refresh</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ae74e03de1876c373e1c60fe07209a543" prot="public" virt="pure-virtual" ambiguityscope="ivis::eyetracker::IvDataInput::"><scope>ivis::eyetracker::IvTobii</scope><name>refresh</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1acd569e04d29ad59de73195bf81d16a90" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>reyeSpatialPosition</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ad194776294a2f6d7a0e8e2e955d3c3ca" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>SACCADE_OFF_CODE</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0d1e2dc5e6464acb2a812998a91f2d63" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>SACCADE_ON_CODE</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a9354ed6e5c78ac16e2355ae8e0804834" prot="public" virt="pure-virtual" ambiguityscope="ivis::eyetracker::IvDataInput::"><scope>ivis::eyetracker::IvTobii</scope><name>refresh</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aff7e1ecb9b621bd47456b8169e5cacb7" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>rEyeball_xyzt</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4a2ed538537b22661f5d4108f0d84304" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>rEyeball_xyzt_raw</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa155c6758075407ff9b161c5a2546180" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>SACCADE_OFF_BITPOS</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac5cb5b58b6106c349f006f7ae62f3827" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>SACCADE_ON_BITPOS</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aca5ef783a1bb71855cb584c9915a95fe" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>saccadeCounter</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a2ca3be59cadd71bb57f84b923dfff749" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>setEyeballLocations</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1abaea0b42f3c39d440513768c050b9fe6" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>setFixationMarker</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0e5de1b59c166623036ed22c3a7e3b70" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>showFixations</name></member>
       <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>Singleton</name></member>
@@ -443,14 +432,16 @@
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a562852bdbf67438b0a89730f29d69a72" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>temporalGuiElement</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4db06790a0e4bd76cf3f8468189a128c" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>testScreenHeight</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a90dc0ae2e8c72f7924d3adcdaba070fd" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>testScreenWidth</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ab0ffab39cb9501a81ea79585b65de19d" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>updateDriftCorrection</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac4e0d01daa92d1dd36c149eae4c60c21" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>trackerInFrontMonitor_mm</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a511bf3df895d8ad25ed807353b14922c" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>updateDriftCorrection</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8080629d5a7b8a67c533862afc336f40" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>useFixationTexture</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aa49499cb41a13a4149f49a8eb19ae1e7" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>validate</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1adac9ab3e4ab3979db501665b450879c7" prot="protected" virt="pure-virtual" ambiguityscope="ivis::eyetracker::IvDataInput::"><scope>ivis::eyetracker::IvTobii</scope><name>validate</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4409f8bb6979af1eeeb2ca909749cafb" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>validateSubclass</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1adb642829cfd373e58efef84d03c32ee9" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>velocityCriterion</name></member>
       <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a62766e11ed34877be1144608645c83dd" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>winhandle</name></member>
-      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a06b3eb1a63cc0c79963994c7aa480d3f" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>xMouseOffset</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac2ee19530c204ac63f2565d73ce0be79" prot="protected" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>xMouseOffset</name></member>
+      <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a15616d2cf7fe99b4dd089767b68271dc" prot="public" virt="non-virtual"><scope>ivis::eyetracker::IvTobii</scope><name>zCalibrationOffset_mm</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

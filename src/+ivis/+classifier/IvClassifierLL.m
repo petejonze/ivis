@@ -20,7 +20,7 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
     % http://www-structmed.cimr.cam.ac.uk/Course/Likelihood/likelihood.html
     %
     % IvClassifierLL Methods:
-    %   * IvClassifierLL	- Constructor.
+    %   * IvClassifierLL- Constructor.
     %   * start         - Start accruing evidence towards each alternative.
 	%   * update        - Update evidence.
     %   * getStatus     - Get current status code.
@@ -53,11 +53,13 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
 
     properties (GetAccess = private, SetAccess = private)
         hitFuncs = {}
-        is2D
+        xyWeights = [1 1];
         % for drawing
         stdNullrect
         stdRect
         drawColor
+        % misc
+        printDebugInfoToConsole = false;
     end
     
     
@@ -69,15 +71,17 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
 
     	%% == CONSTRUCTOR =================================================
         
-        function obj = IvClassifierLL(dims, graphicObjs, lMagThresh, hitFuncs, GUIidx, timeout_secs)
+        function obj = IvClassifierLL(graphicObjs, likelihoodThresh, bufferlength, GUIidx, timeout_secs, xyWeight, printDebugInfoToConsole)
             % IvClassifierLL Constrcutor.
             %
-            % @param    dims        '1D' or '2D'
-            % @param    graphicObjs IvGraphic object(s) to classify
-            % @param    lMagThresh  require log-likelihood threshold
-            % @param    hitFuncs 	IvHitFunc object(s)
-            % @param    GUIidx      GUI panel number
-            % @return 	obj         IvClassifierLL object
+            % @param    graphicObjs         IvGraphic object(s) to classify
+            % @param    likelihoodThresh    require log-likelihood threshold
+            % @param    bufferlength        size of circular data buffer
+            % @param    GUIidx              GUI panel number
+            % @param    timeout_secs      	amount of time to wait before forcing a decision
+            % @param    xyWeight            relative weight to give the X and Y data dimensions
+            % @param    printDebugInfoToConsole     for debugging
+            % @return 	obj                 IvClassifierLL object
             %
             % @date     26/06/14
             % @author   PRJ
@@ -85,75 +89,57 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
 
             % parse inputs
             params = ivis.main.IvParams.getInstance();
-            if nargin < 2 || isempty(dims)
-                dims = '1D';
+            if nargin < 2 || isempty(likelihoodThresh)
+                likelihoodThresh = params.classifier.loglikelihood.likelihoodThresh;
             end
-            if nargin < 3 || isempty(lMagThresh)
-                lMagThresh = params.classifier.loglikelihood.lMagThresh;
+            if nargin < 3 || isempty(bufferlength)
+                bufferlength = [];
             end
-            if nargin < 4 || isempty(hitFuncs)
-                hitFuncs = {};
-            end
-            if nargin < 5
+            if nargin < 4 || isempty(GUIidx)
                 GUIidx = params.classifier.GUIidx;
             end
-            if nargin < 6
+            if nargin < 5
                 timeout_secs = [];
+            end
+            if nargin < 6
+                xyWeight = [];
+            end
+            if nargin < 7
+                printDebugInfoToConsole = [];
             end
 
             % validate
-            if ~strcmpi(dims,{'1D','2D'})
-                error('IvClassifierLL:invalidDimensionality','Input not recognised (%s)\nMust be one of: 1D, 2D', dims);
-            end
             if ~isempty(GUIidx) && ~params.GUI.useGUI
                fprintf('IvClassifier: GUI is disabled, so specified GUI index will be ignored\n'); 
                GUIidx = [];
             end
-            
-            % call superclass
-            obj = obj@ivis.classifier.IvClassifier(graphicObjs, lMagThresh, timeout_secs);
-            
-            if strcmpi(dims, '2D')
-                obj.is2D = true;
-            else
-                obj.is2D = false;
+            if any(likelihoodThresh>=1 | likelihoodThresh<0)
+                warning('some likelihood thresholds lie outside of 0-1 range (can never be reached)')
             end
             
+            % call superclass
+            obj = obj@ivis.classifier.IvClassifier(graphicObjs, likelihoodThresh, timeout_secs, bufferlength);
+
             % init draw params
-            n = length(graphicObjs);
-            obj.stdRect = nan(4, n);
-            obj.drawColor = repmat([255 100 255]', 1, n); % 1 column per rect
+            nGraphicObjs = length(graphicObjs);
+            obj.stdRect = nan(4, nGraphicObjs);
+            obj.drawColor = repmat([255 100 255]', 1, nGraphicObjs); % 1 column per rect
             
             % construct hit functions (and draw params)
-            if isempty(hitFuncs)
-                for i = 1:n
-                    if obj.is2D
-                        if graphicObjs{i}.type() == graphicObjs{i}.TYPE_PRIOR
-                            hitFuncs{i} = ivis.math.pdf.IvHfUniform2D();
-                        else
-                            muOffset = [0 0];
-                            sigma = [graphicObjs{i}.width graphicObjs{i}.height] / 2 % ARBITRARY?
-                            gaussRatio = .95;
-                            hitFuncs{i} = ivis.math.pdf.IvHfGUmix2D(muOffset, sigma, gaussRatio);
-                            % 2D draw params
-                            w = sigma(1) * 4; % 4std in diameter (2std in radius)
-                            h = sigma(2) * 4;
-                            obj.stdNullrect(:,i) = [0 0 w h] - [w h w h]/2;
-                        end
-                    else
-                        if graphicObjs{i}.type() == graphicObjs{i}.TYPE_PRIOR
-                            hitFuncs{i} = ivis.math.pdf.IvHfUniform();
-                        else
-                            muOffset = 0;
-                            sigma = [graphicObjs{i}.width] / 8 % ARBITRARY?
-                            gaussRatio = .95;
-                            hitFuncs{i} = ivis.math.pdf.IvHfGUmix(muOffset, sigma, gaussRatio);
-                            % 1D draw params
-                            w = sigma * 16;  % 8std in diameter (4std in radius)
-                            h = ivis.main.IvParams.getInstance().graphics.testScreenHeight / .55; % slightly bigger than half the screen, to ensure it goes off the top/bottom
-                            obj.stdNullrect(:,i) = [0 0 w h] - [w h w h]/2;
-                        end
-                    end
+            hitFuncs = {};
+            for i = 1:nGraphicObjs
+                if graphicObjs{i}.type() == graphicObjs{i}.TYPE_PRIOR
+                    hitFuncs{i} = ivis.math.pdf.IvHfUniform2D();
+                else
+                    mu_px   	= [graphicObjs{i}.getX() graphicObjs{i}.getY()];
+                    sigma_px    = [graphicObjs{i}.width graphicObjs{i}.height] / 2; % ARBITRARY?
+                    minmaxBounds_px  = [];
+                    pedestalMagn_p = [];
+                    hitFuncs{i} = ivis.math.pdf.IvHfGauss2D(mu_px, sigma_px, minmaxBounds_px, pedestalMagn_p);
+                    % 2D draw params
+                    w = sigma_px(1) * 4; % 4std in diameter (2std in radius)
+                    h = sigma_px(2) * 4;
+                    obj.stdNullrect(:,i) = [0 0 w h] - [w h w h]/2;
                 end
             end
             obj.hitFuncs = hitFuncs;
@@ -165,12 +151,21 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
             if ~isempty(GUIidx)
                 obj.guiElement = ivis.gui.IvGUIclassifierLL(GUIidx, obj.criterion, graphicObjs, hitFuncs);
             end
+            
+            % set xyWeight
+            if ~isempty(xyWeight)
+                obj.setXYWeights(xyWeight);
+            end
+            
+            % store
+            if ~isempty(printDebugInfoToConsole)
+                obj.printDebugInfoToConsole = printDebugInfoToConsole;
+            end
         end
         
         %% == METHODS =====================================================
         
         function [] = draw(obj, ~, ~) % interface implementation
-            
             if isempty(obj.winhandle)
                 % get winhandle
                 params = ivis.main.IvParams.getInstance();
@@ -178,12 +173,25 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
             end
             
             % draw
-            if obj.is2D
-                Screen('FrameOval', obj.winhandle, obj.drawColor, obj.stdRect, 3);
-            else
-                Screen('FrameRect', obj.winhandle, obj.drawColor, obj.stdRect, 3); % actually appears as 2 vertical lines
-            end
+          	Screen('FrameOval', obj.winhandle, obj.drawColor, obj.stdRect, 3);
+          	%Screen('FrameRect', obj.winhandle, obj.drawColor, obj.stdRect, 3); % 1D version: actually appears as 2 vertical lines
         end
+        
+        function [] = setXYWeights(obj, w)
+            if size(w,2)~=2
+                error('weight vector must be a 2 column matrix')
+            end
+            if max(w)~=1
+                error('the largest weight must equal 1')
+            end
+            if any(w)<0
+                error('no weight may be less than 0')
+            end
+            
+            % set
+            obj.xyWeights = w;
+        end
+        
     end
 
     
@@ -196,49 +204,53 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
         function [] = updateParams(obj) % interface implementation
             for i = 1:length(obj.graphicObjs)
                 % update hitbox rectangles
-                if obj.graphicObjs{i}.type() ~= obj.graphicObjs{i}.TYPE_PRIOR
+                if obj.graphicObjs{i}.type() ~= obj.graphicObjs{i}.TYPE_PRIOR % ??????
                     xy = obj.graphicObjs{i}.getXY();
-                    if obj.is2D
-                        obj.hitFuncs{i}.updatePlot(xy);
-                    else
-                        if ~isempty(xy) % defensive, since we've already excluded TYPE_PRIOR
-                            obj.hitFuncs{i}.updatePlot(xy(1));
-                        end
-                    end
+                    obj.hitFuncs{i}.update(xy);
                     obj.stdRect(:,i) = obj.stdNullrect(:,i) + [xy xy]';
                 end
-            end     
+            end
         end
         
-        function [] = updateEvidence(obj, xyt) % interface implementation
-            n = length(obj.graphicObjs);
+        function [] = updateEvidence(obj, xyt, varargin) % interface implementation
+            nGraphicObjs = length(obj.graphicObjs);
             
             % calc log-likelihood 
-            ll = nan(size(xyt,1),n);
-            w = obj.getOnsetRamp(xyt(:,3)); % now ramp applied twice(!)
-            for i = 1:n % any way to vectorize this?     
-                if obj.is2D
-                    itrackxy = xyt(:,1:2);
-                    gfcxy = obj.graphicObjs{i}.getXY(xyt(:,3));
-                    y = obj.hitFuncs{i}.getPDF(itrackxy, gfcxy);
-                else
-                    itrackx = xyt(:,1);
-                    gfcx = obj.graphicObjs{i}.getX(xyt(:,3));
-                    y = obj.hitFuncs{i}.getPDF(itrackx, gfcx);
-                end
-              	
-                ll(:,i) = w .* reallog(y);
-                %ll(:,i) = nansum(reallog(obj.hitFuncs{i}.getPDF(xyt(:,1:2), obj.graphicObjs{i}.getXY(xyt(:,3)))));
+            ll = nan(size(xyt,1),nGraphicObjs);
+            for i = 1:nGraphicObjs % any way to vectorize this?
+                itrackxy = xyt(:,1:2);
+                ll(:,i) = obj.hitFuncs{i}.getPDF(itrackxy, obj.xyWeights);
             end
+            
+            % convert to proper probabilities (alternatives sum to 1), and
+            % log
+            ll = log(bsxfun(@rdivide, ll, sum(ll,2)));
+
+            % apply temporal weighting
+            w = obj.getOnsetRamp(xyt(:,3));
+            ll = bsxfun(@times, ll, w);
+            
             % add to buffer
             obj.rawbuffer.put(ll);
-            % cumulative
+            
+            % cumulative       
             cll = nansum(obj.rawbuffer.get(),1); % sum loglikelihoods
 
             % convert to proportions
-            y = (ones(n,1)*cll)';
-            cllp = cll - logsum(reshape(y(~eye(n)),n-1,n));
- 
+            y = (ones(nGraphicObjs,1)*cll)';
+            cllp = cll - logsum(reshape(y(~eye(nGraphicObjs)),nGraphicObjs-1,nGraphicObjs));
+
+            % for debugging (expensive!)
+            if obj.printDebugInfoToConsole
+                for i = 1:length(cll)
+                    fprintf('%1.5f    ', cll(i));
+                end
+                for i = 1:length(cll)
+                    fprintf('%1.5f    ', cllp(i));
+                end
+                fprintf('\n');
+            end
+            
             % store        
             obj.evidence = cllp;
         end

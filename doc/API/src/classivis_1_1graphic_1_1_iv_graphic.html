@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -153,6 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a32d0c0e5b0275ec2ab4b3649689b0ad1"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a32d0c0e5b0275ec2ab4b3649689b0ad1">reset</a> (x, y, <a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a6083f35d708ac90075070690dd162140">width</a>, <a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a71582f3dd0c4f3a40a3755701403c92b">height</a>)</td></tr>
 <tr class="memdesc:a32d0c0e5b0275ec2ab4b3649689b0ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets XY, and resets the history (n.b., may want to save the buffer history first?). If no values specified, will return to whereever it started.  <a href="#a32d0c0e5b0275ec2ab4b3649689b0ad1">More...</a><br/></td></tr>
 <tr class="separator:a32d0c0e5b0275ec2ab4b3649689b0ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863ba31aa87b7fbc7932bd8f4830e638"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a863ba31aa87b7fbc7932bd8f4830e638">setSize</a> (<a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a6083f35d708ac90075070690dd162140">width</a>, <a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a71582f3dd0c4f3a40a3755701403c92b">height</a>)</td></tr>
+<tr class="memdesc:a863ba31aa87b7fbc7932bd8f4830e638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets width and/or height. May trigger updates in classifier(s).  <a href="#a863ba31aa87b7fbc7932bd8f4830e638">More...</a><br/></td></tr>
+<tr class="separator:a863ba31aa87b7fbc7932bd8f4830e638"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ed640a1c5105a810a5c668d627db0c5"><td class="memItemLeft" align="right" valign="top">function 
   xy  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a3ed640a1c5105a810a5c668d627db0c5">getXY</a> (t)</td></tr>
 <tr class="memdesc:a3ed640a1c5105a810a5c668d627db0c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mean xy position (in pixels) prior to each time specified timepoint (or the most recent point if no time specified).  <a href="#a3ed640a1c5105a810a5c668d627db0c5">More...</a><br/></td></tr>
@@ -161,6 +164,10 @@ Public Member Functions</h2></td></tr>
   xy  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a50b523a2be74a003ae75417df7815c13">getX0Y0</a> (t)</td></tr>
 <tr class="memdesc:a50b523a2be74a003ae75417df7815c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get top-left xy position (in pixels) prior to each time specified timepoint (or the most recent point if no time specified).  <a href="#a50b523a2be74a003ae75417df7815c13">More...</a><br/></td></tr>
 <tr class="separator:a50b523a2be74a003ae75417df7815c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7cad69eb55489693cae242ece1ae9a3"><td class="memItemLeft" align="right" valign="top">function 
+  x  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#ad7cad69eb55489693cae242ece1ae9a3">getX</a> (t)</td></tr>
+<tr class="memdesc:ad7cad69eb55489693cae242ece1ae9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current mean X position (in pixels).  <a href="#ad7cad69eb55489693cae242ece1ae9a3">More...</a><br/></td></tr>
+<tr class="separator:ad7cad69eb55489693cae242ece1ae9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46621d983faf0d7946f0bb9a0237a2af"><td class="memItemLeft" align="right" valign="top">function 
   y  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html#a46621d983faf0d7946f0bb9a0237a2af">getY</a> ()</td></tr>
 <tr class="memdesc:a46621d983faf0d7946f0bb9a0237a2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current mean Y position (in pixels).  <a href="#a46621d983faf0d7946f0bb9a0237a2af">More...</a><br/></td></tr>
@@ -270,7 +277,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section user"><dt>Author</dt><dd>Pete R Jones <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'ej'+'onz'+'e@'+'gma'+'il'+'.co'+'m'; return false;">petej<span style="display: none;">.nosp@m.</span>onze<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a></dd></dl>
 <dl class="section user"><dt>Verinfo</dt><dd>1.0 PJ 02/2013 : first_build<br/>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo:</a></b></dt><dd><p class="startdd">: check getX0Y0 </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd><p class="startdd">: check getX0Y0 </p>
 <p class="enddd">: delete setXY and reinitXY</p>
 </dd></dl>
 <p>Copyright 2014 : P R Jones </p>
@@ -453,6 +460,35 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ad7cad69eb55489693cae242ece1ae9a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">function   x  = ivis.graphic.IvGraphic.getX </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current mean X position (in pixels). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>Optional vector of times. The XY position immediately prior to each time will be returned. If empty, will return the current XY. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>x New centre position, in pixels, along the horizontal axis [0 == left].</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
+
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00442">442</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a50b523a2be74a003ae75417df7815c13"></a>
 <div class="memitem">
 <div class="memproto">
@@ -478,7 +514,7 @@ Here is the call graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00385">385</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00418">418</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
 
 </div>
 </div>
@@ -507,7 +543,7 @@ Here is the call graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00357">357</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00390">390</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
 
 </div>
 </div>
@@ -529,7 +565,7 @@ Here is the call graph for this function:</div>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00430">430</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00471">471</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
 
 </div>
 </div>
@@ -588,7 +624,7 @@ imgs cell of RGBA matrices</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00504">504</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00545">545</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
 
 <p>References <a class="el" href="_screen_8m_source.html#l00019">ivis.broadcaster.Screen()</a>.</p>
 
@@ -741,7 +777,46 @@ Here is the call graph for this function:</div>
 <dl class="section author"><dt>Author</dt><dd>PRJ</dd></dl>
 <dl class="section user"><dt>Required fields of evnt:</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00446">446</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00487">487</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a863ba31aa87b7fbc7932bd8f4830e638"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">function  ivis.graphic.IvGraphic.setSize </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets width and/or height. May trigger updates in classifier(s). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>The width of the graphic, in pixels </td></tr>
+    <tr><td class="paramname">height</td><td>The height of the graphic, in pixels</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
+
+<p>Definition at line <a class="el" href="_iv_graphic_8m_source.html#l00359">359</a> of file <a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1043,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/+ivis/+graphic/<a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a></li>
+<li>+ivis/+graphic/<a class="el" href="_iv_graphic_8m_source.html">IvGraphic.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -976,7 +1051,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceivis.html">ivis</a></li><li class="navelem"><a class="el" href="namespaceivis_1_1graphic.html">graphic</a></li><li class="navelem"><a class="el" href="classivis_1_1graphic_1_1_iv_graphic.html">IvGraphic</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:42 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:14 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

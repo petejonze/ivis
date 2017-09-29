@@ -7,6 +7,7 @@
 % 
 %  IvClassifier Methods:
 %    * IvClassifier  - Constructor.
+%    * setCriterion  - Modify decision criteria.         
 %    * start         - Start accruing evidence towards each alternative.
 %    * update        - Update evidence.
 %    * getStatus     - Get current status code.
@@ -31,4 +32,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %  
+%
+%    Reference page in Doc Center
+%       doc ivis.classifier.IvClassifier
+%
 %

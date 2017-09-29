@@ -19,3 +19,7 @@
 %  *********************************************************************
 % 
 %
+%    Reference page in Doc Center
+%       doc SingletonManager
+%
+%

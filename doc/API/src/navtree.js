@@ -1,7 +1,6 @@
 var NAVTREE =
 [
   [ "ivis", "index.html", [
-    [ "Ivis 1.4", "index.html", null ],
     [ "List of all Events", "event.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Packages", null, [
@@ -33,10 +32,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_c_circular_buffer_8m.html",
-"classivis_1_1audio_1_1_iv_audio.html#aa84483979fcc26b1b65b867287c0a356",
-"classivis_1_1eyetracker_1_1_iv_simulator.html",
-"classivis_1_1main_1_1_iv_params.html#ac09c1481b6e504284f0f53d66457cef9",
-"functions_func.html"
+"classivis_1_1audio_1_1_iv_audio.html#add96de7e3dc137c46d6218ad0ba22181",
+"classivis_1_1eyetracker_1_1_iv_data_input.html#adac9ab3e4ab3979db501665b450879c7",
+"classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l.html#ad3826f63016cdf06fd3fe800c698ee27",
+"cmp2pol_8m_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

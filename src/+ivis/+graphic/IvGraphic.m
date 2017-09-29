@@ -173,9 +173,9 @@ classdef IvGraphic < ivis.graphic.IvScreenObject
             % get position
             xy = obj.xyt.getLastN(1,1:2);
             
-            % draw
+            % draw         
             dstRect = obj.nullrect + [xy xy];
-            Screen('DrawTexture', winhandle, obj.texture, [], dstRect, varargin{:})
+            Screen('DrawTexture', winhandle, obj.texture, obj.srcrect, dstRect, varargin{:})
         end
         
         function [] = setXY(obj, x, y, t)
@@ -395,7 +395,7 @@ classdef IvGraphic < ivis.graphic.IvScreenObject
                 warning('IvGraphic:FailedToCreateFile','Could not open file: %s. Data will not be saved', fullFn);
             else
                 try
-                    fprintf(fid, '%s', strjoin(',',headerInfo{:}));
+                    fprintf(fid, '%s', strjoin1(',',headerInfo{:}));
                     % write data (1st line - also includes IvDataLog file ref)
                     fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%s,',obj.xyt.get(1)',datalogFullFn );
                     % write data (the rest)

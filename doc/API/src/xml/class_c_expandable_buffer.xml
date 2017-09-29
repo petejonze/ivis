@@ -17,8 +17,8 @@
 <bold>Default:</bold> 2 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="68" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="68" bodyend="-1"/>
-        <referencedby refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="137" endline="154">CExpandableBuffer</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="67" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="132" endline="147">CExpandableBuffer</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="79" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="79" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="77" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="77" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -49,7 +49,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="89" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="89" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="86" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_c_expandable_buffer_1a896a475d9b607bee138543e37a6ae13c" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -63,7 +63,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="98" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="98" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="95" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_c_expandable_buffer_1ae443329efce96b7791bc7d250c9e5c80" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -77,8 +77,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="107" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="107" bodyend="-1"/>
-        <referencedby refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="137" endline="154">CExpandableBuffer</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="104" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="132" endline="147">CExpandableBuffer</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_c_expandable_buffer_1ae79d319852348df51bf4121c8b4742b8" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -94,7 +94,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="116" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="116" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="113" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="113" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -146,12 +146,12 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="137" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="137" bodyend="154"/>
-        <references refid="class_c_expandable_buffer_1ad93a7591f7563e869535fb3ad44dc33e" compoundref="_c_expandable_buffer_8m" startline="68">DEFAULT_EXPANSION_FACTOR</references>
-        <references refid="class_c_expandable_buffer_1ae443329efce96b7791bc7d250c9e5c80" compoundref="_c_expandable_buffer_8m" startline="107">expansionFactor</references>
-        <referencedby refid="class_c_expandable_buffer_1a62ea501d1a9f9bfcd79a40c8a9c5f708" compoundref="_c_expandable_buffer_8m" startline="518" endline="546">testMatrix</referencedby>
-        <referencedby refid="class_c_expandable_buffer_1ac0e17fe339d2f550103a756a6e7b8a4c" compoundref="_c_expandable_buffer_8m" startline="557" endline="593">testSpeed</referencedby>
-        <referencedby refid="class_c_expandable_buffer_1a229c8336eb48fbaca09691932fcb0300" compoundref="_c_expandable_buffer_8m" startline="457" endline="507">testVector</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="132" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="132" bodyend="147"/>
+        <references refid="class_c_expandable_buffer_1ad93a7591f7563e869535fb3ad44dc33e" compoundref="_c_expandable_buffer_8m" startline="67">DEFAULT_EXPANSION_FACTOR</references>
+        <references refid="class_c_expandable_buffer_1ae443329efce96b7791bc7d250c9e5c80" compoundref="_c_expandable_buffer_8m" startline="104">expansionFactor</references>
+        <referencedby refid="class_c_expandable_buffer_1a62ea501d1a9f9bfcd79a40c8a9c5f708" compoundref="_c_expandable_buffer_8m" startline="547" endline="570">testMatrix</referencedby>
+        <referencedby refid="class_c_expandable_buffer_1ac0e17fe339d2f550103a756a6e7b8a4c" compoundref="_c_expandable_buffer_8m" startline="581" endline="613">testSpeed</referencedby>
+        <referencedby refid="class_c_expandable_buffer_1a229c8336eb48fbaca09691932fcb0300" compoundref="_c_expandable_buffer_8m" startline="494" endline="536">testVector</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a1f7addd13f7b10dbfb3b4012b553ee06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -178,11 +178,11 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="173" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="173" bodyend="196"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="166" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="166" bodyend="186"/>
       </memberdef>
-      <memberdef kind="function" id="class_c_expandable_buffer_1a2e83bb4a439a6c08fe49c0515586e8b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
-        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt; CExpandableBuffer::get</definition>
+      <memberdef kind="function" id="class_c_expandable_buffer_1a73808f14b664ba56fb212ed9f4784ccd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, ni &gt; &gt;</type>
+        <definition>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, ni &gt; &gt; CExpandableBuffer::get</definition>
         <argsstring>(matlabtypesubstitute ni, matlabtypesubstitute mi)</argsstring>
         <name>get</name>
         <param>
@@ -217,7 +217,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="212" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="212" bodyend="222"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="202" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="202" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a9bf2c7a52efd5e467927e78c0d59784c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -256,7 +256,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="241" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="241" bodyend="255"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="231" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="231" bodyend="245"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1aa334084b7a2d84169b2febce5e98b2e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -295,7 +295,63 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="274" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="274" bodyend="289"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="264" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="264" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_expandable_buffer_1a5ed697ee857789571ee6538ec60d405a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt; CExpandableBuffer::getLastNnonNaN</definition>
+        <argsstring>(matlabtypesubstitute n, matlabtypesubstitute mi)</argsstring>
+        <name>getLastNnonNaN</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>mi</declname>
+        </param>
+        <briefdescription>
+<para>getLastNnonNaN Get N rows (from end), discounting any rows with NaNs in. </para>        </briefdescription>
+        <detaileddescription>
+<para>y = obj.getLastNnonNaN(n[, mi])</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>n rows (int) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>col indices </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y data rows (float)</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="297" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="297" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_expandable_buffer_1ad1bc68d426cb2ad9fc1864170ae2185a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, nrows_nonNaN &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,nrows_nonNaN&gt; CExpandableBuffer::computeNnonNaN</definition>
+        <argsstring>(matlabtypesubstitute mi)</argsstring>
+        <name>computeNnonNaN</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>mi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="334" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="334" bodyend="342"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1afcf61362b68aa8d3b7ca9a1eafb4ab9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -345,7 +401,7 @@
 may start to be unacceptably slow as the n points increases </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="308" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="308" bodyend="319"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="345" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="345" bodyend="357"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a414077d9027e7495d48bf67b60d74984" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -395,7 +451,7 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="341" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="341" bodyend="347"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="379" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="379" bodyend="385"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a0408d24f12d65322710c1681b9380f71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -445,7 +501,7 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="368" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="368" bodyend="374"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="406" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="406" bodyend="412"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a45f92b3f9914d41cf77aef9c50acf084" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, n &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, m &gt; &gt;</type>
@@ -462,7 +518,7 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="395" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="395" bodyend="398"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="433" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="433" bodyend="436"/>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -478,8 +534,8 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="415" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="415" bodyend="418"/>
-        <referencedby refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" compoundref="clear_abs_all_8m" startline="17" endline="82">clearAbsAll</referencedby>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="453" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="453" bodyend="456"/>
+        <referencedby refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" compoundref="clear_abs_all_8m" startline="17" endline="76">clearAbsAll</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -496,8 +552,8 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="442" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="442" bodyend="445"/>
-        <references refid="test_suite_from_static_8m_1a93546a97a0ef68ec5d47a3890174658e" compoundref="test_suite_from_static_8m" startline="17" endline="32">testSuiteFromStatic</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="479" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="479" bodyend="482"/>
+        <references refid="test_suite_from_static_8m_1a93546a97a0ef68ec5d47a3890174658e" compoundref="test_suite_from_static_8m" startline="17" endline="33">testSuiteFromStatic</references>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a229c8336eb48fbaca09691932fcb0300" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -512,8 +568,8 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="457" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="457" bodyend="507"/>
-        <references refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="137" endline="154">CExpandableBuffer</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="494" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="494" bodyend="536"/>
+        <references refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="132" endline="147">CExpandableBuffer</references>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1a62ea501d1a9f9bfcd79a40c8a9c5f708" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -528,8 +584,8 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="518" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="518" bodyend="546"/>
-        <references refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="137" endline="154">CExpandableBuffer</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="547" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="547" bodyend="570"/>
+        <references refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="132" endline="147">CExpandableBuffer</references>
       </memberdef>
       <memberdef kind="function" id="class_c_expandable_buffer_1ac0e17fe339d2f550103a756a6e7b8a4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -544,8 +600,8 @@ may start to be unacceptably slow as the n points increases </para>        </det
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="557" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="557" bodyend="593"/>
-        <references refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="137" endline="154">CExpandableBuffer</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="581" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="581" bodyend="613"/>
+        <references refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" compoundref="_c_expandable_buffer_8m" startline="132" endline="147">CExpandableBuffer</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -562,40 +618,42 @@ may start to be unacceptably slow as the n points increases </para>        </det
 Todo: Abstract some methods to a generic <computeroutput>Buffer</computeroutput> class?</para><para>Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="454">
+      <node id="462">
         <label>handle</label>
       </node>
-      <node id="453">
+      <node id="461">
         <label>CExpandableBuffer</label>
         <link refid="class_c_expandable_buffer"/>
-        <childnode refid="454" relation="public-inheritance">
+        <childnode refid="462" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="456">
+      <node id="464">
         <label>handle</label>
       </node>
-      <node id="455">
+      <node id="463">
         <label>CExpandableBuffer</label>
         <link refid="class_c_expandable_buffer"/>
-        <childnode refid="456" relation="public-inheritance">
+        <childnode refid="464" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="18" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="17" bodyend="605"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" line="18" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/CExpandableBuffer.m" bodystart="17" bodyend="625"/>
     <listofallmembers>
       <member refid="class_c_expandable_buffer_1aa1ca207113294db7d1d653ad9cbba55a" prot="private" virt="non-virtual"><scope>CExpandableBuffer</scope><name>buffer</name></member>
       <member refid="class_c_expandable_buffer_1aa65ff4a2d35e248f4fd66e8b9a48834c" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>capacity</name></member>
       <member refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>CExpandableBuffer</name></member>
       <member refid="class_c_expandable_buffer_1af0eeb26f4827cd47e3566c925f9a06ff" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>clear</name></member>
+      <member refid="class_c_expandable_buffer_1ad1bc68d426cb2ad9fc1864170ae2185a" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>computeNnonNaN</name></member>
       <member refid="class_c_expandable_buffer_1ad93a7591f7563e869535fb3ad44dc33e" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>DEFAULT_EXPANSION_FACTOR</name></member>
       <member refid="class_c_expandable_buffer_1ae443329efce96b7791bc7d250c9e5c80" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>expansionFactor</name></member>
-      <member refid="class_c_expandable_buffer_1a2e83bb4a439a6c08fe49c0515586e8b7" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>get</name></member>
+      <member refid="class_c_expandable_buffer_1a73808f14b664ba56fb212ed9f4784ccd" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>get</name></member>
       <member refid="class_c_expandable_buffer_1a414077d9027e7495d48bf67b60d74984" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>getAfterX</name></member>
       <member refid="class_c_expandable_buffer_1afcf61362b68aa8d3b7ca9a1eafb4ab9d" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>getBeforeEach</name></member>
       <member refid="class_c_expandable_buffer_1a0408d24f12d65322710c1681b9380f71" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>getEqual</name></member>
       <member refid="class_c_expandable_buffer_1aa334084b7a2d84169b2febce5e98b2e9" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>getLastN</name></member>
+      <member refid="class_c_expandable_buffer_1a5ed697ee857789571ee6538ec60d405a" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>getLastNnonNaN</name></member>
       <member refid="class_c_expandable_buffer_1a9bf2c7a52efd5e467927e78c0d59784c" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>getN</name></member>
       <member refid="class_c_expandable_buffer_1a896a475d9b607bee138543e37a6ae13c" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>ncols</name></member>
       <member refid="class_c_expandable_buffer_1a45f92b3f9914d41cf77aef9c50acf084" prot="public" virt="non-virtual"><scope>CExpandableBuffer</scope><name>nElements</name></member>

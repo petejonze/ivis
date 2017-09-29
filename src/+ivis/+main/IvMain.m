@@ -52,7 +52,7 @@ classdef (Sealed) IvMain < handle
                 % path, removes all variables from the base workspace, and
                 % removes all compiled scripts, functions, and
                 % MEX-functions from memory.
-                error('nIvMain:MemoryCleared','PTB has modified the java classpath (any items in memory will have been cleared)\nWill abort, since this is highly likely to lead to errors later.\nTry running again, or see ''help PsychJavaTrouble'' for a more permenant solution\n\ntl;dr: Try running again.');
+                error('nIvMain:MemoryCleared','PTB has modified the java classpath (any items in memory will have been cleared)\nWill abort, since this is highly likely to lead to errors later.\n\nTry running again, or see ''help PsychJavaTrouble'' for a more permanant solution\n\nFYI: the solution, in short is to open up the matlab classpath.txt file, and manually add the necessary locations. For example, for me I opened up:\n\n  %s\n\nand at the end of the file I added these two lines:\n\n  %s\n  %s\n\nand then I restarted Matlab\n\n\ntl;dr: try running script again (or edit classpath.txt).', 'C:\Program Files\MATLAB\R2016b\toolbox\local', 'C:\Users\petej\Dropbox\MatlabToolkits\Psychtoolbox\PsychJava', 'C:\Users\petej\Dropbox\MatlabToolkits\PsychTestRig\Utilities\memory\MatlabGarbageCollector.jar');
             end
         end
         
@@ -120,11 +120,11 @@ classdef (Sealed) IvMain < handle
             
             % initialise memory
             % clearJavaMem(); % disabled: might cause problems if initialising after a PTB window has been opened(?)
-            
+
             % start logging the command window
             fn = sprintf('commandline-%s.txt', datestr(now(),30));
-            fullFn = fullfile(ivisdir(), 'logs', 'diary', fn)
-fullFn = fn           
+            fullFn = fullfile(ivisdir(), 'logs', 'diary', fn);
+% fullFn = fn           
         	fclose(fopen(fullFn, 'wt')); % make file
             diary(fullFn); % start diary
             
@@ -162,7 +162,7 @@ fullFn = fn
 
             % get params
          	params = IvParams.getInstance();
-               
+             
             % print messsage to console
             if params.main.verbosity > 0
                 fprintf('IVIS: launching...\n');
@@ -183,9 +183,9 @@ fullFn = fn
 %             end
             
             try
-                
+                length(javaclasspath('-dynamic'));
                 % check for bad java class path..
-                ivis.main.IvMain.checkClassPath()
+                ivis.main.IvMain.checkClassPath();
 
                 %--------------------------------------------------------------
                 % make GUI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -194,7 +194,7 @@ fullFn = fn
                 % figures are tiled even if a fullscreen window is open
                 % (otherwise seems to struggle to set focus on the dock)
                 if params.GUI.useGUI
-                    IvGUI(params.GUI.screenNum, params.GUI.dockFlag);
+                    IvGUI(params.GUI.screenNum);
                 end
                 
                 %--------------------------------------------------------------
@@ -208,7 +208,7 @@ fullFn = fn
                         AssertOpenGL;
 
                         % !!!!required to work on slow computers!!! Use with caution!!!!!
-                        Screen('Preference', 'SkipSyncTests', 1);
+                        Screen('Preference', 'SkipSyncTests', 2);
 
                         % Cache key timing functions
                         % KbCheck();
@@ -251,7 +251,7 @@ fullFn = fn
                         %PsychImaging('AddTask', 'General', 'EnablePseudoGrayOutput');
                         %winhandle = PsychImaging('OpenWindow', params.graphics.testScreenNum);
                     %end
-                    
+                 
                     % validate
                     maxFlipsPerSecond = 1/Screen('GetFlipInterval', winhandle);
                     if maxFlipsPerSecond < params.graphics.targFrameRate
@@ -414,7 +414,7 @@ fullFn = fn
                 %Screen('closeall'); % must come after SingletonManager.clearAll() to ensure IvVideo has a chance to destroy
                 
                 % not sure about these:
-                clear IvMain; % does anything?
+                %clear IvMain; % does anything?
                 clear GetCharJava % does anything?
                 clearJavaMem();
                 PsychJavaSwingCleanup(); % replicates clearJavaMem
@@ -426,17 +426,19 @@ fullFn = fn
                 % variables such as the fliprate will be stored in java memory
                 % clearJavaMem
                 % Close figures:
-                try
-                    close('all', 'hidden');
-                catch  %#ok do nothing
-                end
-                % Closing figures might fail if the CloseRequestFcn of a figure
-                % blocks the execution. Fallback:
-                AllFig = allchild(0);
-                if ~isempty(AllFig)
-                    set(AllFig, 'CloseRequestFcn', '', 'DeleteFcn', '');
-                    delete(AllFig);
-                end
+%                 try
+%                     close('all', 'hidden');
+%                 catch  %#ok do nothing
+%                 end
+%                 % Closing figures might fail if the CloseRequestFcn of a figure
+%                 % blocks the execution. Fallback:
+%                 AllFig = allchild(0);
+%                 if ~isempty(AllFig)
+%                     set(AllFig, 'CloseRequestFcn', '', 'DeleteFcn', '');
+%                     delete(AllFig);
+%                 end
+% ^^^ this is silly, as it will also close any figure windows opened
+% manually by the user (e.g., for debugging)
                 
                 % Print final message
                 if verbosity > 0

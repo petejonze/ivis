@@ -12,7 +12,10 @@
 %    none
 % 
 %  Example:
-%    none
+%    clearAbsAll; x = ivis.math.pdf.IvHfGauss2D([0 0], [100 100]), x.getPDF([-9991 -9991]), x.getPDF([-1 -1])
+%   
+%  Example:
+%    ivisDemo011_advancedClassifiers_noScreen()
 % 
 %  Author:
 %    Pete R Jones <petejonze@gmail.com>
@@ -25,4 +28,8 @@
 %  *********************************************************************
 %  
 %  TODO: truncate
+%
+%    Reference page in Doc Center
+%       doc ivis.math.pdf.IvHfGauss2D
+%
 %

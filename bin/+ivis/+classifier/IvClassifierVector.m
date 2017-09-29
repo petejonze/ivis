@@ -34,3 +34,7 @@
 %  (currently the latter will crash, due to some crude hacks [simple fixes])
 %  n.b. '0' is due north in the deg form
 %
+%    Reference page in Doc Center
+%       doc ivis.classifier.IvClassifierVector
+%
+%

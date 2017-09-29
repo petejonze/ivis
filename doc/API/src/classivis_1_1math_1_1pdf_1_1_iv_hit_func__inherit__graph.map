@@ -1,8 +1,4 @@
 <map id="ivis::math::pdf::IvHitFunc" name="ivis::math::pdf::IvHitFunc">
-<area shape="rect" id="node3" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_gauss.html" title="Univariate Gaussian probabilty distribution function for the likelihood&#45;based classifier(s)." alt="" coords="347,5,520,32"/>
-<area shape="rect" id="node4" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html" title="Bivariate Gaussian probabilty distribution function for the likelihood&#45;based classifier(s)." alt="" coords="339,56,527,83"/>
-<area shape="rect" id="node5" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix.html" title="Mixture of a univariate&#45;Gaussian and uniform probabilty distribution function for the likelihood&#45;base..." alt="" coords="346,107,521,133"/>
-<area shape="rect" id="node6" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d.html" title="Mixture of a bivariate&#45;Gaussian and uniform probabilty distribution function for the likelihood&#45;based..." alt="" coords="338,157,529,184"/>
-<area shape="rect" id="node7" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_uniform.html" title="Univariate uniform probabilty distribution function for the likelihood&#45;based classifier(s)." alt="" coords="341,208,525,235"/>
-<area shape="rect" id="node8" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d.html" title="Bivariate uniform probabilty distribution function for the likelihood&#45;based classifier(s)." alt="" coords="334,259,533,285"/>
+<area shape="rect" id="node3" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d.html" title="Bivariate Gaussian probabilty distribution function for the likelihood&#45;based classifier(s)." alt="" coords="5,155,192,181"/>
+<area shape="rect" id="node4" href="$classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d.html" title="Bivariate uniform probabilty distribution function for the likelihood&#45;based classifier(s)." alt="" coords="217,155,415,181"/>
 </map>

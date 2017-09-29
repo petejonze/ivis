@@ -22,3 +22,7 @@
 %  *********************************************************************
 % 
 %
+%    Reference page in Doc Center
+%       doc ivis.graphic.IvScreenObject
+%
+%

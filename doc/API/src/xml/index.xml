@@ -2,13 +2,13 @@
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.3.1">
   <compound refid="class_c_circular_buffer" kind="class"><name>CCircularBuffer</name>
     <member refid="class_c_circular_buffer_1ac0492cb17e866681daeade88652feeaa" kind="variable"><name>buffer</name></member>
-    <member refid="class_c_circular_buffer_1aef1fab2fbffc91eaf2b3f8d5b2c68b48" kind="variable"><name>i</name></member>
     <member refid="class_c_circular_buffer_1a514b50528ca59b2ab52839fba30d8ad3" kind="variable"><name>capacity</name></member>
     <member refid="class_c_circular_buffer_1a1ead1f532a1c654e1476afb7d1fd44bf" kind="variable"><name>ncols</name></member>
+    <member refid="class_c_circular_buffer_1aef1fab2fbffc91eaf2b3f8d5b2c68b48" kind="variable"><name>i</name></member>
     <member refid="class_c_circular_buffer_1afa91bf23eec98f5074e269930cb8a208" kind="function"><name>CCircularBuffer</name></member>
     <member refid="class_c_circular_buffer_1aa18c18312e3ee3d53edd91172bcca22c" kind="function"><name>put</name></member>
     <member refid="class_c_circular_buffer_1a371b5c278db1c39b28cd442b66cfb9e4" kind="function"><name>getN</name></member>
-    <member refid="class_c_circular_buffer_1a477ffa55edf0ff84e1772cb45ae5f73c" kind="function"><name>get</name></member>
+    <member refid="class_c_circular_buffer_1a34a1d01ad580d54f4292c7881f3b1015" kind="function"><name>get</name></member>
     <member refid="class_c_circular_buffer_1a5b7e23cabfb7a79de1284c73a72d913b" kind="function"><name>nElements</name></member>
     <member refid="class_c_circular_buffer_1a4166734443e382a888f8cfd26294d4da" kind="function"><name>clear</name></member>
     <member refid="class_c_circular_buffer_1a91040c34319c02b2eb5541853305afc0" kind="function"><name>unitTests</name></member>
@@ -25,9 +25,11 @@
     <member refid="class_c_expandable_buffer_1ae79d319852348df51bf4121c8b4742b8" kind="variable"><name>nrows</name></member>
     <member refid="class_c_expandable_buffer_1a86cfc07ab005629825a291c53fb582da" kind="function"><name>CExpandableBuffer</name></member>
     <member refid="class_c_expandable_buffer_1a1f7addd13f7b10dbfb3b4012b553ee06" kind="function"><name>put</name></member>
-    <member refid="class_c_expandable_buffer_1a2e83bb4a439a6c08fe49c0515586e8b7" kind="function"><name>get</name></member>
+    <member refid="class_c_expandable_buffer_1a73808f14b664ba56fb212ed9f4784ccd" kind="function"><name>get</name></member>
     <member refid="class_c_expandable_buffer_1a9bf2c7a52efd5e467927e78c0d59784c" kind="function"><name>getN</name></member>
     <member refid="class_c_expandable_buffer_1aa334084b7a2d84169b2febce5e98b2e9" kind="function"><name>getLastN</name></member>
+    <member refid="class_c_expandable_buffer_1a5ed697ee857789571ee6538ec60d405a" kind="function"><name>getLastNnonNaN</name></member>
+    <member refid="class_c_expandable_buffer_1ad1bc68d426cb2ad9fc1864170ae2185a" kind="function"><name>computeNnonNaN</name></member>
     <member refid="class_c_expandable_buffer_1afcf61362b68aa8d3b7ca9a1eafb4ab9d" kind="function"><name>getBeforeEach</name></member>
     <member refid="class_c_expandable_buffer_1a414077d9027e7495d48bf67b60d74984" kind="function"><name>getAfterX</name></member>
     <member refid="class_c_expandable_buffer_1a0408d24f12d65322710c1681b9380f71" kind="function"><name>getEqual</name></member>
@@ -40,6 +42,7 @@
   </compound>
   <compound refid="classivis_1_1audio_1_1_iv_audio" kind="class"><name>ivis::audio::IvAudio</name>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a6a104a2579585a1ac32298af54c07583" kind="variable"><name>r2_CRITERION</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1a660ea723777c5849f2227074a50a27f7" kind="variable"><name>interface</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a10b30ff717cdaba90efe26d9d43314ca" kind="variable"><name>isEnabled</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a10d4f7391999ee8a11019995bc8db9be" kind="variable"><name>devID</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a5bf29aca886e474dca625066454a4546" kind="variable"><name>Fs</name></member>
@@ -50,6 +53,8 @@
     <member refid="classivis_1_1audio_1_1_iv_audio_1add96de7e3dc137c46d6218ad0ba22181" kind="variable"><name>useCalibration</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a21e7ac7b00b2064b7aabf3e66744db0b" kind="variable"><name>rms2db_fn</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a5130f881e1188480ced8a1c048c1849a" kind="variable"><name>defaultLevel_db</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1a4157873481d263c9d1e064a32e1797b3" kind="variable"><name>BAD_SND</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1acf17efd796ecbe3ca37d2116c3210b53" kind="variable"><name>GOOD_SND</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a814be24e1d5e8f9b0e707fd68269d958" kind="variable"><name>pahandle</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a6b02fc620fa78d3ea8f4afde8d90ab3e" kind="variable"><name>rms2db_raw</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1ab124f506c85af8ae0877f9cbe2dce441" kind="variable"><name>db2rms_fcn</name></member>
@@ -64,9 +69,11 @@
     <member refid="classivis_1_1audio_1_1_iv_audio_1aaeae0f1476eeb0ad639316d905dd8214" kind="function"><name>rampOnOff</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1aedb64b91f5c7ed9c031214ded9856614" kind="function"><name>setLevel</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a386619a4129428069f009bc9eca66109" kind="function"><name>setDefaultLevel</name></member>
-    <member refid="classivis_1_1audio_1_1_iv_audio_1a29302fc097b24bffb768dc262a3efea7" kind="function"><name>wavload</name></member>
-    <member refid="classivis_1_1audio_1_1_iv_audio_1aa84483979fcc26b1b65b867287c0a356" kind="function"><name>loadAll</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1a93b614a5e27b3ee6191c923c42ac10a6" kind="function"><name>wavload</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1a31688e680b8d5e2010003c0c56e64206" kind="function"><name>loadAll</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1a16d3985ab4fe58e4c04ed294a9539c9e" kind="function"><name>getNewSlave</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a5b777585f4977c4344ccaf9a1130b4e4" kind="function"><name>getPureTone</name></member>
+    <member refid="classivis_1_1audio_1_1_iv_audio_1ada14ae38d0480177656cfd9aa4858c21" kind="function"><name>padChannels</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1ae2596a56884684f8255104baa5797e0a" kind="function"><name>setRMS</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1a5ee9c81b35d41f37af5ecc6f56f5c030" kind="function"><name>UnitTest</name></member>
     <member refid="classivis_1_1audio_1_1_iv_audio_1aa79b6ce80c5a1c2edf8b5213436973e0" kind="function"><name>getInstance</name></member>
@@ -99,7 +106,7 @@
   <compound refid="classivis_1_1calibration_1_1_iv_calibration" kind="class"><name>ivis::calibration::IvCalibration</name>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1ad91e65f02a8250a4c8f03cc35ea6c339" kind="variable"><name>guiElement</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a53502177169227c11188486593cd1ff3" kind="variable"><name>nRecursions</name></member>
-    <member refid="classivis_1_1calibration_1_1_iv_calibration_1ae76f728b3ad04ef76311e9bdc95fc498" kind="variable"><name>outlierThresh_deg</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1a28fa87a7c2808b0dffcca74e15d7c1ef" kind="variable"><name>outlierThresh_px</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a74f039c6edc53a40b843aec37c19918f" kind="variable"><name>targ</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a2067368c5bbedcb9b92a35382911b44f" kind="variable"><name>resp</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1aa3fa76b9cd801a34bdcfb1b6f04704f9" kind="variable"><name>idx_used</name></member>
@@ -112,18 +119,48 @@
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a919534b51e96f5314193ff1960ff4f21" kind="function"><name>addMeasurements</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a3b792dd2599307d8ba418aa6c25c04a6" kind="function"><name>removeMeasurements</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a786d1aa6cad0dc761946b852cc50cba8" kind="function"><name>clearMeasurements</name></member>
-    <member refid="classivis_1_1calibration_1_1_iv_calibration_1ab876003ab87bd90f687626c7782daa41" kind="function"><name>getMeasurements</name></member>
-    <member refid="classivis_1_1calibration_1_1_iv_calibration_1afff208e1b0229c2a484e9e23ab01a5e5" kind="function"><name>compute</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1ab431cd35db7b79be3aeb0f0b957c7d2c" kind="function"><name>getNTargs</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1a72d3bec4f08569a129772753c00369a2" kind="function"><name>getNMeasurements</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1ab32be4f2af45f5f246d4618bd553d609" kind="function"><name>getRawMeasurements</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1a0b4673814458d7d426a9a797c653b079" kind="function"><name>compute</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1a82d3e07e91cbafd6f2ed178fee20e7bf" kind="function"><name>plotCurrentCalibration</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a36fcd6a72fa258ae2b86acd5683a9881" kind="function"><name>clear</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a5257b550dee553f3f1dc9f46f91aea75" kind="function"><name>save</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a32d1a77d6d6aa88bf853b6d85eacd9dd" kind="function"><name>load</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a8f72ad41101ec9e31156b6e96ef998cb" kind="function"><name>resetDriftCorrection</name></member>
-    <member refid="classivis_1_1calibration_1_1_iv_calibration_1aaad6fdc413dcb02531587aef283013fd" kind="function"><name>updateDriftCorrection</name></member>
+    <member refid="classivis_1_1calibration_1_1_iv_calibration_1afe8e6f9a02e681d30b0f37e568f25699" kind="function"><name>updateDriftCorrection</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1acf6b02f25f02c68b6cde5cd8889805f9" kind="function"><name>apply</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1af8f759bb731ad56fd0abe13aa36704f4" kind="function"><name>getSetSingleton</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a2b24b9d18f664a8419454733d2d1b7f3" kind="function"><name>getInstance</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1a0b78c5c6e0bf854672a0a0a24b949d6e" kind="function"><name>finishUp</name></member>
     <member refid="classivis_1_1calibration_1_1_iv_calibration_1adb815eab0fbf01f6149e9836592762e3" kind="function"><name>isInit</name></member>
+  </compound>
+  <compound refid="classivis_1_1calibration_1_1_track_box" kind="class"><name>ivis::calibration::TrackBox</name>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a6dcc5c14f114d198d634c3dcc9ffda2f" kind="variable"><name>ALLOW_IMPLICIT_CONSTRUCTION</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ab63123e9b31c04b9d29164b86f90de62" kind="variable"><name>winhandle</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a0d8255b798082e3d3ff04c474840f89f" kind="variable"><name>eyeTracker</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a4ca6370e9e74c084b3e3bc5798f812e8" kind="variable"><name>monitorwidth_mm</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ad5675062c3e1e1033dd94c2595b6ad30" kind="variable"><name>monitorheight_mm</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ae6cbff796109139e863b87790092e343" kind="variable"><name>monitorwidth_px</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ae637c3fd4188cb9a3cd39cd1e0d59162" kind="variable"><name>monitorheight_px</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a5ac01e6ad43af3d7a0da198f1525d324" kind="variable"><name>trackerInFrontMonitor_mm</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a853b402aceaad7efeb2f9e97ac9f42bd" kind="variable"><name>boxdist_mm</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1afae7787f586f6aa2bb4383e87199dd00" kind="variable"><name>boxsize_mm</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a614f6f4bbf4d10f4231a87cfd5abbea6" kind="variable"><name>amax</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1abe4043b18a77b44b36ac5cf009a61b66" kind="function"><name>TrackBox</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a748f7ccb648169bdea78c761f30d0626" kind="function"><name>delete</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ac0759f4d6d92a83d8ea6aba6d62ff5dd" kind="function"><name>draw</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1af956a55489096af38e9c3c9dd607cf6d" kind="function"><name>start</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a16e9506c60d03d3735ee9abc841b517a" kind="function"><name>stop</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a14cd4aa50805f784a3b57e5f49e3310b" kind="function"><name>toggle</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1aa7c366e75b97f8d4f4f96f73b25f9434" kind="function"><name>drawcube</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a7c09fc0e3ce2a00263180fc67fa288eb" kind="function"><name>drawsurface</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a10361022b6e6ee0d01d684674e1b6fce" kind="function"><name>normalise</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a5f422ba168d68de3e8e5f41e29db4c53" kind="function"><name>ucs2mycs</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1a019774c66e0e82fa542474cb34f882c1" kind="function"><name>drawcircle</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ab217009ba09e7c04463793ec154ad599" kind="function"><name>getSetSingleton</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1acaa6c724b47d4ff1295520128594649e" kind="function"><name>getInstance</name></member>
+    <member refid="classivis_1_1calibration_1_1_track_box_1ac94d5782eb47cc0897af4f9fae9664ed" kind="function"><name>finishUp</name></member>
   </compound>
   <compound refid="classivis_1_1classifier_1_1_iv_classifier" kind="class"><name>ivis::classifier::IvClassifier</name>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a04a59983d24bc68387ae546793d47378" kind="variable"><name>graphicObjs</name></member>
@@ -146,23 +183,54 @@
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a36c07d58bbde6dc266c33585a568ef16" kind="variable"><name>STATUS_HIT</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a1c637cfd67f0b5983067ce031420211e" kind="variable"><name>STATUS_MISS</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a83c14ce979c9a2fdcb9312e33dd99dce" kind="variable"><name>NULL_OBJ</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1adc9d2ac83d19a5e62571adcf9ee1f70f" kind="variable"><name>TIMEOUT_OBJ</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a8661e693047d2847bc6a2cd0ae0169c5" kind="function"><name>updateParams</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a72a2130b89430b5f753476c8ded3a542" kind="function"><name>updateEvidence</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a835a86e08b7ff8accf99327c823f1a11" kind="function"><name>updateEvidence</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a25bc6a8a9644938f5bbd2bfcc01f5fd8" kind="function"><name>getClassObj</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1ab3ed2c1a7e0118b868b712a0d6211cf3" kind="function"><name>classifierSpecificReset</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a925e3abf49c782b81ca0aba90ba895dc" kind="function"><name>updateGUI</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a5b2819ff50ff11d99a79051be116c710" kind="function"><name>reset</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_1afc5454bcf7b2fb99537959f64b541e7a" kind="function"><name>getData</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a1218a671793dc9a8f210d104e1b5f198" kind="function"><name>reset</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a16ca5ea0084ecb6b3c81de4b36f52c50" kind="function"><name>getData</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1aa96c64cefcf383b74f1edb4a5cf32594" kind="function"><name>getOnsetRamp</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac9ce582ce5fa9aee80a98d7f22e21f1c" kind="function"><name>updateStatus</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac10941b9d85cb4c69ca2072b0afe5534" kind="function"><name>draw</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1ab5d9fe2b1e17840cc08cd36367111f40" kind="function"><name>IvClassifier</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a339c72a28860e2904fb547bfde43f5c2" kind="function"><name>delete</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_1aa694bc9b8ae48854b9f3873be0db3508" kind="function"><name>start</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a325e3b530353341493705f0390901c73" kind="function"><name>setCriterion</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a30a6dc65fbd3dde3ddcbf3b38d088a57" kind="function"><name>start</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a0aa7349ba7f1c3a31d34f1c641ff4a14" kind="function"><name>update</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1a3e0e31ec59ec5eb5c6b6f9fdcfb113d6" kind="function"><name>getStatus</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac744744cdf9527d414d9d8540bd8d661" kind="function"><name>isUndecided</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a5cba4ff042d53f4dc9e915352b1f24e7" kind="function"><name>interogate</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a1b91a666d804ecb5e6a7f2658b30c15d" kind="function"><name>interogate</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1ae6c41fc965dee637d55c51d4110485a7" kind="function"><name>show</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_1adf313ca7e05baa02ddcb9be8ceca37a7" kind="function"><name>hide</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_1ac9ce582ce5fa9aee80a98d7f22e21f1c" kind="function"><name>updateStatus</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1ab7f7d455f29c8ae8feb704787e6afed6" kind="function"><name>forceAnswer</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_1a057922b37d62caa36b6f0f604b60b3c9" kind="function"><name>resetOnsetRampParams</name></member>
+  </compound>
+  <compound refid="classivis_1_1classifier_1_1_iv_classifier_box" kind="class"><name>ivis::classifier::IvClassifierBox</name>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a611fe919e1521ae7cae53d5e0299e5ef" kind="variable"><name>margin_px</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1aab7089940f7e8a3677e27172a85771ff" kind="variable"><name>npoints</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a84104b2ac52a55acbfbaba475cb33e09" kind="variable"><name>nsecs</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1aaa8fa8c6432d631fe85f223bcc0b7798" kind="variable"><name>rectColour</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a598425fe788d78703cdd08b57fad3c9d" kind="variable"><name>nullrects</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1acabf80ef79cada83949378f23beeaace" kind="variable"><name>xyrects_xywh</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1ac6e3f6678c4269aa7b24d0d4d0208466" kind="variable"><name>xyrects_xyxy</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a2e4c1c1111aa924352e7a2146d595e6c" kind="variable"><name>path_enabled</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a421aa41064899dc55f6216b1ecfb177b" kind="variable"><name>path_maxDeviation_px</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1aa8a0988e7a514b6085354cf444b88482" kind="variable"><name>path_n</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a67e9a2aa7d885b5cd5dc7f225c9b66fb" kind="variable"><name>path_criterion_n</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a28d6c6f8b515d3213b69e3c59a119201" kind="variable"><name>path_xyStart_px</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a9f4860962e49d3cb130100eb99c41e18" kind="variable"><name>path_xyEnd_px</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1ad36579c3bcc122a32afd40c96a75469b" kind="variable"><name>stationarity_criterion_degsec</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a72f3f577c3fab61b3093adb89afc4db5" kind="function"><name>IvClassifierBox</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a05217f569030023e5a56dc131a71326b" kind="function"><name>delete</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a4b01aa38724a5e1ec3c56cecb909fbee" kind="function"><name>draw</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a7dc44251f26d3f4ae938e3fae68cc0db" kind="function"><name>setBoxMargins</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1ae2c23c4f8c2b9fd2d3002c8597a938bc" kind="function"><name>updateParams</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1a750818f1d36b55c6f1ffa2b0f6228e1b" kind="function"><name>updateEvidence</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1aefbfdd14b0a5d2bd4fa193c0de9558c0" kind="function"><name>getClassObj</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1ad539c0c436422c530650dab1ffe7eee4" kind="function"><name>classifierSpecificReset</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_box_1ab891a54d2048918f70258691b18952e8" kind="function"><name>graphicChangeEventHandler</name></member>
   </compound>
   <compound refid="classivis_1_1classifier_1_1_iv_classifier_grid" kind="class"><name>ivis::classifier::IvClassifierGrid</name>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1ae18c33df9e6c390cefb0b8f357cee4c6" kind="variable"><name>poly</name></member>
@@ -173,20 +241,24 @@
     <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a16a00ffaf407af5ae55560be42bad754" kind="function"><name>IvClassifierGrid</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a6d52b8496c5aa7e7b9ec5e26d7ceb38d" kind="function"><name>draw</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a21cb05012b3a1ede0f49ef42b46af667" kind="function"><name>updateParams</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a72f57917c7be55f093febf2671a49ca4" kind="function"><name>updateEvidence</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1a13a1240570ca014642d7de124fcfa7d5" kind="function"><name>updateEvidence</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1acc53c3d3f4c37c75b16a1208be95f7b0" kind="function"><name>getClassObj</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_grid_1aee5af4542d91fd88e9d7b4d3566286cc" kind="function"><name>classifierSpecificReset</name></member>
   </compound>
   <compound refid="classivis_1_1classifier_1_1_iv_classifier_l_l" kind="class"><name>ivis::classifier::IvClassifierLL</name>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a4158e17f664de405b891f11101f77cac" kind="variable"><name>hitFuncs</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1afd3e14843f766b90d4daafa96fa55c83" kind="variable"><name>is2D</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a55d333c1845538d9bff4e9209475a2ac" kind="variable"><name>stdNullrect</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a55ac9424dbbd486d3b1191c41e9511b3" kind="variable"><name>xyWeights</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a4560d8536ec5e2a8720604b3626e3a9a" kind="variable"><name>stdNullrect</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1ac461763a1a47852e864a58988d32379e" kind="variable"><name>stdRect</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a44f1461bca19db10f97c1bba63ada022" kind="variable"><name>drawColor</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a780e907b42e389eafdc3c57f3091bf6e" kind="function"><name>IvClassifierLL</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a7de7f8d9d5d9abd40380d3afb4cc6086" kind="variable"><name>drawColor</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a21c8eb07281492d4717a5f686119f60e" kind="variable"><name>printDebugInfoToConsole</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a9334f3ac21c2bf59d7df6571f62acb72" kind="function"><name>IvClassifierLL</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a243ec6b882dc7dc4453f9158a24ad967" kind="function"><name>draw</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1aa90d6242e0bd86bd1a3aa81b2a3a68ba" kind="function"><name>setXYWeights</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1acef2a9c36149ea0ff93bb573d3652d28" kind="function"><name>updateParams</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a535b68b80463f40390648c17421abab1" kind="function"><name>updateEvidence</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a7dd1b2440c7016fb6fc10efa700929c4" kind="function"><name>updateEvidence</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1a2c316341a963c7b63b27590b9f4f441e" kind="function"><name>getClassObj</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_l_l_1aef78ff75894985f19d4d53e20db76ad7" kind="function"><name>classifierSpecificReset</name></member>
   </compound>
   <compound refid="classivis_1_1classifier_1_1_iv_classifier_vector" kind="class"><name>ivis::classifier::IvClassifierVector</name>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a63dd6622f4576fb1a2f86ee22b41fd3e" kind="variable"><name>targDirection_deg</name></member>
@@ -201,15 +273,20 @@
     <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a6c5b0430d3ab7a2a4cba556af789ee6e" kind="function"><name>draw</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a0819270155e5c5cd311bcd89fc689692" kind="function"><name>updateGUI</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a1bd4dd6307c3b168788ad3537280655d" kind="function"><name>updateParams</name></member>
-    <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1af253e6edc6fe74ec5e27d17980367cc1" kind="function"><name>updateEvidence</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a44fa52e201614cc41dfa6619e5e23c6e" kind="function"><name>updateEvidence</name></member>
     <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1a98e9e43ed5408eeb3e7e0d4aaf3b80e6" kind="function"><name>getClassObj</name></member>
+    <member refid="classivis_1_1classifier_1_1_iv_classifier_vector_1aeed9bcf9c1116599a0f1a387725af91b" kind="function"><name>classifierSpecificReset</name></member>
   </compound>
   <compound refid="classivis_1_1eyetracker_1_1_iv_data_input" kind="class"><name>ivis::eyetracker::IvDataInput</name>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a89ce783469e063300397634f5d555375" kind="variable"><name>lastXYT_raw</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1abcf2b6ee3fe80664647ce7e3cfe08174" kind="variable"><name>lastXYT_raw_nonNaN</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a75dd8e1b2dfbadb33c6e4c132b52e329" kind="variable"><name>lastXYT</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac086a9a54cfbc048e37c4fbebee261fc" kind="variable"><name>lastXYT_nonNaN</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a35e0d84e9185091eb163e913bb9c43e8" kind="variable"><name>mostRecentSaccadeTime</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a255cfebf3a8a7ebcf047e27256f794b2" kind="variable"><name>mostRecentBlinkTime</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1af6ca037ade2e5599928b5d9b78161c32" kind="variable"><name>lastXYTV</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa20f2b653e0eca77fce935d5ab968849" kind="variable"><name>lEyeball_xyzt</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aff7e1ecb9b621bd47456b8169e5cacb7" kind="variable"><name>rEyeball_xyzt</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a65e232c04928f4debbca4e3a2b098c61" kind="variable"><name>lEyeball_xyzt_raw</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4a2ed538537b22661f5d4108f0d84304" kind="variable"><name>rEyeball_xyzt_raw</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac4e0d01daa92d1dd36c149eae4c60c21" kind="variable"><name>trackerInFrontMonitor_mm</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a15616d2cf7fe99b4dd089767b68271dc" kind="variable"><name>zCalibrationOffset_mm</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a1913c46fb4c70f970b70716e94801f75" kind="variable"><name>doBeep</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ad1adfd06a2ebaa7d94ccce0aa25d4cc7" kind="variable"><name>debugMode</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aca5ef783a1bb71855cb584c9915a95fe" kind="variable"><name>saccadeCounter</name></member>
@@ -219,7 +296,7 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8080629d5a7b8a67c533862afc336f40" kind="variable"><name>useFixationTexture</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1af67eaa9853ff3a137dc6238ccd6e1e1a" kind="variable"><name>fixationTexture</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1af8c354f5e471ca630f257dcb6cf21c93" kind="variable"><name>fixationTextureRect</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a06b3eb1a63cc0c79963994c7aa480d3f" kind="variable"><name>xMouseOffset</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac2ee19530c204ac63f2565d73ce0be79" kind="variable"><name>xMouseOffset</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a62766e11ed34877be1144608645c83dd" kind="variable"><name>winhandle</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a90dc0ae2e8c72f7924d3adcdaba070fd" kind="variable"><name>testScreenWidth</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4db06790a0e4bd76cf3f8468189a128c" kind="variable"><name>testScreenHeight</name></member>
@@ -228,9 +305,10 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a92b4378260540ea3a19ccf20a4febe94" kind="variable"><name>subclass</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8df07712eabcff179a14910274c00803" kind="variable"><name>eyes</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ab3a2e158260b58edad0f04033abc078e" kind="variable"><name>enableTagging</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0d1e2dc5e6464acb2a812998a91f2d63" kind="variable"><name>SACCADE_ON_CODE</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ad194776294a2f6d7a0e8e2e955d3c3ca" kind="variable"><name>SACCADE_OFF_CODE</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a2665564a8e2f38c396f768e550f1edc8" kind="variable"><name>BLINK_CODE</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ae6154ac748eec0e4d485026b8118693d" kind="variable"><name>includeTagsInRawOutput</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ac5cb5b58b6106c349f006f7ae62f3827" kind="variable"><name>SACCADE_ON_BITPOS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa155c6758075407ff9b161c5a2546180" kind="variable"><name>SACCADE_OFF_BITPOS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0bc2a3cdd4bf59de709f0bed9f59baf6" kind="variable"><name>BLINK_BITPOS</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0c95a068512799d7ebceacf6dd643446" kind="variable"><name>nDataPoints</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a816aa6587492d79c771d6734c2408efa" kind="variable"><name>nDataPointsPerCycle</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a069614924c281ceee78978b90fbd95c4" kind="variable"><name>nCycles</name></member>
@@ -256,17 +334,20 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a32aa11fcf75233619b97a73713bad66e" kind="variable"><name>buffer2</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a3e57072e65652b9b5a8a281ef020fc31" kind="variable"><name>buffer3</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ae03b4dd289298ef10968d8a56188ac27" kind="variable"><name>pixel_per_dg</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1add963943d4e15ce92b9a4eb0c9ca2740" kind="variable"><name>blinkTemporalMin_secs</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a1963d14659912d260dc5f8a1c89e4859" kind="variable"><name>expectedLatency_sec</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8c9b00752e70c4e640ded992d38db55e" kind="variable"><name>LOG_RAW_DATA</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a7a9dee508c203904beb648403fb8e04e" kind="variable"><name>RAWLOG</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a603ecd31cced90b02f89946bb0bd3816" kind="function"><name>connect</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a6a86fd4d1b6829f0509dbf440fe0b4f7" kind="function"><name>reconnect</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ae74e03de1876c373e1c60fe07209a543" kind="function"><name>refresh</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a9354ed6e5c78ac16e2355ae8e0804834" kind="function"><name>refresh</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a749998b017d17ea231a10ec70a0ad00b" kind="function"><name>flush</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1adb98e694f54590f943cbc9a665e6dada" kind="function"><name>delete</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1abaea0b42f3c39d440513768c050b9fe6" kind="function"><name>setFixationMarker</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ab0ffab39cb9501a81ea79585b65de19d" kind="function"><name>updateDriftCorrection</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a9a583f4b5ff607184c7873b8469a8b58" kind="function"><name>getLastKnownXY</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a511bf3df895d8ad25ed807353b14922c" kind="function"><name>updateDriftCorrection</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a75d2955f26d57921ac6448612a70d3b8" kind="function"><name>getEyeballLocations</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ab106c0e1073b69cedc0a004ddbaec47b" kind="function"><name>getLastKnownViewingDistance</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0d2889db7e2b909037600c8bbe21424d" kind="function"><name>calibrateDistanceToScreen</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a76e38f50c7f797675688d9765b362fb2" kind="function"><name>readRawLog</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4409f8bb6979af1eeeb2ca909749cafb" kind="function"><name>validateSubclass</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a14aa59be5e4a510977aca634e260295e" kind="function"><name>init</name></member>
@@ -277,12 +358,13 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1adac9ab3e4ab3979db501665b450879c7" kind="function"><name>validate</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa338f0a3be26e5fc48065263df0998c2" kind="function"><name>getSetSingleton</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a8a9031a70b149a7e54cd55945d5ce491" kind="function"><name>IvDataInput</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a51c37af2d1a616cf0d6ee9a028b0237e" kind="function"><name>processData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ad3993a950a17fbcf4fe3ebfe7f4ba79c" kind="function"><name>processData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a2ca3be59cadd71bb57f84b923dfff749" kind="function"><name>setEyeballLocations</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a0dc310f54aa58d3a29230efab98c45be" kind="function"><name>smoothAndInterpolate</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1aa4a1326bb041bb424242d38a5adfc099" kind="function"><name>tagEvents</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a4f0be2f71bc4bee22a4ddeaf6a2cbf0b" kind="function"><name>postHocCleanEvents</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1ab75b84ccad5a53a12e51f644dc44a61c" kind="function"><name>updateFixationMarker</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1abb9bdfdb1b010141f4d4aed95dd3eb23" kind="function"><name>printInfoToScreen</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_data_input_1a151c5cb52c8b6a55efd60835667b8b1f" kind="function"><name>printInfoToPTBScreen</name></member>
   </compound>
   <compound refid="classivis_1_1eyetracker_1_1_iv_dummy" kind="class"><name>ivis::eyetracker::IvDummy</name>
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1af6cecf55cb63ee64e9dfaab742ab531c" kind="variable"><name>NAME</name></member>
@@ -290,7 +372,7 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1ac4761cae48e0b8a1f9faaf6a30cc37ef" kind="variable"><name>RAWLOG_NCOLS</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1a408add94e859bb7385efc7fe9d7910df" kind="variable"><name>RAWLOG_HEADERS</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1a317d178f99923f40b07e318d6ee40122" kind="function"><name>IvDummy</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1af6bd0668419d255a34699650382a5f34" kind="function"><name>connect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1a1613f924d41b84b1da241b4cc13f1a76" kind="function"><name>connect</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1a62a61c6862382a061e05981eb91239ca" kind="function"><name>reconnect</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1a1c61b84f05c85a2b21be950e3f318039" kind="function"><name>refresh</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_dummy_1ad7e4a5c74d796fb9b50c576697aa9853" kind="function"><name>flush</name></member>
@@ -315,6 +397,16 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_eyelink_1a6d79348d36b6c1fd657c61411dc67224" kind="function"><name>readRawLog</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_eyelink_1a14b233eaeec4a18469d6fc26fe99fbce" kind="function"><name>validate</name></member>
   </compound>
+  <compound refid="classivis_1_1eyetracker_1_1_iv_eye_tribe" kind="class"><name>ivis::eyetracker::IvEyeTribe</name>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a4edcbfb9a8aee9351bda7c414e5b2cb9" kind="variable"><name>NAME</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a7d8da2a01dddf79fe6e2664148dcd949" kind="function"><name>IvEyeTribe</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1af82ede9e37444fc2c12f5c718d1de5b6" kind="function"><name>delete</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a99e6131862c6703e68b4ed9dd9627744" kind="function"><name>connect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a04c328347fe14b0e4f71518fa3ecc1bd" kind="function"><name>reconnect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a8df0284044576376712ffbff493363b3" kind="function"><name>refresh</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a001fa2d4e72de79f7bd5aca7511fb563" kind="function"><name>validate</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_eye_tribe_1a9d5640174ce313b388037fd6de87dfce" kind="function"><name>readRawLog</name></member>
+  </compound>
   <compound refid="classivis_1_1eyetracker_1_1_iv_manual" kind="class"><name>ivis::eyetracker::IvManual</name>
     <member refid="classivis_1_1eyetracker_1_1_iv_manual_1a42dc63bcebe653ccd2fb79c2c012690e" kind="variable"><name>NAME</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_manual_1aee4c8b2f2cd614a3af184271db236051" kind="variable"><name>counter</name></member>
@@ -330,13 +422,16 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a434a8f661f9441fe62ae4fb0911271c9" kind="variable"><name>RAWLOG_PRECISION</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1aa9ee91e62a3fb6dd35c7c09e69026e93" kind="variable"><name>RAWLOG_NCOLS</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a34ec17ff7e8c197af8947cf496c5a04c" kind="variable"><name>RAWLOG_HEADERS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1aad31bd8cb4ed6f8e7d9e05562f3eabe1" kind="variable"><name>PREFERRED_VIEWING_DISTANCE_MM</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a6f32e3abd22b7825f5af2f6913ef0c5a" kind="variable"><name>TRACKBOX_SIZE_MM</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a69dcaf9ae90b27aaade4d3679e4fc504" kind="variable"><name>oldSecs</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1aa48cc0f55c6c0e027580343751909e7d" kind="variable"><name>windowPtrOrScreenNumber</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1ae8fecb090c914aa904f227f4056d56ce" kind="function"><name>IvMouse</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1ab2902379d56ee601b8c542d8eabefd05" kind="function"><name>connect</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1aad6dc745e0d6c49c918790554a6d04cb" kind="function"><name>reconnect</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1aac09838341e4e487c466075b21061bb7" kind="function"><name>refresh</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a3940964ccf5180e45c84c789a36db46b" kind="function"><name>refresh</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1ac3069385654bade9d9c7db2576e6e584" kind="function"><name>flush</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a6792f3419eb8dc0661209c04eaef1161" kind="function"><name>getLastKnownViewingDistance</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a10c7d459727c12091b5c86ad18abd109" kind="function"><name>getSecsElapsed</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a8e3c0343b0198d5eb22e515f8064448d" kind="function"><name>resetClock</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_mouse_1a2bfc62fed3139e4c7a5c8e7dfc1080f3" kind="function"><name>validate</name></member>
@@ -357,23 +452,60 @@
     <member refid="classivis_1_1eyetracker_1_1_iv_simulator_1a8b6441f80841ba6f603dd03a9c54fdc0" kind="function"><name>getSecsElapsed</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_simulator_1a3cd5c1206230550fa19585127f0a8ce7" kind="function"><name>readRawLog</name></member>
   </compound>
+  <compound refid="classivis_1_1eyetracker_1_1_iv_smi" kind="class"><name>ivis::eyetracker::IvSmi</name>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a0ecd5acb90536b8b0e6f51af92f15838" kind="variable"><name>__pad0__</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a01eab4cd1381489423b80888691ff614" kind="variable"><name>NAME</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1ab5fbd543532087ce06b3877e140ad708" kind="variable"><name>RAWLOG_PRECISION</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a7d57fab8a9f607adf75d164601bc94eb" kind="variable"><name>RAWLOG_NCOLS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a8c8508a4e0e00d4346ebf3e7b2dcae4d" kind="variable"><name>RAWLOG_HEADERS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1acf7c9342d60654ac26f79a1877e903ef" kind="variable"><name>pSystemInfoData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1ac0218b829c42f7793555d407f2fce898" kind="variable"><name>pSampleData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a154d3cfe294e5606fc3f47f333554bdf" kind="variable"><name>pEventData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a947a4109e4e6bf2fa21b965946436372" kind="variable"><name>pAccuracyData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a60c1a1329c54f01f5353c325d6c948ed" kind="variable"><name>CalibrationData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1aaea28b3f68b43678e7cd3ab7f94abde0" kind="variable"><name>pCalibrationData</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a39d47214465f1eb0e819d79c3abe691f" kind="function"><name>IvSmi</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a61285ffc2a05479c69fbdddf64304491" kind="function"><name>delete</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a89da02e26d21cd28b09ccf59412059db" kind="function"><name>connect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1ab4073c641e1ead3aabd03435ad68bd9a" kind="function"><name>reconnect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1af8410cdf8001fddf678dd379da781189" kind="function"><name>refresh</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a8b62027dddf3c0cfcaa74277acda7726" kind="function"><name>flush</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1a5063001cb152d757b9941dc97761a7b9" kind="function"><name>validate</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_smi_1ad7a0af460ab0b2dab174c3fc6b82e83c" kind="function"><name>readRawLog</name></member>
+  </compound>
   <compound refid="classivis_1_1eyetracker_1_1_iv_tobii" kind="class"><name>ivis::eyetracker::IvTobii</name>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1ac2e04f79c1789bf5e223c49c4081f1f9" kind="variable"><name>NAME</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a047abadeb711ac2b9df0cf774453db4f" kind="variable"><name>RAWLOG_PRECISION</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aa54fe04d87de0d72abff6cdb92c790e8" kind="variable"><name>RAWLOG_NCOLS</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a023a27fc2ba486cdc0f870991eb54d06" kind="variable"><name>RAWLOG_HEADERS</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1ab45e5c5927fee070692e63b07e5970fc" kind="variable"><name>DISABLE_ID_VALIDATE</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aba02140103854f0a36b21468a48198f1" kind="variable"><name>leyeSpatialPosition</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1acd569e04d29ad59de73195bf81d16a90" kind="variable"><name>reyeSpatialPosition</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a71e9aee7763b7d2523eac5336e99e3e7" kind="function"><name>IvTobii</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aa7c6eb0c6dad4fe6b6a63313958853b0" kind="function"><name>delete</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1ac4251457850ceb7a9d6793ac3c627803" kind="function"><name>connect</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a952075a86afa5d675c8d495e42450a4e" kind="function"><name>reconnect</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a8a1d6fb2e8a4419b8e176b8df90450e9" kind="function"><name>refresh</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1adeb1a02307d09ad575884fc73172a266" kind="function"><name>flush</name></member>
-    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a3313a875013728e82af074f5a88fb0b2" kind="function"><name>readRawLog</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1afe1d3f16f728e18605006f6a85a84666" kind="function"><name>initialiseSDK</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aeef03a61588846a64a79572f4545bf9d" kind="function"><name>readRawLog</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1aa49499cb41a13a4149f49a8eb19ae1e7" kind="function"><name>validate</name></member>
     <member refid="classivis_1_1eyetracker_1_1_iv_tobii_1a574c773fe6e99e4adc75a71140e441d2" kind="function"><name>enumerateTrackers</name></member>
+  </compound>
+  <compound refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x" kind="class"><name>ivis::eyetracker::IvTobiiEyeX</name>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a831b63a198fc842a95035496de868dea" kind="variable"><name>NAME</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1ab3c40970e22738fe78f1eebe16405db1" kind="variable"><name>RAWLOG_PRECISION</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1aa98cb8410bd4975832f4cf5c3fa447a9" kind="variable"><name>RAWLOG_NCOLS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a2d38dc4fd63e11eb7a9ed0e4f37d8870" kind="variable"><name>RAWLOG_HEADERS</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1afc6e4d48c8d5deee8ad9bc7c325d03b8" kind="variable"><name>PREFERRED_VIEWING_DISTANCE_MM</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1ab0dddec53666b17a80d5fa895ae7c569" kind="variable"><name>TRACKBOX_SIZE_MM</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a9849ea6c06a30af54a95d7b03502711a" kind="variable"><name>xOffset</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a6c316a26a71bd620bf4bcfaa90dcc1e3" kind="function"><name>IvTobiiEyeX</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a9f5e9d7a73d27a6631b9e877c56feb92" kind="function"><name>delete</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a232fe7f5cca6c98e45fb82d27bed6d52" kind="function"><name>connect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a2632b8eb7f50bb64cc4bd3b16d1fb058" kind="function"><name>reconnect</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a46a1375ad6e7a6a034c9e7f907c89d30" kind="function"><name>refresh</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1adedad928fabd1ee0c982b5b2b373e502" kind="function"><name>flush</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a28393a7fdb6f593ef4054e769da03cfd" kind="function"><name>readRawLog</name></member>
+    <member refid="classivis_1_1eyetracker_1_1_iv_tobii_eye_x_1a57544d90c22ac6dc36b5037123dc7e99" kind="function"><name>validate</name></member>
   </compound>
   <compound refid="classivis_1_1graphic_1_1_iv_graphic" kind="class"><name>ivis::graphic::IvGraphic</name>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1aee71ab0065f73ac34f58d5823ba46abf" kind="variable"><name>nullrect</name></member>
@@ -393,8 +525,10 @@
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1ac5c1cb28e2b3c483d7d42af0102c45d1" kind="function"><name>setXY</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1a1c3dc3eb23aa93a3d619158836dfe125" kind="function"><name>nudge</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1a32d0c0e5b0275ec2ab4b3649689b0ad1" kind="function"><name>reset</name></member>
+    <member refid="classivis_1_1graphic_1_1_iv_graphic_1a863ba31aa87b7fbc7932bd8f4830e638" kind="function"><name>setSize</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1a3ed640a1c5105a810a5c668d627db0c5" kind="function"><name>getXY</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1a50b523a2be74a003ae75417df7815c13" kind="function"><name>getX0Y0</name></member>
+    <member refid="classivis_1_1graphic_1_1_iv_graphic_1ad7cad69eb55489693cae242ece1ae9a3" kind="function"><name>getX</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1a46621d983faf0d7946f0bb9a0237a2af" kind="function"><name>getY</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1a5bf9f048baf3f6284ea621f40dd3b2f2" kind="function"><name>saveBuffer</name></member>
     <member refid="classivis_1_1graphic_1_1_iv_graphic_1af292f49ce39918628a7df56ead4cfe7a" kind="function"><name>loadAll</name></member>
@@ -429,15 +563,14 @@
   </compound>
   <compound refid="classivis_1_1gui_1_1_iv_g_u_i" kind="class"><name>ivis::gui::IvGUI</name>
     <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a7a8854594ad1b961dc0f34be7bae7e29" kind="variable"><name>screenNum</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a3dba1982f69a45ee0ef439ec08366a37" kind="variable"><name>dockFlag</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1ad40f8aff67aad98a610ed71d19e4e22a" kind="variable"><name>hFig</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a8e3757986d0acfb44ed974fdf8b950fe" kind="variable"><name>guiName</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a4e3010557d3bc279dec819f1a85aa2bb" kind="variable"><name>monitorAnchor</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a7a5ac23e8c0b5ef0bc1c3af6a26b4356" kind="variable"><name>guiLayout</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1ad3d356f85a155c995da32a5cdff48079" kind="function"><name>IvGUI</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1aa2794bfec005966290b95cf79ab5a645" kind="variable"><name>guiLayout</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1aea8d37ce675028cf09601c4281906459" kind="variable"><name>gui_x0y0wh_prop</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1aae7302f2d3be2f2d8a5967ad92f4e094" kind="variable"><name>gui_x0y0wh_px</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1af3461f0fa1dd6b736c3bcb191e4d708d" kind="variable"><name>resizeMatlabDesktop</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1ac91be8eb2ebecbf4886fa2f40319e7f0" kind="function"><name>IvGUI</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a17ef5c675a6fb7ccbc967a07d23b1948" kind="function"><name>delete</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1afb316451f71e0b69446629ef2520d530" kind="function"><name>addFigurePanel</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a2bb471153c6aaaeb8871516907b7717a" kind="function"><name>addFigureToPanel</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a80398e4241b1ff831d93b64f3ffa6071" kind="function"><name>subfigure</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_i_1ac79451b7e8aeb9e935f49cad9498feeb" kind="function"><name>addAsSubfigure</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_i_1aec2d2acedf0e6ca96babc69d8d7d05af" kind="function"><name>createGUI</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a931c9a0a8683caef630993d7def3e17d" kind="function"><name>getSetSingleton</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_i_1a5e1fde50dc191845df58a4255147e764" kind="function"><name>getInstance</name></member>
@@ -464,7 +597,8 @@
     <member refid="classivis_1_1gui_1_1_iv_g_u_icalibration_1a8a974bd32c54301ce38ceb057b2405d1" kind="function"><name>finishUp</name></member>
   </compound>
   <compound refid="classivis_1_1gui_1_1_iv_g_u_iclassifier" kind="class"><name>ivis::gui::IvGUIclassifier</name>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a841fd076b6e901f09c56bc3a2d81c028" kind="variable"><name>BUFFER_LENGTH</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a52e5106c8c60de89ed83aa79e9a17921" kind="variable"><name>BUFFER_LENGTH_PLOT1</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a0c5fe8d4852da9dc3ac25a15ad0485be" kind="variable"><name>BUFFER_LENGTH_PLOT2</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a5e37a65f2c03f1a53f0da42c5728164c" kind="variable"><name>plot1Data</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a18a734487515cf8634b5184f80756b81" kind="variable"><name>plot2Data</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_1a16096932c5c6124fffeebc13848ffca2" kind="variable"><name>nAlternatives</name></member>
@@ -496,6 +630,7 @@
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a630afe6c0b5b6692dd393bfeebbde2e2" kind="variable"><name>nCategoryObjs</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a2c2ded9d132b114835fa7beb14a9fbb7" kind="function"><name>IvGUIclassifierGrid</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a728553cf499ed81e72c508df7ca150bf" kind="function"><name>update</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a8604b3910c1fd0451f7f995a5422fc4a" kind="function"><name>getSetSingleton</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a942ead59ad7f0cf3451e3fc2ac3c1f3f" kind="function"><name>getInstance</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid_1a36d555e65e3578601337ad90d16f6092" kind="function"><name>finishUp</name></member>
   </compound>
@@ -503,7 +638,7 @@
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a45e45f2b965ba9e410314fa4fedad730" kind="variable"><name>FIG_NAME</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ad3826f63016cdf06fd3fe800c698ee27" kind="variable"><name>graphicObjs</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a8429684e212278770c033991391f6ad7" kind="variable"><name>hitFuncs</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1a58cccbdafce5c9f4534cc0a1bda1728e" kind="function"><name>IvGUIclassifierLL</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ab2dd88ef29dcf566bec9716d9426c5ec" kind="function"><name>IvGUIclassifierLL</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ac67362887acf1e1752eaf3472f366c92" kind="function"><name>update</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1aa76eeb03a382bf1c6c62baebd4773a8a" kind="function"><name>getSetSingleton</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l_1ae7684f86ae88b8b5cfddfe39454268f1" kind="function"><name>getInstance</name></member>
@@ -522,7 +657,7 @@
     <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" kind="variable"><name>hFig</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1af6ac3d0625d2f1ebff950b5e71ff7506" kind="variable"><name>FIG_NAME</name></member>
     <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1afa9e744b4702fd984c2e03655a1fbf07" kind="function"><name>delete</name></member>
-    <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1affdefad6611e9543314166e05c3446b6" kind="function"><name>init</name></member>
+    <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a1404d0c78b5319c7e8863f4fc7aa8a6a" kind="function"><name>init</name></member>
   </compound>
   <compound refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial" kind="class"><name>ivis::gui::IvGUIeyetrackSpatial</name>
     <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial_1aba0477ba74f241a118e0d2b39ce59e5a" kind="variable"><name>FIG_NAME</name></member>
@@ -569,10 +704,12 @@
     <member refid="classivis_1_1log_1_1_iv_data_log_1a62c98a243a2dcd854c5aa4d259ef592f" kind="variable"><name>tmpBuff</name></member>
     <member refid="classivis_1_1log_1_1_iv_data_log_1af38a9d88454339e5b69d422f5ae1f737" kind="function"><name>IvDataLog</name></member>
     <member refid="classivis_1_1log_1_1_iv_data_log_1a99c9cd14410fd4e45430d73440a167dc" kind="function"><name>delete</name></member>
-    <member refid="classivis_1_1log_1_1_iv_data_log_1a604b8275f35820b5f0eaa9fb5331fc4c" kind="function"><name>add</name></member>
-    <member refid="classivis_1_1log_1_1_iv_data_log_1a8a2183c09b356fd686a9e54697001d1c" kind="function"><name>getLastN</name></member>
-    <member refid="classivis_1_1log_1_1_iv_data_log_1a60de03e376e3353f5e7019f8361603eb" kind="function"><name>getSinceT</name></member>
-    <member refid="classivis_1_1log_1_1_iv_data_log_1a506e0b4177e1036bbef330cb1b38ef60" kind="function"><name>getTmpBuff</name></member>
+    <member refid="classivis_1_1log_1_1_iv_data_log_1a7d516f6f8929ccf4a25474d5c4a5f8e9" kind="function"><name>add</name></member>
+    <member refid="classivis_1_1log_1_1_iv_data_log_1ac9d05e38f2ab84771ef1fc2c127b491d" kind="function"><name>getLastN</name></member>
+    <member refid="classivis_1_1log_1_1_iv_data_log_1a5d34eec5478e4d41c64a7a4c7908282c" kind="function"><name>getLastKnownXY</name></member>
+    <member refid="classivis_1_1log_1_1_iv_data_log_1af5551c86933ae758f294c723bd8ce549" kind="function"><name>getLastKnownZ</name></member>
+    <member refid="classivis_1_1log_1_1_iv_data_log_1a35043c134ab298e6433d6137b4f3b785" kind="function"><name>getSinceT</name></member>
+    <member refid="classivis_1_1log_1_1_iv_data_log_1a788319cc4bcd36ed9576d001afbf0437" kind="function"><name>getTmpBuff</name></member>
     <member refid="classivis_1_1log_1_1_iv_data_log_1a0605149a67897ce98b7bf52cc70ebe10" kind="function"><name>save</name></member>
     <member refid="classivis_1_1log_1_1_iv_data_log_1a4a34681108dd50bfdeac19ec165bbabf" kind="function"><name>reset</name></member>
     <member refid="classivis_1_1log_1_1_iv_data_log_1aba83dcb1e4783c6439d6ebb4af98603e" kind="function"><name>getN</name></member>
@@ -604,13 +741,14 @@
     <member refid="classivis_1_1main_1_1_iv_main_1a71ff1cf2f841d66b487076c87fe417ce" kind="function"><name>assertVersion</name></member>
     <member refid="classivis_1_1main_1_1_iv_main_1a86785c469028ed3bd3fe14675ddc8b98" kind="function"><name>validate</name></member>
     <member refid="classivis_1_1main_1_1_iv_main_1aab425123f77e446b64088251a8cefaa4" kind="function"><name>initialise</name></member>
-    <member refid="classivis_1_1main_1_1_iv_main_1a5d3af355bfbb345d455bef88e922d8a9" kind="function"><name>launch</name></member>
+    <member refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" kind="function"><name>launch</name></member>
     <member refid="classivis_1_1main_1_1_iv_main_1a0893daf130991b64a82d2d32410f3863" kind="function"><name>pause</name></member>
     <member refid="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" kind="function"><name>finishUp</name></member>
     <member refid="classivis_1_1main_1_1_iv_main_1a33b5f86f1d81c8a3ee2ad920bcc342c8" kind="function"><name>totalClear</name></member>
     <member refid="classivis_1_1main_1_1_iv_main_1a796f8b9733bb70906c27c34be9513fcd" kind="function"><name>disableScreenChecks</name></member>
   </compound>
   <compound refid="classivis_1_1main_1_1_iv_params" kind="class"><name>ivis::main::IvParams</name>
+    <member refid="classivis_1_1main_1_1_iv_params_1a4a52a16c5755f2e9ce84c10f72eae555" kind="variable"><name>ALLOW_IMPLICIT_CONSTRUCTION</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1aab0f92283c8df67b8134bb114053f84a" kind="variable"><name>toolboxHomedir</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1abe12e470574e4d789ffa48e23e2c045b" kind="variable"><name>main</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1a7f53d7578ed3994ee6baa8e409548695" kind="variable"><name>graphics</name></member>
@@ -624,7 +762,7 @@
     <member refid="classivis_1_1main_1_1_iv_params_1ac77f9ea930dd9294c941446aa2a0c734" kind="variable"><name>audio</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1af8922c460c819d66c42327d40ee108fb" kind="variable"><name>adapt</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1abf032d2fd571e0b8df6667b5311f0304" kind="variable"><name>eyetracker</name></member>
-    <member refid="classivis_1_1main_1_1_iv_params_1a90297a52529a4eeb21f7e61fa66be174" kind="function"><name>updateGraphicParams</name></member>
+    <member refid="classivis_1_1main_1_1_iv_params_1a2d1bc5bf2162b31a97968a56b1ecea68" kind="function"><name>registerScreen</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1ac09c1481b6e504284f0f53d66457cef9" kind="function"><name>getDefaultConfig</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1a2aad24690b2606785110852ff68b5b92" kind="function"><name>getSimpleConfig</name></member>
     <member refid="classivis_1_1main_1_1_iv_params_1a585be903f73199977df02b4284e966c9" kind="function"><name>getInstance</name></member>
@@ -642,83 +780,44 @@
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1af71b6359f76ce3510b34860da5134f11" kind="variable"><name>pixel_per_dg</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1aa7cc22d3f688d102bc6170a965c23a36" kind="variable"><name>maxFreq_cpd</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1a1b0fda3e0f4940fbe8d41ee5c61cc93c" kind="function"><name>IvUnitHandler</name></member>
+    <member refid="classivis_1_1math_1_1_iv_unit_handler_1a7f1c08cc7f11f286205d1c834ffda844" kind="function"><name>px2cm</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1ad8a8605dfeb2ec4be96f6207b537f532" kind="function"><name>cm2px</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1a4e393674608cde379c34baf9d5dcef54" kind="function"><name>px2deg</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1ac8d95e72c283ef02a4500221948cf8b7" kind="function"><name>deg2px</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1a5c930743d4acf4927a7c4b732000d03f" kind="function"><name>deg2cm</name></member>
+    <member refid="classivis_1_1math_1_1_iv_unit_handler_1ac65386c4a9c4926ebc852678e11bc98f" kind="function"><name>cm2deg</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1a3b9f678c7c3ce99082680fa67996f003" kind="function"><name>getSetSingleton</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1a2a693063594215bcae5fbf15fc24ded8" kind="function"><name>getInstance</name></member>
     <member refid="classivis_1_1math_1_1_iv_unit_handler_1ad4708d729b3eaf4590ef922a598daf7e" kind="function"><name>finishUp</name></member>
   </compound>
-  <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss" kind="class"><name>ivis::math::pdf::IvHfGauss</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a50565ab7f34ad0cc4e0211cb7d91fcc5" kind="variable"><name>muOffset</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a47134fd4af2c041f5d7f6fb81941fede" kind="variable"><name>sigma</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a7f5b7aab2108267ca64995fb52eaea97" kind="function"><name>IvHfGauss</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1abec7d5422b3e5e84c5a478101f9a877f" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1aa04c15f959da386142f23432aae5705b" kind="function"><name>getRand</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a82f1a36ee7d66cfeea6dbdeefbcde617" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss_1a3c47933de72a57ef3eca7a3d2e3a7722" kind="function"><name>updatePlot</name></member>
-  </compound>
   <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d" kind="class"><name>ivis::math::pdf::IvHfGauss2D</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1acd20b5ab851e9f254e0fbd60e474ae2f" kind="variable"><name>muOffset</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1ad2bac40e5e536539d84750fefcd95f9d" kind="variable"><name>sigma</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a84c2ead151588285a83e6ecdca556123" kind="function"><name>IvHfGauss2D</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1ac5c879f88e022f40128747e87b86c0f1" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a75a478325e4517eeae5e8a12d43ae8c5" kind="function"><name>getRand</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a1852857f3f7ee73c75931dcd2f2e8505" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a98468e561e6483d534cd0391c2f6706c" kind="function"><name>updatePlot</name></member>
-  </compound>
-  <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix" kind="class"><name>ivis::math::pdf::IvHfGUmix</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1ab3c0796759077ddb6aebea8b74b5dccc" kind="variable"><name>gaussRatio</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a647a912008b1a01967c6e73c285eeceb" kind="variable"><name>hf_uniform</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a490a4c63ba08bfe874c4b9d4a4cb89cb" kind="variable"><name>hf_Gaussian</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a976cb3aa8e6a1b33800b9e9a7e2bd3ee" kind="function"><name>IvHfGUmix</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a927497563caa63e015ff1dc1d5a3ad01" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a8e65747b266ee9970f791452c699ac4f" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix_1a41f901012556ffbf0df998f8f3258c26" kind="function"><name>updatePlot</name></member>
-  </compound>
-  <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d" kind="class"><name>ivis::math::pdf::IvHfGUmix2D</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1a2b7abf5fab0a3eff54f914ba41d68496" kind="variable"><name>gaussRatio</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1acf5f56bf458ae424efd429758526e48f" kind="variable"><name>hf_uniform</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1a6a4a9be573475476774c672ed796b170" kind="variable"><name>hf_Gaussian</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1ae71d8ec24108e7fb77578c278729dce9" kind="function"><name>IvHfGUmix2D</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1a6d89ffbdb0a365f6ddabde31b308827e" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1afa71f76e6ab76bf719baa6cb3b25e505" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d_1a309520fb4c680fd9704dcf7fbd5a45d9" kind="function"><name>updatePlot</name></member>
-  </compound>
-  <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform" kind="class"><name>ivis::math::pdf::IvHfUniform</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a2a76a364f11e50bf7953bcc5f16c8c22" kind="variable"><name>MIN_VAL</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4fbef4d1d007262e0e64b7db292d06bd" kind="variable"><name>xmin</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a241e2f429a0b3efa4aa72fec330ea981" kind="variable"><name>xmax</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a8d701bd67b60a8e033c7f93b5908dba7" kind="variable"><name>P_unifConstant</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a9faee76d108fa3f199beb11efc11c43b" kind="function"><name>IvHfUniform</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4b3b05cf42a9f17c8bbf093b9db0f8e5" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ab10fa94eed2f0df7dd8df703e02ba031" kind="function"><name>getRand</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1af037b5e7aed7833e2f5c3c317c3f1d52" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ae8daee029fce304f8f25a545b2833ab7" kind="function"><name>updatePlot</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a22bfd2ab31ca0b089ec19c53a828f9d4" kind="variable"><name>mu_px</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a3d0ceebce041c0ac9048332d38a6d424" kind="variable"><name>sigma_px</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1ae2c52520543fcde4c99bc151307b6e95" kind="variable"><name>pedestal_p</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a94583c2f7de0b35f842f40a0248185b2" kind="function"><name>IvHfGauss2D</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a83ebce4170a470a119fadb39f69ef11b" kind="function"><name>plot</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a109681eaa10f0633f85e9caa55284921" kind="function"><name>update</name></member>
   </compound>
   <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d" kind="class"><name>ivis::math::pdf::IvHfUniform2D</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a891c114c0c47474f85b4bcc1674eb0b1" kind="variable"><name>MIN_VAL</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a715b1c14383f012786133fc16b4b406d" kind="variable"><name>xmin</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a4814b5df218d8904ead028160bbfe853" kind="variable"><name>ymin</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a4350088e2b1a794b0d3a9d497a770cd9" kind="variable"><name>xmax</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1ae4166e0a05ecf0005ae029c2854694fe" kind="variable"><name>ymax</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a07f1512e7bfe2851da6b9ba9d2acc218" kind="variable"><name>P_unifConstant</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1aeb162b29ff51249c9e0ac3eb28d4629d" kind="function"><name>IvHfUniform2D</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a5405ef14114bcadaa7f35443c8881927" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a0557c5bb99d7573fc44c5a34132ae794" kind="function"><name>getRand</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a2cb5ac45e42555b966e9d0217a9c79db" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a3b736e664127b1c9125d8db4ec879a36" kind="function"><name>updatePlot</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1ac1b6abbcff071acf3b8bf1b04e75ee49" kind="function"><name>IvHfUniform2D</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a42b661979f6bd3c1775adf79fef185f2" kind="function"><name>plot</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d_1a8a3e1879e84de597327294d1ad6e50c0" kind="function"><name>update</name></member>
   </compound>
   <compound refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" kind="class"><name>ivis::math::pdf::IvHitFunc</name>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa38ba1764d7a0e7f43f8c028c3613317" kind="variable"><name>N</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8da3cb47921e4dc9059ff992f47b37eb" kind="variable"><name>pdf_xy</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a7a7b82d7db4e9164d1491ce482c6c822" kind="variable"><name>MIN_VAL</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab8036a7af636f0056f46b94e6805cafa" kind="variable"><name>xmin_px</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a47363e4e00c46cf95c1ae2062d760e18" kind="variable"><name>ymin_px</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2798573594bcb888fe9f72b5445ea815" kind="variable"><name>xmax_px</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a3d5ec94dbdd90b71fdb1be781c3c2f69" kind="variable"><name>ymax_px</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a063385fb9dcd9c7a9a949a8530334a79" kind="variable"><name>probdistr_x</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a6fbd66a630d095ba8b693134f5f56631" kind="variable"><name>probdistr_y</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a3ccb9c477b25387152c2f6fec58b73d8" kind="variable"><name>pedestalMix_p</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2e473615415482e78616a38292eab855" kind="variable"><name>pedestalConstants_xy</name></member>
     <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a10c70369c29497f72f7dbd24f61cda98" kind="variable"><name>hPlot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1ab59258aee640a41aed16538bbf2a052b" kind="function"><name>getPDF</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aa6b693c0909ff2510fc17f5c583dd2c9" kind="function"><name>getRand</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a60304ed8a490d8ea89d66b83fee6d347" kind="function"><name>plot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a01921b287b37ceb979bc98723b04ed9d" kind="function"><name>updatePlot</name></member>
-    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1add8c148ebcf5bc0a009a5762c19204f4" kind="function"><name>IvHitFunc</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a8985cb5538f472bfcc9363a6d8504f2e" kind="function"><name>plot</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1aed3e75b0ba55b53fc5f12915cad6d638" kind="function"><name>update</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a2cd3a73d2174e9bf9e93867b79f96df3" kind="function"><name>getPDF</name></member>
+    <member refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func_1a57477fc75f4a30ec969e31e0e271e077" kind="function"><name>IvHitFunc</name></member>
   </compound>
   <compound refid="classivis_1_1test_1_1_test___iv_classifier_l_l" kind="class"><name>ivis::test::Test_IvClassifierLL</name>
     <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1a4c6deb3d608defe47786c88a08bebc47" kind="variable"><name>eyetracker</name></member>
@@ -763,7 +862,6 @@
     <member refid="classivis_1_1video_1_1_iv_video_1a5ab891facd95c4f88b6792fbde7792cb" kind="variable"><name>nVidFns</name></member>
     <member refid="classivis_1_1video_1_1_iv_video_1a99ed0a8b17bf5bc906f79e018f55e4d1" kind="variable"><name>moviePtr</name></member>
     <member refid="classivis_1_1video_1_1_iv_video_1a7dbccbe2fc3a3cc61713e7ce2d6b5ca6" kind="variable"><name>movieFn</name></member>
-    <member refid="classivis_1_1video_1_1_iv_video_1a09b8fa3551ff6c54e05f8a9ff081f1f2" kind="variable"><name>movieNum</name></member>
     <member refid="classivis_1_1video_1_1_iv_video_1a553f03165f1278cb6f50a1392d5f0658" kind="variable"><name>playRate</name></member>
     <member refid="classivis_1_1video_1_1_iv_video_1a71a56619f40905f6081c1d9654a2febe" kind="variable"><name>frameCount</name></member>
     <member refid="classivis_1_1video_1_1_iv_video_1ab42a3fe634847c7721f5c1242ca89ff1" kind="variable"><name>winhandle</name></member>
@@ -807,32 +905,6 @@
     <member refid="classivis_1_1video_1_1_iv_webcam_1ac67f5328ce4b5005281492aa7f9ab577" kind="function"><name>finishUp</name></member>
     <member refid="classivis_1_1video_1_1_iv_webcam_1a2f9c4397612c35b84ebae4b9fc5d1e95" kind="function"><name>getSetSingleton</name></member>
   </compound>
-  <compound refid="classivis_1_1video_1_1_track_box" kind="class"><name>ivis::video::TrackBox</name>
-    <member refid="classivis_1_1video_1_1_track_box_1ad68c9c41ddad6a1b3a22049f3b0ccd0f" kind="variable"><name>ALLOW_IMPLICIT_CONSTRUCTION</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1aaf265eab4bd4d7dfc68ed8a54e6a3230" kind="variable"><name>winhandle</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1af7ea983a96d0fc3344088b43d0948639" kind="variable"><name>eyeTracker</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a15811920347f9ca506007ed8cd1873f4" kind="variable"><name>monitorwidth_mm</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a7c2ddb42d0780da842881ef46c989a0d" kind="variable"><name>monitorheight_mm</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a825e45022da312c89662bc3746b5a78b" kind="variable"><name>monitorwidth_px</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1acc0df85f80fdcd048408a46a3aade435" kind="variable"><name>monitorheight_px</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1ac16f4de34a853fbf710aaca3a7d12550" kind="variable"><name>tobiidist</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a66fc6dab5ed1b907862b90191df842b2" kind="variable"><name>boxdist_mm</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a29bb519e40eebbaea20d97d236996f66" kind="variable"><name>boxsize_mm</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1aca3acb659904e8bfbde517285dcfd217" kind="variable"><name>amax</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a302304c98dc6c3eb3b163e20042b93b9" kind="function"><name>TrackBox</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a831189f11d39f77896ac6e2285d939d1" kind="function"><name>delete</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a5b12dcc39beef7295fc4e4b97fb6a7fa" kind="function"><name>draw</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1ac895e8c162618e7d1b86cbc9ab8661ad" kind="function"><name>start</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a09bb91378c6c99b207e7f3f758ea1cda" kind="function"><name>stop</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a7e9ffd5c572c3fb64248ccc5bf9de2ed" kind="function"><name>drawcube</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1ac21c72c4d01300cfa6e757853748fbb2" kind="function"><name>drawsurface</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a3c8388276bb3ddb257da30ecea64b59b" kind="function"><name>normalise</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a7687f868921850238cdb96d052083efe" kind="function"><name>ucs2mycs</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a658174991407a802abb6516d3404d565" kind="function"><name>drawcircle</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a51317070bcd291f680c4b4e17247cbdf" kind="function"><name>getSetSingleton</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1a491ce776c155fad3260e456fcfc69587" kind="function"><name>getInstance</name></member>
-    <member refid="classivis_1_1video_1_1_track_box_1ad69fbb279099e71225a7cfb20a96a1f2" kind="function"><name>finishUp</name></member>
-  </compound>
   <compound refid="class_lennard_jones_potential" kind="class"><name>LennardJonesPotential</name>
     <member refid="class_lennard_jones_potential_1a907d5c37785b7176efd5e41e78f6267c" kind="variable"><name>x</name></member>
     <member refid="class_lennard_jones_potential_1ae003122d56f26b05216df007e35c6ef7" kind="variable"><name>y</name></member>
@@ -857,14 +929,6 @@
     <member refid="class_lennard_jones_potential_1a558e2e44f24aa835312c42f5ce947cf2" kind="function"><name>calcNextTimestep</name></member>
     <member refid="class_lennard_jones_potential_1a5af4fbf9c63677895e0f73948a6da2e0" kind="function"><name>initPlot</name></member>
     <member refid="class_lennard_jones_potential_1afb54b634060ec22657f259324f49407c" kind="function"><name>plot</name></member>
-  </compound>
-  <compound refid="class_my_demo_input_handler" kind="class"><name>MyDemoInputHandler</name>
-    <member refid="class_my_demo_input_handler_1a53a507dcdd304cd2e24739087ffd845f" kind="variable"><name>INPT_A</name></member>
-    <member refid="class_my_demo_input_handler_1ac7ef839ab259c6aba5957d4330f6db56" kind="variable"><name>INPT_B</name></member>
-    <member refid="class_my_demo_input_handler_1aac51b154fe46e4d408c8bcad2ee9560d" kind="function"><name>MyDemoInputHandler</name></member>
-    <member refid="class_my_demo_input_handler_1a7bf2d2f2bd4acdb66cfbd918604b9e96" kind="function"><name>getSetSingleton</name></member>
-    <member refid="class_my_demo_input_handler_1af5b31fa30521399138ee0c79c08d3931" kind="function"><name>getInstance</name></member>
-    <member refid="class_my_demo_input_handler_1aed2df91598256e1ad41e7f8b1bd65bfb" kind="function"><name>finishUp</name></member>
   </compound>
   <compound refid="class_singleton" kind="class"><name>Singleton</name>
     <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" kind="function"><name>Singleton</name></member>
@@ -912,67 +976,6 @@
   </compound>
   <compound refid="namespaceivis_1_1video" kind="namespace"><name>ivis::video</name>
   </compound>
-  <compound refid="_contents_8m" kind="file"><name>Contents.m</name>
-    <member refid="_contents_8m_1a9dc781bf320a10cabb97affee5b4e7a8" kind="function"><name>Contents</name></member>
-  </compound>
-  <compound refid="src_2_09ivis_2_contents_8m" kind="file"><name>Contents.m</name>
-  </compound>
-  <compound refid="_install_ivis_8m" kind="file"><name>InstallIvis.m</name>
-    <member refid="_install_ivis_8m_1a2ba42599b874bd756ec45d9d05f21a6a" kind="function"><name>InstallIvis</name></member>
-  </compound>
-  <compound refid="_my_demo_input_handler_8m" kind="file"><name>MyDemoInputHandler.m</name>
-  </compound>
-  <compound refid="ivis_demo001__check_installed_8m" kind="file"><name>ivisDemo001_checkInstalled.m</name>
-    <member refid="ivis_demo001__check_installed_8m_1a9509d86afcda1619ff88890c1a857c01" kind="function"><name>ivisDemo001_checkInstalled</name></member>
-  </compound>
-  <compound refid="ivis_demo002__keyboard_handling_8m" kind="file"><name>ivisDemo002_keyboardHandling.m</name>
-    <member refid="ivis_demo002__keyboard_handling_8m_1a61b9e537f5081f54d546db6d05e73fe1" kind="function"><name>ivisDemo002_keyboardHandling</name></member>
-  </compound>
-  <compound refid="ivis_demo003__mouse_tracking_8m" kind="file"><name>ivisDemo003_mouseTracking.m</name>
-    <member refid="ivis_demo003__mouse_tracking_8m_1a7b21997e05dfdfe0dade454cf3f2c5e7" kind="function"><name>ivisDemo003_mouseTracking</name></member>
-  </compound>
-  <compound refid="ivis_demo004__eye_tracking_8m" kind="file"><name>ivisDemo004_eyeTracking.m</name>
-    <member refid="ivis_demo004__eye_tracking_8m_1a4d4ed849e39d7c10f5e78fbd1505f989" kind="function"><name>ivisDemo004_eyeTracking</name></member>
-  </compound>
-  <compound refid="ivis_demo005__usinga_p_t_b_screen_8m" kind="file"><name>ivisDemo005_usingaPTBScreen.m</name>
-    <member refid="ivis_demo005__usinga_p_t_b_screen_8m_1aaf5367b43a15b2b4b86b17682f028dec" kind="function"><name>ivisDemo005_usingaPTBScreen</name></member>
-  </compound>
-  <compound refid="ivis_demo006__trackbox_visualisation_8m" kind="file"><name>ivisDemo006_trackboxVisualisation.m</name>
-    <member refid="ivis_demo006__trackbox_visualisation_8m_1a4e7365b3738cf81696ab2fc42ce6b0f0" kind="function"><name>ivisDemo006_trackboxVisualisation</name></member>
-  </compound>
-  <compound refid="ivis_demo007__classifying_fixations_8m" kind="file"><name>ivisDemo007_classifyingFixations.m</name>
-    <member refid="ivis_demo007__classifying_fixations_8m_1a17a796f63f8c3101d922d39e10b873e7" kind="function"><name>ivisDemo007_classifyingFixations</name></member>
-  </compound>
-  <compound refid="ivis_demo008__playing_videos_8m" kind="file"><name>ivisDemo008_playingVideos.m</name>
-    <member refid="ivis_demo008__playing_videos_8m_1ac1155ae56bc31d14421d52291f88c5cb" kind="function"><name>ivisDemo008_playingVideos</name></member>
-  </compound>
-  <compound refid="ivis_demo009__streaming_webcams_8m" kind="file"><name>ivisDemo009_streamingWebcams.m</name>
-    <member refid="ivis_demo009__streaming_webcams_8m_1ae02594fdc2dbadbc699fce5e153eced7" kind="function"><name>ivisDemo009_streamingWebcams</name></member>
-  </compound>
-  <compound refid="ivis_demo010__reading_raw_gaze_data_8m" kind="file"><name>ivisDemo010_readingRawGazeData.m</name>
-    <member refid="ivis_demo010__reading_raw_gaze_data_8m_1adca3dc5a3153fac7e524deed340c1679" kind="function"><name>ivisDemo010_readingRawGazeData</name></member>
-  </compound>
-  <compound refid="ivis_demo011__advanced_classifiers_8m" kind="file"><name>ivisDemo011_advancedClassifiers.m</name>
-    <member refid="ivis_demo011__advanced_classifiers_8m_1a89a492ec440e442b6ab8caddd9f9e05c" kind="function"><name>ivisDemo011_advancedClassifiers</name></member>
-  </compound>
-  <compound refid="ivis_demo012__external_config_files_8m" kind="file"><name>ivisDemo012_externalConfigFiles.m</name>
-    <member refid="ivis_demo012__external_config_files_8m_1aa6c5940513a9f3eb5a254d640e60d0ee" kind="function"><name>ivisDemo012_externalConfigFiles</name></member>
-  </compound>
-  <compound refid="ivis_demo013__calibration_8m" kind="file"><name>ivisDemo013_calibration.m</name>
-    <member refid="ivis_demo013__calibration_8m_1aa6c5940513a9f3eb5a254d640e60d0ee" kind="function"><name>ivisDemo012_externalConfigFiles</name></member>
-  </compound>
-  <compound refid="ivis_demo0_x_x__identifying_saccades_8m" kind="file"><name>ivisDemo0XX_identifyingSaccades.m</name>
-    <member refid="ivis_demo0_x_x__identifying_saccades_8m_1aa6c5940513a9f3eb5a254d640e60d0ee" kind="function"><name>ivisDemo012_externalConfigFiles</name></member>
-  </compound>
-  <compound refid="ivis_demo__audio_8m" kind="file"><name>ivisDemo_audio.m</name>
-    <member refid="ivis_demo__audio_8m_1a321e38fdec869d50663f8c5fb4de06f8" kind="function"><name>ivisDemo_audio</name></member>
-  </compound>
-  <compound refid="ivis_demos__runall_8m" kind="file"><name>ivisDemos_runall.m</name>
-    <member refid="ivis_demos__runall_8m_1aa8f240f3f454ed28b983d474b346799f" kind="function"><name>ivisDemos_runall</name></member>
-  </compound>
-  <compound refid="ivisdir_8m" kind="file"><name>ivisdir.m</name>
-    <member refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kind="function"><name>ivisdir</name></member>
-  </compound>
   <compound refid="_iv_audio_8m" kind="file"><name>IvAudio.m</name>
   </compound>
   <compound refid="_iv_broadcaster_8m" kind="file"><name>IvBroadcaster.m</name>
@@ -986,6 +989,8 @@
   <compound refid="_iv_calibration_8m" kind="file"><name>IvCalibration.m</name>
   </compound>
   <compound refid="measure_point_8m" kind="file"><name>measurePoint.m</name>
+  </compound>
+  <compound refid="_track_box_8m" kind="file"><name>TrackBox.m</name>
   </compound>
   <compound refid="_iv_classifier_8m" kind="file"><name>IvClassifier.m</name>
   </compound>
@@ -1003,13 +1008,19 @@
   </compound>
   <compound refid="_iv_eyelink_8m" kind="file"><name>IvEyelink.m</name>
   </compound>
+  <compound refid="_iv_eye_tribe_8m" kind="file"><name>IvEyeTribe.m</name>
+  </compound>
   <compound refid="_iv_manual_8m" kind="file"><name>IvManual.m</name>
   </compound>
   <compound refid="_iv_mouse_8m" kind="file"><name>IvMouse.m</name>
   </compound>
   <compound refid="_iv_simulator_8m" kind="file"><name>IvSimulator.m</name>
   </compound>
+  <compound refid="_iv_smi_8m" kind="file"><name>IvSmi.m</name>
+  </compound>
   <compound refid="_iv_tobii_8m" kind="file"><name>IvTobii.m</name>
+  </compound>
+  <compound refid="_iv_tobii_eye_x_8m" kind="file"><name>IvTobiiEyeX.m</name>
   </compound>
   <compound refid="_iv_graphic_8m" kind="file"><name>IvGraphic.m</name>
   </compound>
@@ -1051,15 +1062,7 @@
   </compound>
   <compound refid="_iv_params_8m" kind="file"><name>IvParams.m</name>
   </compound>
-  <compound refid="_iv_hf_gauss_8m" kind="file"><name>IvHfGauss.m</name>
-  </compound>
   <compound refid="_iv_hf_gauss2_d_8m" kind="file"><name>IvHfGauss2D.m</name>
-  </compound>
-  <compound refid="_iv_hf_g_umix_8m" kind="file"><name>IvHfGUmix.m</name>
-  </compound>
-  <compound refid="_iv_hf_g_umix2_d_8m" kind="file"><name>IvHfGUmix2D.m</name>
-  </compound>
-  <compound refid="_iv_hf_uniform_8m" kind="file"><name>IvHfUniform.m</name>
   </compound>
   <compound refid="_iv_hf_uniform2_d_8m" kind="file"><name>IvHfUniform2D.m</name>
   </compound>
@@ -1083,7 +1086,7 @@
   </compound>
   <compound refid="_iv_webcam_8m" kind="file"><name>IvWebcam.m</name>
   </compound>
-  <compound refid="_track_box_8m" kind="file"><name>TrackBox.m</name>
+  <compound refid="_contents_8m" kind="file"><name>Contents.m</name>
   </compound>
   <compound refid="blur_figure_8m" kind="file"><name>blurFigure.m</name>
     <member refid="blur_figure_8m_1a8b5edc48de18a877ca53ee9063c358b1" kind="function"><name>blurFigure</name></member>
@@ -1184,48 +1187,40 @@
     <member refid="truncnormrnd_8m_1a495bb78cb7e7b94949b5ec6cde96eba5" kind="function"><name>truncnormrnd</name></member>
   </compound>
   <compound refid="vline_8m" kind="file"><name>vline.m</name>
-    <member refid="vline_8m_1a93cf8d0c941df7f6479bdb0c4ee61d97" kind="function"><name>vline</name></member>
+    <member refid="vline_8m_1a110fddad779836022c9a6e26580e8ae9" kind="function"><name>vline</name></member>
   </compound>
   <compound refid="event" kind="page"><name>event</name>
   </compound>
   <compound refid="todo" kind="page"><name>todo</name>
   </compound>
-  <compound refid="dir_938d3fc355e9421d378c79757da71735" kind="dir"><name>src/+ivis/+audio</name>
+  <compound refid="dir_6dc4e2912c16a7e58e1fb966ea0c80ba" kind="dir"><name>+ivis/+audio</name>
   </compound>
-  <compound refid="dir_7e2a18773780b87774cfe8619d41b17c" kind="dir"><name>src/+ivis/+broadcaster</name>
+  <compound refid="dir_772940239f0df913ecb031c2365182dd" kind="dir"><name>+ivis/+broadcaster</name>
   </compound>
-  <compound refid="dir_2194972e5f463cfc2cd0985d09b935e4" kind="dir"><name>src/+ivis/+calibration</name>
+  <compound refid="dir_d303ce991219cb571064a0af8a89a82d" kind="dir"><name>+ivis/+calibration</name>
   </compound>
-  <compound refid="dir_c8d51911d84f20b3beef08bbdb189adc" kind="dir"><name>src/+ivis/+classifier</name>
+  <compound refid="dir_73ef90a042eeab54faeaf7e328fab7b3" kind="dir"><name>+ivis/+classifier</name>
   </compound>
-  <compound refid="dir_f330c945deb70f2b004fcade6246bf3e" kind="dir"><name>src/+ivis/+eyetracker</name>
+  <compound refid="dir_f69a0d8344bfc55a805d6a2cb690b4e7" kind="dir"><name>+ivis/+eyetracker</name>
   </compound>
-  <compound refid="dir_3d944ce0a9c7fff169d368019f51aa96" kind="dir"><name>src/+ivis/+graphic</name>
+  <compound refid="dir_871a3925931b9a906938f18fb7ec32bb" kind="dir"><name>+ivis/+graphic</name>
   </compound>
-  <compound refid="dir_35edf40296798bee028d21a1f0556a3d" kind="dir"><name>src/+ivis/+gui</name>
+  <compound refid="dir_9e87b9a0b0e1da34880034255061bb5e" kind="dir"><name>+ivis/+gui</name>
   </compound>
-  <compound refid="dir_b1fc417f0740629bd4971c68e72b5ce0" kind="dir"><name>src/+ivis</name>
+  <compound refid="dir_ff8247d13baa4c7278b64786bdcd0aa5" kind="dir"><name>+ivis</name>
   </compound>
-  <compound refid="dir_1896cdbc6d638bece3c5cf420b9a82a7" kind="dir"><name>src/+ivis/+log</name>
+  <compound refid="dir_a4ef7f5fc982e5c7d2d9a74dfcc7e276" kind="dir"><name>+ivis/+log</name>
   </compound>
-  <compound refid="dir_50a86aaeec54bfa03e26bc0b3a2aeb74" kind="dir"><name>src/+ivis/+main</name>
+  <compound refid="dir_a680b51f6f7c96f73a9a80e3148d08fa" kind="dir"><name>+ivis/+main</name>
   </compound>
-  <compound refid="dir_2e79d96200541156f4ad4e0a4df10090" kind="dir"><name>src/+ivis/+math</name>
+  <compound refid="dir_7a72a87964f77b76824f5b85812bcae7" kind="dir"><name>+ivis/+math</name>
   </compound>
-  <compound refid="dir_b41f19a2235b4f4816065381cc560495" kind="dir"><name>src/+ivis/+math/+pdf</name>
+  <compound refid="dir_f4ef396b5d1a00a0f137829bdae9d145" kind="dir"><name>+ivis/+math/+pdf</name>
   </compound>
-  <compound refid="dir_a86ed13aab1e81c3a268cb26998453bf" kind="dir"><name>src/+ivis/+test</name>
+  <compound refid="dir_a87c9a1b8075271d5949e6cb865ba700" kind="dir"><name>+ivis/+test</name>
   </compound>
-  <compound refid="dir_3bd82264dfa6ea49686ac41f6653a17b" kind="dir"><name>src/+ivis/+video</name>
+  <compound refid="dir_eea1bec029906c42925f177f53a62050" kind="dir"><name>+ivis/+video</name>
   </compound>
-  <compound refid="dir_27b438717a9c7457494088c67ffe9d03" kind="dir"><name>ivisDemos/demoResources</name>
-  </compound>
-  <compound refid="dir_ad6252dc1f7015853f32048412c9f73e" kind="dir"><name>src/ivis_util</name>
-  </compound>
-  <compound refid="dir_23c5c915afc5076209d1f8d82aec7c6a" kind="dir"><name>ivisDemos</name>
-  </compound>
-  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
-  </compound>
-  <compound refid="indexpage" kind="page"><name>index</name>
+  <compound refid="dir_8248032291ee15c3f092b1111a949a27" kind="dir"><name>ivis_util</name>
   </compound>
 </doxygenindex>

@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -153,17 +153,31 @@ nRemoved  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a786d1aa6cad0dc761946b852cc50cba8"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a786d1aa6cad0dc761946b852cc50cba8">clearMeasurements</a> ()</td></tr>
 <tr class="memdesc:a786d1aa6cad0dc761946b852cc50cba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all raw gaze observations.  <a href="#a786d1aa6cad0dc761946b852cc50cba8">More...</a><br/></td></tr>
 <tr class="separator:a786d1aa6cad0dc761946b852cc50cba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab876003ab87bd90f687626c7782daa41"><td class="memItemLeft" align="right" valign="top">function [ 
+<tr class="memitem:ab431cd35db7b79be3aeb0f0b957c7d2c"><td class="memItemLeft" align="right" valign="top">function 
+  n  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#ab431cd35db7b79be3aeb0f0b957c7d2c">getNTargs</a> ()</td></tr>
+<tr class="memdesc:ab431cd35db7b79be3aeb0f0b957c7d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of unique targets that have been measured.  <a href="#ab431cd35db7b79be3aeb0f0b957c7d2c">More...</a><br/></td></tr>
+<tr class="separator:ab431cd35db7b79be3aeb0f0b957c7d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d3bec4f08569a129772753c00369a2"><td class="memItemLeft" align="right" valign="top">function 
+  n  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a72d3bec4f08569a129772753c00369a2">getNMeasurements</a> ()</td></tr>
+<tr class="memdesc:a72d3bec4f08569a129772753c00369a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of observed data points.  <a href="#a72d3bec4f08569a129772753c00369a2">More...</a><br/></td></tr>
+<tr class="separator:a72d3bec4f08569a129772753c00369a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab32be4f2af45f5f246d4618bd553d609"><td class="memItemLeft" align="right" valign="top">function [ 
   <br class="typebreak"/>
 resp_used , 
   <br class="typebreak"/>
-resp_excluded  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#ab876003ab87bd90f687626c7782daa41">getMeasurements</a> ()</td></tr>
-<tr class="memdesc:ab876003ab87bd90f687626c7782daa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.  <a href="#ab876003ab87bd90f687626c7782daa41">More...</a><br/></td></tr>
-<tr class="separator:ab876003ab87bd90f687626c7782daa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afff208e1b0229c2a484e9e23ab01a5e5"><td class="memItemLeft" align="right" valign="top">function 
-  ok  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#afff208e1b0229c2a484e9e23ab01a5e5">compute</a> (<a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a53502177169227c11188486593cd1ff3">nRecursions</a>, <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a74f039c6edc53a40b843aec37c19918f">targ</a>, <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a2067368c5bbedcb9b92a35382911b44f">resp</a>)</td></tr>
-<tr class="memdesc:afff208e1b0229c2a484e9e23ab01a5e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a calibration map by fitting a least-square polynomial surface to a given set of targ- and resp- gaze coordinates. If no gaze coordinates specified, will use those that have previously been added. The fit will be repeated nRecursions times, each times excluding any outliers that are greater than an arbitrary distance away.  <a href="#afff208e1b0229c2a484e9e23ab01a5e5">More...</a><br/></td></tr>
-<tr class="separator:afff208e1b0229c2a484e9e23ab01a5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+resp_excluded , 
+  <br class="typebreak"/>
+targ_used , 
+  <br class="typebreak"/>
+targ_excluded  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#ab32be4f2af45f5f246d4618bd553d609">getRawMeasurements</a> ()</td></tr>
+<tr class="memdesc:ab32be4f2af45f5f246d4618bd553d609"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all raw gaze observations.  <a href="#ab32be4f2af45f5f246d4618bd553d609">More...</a><br/></td></tr>
+<tr class="separator:ab32be4f2af45f5f246d4618bd553d609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4673814458d7d426a9a797c653b079"><td class="memItemLeft" align="right" valign="top">function 
+  ok  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a0b4673814458d7d426a9a797c653b079">compute</a> (<a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a53502177169227c11188486593cd1ff3">nRecursions</a>, <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a28fa87a7c2808b0dffcca74e15d7c1ef">outlierThresh_px</a>, <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a74f039c6edc53a40b843aec37c19918f">targ</a>, <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a2067368c5bbedcb9b92a35382911b44f">resp</a>, verbosity)</td></tr>
+<tr class="memdesc:a0b4673814458d7d426a9a797c653b079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a calibration map by fitting a least-square polynomial surface to a given set of targ- and resp- gaze coordinates. If no gaze coordinates specified, will use those that have previously been added. The fit will be repeated nRecursions times, each times excluding any outliers that are greater than an arbitrary distance away.  <a href="#a0b4673814458d7d426a9a797c653b079">More...</a><br/></td></tr>
+<tr class="separator:a0b4673814458d7d426a9a797c653b079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d3e07e91cbafd6f2ed178fee20e7bf"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a82d3e07e91cbafd6f2ed178fee20e7bf">plotCurrentCalibration</a> ()</td></tr>
+<tr class="separator:a82d3e07e91cbafd6f2ed178fee20e7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36fcd6a72fa258ae2b86acd5683a9881"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a36fcd6a72fa258ae2b86acd5683a9881">clear</a> ()</td></tr>
 <tr class="memdesc:a36fcd6a72fa258ae2b86acd5683a9881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the fitted calibration. N.b., doesn't clear the raw measurements.  <a href="#a36fcd6a72fa258ae2b86acd5683a9881">More...</a><br/></td></tr>
 <tr class="separator:a36fcd6a72fa258ae2b86acd5683a9881"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,9 +190,9 @@ resp_excluded  ] =&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="memitem:a8f72ad41101ec9e31156b6e96ef998cb"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a8f72ad41101ec9e31156b6e96ef998cb">resetDriftCorrection</a> ()</td></tr>
 <tr class="memdesc:a8f72ad41101ec9e31156b6e96ef998cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any stored drift correction factor.  <a href="#a8f72ad41101ec9e31156b6e96ef998cb">More...</a><br/></td></tr>
 <tr class="separator:a8f72ad41101ec9e31156b6e96ef998cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad6fdc413dcb02531587aef283013fd"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#aaad6fdc413dcb02531587aef283013fd">updateDriftCorrection</a> (trueXY, estXY, maxCorrection)</td></tr>
-<tr class="memdesc:aaad6fdc413dcb02531587aef283013fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the drift correction factor. Will compute the euclidean difference between the specified trueXY and estXY, and combine with the current offset using vector addition (unless the distance &gt; maxCorrection, in which case ignore).  <a href="#aaad6fdc413dcb02531587aef283013fd">More...</a><br/></td></tr>
-<tr class="separator:aaad6fdc413dcb02531587aef283013fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8e6f9a02e681d30b0f37e568f25699"><td class="memItemLeft" align="right" valign="top">function &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#afe8e6f9a02e681d30b0f37e568f25699">updateDriftCorrection</a> (trueXY_px, estXY_px, maxCorrection_deg, weight)</td></tr>
+<tr class="memdesc:afe8e6f9a02e681d30b0f37e568f25699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the drift correction factor. Will compute the euclidean difference between the specified trueXY and estXY, and combine with the current offset using vector addition (unless the distance &gt; maxCorrection, in which case ignore).  <a href="#afe8e6f9a02e681d30b0f37e568f25699">More...</a><br/></td></tr>
+<tr class="separator:afe8e6f9a02e681d30b0f37e568f25699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf6b02f25f02c68b6cde5cd8889805f9"><td class="memItemLeft" align="right" valign="top">function 
   xy  =&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#acf6b02f25f02c68b6cde5cd8889805f9">apply</a> (xy)</td></tr>
 <tr class="memdesc:acf6b02f25f02c68b6cde5cd8889805f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply the stored calibration (and/or drift correction) to a given set of xy gaze coordinates.  <a href="#acf6b02f25f02c68b6cde5cd8889805f9">More...</a><br/></td></tr>
@@ -203,9 +217,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a53502177169227c11188486593cd1ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a53502177169227c11188486593cd1ff3">nRecursions</a></td></tr>
 <tr class="memdesc:a53502177169227c11188486593cd1ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">n times to refit calibration (excluding outliers)  <a href="#a53502177169227c11188486593cd1ff3">More...</a><br/></td></tr>
 <tr class="separator:a53502177169227c11188486593cd1ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae76f728b3ad04ef76311e9bdc95fc498"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#ae76f728b3ad04ef76311e9bdc95fc498">outlierThresh_deg</a></td></tr>
-<tr class="memdesc:ae76f728b3ad04ef76311e9bdc95fc498"><td class="mdescLeft">&#160;</td><td class="mdescRight">distance threshold for a calibration point to be considered at outlier (in degrees) calibration  <a href="#ae76f728b3ad04ef76311e9bdc95fc498">More...</a><br/></td></tr>
-<tr class="separator:ae76f728b3ad04ef76311e9bdc95fc498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fa87a7c2808b0dffcca74e15d7c1ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a28fa87a7c2808b0dffcca74e15d7c1ef">outlierThresh_px</a></td></tr>
+<tr class="memdesc:a28fa87a7c2808b0dffcca74e15d7c1ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">distance threshold for a calibration point to be considered at outlier (in whatever units the calibration is carried out in) calibration  <a href="#a28fa87a7c2808b0dffcca74e15d7c1ef">More...</a><br/></td></tr>
+<tr class="separator:a28fa87a7c2808b0dffcca74e15d7c1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74f039c6edc53a40b843aec37c19918f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a74f039c6edc53a40b843aec37c19918f">targ</a> = &quot;[]&quot;</td></tr>
 <tr class="memdesc:a74f039c6edc53a40b843aec37c19918f"><td class="mdescLeft">&#160;</td><td class="mdescRight">target gaze coordinates  <a href="#a74f039c6edc53a40b843aec37c19918f">More...</a><br/></td></tr>
 <tr class="separator:a74f039c6edc53a40b843aec37c19918f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -267,7 +281,8 @@ Additional Inherited Members</h2></td></tr>
 <li>addMeasurements - Add observed gaze measurements in response to a presented pair of gaze coordinates.</li>
 <li>removeMeasurements - Remove all obervations recorded in response to the specified targ coordinate pair.</li>
 <li>clearMeasurements - Remove all raw gaze observations.</li>
-<li>getMeasurements - Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.</li>
+<li>getRawMeasurements - Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.</li>
+<li>getNTargs - Get number of unique targets that have been measured.</li>
 <li>compute - Compute a calibration map by fitting a least-square polynomial surface to a given set of targ- and resp- gaze coordinates.</li>
 <li>clear - Clear the fitted calibration. N.b., doesn't clear the raw measurements.</li>
 <li>save - Save the fitted calibration, either to the local directory, or to a specified location.</li>
@@ -282,7 +297,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section user"><dt>Author</dt><dd>Pete R Jones <a href="#" onclick="location.href='mai'+'lto:'+'pet'+'ej'+'onz'+'e@'+'gma'+'il'+'.co'+'m'; return false;">petej<span style="display: none;">.nosp@m.</span>onze<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a></dd></dl>
 <dl class="section user"><dt>Verinfo</dt><dd>1.0 PJ 02/2013 : first_build<br/>
 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd><p class="startdd">report goodness of fit metric </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd><p class="startdd">report goodness of fit metric </p>
 <p>visualization </p>
 <p class="enddd">facility to query if point is outside calibrated area? (could be done quite roughly / assuming a rectangle) [alt could be done more elegantly using a graphic movement listener]</p>
 </dd></dl>
@@ -317,7 +332,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>PRJ</dd></dl>
 <dl class="section user"><dt>Required fields of calibParams:</dt><dd></dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00186">186</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00184">184</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -347,6 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add observed gaze measurements in response to a presented pair of gaze coordinates. If size(targ,1)==1, will automatically expand to match the number of rows in targ. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>check that Std Dev. within some specified criterion?</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">targ</td><td>xy presented coordinates - [n,2] matrix </td></tr>
@@ -357,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00239">239</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00233">233</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -386,7 +402,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00570">570</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00635">635</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -407,7 +423,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00444">444</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00504">504</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -428,11 +444,11 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00305">305</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00296">296</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="afff208e1b0229c2a484e9e23ab01a5e5"></a>
+<a class="anchor" id="a0b4673814458d7d426a9a797c653b079"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -446,13 +462,25 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>outlierThresh_px</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>targ</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>resp</em>&#160;</td>
+          <td class="paramname"><em>resp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>verbosity</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -466,8 +494,10 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nRecursions</td><td>num of times to refit the calibration </td></tr>
+    <tr><td class="paramname">outlierThresh_px</td><td>observations with a euclidean distance from the target greater than this will be ignored </td></tr>
     <tr><td class="paramname">targ</td><td>optional, target gaze coordinates [n,2] </td></tr>
     <tr><td class="paramname">resp</td><td>optional, response coordinates [n,2] </td></tr>
+    <tr><td class="paramname">verbosity</td><td>scalar specifying amount of debug info to print to console </td></tr>
   </table>
   </dd>
 </dl>
@@ -475,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00338">338</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00362">362</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -496,7 +526,7 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00219">219</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00214">214</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -521,9 +551,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00622">622</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00685">685</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
-<p>References <a class="el" href="_singleton_8m_source.html#l00223">Singleton.finishUpSingleton()</a>.</p>
+<p>References <a class="el" href="_singleton_8m_source.html#l00228">Singleton.finishUpSingleton()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -557,9 +587,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00618">618</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00681">681</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
-<p>References <a class="el" href="_singleton_8m_source.html#l00191">Singleton.getInstanceSingleton()</a>.</p>
+<p>References <a class="el" href="_singleton_8m_source.html#l00188">Singleton.getInstanceSingleton()</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -572,12 +602,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab876003ab87bd90f687626c7782daa41"></a>
+<a class="anchor" id="a72d3bec4f08569a129772753c00369a2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">function [   resp_used ,   resp_excluded  ] = ivis.calibration.IvCalibration.getMeasurements </td>
+          <td class="memname">function   n  = ivis.calibration.IvCalibration.getNMeasurements </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -585,14 +615,58 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Get all raw gaze observations, separated into those that were and weren't used in the computed calibration. </p>
+<p>Get number of observed data points. </p>
+<dl class="section return"><dt>Returns</dt><dd>n integer.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>19/04/17 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
+
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00326">326</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab431cd35db7b79be3aeb0f0b957c7d2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">function   n  = ivis.calibration.IvCalibration.getNTargs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get number of unique targets that have been measured. </p>
+<dl class="section return"><dt>Returns</dt><dd>n integer.</dd></dl>
+<dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
+
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00310">310</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab32be4f2af45f5f246d4618bd553d609"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">function [   resp_used ,   resp_excluded ,   targ_used ,   targ_excluded  ] = ivis.calibration.IvCalibration.getRawMeasurements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all raw gaze observations. </p>
 <dl class="section return"><dt>Returns</dt><dd>resp_used ###### </dd>
 <dd>
 resp_excluded ######</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00319">319</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00342">342</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -626,7 +700,7 @@ resp_excluded ######</dd></dl>
 
 <p>Implements <a class="el" href="class_singleton.html#a338c7e82475ead2f89a5256391e7e7f3">Singleton</a>.</p>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00610">610</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00673">673</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -651,7 +725,7 @@ resp_excluded ######</dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00626">626</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00689">689</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -679,7 +753,24 @@ resp_excluded ######</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00496">496</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00555">555</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82d3e07e91cbafd6f2ed178fee20e7bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">function  ivis.calibration.IvCalibration.plotCurrentCalibration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00486">486</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -708,7 +799,7 @@ resp_excluded ######</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00268">268</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00263">263</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -729,7 +820,7 @@ resp_excluded ######</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00522">522</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00580">580</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -757,11 +848,11 @@ resp_excluded ######</dd></dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00460">460</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00520">520</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aaad6fdc413dcb02531587aef283013fd"></a>
+<a class="anchor" id="afe8e6f9a02e681d30b0f37e568f25699"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -769,19 +860,25 @@ resp_excluded ######</dd></dl>
           <td class="memname">function  ivis.calibration.IvCalibration.updateDriftCorrection </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>trueXY</em>, </td>
+          <td class="paramname"><em>trueXY_px</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>estXY</em>, </td>
+          <td class="paramname"><em>estXY_px</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>maxCorrection</em>&#160;</td>
+          <td class="paramname"><em>maxCorrection_deg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -792,18 +889,20 @@ resp_excluded ######</dd></dl>
 </div><div class="memdoc">
 
 <p>Update the drift correction factor. Will compute the euclidean difference between the specified trueXY and estXY, and combine with the current offset using vector addition (unless the distance &gt; maxCorrection, in which case ignore). </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>in future versions may want to have different tolerances for x and y deviations</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">trueXY</td><td>the "true" xy gaze coordinate </td></tr>
-    <tr><td class="paramname">estXY</td><td>the observed xy gaze coordinate </td></tr>
-    <tr><td class="paramname">maxCorrection</td><td>the maximum acceptable deviation</td></tr>
+    <tr><td class="paramname">trueXY_px</td><td>the "true" xy gaze coordinate </td></tr>
+    <tr><td class="paramname">estXY_px</td><td>the observed xy gaze coordinate </td></tr>
+    <tr><td class="paramname">maxCorrection_deg</td><td>the maximum acceptable deviation </td></tr>
+    <tr><td class="paramname">weight</td><td>amount of weight to give to new evidence (0 &lt;= x &lt;= 1)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section date"><dt>Date</dt><dd>26/06/14 </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>PRJ </dd></dl>
 
-<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00535">535</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
+<p>Definition at line <a class="el" href="_iv_calibration_8m_source.html#l00593">593</a> of file <a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a>.</p>
 
 </div>
 </div>
@@ -943,17 +1042,17 @@ resp_excluded ######</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ae76f728b3ad04ef76311e9bdc95fc498"></a>
+<a class="anchor" id="a28fa87a7c2808b0dffcca74e15d7c1ef"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ivis.calibration.IvCalibration.outlierThresh_deg</td>
+          <td class="memname">ivis.calibration.IvCalibration.outlierThresh_px</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>distance threshold for a calibration point to be considered at outlier (in degrees) calibration </p>
+<p>distance threshold for a calibration point to be considered at outlier (in whatever units the calibration is carried out in) calibration </p>
 <dl class="section note"><dt>Note</dt><dd>This property has non-standard access specifiers: <code>SetAccess = Private, GetAccess = Public</code> </dd>
 <dd>
 <a href="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</a> </dd></dl>
@@ -1003,7 +1102,7 @@ resp_excluded ######</dd></dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>src/+ivis/+calibration/<a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a></li>
+<li>+ivis/+calibration/<a class="el" href="_iv_calibration_8m_source.html">IvCalibration.m</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1011,7 +1110,7 @@ resp_excluded ######</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceivis.html">ivis</a></li><li class="navelem"><a class="el" href="namespaceivis_1_1calibration.html">calibration</a></li><li class="navelem"><a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html">IvCalibration</a></li>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:42 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:14 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

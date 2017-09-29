@@ -13,7 +13,8 @@
 %    * addMeasurements       - Add observed gaze measurements in response to a presented pair of gaze coordinates.
 %    * removeMeasurements	- Remove all obervations recorded in response to the specified targ coordinate pair.
 %    * clearMeasurements     - Remove all raw gaze observations.
-%    * getMeasurements       - Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.
+%    * getRawMeasurements  	- Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.
+%    * getNTargs             - Get number of unique targets that have been measured.
 %    * compute               - Compute a calibration map by fitting a least-square polynomial surface to a given set of targ- and resp- gaze coordinates.
 %    * clear                 - Clear the fitted calibration. N.b., doesn't clear the raw measurements.
 %    * save                  - Save the fitted calibration, either to the local directory, or to a specified location.
@@ -43,4 +44,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 % 
+%
+%    Reference page in Doc Center
+%       doc ivis.calibration.IvCalibration
+%
 %

@@ -24,7 +24,6 @@ var classivis_1_1video_1_1_iv_video =
     [ "isPaused", "classivis_1_1video_1_1_iv_video.html#a73a9d81691c919b8094034d27681a91b", null ],
     [ "maxThreads", "classivis_1_1video_1_1_iv_video.html#a773f5f93626be98fbabe7e6b5621b348", null ],
     [ "movieFn", "classivis_1_1video_1_1_iv_video.html#a7dbccbe2fc3a3cc61713e7ce2d6b5ca6", null ],
-    [ "movieNum", "classivis_1_1video_1_1_iv_video.html#a09b8fa3551ff6c54e05f8a9ff081f1f2", null ],
     [ "moviePtr", "classivis_1_1video_1_1_iv_video.html#a99ed0a8b17bf5bc906f79e018f55e4d1", null ],
     [ "nVidFns", "classivis_1_1video_1_1_iv_video.html#a5ab891facd95c4f88b6792fbde7792cb", null ],
     [ "pixelFormat", "classivis_1_1video_1_1_iv_video.html#a0e96678137755631fb9e1b29a8edd6ca", null ],

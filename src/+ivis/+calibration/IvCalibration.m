@@ -14,7 +14,7 @@ classdef IvCalibration < Singleton
     %   * addMeasurements       - Add observed gaze measurements in response to a presented pair of gaze coordinates.
     %   * removeMeasurements	- Remove all obervations recorded in response to the specified targ coordinate pair.
     %   * clearMeasurements     - Remove all raw gaze observations.
-    %   * getMeasurements       - Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.
+    %   * getRawMeasurements  	- Get all raw gaze observations, separated into those that were and weren't used in the computed calibration.
     %   * getNTargs             - Get number of unique targets that have been measured.
     %   * compute               - Compute a calibration map by fitting a least-square polynomial surface to a given set of targ- and resp- gaze coordinates.
     %   * clear                 - Clear the fitted calibration. N.b., doesn't clear the raw measurements.
@@ -186,7 +186,18 @@ classdef IvCalibration < Singleton
             n = size(unique(obj.targ,'rows'),1);
         end
         
-        function [resp_used, resp_excluded] = getRawMeasurements(obj)
+        function n = getNMeasurements(obj)
+            % Get number of observed data points.
+            %
+            % @return	n       integer.
+            %
+            % @date     19/04/17
+            % @author   PRJ
+            %
+            n = length(obj.resp);
+        end
+        
+        function [resp_used, resp_excluded, targ_used, targ_excluded] = getRawMeasurements(obj)
             % Get all raw gaze observations
             %
             % @return	resp_used       ######
@@ -195,11 +206,13 @@ classdef IvCalibration < Singleton
             % @date     26/06/14
             % @author   PRJ
             %
-            resp_used = obj.resp(obj.idx_used,:);
-            resp_excluded = obj.resp(~obj.idx_used,:);
+            resp_used       = obj.resp(obj.idx_used,:);
+            resp_excluded   = obj.resp(~obj.idx_used,:);
+            targ_used       = obj.targ(obj.idx_used,:);
+            targ_excluded   = obj.targ(~obj.idx_used,:);
         end
 
-        function ok = compute(obj, nRecursions, targ, resp)
+        function ok = compute(obj, nRecursions, outlierThresh_px, targ, resp, verbosity)
             % Compute a calibration map by fitting a least-square
             % polynomial surface to a given set of targ- and resp- gaze
             % coordinates. If no gaze coordinates specified, will use those
@@ -207,10 +220,12 @@ classdef IvCalibration < Singleton
             % nRecursions times, each times excluding any outliers that are
             % greater than an arbitrary distance away.
             %
-            % @param	nRecursions	num of times to refit the calibration
-            % @param	targ        optional, target gaze coordinates [n,2]
-            % @param	resp        optional, response coordinates [n,2]
-            % @return	ok          false if fit failed.
+            % @param	nRecursions         num of times to refit the calibration
+            % @param	outlierThresh_px	observations with a euclidean distance from the target greater than this will be ignored
+            % @param	targ                optional, target gaze coordinates [n,2]
+            % @param	resp                optional, response coordinates [n,2]
+            % @param	verbosity           scalar specifying amount of debug info to print to console
+            % @return	ok                  false if fit failed.
             %
             % @date     26/06/14
             % @author   PRJ
@@ -223,11 +238,17 @@ classdef IvCalibration < Singleton
             if nargin < 2 || isempty(nRecursions)
                 nRecursions = obj.nRecursions;
             end
-            if nargin < 3 || isempty(targ)
+            if nargin < 3 || isempty(outlierThresh_px)
+                outlierThresh_px = obj.outlierThresh_px;
+            end
+            if nargin < 4 || isempty(targ)
                 targ = obj.targ;
             end
-            if nargin < 4 || isempty(resp)
+            if nargin < 5 || isempty(resp)
                 resp = obj.resp;
+            end
+            if nargin < 6 || isempty(verbosity)
+                verbosity = 1;
             end
           
             % init
@@ -240,24 +261,35 @@ classdef IvCalibration < Singleton
                 return;
             end
             
+            % check in case all exactly right (in which case no need for
+            % calibration) -- NB: otherwise fit will fail(!)
+            if all(all(resp==targ))
+                ok = true;
+                return;
+            end
+            
+            % fit model (least squares 1st order [linear] polynomial surface)
+            % X = [resp ones(size(resp,1),1)];
+
             % fit model (least squares 2nd order polynomial surface)
-%             X = [resp ones(size(resp,1),1)];
             X = [resp resp.^2 resp(:,1).*resp(:,2) ones(size(resp,1),1)];
             [U,S,V] = svd(X,0);
             S = diag(1./diag(S));
             pseudINV = V*S*U';
-            cx = pseudINV * targ(:,1); %#ok
-            cy = pseudINV * targ(:,2); %#ok
+            cx = pseudINV * targ(:,1); %#ok<PROPLC>
+            cy = pseudINV * targ(:,2); %#ok<PROPLC>
             
-            % calculate error
-            err_x = (X*cx)-targ(:,1); %#ok
-            err_y = (X*cy)-targ(:,2); %#ok
+            % calculate error between (predicted) gaze coordinates and
+            % targets
+            err_x = (X*cx)-targ(:,1); %#ok<PROPLC>
+            err_y = (X*cy)-targ(:,2); %#ok<PROPLC>
             err_dist = sqrt(err_x.^2 + err_y.^2);
             %err_mean = mean(err_dist)
             %err_rms = sqrt(mean(sum(err_dist.^2)))
             
-            % compute
-            idx_valid = err_dist <= obj.outlierThresh_px;
+            % compute whether-any/which gaze samples lie too far from their
+            % targets to be considered valid measures
+            idx_valid = err_dist <= outlierThresh_px;
             
             % check if fit is valid (return if not)
             if ~any(idx_valid)
@@ -268,24 +300,46 @@ classdef IvCalibration < Singleton
             
             % store [may subsequently be cleared after further recursions]
             obj.idx_used = ismember(obj.resp,resp,'rows');
-            obj.cx = cx; %#ok
-            obj.cy = cy; %#ok
+            obj.cx = cx; %#ok<PROPLC>
+            obj.cy = cy; %#ok<PROPLC>
             
             % % compute the (approximate) rectangle specifying where on the
             % % screen has been calibrated
             % obj.calibratedRect = [min(targ) max(targ)]; % [x1 y1 x2 y2]
             
+            % for debugging
+            %obj.plotCurrentCalibration();
+            
             % refit, if necessary, after excluding outliers
             if nRecursions > 0
                 nRecursions = nRecursions - 1;
-                ok = obj.compute(nRecursions, targ(idx_valid,:), resp(idx_valid,:));
+                ok = obj.compute(nRecursions, outlierThresh_px, targ(idx_valid,:), resp(idx_valid,:), verbosity);
             else
                 % clear any existing drift correction
-                fprintf('Clearing drift correction..\n');
+                if verbosity > 0
+                	fprintf('Clearing drift correction..\n');
+                end
                 obj.resetDriftCorrection();
                 % all done!
             end
         end
+        
+        function [] = plotCurrentCalibration(obj)
+            
+            [resp_used, resp_excluded, targ_used, targ_excluded] = obj.getRawMeasurements();
+            
+            % open figure
+            figure()
+            hold on
+            
+            % plot targets
+            targs = unique([targ_used; targ_excluded], 'rows');
+            plot(targs(:,1), targs(:,2),'ko');
+            
+            % plot responses
+            plot(resp_used(:,1),resp_used(:,2),'gx', resp_excluded(:,1),resp_excluded(:,2),'rx');
+        end
+        
         
         function [] = clear(obj)
             % Clear the fitted calibration. N.b., doesn't clear the raw
@@ -357,7 +411,7 @@ classdef IvCalibration < Singleton
             obj.driftCorrection_px = [0 0];
         end
         
-        function [] = updateDriftCorrection(obj, trueXY, estXY, maxCorrection, weight)
+        function [] = updateDriftCorrection(obj, trueXY_px, estXY_px, maxCorrection_deg, weight)
             % Update the drift correction factor. Will compute the
             % euclidean difference between the specified trueXY and estXY,
             % and combine with the current offset using vector addition
@@ -366,24 +420,24 @@ classdef IvCalibration < Singleton
             % @todo in future versions may want to have different
             % tolerances for x and y deviations
             %
-            % @param	trueXY          the "true" xy gaze coordinate 
-            % @param	estXY           the observed xy gaze coordinate
-            % @param	maxCorrection	the maximum acceptable deviation
-            % @param    weight          amount of weight to give to new evidence (0 <= x <= 1)
+            % @param	trueXY_px           the "true" xy gaze coordinate 
+            % @param	estXY_px            the observed xy gaze coordinate
+            % @param	maxCorrection_deg	the maximum acceptable deviation
+            % @param    weight              amount of weight to give to new evidence (0 <= x <= 1)
             %
             % @date     26/06/14
             % @author   PRJ
             %
-            if nargin < 4 || isempty(maxCorrection)
-                maxCorrection = obj.maxDriftCorrection_deg; % if not manually overriding
+            if nargin < 4 || isempty(maxCorrection_deg)
+                maxCorrection_deg = obj.maxDriftCorrection_deg; % if not manually overriding
             end
             if nargin < 5 || isempty(weight)
                 weight = 1;
             end
          
-            d_px = trueXY - estXY;
+            d_px = trueXY_px - estXY_px;
             d_deg = ivis.math.IvUnitHandler.getInstance().px2deg(d_px); % convert to degrees visual angle
-            if any(abs(d_deg) > maxCorrection)
+            if any(abs(d_deg) > maxCorrection_deg)
                 beep();
                 fprintf('WARNING: difference (%1.2f %1.2f) > maxDrift cutoff (%1.2f)\n', abs(d_deg), obj.maxDriftCorrection_deg);
             else

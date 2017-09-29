@@ -35,3 +35,7 @@
 %  *********************************************************************
 %  
 %
+%    Reference page in Doc Center
+%       doc ivis.video.IvVideo
+%
+%

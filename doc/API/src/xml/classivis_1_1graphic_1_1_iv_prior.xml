@@ -9,16 +9,16 @@
         <definition>ivis::graphic::IvPrior::name</definition>
         <argsstring></argsstring>
         <name>name</name>
-        <initializer>= &apos;prior&apos;</initializer>
+        <initializer>= &quot;prior&quot;</initializer>
         <briefdescription>
 <para>other internal parameters </para>        </briefdescription>
         <detaileddescription>
 <para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> <linebreak/>
-<bold>Default:</bold> &apos;prior&apos; </para></simplesect>
+<bold>Default:</bold> &quot;prior&quot; </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="60" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="59" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="60" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="60" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -36,7 +36,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="82" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="82" bodyend="91"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="80" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="80" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a8b8daca36497cbbe3087335dd323e91c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, xy &gt;</type>
@@ -64,7 +64,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="105" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="105" bodyend="107"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="101" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="101" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a8ae061a49b980535ff7c0977ae47275d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, x &gt;</type>
@@ -92,7 +92,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="123" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="123" bodyend="125"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="119" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="119" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1a947d7330e18448ae8ac3c13e4f7a73b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -120,7 +120,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="141" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="141" bodyend="143"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="137" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="137" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1aca0f10732619f3b6ad9f53b6862fed30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>noret::substitute</type>
@@ -181,7 +181,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="159" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="159" bodyend="160"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="155" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="155" bodyend="156"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_prior_1aea9a5db707ad770c7a0b5eed87e016c2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -200,69 +200,69 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="177" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="177" bodyend="178"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="173" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="173" bodyend="174"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Degenerate graphic object that doesn&apos;t move or resize. </para>    </briefdescription>
     <detaileddescription>
 <para><simplesect kind="par"><title>IvPrior Methods</title><para><itemizedlist>
-<listitem><para><ref refid="classivis_1_1graphic_1_1_iv_prior" kindref="compound">IvPrior</ref> - Constructor.</para></listitem><listitem><para>getXY - Dummy method; does nothing.</para></listitem><listitem><para>reset - Dummy method; does nothing.</para></listitem><listitem><para>draw - Dummy method; does nothing.</para></listitem></itemizedlist>
+<listitem><para><ref refid="classivis_1_1graphic_1_1_iv_prior" kindref="compound">IvPrior</ref> - Constructor.</para></listitem><listitem><para>getXY - Dummy method; does nothing.</para></listitem><listitem><para>getX - Dummy method; does nothing.</para></listitem><listitem><para>getY - Dummy method; does nothing.</para></listitem><listitem><para>reset - Dummy method; does nothing.</para></listitem><listitem><para>draw - Dummy method; does nothing.</para></listitem></itemizedlist>
 </para></simplesect>
 <simplesect kind="see"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">ivis.graphic.IvGraphic</ref></para></simplesect>
 <simplesect kind="par"><title>Example</title><para>none</para></simplesect>
 <simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
 <simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
 </para></simplesect>
-<xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>with the introduction of the stationary flag in the <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> class, this is rapidly becoming redundant. Maybe should subclass <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref>?</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+<xrefsect id="todo_1_todo000012"><xreftitle>Todo</xreftitle><xrefdescription><para>with the introduction of the stationary flag in the <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref> class, this is rapidly becoming redundant. Maybe should subclass <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref>?</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
  </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="606">
+      <node id="659">
         <label>handle</label>
       </node>
-      <node id="605">
+      <node id="658">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="606" relation="public-inheritance">
+        <childnode refid="659" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="603">
+      <node id="656">
         <label>ivis::graphic::IvPrior</label>
         <link refid="classivis_1_1graphic_1_1_iv_prior"/>
-        <childnode refid="604" relation="public-inheritance">
+        <childnode refid="657" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="604">
+      <node id="657">
         <label>ivis::graphic::IvScreenObject</label>
         <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
-        <childnode refid="605" relation="public-inheritance">
+        <childnode refid="658" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="610">
+      <node id="663">
         <label>handle</label>
       </node>
-      <node id="609">
+      <node id="662">
         <label>ivis::broadcaster::IvListener</label>
         <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
-        <childnode refid="610" relation="public-inheritance">
+        <childnode refid="663" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="607">
+      <node id="660">
         <label>ivis::graphic::IvPrior</label>
         <link refid="classivis_1_1graphic_1_1_iv_prior"/>
-        <childnode refid="608" relation="public-inheritance">
+        <childnode refid="661" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="608">
+      <node id="661">
         <label>ivis::graphic::IvScreenObject</label>
         <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
-        <childnode refid="609" relation="public-inheritance">
+        <childnode refid="662" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="19" bodyend="191"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvPrior.m" bodystart="19" bodyend="187"/>
     <listofallmembers>
       <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>delete</name></member>
       <member refid="classivis_1_1graphic_1_1_iv_prior_1aea9a5db707ad770c7a0b5eed87e016c2" prot="public" virt="non-virtual"><scope>ivis::graphic::IvPrior</scope><name>draw</name></member>

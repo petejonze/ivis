@@ -16,7 +16,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="67" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="67" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="71" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1math_1_1_iv_unit_handler_1a22a92caf6a5f36b9bcadf853f471cf02" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -30,7 +30,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="77" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="77" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="81" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="81" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1math_1_1_iv_unit_handler_1a36b8c15818de3337eae7ca5f74d8a2b8" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -44,7 +44,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="86" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="86" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="90" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1math_1_1_iv_unit_handler_1ab25b02f8f85c526b3fd05ebb22d3f86d" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -58,7 +58,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="96" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="96" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="100" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1math_1_1_iv_unit_handler_1a0486441d1f3137765853648ab459c6a3" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -72,7 +72,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="106" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="106" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="110" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1math_1_1_iv_unit_handler_1af71b6359f76ce3510b34860da5134f11" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -86,7 +86,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="115" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="115" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="119" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1math_1_1_iv_unit_handler_1aa7cc22d3f688d102bc6170a965c23a36" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -100,7 +100,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="124" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="124" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="128" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="128" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -152,8 +152,36 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="143" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="143" bodyend="166"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="147" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="147" bodyend="157"/>
         <references refid="rad2deg_8m_1a45a1ebf2044ad9290aff56e6191bcdad" compoundref="rad2deg_8m" startline="17" endline="25">rad2deg</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1a7f1c08cc7f11f286205d1c834ffda844" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt; ivis::math::IvUnitHandler::px2cm</definition>
+        <argsstring>(matlabtypesubstitute x_px)</argsstring>
+        <name>px2cm</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>x_px</declname>
+        </param>
+        <briefdescription>
+<para>Convert pixels to cm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_px</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="175" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="175" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1ad8a8605dfeb2ec4be96f6207b537f532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y_px &gt;</type>
@@ -181,7 +209,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="183" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="183" bodyend="185"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="193" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="193" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1a4e393674608cde379c34baf9d5dcef54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, y &gt;</type>
@@ -220,7 +248,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="201" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="201" bodyend="210"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="211" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="211" bodyend="221"/>
         <references refid="rad2deg_8m_1a45a1ebf2044ad9290aff56e6191bcdad" compoundref="rad2deg_8m" startline="17" endline="25">rad2deg</references>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1ac8d95e72c283ef02a4500221948cf8b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -260,7 +288,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="227" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="227" bodyend="236"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="238" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="238" bodyend="247"/>
         <references refid="rad2deg_8m_1a45a1ebf2044ad9290aff56e6191bcdad" compoundref="rad2deg_8m" startline="17" endline="25">rad2deg</references>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1a5c930743d4acf4927a7c4b732000d03f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
@@ -300,7 +328,47 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="253" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="253" bodyend="259"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="264" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="264" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1ac65386c4a9c4926ebc852678e11bc98f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, y_deg &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, y_deg &gt; ivis::math::IvUnitHandler::cm2deg</definition>
+        <argsstring>(matlabtypesubstitute x_cm, matlabtypesubstitute viewingDist_cm)</argsstring>
+        <name>cm2deg</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>x_cm</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>viewingDist_cm</declname>
+        </param>
+        <briefdescription>
+<para>Convert cm to degrees visual angle. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x_cm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>viewingDist_cm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>y_deg</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="287" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="287" bodyend="293"/>
+        <references refid="rad2deg_8m_1a45a1ebf2044ad9290aff56e6191bcdad" compoundref="rad2deg_8m" startline="17" endline="25">rad2deg</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-static-func">
@@ -324,7 +392,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="283" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="283" bodyend="287"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="317" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="317" bodyend="321"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -339,8 +407,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="291" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="291" bodyend="293"/>
-        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="191" endline="206">Singleton::getInstanceSingleton</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="325" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="325" bodyend="327"/>
+        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="188" endline="211">Singleton::getInstanceSingleton</references>
       </memberdef>
       <memberdef kind="function" id="classivis_1_1math_1_1_iv_unit_handler_1ad4708d729b3eaf4590ef922a598daf7e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>noret::substitute</type>
@@ -353,8 +421,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="295" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="295" bodyend="297"/>
-        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="223" endline="234">Singleton::finishUpSingleton</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="329" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="329" bodyend="331"/>
+        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="228" endline="241">Singleton::finishUpSingleton</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -365,48 +433,49 @@
 </para></simplesect>
 <simplesect kind="see"><para><ref refid="classivis_1_1math_1_1_iv_unit_handler" kindref="compound">ivis.math.IvUnitHandler</ref></para></simplesect>
 <simplesect kind="par"><title>Example</title><para>runtests infantvision.tests -verbose</para></simplesect>
-<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+IvUH = <ref refid="classivis_1_1math_1_1_iv_unit_handler" kindref="compound">ivis.math.IvUnitHandler</ref>(59.7, 2560, 60); IvUH.cm2deg(0.11,60) IvUH.deg2px(3)</para><para><simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
 <simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
  1.0 PJ 02/2011 : first_build</para></simplesect>
 Copyright 2014 : P R Jones <hruler/>
 </para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="760">
+      <node id="813">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="761" relation="public-inheritance">
+        <childnode refid="814" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="761">
+      <node id="814">
         <label>handle</label>
       </node>
-      <node id="759">
+      <node id="812">
         <label>ivis::math::IvUnitHandler</label>
         <link refid="classivis_1_1math_1_1_iv_unit_handler"/>
-        <childnode refid="760" relation="public-inheritance">
+        <childnode refid="813" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="763">
+      <node id="816">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="764" relation="public-inheritance">
+        <childnode refid="817" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="764">
+      <node id="817">
         <label>handle</label>
       </node>
-      <node id="762">
+      <node id="815">
         <label>ivis::math::IvUnitHandler</label>
         <link refid="classivis_1_1math_1_1_iv_unit_handler"/>
-        <childnode refid="763" relation="public-inheritance">
+        <childnode refid="816" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="19" bodyend="301"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/IvUnitHandler.m" bodystart="19" bodyend="335"/>
     <listofallmembers>
+      <member refid="classivis_1_1math_1_1_iv_unit_handler_1ac65386c4a9c4926ebc852678e11bc98f" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>cm2deg</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1ad8a8605dfeb2ec4be96f6207b537f532" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>cm2px</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1a5c930743d4acf4927a7c4b732000d03f" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>deg2cm</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1ac8d95e72c283ef02a4500221948cf8b7" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>deg2px</name></member>
@@ -421,6 +490,7 @@ Copyright 2014 : P R Jones <hruler/>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1aa7cc22d3f688d102bc6170a965c23a36" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>maxFreq_cpd</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1ab25b02f8f85c526b3fd05ebb22d3f86d" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>pixel_per_cm</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1af71b6359f76ce3510b34860da5134f11" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>pixel_per_dg</name></member>
+      <member refid="classivis_1_1math_1_1_iv_unit_handler_1a7f1c08cc7f11f286205d1c834ffda844" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>px2cm</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1a4e393674608cde379c34baf9d5dcef54" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>px2deg</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1a22a92caf6a5f36b9bcadf853f471cf02" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>screenWidth_cm</name></member>
       <member refid="classivis_1_1math_1_1_iv_unit_handler_1a0486441d1f3137765853648ab459c6a3" prot="public" virt="non-virtual"><scope>ivis::math::IvUnitHandler</scope><name>screenWidth_dg</name></member>

@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="54" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="54" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="54" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classivis_1_1log_1_1_iv_log_1a2c685a3134efa6beb336136ed53949b6" prot="public" static="no" mutable="no">
         <type>matlabtypesubstitute</type>
@@ -30,11 +30,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="55" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="55" bodyend="-1"/>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="55" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="protected-static-func">
-      <memberdef kind="function" id="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>mlhsInnerSubst&lt; matlabtypesubstitute, fullFn &gt;</type>
         <definition>mlhsInnerSubst&lt; matlabtypesubstitute, fullFn &gt; ivis::log::IvLog::validateFn</definition>
         <argsstring>(matlabtypesubstitute fullFn, matlabtypesubstitute logType)</argsstring>
@@ -71,8 +71,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="65" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="65" bodyend="75"/>
-        <references refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" compoundref="ivisdir_8m" startline="17" endline="20">ivisdir</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="65" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="65" bodyend="75"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -88,52 +87,52 @@ Copyright 2014 : P R Jones <hruler/>
 </para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="734">
+      <node id="787">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="735" relation="public-inheritance">
+        <childnode refid="788" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="735">
+      <node id="788">
         <label>handle</label>
       </node>
-      <node id="733">
+      <node id="786">
         <label>ivis::log::IvLog</label>
         <link refid="classivis_1_1log_1_1_iv_log"/>
-        <childnode refid="734" relation="public-inheritance">
+        <childnode refid="787" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="737">
+      <node id="790">
         <label>ivis::log::IvRawLog</label>
         <link refid="classivis_1_1log_1_1_iv_raw_log"/>
-        <childnode refid="733" relation="public-inheritance">
+        <childnode refid="786" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="736">
+      <node id="789">
         <label>ivis::log::IvDataLog</label>
         <link refid="classivis_1_1log_1_1_iv_data_log"/>
-        <childnode refid="733" relation="public-inheritance">
+        <childnode refid="786" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="739">
+      <node id="792">
         <label>Singleton</label>
         <link refid="class_singleton"/>
-        <childnode refid="740" relation="public-inheritance">
+        <childnode refid="793" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="740">
+      <node id="793">
         <label>handle</label>
       </node>
-      <node id="738">
+      <node id="791">
         <label>ivis::log::IvLog</label>
         <link refid="classivis_1_1log_1_1_iv_log"/>
-        <childnode refid="739" relation="public-inheritance">
+        <childnode refid="792" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="19" bodyend="96"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="19" bodyend="96"/>
     <listofallmembers>
       <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>finishUpSingleton</name></member>
       <member refid="classivis_1_1log_1_1_iv_log_1a2c685a3134efa6beb336136ed53949b6" prot="public" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>fnPattern</name></member>
@@ -143,7 +142,7 @@ Copyright 2014 : P R Jones <hruler/>
       <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>initialise</name></member>
       <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>isinit</name></member>
       <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>Singleton</name></member>
-      <member refid="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>validateFn</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="public" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>validateFn</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

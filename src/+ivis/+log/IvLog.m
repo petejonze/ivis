@@ -35,7 +35,7 @@ classdef (Abstract) IvLog < Singleton
     %  -----STATIC METHODS (protected)-----
     %$ ====================================================================
     
-    methods (Static, Access = protected)
+    methods (Static, Access = public)
         
         function fullFn = validateFn(fullFn, logType)
             % Confirm whether file can be found, and append path if

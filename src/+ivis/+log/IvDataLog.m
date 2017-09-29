@@ -35,14 +35,18 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
     
     properties (GetAccess = public, SetAccess = private)
         % other internal parameters
-        buffer % CExpandableBuffer. Currently 11 columns: x,y,t,v,p,s,d,v,a,X,Y
+        buffer % CExpandableBuffer. Currently 13 columns: x,y,t,v,p,s,d,v,a,z1,z2,X,Y
             % x : x position (in pixels)
             % y : y position (in pixels)
             % t : timestamp (in seconds)
             % v : some kind of validity measure
-            % p : pupil diameter
+            % p : pupil diameter (in mm)
             % c : eye-event code (see IvEventCode)
-            % d,v,A
+            % d : euclidean distance in degrees visual angle
+            % v : velocity (deg/sec)
+            % A : acceleration (deg/sec)^2
+            % z1: left eyeball distance (in mm)
+            % z2: right eyeball distance (in mm)
             % X : x position, without processing (in pixels)
             % Y : y position, without processing (in pixels)
         tmpBuff % just stores the last inserted sample(s)     
@@ -71,7 +75,8 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
             
             obj.homeDir = regexprep(homeDir, '\$iv', escape(ivis.main.IvParams.getInstance().toolboxHomedir), 'ignorecase');
             obj.fnPattern = fnPattern;
-obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
+% mess about for building standalone executable:            
+% obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
             % try to open/create example log. Will immediately close & delete afterwards,
             % but this is just to see if disk-access is permitted
             if ~exist(obj.homeDir, 'dir')
@@ -85,7 +90,7 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
             fclose(fid);
             delete(fullFn);
             
-            obj.buffer = CExpandableBuffer(arraySize, 11);
+            obj.buffer = CExpandableBuffer(arraySize, 13);
         end
         
         function [] = delete(obj)
@@ -104,7 +109,7 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
 
         %% == METHODS =====================================================
         
-        function [] = add(obj, x, y, t, vldty, p, c, d, v, A, X, Y)
+        function [] = add(obj, x, y, t, vldty, p, c, d, v, A, z1, z2, X, Y)
             % Add data to the buffer.
             %
             % @param    x       gaze x position (pixels)
@@ -116,13 +121,15 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
             % @param    d       distance
             % @param    v       velocity
             % @param    A       acceleration
+            % @param    z1      left eyeball distance (in mm)
+            % @param    z2      right eyeball distance (in mm)
             % @param    X
             % @param    Y
             %
             % @date     26/06/14
             % @author   PRJ
             %          
-            obj.tmpBuff = [x, y, t, vldty, p, c, d, v, A, X, Y];
+            obj.tmpBuff = [x, y, t, vldty, p, c, d, v, A, z1, z2, X, Y];
             obj.buffer.put(obj.tmpBuff);
         end
         
@@ -162,11 +169,12 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
             % returned - might be nice to return a constant number of
             % non-NaN elements(?).
             %
-            % @param    n
-            % @param    c
-            % @param    excludeRowsWithNaNs
-            % @return   xy
-            % @return   t            
+            % @param    n           #####
+            % @param    useRaw      if true will get values without any form of
+            %                       calibration from IvCalibration.m
+            % @param    allowNan    ######
+            % @return   xy          ######
+            % @return   t           ######           
             %
             % @date     26/06/14
             % @author   PRJ
@@ -182,7 +190,7 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
             end
             
             if useRaw
-                columns = [10 11 3];
+                columns = [12 13 3];
             else
                 % use processed (e.g., calibrated, smoothed, interpolated) values
                 columns = [1 2 3];
@@ -221,6 +229,44 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
             % return values
             xy = data(:,1:2);
             t = data(:,3);
+        end
+        
+        function [zL_mm, zR_mm, t] = getLastKnownZ(obj, allowNan)
+            % Convenience wrapper for getLastN, that extracts the last Z values (raw or processed, with or without NaNs).
+            %
+            % @param    allowNan
+            % @return   zL_mm
+            % @return   zR_mm
+            % @return   t            
+            %
+            % @date     26/06/14
+            % @author   PRJ
+            %
+            
+            if allowNan
+                maxN = obj.buffer.nrows();
+            else
+                maxN = obj.buffer.computeNnonNaN(columns);
+            end
+            if maxN == 0
+                warning('IvDataLog.getLastKnownZ: no data stored - returning blank');
+                zL_mm = [];
+                zR_mm = [];
+                t = [];
+                return
+            end
+            
+            % get data
+            if allowNan
+                data = obj.buffer.getLastN(n, [10 11 3]);
+            else
+                data = obj.buffer.getLastNnonNaN(n, [10 11 3]);
+            end
+            
+            % return values
+            zL_mm = data(:,1);
+            zR_mm = data(:,2);
+            t = data(:,3);  
         end
         
         function data = getSinceT(obj, t, c)
@@ -306,7 +352,7 @@ obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\data'
                 warning('IvDataLog:FailedToOpenFile','Could not open file: %s', fullFn);
             else
                 try
-                    fprintf(fid, '%s', strjoin(',',headerInfo{:}));
+                    fprintf(fid, '%s', strjoin1(',',headerInfo{:}));
                     % write data (1st line - also includes IvRawLog file ref)
                     fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%s,',obj.buffer.get(1)',rawFullFn);
                     % write data (the rest)

@@ -28,10 +28,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="D:\Dropbox\MatlabToolkits\ivis\admin\resources\branding\logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">ivis
-   &#160;<span id="projectnumber">1.4</span>
+   &#160;<span id="projectnumber">1.5</span>
    </div>
    <div id="projectbrief">Realtime eyetracking toolbox</div>
   </td>
@@ -94,7 +94,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func_0x68.html#index_h"><span>h</span></a></li>
       <li><a href="functions_func_0x69.html#index_i"><span>i</span></a></li>
       <li><a href="functions_func_0x6c.html#index_l"><span>l</span></a></li>
-      <li><a href="functions_func_0x6d.html#index_m"><span>m</span></a></li>
       <li><a href="functions_func_0x6e.html#index_n"><span>n</span></a></li>
       <li><a href="functions_func_0x6f.html#index_o"><span>o</span></a></li>
       <li><a href="functions_func_0x70.html#index_p"><span>p</span></a></li>
@@ -143,7 +142,10 @@ $(document).ready(function(){initNavTree('functions_func_0x63.html','');});
 : <a class="el" href="class_lennard_jones_potential.html#a558e2e44f24aa835312c42f5ce947cf2">LennardJonesPotential</a>
 </li>
 <li>calibrate()
-: <a class="el" href="classivis_1_1audio_1_1_iv_audio.html#ab336e946f8db19a3a281dbe0a1aed299">ivis.audio.IvAudio</a>
+: <a class="el" href="classivis_1_1audio_1_1_iv_audio.html#ab336e946f8db19a3a281dbe0a1aed299">ivis::audio::IvAudio</a>
+</li>
+<li>calibrateDistanceToScreen()
+: <a class="el" href="classivis_1_1eyetracker_1_1_iv_data_input.html#a0d2889db7e2b909037600c8bbe21424d">ivis::eyetracker::IvDataInput</a>
 </li>
 <li>CCircularBuffer()
 : <a class="el" href="class_c_circular_buffer.html#afa91bf23eec98f5074e269930cb8a208">CCircularBuffer</a>
@@ -151,8 +153,18 @@ $(document).ready(function(){initNavTree('functions_func_0x63.html','');});
 <li>CExpandableBuffer()
 : <a class="el" href="class_c_expandable_buffer.html#a86cfc07ab005629825a291c53fb582da">CExpandableBuffer</a>
 </li>
+<li>checkClassPath()
+: <a class="el" href="classivis_1_1main_1_1_iv_main.html#a59e9da3cefce3da3fac5dc89c0f5591e">ivis::main::IvMain</a>
+</li>
+<li>classifierSpecificReset()
+: <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_box.html#ad539c0c436422c530650dab1ffe7eee4">ivis::classifier::IvClassifierBox</a>
+, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_grid.html#aee5af4542d91fd88e9d7b4d3566286cc">ivis::classifier::IvClassifierGrid</a>
+, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_l_l.html#aef78ff75894985f19d4d53e20db76ad7">ivis::classifier::IvClassifierLL</a>
+, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier_vector.html#aeed9bcf9c1116599a0f1a387725af91b">ivis::classifier::IvClassifierVector</a>
+, <a class="el" href="classivis_1_1classifier_1_1_iv_classifier.html#ab3ed2c1a7e0118b868b712a0d6211cf3">ivis::classifier::IvClassifier</a>
+</li>
 <li>clear()
-: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a36fcd6a72fa258ae2b86acd5683a9881">ivis.calibration.IvCalibration</a>
+: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a36fcd6a72fa258ae2b86acd5683a9881">ivis::calibration::IvCalibration</a>
 , <a class="el" href="class_c_circular_buffer.html#a4166734443e382a888f8cfd26294d4da">CCircularBuffer</a>
 , <a class="el" href="class_c_expandable_buffer.html#af0eeb26f4827cd47e3566c925f9a06ff">CExpandableBuffer</a>
 </li>
@@ -160,26 +172,35 @@ $(document).ready(function(){initNavTree('functions_func_0x63.html','');});
 : <a class="el" href="class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec">SingletonManager</a>
 </li>
 <li>clearMeasurements()
-: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a786d1aa6cad0dc761946b852cc50cba8">ivis.calibration.IvCalibration</a>
+: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a786d1aa6cad0dc761946b852cc50cba8">ivis::calibration::IvCalibration</a>
 </li>
 <li>close()
-: <a class="el" href="classivis_1_1log_1_1_iv_raw_log.html#a8a689d1e413a162d4fe004600411a93b">ivis.log.IvRawLog</a>
-, <a class="el" href="classivis_1_1video_1_1_iv_video.html#a2714b39fd77bc6320a8f0397b11041a7">ivis.video.IvVideo</a>
+: <a class="el" href="classivis_1_1log_1_1_iv_raw_log.html#a8a689d1e413a162d4fe004600411a93b">ivis::log::IvRawLog</a>
+, <a class="el" href="classivis_1_1video_1_1_iv_video.html#a2714b39fd77bc6320a8f0397b11041a7">ivis::video::IvVideo</a>
+</li>
+<li>cm2deg()
+: <a class="el" href="classivis_1_1math_1_1_iv_unit_handler.html#ac65386c4a9c4926ebc852678e11bc98f">ivis::math::IvUnitHandler</a>
 </li>
 <li>cm2px()
-: <a class="el" href="classivis_1_1math_1_1_iv_unit_handler.html#ad8a8605dfeb2ec4be96f6207b537f532">ivis.math.IvUnitHandler</a>
+: <a class="el" href="classivis_1_1math_1_1_iv_unit_handler.html#ad8a8605dfeb2ec4be96f6207b537f532">ivis::math::IvUnitHandler</a>
 </li>
 <li>compute()
-: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#afff208e1b0229c2a484e9e23ab01a5e5">ivis.calibration.IvCalibration</a>
+: <a class="el" href="classivis_1_1calibration_1_1_iv_calibration.html#a0b4673814458d7d426a9a797c653b079">ivis::calibration::IvCalibration</a>
+</li>
+<li>computeNnonNaN()
+: <a class="el" href="class_c_expandable_buffer.html#ad1bc68d426cb2ad9fc1864170ae2185a">CExpandableBuffer</a>
 </li>
 <li>connect()
-: <a class="el" href="classivis_1_1eyetracker_1_1_iv_tobii.html#ac4251457850ceb7a9d6793ac3c627803">ivis.eyetracker.IvTobii</a>
-, <a class="el" href="classivis_1_1eyetracker_1_1_iv_eyelink.html#a794ab339554e47ea440995e812311b11">ivis.eyetracker.IvEyelink</a>
-, <a class="el" href="classivis_1_1eyetracker_1_1_iv_mouse.html#ab2902379d56ee601b8c542d8eabefd05">ivis.eyetracker.IvMouse</a>
-, <a class="el" href="classivis_1_1eyetracker_1_1_iv_simulator.html#a6c2197c770f1d9b96389f5aef079fe3b">ivis.eyetracker.IvSimulator</a>
-, <a class="el" href="classivis_1_1eyetracker_1_1_iv_data_input.html#a603ecd31cced90b02f89946bb0bd3816">ivis.eyetracker.IvDataInput</a>
-, <a class="el" href="classivis_1_1eyetracker_1_1_iv_manual.html#aa05116abe51ac6dd734a28ed95ab8889">ivis.eyetracker.IvManual</a>
-, <a class="el" href="classivis_1_1eyetracker_1_1_iv_dummy.html#af6bd0668419d255a34699650382a5f34">ivis.eyetracker.IvDummy</a>
+: <a class="el" href="classivis_1_1eyetracker_1_1_iv_mouse.html#ab2902379d56ee601b8c542d8eabefd05">ivis::eyetracker::IvMouse</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_tobii_eye_x.html#a232fe7f5cca6c98e45fb82d27bed6d52">ivis::eyetracker::IvTobiiEyeX</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_simulator.html#a6c2197c770f1d9b96389f5aef079fe3b">ivis::eyetracker::IvSimulator</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_dummy.html#a1613f924d41b84b1da241b4cc13f1a76">ivis::eyetracker::IvDummy</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_smi.html#a89da02e26d21cd28b09ccf59412059db">ivis::eyetracker::IvSmi</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_eye_tribe.html#a99e6131862c6703e68b4ed9dd9627744">ivis::eyetracker::IvEyeTribe</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_data_input.html#a603ecd31cced90b02f89946bb0bd3816">ivis::eyetracker::IvDataInput</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_manual.html#aa05116abe51ac6dd734a28ed95ab8889">ivis::eyetracker::IvManual</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_eyelink.html#a794ab339554e47ea440995e812311b11">ivis::eyetracker::IvEyelink</a>
+, <a class="el" href="classivis_1_1eyetracker_1_1_iv_tobii.html#ac4251457850ceb7a9d6793ac3c627803">ivis::eyetracker::IvTobii</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -187,7 +208,7 @@ $(document).ready(function(){initNavTree('functions_func_0x63.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 19 2014 16:31:43 for ivis by
+    <li class="footer">Generated on Fri Sep 29 2017 09:38:16 for ivis by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.3.1 </li>
   </ul>

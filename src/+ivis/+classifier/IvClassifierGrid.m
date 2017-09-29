@@ -175,7 +175,7 @@ classdef IvClassifierGrid < ivis.classifier.IvClassifier
         function [] = updateParams(obj) %#ok interface implementation
         end
         
-        function [] = updateEvidence(obj, xyt) % interface implementation       
+        function [] = updateEvidence(obj, xyt, varargin) % interface implementation       
             if isempty(obj.graphicObjs)
                 % count n observations in each
                 % if no objects are specified, just do a generic comparison

@@ -37,12 +37,12 @@ classdef CCircularBuffer < handle
     
     properties (Access = private)
         buffer      % the data
-        i = 0       % internal nElements counter
     end
     
     properties (GetAccess = public, SetAccess = private)
         capacity    % max n data rows
         ncols       % n data columns
+        i = 0       % internal nElements counter
     end
     
     
@@ -128,7 +128,7 @@ classdef CCircularBuffer < handle
             y = obj.buffer(mod((1:n)-1+obj.i+max(0, obj.capacity-obj.i),obj.capacity)+1, mi);
         end
         
-        function y = get(obj, ni, mi)
+        function [y,idx] = get(obj, ni, mi)
             % get return the elements at specified indices
             %
             % 	y = obj.get([ni][, mi])
@@ -152,7 +152,8 @@ classdef CCircularBuffer < handle
                 error('CCircularBuffer:OutOfBounds', 'specified element-indices requested [%s], but only %i elements stored in buffer\n', num2str(ni(ni>obj.i)), obj.i)
             end
             
-            y = obj.buffer(mod(ni-1+obj.i+max(0, obj.capacity-obj.i),obj.capacity)+1, mi);
+            idx = mod(ni-1+obj.i+max(0, obj.capacity-obj.i),obj.capacity)+1;
+            y = obj.buffer(idx, mi);
         end
         
         function [n,m] = nElements(obj)

@@ -18,8 +18,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/myFlip.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/myFlip.m" bodystart="17" bodyend="78"/>
-        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="31">ivis::broadcaster::Screen</references>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/myFlip.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/myFlip.m" bodystart="17" bodyend="73"/>
+        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="29">ivis::broadcaster::Screen</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -51,63 +51,58 @@
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>persistent<sp/>vbl</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isempty(vbl)</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbl<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/><sp/>init<sp/>counter</highlight></codeline>
-<codeline lineno="26"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vbl<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">/*<sp/><sp/>init<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>persistent<sp/>buttonsPrior</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isempty(buttonsPrior)</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttonsPrior<sp/>=<sp/>[0<sp/>0<sp/>0];<sp/></highlight><highlight class="comment">/*<sp/><sp/>init<sp/>buttons</highlight></codeline>
-<codeline lineno="31"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttonsPrior<sp/>=<sp/>[0<sp/>0<sp/>0];<sp/></highlight><highlight class="comment">/*<sp/><sp/>init<sp/>buttons<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Draw<sp/>graphics</highlight></codeline>
-<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>[VBLTimestamp<sp/>StimulusOnsetTime<sp/>FlipTimestamp<sp/>Missed<sp/>Beampos]<sp/>=<sp/>Screen(&apos;Flip&apos;,<sp/>windowPtr<sp/>[,<sp/>when]<sp/>[,<sp/>dontclear]<sp/>[,<sp/>dontsync]<sp/>[,<sp/>multiflip]);</highlight></codeline>
-<codeline lineno="36"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>vbl<sp/>=<sp/><ref refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" kindref="member" tooltip="SCREEN wrapper for PTB&amp;#39;s Screen command.">Screen</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>Flip<sp/>&quot;</highlight><highlight class="normal">,<sp/>graphicParams.winhandle,<sp/>vbl<sp/>+<sp/>graphicParams.waitDuration);</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>[VBLTimestamp<sp/>StimulusOnsetTime<sp/>FlipTimestamp<sp/>Missed<sp/>Beampos]<sp/>=<sp/>Screen(&apos;Flip&apos;,<sp/>windowPtr<sp/>[,<sp/>when]<sp/>[,<sp/>dontclear]<sp/>[,<sp/>dontsync]<sp/>[,<sp/>multiflip]);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>vbl<sp/>=<sp/><ref refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" kindref="member" tooltip="SCREEN wrapper for PTB&amp;#39;s Screen command.">Screen</ref>(</highlight><highlight class="stringliteral">&quot;<sp/>Flip<sp/>&quot;</highlight><highlight class="normal">,<sp/>graphicParams.winhandle,<sp/>vbl<sp/>+<sp/>graphicParams.waitDuration);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Poll<sp/>input<sp/>devices<sp/>for<sp/>activity</highlight></codeline>
-<codeline lineno="41"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>keyboard</highlight></codeline>
-<codeline lineno="44"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal">[keyIsDown,<sp/>secs,<sp/>keyCode]<sp/>=<sp/>KbCheck();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>responseKey=KbName(keyCode);<sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>out<sp/>which<sp/>key<sp/>was<sp/>pressed<sp/>&amp;<sp/>translate<sp/>code<sp/>into<sp/>letter<sp/>(string,<sp/>or<sp/>strcell)</highlight></codeline>
-<codeline lineno="47"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>mouse</highlight></codeline>
-<codeline lineno="50"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>[x,y,buttons]<sp/>=<sp/>GetMouse(graphicParams.winhandle);<sp/></highlight><highlight class="comment">/*<sp/><sp/>find<sp/>out<sp/>if<sp/>any<sp/>mouse<sp/>buttons<sp/>press<sp/>(3<sp/>item<sp/>vector)</highlight></codeline>
-<codeline lineno="52"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>all(buttonsPrior<sp/>==<sp/>buttons)<sp/></highlight><highlight class="comment">/*<sp/><sp/>prevent<sp/>buttons<sp/>being<sp/>held<sp/>down<sp/>(i.e.<sp/>only<sp/>detect<sp/>onPress)</highlight></codeline>
-<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttons<sp/>=<sp/>buttons<sp/>*<sp/>0;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttonsPrior<sp/>=<sp/>buttons;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>usrInput<sp/>=<sp/>[];</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>tobii</highlight></codeline>
-<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>xpos<sp/>=<sp/>[];</highlight></codeline>
-<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>ypos<sp/>=<sp/>[];</highlight></codeline>
-<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>nPoints<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>%WaitSecs(8/60);</highlight></codeline>
-<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>timeNow<sp/>=<sp/>GetSecs();</highlight></codeline>
-<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>updateSecs<sp/>=<sp/>graphicParams.tobiiFrames/60;</highlight></codeline>
-<codeline lineno="69"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>if<sp/>timeNow-lastTimerCheck<sp/>&gt;<sp/>updateSecs</highlight></codeline>
-<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastTimerCheck<sp/>=<sp/>timeNow;</highlight></codeline>
-<codeline lineno="71"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[xpos,ypos,nPoints]<sp/>=<sp/>iv_getXY(graphicParams.screenWidth,<sp/>graphicParams.screenHeight);<sp/><sp/></highlight></codeline>
-<codeline lineno="72"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
-<codeline lineno="73"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
-<codeline lineno="74"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>usrInput<sp/>=<sp/>InputMapper.mapInput(responseKey,<sp/>buttons);</highlight></codeline>
-<codeline lineno="75"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal">end</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Poll<sp/>input<sp/>devices<sp/>for<sp/>activity<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>keyboard<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">[keyIsDown,<sp/>secs,<sp/>keyCode]<sp/>=<sp/>KbCheck();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>responseKey=KbName(keyCode);<sp/><sp/></highlight><highlight class="comment">/*<sp/>find<sp/>out<sp/>which<sp/>key<sp/>was<sp/>pressed<sp/>&amp;<sp/>translate<sp/>code<sp/>into<sp/>letter<sp/>(string,<sp/>or<sp/>strcell)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>mouse<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>[x,y,buttons]<sp/>=<sp/>GetMouse(graphicParams.winhandle);<sp/></highlight><highlight class="comment">/*<sp/><sp/>find<sp/>out<sp/>if<sp/>any<sp/>mouse<sp/>buttons<sp/>press<sp/>(3<sp/>item<sp/>vector)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>all(buttonsPrior<sp/>==<sp/>buttons)<sp/></highlight><highlight class="comment">/*<sp/><sp/>prevent<sp/>buttons<sp/>being<sp/>held<sp/>down<sp/>(i.e.<sp/>only<sp/>detect<sp/>onPress)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttons<sp/>=<sp/>buttons<sp/>*<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttonsPrior<sp/>=<sp/>buttons;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>usrInput<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>%<sp/>tobii</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>xpos<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>ypos<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>nPoints<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>%WaitSecs(8/60);</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>timeNow<sp/>=<sp/>GetSecs();</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>updateSecs<sp/>=<sp/>graphicParams.tobiiFrames/60;</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>if<sp/>timeNow-lastTimerCheck<sp/>&gt;<sp/>updateSecs</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lastTimerCheck<sp/>=<sp/>timeNow;</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[xpos,ypos,nPoints]<sp/>=<sp/>iv_getXY(graphicParams.screenWidth,<sp/>graphicParams.screenHeight);<sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>usrInput<sp/>=<sp/>InputMapper.mapInput(responseKey,<sp/>buttons);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/ivis_util/myFlip.m"/>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/myFlip.m"/>
   </compounddef>
 </doxygen>

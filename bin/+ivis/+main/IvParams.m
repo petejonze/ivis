@@ -3,7 +3,7 @@
 %  ivis may query them.
 % 
 %  IvParams Static Methods:
-%    * updateGraphicParams	- Update graphic parameters based on the specified PTB screen.
+%    * registerScreen        - Update graphic parameters based on the specified PTB screen.
 %    * getDefaultConfig      - Return the default parameter structure.
 %    * getSimpleConfig       - Return a simple parameter structure.
 %     
@@ -25,4 +25,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 %  
+%
+%    Reference page in Doc Center
+%       doc ivis.main.IvParams
+%
 %

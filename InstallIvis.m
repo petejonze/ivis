@@ -62,12 +62,12 @@ while any(regexp(path, searchpattern))
 end
 
 % Add ivis to MATLAB/OCTAVE path
-fprintf('Now adding the new ivis folder (and all the /bin subfolders) to your MATLAB/OCTAVE path.\n');
+fprintf('Now adding the new ivis folder (and all the necessary subfolders) to your MATLAB/OCTAVE path.\n');
 addpath(targetdirectory);
 % use genpath to find appropriate subdirectories also
 addpath(genpath(fullfile(targetdirectory,'src'))); % addpath(genpath(fullfile(targetdirectory,'bin')));
-addpath(fullfile(targetdirectory,'ivisdemos'));
-addpath(fullfile(targetdirectory,'ivisdemos','demoResources'));
+addpath(fullfile(targetdirectory,'demos'));
+addpath(fullfile(targetdirectory,'demos','resources'));
 
 if exist('savepath') %#ok<EXIST>
    err=savepath;

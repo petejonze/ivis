@@ -42,7 +42,9 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
         NAME = 'IvMouse';
         RAWLOG_PRECISION = 'single'; % 'double'
         RAWLOG_NCOLS = 3 % 2 + CPUtime
-        RAWLOG_HEADERS = {'x','y','CPUtime'};    
+        RAWLOG_HEADERS = {'x','y','CPUtime'};  
+        PREFERRED_VIEWING_DISTANCE_MM = 500;
+        TRACKBOX_SIZE_MM = 300;  
     end
     
     properties (GetAccess = private, SetAccess = private)
@@ -69,6 +71,7 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
             % @author   PRJ
             %
             
+            obj.Fs = 60;
             obj.resetClock();
             obj.windowPtrOrScreenNumber = ivis.main.IvParams.getInstance().graphics.testScreenNum;
         end
@@ -81,11 +84,15 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
         function [] = reconnect(obj) %#ok  interface implementation
         end
         
-        function n = refresh(obj, logData) % interface implementation
+        function [n,saccadeOnTime, blinkTime] = refresh(obj, logData) % interface implementation
             if nargin < 2 || isempty(logData)
                 % init
                 logData = true; % may want to set false to suppress data logging
             end
+            
+            % init
+            saccadeOnTime = [];
+            blinkTime = [];
             
             % ala IvSimulator
             n = floor(obj.getSecsElapsed()*obj.Fs); % Fs*t
@@ -107,6 +114,8 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
                 % dummy vals
                 vldty = ones(size(x));
                 pd = ones(size(x));
+                zL_mm = zeros(size(x));
+                zR_mm = zeros(size(x));
                 
                 % use left-click to simulate a blink (represented by NaN data)
                 if buttons(1) > 0
@@ -114,12 +123,12 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
                     y(:) = NaN;
                     vldty(:) = 0;
                 end
-                
+
                 %-----------Send Data to Buffer------------------------------
                 % send the data to an internal buffer which handles filtering
                 % and feature extraction, and then passes the data along to the
                 % central DataLog and any relevant GUI elements
-                obj.processData(x,y,t,vldty,pd, logData);
+                [saccadeOnTime, blinkTime] = obj.processData(x,y,t,vldty,pd, zL_mm,zR_mm, logData);
                 
                 % log data if requested in launch params (and not countermanded
                 % by user's refresh call)
@@ -135,8 +144,9 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
         end
         
         % tmp hack:
-        function dist_cm = getLastKnownViewingDistance(obj)
-            dist_cm = 74;
+        function [lastKnownViewingDistance_mm, t] = getLastKnownViewingDistance(obj)
+            lastKnownViewingDistance_mm = 600;
+            t = obj.oldSecs;
         end
     end
     

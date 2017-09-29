@@ -25,3 +25,7 @@
 %  
 %  make an abstract classifierGUI for holding things like printStatus
 %
+%    Reference page in Doc Center
+%       doc ivis.gui.IvGUIclassifierBox
+%
+%

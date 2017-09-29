@@ -20,6 +20,10 @@
 %  Example:
 %    runtests infantvision.tests -verbose
 % 
+%    IvUH = ivis.math.IvUnitHandler(59.7, 2560, 60);
+%    IvUH.cm2deg(0.11,60) 
+%    IvUH.deg2px(3) 
+% 
 %  Author:
 %    Pete R Jones <petejonze@gmail.com>
 % 
@@ -31,4 +35,8 @@
 %  Copyright 2014 : P R Jones
 %  *********************************************************************
 % 
+%
+%    Reference page in Doc Center
+%       doc ivis.math.IvUnitHandler
+%
 %
