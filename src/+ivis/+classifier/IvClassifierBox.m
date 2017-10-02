@@ -151,7 +151,7 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
             end
 
             % neaten up!
-            dstRect = reshape(cell2mat(obj.xyrects_xyxy),4,[])'; % 1 column per rect
+            dstRect = reshape(cell2mat(obj.xyrects_xyxy),4,[]); % 1 column per rect
 
             % draw
             Screen('FrameRect', obj.winhandle, obj.rectColour, dstRect, 3);
@@ -307,8 +307,16 @@ classdef IvClassifierBox < ivis.classifier.IvClassifier
             
             [w,h] = RectSize(evt.AffectedObject.nullrect);
             
+            % get index
             i = ismember(obj.graphicObjNames, evt.AffectedObject.name);
             
+            % validate (defensive: this should already have been caught by
+            % the IvClassifier.m Constructor)
+            if sum(i) ~= 1
+                error('Exactly 1 index should be found. Instead, we found %i graphical objects called "%s"', sum(i), evt.AffectedObject.name);
+            end
+            
+            % do
             obj.nullrects{i} = [0 0 w h] + obj.margin_px; % [x y w h]
             obj.xyrects_xywh{i} = obj.nullrects{i} + [obj.graphicObjs{i}.getX0Y0() 0 0]; % [x y w h] format
             obj.xyrects_xyxy{i} = obj.nullrects{i} + [obj.graphicObjs{i}.getX0Y0() obj.graphicObjs{i}.getX0Y0()]; % [x0 y0 x1 y1] format

@@ -10,7 +10,6 @@ classdef (Sealed) IvMain < handle
     %   * pause         - Pause data collection (currently disabled).
     %   * finishUp      - Shut down system and close eye-tracker connection.
     %   * totalClear 	- Clear mememory.
-    %   * disableScreenChecks - Prevent Ivis from checking screen parameters on launch.
     %
     % See Also:
     %   none
@@ -70,7 +69,7 @@ classdef (Sealed) IvMain < handle
             end
             if verGreaterThan('ivis',num2str(vernum))
                 str = sprintf('The version of ivis you specified (%g) is less than the currently installed version (%s).\n\nThis could cause problems if any of the core functions have been modified or depreciated.\n\n', vernum, getversion('ivis'));
-                if ~getLogicalInput([str 'continue (y/n)? ']);
+                if ~getLogicalInput([str 'continue (y/n)? '])
                     error('Aborted by user');
                 end
             end
@@ -108,11 +107,10 @@ classdef (Sealed) IvMain < handle
             % @param    paramStructOrXmlFullFileName XML filename (including path) containing parameters, or an equivalent structure 
             % @return   params                       IvParams object
             %
-            % @date     29/03/13
+            % @date     01/10/17
             % @author   PRJ
             %
-            
-                        
+         
             % check current directory is valid
             if ~isempty(regexp(pwd(), 'Windows\\system32$', 'once'))
                 error('IvMain:InvalidPath', 'Trying to run Matlab from the Windows system32 folder is not a good idea.\nChange the current working directory and try again.');
@@ -120,16 +118,17 @@ classdef (Sealed) IvMain < handle
             
             % initialise memory
             % clearJavaMem(); % disabled: might cause problems if initialising after a PTB window has been opened(?)
-
-            % start logging the command window
-            fn = sprintf('commandline-%s.txt', datestr(now(),30));
-            fullFn = fullfile(ivisdir(), 'logs', 'diary', fn);
-% fullFn = fn           
-        	fclose(fopen(fullFn, 'wt')); % make file
-            diary(fullFn); % start diary
             
             % (load and) validate ivis launch parameters
             params = ivis.main.IvMain.validate(paramStructOrXmlFullFileName);
+
+            % start logging the command window
+            if params.log.diary.enable
+                fn = sprintf('commandline-%s.txt', datestr(now(),30));
+                fullFn = fullfile(ivisdir(), 'logs', 'diary', fn);       
+                fclose(fopen(fullFn, 'wt')); % make file
+                diary(fullFn); % start diary
+            end
         end
         
         function [dataInput, logs, InH, winhandle, params] = launch(screennum, InH) % launch(paramStructOrXmlFullFileName, winhandle, InH)
@@ -255,7 +254,7 @@ classdef (Sealed) IvMain < handle
                     % validate
                     maxFlipsPerSecond = 1/Screen('GetFlipInterval', winhandle);
                     if maxFlipsPerSecond < params.graphics.targFrameRate
-                        if ~getLogicalInput(sprintf('Effective framerate (%1.2f) < requested Fr (%1.2f). Continue?', params.graphics.targFrameRate, maxFlipsPerSecond));
+                        if ~getLogicalInput(sprintf('Effective framerate (%1.2f) < requested Fr (%1.2f). Continue?', params.graphics.targFrameRate, maxFlipsPerSecond))
                             error('a:b','Aborted by user');
                         end
                         fprintf('\n\n\n!!!!!!WARNING: Effective framerate (%1.2f) < requested Fr (%1.2f)!!!!!!!\n\n\n', params.graphics.targFrameRate, maxFlipsPerSecond)
@@ -300,9 +299,9 @@ classdef (Sealed) IvMain < handle
                 end
                 
                 %--------------------------------------------------------------
-                % make logs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-                logs.data = IvDataLog(params.log.data.dir, params.log.data.filepattern, params.log.data.arraySize);
-                logs.raw = IvRawLog(params.log.raw.dir, params.log.raw.filepattern);
+                % make logs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                
+                logs.raw = IvRawLog(params.log.raw.dir, params.log.raw.filepattern, params.log.raw.enable); %NB: must be created before IvDataLog, because IvDataLog may need to query it on finishUp (i.e., a SingletonManager is last-in-first-out)
+                logs.data = IvDataLog(params.log.data.dir, params.log.data.filepattern, params.log.data.arraySize, params.log.data.autoSaveOnClose);
 
               	%--------------------------------------------------------------
                 % make calib %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -377,7 +376,7 @@ classdef (Sealed) IvMain < handle
                 if nargin < 1 || isempty(verbosity)
                     try % will fail if IvParams not init yet
                         verbosity = ivis.main.IvParams.getInstance().main.verbosity;
-                    catch %#ok
+                    catch
                         verbosity = 1;
                     end
                 end
@@ -394,6 +393,7 @@ classdef (Sealed) IvMain < handle
                     Screen('LoadNormalizedGammaTable', winhandle, masterGammaTable);
                 end
               
+                % make sure MS Windows taskbar is on display
                 if IsWin()
                     ShowHideWinTaskbarMex(1)
                 end
@@ -463,15 +463,7 @@ classdef (Sealed) IvMain < handle
             clearJavaMem();
             clearAbsAll();
         end
-        
-        function [] = disableScreenChecks()
-            % Prevent Ivis from checking screen parameters on launch.
-            %
-            % @date     29/03/13
-            % @author   PRJ
-            %            
-            setpref('ivis','disableScreenChecks', true);
-        end
+
     end
     
 end

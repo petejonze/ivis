@@ -210,7 +210,7 @@ classdef IvGraphic < ivis.graphic.IvScreenObject
             end
             
             % turn off stationarity if it has moved
-            if any(xy ~= [x y])
+            if any(xy ~= [x y]) && obj.isStationary
                 obj.isStationary = false;
                 fprintf('!!!!IvGraphic: Switching off stationarity - timings may be affected!\n');
             end 

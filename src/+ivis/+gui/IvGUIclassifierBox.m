@@ -138,9 +138,7 @@ classdef (Sealed) IvGUIclassifierBox < ivis.gui.IvGUIclassifier
             set(obj.hPlot1Data,'XData',xy(:,1), 'YData',xy(:,2)); % plot1
             
             % plot evidence
-            for i = 1:length(plot2Dat)
-                set(obj.hPlot2Data(i), 'YData', plot2Dat(:,i)); % plot2
-            end
+        	set(obj.hPlot2Data, 'YData', plot2Dat); % plot2
         end
     end
     

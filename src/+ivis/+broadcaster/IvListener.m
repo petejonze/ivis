@@ -40,7 +40,7 @@ classdef (Abstract) IvListener < handle
           
     methods (Access = public)
     
-        %% == CONSTRUCTOR =================================================
+        %% == DESTRUCTOR =================================================
 
         function [] = delete(obj)
             % Object destructor.
@@ -104,7 +104,7 @@ classdef (Abstract) IvListener < handle
             idx = ismember(obj.eventNames, eventName);
             
             % unsubscribe from broadcaster, remove references
-            delete(obj.listenerHandles{idx});
+            %delete(obj.listenerHandles{idx});
             obj.listenerHandles(idx) = [];
             obj.eventNames(idx) = [];
         end

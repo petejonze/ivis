@@ -147,6 +147,7 @@ classdef (Sealed) IvParams < Singleton
             params.main.verbosity = 1;
             
             params.graphics.useScreen = true;
+            params.graphics.runScreenChecks = true;
             params.graphics.targFrameRate = 30;
             params.graphics.testScreenNum = max(Screen('Screens'));
             params.graphics.fullScreen = true;
@@ -214,8 +215,11 @@ classdef (Sealed) IvParams < Singleton
             params.calibration.drift.maxDriftCorrection_deg = 6;
             params.calibration.drift.driftWeight = 1;
 
+            params.log.diary.enable = true;
+            params.log.raw.enable = true;
             params.log.raw.dir = '$iv/logs/raw';
             params.log.raw.filepattern = 'IvRaw-$time.raw';
+            params.log.data.autoSaveOnClose = false;
             params.log.data.dir = '$iv/logs/data';
             params.log.data.filepattern = 'IvData-$time.csv';
             params.log.data.arraySize = 10000; % also used for any graphics
@@ -227,7 +231,7 @@ classdef (Sealed) IvParams < Singleton
             params.audio.devID = [];
             params.audio.Fs = 44100;
             params.audio.outChans = [0 1];
-            params.audio.runMode = 0;
+            params.audio.runMode = []; % 0;
             params.audio.reqlatencyclass = 0;
             params.audio.latbias_secs = [];
             params.audio.useCalibration = false;
@@ -313,23 +317,11 @@ classdef (Sealed) IvParams < Singleton
             
             % init
             if nargin < 1 || isempty(paramStructOrXmlFullFileName)
-                warning('Naughty!');
-                %[path,~,~] = fileparts(which('ivis'));
-                %paramStructOrXmlFullFileName = fullfile(path, 'IvConfig.xml');
+                warning('No parameters specified, loading defaults');
                 paramStructOrXmlFullFileName = ivis.main.IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'graphics.testScreenNum',0, 'GUI.screenNum',0);
             end
             if nargin < 2
                 verbosity = [];
-            end
-            
-            % Check if screen checks have been disabled (and warn if so)
-            disableScreenChecks = false;
-            if isfield(getpref('ivis'),'disableScreenChecks')
-                disableScreenChecks = getfield(getpref('ivis'),'disableScreenChecks'); %#ok
-                setpref('ivis','disableScreenChecks',false); % reset to false. This way the user will always have to explicitly disable the checks every time, prior to use
-            end
-            if disableScreenChecks
-                fprintf('\n\n\n\n!!!WARNING!!! Screen checks have been disabled! Use with caution\n\n\n\n');
             end
             
             % load params from XML file
@@ -402,12 +394,19 @@ classdef (Sealed) IvParams < Singleton
                 aspectRatio_detected = detectedWidth/detectedHeight;
                 aspectRatio_specified = params.graphics.monitorWidth_cm/params.graphics.monitorHeight_cm;
                 if abs(aspectRatio_detected-aspectRatio_specified) > 0.1
-                    fprintf('Specified screen ratio (%1.2f :: %1.2f x %1.2f) does not match detected screen ratio (%1.2f :: %1.2f x %1.2f)\n   n.b., screen checks can be toggled using the command: setpref(''ivis'',''disableScreenChecks'',true/false)\n', aspectRatio_specified, params.graphics.monitorWidth_cm, params.graphics.monitorHeight_cm, aspectRatio_detected, detectedWidth, detectedHeight);
-                    if disableScreenChecks || getLogicalInput('Temporarily use suggested values? (not recommended): ')
+                    if ~params.graphics.runScreenChecks
+                        % silently accept empirical values
                         params.graphics.monitorWidth_cm =  detectedWidth;
                         params.graphics.monitorHeight_cm = detectedHeight;
                     else
-                        error('IvMain:invalidConfig','Specified screen ratio (%1.2f :: %1.2f x %1.2f) does not match detected screen ratio (%1.2f :: %1.2f x %1.2f)\n', aspectRatio_specified, params.graphics.monitorWidth_cm, params.graphics.monitorHeight_cm, aspectRatio_detected, width, height);
+                        fprintf('WARNING: Specified screen ratio (%1.2f :: %1.2f x %1.2f) does not match detected screen ratio (%1.2f :: %1.2f x %1.2f)\n', aspectRatio_specified, params.graphics.monitorWidth_cm, params.graphics.monitorHeight_cm, aspectRatio_detected, detectedWidth, detectedHeight);
+                        fprintf(' NB: you can avoid these messages by setting params.graphics.runScreenChecks=false (or by specifying the correct values in the first place!)\n');
+                        if getLogicalInput('Temporarily use suggested values? (y/n): ')
+                            params.graphics.monitorWidth_cm =  detectedWidth;
+                            params.graphics.monitorHeight_cm = detectedHeight;
+                        else
+                            error('IvMain:invalidConfig','Specified screen ratio (%1.2f :: %1.2f x %1.2f) does not match detected screen ratio (%1.2f :: %1.2f x %1.2f)\n', aspectRatio_specified, params.graphics.monitorWidth_cm, params.graphics.monitorHeight_cm, aspectRatio_detected, width, height);
+                        end
                     end
                 end
                 
@@ -427,13 +426,19 @@ classdef (Sealed) IvParams < Singleton
                             dims = Screen('Rect', screens(i));
                             fprintf('Screen %i: %i x %i\n', screens(i), dims(3), dims(4));
                         end
-                        fprintf('Specified screen dimensions (%i x %i) do not match those detected (%i x %i) for display %i\n', params.graphics.testScreenWidth, params.graphics.testScreenHeight, x(3),x(4), params.graphics.testScreenNum);
-                        if disableScreenChecks || getLogicalInput('Temporarily use suggested values? (not recommended): ')
+                        if ~params.graphics.runScreenChecks
+                            % silently accept
                             params.graphics.testScreenWidth =  x(3);
                             params.graphics.testScreenHeight = x(4);
                         else
-                            %oldRes = Screen('Resolution', params.graphics.testScreenNum, x(3), x(4)) % attempt to set resolution
-                            error('IvMain:invalidConfig','Specified screen dimensions (%i x %i) do not match those detected (%i x %i) for display %i\n', params.graphics.testScreenWidth, params.graphics.testScreenHeight, x(3),x(4), params.graphics.testScreenNum);
+                            fprintf('WARNING: Specified screen dimensions (%i x %i) do not match those detected (%i x %i) for display %i\n', params.graphics.testScreenWidth, params.graphics.testScreenHeight, x(3),x(4), params.graphics.testScreenNum);
+                            if getLogicalInput('Temporarily use suggested values? (y/n): ')
+                                params.graphics.testScreenWidth =  x(3);
+                                params.graphics.testScreenHeight = x(4);
+                            else
+                                %oldRes = Screen('Resolution', params.graphics.testScreenNum, x(3), x(4)) % attempt to set resolution
+                                error('IvMain:invalidConfig','Specified screen dimensions (%i x %i) do not match those detected (%i x %i) for display %i\n', params.graphics.testScreenWidth, params.graphics.testScreenHeight, x(3),x(4), params.graphics.testScreenNum);
+                            end
                         end
                     end
                 end
@@ -445,7 +450,6 @@ classdef (Sealed) IvParams < Singleton
                 % various GUIs
                 if isempty(params.graphics.testScreenNum)
                     error('PJ: Should this ever happen?')
-                    max(Screen('Screens'))
                 end
                 if params.graphics.testScreenNum > max(Screen('Screens'))
                     params.graphics.testScreenNum = max(Screen('Screens'));
@@ -483,24 +487,28 @@ classdef (Sealed) IvParams < Singleton
                     fprintf('No GUI screen specified. Attempting to guess an appropriate screen\n');
                      % guess largest screen number other than test screen
                      screens = Screen('Screens');
-                     params.GUI.screenNum = screens(find(params.graphics.testScreenNum~=screens,1,'last'));
+                     if length(screens)==1
+                         params.GUI.screenNum = screens(1); % no choice but to put it on only screen
+                     else
+                        params.GUI.screenNum = screens(find(params.graphics.testScreenNum~=screens,1,'last'));
+                     end
                 end
             end
                     
             % store ------------------------------------
             % todo: automate this?
-            obj.main = params.main;
-            obj.graphics = params.graphics;
-            obj.GUI = params.GUI;
-            obj.keyboard = params.keyboard;
-            obj.webcam = params.webcam;
-            obj.eyetracker = params.eyetracker;
-            obj.saccade = params.saccade;
-            obj.classifier = params.classifier;
+            obj.main        = params.main;
+            obj.graphics    = params.graphics;
+            obj.GUI         = params.GUI;
+            obj.keyboard    = params.keyboard;
+            obj.webcam      = params.webcam;
+            obj.eyetracker  = params.eyetracker;
+            obj.saccade     = params.saccade;
+            obj.classifier  = params.classifier;
             obj.calibration = params.calibration;
-           	obj.log = params.log;
-            obj.audio = params.audio;
-            obj.adapt = params.adapt;
+           	obj.log         = params.log;
+            obj.audio       = params.audio;
+            obj.adapt       = params.adapt;
             
             % init additional params
             obj.graphics.winhandle = [];

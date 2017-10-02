@@ -189,18 +189,23 @@ classdef IvClassifierVector < ivis.classifier.IvClassifier
         end
 
         function [] = classifierSpecificReset(obj, newTargDirection_deg, newCriteria, startXY) % interface implementation
-            
-            %
-            obj.targDirection_deg = mod(newTargDirection_deg, 360);
-            
-            %
-            if length(newCriteria)==1
-                newCriteria = repmat(newCriteria,1,obj.nAlternatives); % assume same for all
+            % ??
+            if nargin >= 2 && ~isempty(newTargDirection_deg)
+                obj.targDirection_deg = mod(newTargDirection_deg, 360);
             end
-            obj.criterion = newCriteria;
             
-            %
-            obj.rawbuffer.put(startXY);
+            % ??
+            if nargin >= 3 && ~isempty(newCriteria)
+                if length(newCriteria)==1
+                    newCriteria = repmat(newCriteria,1,obj.nAlternatives); % assume same for all
+                end
+                obj.criterion = newCriteria;
+            end
+            
+            % ??
+            if nargin >= 4 && ~isempty(startXY)
+                obj.rawbuffer.put(startXY);
+            end
         end
     end
     

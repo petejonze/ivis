@@ -194,6 +194,14 @@ classdef (Abstract) IvClassifier < ivis.broadcaster.IvListener
                 obj.nAlternatives = length(obj.graphicObjs);
             end
             
+            % check each graphical object name is unique
+            for i = 1:length(obj.graphicObjNames)
+                idx = strcmpi(obj.graphicObjNames{i}, obj.graphicObjNames);
+                if sum(idx) ~= 1
+                    error('Exactly 1 index should be found. Instead, we found %i graphical objects called "%s"', sum(idx), obj.graphicObjNames{i});
+                end
+            end
+            
             % timout (max time to run before retiring)
             obj.timeout = timeout;
             

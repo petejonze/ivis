@@ -218,7 +218,7 @@ classdef (Sealed) IvTobiiEyeX < ivis.eyetracker.IvDataInput
 
             % log data if requested in launch params (and not countermanded
             % by user's refresh call)
-            if obj.LOG_RAW_DATA && logData
+            if logData
                 obj.RAWLOG.write([samples CPUtime], obj.RAWLOG_PRECISION);
             end
         end

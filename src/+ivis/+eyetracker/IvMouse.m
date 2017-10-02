@@ -84,7 +84,7 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
         function [] = reconnect(obj) %#ok  interface implementation
         end
         
-        function [n,saccadeOnTime, blinkTime] = refresh(obj, logData) % interface implementation
+        function [n, saccadeOnTime, blinkTime] = refresh(obj, logData) % interface implementation
             if nargin < 2 || isempty(logData)
                 % init
                 logData = true; % may want to set false to suppress data logging
@@ -132,7 +132,7 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
                 
                 % log data if requested in launch params (and not countermanded
                 % by user's refresh call)
-                if obj.LOG_RAW_DATA && logData
+                if logData
                     obj.RAWLOG.write([x y t], obj.RAWLOG_PRECISION);
                 end
             end

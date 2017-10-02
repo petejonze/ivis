@@ -5,17 +5,19 @@ classdef Test_IvMain < TestCase
     %   ivis.log.Test_IvClassifierLL
     %
     % Example:
-    %   runtests ivis.test -verbose
+    %   runtests ivis.test -verbose     % run all
+    %   runtests ivis.test.Test_IvMain  % run just this
     %
     % Author:
     %   Pete R Jones <petejonze@gmail.com>
     %
     % Verinfo:
-    %   1.1 PJ 02/2011 : used to develop commenting standards\n
     %   1.0 PJ 02/2011 : first_build\n
+    %   1.1 PJ 02/2011 : used to develop commenting standards\n
+    %   1.2 PJ 10/2017 : v1.5 build\n
     %
     %
-    % Copyright 2014 : P R Jones
+    % Copyright 2017 : P R Jones <petejonze@gmail.com>
     % *********************************************************************
     % 
     
@@ -64,13 +66,16 @@ classdef Test_IvMain < TestCase
             % @author   PRJ
             %
         	N = 100;
-            cfg = ivis.main.IvParams.getDefaultConfig();
+            cfg = ivis.main.IvParams.getDefaultConfig('log.diary.enable',false, 'log.raw.enable',false, 'graphics.runScreenChecks',false);
             
             % ####
             ivis.main.IvMain.initialise(cfg);
-            eyetracker = ivis.main.IvMain.launch;
+            eyetracker = ivis.main.IvMain.launch();
             timeElapsed = nan(N,1);
             myClassifier = ivis.classifier.IvClassifierVector([-70 0 70 200]);
+            % ALT:
+            %myGraphic = ivis.graphic.IvGraphic('targ', [], 0, 0, 100, 100);
+        	%myClassifier = ivis.classifier.IvClassifierLL({ivis.graphic.IvPrior(), myGraphic}, [inf 300], 360, [], [], [], false);  
             myClassifier.start();
             
             for i =1:N
@@ -90,6 +95,9 @@ classdef Test_IvMain < TestCase
             eyetracker = ivis.main.IvMain.launch;
             timeElapsed = nan(N,1);
             myClassifier = ivis.classifier.IvClassifierVector([-70 0 70 200]);
+            % ALT:
+            %myGraphic = ivis.graphic.IvGraphic('targ', [], 0, 0, 100, 100);
+        	%myClassifier = ivis.classifier.IvClassifierLL({ivis.graphic.IvPrior(), myGraphic}, [inf 300], 360, [], [], [], false);  
             myClassifier.start();
             
             for i =1:N

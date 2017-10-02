@@ -113,9 +113,9 @@ classdef IvClassifierLL < ivis.classifier.IvClassifier
                fprintf('IvClassifier: GUI is disabled, so specified GUI index will be ignored\n'); 
                GUIidx = [];
             end
-            if any(likelihoodThresh>=1 | likelihoodThresh<0)
-                warning('some likelihood thresholds lie outside of 0-1 range (can never be reached)')
-            end
+            %if any(likelihoodThresh>=1 | likelihoodThresh<0)
+            %    warning('some likelihood thresholds lie outside of 0-1 range (can never be reached)')
+            %end
             
             % call superclass
             obj = obj@ivis.classifier.IvClassifier(graphicObjs, likelihoodThresh, timeout_secs, bufferlength);

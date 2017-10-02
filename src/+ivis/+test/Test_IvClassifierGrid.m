@@ -1,12 +1,12 @@
-classdef Test_IvClassifierLL < TestCase
-    % xUnit tests for ivis.classifier.IvClassifierLL.
+classdef Test_IvClassifierGrid < TestCase
+    % xUnit tests for ivis.classifier.IvClassifierGrid.
     %
     % See Also:
     %   ivis.log.Test_IvClassifierLL
     %
     % Example:
-    %   runtests ivis.test -verbose             % run all
-    %   runtests ivis.test.Test_IvClassifierLL  % run just this
+    %   runtests ivis.test -verbose                 % run all
+    %   runtests ivis.test.Test_IvClassifierGrid    % run just this
     %
     % Author:
     %   Pete R Jones <petejonze@gmail.com>
@@ -47,8 +47,8 @@ classdef Test_IvClassifierLL < TestCase
         
         %% == CONSTRUCTOR =================================================
         
-        function self = Test_IvClassifierLL(name)
-            % Test_IvClassifierLL constructor.
+        function self = Test_IvClassifierGrid(name)
+            % Test_IvClassifierGrid constructor.
             %
             % @return   self TestCase
             %
@@ -74,11 +74,10 @@ classdef Test_IvClassifierLL < TestCase
 
             % prepare graphic
             obj.myGraphic = IvGraphic('targ1', [], 300, 600, 200, 200);
-            obj.myGraphic2 = IvGraphic('targ2', [], 1000, 600, 200, 200);
             
             % prepare a classifier
             timeout_secs = 4;
-            obj.myClassifier = IvClassifierLL({IvPrior(), obj.myGraphic, obj.myGraphic2}, [Inf 300 300], 360, [], timeout_secs, [], false);
+            obj.myClassifier = IvClassifierGrid(obj.myGraphic, [], timeout_secs);
         end
         
         function tearDown(~)
@@ -102,7 +101,7 @@ classdef Test_IvClassifierLL < TestCase
             %
             
             % check correctly returned
-            assertTrue(isa(obj.myClassifier,'ivis.classifier.IvClassifierLL'), 'Failed to initialise IvClassifierLL correctly');
+            assertTrue(isa(obj.myClassifier,'ivis.classifier.IvClassifierGrid'), 'Failed to initialise IvClassifierGrid correctly');
         end
 
         function [] = testEndToEnd_hit1(obj)
@@ -145,46 +144,6 @@ classdef Test_IvClassifierLL < TestCase
             assertEqual(whatLookingAt.name(), obj.myGraphic.name, 'failed to register looking at target A');
         end
 
-        function [] = testEndToEnd_hit2(obj)
-            % Test can correctly classify when the user is fixating another of M targets
-            %
-            % @date     02/10/17
-            % @author   PRJ
-            %
-            
-            % *******Set mouse position*******
-            %  - set it directly over Target 2, so should register 'targ2'
-            SetMouse(obj.myGraphic2.getX(), obj.myGraphic2.getY(), obj.params.graphics.testScreenNum);
-            
-            % flush eyetracker
-            obj.eyetracker.refresh(false);
-            
-            % start classifier
-            obj.myClassifier.start();
-            
-            % run
-            while obj.myClassifier.getStatus() == obj.myClassifier.STATUS_UNDECIDED
-                % poll peripheral devices for valid user inputs
-                obj.InH.getInput();
-                
-                % poll eyetracker & update classifier
-                [n, saccadeOnTime, blinkTime] = obj.eyetracker.refresh(); %#ok
-                obj.myClassifier.update();
-                
-                % in case want to track progress:
-                [~,propComplete] = obj.myClassifier.interogate(); %#ok
-                
-                % pause before proceeding
-                WaitSecs(1/50);
-            end
-
-            % compute whether was a hit
-            whatLookingAt = obj.myClassifier.interogate();
-            
-            % check correct
-            assertEqual(whatLookingAt.name(), obj.myGraphic2.name, 'failed to register looking at target B');
-        end
-
         function [] = testEndToEnd_miss(obj)
             % Test can correctly classify when the user is fixating neither
             % of 2 targets
@@ -194,9 +153,8 @@ classdef Test_IvClassifierLL < TestCase
             %
             
             % *******Set mouse position*******
-            %  - set it in the corner, so the classifier should timeout
-            %  (NB: prior criterion set to Inf)
-            SetMouse(0, 0, obj.params.graphics.testScreenNum);
+            %  - set it far away, so the classifier should timeout
+            SetMouse(9999, 9999, obj.params.graphics.testScreenNum);
             
             % flush eyetracker
             obj.eyetracker.refresh(false);
@@ -226,102 +184,6 @@ classdef Test_IvClassifierLL < TestCase
             assertEqual(whatLookingAt.name(), 'timeout', 'failed to register miss');
         end
         
-        function [] = testEndToEnd_background(obj)
-            % Test can correctly classify when user is fixating the
-            % background (prior)
-            %
-            % @date     02/10/17
-            % @author   PRJ
-            %
-            
-            % prepare a classifier (NB: no longer 'inf' for the
-            % background/prior)
-            timeout_secs = 4;
-            obj.myClassifier = ivis.classifier.IvClassifierLL({ivis.graphic.IvPrior(), obj.myGraphic, obj.myGraphic2}, [300 300 300], 360, [], timeout_secs, [], false);
-
-            % *******Set mouse position*******
-            %  - set it in the corner, so the classifier should register prior
-            %  (NB: prior criterion NOT set to Inf)
-            SetMouse(0, 0, obj.params.graphics.testScreenNum);
-            
-            % flush eyetracker
-            obj.eyetracker.refresh(false);
-            
-            % start classifier
-            obj.myClassifier.start();
-            
-            % run
-            while obj.myClassifier.getStatus() == obj.myClassifier.STATUS_UNDECIDED
-                % poll peripheral devices for valid user inputs
-                obj.InH.getInput();
-                
-                % poll eyetracker & update classifier
-                [n, saccadeOnTime, blinkTime] = obj.eyetracker.refresh(); %#ok
-                obj.myClassifier.update();
-                
-                % in case want to track progress:
-                [~,propComplete] = obj.myClassifier.interogate(); %#ok
-                
-                % pause before proceeding
-                WaitSecs(1/50);
-            end
-
-            % compute whether was a hit
-            whatLookingAt = obj.myClassifier.interogate();
-            
-            % check correct
-            assertEqual(whatLookingAt.name(), 'prior', 'failed to register prior');
-        end
-        
-        function [] = testEndToEnd_hit1weighted(obj)
-            % Test can correctly classify when the user is fixating 1 of M
-            % targets, only giving weight to the horizontal dimension
-            %
-            % @date     02/10/17
-            % @author   PRJ
-            %
-            
-            % *******Set mouse position*******
-            %  - set it directly BELOW Target 1, but will set the
-            %  y-weighting to 0, so should still register 'targ1'
-            SetMouse(obj.myGraphic.getX(), 1000, obj.params.graphics.testScreenNum);
-            
-            % set all relative weight to the horizontal dimension
-            w = [1 0];
-            obj.myClassifier.setXYWeights(w);
-            
-            % flush eyetracker
-            obj.eyetracker.refresh(false);
-            
-            % start classifier
-            obj.myClassifier.start();
-            
-            % run
-            while obj.myClassifier.getStatus() == obj.myClassifier.STATUS_UNDECIDED
-                % poll peripheral devices for valid user inputs
-                obj.InH.getInput();
-                
-                % poll eyetracker & update classifier
-                [n, saccadeOnTime, blinkTime] = obj.eyetracker.refresh(); %#ok
-                obj.myClassifier.update();
-
-                % in case want to track progress:
-                [~,propComplete] = obj.myClassifier.interogate(); %#ok
-                
-                % pause before proceeding
-                WaitSecs(1/50);
-            end
-               
-            % reset weights to default (for any subsequent tests)
-            obj.myClassifier.setXYWeights([1 1]);
-            
-            % compute whether was a hit
-            whatLookingAt = obj.myClassifier.interogate();
-            
-            % check correct
-            assertEqual(whatLookingAt.name(), obj.myGraphic.name, 'failed to register looking at (below) Target 1');
-        end    
-        
         function [] = testEndToEnd_hit1moving(obj)
             % Test can correctly classify when the user is fixating 1 of M
             % targets, when the target is moving
@@ -334,7 +196,7 @@ classdef Test_IvClassifierLL < TestCase
             %  - set it directly BELOW Target 1, but will set the
             %  y-weighting to 0, so should still register 'targ1'
             SetMouse(obj.myGraphic.getX(), 0, obj.params.graphics.testScreenNum);
-                        
+
             % flush eyetracker
             obj.eyetracker.refresh(false);
             

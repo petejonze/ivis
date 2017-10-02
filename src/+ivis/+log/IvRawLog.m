@@ -30,11 +30,11 @@ classdef (Sealed) IvRawLog < ivis.log.IvLog
     %$ ====================================================================
     
     properties (GetAccess = public, SetAccess = private)
+        enabled = true;
         fid
         fn
         fullFn
     end
-    
     
     %% ====================================================================
     %  -----PUBLIC METHODS-----
@@ -44,25 +44,35 @@ classdef (Sealed) IvRawLog < ivis.log.IvLog
         
         %% == CONSTRUCTOR =================================================
         
-        function obj = IvRawLog(homeDir, fnPattern)
+        function obj = IvRawLog(homeDir, fnPattern, enabled)
             % IvRawLog Constructor.
             %
             % @param    homeDir
             % @param    fnPattern
+            % @param    enabled     optional boolean (default = true)
             % @return   obj         IvDataLog object
             %
             % @date     26/06/14
             % @author   PRJ
             %             
 
-            obj.homeDir = regexprep(homeDir, '\$iv', escape(ivis.main.IvParams.getInstance().toolboxHomedir), 'ignorecase');
-% obj.homeDir = 'D:\Dropbox\MatlabToolkits\ivis\logs\raw'      
+            % parse inputs
+            if nargin >= 3 && ~isempty(enabled)
+                obj.enabled = enabled;
+            end
+            
+            % set & validate
+            obj.homeDir = regexprep(homeDir, '\$iv', escape(ivis.main.IvParams.getInstance().toolboxHomedir), 'ignorecase');    
             % check that raw log dir exists
             if ~exist(obj.homeDir, 'dir')
                 error('IvRawLog:FailedToInit','Specified raw log directory could not be found: %s ', obj.homeDir);
             end
-            
             obj.fnPattern = fnPattern;
+            
+            % open log
+            if obj.enabled
+                obj.open();
+            end
         end
         
         function [] = delete(obj)
@@ -141,7 +151,9 @@ classdef (Sealed) IvRawLog < ivis.log.IvLog
             % @date     26/06/14
             % @author   PRJ
             %
-            fwrite(obj.fid, dat', precision);
+            if obj.enabled
+                fwrite(obj.fid, dat', precision);
+            end
         end
         
         function [] = close(obj)

@@ -5,19 +5,19 @@ classdef Test_IvMouse < TestCase
     %   ivis.log.Test_IvMouse
     %
     % Example:
-    %   runtests ivis.test -verbose
+    %   runtests ivis.test -verbose     % run all
+    %   runtests ivis.test.Test_IvMouse % run just this
     %
     % Author:
     %   Pete R Jones <petejonze@gmail.com>
     %
     % Verinfo:
-    %   1.1 PJ 02/2011 : used to develop commenting standards\n
     %   1.0 PJ 02/2011 : first_build\n
+    %   1.1 PJ 02/2011 : used to develop commenting standards\n
+    %   1.2 PJ 10/2017 : v1.5 build\n
     %
-    % @todo write me
     %
-    %
-    % Copyright 2014 : P R Jones
+    % Copyright 2017 : P R Jones <petejonze@gmail.com>
     % *********************************************************************
     % 
     
@@ -54,26 +54,43 @@ classdef Test_IvMouse < TestCase
             % @date     26/06/14                          
             % @author   PRJ
             %
+            ivis.main.IvMain.finishUp();
         end
         
         %% == TEST METHODS ================================================
         
-        function testDummy(self)
+        function testDataReturned(self)
             % Dummy method.
             %            
             % @date     26/06/14                         
             % @author   PRJ
             %
-            assertEqual(1,1);
-        end
-        
-        function testDummy2(self)
-            % Dummy method.
-            %           
-            % @date     26/06/14                          
-            % @author   PRJ
-            %
-            assertEqual(1,1);
+            
+            % basic launch
+            ivis.main.IvMain.initialise(ivis.main.IvParams.getDefaultConfig('graphics.useScreen',false, 'log.diary.enable',false, 'log.raw.enable',false, 'graphics.runScreenChecks',false));
+            [eyetracker, logs] = ivis.main.IvMain.launch();
+            
+            % check that the mouse returns data
+            WaitSecs(1);
+            n = eyetracker.refresh(true);
+            
+            % check some data were returned
+            assertTrue(n > 30, 'no data returned');
+            
+            % check data have correct format
+            xy = logs.data.getLastN(10, 1:2, false);
+            assertTrue(all([size(xy)==[10 2] isnumeric(xy)]), 'returned data in wrong format');
+            
+            % check no NaNs when excluded
+            xy = logs.data.getLastN(10, 1:2, true);
+            assertTrue(~any(isnan(xy(:))), 'NaNs not excluded when requested');
+
+            % check that requesting more elements than available doesn't
+            % throw an error
+            logs.data.getLastN(1000, 1:2, true);
+            
+            % finish up
+            ivis.main.IvMain.finishUp();
         end
         
     end

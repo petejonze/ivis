@@ -49,7 +49,8 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
             % z2: right eyeball distance (in mm)
             % X : x position, without processing (in pixels)
             % Y : y position, without processing (in pixels)
-        tmpBuff % just stores the last inserted sample(s)     
+        tmpBuff % just stores the last inserted sample(s)    
+        autoSaveOnClose = false;
     end
     
     
@@ -61,12 +62,13 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
         
         %% == CONSTRUCTOR =================================================
         
-        function obj = IvDataLog(homeDir, fnPattern, arraySize)
+        function obj = IvDataLog(homeDir, fnPattern, arraySize, autoSaveOnClose)
             % IvDataLog Constructor.
             %
             % @param    homeDir
             % @param    fnPattern
             % @param    arraySize
+            % @param    autoSaveOnClose     optional boolean (default=false)
             % @return   obj         IvDataLog object
             %
             % @date     26/06/14
@@ -91,6 +93,11 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
             delete(fullFn);
             
             obj.buffer = CExpandableBuffer(arraySize, 13);
+            
+            % parse and set
+            if nargin >= 4 && ~isempty(autoSaveOnClose)
+                obj.autoSaveOnClose = autoSaveOnClose;
+            end
         end
         
         function [] = delete(obj)
@@ -102,6 +109,9 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
             
             % release buffer:
             if ~isempty(obj.buffer)
+                if obj.autoSaveOnClose
+                    obj.save([], false);
+                end
                 delete(obj.buffer);
                 obj.buffer = [];
             end
@@ -325,7 +335,7 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
             end
             
             % save to file
-            headerInfo={'x','y','t','vldty','p','c','d','v','A','x_raw','y_raw', 'IvRawLog'};
+            headerInfo={'x','y','t','vldty','p','c','d','v','A','z1','z2','x_raw','y_raw', 'IvRawLog'};
             
             if nargin < 2 || isempty(fn)
                 fn = obj.fnPattern;
@@ -334,13 +344,20 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
             fn =  regexprep(fn, '.csv$', '', 'once'); % strip off any '.csv' suffix
             
             % append IvRawLog file reference, and (re)add .csv suffix
-            rawFullFn = ivis.log.IvRawLog.getInstance().fullFn;
-            rawFn = ivis.log.IvRawLog.getInstance().fn;
-            if ~isempty(rawFn)
-                rawFn = regexprep(rawFn, '.raw$', '', 'once'); % strip off any '.raw' suffix
-                fn = sprintf('%s__%s.csv', fn, rawFn);
-            else % if no raw log extant
-               fn = [fn '.csv'];
+            if ~ivis.log.IvRawLog.getInstance().enabled
+                rawFullFn = 'rawLogDisabled';
+                fn = [fn '.csv'];
+            else
+                rawFullFn = ivis.log.IvRawLog.getInstance().fullFn;
+                rawFn = ivis.log.IvRawLog.getInstance().fn;
+                if ~isempty(rawFn)
+                    rawFn = regexprep(rawFn, '.raw$', '', 'once'); % strip off any '.raw' suffix
+                    fn = sprintf('%s__%s.csv', fn, rawFn);
+                else % if no raw log extant (defensive)
+                    warning('IvDataLog: Raw log enabled but not file found. Skipping link');
+                    rawFullFn = 'rawLogDisabled';
+                    fn = [fn '.csv'];
+                end
             end
 
             % add path
@@ -354,12 +371,11 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
                 try
                     fprintf(fid, '%s', strjoin1(',',headerInfo{:}));
                     % write data (1st line - also includes IvRawLog file ref)
-                    fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%s,',obj.buffer.get(1)',rawFullFn);
+                    fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%s',obj.buffer.get(1)',rawFullFn);
                     % write data (the rest)
                     if obj.buffer.nrows > 1
-                        fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,,',obj.buffer.get(2:obj.buffer.nrows)');
+                        fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f',obj.buffer.get(2:obj.buffer.nrows)');
                     end
-                    %fprintf(fid, '\n%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f,%1.2f',obj.buffer.get()');
                     fclose(fid);
                     fprintf('SAVED => %s\n',fullFn);
                 catch ME

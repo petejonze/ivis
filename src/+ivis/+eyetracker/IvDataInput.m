@@ -200,7 +200,6 @@ classdef (Abstract) IvDataInput < Singleton
         expectedLatency_sec = 0;
         
         % ---- DATA LOGGING ----
-        LOG_RAW_DATA;
         RAWLOG = [];
     end
     
@@ -378,7 +377,7 @@ classdef (Abstract) IvDataInput < Singleton
                 obj.rEyeball_xyzt
                 fprintf('%1.9f\n', GetSecs())
                 fprintf('%1.9f\n', t)
-                GetSecs()-t
+                disp(GetSecs()-t)
                 warning('IvDataFailed to set distance calibration: Last known timestamp is %1.2f seconds old\n', GetSecs()-t);
                 ok = false;
                 return;
@@ -470,11 +469,7 @@ classdef (Abstract) IvDataInput < Singleton
             obj.debugMode = params.eyetracker.debugMode;
             
             % set log params
-            obj.LOG_RAW_DATA = params.eyetracker.logRawData; 
-            if obj.LOG_RAW_DATA
-                obj.RAWLOG = ivis.log.IvRawLog.getInstance(); % get handle
-                obj.RAWLOG.open();
-            end
+            obj.RAWLOG = ivis.log.IvRawLog.getInstance(); % get handle
         end
         
         function [saccadeOnTime, blinkTime] = processData(obj, x, y, t, vldty, p, zL_mm,zR_mm, logData)
