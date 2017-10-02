@@ -30,7 +30,7 @@ Required matlab toolkits:
 ### For More Information
 For info on how to use:
 - Run "help demos" in Matlab (without quote marks)
-- See the user guide in ivis/doc/guide
+- For more examples, see also the unit-tests in \src\+ivis\+test
 	
 For technical documentation:
 - Run "help ivis" in Matlab (without quote marks)
