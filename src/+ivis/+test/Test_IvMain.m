@@ -30,7 +30,7 @@ classdef Test_IvMain < TestCase
         %% == CONSTRUCTOR =================================================
         
         function self = Test_IvMain(name)
-            % Test_Test_IvClassifierLL constructor.
+            % Test_IvClassifierLL constructor.
             %
             % @return   self TestCase
             %

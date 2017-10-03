@@ -1,26 +1,59 @@
-%% 02/05/2012, largely taken from SetupPsychtoolbox.m
+% v0.1 PJ 02/05/2012  largely taken from SetupPsychtoolbox.m
+% v1.5 PJ 03/10/2017  Better dependency checks
+
+% Check dependencies
+fprintf('Preliminaries: Checking that required dependencies are present\n');
+ok = true;
+
+% get version info
+x = ver();
+
+% Check that MATLAB is sufficiently up to date
+v = str2double(x(strcmpi('MATLAB',x.Name)).Version);
+if v < 8.5
+  	ok = false;
+    warning('InstallIvis:missingDependencies','MATALB version older than 8.5 (2015) detected. The ivis toolbox does not work on older platforms (e.g., due to the use of OOP syntax)');
+end
+
+% Check that MATLAB stats toolbox is installed
+if ~ismember('Statistics Toolbox', {x.Name})
+  	ok = false;
+    warning('InstallIvis:missingDependencies','Statistics Toolbox not found. The ivis toolbox will not work without it!');
+else
+    % try running example command
+    try
+        makedist('Uniform', 0, 100);
+    catch ME
+        ok = false;
+        warning('InstallIvis:missingDependencies','Statistics Toolbox function "makedist()" failed to execute. The ivis toolbox will not work without a working version of Statistics Toolbox!');
+    end
+end
+
+% Check that Psychtoolbox is installed (since the following is dependent on
+% it)
+if ~ismember('Psychtoolbox', {x.Name})
+ 	ok = false;
+    warning('InstallIvis:missingDependencies','Psychtoolbox not found. The ivis toolbox will not work without it!');
+else
+    % try running example command
+    try
+        AssertOpenGL();
+    catch ME
+        ok = false;
+        warning('InstallIvis:missingDependencies','Psychtoolbox function "AssertOpenGL()" failed to execute. The ivis toolbox will not work without a working version of Psychtoolbox!');
+    end
+end
+
+% throw error if any requirements not met
+if ~ok
+    error('One or more requirements not met. See warnings above for details.');
+end
 
 % Locate ourselves:
 targetdirectory=fileparts(mfilename('fullpath'));
 
 % Begin
-fprintf('Will setup working copy of the ivis folder inside: %s\n',targetdirectory);
-fprintf('\n');
-
-% Check that Psychtoolbox is installed (since the following is dependent on
-% it)
-try
-    AssertOpenGL();
-catch ME
-    error('Installivis:missingDependencies','Psychtoolbox not found. The ivis toolbox will not work without it!');
-end
-
-% Check that PsychTestRig is installed (since is dependent on it)
-try
-    PsychTestRig();
-catch ME
-    error('Installivis:missingDependencies','PsychTestRig not found. The ivis toolbox will not work without it!');
-end
+fprintf('Will setup working copy of the ivis folder inside: %s\n\n',targetdirectory);
 
 % Remove any previous from path:
 searchpattern = sprintf('[^%s]*%sivis+[^%s]*%s',pathsep,filesep,pathsep,pathsep);
