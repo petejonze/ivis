@@ -28,9 +28,8 @@ function [] = ivisDemo005_usingaPTBScreen()
     
     %% 1. Have IVIS open the screen
     % verify, initialise, and launch the ivis toolbox
-  	setpref('ivis','disableScreenChecks',true); % for demo purposes
     IvMain.assertVersion(1.5);
-    IvMain.initialise(IvParams.getDefaultConfig());
+    IvMain.initialise(IvParams.getDefaultConfig('graphics.runScreenChecks',false)); % disable screen checks for demo purposes
     [eyetracker, ~, InH, winhandle] = IvMain.launch();
 
     % run!

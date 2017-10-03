@@ -1,9 +1,9 @@
-classdef Test_IvHfUniform2D < TestCase
+classdef Test_IvHfGauss2D < TestCase
     % xUnit tests for ivis.main.IvHfUniform2D
     %
     % Example:
     %   runtests ivis.test -verbose             % run all
-    %   runtests ivis.test.Test_IvHfUniform2D   % run just this
+    %   runtests ivis.test.Test_IvHfGauss2D     % run just this
     %
     % Author:
     %   Pete R Jones <petejonze@gmail.com>
@@ -35,7 +35,7 @@ classdef Test_IvHfUniform2D < TestCase
         
         %% == CONSTRUCTOR =================================================
         
-        function self = Test_IvHfUniform2D(name)
+        function self = Test_IvHfGauss2D(name)
             % Test_IvHfUniform2D constructor.
             %
             % @return   self TestCase
@@ -57,8 +57,11 @@ classdef Test_IvHfUniform2D < TestCase
             ivis.main.IvMain.initialise(ivis.main.IvParams.getSimpleConfig());
             
             % init pdf object
-            minmaxBounds_px = [0 0 640 480];
-            obj.HF = ivis.math.pdf.IvHfUniform2D(minmaxBounds_px);
+            mu_px = [500 500];
+            sigma_px = [30 30];
+            minmaxBounds_px = [0 0 1200 1000];
+            pedestalMix_p = 0.05;
+            obj.HF = ivis.math.pdf.IvHfGauss2D(mu_px, sigma_px, minmaxBounds_px, pedestalMix_p);
         end
         
         function tearDown(obj)
@@ -81,7 +84,7 @@ classdef Test_IvHfUniform2D < TestCase
             xy = [100 100];
             w = [1 1];
             y = obj.HF.getPDF(xy, w);
-            assertElementsAlmostEqual(y, 0.0000032552, 'wrong value returned')
+            assertElementsAlmostEqual(y, 2.0833e-09, 'wrong value returned')
         end
         
         function [] = testPdfVal2(obj)
@@ -93,7 +96,7 @@ classdef Test_IvHfUniform2D < TestCase
             xy = [100 100];
             w = [1 0];
             y = obj.HF.getPDF(xy, w);
-            assertElementsAlmostEqual(y, 0.0015625000, 'wrong value returned')
+            assertElementsAlmostEqual(y, 4.1667e-05, 'wrong value returned')
         end
         
         function [] = testPdfVal3(obj)
@@ -102,7 +105,7 @@ classdef Test_IvHfUniform2D < TestCase
             % @date     02/10/17
             % @author   PRJ
             %
-            xy = [1000 1000];
+            xy = [2000 2000];
             w = [1 1];
             y = obj.HF.getPDF(xy, w);
             assertEqual(y, obj.HF.MIN_VAL, 'wrong value returned')

@@ -100,7 +100,7 @@ classdef (Abstract) IvHitFunc < handle
                 w = [1 1];
             end
             if size(xy,2)~=2
-                error('xy must be a 2 column matrix')
+                error('IvHitFunc:InvalidInput', 'xy must be a 2 column matrix')
             end
             
             % ensure largest relative weight == 1

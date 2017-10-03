@@ -45,7 +45,7 @@ function [] = ivisDemo008_playingVideos()
 
     % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false));
+    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false, 'graphics.runScreenChecks',false));
     [eyetracker, ~, InH, winhandle] = IvMain.launch();
 
     try % wrap in try..catch to ensure a graceful exit

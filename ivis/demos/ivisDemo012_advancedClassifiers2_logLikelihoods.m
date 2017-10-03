@@ -1,14 +1,14 @@
-function [] = ivisDemo011_advancedClassifiers_noScreen()
-% ivisDemo011_advancedClassifiers. Various advanced classifiers (box, log-likelihood, direction).
-%
-%   Edit the "classifiertype" variable to see different functionality
+function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
+% ivisDemo012_advancedClassifiers2_logLikelihoods. More on the use of
+% loglikelihood classifiers, including the option to srt the relative
+% weight given to the x- and y-domain eye-tracking data
 %
 % Requires:         ivis toolbox v1.5
 %
 % Matlab:           v2012 onwards
 %
-% See also:         ivisDemo010_readingRawGazeData.m
-%                   ivisDemo012_externalConfigFiles.m
+% See also:         ivisDemo011_advancedClassifiers.m
+%                   ivisDemo013_externalConfigFiles.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -24,13 +24,10 @@ function [] = ivisDemo011_advancedClassifiers_noScreen()
     clearAbsAll();
     import ivis.classifier.* ivis.control.* ivis.graphic.* ivis.gui.* ivis.main.* ivis.log.*  ivis.broadcaster.*; 
 
-    % user variables [Choose from the selection below]
-    classifiertype = 'LL'; % 'grid1', 'grid2', 'LL1d' 'LL2d' 'box', 'direction'
-
     try
         % launch ivis
         IvMain.assertVersion(1.5);
-        params = IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'graphics.testScreenNum',1, 'GUI.screenNum',2, 'eyetracker.type','mouse')); % 'mouse' 'TobiiEyeX'));
+        IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'eyetracker.type','mouse')); % 'mouse' 'TobiiEyeX'));
         [eyeTracker, ~, InH, winhandle] = IvMain.launch();
         
         % adaptive track
@@ -54,37 +51,19 @@ function [] = ivisDemo011_advancedClassifiers_noScreen()
         myGraphic2 = IvGraphic('targ2', [], 1000, 600, 200, 200, winhandle);
         
         % prepare a classifier
-        switch lower(classifiertype)
-            case 'll'
-                thresh = params.classifier.loglikelihood.likelihoodThresh;
-                myClassifier = IvClassifierLL({IvPrior(), myGraphic, myGraphic2}, [inf 300 300], 360, [], [], [], false);
-            case 'box'
-                myClassifier = IvClassifierBox(myGraphic);
-            case 'grid1'
-                myClassifier = IvClassifierGrid();
-            case 'grid2'
-                myClassifier = IvClassifierGrid(myGraphic);
-            case 'direction'
-                myClassifier = IvClassifierVector([-70 0 70 200]);
-            otherwise
-                error('mess_classifier_v4:InvalidInput','classifier type (%s) not recognisied.\nChoose from: %s', classifiertype, strjoin(',','ll2d','ll1d','box'));
-        end
-        % show on stimulus screen
-        myClassifier.show(); % draw the box around the graphic
-        
-        % set background colour to white (to make cursor easier to see)     
-        %Screen('FillRect', winhandle, [255 255 255]);
+        myClassifier = IvClassifierLL({IvPrior(), myGraphic, myGraphic2}, [inf 300 300], 360, [], [], [], false);
 
         % set xy weights
         w = [1 0]; % amount of weight to give the X-DIMENSION and Y-DIMENSION, respectively
-    	myClassifier.setXYWeights(w)
+        myClassifier.setXYWeights(w);
+        fprintf('Weights: x=%1.2f, y=%1.2f\n', w);
         
         % run
         while ~aT.isFinished
 
             % WAIT FOR GO KEY
             while InH.getInput() ~= InH.INPT_SPACE.code
-              	eyeTracker.getInstance().refresh(false); % false to supress logging
+              	eyeTracker.refresh(false); % false to supress logging
                 WaitSecs(.05);
             end
             fprintf('Started\n\n');
@@ -102,10 +81,10 @@ function [] = ivisDemo011_advancedClassifiers_noScreen()
                 % poll peripheral devices for valid user inputs
                 InH.getInput();
 
-                % poll eyetracker
-                [n, saccadeOnTime, blinkTime] = eyeTracker.getInstance().refresh(); %#ok
+                % poll eyetracker & update classifier
+                [n, saccadeOnTime, blinkTime] = eyeTracker.refresh(); %#ok
                 if ~isempty(saccadeOnTime)  || ~isempty(blinkTime)
-                    myClassifier.start(false);
+                    myClassifier.start(false); % restart classifier after a saccade or blink(!)
                 else
                     myClassifier.update();
                 end
@@ -122,7 +101,8 @@ function [] = ivisDemo011_advancedClassifiers_noScreen()
             
             % vary weights
             w = min(w + [0 0.2], 1);
-            myClassifier.setXYWeights(w)
+            myClassifier.setXYWeights(w);
+            fprintf('Weights: x=%1.2f, y=%1.2f\n', w);
             
             % computer whether was a hit
             whatLookingAt = myClassifier.interogate();

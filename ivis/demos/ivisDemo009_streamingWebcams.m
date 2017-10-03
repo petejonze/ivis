@@ -35,8 +35,7 @@ function [] = ivisDemo009_streamingWebcams()
 
     % Verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-    IvMain.disableScreenChecks(); % not appropriate in a real experiment
-    IvMain.initialise(IvParams.getDefaultConfig('webcam.enable', true));
+    IvMain.initialise(IvParams.getDefaultConfig('webcam.enable', true, 'graphics.runScreenChecks',false));
     [eyetracker, ~, InH, winhandle] = IvMain.launch();
     
     % Main

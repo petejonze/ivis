@@ -29,8 +29,7 @@ function [] = ivisDemo006_trackboxVisualisation()
 
     % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-    setpref('ivis','disableScreenChecks',true);
-    IvMain.initialise(IvParams.getDefaultConfig('eyetracker.type','TobiiEyeX', 'graphics.testScreenNum',1));
+    IvMain.initialise(IvParams.getDefaultConfig('eyetracker.type','TobiiEyeX', 'graphics.testScreenNum',1, 'graphics.runScreenChecks',false));
     [eyetracker, ~, InH, winhandle] = IvMain.launch();
 
     try % wrap in try..catch to ensure a graceful exit

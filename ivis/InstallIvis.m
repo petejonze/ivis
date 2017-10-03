@@ -144,4 +144,4 @@ end
 
 % finish up
 fprintf('\n\nivis has been successfully installed. Enjoy!\n-------------------\n\n');
-fprintf('New to ivis? Try running some of the demos in "help ivisDemos".\n');
+fprintf('New to ivis? Try running some of the demos in "help demos" (e.g., .\n');

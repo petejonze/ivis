@@ -1,5 +1,5 @@
-function [] = ivisDemo013_calibration()
-% ivisDemo013_calibration. Calibration using polynomial surface fitting and
+function [] = ivisDemo014_eyetrackerCalibration()
+% ivisDemo014_eyetrackerCalibration. Calibration using polynomial surface fitting and
 % drift correction. In this demo the mouse cursor represents the 'true'
 % fixation position, and the white dot texture represents the misaligned
 % 'estimated' position (before and after calibration).
@@ -11,8 +11,8 @@ function [] = ivisDemo013_calibration()
 %
 % Matlab:           v2012 onwards
 %
-% See also:         ivisDemo012_externalConfigFiles.m
-%                   ivisDemo014_identifyingSaccades.m
+% See also:         ivisDemo013_externalConfigFiles.m
+%                   ivisDemo015_identifyingSaccades.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -31,8 +31,7 @@ function [] = ivisDemo013_calibration()
 
     % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-	setpref('ivis','disableScreenChecks',true);
-    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false));
+    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false, 'graphics.runScreenChecks',false));
     [eyetracker, log, InH, winhandle] = IvMain.launch();
 
     try % wrap in try..catch to ensure a graceful exit

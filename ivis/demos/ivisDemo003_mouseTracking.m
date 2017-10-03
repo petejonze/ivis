@@ -29,7 +29,7 @@ import ivis.main.* ivis.control.*;
 IvMain.assertVersion(1.5);
 
 % initialise ivis
-IvMain.initialise(IvParams.getSimpleConfig('GUI.useGUI',true, 'eyetracker.GUIidx',2, 'saccade.GUIidx',3));
+IvMain.initialise(IvParams.getSimpleConfig('GUI.useGUI',true, 'eyetracker.GUIidx',2, 'saccade.GUIidx',3, 'log.data.autoSaveOnClose',false, 'log.raw.enable',false, 'log.diary.enable',false));
 
 % luanch ivis
 [eyetracker, logs, InH, winhandle] = IvMain.launch();

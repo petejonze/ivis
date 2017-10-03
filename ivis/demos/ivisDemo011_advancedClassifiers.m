@@ -1,14 +1,17 @@
-function [] = ivisDemo011_advancedClassifiers()
+function [] = ivisDemo011_advancedClassifiers(classifiertype)
 % ivisDemo011_advancedClassifiers. Various advanced classifiers (box, log-likelihood, direction).
 %
 %   Edit the "classifiertype" variable to see different functionality
+%
+%   For more examples, see also the IvClassifier test classes in:
+%       \src\+ivis\+test
 %
 % Requires:         ivis toolbox v1.5
 %
 % Matlab:           v2012 onwards
 %
 % See also:         ivisDemo010_readingRawGazeData.m
-%                   ivisDemo012_externalConfigFiles.m
+%                   ivisDemo012_advancedClassifiers2_logLikelihoods.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -20,18 +23,22 @@ function [] = ivisDemo011_advancedClassifiers()
 % *********************************************************************
 % 
 
-    % Clear memory and set workspace
-    clearAbsAll();
+    % set workspace
     import ivis.classifier.* ivis.control.* ivis.graphic.* ivis.gui.* ivis.main.* ivis.log.*  ivis.broadcaster.*; 
 
     % user variables [Choose from the selection below]
-    classifiertype = 'box'; % 'grid1', 'grid2', 'LL1d' 'LL2d' 'box', 'direction'
+    if nargin < 1 || isempty(classifiertype)
+        fprintf('No classifier type chosen, picking a random classifer..\n');
+        classifiers = {'grid', 'll', 'box', 'vector'};
+        idx = randi(3); % we'll ignore vector for now, as it's unlikely to be of much interest to many users
+        classifiertype = classifiers{idx};
+        fprintf('Running using "%s"\n', classifiertype);
+    end
 
     try
         % launch ivis
         IvMain.assertVersion(1.5);
-        setpref('ivis','disableScreenChecks',true); % for demo purposes
-        params = IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true));
+        params = IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.runScreenChecks',false));
         [eyeTracker, ~, InH, winhandle] = IvMain.launch();
 
         % make graphic texture (black square, 100 x 100 pixels)
@@ -55,22 +62,20 @@ function [] = ivisDemo011_advancedClassifiers()
         
         % prepare graphic
         myGraphic = IvGraphic('targ', tex, 0, 0, 100, 100, winhandle);
+        myGraphic2 = IvGraphic('targ2', tex, 500, 500, 100, 100, winhandle);
         
         % prepare a classifier
+        timeout_secs = 15;
         switch lower(classifiertype)
-            case 'll2d' % 2D version
-                myClassifier = IvClassifierLL('2D', {IvPrior(), myGraphic});
-            case 'll1d' % 1D version
-                lmag = params.classifier.loglikelihood.lMagThresh;
-                myClassifier = IvClassifierLL('1D', {IvPrior(), myGraphic},[lmag lmag*5]);
+            case 'll'
+                myClassifier = IvClassifierLL({IvPrior(), myGraphic}, [inf 300], 360, [], timeout_secs, [], false);
             case 'box'
-                myClassifier = IvClassifierBox(myGraphic);
-            case 'grid1'
-                myClassifier = IvClassifierGrid();
-            case 'grid2'
-                myClassifier = IvClassifierGrid(myGraphic);
-            case 'direction'
-                myClassifier = IvClassifierVector([-70 0 70 200]);
+                %myClassifier = IvClassifierBox(myGraphic, [], [], timeout_secs); % simple 1-object case
+                myClassifier = IvClassifierBox({myGraphic, myGraphic2}, [], [], timeout_secs); % more complex, 2-object case
+            case 'grid'
+                myClassifier = IvClassifierGrid(myGraphic, [], timeout_secs);
+            case 'vector'
+                myClassifier = IvClassifierVector([90 180 270 0], [], [], timeout_secs);
             otherwise
                 error('mess_classifier_v4:InvalidInput','classifier type (%s) not recognisied.\nChoose from: %s', classifiertype, strjoin(',','ll2d','ll1d','box'));
         end
@@ -85,7 +90,7 @@ function [] = ivisDemo011_advancedClassifiers()
 
             % WAIT FOR GO KEY
             while InH.getInput() ~= InH.INPT_SPACE.code
-              	eyeTracker.getInstance().refresh(false); % false to supress logging
+              	eyeTracker.refresh(false); % false to supress logging
                 WaitSecs(1/50);
             end
             fprintf('Started\n\n');
@@ -104,13 +109,13 @@ function [] = ivisDemo011_advancedClassifiers()
                 InH.getInput();
 
                 % update graphics
-                if myGraphic.getX < 800
-                    myGraphic.nudge(10,0);
+                if myGraphic.getX < (params.graphics.monitorWidth-aT.getDelta())
+                    myGraphic.nudge(params.graphics.monitorWidth/150,0);
                 end
                 myGraphic.draw()
 
-                % poll eyetracker
-                n = eyeTracker.getInstance().refresh(); %#ok     
+                % poll eyetracker & update classifier
+                n = eyeTracker.refresh(); %#ok     
               	myClassifier.update();
 
                 % Show rendered image at next vertical retrace:

@@ -63,4 +63,4 @@ if ~exist(fullfile(ivisdir(),'resources'), 'dir')
 end
 
 % feedback
-fprintf('Looks good. All done!\nWhy not try some more demos? ("help ivisDemos")\n');
+fprintf('Looks good. All done!\nWhy not try some more demos? ("help demos")\n');
