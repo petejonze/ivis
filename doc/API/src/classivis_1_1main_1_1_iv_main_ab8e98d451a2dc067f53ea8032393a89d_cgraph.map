@@ -1,8 +1,0 @@
-<map id="ivis::main::IvMain::launch" name="ivis::main::IvMain::launch">
-<area shape="rect" id="node2" href="$classivis_1_1main_1_1_iv_main.html#a41c9b082c0fd8ed4b52b5a5447785ad9" title="Shut down system and close eye&#45;tracker connection." alt="" coords="187,5,312,46"/>
-<area shape="rect" id="node5" href="$classivis_1_1main_1_1_iv_params.html#a585be903f73199977df02b4284e966c9" title="ivis::main::IvParams\l::getInstance" alt="" coords="179,187,320,229"/>
-<area shape="rect" id="node7" href="$classivis_1_1main_1_1_iv_params.html#a2d1bc5bf2162b31a97968a56b1ecea68" title="Update graphic parameters based on the specified PTB screen." alt="" coords="179,70,320,111"/>
-<area shape="rect" id="node4" href="$namespaceivis_1_1broadcaster.html#a035702262427ed8c3b5b3d6d6d025b02" title="SCREEN wrapper for PTB&#39;s Screen command." alt="" coords="407,70,535,111"/>
-<area shape="rect" id="node3" href="$class_singleton_manager.html#ac2af0ef8b8934134aebd8b3d33dc7dec" title="Delete all Singletons. Print info to the console." alt="" coords="382,12,559,39"/>
-<area shape="rect" id="node6" href="$class_singleton.html#ab3469ccad7eaeb94360fdc3b537b3dbb" title="Get object (only 1 can exist)." alt="" coords="369,195,573,221"/>
-</map>

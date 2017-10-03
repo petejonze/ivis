@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1main_1_1_iv_main" kind="class" prot="public">
+    <compoundname>ivis::main::IvMain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">handle</basecompoundref>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a59e9da3cefce3da3fac5dc89c0f5591e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvMain::checkClassPath</definition>
+        <argsstring>()</argsstring>
+        <name>checkClassPath</name>
+        <briefdescription>
+<para>Check for bad java class path... </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="64" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="64" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a71ff1cf2f841d66b487076c87fe417ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvMain::assertVersion</definition>
+        <argsstring>(matlabtypesubstitute vernum)</argsstring>
+        <name>assertVersion</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>vernum</declname>
+        </param>
+        <briefdescription>
+<para>Validate specified version number against the installed version of ivis. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vernum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="88" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="88" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a86785c469028ed3bd3fe14675ddc8b98" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, params &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, params &gt; ivis::main::IvMain::validate</definition>
+        <argsstring>(matlabtypesubstitute paramStructOrXmlFullFileName)</argsstring>
+        <name>validate</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>paramStructOrXmlFullFileName</declname>
+        </param>
+        <briefdescription>
+<para>Validate IvConfig parameters. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paramStructOrXmlFullFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML filename (including path) containing parameters, or an equivalent structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>params <ref refid="classivis_1_1main_1_1_iv_params" kindref="compound">IvParams</ref> object</para></simplesect>
+<simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="113" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="113" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1aab425123f77e446b64088251a8cefaa4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, params &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, params &gt; ivis::main::IvMain::initialise</definition>
+        <argsstring>(matlabtypesubstitute paramStructOrXmlFullFileName)</argsstring>
+        <name>initialise</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>paramStructOrXmlFullFileName</declname>
+        </param>
+        <briefdescription>
+<para>Load/parse the params (if an xml file file specified), and validate the contents. Must be called prior to <ref refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" kindref="member">launch()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>paramStructOrXmlFullFileName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>XML filename (including path) containing parameters, or an equivalent structure </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>params <ref refid="classivis_1_1main_1_1_iv_params" kindref="compound">IvParams</ref> object</para></simplesect>
+<simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="144" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="144" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, dataInput &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, logs &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, InH &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, winhandle &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, params &gt; &gt;</type>
+        <definition>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, dataInput &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, logs &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, InH &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, winhandle &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, params &gt; &gt; ivis::main::IvMain::launch</definition>
+        <argsstring>(matlabtypesubstitute screennum, matlabtypesubstitute InH)</argsstring>
+        <name>launch</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>screennum</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>InH</declname>
+        </param>
+        <briefdescription>
+<para>Open connections and ready outputs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screennum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>###### </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>InH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional existing InputHandler object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>dataInput DataInput object (eyetracker) </para><simplesectsep/><para>logs Raw and Data log objects </para><simplesectsep/><para>InH InputHandler object </para><simplesectsep/><para>winhandle handle to PTB handle </para><simplesectsep/><para>params IvParam object</para></simplesect>
+<simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="par"><title>Required fields of InH:</title><para></para></simplesect>
+<simplesect kind="par"><title>Generated fields of logs:</title><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="183" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="183" bodyend="392"/>
+        <references refid="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" compoundref="_iv_main_8m" startline="431" endline="518">finishUp</references>
+        <references refid="classivis_1_1main_1_1_iv_params_1a585be903f73199977df02b4284e966c9" compoundref="_iv_params_8m" startline="611" endline="613">ivis::main::IvParams::getInstance</references>
+        <references refid="classivis_1_1main_1_1_iv_params_1a2d1bc5bf2162b31a97968a56b1ecea68" compoundref="_iv_params_8m" startline="95" endline="162">ivis::main::IvParams::registerScreen</references>
+        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="29">ivis::broadcaster::Screen</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a0893daf130991b64a82d2d32410f3863" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvMain::pause</definition>
+        <argsstring>(matlabtypesubstitute InH)</argsstring>
+        <name>pause</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>InH</declname>
+        </param>
+        <briefdescription>
+<para>Pause data collection (currently disabled). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="417" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="417" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvMain::finishUp</definition>
+        <argsstring>(matlabtypesubstitute verbosity)</argsstring>
+        <name>finishUp</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>verbosity</declname>
+        </param>
+        <briefdescription>
+<para>Shut down system and close eye-tracker connection. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="431" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="431" bodyend="518"/>
+        <references refid="class_singleton_manager_1ac2af0ef8b8934134aebd8b3d33dc7dec" compoundref="_singleton_manager_8m" startline="146" endline="151">SingletonManager::clearAll</references>
+        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="29">ivis::broadcaster::Screen</references>
+        <referencedby refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" compoundref="_iv_main_8m" startline="183" endline="392">launch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a33b5f86f1d81c8a3ee2ad920bcc342c8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvMain::totalClear</definition>
+        <argsstring>()</argsstring>
+        <name>totalClear</name>
+        <briefdescription>
+<para>Clear mememory. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="530" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="530" bodyend="535"/>
+        <references refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" compoundref="clear_abs_all_8m" startline="17" endline="76">clearAbsAll</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_main_1a796f8b9733bb70906c27c34be9513fcd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvMain::disableScreenChecks</definition>
+        <argsstring>()</argsstring>
+        <name>disableScreenChecks</name>
+        <briefdescription>
+<para>Prevent Ivis from checking screen parameters on launch. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>29/03/13 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="546" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="546" bodyend="548"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Main (static) class for initialising and shutting down ivis. Should be the first and last ivis command called in your experiment. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvMain Methods</title><para><itemizedlist>
+<listitem><para>assertVersion - Validate specified version number against the installed version of ivis.</para></listitem><listitem><para>validate - Validate IvConfig parameters.</para></listitem><listitem><para>initialise - Load/parse the params (if an xml file file specified), and validate the contents. Must be called prior to <ref refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" kindref="member">launch()</ref>.</para></listitem><listitem><para>launch - Open connections and ready outputs.</para></listitem><listitem><para>pause - Pause data collection (currently disabled).</para></listitem><listitem><para>finishUp - Shut down system and close eye-tracker connection.</para></listitem><listitem><para>totalClear - Clear mememory.</para></listitem><listitem><para>disableScreenChecks - Prevent Ivis from checking screen parameters on launch.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para><ref refid="classivis_1_1main_1_1_iv_main_1aab425123f77e446b64088251a8cefaa4" kindref="member">IvMain.initialise</ref>(<computeroutput>./IvConfig_example.xml</computeroutput>); [dataInput, params, winhandle, InH] = <ref refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" kindref="member">IvMain.launch()</ref>;</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="803">
+        <label>handle</label>
+      </node>
+      <node id="802">
+        <label>ivis::main::IvMain</label>
+        <link refid="classivis_1_1main_1_1_iv_main"/>
+        <childnode refid="803" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="805">
+        <label>handle</label>
+      </node>
+      <node id="804">
+        <label>ivis::main::IvMain</label>
+        <link refid="classivis_1_1main_1_1_iv_main"/>
+        <childnode refid="805" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+main/IvMain.m" bodystart="19" bodyend="560"/>
+    <listofallmembers>
+      <member refid="classivis_1_1main_1_1_iv_main_1a71ff1cf2f841d66b487076c87fe417ce" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>assertVersion</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1a59e9da3cefce3da3fac5dc89c0f5591e" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>checkClassPath</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1a796f8b9733bb70906c27c34be9513fcd" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>disableScreenChecks</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1a41c9b082c0fd8ed4b52b5a5447785ad9" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>finishUp</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1aab425123f77e446b64088251a8cefaa4" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>initialise</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1ab8e98d451a2dc067f53ea8032393a89d" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>launch</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1a0893daf130991b64a82d2d32410f3863" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>pause</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1a33b5f86f1d81c8a3ee2ad920bcc342c8" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>totalClear</name></member>
+      <member refid="classivis_1_1main_1_1_iv_main_1a86785c469028ed3bd3fe14675ddc8b98" prot="public" virt="non-virtual"><scope>ivis::main::IvMain</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

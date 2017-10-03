@@ -1,5 +1,0 @@
-<map id="MatlabDocMaker::setup" name="MatlabDocMaker::setup">
-<area shape="rect" id="node3" href="$class_matlab_doc_maker.html#a9f84ff8d3f39824b54626862780b342c" title="Returns the project name." alt="" coords="227,5,467,35"/>
-<area shape="rect" id="node5" href="$class_matlab_doc_maker.html#a6e84afe2189a851665133b6e7c412d4c" title="Sets the project logo. Set to &#39; to unset." alt="" coords="231,59,463,90"/>
-<area shape="rect" id="node7" href="$class_matlab_doc_maker.html#a11a2a8ec616df969a911b325e39b0b4f" title="Returns the directory where the applications documentation configuration files reside." alt="" coords="516,50,716,100"/>
-</map>

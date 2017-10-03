@@ -1,0 +1,4 @@
+<map id="ivis::classifier::IvClassifierBox" name="ivis::classifier::IvClassifierBox">
+<area shape="rect" id="node2" href="$classivis_1_1classifier_1_1_iv_classifier.html" title="Generic class for maintaining the level of evidence in favour of each potential Area of Interest..." alt="" coords="15,171,187,197"/>
+<area shape="rect" id="node3" href="$classivis_1_1broadcaster_1_1_iv_listener.html" title="Methods for pairing (or unpairing) an arbitrary function with a given broadcaster event name..." alt="" coords="37,81,165,122"/>
+</map>

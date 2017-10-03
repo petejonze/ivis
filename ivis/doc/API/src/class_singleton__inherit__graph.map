@@ -1,0 +1,34 @@
+<map id="Singleton" name="Singleton">
+<area shape="rect" id="node3" href="$classivis_1_1audio_1_1_iv_audio.html" title="Singleton resposible for loading and playing audio." alt="" coords="253,80,387,107"/>
+<area shape="rect" id="node4" href="$classivis_1_1broadcaster_1_1_iv_broadcaster.html" title="Responsible for broadcasting event message to ivis components." alt="" coords="256,131,384,173"/>
+<area shape="rect" id="node5" href="$classivis_1_1calibration_1_1_iv_calibration.html" title="Singleton responsible for maintaining a mapping of observed&#45;to&#45;actual gaze coordinates, through (A) a polynomial surface map, and (B) a drift&#45;correction mechanism." alt="" coords="261,197,379,238"/>
+<area shape="rect" id="node6" href="$classivis_1_1calibration_1_1_track_box.html" title="Display Tobii eyetracker box schema and current eyeball info." alt="" coords="261,262,379,303"/>
+<area shape="rect" id="node7" href="$classivis_1_1eyetracker_1_1_iv_data_input.html" title="Generic data input class that must be instantiated by a subclass. Handles the crucial data processing..." alt="" coords="242,327,398,369"/>
+<area shape="rect" id="node17" href="$classivis_1_1gui_1_1_iv_g_u_i.html" title="Singleton responsible for maintaining the overall frame, in which individual Java windows may be embe..." alt="" coords="267,436,373,463"/>
+<area shape="rect" id="node18" href="$classivis_1_1gui_1_1_iv_g_u_ielement.html" title="Generic GUI Java window, to be instantiated by a subclass." alt="" coords="243,487,397,513"/>
+<area shape="rect" id="node28" href="$classivis_1_1log_1_1_iv_log.html" title="Abstract interface for data storage." alt="" coords="267,537,373,564"/>
+<area shape="rect" id="node31" href="$classivis_1_1main_1_1_iv_params.html" title="Responsible for loading, parsing and validating inputs stored in Config.xml, and storing the system v..." alt="" coords="249,588,391,615"/>
+<area shape="rect" id="node32" href="$classivis_1_1math_1_1_iv_unit_handler.html" title="Utility singleton for converting between distances on screen (cm, px, dg)" alt="" coords="237,639,403,665"/>
+<area shape="rect" id="node33" href="$classivis_1_1video_1_1_iv_video.html" title="Video singleton for loading, playing and controlling videos." alt="" coords="254,689,386,716"/>
+<area shape="rect" id="node34" href="$classivis_1_1video_1_1_iv_webcam.html" title="Webcam singleton for displaying webcam feed in a GUI." alt="" coords="245,740,395,767"/>
+<area shape="rect" id="node8" href="$classivis_1_1eyetracker_1_1_iv_dummy.html" title="Singleton instantiation of IvDataInput, designed not to be driven by anything, but to flag up when/by..." alt="" coords="457,5,631,32"/>
+<area shape="rect" id="node9" href="$classivis_1_1eyetracker_1_1_iv_eyelink.html" title="Singleton instantiation of IvDataInput, designed to link to a Eyelink eyetracker." alt="" coords="459,56,629,83"/>
+<area shape="rect" id="node10" href="$classivis_1_1eyetracker_1_1_iv_eye_tribe.html" title="Singleton instantiation of IvDataInput, designed not to be driven by an EyeTribe eyetracker." alt="" coords="454,107,634,133"/>
+<area shape="rect" id="node11" href="$classivis_1_1eyetracker_1_1_iv_manual.html" title="Singleton instantiation of IvDataInput, designed to be updated manually by the user." alt="" coords="459,157,629,184"/>
+<area shape="rect" id="node12" href="$classivis_1_1eyetracker_1_1_iv_mouse.html" title="Singleton instantiation of IvDataInput, designed to be driven by a mouse." alt="" coords="461,208,627,235"/>
+<area shape="rect" id="node13" href="$classivis_1_1eyetracker_1_1_iv_simulator.html" title="Singleton instantiation of IvDataInput, designed to simulate gaze coordinates based on a specified pr..." alt="" coords="451,259,637,285"/>
+<area shape="rect" id="node14" href="$classivis_1_1eyetracker_1_1_iv_smi.html" title="Singleton instantiation of IvDataInput, designed not to be driven by an SMI eyetracker." alt="" coords="468,309,620,336"/>
+<area shape="rect" id="node15" href="$classivis_1_1eyetracker_1_1_iv_tobii.html" title="Singleton instantiation of IvDataInput, designed to link to a Tobii eyetracker." alt="" coords="465,360,623,387"/>
+<area shape="rect" id="node16" href="$classivis_1_1eyetracker_1_1_iv_tobii_eye_x.html" title="Singleton instantiation of IvDataInput, designed to link to a Tobii eyetracker." alt="" coords="451,411,637,437"/>
+<area shape="rect" id="node19" href="$classivis_1_1gui_1_1_iv_g_u_icalibration.html" title="Singleton for displaying calibration interactive panel and fit results." alt="" coords="461,461,627,488"/>
+<area shape="rect" id="node20" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier.html" title="Generic class for displaying classifier parameters and status, to be instantiated by a subclass..." alt="" coords="465,512,623,539"/>
+<area shape="rect" id="node25" href="$classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial.html" title="Singleton for displaying gaze&#45;location as a function of space." alt="" coords="467,563,621,605"/>
+<area shape="rect" id="node26" href="$classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal.html" title="Singleton for displaying gaze&#45;location as a function of time." alt="" coords="467,629,621,670"/>
+<area shape="rect" id="node27" href="$classivis_1_1gui_1_1_iv_g_u_iwebcam.html" title="Singleton for displaying webcam feed in a GUI." alt="" coords="467,695,621,721"/>
+<area shape="rect" id="node21" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_box.html" title="Singleton for displaying box classifier parameters and status." alt="" coords="687,436,865,463"/>
+<area shape="rect" id="node22" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html" title="Singleton for displaying grid classifier parameters and status." alt="" coords="686,487,866,513"/>
+<area shape="rect" id="node23" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l.html" title="Singleton for displaying log&#45;likelihood classifier parameters and status." alt="" coords="691,537,861,564"/>
+<area shape="rect" id="node24" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_vector.html" title="Singleton for displaying vector classifier parameters and status." alt="" coords="697,589,855,630"/>
+<area shape="rect" id="node29" href="$classivis_1_1log_1_1_iv_data_log.html" title="Responsible for buffering and saving processed data." alt="" coords="477,745,611,772"/>
+<area shape="rect" id="node30" href="$classivis_1_1log_1_1_iv_raw_log.html" title="Responsibile for outputting raw eye&#45;tracking data to a binary (.raw). file." alt="" coords="478,796,610,823"/>
+</map>

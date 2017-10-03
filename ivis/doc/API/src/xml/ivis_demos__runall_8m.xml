@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="ivis_demos__runall_8m" kind="file">
+    <compoundname>ivisDemos_runall.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ivis_demos__runall_8m_1aa8f240f3f454ed28b983d474b346799f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivisDemos_runall</definition>
+        <argsstring>(matlabtypesubstitute runFromDemoN)</argsstring>
+        <name>ivisDemos_runall</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>runFromDemoN</declname>
+        </param>
+        <briefdescription>
+<para>run all the demos! if any fail then will carry on from last failed demo, unless runall(true) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemos_runall.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemos_runall.m" bodystart="17" bodyend="59"/>
+        <references refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" compoundref="ivisdir_8m" startline="17" endline="20">ivisdir</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>run all the demos! if any fail then will carry on from last failed demo, unless runall(true) </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="ivis_demos__runall_8m_1aa8f240f3f454ed28b983d474b346799f" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="ivis_demos__runall_8m_1aa8f240f3f454ed28b983d474b346799f" kindref="member" tooltip="run all the demos! if any fail then will carry on from last failed demo, unless runall(true)">ivisDemos_runall</ref>(matlabtypesubstitute<sp/>runFromDemoN)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin&lt;1<sp/>||<sp/>isempty(runFromDemoN)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>runFromDemoN<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~ispref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>addpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">,1);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">setpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">,runFromDemoN);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>1</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>s<sp/>=<sp/>dir(fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>,</highlight><highlight class="stringliteral">&quot;<sp/>ivisDemos<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>*.m<sp/>&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>demoN<sp/>=<sp/>getpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>demoN<sp/>&gt;<sp/>length(s)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>No<sp/>more<sp/>demos<sp/>left<sp/>to<sp/>play!<sp/>Time<sp/>to<sp/>have<sp/>a<sp/>go<sp/>for<sp/>yourself<sp/>=)\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>d<sp/>=<sp/>s(demoN).name(1:end-2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>skip<sp/>it<sp/>if<sp/>it<sp/>is<sp/>this<sp/>file!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>strcmpi(d,<sp/>mfilename())</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">,<sp/>demoN+1)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>run<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>\n=======================================================\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>Demo<sp/>%i:<sp/>%s\n<sp/>&quot;</highlight><highlight class="normal">,<sp/>demoN,<sp/>d);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>=======================================================\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>Press<sp/>any<sp/>key<sp/>to<sp/>begin\n\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>KbWait([],2);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>eval(d)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>iterate<sp/>counter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>setpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">,<sp/>getpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">)+1)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">rmpref(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>demoN<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemos_runall.m"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="setfigdocked_8m" kind="file">
+    <compoundname>setfigdocked.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="setfigdocked_8m_1a230b1643b241438d233d6015a786bffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, group &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, group &gt; setfigdocked</definition>
+        <argsstring>(matlabtypesubstitute varargin)</argsstring>
+        <name>setfigdocked</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para>SETFIGDOCKED docks figures at specified positions in group of figures whose structure is defined by parameters GridSize, Spanned Cells, ... This function also allows maximizing and docking groups into MATLAB desktop. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function runs on MATLAB 7.1 sp3 or higher</para><para>group = setfigdocked(<computeroutput>PropertyName1</computeroutput>,value1,<computeroutput>PropertyName2</computeroutput>,value2,...) <simplesect kind="par"><title>PropertyName</title><para><itemizedlist>
+<listitem><para>GroupName name of group need to be generated</para></listitem><listitem><para>GridSize scalar or vector quantity, defines number of rows and columns of cell in group</para></listitem><listitem><para>SpanCell vector or matrix quantity, size n x 4, [row col occupiedrows occupiedcols] build an cell at the position (row, col) in group cell (GridSize) which occupies &quot;occupiedrows&quot; rows and &quot;occupiedcols&quot; columns</para></listitem><listitem><para>Figure handle of figure</para></listitem><listitem><para>Figindex index position of figure in group cell</para></listitem><listitem><para>Maximize 0/1</para></listitem><listitem><para>GroupDocked 0/1</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="par"><title>Examples</title><para></para></simplesect>
+<simplesect kind="par"><title>Example 1</title><para>reates empty group <computeroutput>Group of Images</computeroutput>with 2 rows and 3 columns group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>GridSize</computeroutput>,[2 3]); im1 = imread(<computeroutput>cameraman.tif</computeroutput>); imshow(im1) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>Figure</computeroutput>,gcf); figure; imhist(im1) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,4);</para></simplesect>
+im2 = imread(<computeroutput>rice.png</computeroutput>); figure; imshow(im2) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,2); figure; imhist(im2) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,5);</para><para>im3 = imread(<computeroutput>eight.tif</computeroutput>); figure; imshow(im3) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,3); figure; imhist(im3) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Group of Images</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,6);</para><para><simplesect kind="par"><title>Example 2</title><para>group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>GridSize</computeroutput>,3,<computeroutput>SpanCell</computeroutput>,[1 2 2 2]); im1 = imread(<computeroutput>cameraman.tif</computeroutput>); figure;imshow(im1);set(gcf,<computeroutput>Name</computeroutput>,<computeroutput>Cameraman</computeroutput>,<computeroutput>NumberTitle</computeroutput>,<computeroutput>off</computeroutput>) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,2);</para></simplesect>
+figure; edge(im1,<computeroutput>prewitt</computeroutput>);set(gcf,<computeroutput>Name</computeroutput>,<computeroutput>Prewitt method</computeroutput>,<computeroutput>NumberTitle</computeroutput>,<computeroutput>off</computeroutput>) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,1);</para><para>figure; edge(im1,<computeroutput>roberts</computeroutput>);set(gcf,<computeroutput>Name</computeroutput>,<computeroutput>Roberts method</computeroutput>,<computeroutput>NumberTitle</computeroutput>,<computeroutput>off</computeroutput>) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,3);</para><para>figure; edge(im1,<computeroutput>roberts</computeroutput>);set(gcf,<computeroutput>Name</computeroutput>,<computeroutput>Roberts method</computeroutput>,<computeroutput>NumberTitle</computeroutput>,<computeroutput>off</computeroutput>) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,4);</para><para>figure; edge(im1,<computeroutput>roberts</computeroutput>);set(gcf,<computeroutput>Name</computeroutput>,<computeroutput>Roberts method</computeroutput>,<computeroutput>NumberTitle</computeroutput>,<computeroutput>off</computeroutput>) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,5);</para><para>figure; edge(im1,<computeroutput>canny</computeroutput>);set(gcf,<computeroutput>Name</computeroutput>,<computeroutput>Canny Method</computeroutput>,<computeroutput>NumberTitle</computeroutput>,<computeroutput>off</computeroutput>) group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Figure</computeroutput>,gcf,<computeroutput>Figindex</computeroutput>,6);</para><para>group = setfigdocked(<computeroutput>GroupName</computeroutput>,<computeroutput>Image and Edges</computeroutput>,<computeroutput>Maximize</computeroutput>,1,<computeroutput>GroupDocked</computeroutput>,0); </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/setfigdocked.m" line="17" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/setfigdocked.m" bodystart="17" bodyend="272"/>
+        <references refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3111">findjobj</references>
+        <references refid="class_lennard_jones_potential_1ad1a5d5f082e473624754fcae4afda11e" compoundref="_lennard_jones_potential_8m" startline="160">LennardJonesPotential::t</references>
+      </memberdef>
+      <memberdef kind="function" id="setfigdocked_8m_1a3dc30ac14476ef1bc0000535e7dc89ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; mtoc_subst_setfigdocked_m_tsbus_cotm_findjobj</definition>
+        <argsstring>(matlabtypesubstitute parent, matlabtypesubstitute field, matlabtypesubstitute value)</argsstring>
+        <name>mtoc_subst_setfigdocked_m_tsbus_cotm_findjobj</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/setfigdocked.m" line="350" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/setfigdocked.m" bodystart="350" bodyend="368"/>
+        <references refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3111">findjobj</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SETFIGDOCKED docks figures at specified positions in group of figures whose structure is defined by parameters GridSize, Spanned Cells, ... This function also allows maximizing and docking groups into MATLAB desktop. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="setfigdocked_8m_1a230b1643b241438d233d6015a786bffe" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,group&gt;<sp/><ref refid="setfigdocked_8m_1a230b1643b241438d233d6015a786bffe" kindref="member" tooltip="SETFIGDOCKED docks figures at specified positions in group of figures whose structure is defined by p...">setfigdocked</ref>(matlabtypesubstitute<sp/>varargin)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="comment">%<sp/>The<sp/>author<sp/>does<sp/>not<sp/>accept<sp/>any<sp/>responsibility<sp/>or<sp/>liability<sp/>for<sp/>loss</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>or<sp/>damage<sp/>occasioned<sp/>to<sp/>any<sp/>person<sp/>or<sp/>property<sp/>through<sp/>using<sp/>function,instructions,</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>methods<sp/>or<sp/>ideas<sp/>contained<sp/>herein,<sp/>or<sp/>acting<sp/>or<sp/>refraining<sp/>from<sp/>acting</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>as<sp/>a<sp/>result<sp/>of<sp/>such<sp/>use.<sp/>The<sp/>author<sp/>expressly<sp/>disclaim<sp/>all<sp/>implied<sp/>warranties,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>including<sp/>merchantability<sp/>or<sp/>fitness<sp/>for<sp/>any<sp/>particular<sp/>purpose.<sp/>There<sp/>will<sp/>be</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>no<sp/>duty<sp/>on<sp/>the<sp/>author<sp/>to<sp/>correct<sp/>any<sp/>errors<sp/>or<sp/>defects<sp/>in<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>and<sp/>the<sp/>documentation<sp/>are<sp/>the<sp/>property<sp/>of<sp/>the<sp/>author<sp/>and<sp/>should<sp/>only</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>be<sp/>used<sp/>for<sp/>scientific<sp/>and<sp/>educational<sp/>purposes.<sp/>All<sp/>software<sp/>is<sp/>provided<sp/>free<sp/>and</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>it<sp/>is<sp/>not<sp/>supported.<sp/>The<sp/>author<sp/>is,<sp/>however,<sp/>happy<sp/>to<sp/>receive<sp/>comments,</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>criticism<sp/>and<sp/>suggestions<sp/>to<sp/>phan@brain.riken.jp<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>Programmed<sp/>and<sp/>Copyright<sp/>by<sp/>Phan<sp/>Anh<sp/>Huy</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/>phan@brain.riken.jp</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>$Date:<sp/>24/12/2007</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>Revision:<sp/>14/02/2012</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>23/07/2012,<sp/>fix<sp/>error<sp/>caused<sp/>by<sp/>empty<sp/>jpanel<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;Attempt<sp/>to<sp/>reference<sp/>field<sp/>of<sp/>non-structure<sp/>array.&quot;<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>Note:<sp/>use<sp/>&quot;drawnow&quot;<sp/>before<sp/>calling<sp/>setfigdocked<sp/>to<sp/>avoid<sp/>docking<sp/>empty<sp/>figure.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>PJ:<sp/>edits!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>dbstop<sp/>if<sp/>warning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.awt.*;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.awt.event.*;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.io.IOException;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>get<sp/>parameters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">[~,<sp/>proppairs]=parseparams(varargin);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">invars<sp/>=<sp/>proppairs(1:2:end);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">listvar<sp/>=<sp/>[&quot;<sp/>figure<sp/>&quot;,&quot;<sp/>groupname<sp/>&quot;,<sp/>&quot;<sp/>gridsize<sp/>&quot;<sp/>,&quot;<sp/>spancell<sp/>&quot;,&quot;<sp/>figindex<sp/>&quot;,&quot;<sp/>maximize<sp/>&quot;<sp/>&quot;<sp/>groupdocked<sp/>&quot;;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>&quot;<sp/>fig<sp/>&quot;<sp/>,&quot;<sp/>groupname<sp/>&quot;,&quot;<sp/>gridsize<sp/>&quot;,&quot;<sp/>posarr<sp/>&quot;,&quot;<sp/>figind<sp/>&quot;,&quot;<sp/>maximizeflag<sp/>&quot;,&quot;<sp/>grpdockflag<sp/>&quot;];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>1:<sp/>numel(invars)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>varind<sp/>=<sp/>find(~cellfun(@isempty,strfind(listvar(1,:),lower(invars[k]))));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(varind)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eval(sprintf(</highlight><highlight class="stringliteral">&quot;<sp/>%s<sp/>=<sp/>proppairs{2*%d};<sp/>&quot;</highlight><highlight class="normal">,listvar[2,varind],k));</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>get<sp/>desktop<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">desktop<sp/>=<sp/>com.mathworks.mde.desk.MLDesktop.getInstance;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>&apos;activate&apos;<sp/>the<sp/>desktop<sp/>(n.b.,<sp/>this<sp/>may<sp/>help<sp/>set<sp/>focus<sp/>when,<sp/>say,<sp/>a<sp/>PTB<sp/>screen<sp/>is<sp/>open<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">desktop.activate();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>groupname<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)~=1)<sp/>||<sp/>isempty(groupname)<sp/><sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>groupname<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>MyGroup<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~desktop.hasGroup(groupname)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>adding<sp/>group...\n<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">group<sp/>=<sp/>desktop.addGroup(groupname);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>add<sp/>new<sp/>group<sp/>(or<sp/>return<sp/>existing<sp/>group)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>showing<sp/>group<sp/>&quot;</highlight><highlight class="normal">)<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">desktop.showGroup(groupname,1);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>~desktop.isGroupShowing(groupname)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/><sp/>.<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>pause(0.01);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>grpdockflag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)==1)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>docking...\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>javaMethod(</highlight><highlight class="stringliteral">&quot;<sp/>setGroupDocked<sp/>&quot;</highlight><highlight class="normal">,desktop,groupname,grpdockflag);<sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desktop.setGroupDocked(groupname,grpdockflag);<sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>next...\n<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>Set<sp/>gridsize<sp/>and<sp/>spanning<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>jpanel<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>tic();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>isempty(jpanel)<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jpanel<sp/>=<sp/>javaMethod(</highlight><highlight class="stringliteral">&quot;<sp/>getGroupContainer<sp/>&quot;</highlight><highlight class="normal">,desktop,groupname);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>toc<sp/>&gt;<sp/>5</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>setfigdocked:failedToInit<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>Timed<sp/>out<sp/>waiting<sp/>for<sp/>getGroupContainer(com.mathworks.mde.desk.MLDesktop.getInstance,<sp/>%s)<sp/>&quot;</highlight><highlight class="normal">,groupname);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>ME</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>strcmpi(ME.identifier,</highlight><highlight class="stringliteral">&quot;<sp/>setfigdocked:failedToInit<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rethrow(ME)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>1</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jpanel<sp/>=<sp/>desktop.getGroupContainer(groupname);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause(0.1);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isa(jpanel,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.widgets.desk.DTDocumentContainer<sp/>&quot;</highlight><highlight class="normal">)<sp/>||<sp/>...</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isa(jpanel,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.mwswing.desk.DTDocumentContainer<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>tilepane<sp/>=<sp/>jpanel.getComponent(1)<sp/>;<sp/>%%<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">tilepane<sp/>=<sp/><ref refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" kindref="member" tooltip="findjobj Find java objects contained within a specified java container or Matlab GUI handle...">findjobj</ref>(jpanel,</highlight><highlight class="stringliteral">&quot;<sp/>Name<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>DesktopTiledPane<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>gridsize<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)==1)<sp/>&amp;&amp;<sp/>~isempty(gridsize)<sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>numel(gridsize)<sp/>==<sp/>1</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gridsize(2)<sp/>=<sp/>gridsize(1);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>check<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>...</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.mwswing.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grpframe<sp/>=<sp/>javaMethod(</highlight><highlight class="stringliteral">&quot;<sp/>getInternalFrame<sp/>&quot;</highlight><highlight class="normal">,group);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grpframe<sp/>=<sp/>group.getInternalFrame;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end<sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>TopBottomButton<sp/>=<sp/>findjobj(grpframe,&apos;property&apos;,{&apos;Name&apos;,&apos;SplitTopBottomButton&apos;});<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TopBottomButton<sp/>=<sp/><ref refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" kindref="member" tooltip="findjobj Find java objects contained within a specified java container or Matlab GUI handle...">findjobj</ref>(grpframe,</highlight><highlight class="stringliteral">&quot;<sp/>Name<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>SplitTopBottomButton<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TopBottomButton.setMnemonic(</highlight><highlight class="stringliteral">&quot;<sp/>A<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot<sp/>=<sp/>Robot;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>grpdockflag<sp/>=desktop.isGroupDocked(groupname);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>grpdockflag</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desktop.setGroupDocked(groupname,0);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>counter<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>1</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>counter<sp/>=<sp/>counter<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>counter<sp/>&gt;<sp/>7</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>a:b<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>Failed<sp/>to<sp/>dock???<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>dbstop<sp/>if<sp/>error<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jpanel.requestFocus(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>Focus<sp/>on<sp/>Dock<sp/>by<sp/>simulating<sp/>a<sp/>key<sp/>press<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.setAutoDelay(50);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.keyPress(KeyEvent.VK_ALT);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.setAutoDelay(50);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.keyPress(KeyEvent.VK_A);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.setAutoDelay(50);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.keyRelease(KeyEvent.VK_A);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.setAutoDelay(50);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.keyRelease(KeyEvent.VK_ALT);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>robot.setAutoDelay(100);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause(0.3)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jpanel.getComponent(1);</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane<sp/>=<sp/>jpanel.getComponent(1);<sp/>%%<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane<sp/>=<sp/><ref refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" kindref="member" tooltip="findjobj Find java objects contained within a specified java container or Matlab GUI handle...">findjobj</ref>(jpanel,</highlight><highlight class="stringliteral">&quot;<sp/>Name<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>DesktopTiledPane<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)<sp/>||<sp/>...</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.mwswing.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>PJ:<sp/>Hack(ish).<sp/>The<sp/>process<sp/>seems<sp/>to<sp/>work<sp/>by<sp/>first<sp/>creating<sp/>a</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>maximised<sp/>pane,<sp/>and<sp/>then<sp/>subdividing<sp/>it<sp/>into<sp/>tiled<sp/>panes.</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Thus<sp/>we<sp/>should<sp/>only<sp/>break<sp/>at<sp/>the<sp/>maximisedpane<sp/>stage<sp/>if<sp/>a</highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>tiled<sp/>pane<sp/>is<sp/>not<sp/>desired<sp/>(i.e.,<sp/>grid<sp/>==<sp/>[1<sp/>1])<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>sum(gridsize)==1<sp/>&amp;&amp;<sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.widgets.desk.DTMaximizedPane<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>grpdockflag</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desktop.setGroupDocked(groupname,1);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)<sp/>||<sp/>...</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.mwswing.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>1</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>javaMethod(</highlight><highlight class="stringliteral">&quot;<sp/>setGridSize<sp/>&quot;</highlight><highlight class="normal">,tilepane,java.awt.Dimension(gridsize(2),gridsize(1)));</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane.setGridSize(java.awt.Dimension(gridsize(2),gridsize(1)));</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause(0.1)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dim<sp/>=<sp/>tilepane.getGridSize;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dim.width<sp/>==<sp/>gridsize(2))<sp/>&amp;&amp;<sp/>(dim.height<sp/>==<sp/>gridsize(1))</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>spanning<sp/>cells<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>posarr<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)==1)<sp/>&amp;&amp;<sp/>~isempty(posarr)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>pos<sp/>=<sp/>posarr^<ref refid="class_lennard_jones_potential_1ad1a5d5f082e473624754fcae4afda11e" kindref="member" tooltip="timestep">t</ref></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos(1:2)<sp/>=<sp/>pos(1:2)-1;<sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>pos(3)&gt;1</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>1:pos(4)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane.setRowSpan(pos(1),pos(2)+k-1,pos(3))<sp/></highlight><highlight class="comment">/*<sp/>span<sp/>row<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause(0.3)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane.setColumnSpan(pos(1),pos(2),pos(4))<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>span<sp/>column<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jpanel.updateUI;pause(0.3)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane.setCloseButtonsEnabled(0);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*%<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>maximizeflag<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)==1)<sp/>&amp;&amp;<sp/>maximizeflag==1</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desktop.setGroupMaximized(groupname,1)<sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>maximize<sp/>group<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>group.getInternalFrame.getTopLevelAncestor.setMaximized(1);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>add<sp/>figure<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>figind<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)==1)<sp/>&amp;&amp;<sp/>~isempty(figind)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.widgets.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)<sp/>||<sp/>...</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>isa(tilepane,</highlight><highlight class="stringliteral">&quot;<sp/>com.mathworks.mwswing.desk.DTTiledPane<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>jpanel.requestFocus(true);<sp/><sp/><sp/><sp/><sp/>%<sp/>Focus<sp/>on<sp/>Dock<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>~isempty(javaMethodEDT(</highlight><highlight class="stringliteral">&quot;<sp/>getComponentInTile<sp/>&quot;</highlight><highlight class="normal">,tilepane,(figind-1)))</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane.remove(figind-1);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause(0.1)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tilepane.getSelectedTile<sp/>~=<sp/>(figind-1))<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tilepane.setSelectedTile(figind-1);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pause(0.1);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="254"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>fig<sp/>=<sp/>figure;<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(exist(</highlight><highlight class="stringliteral">&quot;<sp/>fig<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>var<sp/>&quot;</highlight><highlight class="normal">)==1)<sp/>&amp;&amp;<sp/>~isempty(fig)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>warning(</highlight><highlight class="stringliteral">&quot;<sp/>off<sp/>&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(</highlight><highlight class="keyword">get</highlight><highlight class="normal">(fig,</highlight><highlight class="stringliteral">&quot;<sp/>javaframe<sp/>&quot;</highlight><highlight class="normal">),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>GroupName<sp/>&quot;</highlight><highlight class="normal">,groupname);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>warning(</highlight><highlight class="stringliteral">&quot;<sp/>on<sp/>&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="comment">/*<sp/>#ok<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(fig,</highlight><highlight class="stringliteral">&quot;<sp/>WindowStyle<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>docked<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>jpanel.updateUI;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="350" refid="setfigdocked_8m_1a3dc30ac14476ef1bc0000535e7dc89ce" refkind="member"><highlight class="normal">mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt;<sp/><ref refid="setfigdocked_8m_1a3dc30ac14476ef1bc0000535e7dc89ce" kindref="member">mtoc_subst_setfigdocked_m_tsbus_cotm_findjobj</ref>(matlabtypesubstitute<sp/>parent,matlabtypesubstitute<sp/>field,matlabtypesubstitute<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal">obj<sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>comp<sp/>=<sp/>parent.getComponents;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>1:numel(comp)</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isequal(</highlight><highlight class="keyword">get</highlight><highlight class="normal">(comp(k),field),value)</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj<sp/>=<sp/>comp(k);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj<sp/>=<sp/><ref refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" kindref="member" tooltip="findjobj Find java objects contained within a specified java container or Matlab GUI handle...">findjobj</ref>(comp(k),field,value);</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~isempty(obj)</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/setfigdocked.m"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal" kind="class" prot="public">
+    <compoundname>ivis::gui::IvGUIeyetrackTemporal</compoundname>
+    <basecompoundref refid="classivis_1_1gui_1_1_iv_g_u_ielement" prot="public" virt="non-virtual">ivis::gui::IvGUIelement</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a6ba467f0a37ba9dd1b52766c16c0a065" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::gui::IvGUIeyetrackTemporal::FIG_NAME</definition>
+        <argsstring></argsstring>
+        <name>FIG_NAME</name>
+        <initializer>= &quot;IvGUIeyetrackTemporal&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="60" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a935a49b775ec8de87b8684ab35a1196f" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIeyetrackTemporal::nDatPoints</definition>
+        <argsstring></argsstring>
+        <name>nDatPoints</name>
+        <briefdescription>
+<para>user specified parameters other internal parameters </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="65" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a941a9434557eda0ebdb64a8d31afe57f" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIeyetrackTemporal::hAxes</definition>
+        <argsstring></argsstring>
+        <name>hAxes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="75" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a3261244ceda56629b42777f67c6eaa39" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIeyetrackTemporal::hYLabel</definition>
+        <argsstring></argsstring>
+        <name>hYLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="76" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a11ab0478abeda8229f2d922017f6970b" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIeyetrackTemporal::hDat</definition>
+        <argsstring></argsstring>
+        <name>hDat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="77" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a57ad38033e1fde4b87988792345d0acc" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIeyetrackTemporal::hCriterion</definition>
+        <argsstring></argsstring>
+        <name>hCriterion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="78" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1af232dd16b6ae3427f31ce23189274533" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIeyetrackTemporal::saccades</definition>
+        <argsstring></argsstring>
+        <name>saccades</name>
+        <briefdescription>
+<para>1 for onset, -1 for offsets, NaN otherwise </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="79" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a5a6b8ce3e1f56bf2ae1bc7c7b74fd57d" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>ivis::gui::IvGUIeyetrackTemporal::varFlag</definition>
+        <argsstring></argsstring>
+        <name>varFlag</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>will actually increment to 1 (velocity) when first set </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This property has non-standard access specifiers: <computeroutput>SetAccess = Private, GetAccess = Public</computeroutput> </para><simplesectsep/><para><ulink url="http://www.mathworks.com/help/matlab/matlab_oop/property-attributes.html">Matlab documentation of property attributes.</ulink> <linebreak/>
+<bold>Default:</bold> 0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="88" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1af61b7d7ca3b184da3a660e0d61e32433" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::gui::IvGUIeyetrackTemporal::IvGUIeyetrackTemporal</definition>
+        <argsstring>(matlabtypesubstitute GUIidx, matlabtypesubstitute nDatPoints)</argsstring>
+        <name>IvGUIeyetrackTemporal</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>GUIidx</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>nDatPoints</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal" kindref="compound">IvGUIeyetrackTemporal</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GUIidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUI frame index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nDatPoints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of gaze-coordinates to display </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj <ref refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal" kindref="compound">IvGUIeyetrackTemporal</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="108" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="108" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a7f860f314118f7c15a588c5af570f846" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIeyetrackTemporal::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+<para>Update figure window. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="150" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="150" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1abea6f1a1b42c1cdebe6386c045452a6f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIeyetrackTemporal::incrementVarType</definition>
+        <argsstring>()</argsstring>
+        <name>incrementVarType</name>
+        <briefdescription>
+<para>Cycle between decision varibles: {distance, acceleration, velocity}. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="180" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="180" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a9a797ea2c0a4275cf82e50d4cd9663ad" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIeyetrackTemporal::getSetSingleton</definition>
+        <argsstring>(matlabtypesubstitute obj)</argsstring>
+        <name>getSetSingleton</name>
+        <reimplements refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3">getSetSingleton</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para><heading level="6">.</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="note"><para>This method has non-standard access specifiers: <computeroutput>Access = (<ref refid="class_singleton" kindref="compound">Singleton</ref>)</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="230" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="230" bodyend="234"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1aa1dbb37638f880e44bf9f500a5683219" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIeyetrackTemporal::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="238" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="238" bodyend="240"/>
+        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="188" endline="211">Singleton::getInstanceSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a1b1fea08e8751d124da39816a900620c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>static noret::substitute ivis::gui::IvGUIeyetrackTemporal::finishUp</definition>
+        <argsstring>()</argsstring>
+        <name>finishUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="242" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="242" bodyend="244"/>
+        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="228" endline="241">Singleton::finishUpSingleton</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_singleton" kindref="compound">Singleton</ref> for displaying gaze-location as a function of time. </para>    </briefdescription>
+    <detaileddescription>
+<para>NB: will only display if data is being logged (e.g., eyetracker.update(false) will result in a flat line)</para><para><simplesect kind="par"><title>IvGUIeyetrackTemporal Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal" kindref="compound">IvGUIeyetrackTemporal</ref> - Constructor.</para></listitem><listitem><para>update - Update figure window.</para></listitem><listitem><para>incrementVarType - Cycle between decision varibles: {distance, acceleration, velocity}.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para><ref refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial" kindref="compound">IvGUIeyetrackSpatial</ref></para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2013 : converted to <ref refid="class_singleton" kindref="compound">Singleton</ref><linebreak/>
+ 1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="764">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="765" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>handle</label>
+      </node>
+      <node id="762">
+        <label>ivis::gui::IvGUIeyetrackTemporal</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal"/>
+        <childnode refid="763" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="763">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="764" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="768">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="769" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>handle</label>
+      </node>
+      <node id="766">
+        <label>ivis::gui::IvGUIeyetrackTemporal</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal"/>
+        <childnode refid="767" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="767">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="768" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIeyetrackTemporal.m" bodystart="19" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1afa9e744b4702fd984c2e03655a1fbf07" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>delete</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a6ba467f0a37ba9dd1b52766c16c0a065" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>FIG_NAME</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a1b1fea08e8751d124da39816a900620c" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>finishUp</name></member>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1aa1dbb37638f880e44bf9f500a5683219" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>getInstanceSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a9a797ea2c0a4275cf82e50d4cd9663ad" prot="protected" virt="virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a941a9434557eda0ebdb64a8d31afe57f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>hAxes</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a57ad38033e1fde4b87988792345d0acc" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>hCriterion</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a11ab0478abeda8229f2d922017f6970b" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>hDat</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>hFig</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a3261244ceda56629b42777f67c6eaa39" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>hYLabel</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1abea6f1a1b42c1cdebe6386c045452a6f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>incrementVarType</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a1404d0c78b5319c7e8863f4fc7aa8a6a" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>init</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>isinit</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1af61b7d7ca3b184da3a660e0d61e32433" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>IvGUIeyetrackTemporal</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a935a49b775ec8de87b8684ab35a1196f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>nDatPoints</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1af232dd16b6ae3427f31ce23189274533" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>saccades</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a7f860f314118f7c15a588c5af570f846" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>update</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal_1a5a6b8ce3e1f56bf2ae1bc7c7b74fd57d" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIeyetrackTemporal</scope><name>varFlag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

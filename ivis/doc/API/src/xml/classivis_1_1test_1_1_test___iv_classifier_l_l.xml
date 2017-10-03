@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1test_1_1_test___iv_classifier_l_l" kind="class" prot="public">
+    <compoundname>ivis::test::Test_IvClassifierLL</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1test_1_1_test___iv_classifier_l_l_1a4c6deb3d608defe47786c88a08bebc47" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::test::Test_IvClassifierLL::eyetracker</definition>
+        <argsstring></argsstring>
+        <name>eyetracker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="53" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_classifier_l_l_1a6c7b0b9ba1a49527603ce26739aad9d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::test::Test_IvClassifierLL::Test_IvClassifierLL</definition>
+        <argsstring>(matlabtypesubstitute name)</argsstring>
+        <name>Test_IvClassifierLL</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Test_Test_IvClassifierLL constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>self TestCase</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="64" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_classifier_l_l_1a43fdd442a71e44308ff2ff8cc875320b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvClassifierLL::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Testcase setup. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="80" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_classifier_l_l_1acd9857a2873e1e682d114bce587f5e7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvClassifierLL::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <briefdescription>
+<para>Testcase teardown. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="94" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_classifier_l_l_1a6bb4aedd64b4a858035d29f1b0c1dc8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvClassifierLL::testTiming</definition>
+        <argsstring>()</argsstring>
+        <name>testTiming</name>
+        <briefdescription>
+<para>Dummy method. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="109" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="109" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_classifier_l_l_1a378ad02c9f3604ef1a6d1df123a47fca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, myClassifier &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, myClassifier &gt; ivis::test::Test_IvClassifierLL::testInit</definition>
+        <argsstring>()</argsstring>
+        <name>testInit</name>
+        <briefdescription>
+<para>Dummy method. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="122" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="122" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>xUnit tests for <ref refid="classivis_1_1classifier_1_1_iv_classifier_l_l" kindref="compound">ivis.classifier.IvClassifierLL</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para>ivis.log.Test_IvClassifierLL</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>runtests <ref refid="namespaceivis_1_1test" kindref="compound">ivis.test</ref> -verbose</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
+ 1.0 PJ 02/2011 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000024"><xreftitle>Todo</xreftitle><xrefdescription><para>write me</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="837">
+        <label>TestCase</label>
+      </node>
+      <node id="836">
+        <label>ivis::test::Test_IvClassifierLL</label>
+        <link refid="classivis_1_1test_1_1_test___iv_classifier_l_l"/>
+        <childnode refid="837" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="839">
+        <label>TestCase</label>
+      </node>
+      <node id="838">
+        <label>ivis::test::Test_IvClassifierLL</label>
+        <link refid="classivis_1_1test_1_1_test___iv_classifier_l_l"/>
+        <childnode refid="839" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvClassifierLL.m" bodystart="19" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1a4c6deb3d608defe47786c88a08bebc47" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvClassifierLL</scope><name>eyetracker</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1a43fdd442a71e44308ff2ff8cc875320b" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvClassifierLL</scope><name>setUp</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1acd9857a2873e1e682d114bce587f5e7d" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvClassifierLL</scope><name>tearDown</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1a6c7b0b9ba1a49527603ce26739aad9d8" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvClassifierLL</scope><name>Test_IvClassifierLL</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1a378ad02c9f3604ef1a6d1df123a47fca" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvClassifierLL</scope><name>testInit</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_classifier_l_l_1a6bb4aedd64b4a858035d29f1b0c1dc8d" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvClassifierLL</scope><name>testTiming</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

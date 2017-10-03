@@ -1,0 +1,12 @@
+<map id="ivis::eyetracker::IvDataInput" name="ivis::eyetracker::IvDataInput">
+<area shape="rect" id="node4" href="$classivis_1_1eyetracker_1_1_iv_dummy.html" title="Singleton instantiation of IvDataInput, designed not to be driven by anything, but to flag up when/by..." alt="" coords="449,5,623,32"/>
+<area shape="rect" id="node5" href="$classivis_1_1eyetracker_1_1_iv_eyelink.html" title="Singleton instantiation of IvDataInput, designed to link to a Eyelink eyetracker." alt="" coords="451,56,621,83"/>
+<area shape="rect" id="node6" href="$classivis_1_1eyetracker_1_1_iv_eye_tribe.html" title="Singleton instantiation of IvDataInput, designed not to be driven by an EyeTribe eyetracker." alt="" coords="446,107,626,133"/>
+<area shape="rect" id="node7" href="$classivis_1_1eyetracker_1_1_iv_manual.html" title="Singleton instantiation of IvDataInput, designed to be updated manually by the user." alt="" coords="451,157,621,184"/>
+<area shape="rect" id="node8" href="$classivis_1_1eyetracker_1_1_iv_mouse.html" title="Singleton instantiation of IvDataInput, designed to be driven by a mouse." alt="" coords="453,208,619,235"/>
+<area shape="rect" id="node9" href="$classivis_1_1eyetracker_1_1_iv_simulator.html" title="Singleton instantiation of IvDataInput, designed to simulate gaze coordinates based on a specified pr..." alt="" coords="443,259,629,285"/>
+<area shape="rect" id="node10" href="$classivis_1_1eyetracker_1_1_iv_smi.html" title="Singleton instantiation of IvDataInput, designed not to be driven by an SMI eyetracker." alt="" coords="460,309,612,336"/>
+<area shape="rect" id="node11" href="$classivis_1_1eyetracker_1_1_iv_tobii.html" title="Singleton instantiation of IvDataInput, designed to link to a Tobii eyetracker." alt="" coords="457,360,615,387"/>
+<area shape="rect" id="node12" href="$classivis_1_1eyetracker_1_1_iv_tobii_eye_x.html" title="Singleton instantiation of IvDataInput, designed to link to a Tobii eyetracker." alt="" coords="443,411,629,437"/>
+<area shape="rect" id="node2" href="$class_singleton.html" title="A pseudo&#45;singleton class pattern for Matlab." alt="" coords="115,208,189,235"/>
+</map>

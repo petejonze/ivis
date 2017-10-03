@@ -1,6 +1,0 @@
-<map id="ivis::graphic::IvScreenObject" name="ivis::graphic::IvScreenObject">
-<area shape="rect" id="node4" href="$classivis_1_1graphic_1_1_iv_graphic.html" title="Screenobject responsible for remembering the position of an image at each point in time..." alt="" coords="5,253,160,280"/>
-<area shape="rect" id="node5" href="$classivis_1_1graphic_1_1_iv_graphic_compound.html" title="Conglomoration of IvGraphic objects, all of which should be treated as one unit by the classifier..." alt="" coords="184,246,339,287"/>
-<area shape="rect" id="node6" href="$classivis_1_1graphic_1_1_iv_prior.html" title="Degenerate graphic object that doesn&#39;t move or resize." alt="" coords="363,253,501,280"/>
-<area shape="rect" id="node2" href="$classivis_1_1broadcaster_1_1_iv_listener.html" title="Methods for pairing (or unpairing) an arbitrary function with a given broadcaster event name..." alt="" coords="197,81,325,122"/>
-</map>

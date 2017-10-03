@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_iv_hf_uniform_8m" kind="file">
+    <compoundname>IvHfUniform.m</compoundname>
+    <innerclass refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform" prot="public">ivis::math::pdf::IvHfUniform</innerclass>
+    <innernamespace refid="namespaceivis">ivis</innernamespace>
+    <innernamespace refid="namespaceivis_1_1math">ivis::math</innernamespace>
+    <innernamespace refid="namespaceivis_1_1math_1_1pdf">ivis::math::pdf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ivis{</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">pdf{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform" kindref="compound" tooltip="Univariate uniform probabilty distribution function for the likelihood-based classifier(s).">IvHfUniform</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>:public<sp/>::ivis::math::pdf::IvHitFunc<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>====================================================================</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>-----PROPERTIES-----</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">/*<sp/>(<sp/>Constant<sp/>)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a2a76a364f11e50bf7953bcc5f16c8c22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>matlabtypesubstitute<sp/>MIN_VAL<sp/>=<sp/>0.0000000000000000001;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4fbef4d1d007262e0e64b7db292d06bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matlabtypesubstitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4fbef4d1d007262e0e64b7db292d06bd" kindref="member" tooltip="user specified parameters minimum x value, in pixels">xmin</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a241e2f429a0b3efa4aa72fec330ea981" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matlabtypesubstitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a241e2f429a0b3efa4aa72fec330ea981" kindref="member" tooltip="maximum x value, in pixels other internal parameters">xmax</ref>;</highlight></codeline>
+<codeline lineno="92" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a8d701bd67b60a8e033c7f93b5908dba7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>matlabtypesubstitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a8d701bd67b60a8e033c7f93b5908dba7" kindref="member" tooltip="the constant value that is returned when xmin &amp;lt;= x &amp;lt;= xmax">P_unifConstant</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>====================================================================</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>-----PUBLIC<sp/>METHODS-----</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a9faee76d108fa3f199beb11efc11c43b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a9faee76d108fa3f199beb11efc11c43b" kindref="member" tooltip="IvHfUniform Constructor. We&amp;#39;ll assume in the variable names that the values are x values...">IvHfUniform</ref>(matlabtypesubstitute<sp/>xmin,matlabtypesubstitute<sp/>xmax)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>validate<sp/>params<sp/>[25%<sp/>bigger<sp/>than<sp/>actual<sp/>screen<sp/>by<sp/>default]</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>ASSUME<sp/>WIDTH</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>1<sp/>||<sp/>isempty(xmin)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>=<sp/>ivis.main.IvParams.getInstance().graphics.testScreenWidth;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmin<sp/>=<sp/>-round(w*.25);<sp/></highlight><highlight class="comment">/*<sp/><sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>2<sp/>||<sp/>isempty(xmax)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>w<sp/>=<sp/>ivis.main.IvParams.getInstance().graphics.testScreenWidth;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xmax<sp/>=<sp/>w<sp/>+<sp/>round(w*.25);<sp/></highlight><highlight class="comment">/*<sp/><sp/>ivis.main.IvParams.getInstance().graphics.testScreenWidth;</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>store<sp/>params</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.xmin=<sp/>xmin;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.xmax=<sp/>xmax;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>calc<sp/>P<sp/>constant</highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.P_unifConstant=<sp/>unifpdf(1,<sp/>xmin,<sp/>xmax);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>fprintf(&apos;IvHfUniform<sp/>Constructor\n&apos;)</highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4b3b05cf42a9f17c8bbf093b9db0f8e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mlhsSubst&lt;mlhsInnerSubst&lt;matlabtypesubstitute,P&gt;<sp/>,mlhsInnerSubst&lt;matlabtypesubstitute,x&gt;<sp/>&gt;<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1a4b3b05cf42a9f17c8bbf093b9db0f8e5" kindref="member" tooltip="Get the probability of each value, x, given the probability density function.">getPDF</ref>(matlabtypesubstitute<sp/>x,matlabtypesubstitute<sp/>varargin)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>2<sp/>||<sp/>isempty(x)<sp/></highlight><highlight class="comment">/*<sp/><sp/>parse<sp/>inputs</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>obj.pdf_xy;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>size(x,2)<sp/>==<sp/>2</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>x(:,1);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>ceil(x);<sp/></highlight><highlight class="comment">/*<sp/><sp/>ceil<sp/>since<sp/>for<sp/>0,<sp/>P<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>calc<sp/>bivartiate<sp/>pdf</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inRange<sp/>=<sp/>x&lt;=obj.xmin<sp/>&amp;<sp/>x&gt;=obj.xmax;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>P<sp/>=<sp/>inRange<sp/>*<sp/>obj.P_unifConstant<sp/>+<sp/>~inRange<sp/>*<sp/>obj.MIN_VAL;<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ab10fa94eed2f0df7dd8df703e02ba031" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mlhsInnerSubst&lt;matlabtypesubstitute,y&gt;<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ab10fa94eed2f0df7dd8df703e02ba031" kindref="member" tooltip="Generate a column vector of n random values, given the probability density function.">getRand</ref>(matlabtypesubstitute<sp/>n)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>=<sp/>unifrnd(obj.xmin,<sp/>obj.xmax,<sp/>[n<sp/>1]);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1af037b5e7aed7833e2f5c3c317c3f1d52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mlhsInnerSubst&lt;matlabtypesubstitute,h&gt;<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1af037b5e7aed7833e2f5c3c317c3f1d52" kindref="member" tooltip="Initialise the GUI element.">plot</ref>(matlabtypesubstitute<sp/>unused1,matlabtypesubstitute<sp/>color)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ylims<sp/>=<sp/>ylim();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>=<sp/>patch([obj.xmin<sp/>obj.xmin<sp/>obj.xmax<sp/>obj.xmax],<sp/>[ylims(1)<sp/>ylims(2)<sp/>ylims(2)<sp/>ylims(1)],<sp/>color);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(h,</highlight><highlight class="stringliteral">&quot;<sp/>FaceAlpha<sp/>&quot;</highlight><highlight class="normal">,.2);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ae8daee029fce304f8f25a545b2833ab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform_1ae8daee029fce304f8f25a545b2833ab7" kindref="member" tooltip="Update the GUI element.">updatePlot</ref>(matlabtypesubstitute<sp/>mu)<sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfUniform.m"/>
+  </compounddef>
+</doxygen>

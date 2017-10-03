@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_iv_hf_gauss2_d_8m" kind="file">
+    <compoundname>IvHfGauss2D.m</compoundname>
+    <innerclass refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d" prot="public">ivis::math::pdf::IvHfGauss2D</innerclass>
+    <innernamespace refid="namespaceivis">ivis</innernamespace>
+    <innernamespace refid="namespaceivis_1_1math">ivis::math</innernamespace>
+    <innernamespace refid="namespaceivis_1_1math_1_1pdf">ivis::math::pdf</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ivis{</highlight></codeline>
+<codeline lineno="2" refid="namespaceivis_1_1math" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">math{</highlight></codeline>
+<codeline lineno="3" refid="namespaceivis_1_1math_1_1pdf" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">pdf{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d" kindref="compound" tooltip="Bivariate Gaussian probabilty distribution function for the likelihood-based classifier(s).">IvHfGauss2D</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>:public<sp/>::ivis::math::pdf::IvHitFunc<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>====================================================================</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>-----PROPERTIES-----</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a22bfd2ab31ca0b089ec19c53a828f9d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matlabtypesubstitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a22bfd2ab31ca0b089ec19c53a828f9d4" kindref="member" tooltip="user specified parameters distribution location [x, y]">mu_px</ref>;</highlight></codeline>
+<codeline lineno="73" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a3d0ceebce041c0ac9048332d38a6d424" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>matlabtypesubstitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a3d0ceebce041c0ac9048332d38a6d424" kindref="member" tooltip="distribution standard deviations [x, y]">sigma_px</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1ae2c52520543fcde4c99bc151307b6e95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>matlabtypesubstitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1ae2c52520543fcde4c99bc151307b6e95" kindref="member" tooltip="0&amp;lt;=x&amp;lt;=1 uniform pedestal to mix">pedestal_p</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>====================================================================</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>-----PUBLIC<sp/>METHODS-----</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*$<sp/>====================================================================<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a94583c2f7de0b35f842f40a0248185b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a94583c2f7de0b35f842f40a0248185b2" kindref="member" tooltip="IvHfGauss2D Constructor.">IvHfGauss2D</ref>(matlabtypesubstitute<sp/>mu_px,matlabtypesubstitute<sp/>sigma_px,matlabtypesubstitute<sp/>minmaxBounds_px,matlabtypesubstitute<sp/>pedestalMix_p)<sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>validate<sp/>params<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(mu_px)<sp/>~=<sp/>2</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>IvHfGauss2D:invalidInitParam<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>mu<sp/>must<sp/>contain<sp/>2<sp/>elements<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>length(mu_px)<sp/>~=<sp/>length(sigma_px)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>IvHfGauss2D:invalidInitParam<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>mu<sp/>dimensions<sp/>must<sp/>match<sp/>sigma<sp/>dimensions<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>explicitly<sp/>invoke<sp/>superclass<sp/>constructor.<sp/>This<sp/>will<sp/>cause<sp/>any</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>min/max<sp/>values<sp/>not<sp/>stated<sp/>explicitly<sp/>to<sp/>default<sp/>to<sp/>their</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>preset<sp/>values<sp/>(e.g.,<sp/>screen<sp/>width<sp/>+/-<sp/>a<sp/>margin<sp/>of<sp/>X%)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>3,<sp/>minmaxBounds_px<sp/>=<sp/>[];<sp/>end</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>nargin<sp/>&lt;<sp/>4<sp/>||<sp/>isempty(pedestalMix_p),<sp/>pedestalMix_p<sp/>=<sp/>0.1;<sp/>end</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj@ivis.math.pdf.IvHitFunc(minmaxBounds_px,<sp/>pedestalMix_p);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>check<sp/>for<sp/>pedestal<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>obj.pedestalMix_p<sp/>==<sp/>0</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>warning(</highlight><highlight class="stringliteral">&quot;<sp/>Not<sp/>including<sp/>a<sp/>pedestal<sp/>with<sp/>a<sp/>Gaussian<sp/>is<sp/>not<sp/>recommended<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>create<sp/>main<sp/>Probability<sp/>Distribution<sp/>objects<sp/>(independent<sp/>for<sp/>x</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>and<sp/>y<sp/>domain)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.probdistr_x=<sp/>truncate(makedist(</highlight><highlight class="stringliteral">&quot;<sp/>Normal<sp/>&quot;</highlight><highlight class="normal">,<sp/>mu_px(1),<sp/>sigma_px(1)),<sp/>obj.xmin_px,<sp/>obj.xmax_px);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.probdistr_y=<sp/>truncate(makedist(</highlight><highlight class="stringliteral">&quot;<sp/>Normal<sp/>&quot;</highlight><highlight class="normal">,<sp/>mu_px(2),<sp/>sigma_px(2)),<sp/>obj.ymin_px,<sp/>obj.ymax_px);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>store<sp/>params<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.mu_px=<sp/>mu_px;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.sigma_px=<sp/>sigma_px;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a83ebce4170a470a119fadb39f69ef11b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mlhsInnerSubst&lt;matlabtypesubstitute,h&gt;<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a83ebce4170a470a119fadb39f69ef11b" kindref="member" tooltip="plot">plot</ref>(matlabtypesubstitute<sp/>color)<sp/>{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu<sp/>=<sp/>obj.mu_px;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sd<sp/>=<sp/>[0.5<sp/>1<sp/>2]^t<sp/>*<sp/>obj.sigma_px;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>h<sp/>=<sp/><ref refid="ellipse_8m_1a418d86f59e5191683b2323ab32420d5a" kindref="member" tooltip="Ellipse adds ellipses to the current plot.">ellipse</ref>(sd(:,1),<sp/>sd(:,2),<sp/>0,<sp/>mu(1),<sp/>mu(2),<sp/>color,<sp/>50,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>ALT:<sp/>higher<sp/>quality<sp/>(but<sp/>slower)<sp/>(?)</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>[P,xy]<sp/>=<sp/>obj.getPDF([],mu);</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>if<sp/>isempty(minP)</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/><sp/><sp/><sp/>minP<sp/>=<sp/>min(P);</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>end</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>V<sp/>=<sp/>linspace(minP,max(P),7);</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>[~,h]<sp/>=<sp/>contourf(reshape(xy(:,1),IvHitFunc.N,IvHitFunc.N),reshape(xy(:,2),IvHitFunc.N,IvHitFunc.N),reshape(P,IvHitFunc.N,IvHitFunc.N),<sp/>V);</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>ch<sp/>=<sp/>get(h,&apos;child&apos;);<sp/>alpha(ch,0.2);</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>set(h,<sp/>&apos;linecolor&apos;,color);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>store<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.hPlot=<sp/>h;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178" refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a109681eaa10f0633f85e9caa55284921" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>noret::substitute<sp/><ref refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d_1a109681eaa10f0633f85e9caa55284921" kindref="member" tooltip="Update the model params &amp;amp; GUI element.">update</ref>(matlabtypesubstitute<sp/>mu_px)<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>~all([obj.probdistr_x.mu<sp/>obj.probdistr_y.mu]<sp/>==<sp/>mu_px)<sp/></highlight><highlight class="comment">/*<sp/><sp/>if<sp/>anything<sp/>has<sp/>changed<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>update<sp/>model<sp/>params<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.probdistr_x.mu=<sp/>mu_px(1);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj.probdistr_y.mu=<sp/>mu_px(2);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>update<sp/>plot<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sd<sp/>=<sp/>[0.5<sp/>1<sp/>2]^t<sp/>*<sp/>obj.sigma_px;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[~,x,y]<sp/>=<sp/><ref refid="ellipse_8m_1a418d86f59e5191683b2323ab32420d5a" kindref="member" tooltip="Ellipse adds ellipses to the current plot.">ellipse</ref>(sd(:,1),<sp/>sd(:,2),<sp/>0,<sp/>mu_px(1),<sp/>mu_px(2),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>r<sp/>&quot;</highlight><highlight class="normal">,<sp/>50,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i=1:length(obj.hPlot)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">set</highlight><highlight class="normal">(obj.hPlot(i),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>XData<sp/>&quot;</highlight><highlight class="normal">,x(:,i),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>YData<sp/>&quot;</highlight><highlight class="normal">,y(:,i));</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>ALT:<sp/>higher<sp/>quality<sp/>(but<sp/>slower)<sp/>(?)</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>[P,xy]<sp/>=<sp/>obj.getPDF([],mu);</highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>set(obj.hPlot,<sp/>&apos;ZData&apos;,reshape(P,IvHitFunc.N,IvHitFunc.N));</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>ch<sp/>=<sp/>get(obj.hPlot,&apos;child&apos;);<sp/>alpha(ch,0.2)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss2D.m"/>
+  </compounddef>
+</doxygen>

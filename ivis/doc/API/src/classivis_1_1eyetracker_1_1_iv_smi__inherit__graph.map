@@ -1,0 +1,4 @@
+<map id="ivis::eyetracker::IvSmi" name="ivis::eyetracker::IvSmi">
+<area shape="rect" id="node2" href="$classivis_1_1eyetracker_1_1_iv_data_input.html" title="Generic data input class that must be instantiated by a subclass. Handles the crucial data processing..." alt="" coords="5,155,160,197"/>
+<area shape="rect" id="node3" href="$class_singleton.html" title="A pseudo&#45;singleton class pattern for Matlab." alt="" coords="45,80,120,107"/>
+</map>

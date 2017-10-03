@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_c8d51911d84f20b3beef08bbdb189adc" kind="dir">
+    <compoundname>src/+ivis/+classifier</compoundname>
+    <innerfile refid="_iv_classifier_8m">IvClassifier.m</innerfile>
+    <innerfile refid="_iv_classifier_box_8m">IvClassifierBox.m</innerfile>
+    <innerfile refid="_iv_classifier_grid_8m">IvClassifierGrid.m</innerfile>
+    <innerfile refid="_iv_classifier_l_l_8m">IvClassifierLL.m</innerfile>
+    <innerfile refid="_iv_classifier_vector_8m">IvClassifierVector.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+classifier/"/>
+  </compounddef>
+</doxygen>

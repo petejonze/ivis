@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1test_1_1_test___iv_unit_handler" kind="class" prot="public">
+    <compoundname>ivis::test::Test_IvUnitHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_unit_handler_1a102dfd07b6c87e63fff90dbf739f3b11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::test::Test_IvUnitHandler::Test_IvUnitHandler</definition>
+        <argsstring>(matlabtypesubstitute name)</argsstring>
+        <name>Test_IvUnitHandler</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1test_1_1_test___iv_unit_handler" kindref="compound">Test_IvUnitHandler</ref> constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>self TestCase</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="53" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="53" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_unit_handler_1a2dbe72c0f2438a915f92b23246c428da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvUnitHandler::setUp</definition>
+        <argsstring>()</argsstring>
+        <name>setUp</name>
+        <briefdescription>
+<para>Testcase setup. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="69" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="69" bodyend="76"/>
+        <references refid="class_singleton_manager_1ac2af0ef8b8934134aebd8b3d33dc7dec" compoundref="_singleton_manager_8m" startline="146" endline="151">SingletonManager::clearAll</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_unit_handler_1a47b00e8b501e80b5200a0eaff4b7e1d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvUnitHandler::tearDown</definition>
+        <argsstring>()</argsstring>
+        <name>tearDown</name>
+        <briefdescription>
+<para>Testcase teardown. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="87" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_unit_handler_1adb01de614eb444f94b8442afd4230cca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvUnitHandler::testDeg2cm</definition>
+        <argsstring>()</argsstring>
+        <name>testDeg2cm</name>
+        <briefdescription>
+<para>Validate degrees-to-cm conversion (to 4 dp). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="101" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="101" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_unit_handler_1a5d9a4be795a20d348688724e6ddad407" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvUnitHandler::testCm2deg</definition>
+        <argsstring>()</argsstring>
+        <name>testCm2deg</name>
+        <briefdescription>
+<para>Validate cm-to-degree conversion (to 4 dp). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="114" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1test_1_1_test___iv_unit_handler_1a7f2501b5936e4ad37438ce68551f2ef2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::test::Test_IvUnitHandler::testNotInitialised</definition>
+        <argsstring>()</argsstring>
+        <name>testNotInitialised</name>
+        <briefdescription>
+<para>Validate that IvUnitHandler must be initialised before requesting a singleton object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="127" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="127" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>xUnit tests for <ref refid="classivis_1_1math_1_1_iv_unit_handler" kindref="compound">ivis.math.IvUnitHandler</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classivis_1_1math_1_1_iv_unit_handler" kindref="compound">ivis.math.IvUnitHandler</ref></para></simplesect>
+<simplesect kind="par"><title>Example</title><para>runtests infantvision.tests -verbose</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.1 PJ 02/2011 : used to develop commenting standards<linebreak/>
+ 1.0 PJ 02/2011 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="853">
+        <label>TestCase</label>
+      </node>
+      <node id="852">
+        <label>ivis::test::Test_IvUnitHandler</label>
+        <link refid="classivis_1_1test_1_1_test___iv_unit_handler"/>
+        <childnode refid="853" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="855">
+        <label>TestCase</label>
+      </node>
+      <node id="854">
+        <label>ivis::test::Test_IvUnitHandler</label>
+        <link refid="classivis_1_1test_1_1_test___iv_unit_handler"/>
+        <childnode refid="855" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+test/Test_IvUnitHandler.m" bodystart="19" bodyend="143"/>
+    <listofallmembers>
+      <member refid="classivis_1_1test_1_1_test___iv_unit_handler_1a2dbe72c0f2438a915f92b23246c428da" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvUnitHandler</scope><name>setUp</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_unit_handler_1a47b00e8b501e80b5200a0eaff4b7e1d5" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvUnitHandler</scope><name>tearDown</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_unit_handler_1a102dfd07b6c87e63fff90dbf739f3b11" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvUnitHandler</scope><name>Test_IvUnitHandler</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_unit_handler_1a5d9a4be795a20d348688724e6ddad407" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvUnitHandler</scope><name>testCm2deg</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_unit_handler_1adb01de614eb444f94b8442afd4230cca" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvUnitHandler</scope><name>testDeg2cm</name></member>
+      <member refid="classivis_1_1test_1_1_test___iv_unit_handler_1a7f2501b5936e4ad37438ce68551f2ef2" prot="public" virt="non-virtual"><scope>ivis::test::Test_IvUnitHandler</scope><name>testNotInitialised</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

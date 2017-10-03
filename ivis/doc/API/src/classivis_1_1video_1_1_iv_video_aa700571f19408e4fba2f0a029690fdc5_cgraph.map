@@ -1,0 +1,4 @@
+<map id="ivis::video::IvVideo::init" name="ivis::video::IvVideo::init">
+<area shape="rect" id="node2" href="$class_singleton.html#a7001949d1270fb90a10e44f06759edaf" title="Initialise the Singleton." alt="" coords="187,12,317,39"/>
+<area shape="rect" id="node3" href="$class_singleton.html#abbdb598397d4c5455dfb0941400cd8f5" title="Confirm whether the Singleton has been initialised." alt="" coords="366,12,477,39"/>
+</map>

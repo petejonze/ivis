@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_7e2a18773780b87774cfe8619d41b17c" kind="dir">
+    <compoundname>src/+ivis/+broadcaster</compoundname>
+    <innerfile refid="_iv_broadcaster_8m">IvBroadcaster.m</innerfile>
+    <innerfile refid="_iv_event_data_8m">IvEventData.m</innerfile>
+    <innerfile refid="_iv_listener_8m">IvListener.m</innerfile>
+    <innerfile refid="_screen_8m">Screen.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/src/+ivis/+broadcaster/"/>
+  </compounddef>
+</doxygen>

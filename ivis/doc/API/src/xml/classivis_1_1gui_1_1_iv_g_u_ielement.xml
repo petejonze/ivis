@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1gui_1_1_iv_g_u_ielement" kind="class" prot="public">
+    <compoundname>ivis::gui::IvGUIelement</compoundname>
+    <basecompoundref refid="class_singleton" prot="public" virt="non-virtual">Singleton</basecompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_icalibration" prot="public" virt="non-virtual">ivis::gui::IvGUIcalibration</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_iclassifier" prot="public" virt="non-virtual">ivis::gui::IvGUIclassifier</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial" prot="public" virt="non-virtual">ivis::gui::IvGUIeyetrackSpatial</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal" prot="public" virt="non-virtual">ivis::gui::IvGUIeyetrackTemporal</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1gui_1_1_iv_g_u_iwebcam" prot="public" virt="non-virtual">ivis::gui::IvGUIwebcam</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIelement::hFig</definition>
+        <argsstring></argsstring>
+        <name>hFig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" line="54" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_ielement_1af6ac3d0625d2f1ebff950b5e71ff7506" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::gui::IvGUIelement::FIG_NAME</definition>
+        <argsstring></argsstring>
+        <name>FIG_NAME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" line="58" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ielement_1afa9e744b4702fd984c2e03655a1fbf07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIelement::delete</definition>
+        <argsstring>()</argsstring>
+        <name>delete</name>
+        <briefdescription>
+<para><ref refid="classivis_1_1gui_1_1_iv_g_u_ielement" kindref="compound">IvGUIelement</ref> Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" line="69" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" bodystart="69" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_ielement_1a1404d0c78b5319c7e8863f4fc7aa8a6a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, effectiveFDims &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, fDims &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, aDims &gt; &gt;</type>
+        <definition>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, effectiveFDims &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, fDims &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, aDims &gt; &gt; ivis::gui::IvGUIelement::init</definition>
+        <argsstring>(matlabtypesubstitute GUIidx, matlabtypesubstitute normaliseDims, matlabtypesubstitute bgcolor)</argsstring>
+        <name>init</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>GUIidx</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>normaliseDims</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>bgcolor</declname>
+        </param>
+        <briefdescription>
+<para>Initialise the GUI element; set the renderer and compute the plot area dimensions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GUIidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUI frame index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normaliseDims</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>normalised figure dimensions </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bgcolor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>figure background colour </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>effectiveFDims effective figure dimensions </para><simplesectsep/><para>fDims figure dimensions </para><simplesectsep/><para>aDims axis dimensions</para></simplesect>
+<xrefsect id="todo_1_todo000018"><xreftitle>Todo</xreftitle><xrefdescription><para>sort out isempty(normaliseDims) </para></xrefdescription></xrefsect><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" line="94" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" bodystart="94" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic GUI Java window, to be instantiated by a subclass. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvGUIelement Methods</title><para>none</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="740">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="741" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>handle</label>
+      </node>
+      <node id="747">
+        <label>ivis::gui::IvGUIclassifierVector</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector"/>
+        <childnode refid="743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="749">
+        <label>ivis::gui::IvGUIeyetrackTemporal</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>ivis::gui::IvGUIclassifierGrid</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid"/>
+        <childnode refid="743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="742">
+        <label>ivis::gui::IvGUIcalibration</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_icalibration"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>ivis::gui::IvGUIeyetrackSpatial</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>ivis::gui::IvGUIwebcam</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iwebcam"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="746">
+        <label>ivis::gui::IvGUIclassifierLL</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l"/>
+        <childnode refid="743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>ivis::gui::IvGUIclassifierBox</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box"/>
+        <childnode refid="743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="740" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="743">
+        <label>ivis::gui::IvGUIclassifier</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="752">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="753" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="753">
+        <label>handle</label>
+      </node>
+      <node id="751">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIelement.m" bodystart="19" bodyend="170"/>
+    <listofallmembers>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1afa9e744b4702fd984c2e03655a1fbf07" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>delete</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1af6ac3d0625d2f1ebff950b5e71ff7506" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>FIG_NAME</name></member>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>finishUpSingleton</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>getInstanceSingleton</name></member>
+      <member refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3" prot="protected" virt="pure-virtual"><scope>ivis::gui::IvGUIelement</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>hFig</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a1404d0c78b5319c7e8863f4fc7aa8a6a" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>init</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>isinit</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIelement</scope><name>Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

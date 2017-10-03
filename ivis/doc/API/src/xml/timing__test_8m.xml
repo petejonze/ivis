@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="timing__test_8m" kind="file">
+    <compoundname>timing_test.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="timing__test_8m_1a056756de1f5b8d010436af088c72560b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute timing_test</definition>
+        <argsstring>()</argsstring>
+        <name>timing_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/timing_test.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/timing_test.m" bodystart="17" bodyend="62"/>
+        <references refid="listings__demo___a__timing_8m_1a89f7b08be39c8f059336da911fe65d3c" compoundref="listings__demo___a__timing_8m" startline="17" endline="80">listings_demo_A_timing</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="timing__test_8m_1a056756de1f5b8d010436af088c72560b" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="timing__test_8m_1a056756de1f5b8d010436af088c72560b" kindref="member">timing_test</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ivis.classifier.*<sp/>ivis.graphic.*<sp/>...</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ivis.main.*<sp/>ivis.log.*;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">params<sp/>=<sp/>IvParams.getDefaultConfig(</highlight><highlight class="stringliteral">&quot;<sp/>classifier.box.nsecs<sp/>&quot;</highlight><highlight class="normal">,2,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>eyetracker.fixationMarker<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>none<sp/>&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.monitorWidth_cm<sp/>&quot;</highlight><highlight class="normal">,45.20,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.monitorHeight_cm<sp/>&quot;</highlight><highlight class="normal">,36.10,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.testScreenWidth<sp/>&quot;</highlight><highlight class="normal">,1280,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.testScreenHeight<sp/>&quot;</highlight><highlight class="normal">,1024);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="listings__demo___a__timing_8m_1a89f7b08be39c8f059336da911fe65d3c" kindref="member" tooltip="n.b., have checked that tic/toc and profile results agree">listings_demo_A_timing</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>idx<sp/>=<sp/>strcmpi({p.FunctionTable.FunctionName},<sp/>&apos;InputHandler&gt;InputHandler.getInput&apos;);</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>t_keyin<sp/>=<sp/>p.FunctionTable(idx).TotalTime</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>idx<sp/>=<sp/>strcmpi({p.FunctionTable.FunctionName},<sp/>&apos;IvGraphic&gt;IvGraphic.nudge&apos;);</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>t_gfc<sp/>=<sp/>p.FunctionTable(idx).TotalTime</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*<sp/>idx<sp/>=<sp/>strcmpi({p.FunctionTable.FunctionName},<sp/>&apos;IvMouse&gt;IvMouse.refresh&apos;);</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>t_datain<sp/>=<sp/>p.FunctionTable(idx).TotalTime</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>idx<sp/>=<sp/>strcmpi({p.FunctionTable.FunctionName},<sp/>&apos;IvClassifier&gt;IvClassifier.update&apos;);</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*<sp/>t_classifier<sp/>=<sp/>p.FunctionTable(idx).TotalTime</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/>n<sp/>=<sp/>p.FunctionTable(idx).NumCalls</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>idx<sp/>=<sp/>strcmpi({p.FunctionTable.FunctionName},<sp/>&apos;Screen&apos;);</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>t_screen<sp/>=<sp/>p.FunctionTable(idx).TotalTime</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>[n<sp/>k]</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>t<sp/>=<sp/>[t_keyin/n<sp/>t_gfc/n<sp/>t_datain/n<sp/>t_classifier/n<sp/>t_screen/n;<sp/>nanmean(T);<sp/><sp/>nanmean(T(10:end,:))]<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>%<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">T<sp/>=<sp/>[T<sp/>sum(T(:,1:4),2)<sp/>sum(T,2)];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">nanmean(T)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">T1<sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">params<sp/>=<sp/>IvParams.getDefaultConfig(</highlight><highlight class="stringliteral">&quot;<sp/>gui.useGUI<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>classifier.box.nsecs<sp/>&quot;</highlight><highlight class="normal">,2,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>eyetracker.fixationMarker<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>none<sp/>&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.monitorWidth_cm<sp/>&quot;</highlight><highlight class="normal">,45.20,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.monitorHeight_cm<sp/>&quot;</highlight><highlight class="normal">,36.10,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.testScreenWidth<sp/>&quot;</highlight><highlight class="normal">,1280,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>graphics.testScreenHeight<sp/>&quot;</highlight><highlight class="normal">,1024);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="listings__demo___a__timing_8m_1a89f7b08be39c8f059336da911fe65d3c" kindref="member" tooltip="n.b., have checked that tic/toc and profile results agree">listings_demo_A_timing</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">T<sp/>=<sp/>[T<sp/>sum(T(:,1:4),2)<sp/>sum(T,2)];</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">nanmean(T)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">T2<sp/>=<sp/>T;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/timing_test.m"/>
+  </compounddef>
+</doxygen>

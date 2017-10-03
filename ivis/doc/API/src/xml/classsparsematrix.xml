@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classsparsematrix" kind="class" prot="public">
+    <compoundname>sparsematrix</compoundname>
+    <basecompoundref refid="classmatrix" prot="public" virt="non-virtual">matrix</basecompoundref>
+    <briefdescription>
+<para>A matlab sparse matrix. </para>    </briefdescription>
+    <detaileddescription>
+<para>This class is an artificially created class in doxygen to allow more precise type declarations </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1063">
+        <label>matrix</label>
+        <link refid="classmatrix"/>
+      </node>
+      <node id="1062">
+        <label>sparsematrix</label>
+        <link refid="classsparsematrix"/>
+        <childnode refid="1063" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1065">
+        <label>matrix</label>
+        <link refid="classmatrix"/>
+      </node>
+      <node id="1064">
+        <label>sparsematrix</label>
+        <link refid="classsparsematrix"/>
+        <childnode refid="1065" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="82" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="81" bodyend="89"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

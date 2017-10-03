@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="ivis_demo001__check_installed_8m" kind="file">
+    <compoundname>ivisDemo001_checkInstalled.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ivis_demo001__check_installed_8m_1a9509d86afcda1619ff88890c1a857c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivisDemo001_checkInstalled</definition>
+        <argsstring>()</argsstring>
+        <name>ivisDemo001_checkInstalled</name>
+        <briefdescription>
+<para>ivisDemo001_checkInstalled. Check that ivis is installed and uptodate. </para>        </briefdescription>
+        <detaileddescription>
+<para>Will throw an error if ivis or any of its dependecies are missing or invalid. To run, simply type ivisDemo001_checkInstalled on the command line (and press enter)</para><para><simplesect kind="see"><para><ref refid="ivis_demo002__keyboard_handling_8m" kindref="compound">ivisDemo002_keyboardHandling.m</ref></para></simplesect>
+Requires: ivis toolbox v1.4</para><para>Matlab: v2012 onwards</para><para><simplesect kind="see"><para><ref refid="ivis_demo002__keyboard_handling_8m" kindref="compound">ivisDemo002_keyboardHandling.m</ref></para></simplesect>
+Author(s): Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para><para>Version History: 1.0.0 PJ 22/06/2013 Initial build. 1.1.0 PJ 18/10/2013 General tidy up (ivis 1.4).</para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo001_checkInstalled.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo001_checkInstalled.m" bodystart="17" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ivisDemo001_checkInstalled. Check that ivis is installed and uptodate. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="ivis_demo001__check_installed_8m_1a9509d86afcda1619ff88890c1a857c01" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="ivis_demo001__check_installed_8m_1a9509d86afcda1619ff88890c1a857c01" kindref="member" tooltip="ivisDemo001_checkInstalled. Check that ivis is installed and uptodate.">ivisDemo001_checkInstalled</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>check<sp/>if<sp/>toolbox<sp/>can<sp/>be<sp/>found<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isempty(ver(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>ivis<sp/>toolbox<sp/>not<sp/>found.<sp/>Try<sp/>running<sp/>InstallIvis.m<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>check<sp/>version<sp/>is<sp/>up<sp/>to<sp/>date<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">ivis.main.IvMain.assertVersion(1.4);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>check<sp/>that<sp/>the<sp/>PTB<sp/>dependency<sp/>is<sp/>present<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>AssertOpenGL();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>ME</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>Psychtoolbox<sp/>not<sp/>found.<sp/>The<sp/>ivis<sp/>toolbox<sp/>will<sp/>not<sp/>work<sp/>without<sp/>it!<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>feedback<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>Looks<sp/>good.<sp/>All<sp/>done!\nWhy<sp/>not<sp/>try<sp/>some<sp/>more<sp/>demos?<sp/>(&apos;help<sp/>ivisDemos&apos;)\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo001_checkInstalled.m"/>
+  </compounddef>
+</doxygen>

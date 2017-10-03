@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="class_c_stack" kind="class" prot="public">
+    <compoundname>CStack</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">handle</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_stack_1ad42058a4d24e724d276b03b6d64aa4f4" prot="private" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute CStack::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="51" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_stack_1ae0e291e355891cf18d617362eaf4bb81" prot="private" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>CStack::cur</definition>
+        <argsstring></argsstring>
+        <name>cur</name>
+        <briefdescription>
+<para>the length of the stack </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="52" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_stack_1a9b2991ff3c4744657f7093f69c0c2a49" prot="private" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute CStack::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="58" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_stack_1a7c0b34404a3b51c09513e81dbaba38c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CStack::CStack</definition>
+        <argsstring>(matlabtypesubstitute c)</argsstring>
+        <name>CStack</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="62" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="62" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a9f9250a9f0fca6411304972540965b96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, s &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,s&gt; CStack::size</definition>
+        <argsstring>()</argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="80" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="80" bodyend="82"/>
+        <referencedby refid="ellipse_8m_1a418d86f59e5191683b2323ab32420d5a" compoundref="ellipse_8m" startline="17" endline="139">ellipse</referencedby>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3111">findjobj</referencedby>
+        <referencedby refid="get_tween_8m_1a9b9b2b260387b1220b952981823a8fba" compoundref="get_tween_8m" startline="17" endline="96">getTween</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a8f25e742671f2cd7d7b803e757041deb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute CStack::remove</definition>
+        <argsstring>()</argsstring>
+        <name>remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="85" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a42c4a05a4b4567e63320ca6228aa20eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, b &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,b&gt; CStack::empty</definition>
+        <argsstring>()</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="90" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a32223a51bba370ccc70dba1d7077b693" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, b &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,b&gt; CStack::isempty</definition>
+        <argsstring>()</argsstring>
+        <name>isempty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="96" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="96" bodyend="98"/>
+        <referencedby refid="ellipse_8m_1a418d86f59e5191683b2323ab32420d5a" compoundref="ellipse_8m" startline="17" endline="139">ellipse</referencedby>
+        <referencedby refid="enable_disable_fig_8m_1a93d2f1e2a72e3fef110437c0c224066e" compoundref="enable_disable_fig_8m" startline="17" endline="117">enableDisableFig</referencedby>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3111">findjobj</referencedby>
+        <referencedby refid="getjframe_8m_1ad0bc460bbca1ba653976170df814b673" compoundref="getjframe_8m" startline="17" endline="103">getjframe</referencedby>
+        <referencedby refid="get_tween_8m_1a9b9b2b260387b1220b952981823a8fba" compoundref="get_tween_8m" startline="17" endline="96">getTween</referencedby>
+        <referencedby refid="hline_8m_1a4bd5b5d17c6595c5d211993ca71c1e3c" compoundref="hline_8m" startline="17" endline="102">hline</referencedby>
+        <referencedby refid="enable_disable_fig_8m_1a21725488d1c3ecaa966a3b9050f6e237" compoundref="enable_disable_fig_8m" startline="180" endline="219">mtoc_subst_enableDisableFig_m_tsbus_cotm_getJFrame</referencedby>
+        <referencedby refid="getjframe_8m_1ab535839ebaaff6fc9b9ff5bb1f537a6e" compoundref="getjframe_8m" startline="163" endline="202">mtoc_subst_getjframe_m_tsbus_cotm_getJFrame</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a90c795061365b984e2cbf0fb94e094a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute CStack::push</definition>
+        <argsstring>(matlabtypesubstitute el)</argsstring>
+        <name>push</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>el</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="101" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="101" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1ad4dd0e3ebb37c92ea66fab7d258b9fc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, el &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,el&gt; CStack::top</definition>
+        <argsstring>()</argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="111" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a0d69e698266626bd831aef978c214eff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, el &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,el&gt; CStack::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="121" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="121" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1a560475f9311fc8174e740ff36b08aaee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute CStack::display</definition>
+        <argsstring>()</argsstring>
+        <name>display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="132" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="132" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_c_stack_1ab14245a6772fbb55bb04c3e9311d35e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, c &gt;</type>
+        <definition>mlhsInnerSubst&lt;matlabtypesubstitute,c&gt; CStack::content</definition>
+        <argsstring>()</argsstring>
+        <name>content</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="144" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="144" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_c_stack" kindref="compound">CStack</ref> define a stack data strcuture. </para>    </briefdescription>
+    <detaileddescription>
+<para>It likes java.util.Stack, however, it could use <ref refid="class_c_stack_1ab14245a6772fbb55bb04c3e9311d35e4" kindref="member">CStack.content()</ref> to return all the data (in cells) of the Stack, and it is a litter faster than java&apos;s Stack.</para><para>s = CStack(c); c is a cells, and could be omitted s.size() return the numble of element s.isempty() return true when the stack is empty s.empty() delete the content of the stack s.push(el) push el to the top of stack s.pop() pop out the top of the stack, and return the element s.top() return the top element of the stack s.remove() remove all the elements in the stack s.content() return all the data of the stack (in the form of a cells with size [s.size(), 1]</para><para><simplesect kind="see"><para><ref refid="class_c_list" kindref="compound">CList</ref>, <ref refid="class_c_queue" kindref="compound">CQueue</ref></para><simplesectsep/><para><ref refid="class_c_list" kindref="compound">CList</ref>, <ref refid="class_c_queue" kindref="compound">CQueue</ref></para></simplesect>
+Copyright: <ulink url="mailto:zhang@zhiqiang.org">zhang@zhiqiang.org</ulink>, 2010. url: <ulink url="http://zhiqiang.org/blog/it/matlab-data-structures.html">http://zhiqiang.org/blog/it/matlab-data-structures.html</ulink> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="497">
+        <label>CStack</label>
+        <link refid="class_c_stack"/>
+        <childnode refid="498" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>handle</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="499">
+        <label>CStack</label>
+        <link refid="class_c_stack"/>
+        <childnode refid="500" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>handle</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" line="18" bodyfile="D:/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/ivis_util/CStack.m" bodystart="17" bodyend="149"/>
+    <listofallmembers>
+      <member refid="class_c_stack_1ad42058a4d24e724d276b03b6d64aa4f4" prot="private" virt="non-virtual"><scope>CStack</scope><name>buffer</name></member>
+      <member refid="class_c_stack_1a9b2991ff3c4744657f7093f69c0c2a49" prot="private" virt="non-virtual"><scope>CStack</scope><name>capacity</name></member>
+      <member refid="class_c_stack_1ab14245a6772fbb55bb04c3e9311d35e4" prot="public" virt="non-virtual"><scope>CStack</scope><name>content</name></member>
+      <member refid="class_c_stack_1a7c0b34404a3b51c09513e81dbaba38c6" prot="public" virt="non-virtual"><scope>CStack</scope><name>CStack</name></member>
+      <member refid="class_c_stack_1ae0e291e355891cf18d617362eaf4bb81" prot="private" virt="non-virtual"><scope>CStack</scope><name>cur</name></member>
+      <member refid="class_c_stack_1a560475f9311fc8174e740ff36b08aaee" prot="public" virt="non-virtual"><scope>CStack</scope><name>display</name></member>
+      <member refid="class_c_stack_1a42c4a05a4b4567e63320ca6228aa20eb" prot="public" virt="non-virtual"><scope>CStack</scope><name>empty</name></member>
+      <member refid="class_c_stack_1a32223a51bba370ccc70dba1d7077b693" prot="public" virt="non-virtual"><scope>CStack</scope><name>isempty</name></member>
+      <member refid="class_c_stack_1a0d69e698266626bd831aef978c214eff" prot="public" virt="non-virtual"><scope>CStack</scope><name>pop</name></member>
+      <member refid="class_c_stack_1a90c795061365b984e2cbf0fb94e094a7" prot="public" virt="non-virtual"><scope>CStack</scope><name>push</name></member>
+      <member refid="class_c_stack_1a8f25e742671f2cd7d7b803e757041deb" prot="public" virt="non-virtual"><scope>CStack</scope><name>remove</name></member>
+      <member refid="class_c_stack_1a9f9250a9f0fca6411304972540965b96" prot="public" virt="non-virtual"><scope>CStack</scope><name>size</name></member>
+      <member refid="class_c_stack_1ad4dd0e3ebb37c92ea66fab7d258b9fc6" prot="public" virt="non-virtual"><scope>CStack</scope><name>top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

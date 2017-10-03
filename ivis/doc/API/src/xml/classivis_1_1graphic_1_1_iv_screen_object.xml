@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1graphic_1_1_iv_screen_object" kind="class" prot="public" abstract="yes">
+    <compoundname>ivis::graphic::IvScreenObject</compoundname>
+    <basecompoundref refid="classivis_1_1broadcaster_1_1_iv_listener" prot="public" virt="non-virtual">ivis::broadcaster::IvListener</basecompoundref>
+    <derivedcompoundref refid="classivis_1_1graphic_1_1_iv_graphic" prot="public" virt="non-virtual">ivis::graphic::IvGraphic</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1graphic_1_1_iv_graphic_compound" prot="public" virt="non-virtual">ivis::graphic::IvGraphicCompound</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1graphic_1_1_iv_prior" prot="public" virt="non-virtual">ivis::graphic::IvPrior</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_screen_object_1a2d10135dc6c9ed7ac46dc2f4e2b41abb" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::graphic::IvScreenObject::TYPE_PRIOR</definition>
+        <argsstring></argsstring>
+        <name>TYPE_PRIOR</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="56" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_screen_object_1a53ab6604b15a564fb6b3509ae74db3dd" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::graphic::IvScreenObject::TYPE_GRAPHIC</definition>
+        <argsstring></argsstring>
+        <name>TYPE_GRAPHIC</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="57" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::graphic::IvScreenObject::TYPE_GRAPHICCOMPOUND</definition>
+        <argsstring></argsstring>
+        <name>TYPE_GRAPHICCOMPOUND</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="58" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classivis_1_1graphic_1_1_iv_graphic_compound_1aa73d4e5e18bdcc6a3f245167c9e597f2" compoundref="_iv_graphic_compound_8m" startline="80" endline="89">ivis::graphic::IvGraphicCompound::IvGraphicCompound</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classivis_1_1graphic_1_1_iv_screen_object_1aa0a73d5df4a69a57f83fc3690a159872" prot="private" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::graphic::IvScreenObject::TYPE</definition>
+        <argsstring></argsstring>
+        <name>TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="62" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_screen_object_1a4a40af212e1c1fd5fddd2023e6c00cfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::graphic::IvScreenObject::reset</definition>
+        <argsstring>(matlabtypesubstitute x, matlabtypesubstitute y, matlabtypesubstitute width, matlabtypesubstitute height)=0</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="classivis_1_1graphic_1_1_iv_prior_1aca0f10732619f3b6ad9f53b6862fed30">reset</reimplementedby>
+        <reimplementedby refid="classivis_1_1graphic_1_1_iv_graphic_1a32d0c0e5b0275ec2ab4b3649689b0ad1">reset</reimplementedby>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Sets XY, and resets the history (n.b., may want to save the buffer history first?). If no values specified, will return to whereever it started. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The centre position, in pixels, along the horizontal axis [0 == left] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The centre position, in pixels, along the vertical axis [0 == top] </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the graphic, in pixels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the graphic, in pixels</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_screen_object_1a0018ceb2329f408d21d5672c974936bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::graphic::IvScreenObject::draw</definition>
+        <argsstring>(matlabtypesubstitute winhandle, matlabtypesubstitute varargin)=0</argsstring>
+        <name>draw</name>
+        <reimplementedby refid="classivis_1_1graphic_1_1_iv_graphic_compound_1adcc253f460e53f66487d707c0177b4f8">draw</reimplementedby>
+        <reimplementedby refid="classivis_1_1graphic_1_1_iv_graphic_1abb39f2e888a64df9b228abcde414c916">draw</reimplementedby>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>winhandle</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>varargin</declname>
+        </param>
+        <briefdescription>
+<para>Flip an associated texture onto a PTB screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>type_code</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_screen_object_1a447f995570459bb1d96964215358622e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, type_code &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, type_code &gt; ivis::graphic::IvScreenObject::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Returns screen object code (e.g., TYPE_PRIOR, or TYPE_GRAPHIC). </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>type_code</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="108" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="108" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classivis_1_1graphic_1_1_iv_screen_object_1a6882f0ad0c3d66144d1732d5baa673b4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::graphic::IvScreenObject::IvScreenObject</definition>
+        <argsstring>(matlabtypesubstitute type)</argsstring>
+        <name>IvScreenObject</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1graphic_1_1_iv_screen_object" kindref="compound">IvScreenObject</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="classivis_1_1graphic_1_1_iv_screen_object" kindref="compound">IvScreenObject</ref></para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="133" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="133" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic object that may appear on the screen (primarily an object of type <ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">IvGraphic</ref>). </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvScreenObject Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1graphic_1_1_iv_screen_object" kindref="compound">IvScreenObject</ref> - Constructor.</para></listitem><listitem><para>type - Returns screen object code (e.g., TYPE_PRIOR, or TYPE_GRAPHIC).</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para><ref refid="classivis_1_1graphic_1_1_iv_graphic" kindref="compound">ivis.graphic.IvGraphic</ref></para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="667">
+        <label>ivis::graphic::IvGraphic</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic"/>
+        <childnode refid="664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="666">
+        <label>handle</label>
+      </node>
+      <node id="668">
+        <label>ivis::graphic::IvGraphicCompound</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
+        <childnode refid="664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="666" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>ivis::graphic::IvPrior</label>
+        <link refid="classivis_1_1graphic_1_1_iv_prior"/>
+        <childnode refid="664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="665" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="672">
+        <label>handle</label>
+      </node>
+      <node id="671">
+        <label>ivis::broadcaster::IvListener</label>
+        <link refid="classivis_1_1broadcaster_1_1_iv_listener"/>
+        <childnode refid="672" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="671" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvScreenObject.m" bodystart="19" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ad5f33e1dc17f907588af17d1c2b06bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>delete</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a0018ceb2329f408d21d5672c974936bc" prot="public" virt="pure-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>draw</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a14390bf4fcaaa602c45c74d850e78e1a" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>eventNames</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a6882f0ad0c3d66144d1732d5baa673b4" prot="protected" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>IvScreenObject</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1add0a7baf0385630c2ccb69d3fe35896e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>listenerHandles</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a4a40af212e1c1fd5fddd2023e6c00cfc" prot="public" virt="pure-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>reset</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a7fe2988ce0ff2dc4e2d39981a2a5104e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>startListening</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a4059911a950ad01e8ae73abcc6d5cd64" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>startListeningTo</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1ae63aa8d8e7e569d83e1b29d050c31bd5" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>stopListening</name></member>
+      <member refid="classivis_1_1broadcaster_1_1_iv_listener_1a50d1ac805a94af66ffb9bff3b4b0b934" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>toggleListening</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1aa0a73d5df4a69a57f83fc3690a159872" prot="private" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>TYPE</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a447f995570459bb1d96964215358622e" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>type</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a53ab6604b15a564fb6b3509ae74db3dd" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>TYPE_GRAPHIC</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1afc8ce79a1590aa636fd88a3aac675ffa" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>TYPE_GRAPHICCOMPOUND</name></member>
+      <member refid="classivis_1_1graphic_1_1_iv_screen_object_1a2d10135dc6c9ed7ac46dc2f4e2b41abb" prot="public" virt="non-virtual"><scope>ivis::graphic::IvScreenObject</scope><name>TYPE_PRIOR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

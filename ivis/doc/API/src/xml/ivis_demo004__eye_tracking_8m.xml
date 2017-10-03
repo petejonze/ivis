@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="ivis_demo004__eye_tracking_8m" kind="file">
+    <compoundname>ivisDemo004_eyeTracking.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ivis_demo004__eye_tracking_8m_1a4d4ed849e39d7c10f5e78fbd1505f989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivisDemo004_eyeTracking</definition>
+        <argsstring>()</argsstring>
+        <name>ivisDemo004_eyeTracking</name>
+        <briefdescription>
+<para>ivisDemo004_eyeTracking. Connect to an eyetracker and track fixations on the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Results are displayed in a GUI</para><para>Requires: ivis toolbox v1.4</para><para>Matlab: v2012 onwards</para><para><simplesect kind="see"><para><ref refid="ivis_demo003__mouse_tracking_8m" kindref="compound">ivisDemo003_mouseTracking.m</ref> <ref refid="ivis_demo005__usinga_p_t_b_screen_8m" kindref="compound">ivisDemo005_usingaPTBScreen.m</ref></para></simplesect>
+Author(s): Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para><para>Version History: 1.0.0 PJ 22/06/2013 Initial build. 1.1.0 PJ 18/10/2013 General tidy up (ivis 1.4).</para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo004_eyeTracking.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo004_eyeTracking.m" bodystart="17" bodyend="46"/>
+        <references refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" compoundref="clear_abs_all_8m" startline="17" endline="82">clearAbsAll</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ivisDemo004_eyeTracking. Connect to an eyetracker and track fixations on the screen. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="ivis_demo004__eye_tracking_8m_1a4d4ed849e39d7c10f5e78fbd1505f989" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="ivis_demo004__eye_tracking_8m_1a4d4ed849e39d7c10f5e78fbd1505f989" kindref="member" tooltip="ivisDemo004_eyeTracking. Connect to an eyetracker and track fixations on the screen.">ivisDemo004_eyeTracking</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>clear<sp/>memory<sp/>and<sp/>set<sp/>workspace<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="clear_abs_all_8m_1acbd9097b185d4a7f5cce6af1d935a29d" kindref="member" tooltip="Clear command window: clc;.">clearAbsAll</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>ivis.main.*<sp/>ivis.control.*;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>verify,<sp/>initialise,<sp/>and<sp/>launch<sp/>the<sp/>ivis<sp/>toolbox<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">IvMain.assertVersion(1.4);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">IvMain.initialise(IvParams.getSimpleConfig(</highlight><highlight class="stringliteral">&quot;<sp/>GUI.useGUI<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>eyetracker.GUIidx<sp/>&quot;</highlight><highlight class="normal">,2,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>main.dataInput<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>eyelink<sp/>&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>eyetracker.fixationMarker<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>cursor<sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">/*<sp/>,<sp/>&apos;eyetracker.id&apos;,&apos;TX120-203-81900130&apos;));<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">[eyetracker,<sp/>~,<sp/>InH]<sp/>=<sp/>IvMain.launch();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>run!<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/><sp/>wrap<sp/>in<sp/>try..catch<sp/>to<sp/>ensure<sp/>a<sp/>graceful<sp/>exit<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>continue<sp/>until<sp/>keystroke<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(</highlight><highlight class="stringliteral">&quot;<sp/>Try<sp/>looking<sp/>around<sp/>the<sp/>target<sp/>monitor.\nPress<sp/>SPACE<sp/>to<sp/>exit\n<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>~any(InH.getInput()<sp/>==<sp/>InH.INPT_SPACE.code)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>eyetracker.refresh(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>false<sp/>to<sp/>suppress<sp/>data<sp/>logging<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WaitSecs(1/60);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>ME</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>IvMain.finishUp();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>rethrow(ME);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">end</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/>that&apos;s<sp/>it!<sp/>close<sp/>open<sp/>windows<sp/>and<sp/>release<sp/>memory<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">IvMain.finishUp();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis/ivisDemos/ivisDemo004_eyeTracking.m"/>
+  </compounddef>
+</doxygen>

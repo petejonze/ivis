@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1main_1_1_iv_listener" kind="class" prot="public" abstract="yes">
+    <compoundname>ivis::main::IvListener</compoundname>
+    <basecompoundref refid="class_singleton" prot="public" virt="non-virtual">Singleton</basecompoundref>
+    <derivedcompoundref refid="classivis_1_1video_1_1_iv_webcam" prot="public" virt="non-virtual">ivis::video::IvWebcam</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1main_1_1_iv_listener_1ad3d0485ee1cb497391cd0eca7250d1dc" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::main::IvListener::listenerHandle</definition>
+        <argsstring></argsstring>
+        <name>listenerHandle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="61" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1a0869b6401ec937f10cba6feed3bf6bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>noret::substitute</type>
+        <definition>virtual noret::substitute ivis::main::IvListener::draw</definition>
+        <argsstring>(matlabtypesubstitute src, matlabtypesubstitute evnt)=0</argsstring>
+        <name>draw</name>
+        <reimplementedby refid="classivis_1_1video_1_1_iv_webcam_1a9740cc6e456fed1b6a6a6a452b82090d">draw</reimplementedby>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>evnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1ad3192e08761d44f5df850a99920c535a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvListener::delete</definition>
+        <argsstring>()</argsstring>
+        <name>delete</name>
+        <briefdescription>
+<para>Object destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="version"><para>25/03/13 [PJ] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="85" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1ab02afce5bc7838e30179771fa1a5dbad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvListener::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>START dfdfdf. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="version"><para>25/03/13 [PJ] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="98" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="98" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1a49ba1fc74e53229fffefb2d98380f98e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvListener::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+<para>STOP dfdfdf. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="version"><para>25/03/13 [PJ] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="114" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1aa1946920a2da6ae7f77ae4d3ecc6de00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvListener::toggle</definition>
+        <argsstring>()</argsstring>
+        <name>toggle</name>
+        <briefdescription>
+<para>TOGGLE dfdfdf. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="version"><para>25/03/13 [PJ] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="128" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="128" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1a0bc62238aa0871fd64c2a4045d0b9f2a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvListener::startListening</definition>
+        <argsstring>()</argsstring>
+        <name>startListening</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="153" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="153" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_listener_1a3b391179a72750f9b1f1b8e7d0cb0126" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvListener::stopListening</definition>
+        <argsstring>()</argsstring>
+        <name>stopListening</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="157" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="157" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>dfadsfdasf. </para>    </briefdescription>
+    <detaileddescription>
+<para>dfdfdfdfdfdfdfdfdf</para><para><simplesect kind="par"><title>IvListener Methods</title><para><itemizedlist>
+<listitem><para>start - ffffff.</para></listitem><listitem><para>stop - ffffff.</para></listitem><listitem><para>toggle - ffffff.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+<simplesect kind="par"><title>Todo</title><para>none</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="732">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="733" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="733">
+        <label>handle</label>
+      </node>
+      <node id="731">
+        <label>ivis::main::IvListener</label>
+        <link refid="classivis_1_1main_1_1_iv_listener"/>
+        <childnode refid="732" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="734">
+        <label>ivis::video::IvWebcam</label>
+        <link refid="classivis_1_1video_1_1_iv_webcam"/>
+        <childnode refid="731" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="736">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="737">
+        <label>handle</label>
+      </node>
+      <node id="735">
+        <label>ivis::main::IvListener</label>
+        <link refid="classivis_1_1main_1_1_iv_listener"/>
+        <childnode refid="736" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvListener.m" bodystart="19" bodyend="165"/>
+    <listofallmembers>
+      <member refid="classivis_1_1main_1_1_iv_listener_1ad3192e08761d44f5df850a99920c535a" prot="public" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>delete</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1a0869b6401ec937f10cba6feed3bf6bac" prot="public" virt="pure-virtual"><scope>ivis::main::IvListener</scope><name>draw</name></member>
+      <member refid="class_singleton_1a4fbb83cfbc5e23be2e5c019530e6f202" prot="protected" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>finishUpSingleton</name></member>
+      <member refid="class_singleton_1a97cfe5f890309949b5e9c1eed0cde4f2" prot="protected" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>getInstanceSingleton</name></member>
+      <member refid="class_singleton_1ae3587fe55ef96e531b75338b4b61b64e" prot="protected" virt="pure-virtual"><scope>ivis::main::IvListener</scope><name>getSetSingleton</name></member>
+      <member refid="class_singleton_1ac0bee3e1434e45ae70ae246a1ebe6b43" prot="protected" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>initialise</name></member>
+      <member refid="class_singleton_1aacbf70cab8562c384c30566e5198c069" prot="protected" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>isinit</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1ad3d0485ee1cb497391cd0eca7250d1dc" prot="public" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>listenerHandle</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1ab02afce5bc7838e30179771fa1a5dbad" prot="public" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>start</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1a0bc62238aa0871fd64c2a4045d0b9f2a" prot="private" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>startListening</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1a49ba1fc74e53229fffefb2d98380f98e" prot="public" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>stop</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1a3b391179a72750f9b1f1b8e7d0cb0126" prot="private" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>stopListening</name></member>
+      <member refid="classivis_1_1main_1_1_iv_listener_1aa1946920a2da6ae7f77ae4d3ecc6de00" prot="public" virt="non-virtual"><scope>ivis::main::IvListener</scope><name>toggle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

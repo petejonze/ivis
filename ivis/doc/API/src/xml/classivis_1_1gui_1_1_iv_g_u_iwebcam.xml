@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1gui_1_1_iv_g_u_iwebcam" kind="class" prot="public">
+    <compoundname>ivis::gui::IvGUIwebcam</compoundname>
+    <basecompoundref refid="classivis_1_1gui_1_1_iv_g_u_ielement" prot="public" virt="non-virtual">ivis::gui::IvGUIelement</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a3ab9422a1f53aa10c23c67a6c3b8a205" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::gui::IvGUIwebcam::FIG_NAME</definition>
+        <argsstring></argsstring>
+        <name>FIG_NAME</name>
+        <initializer>= &quot;IvGUIwebcam&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="56" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1aa6a7d256ccc9057d15c7e63bcfe018dd" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::gui::IvGUIwebcam::hImage</definition>
+        <argsstring></argsstring>
+        <name>hImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="61" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1ae3ea0516ad66fbf62894821c7227431b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::gui::IvGUIwebcam::IvGUIwebcam</definition>
+        <argsstring>(matlabtypesubstitute GUIidx, matlabtypesubstitute resolution)</argsstring>
+        <name>IvGUIwebcam</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>GUIidx</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+<para>IvWebcam Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>GUIidx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>GUI frame index </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>expected image size (pixels) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj IvVideo object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="72" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a8faa60e12ff2a9bb334bc724fe3385e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::gui::IvGUIwebcam::update</definition>
+        <argsstring>(matlabtypesubstitute tex)</argsstring>
+        <name>update</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>tex</declname>
+        </param>
+        <briefdescription>
+<para>Update figure window. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image texture</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="94" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="94" bodyend="96"/>
+        <references refid="namespaceivis_1_1broadcaster_1a035702262427ed8c3b5b3d6d6d025b02" compoundref="_screen_8m" startline="19" endline="29">ivis::broadcaster::Screen</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a2cc56a3033b95f202abdac4fbc764fc2" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIwebcam::getSetSingleton</definition>
+        <argsstring>(matlabtypesubstitute obj)</argsstring>
+        <name>getSetSingleton</name>
+        <reimplements refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3">getSetSingleton</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para><heading level="6">.</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="note"><para>This method has non-standard access specifiers: <computeroutput>Access = (<ref refid="class_singleton" kindref="compound">Singleton</ref>)</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="117" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="117" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1aef1376a6b0ddb75a9b9b7336c49bb1a7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::gui::IvGUIwebcam::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="125" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="125" bodyend="127"/>
+        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="188" endline="211">Singleton::getInstanceSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a353dd10e36508fbb606f93ee252a4f30" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>static noret::substitute ivis::gui::IvGUIwebcam::finishUp</definition>
+        <argsstring>()</argsstring>
+        <name>finishUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="129" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="129" bodyend="131"/>
+        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="228" endline="241">Singleton::finishUpSingleton</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="class_singleton" kindref="compound">Singleton</ref> for displaying webcam feed in a GUI. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvGUIwebcam Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1gui_1_1_iv_g_u_iwebcam" kindref="compound">IvGUIwebcam</ref> - Constructor.</para></listitem><listitem><para>update - Update figure window.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para><ref refid="classivis_1_1video_1_1_iv_webcam" kindref="compound">ivis.video.IvWebcam</ref></para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 07/2013 : first_build<linebreak/>
+</para></simplesect>
+<xrefsect id="todo_1_todo000019"><xreftitle>Todo</xreftitle><xrefdescription><para>add pausetoggle button(s)</para></xrefdescription></xrefsect></para><para>Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="772">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="773" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="773">
+        <label>handle</label>
+      </node>
+      <node id="770">
+        <label>ivis::gui::IvGUIwebcam</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iwebcam"/>
+        <childnode refid="771" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="771">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="772" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="776">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="777" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>handle</label>
+      </node>
+      <node id="774">
+        <label>ivis::gui::IvGUIwebcam</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iwebcam"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="775">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="776" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+gui/IvGUIwebcam.m" bodystart="19" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1afa9e744b4702fd984c2e03655a1fbf07" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>delete</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a3ab9422a1f53aa10c23c67a6c3b8a205" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>FIG_NAME</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a353dd10e36508fbb606f93ee252a4f30" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>finishUp</name></member>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1aef1376a6b0ddb75a9b9b7336c49bb1a7" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>getInstanceSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a2cc56a3033b95f202abdac4fbc764fc2" prot="protected" virt="virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a279f5bd946d9a1f654e8d33fbb49f24f" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>hFig</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1aa6a7d256ccc9057d15c7e63bcfe018dd" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>hImage</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_ielement_1a1404d0c78b5319c7e8863f4fc7aa8a6a" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>init</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>isinit</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1ae3ea0516ad66fbf62894821c7227431b" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>IvGUIwebcam</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1gui_1_1_iv_g_u_iwebcam_1a8faa60e12ff2a9bb334bc724fe3385e1" prot="public" virt="non-virtual"><scope>ivis::gui::IvGUIwebcam</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

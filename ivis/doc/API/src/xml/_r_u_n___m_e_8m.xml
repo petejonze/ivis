@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="_r_u_n___m_e_8m" kind="file">
+    <compoundname>RUN_ME.m</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_r_u_n___m_e_8m_1a543d1140deebeb0a247d2c4a9393691a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute RUN_ME</definition>
+        <argsstring>()</argsstring>
+        <name>RUN_ME</name>
+        <briefdescription>
+<para>% Convert src code into (encrypted) p-code, save outputs in bin/ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/RUN_ME.m" line="17" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/RUN_ME.m" bodystart="17" bodyend="65"/>
+        <references refid="class_matlab_doc_maker_1a278883e6b83f6c6e7780e0d567dee119" compoundref="_matlab_doc_maker_8m" startline="409" endline="616">MatlabDocMaker::create</references>
+        <references refid="deploypcode_8m_1aa8d85e1b3dbe7b553787f1f62c6c60e3" compoundref="deploypcode_8m" startline="17" endline="44">deploypcode</references>
+        <references refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" compoundref="ivisdir_8m" startline="17" endline="20">ivisdir</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>% Convert src code into (encrypted) p-code, save outputs in bin/ </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>(Autoinserted<sp/>by<sp/>mtoc++)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>source<sp/>code<sp/>has<sp/>been<sp/>filtered<sp/>by<sp/>the<sp/>mtoc++<sp/>executable,</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>which<sp/>generates<sp/>code<sp/>that<sp/>can<sp/>be<sp/>processed<sp/>by<sp/>the<sp/>doxygen<sp/>documentation<sp/>tool.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>On<sp/>the<sp/>other<sp/>hand,<sp/>it<sp/>can<sp/>neither<sp/>be<sp/>interpreted<sp/>by<sp/>MATLAB,<sp/>nor<sp/>can<sp/>it<sp/>be<sp/>compiled<sp/>with<sp/>a<sp/>C++<sp/>compiler.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Except<sp/>for<sp/>the<sp/>comments,<sp/>the<sp/>function<sp/>bodies<sp/>of<sp/>your<sp/>M-file<sp/>functions<sp/>are<sp/>untouched.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Consequently,<sp/>the<sp/>FILTER_SOURCE_FILES<sp/>doxygen<sp/>switch<sp/>(default<sp/>in<sp/>our<sp/>Doxyfile.template)<sp/>will<sp/>produce</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>attached<sp/>source<sp/>files<sp/>that<sp/>are<sp/>highly<sp/>readable<sp/>by<sp/>humans.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>Additionally,<sp/>links<sp/>in<sp/>the<sp/>doxygen<sp/>generated<sp/>documentation<sp/>to<sp/>the<sp/>source<sp/>code<sp/>of<sp/>functions<sp/>and<sp/>class<sp/>members<sp/>refer<sp/>to</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>the<sp/>correct<sp/>locations<sp/>in<sp/>the<sp/>source<sp/>code<sp/>browser.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>However,<sp/>the<sp/>line<sp/>numbers<sp/>most<sp/>likely<sp/>do<sp/>not<sp/>correspond<sp/>to<sp/>the<sp/>line<sp/>numbers<sp/>in<sp/>the<sp/>original<sp/>MATLAB<sp/>source<sp/>files.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_r_u_n___m_e_8m_1a543d1140deebeb0a247d2c4a9393691a" refkind="member"><highlight class="normal">noret::substitute<sp/><ref refid="_r_u_n___m_e_8m_1a543d1140deebeb0a247d2c4a9393691a" kindref="member" tooltip="% Convert src code into (encrypted) p-code, save outputs in bin/">RUN_ME</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>inputs/outputs<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>src<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>src<sp/>&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>input<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>bin<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>bin<sp/>&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>gitignore<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>.gitignore<sp/>&quot;</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">/*<sp/><sp/>list<sp/>of<sp/>files/directories<sp/>to<sp/>ignore</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>check<sp/>src/<sp/>is<sp/>on<sp/>the<sp/>path<sp/>(required)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isempty(regexp(path(),<sp/>escape(fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>src<sp/>&quot;</highlight><highlight class="normal">)),<sp/></highlight><highlight class="stringliteral">&quot;<sp/>once<sp/>&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error(</highlight><highlight class="stringliteral">&quot;<sp/>src/<sp/>file<sp/>must<sp/>be<sp/>on<sp/>the<sp/>path<sp/>for<sp/>deploypcode<sp/>to<sp/>work<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>end</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>clear<sp/>any<sp/>existing<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>rmdir(bin,</highlight><highlight class="stringliteral">&quot;<sp/>s<sp/>&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>mkdir(bin)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>deploy<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="deploypcode_8m_1aa8d85e1b3dbe7b553787f1f62c6c60e3" kindref="member" tooltip="DEPLOYPCODE recursively creates p-code versions of m-files in a given folder.">deploypcode</ref>(src,<sp/>bin,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>flattenFileTree<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>gitignore<sp/>&quot;</highlight><highlight class="normal">,gitignore)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>%<sp/>compile<sp/>documentation<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>ensure<sp/>setup<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>srcdir<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>src<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>srcdir<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>confdir<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>admin<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>config<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>outdir<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>doc<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>API<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>src<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/>v<sp/>=<sp/>ver(&apos;ivis&apos;);<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>proj_ver<sp/>=<sp/>v.Version;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>proj_desc<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>Realtime<sp/>eyetracking<sp/>toolbox<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>proj_logo<sp/>=<sp/>fullfile(<ref refid="ivisdir_8m_1aed802197769db954482085af54e9fa00" kindref="member">ivisdir</ref>(),</highlight><highlight class="stringliteral">&quot;<sp/>resources<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>branding<sp/>&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;<sp/>logo.png<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/>MatlabDocMaker.setup(srcdir,<sp/>confdir,<sp/>outdir,<sp/>proj_ver,<sp/>proj_desc,<sp/>proj_logo)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/><sp/>create<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_matlab_doc_maker" kindref="compound" tooltip="MatlabDocMaker: Automated documentation creation using doxygen and mtoc++ from within MatLab...">MatlabDocMaker</ref>.<ref refid="class_matlab_doc_maker_1a278883e6b83f6c6e7780e0d567dee119" kindref="member" tooltip="Creates the Doxygen documentation.">create</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/><sp/><sp/><sp/><sp/><sp/>remember<sp/>if<sp/>matlab<sp/>can&apos;t<sp/>find<sp/>any<sp/>of<sp/>the<sp/>requisite<sp/>tools<sp/>(e.g.,<sp/>if<sp/>system(&apos;latex<sp/>--version&apos;)<sp/>returns<sp/>command<sp/>not<sp/>found),<sp/>then<sp/>you&apos;ll<sp/>have<sp/>to<sp/>take<sp/>the<sp/>apparent<sp/>drastic<sp/>step<sp/>of<sp/>editing<sp/>the<sp/>matlab/bin<sp/>file.<sp/>E.g.,<sp/>add<sp/>this<sp/>to<sp/>first<sp/>content<sp/>line<sp/>of<sp/>the<sp/>file:</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/><sp/>export<sp/>PATH=$PATH:/usr/local/bin/:/usr/texbin<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>*<sp/>For<sp/>more<sp/>info<sp/>on<sp/>editing<sp/>the<sp/>Matlab<sp/>file,<sp/>see:</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/><sp/><sp/>http://atchieu.wordpress.com/2012/04/08/adding-system-paths-tousing-external-unix-tools-from-the-matlab-command-line/</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>If<sp/>errors<sp/>are<sp/>thrown,<sp/>try:</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Auto-indent<sp/>whole<sp/>file<sp/>(ctrl<sp/>+<sp/>i)</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>change<sp/>&apos;private&apos;<sp/>to<sp/>private,<sp/>etc.<sp/>(?)</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>n.b.,<sp/>exclude<sp/>__TRASH<sp/>folders<sp/>using<sp/>the<sp/>EXCLUDE_PATTERNS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>*/</highlight><highlight class="normal">__TRASH</highlight><highlight class="comment">/*<sp/>in<sp/>Doxyfile.template<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/RUN_ME.m"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1log_1_1_iv_raw_log" kind="class" prot="public">
+    <compoundname>ivis::log::IvRawLog</compoundname>
+    <basecompoundref refid="classivis_1_1log_1_1_iv_log" prot="public" virt="non-virtual">ivis::log::IvLog</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1log_1_1_iv_raw_log_1ae7c2dc13cb445ff9967794854c2a1b8c" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::log::IvRawLog::fid</definition>
+        <argsstring></argsstring>
+        <name>fid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="59" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1log_1_1_iv_raw_log_1a2824958e8ad213cb085bdb269d1eb2dd" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::log::IvRawLog::fn</definition>
+        <argsstring></argsstring>
+        <name>fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="60" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1log_1_1_iv_raw_log_1abc16043d0a10a7c5bee586fa64653d45" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::log::IvRawLog::fullFn</definition>
+        <argsstring></argsstring>
+        <name>fullFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="61" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a5093d3d9174fd8e5606f5bcc1f67463b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::log::IvRawLog::IvRawLog</definition>
+        <argsstring>(matlabtypesubstitute homeDir, matlabtypesubstitute fnPattern)</argsstring>
+        <name>IvRawLog</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>homeDir</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>fnPattern</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="classivis_1_1log_1_1_iv_raw_log" kindref="compound">IvRawLog</ref> Constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>homeDir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fnPattern</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>obj <ref refid="classivis_1_1log_1_1_iv_data_log" kindref="compound">IvDataLog</ref> object</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="72" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="72" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a8d10fe191ce5ff4ad0d0f61b94b9f90a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::log::IvRawLog::delete</definition>
+        <argsstring>()</argsstring>
+        <name>delete</name>
+        <briefdescription>
+<para><ref refid="classivis_1_1log_1_1_iv_raw_log" kindref="compound">IvRawLog</ref> Destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="99" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="99" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a4a9ff12bd03de817bb906cdfd6e2b368" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, <ref refid="classivis_1_1log_1_1_iv_raw_log_1ae7c2dc13cb445ff9967794854c2a1b8c" kindref="member">fid</ref> &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, <ref refid="classivis_1_1log_1_1_iv_raw_log_1abc16043d0a10a7c5bee586fa64653d45" kindref="member">fullFn</ref> &gt; &gt;</type>
+        <definition>mlhsSubst&lt; mlhsInnerSubst&lt; matlabtypesubstitute, fid &gt;,mlhsInnerSubst&lt; matlabtypesubstitute, fullFn &gt; &gt; ivis::log::IvRawLog::open</definition>
+        <argsstring>(matlabtypesubstitute fdir, matlabtypesubstitute fn)</argsstring>
+        <name>open</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>fdir</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>fn</declname>
+        </param>
+        <briefdescription>
+<para>Open a new output stream (writes directly to disc). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fdir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fid </para><simplesectsep/><para>fullFn</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="121" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="121" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a8a76b191921d098abb2d2afe74bb8ff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::log::IvRawLog::write</definition>
+        <argsstring>(matlabtypesubstitute dat, matlabtypesubstitute precision)</argsstring>
+        <name>write</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>dat</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>precision</declname>
+        </param>
+        <briefdescription>
+<para>Write new samples to the output (.raw) file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="177" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="177" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a8a689d1e413a162d4fe004600411a93b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::log::IvRawLog::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+<para>Close the output (.raw) file. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="194" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="194" bodyend="212"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a13a1c44e11209bbee277911fe7975b4e" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, data &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, data &gt; ivis::log::IvRawLog::read</definition>
+        <argsstring>(matlabtypesubstitute fullFn, matlabtypesubstitute precision, matlabtypesubstitute expectedNCols)</argsstring>
+        <name>read</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>fullFn</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>precision</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>expectedNCols</declname>
+        </param>
+        <briefdescription>
+<para>Load in binary data from a .raw file; this should be called from the appropriate IvDataInput class, which will be required to parse the data stream. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fullFn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>.raw file name, including path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>level of numeric precision (e.g., <computeroutput>single</computeroutput>) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expectedNCols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of columns per data row </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>data the data matrix</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="note"><para>This method has non-standard access specifiers: <computeroutput>Access = (<ref refid="classivis_1_1eyetracker_1_1_iv_data_input" kindref="compound">ivis.eyetracker.IvDataInput</ref>)</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="232" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="232" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a210dd54fa8d37a87b82170d2a3784c65" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::log::IvRawLog::getSetSingleton</definition>
+        <argsstring>(matlabtypesubstitute obj)</argsstring>
+        <name>getSetSingleton</name>
+        <reimplements refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3">getSetSingleton</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para><heading level="6">.</heading>
+</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ</para></simplesect>
+<simplesect kind="note"><para>This method has non-standard access specifiers: <computeroutput>Access = (<ref refid="class_singleton" kindref="compound">Singleton</ref>)</computeroutput> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="292" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="292" bodyend="296"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1a93a717c3dd97d8e4f6c20761316f0fb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::log::IvRawLog::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="300" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="300" bodyend="302"/>
+        <references refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" compoundref="_singleton_8m" startline="188" endline="211">Singleton::getInstanceSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_raw_log_1aa8adcb057e19c514589e960f8378de69" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>static noret::substitute ivis::log::IvRawLog::finishUp</definition>
+        <argsstring>()</argsstring>
+        <name>finishUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="304" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="304" bodyend="306"/>
+        <references refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" compoundref="_singleton_8m" startline="228" endline="241">Singleton::finishUpSingleton</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Responsibile for outputting raw eye-tracking data to a binary (.raw). file. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvRawLog Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1log_1_1_iv_raw_log" kindref="compound">IvRawLog</ref> - Constructor.</para></listitem><listitem><para>open - Open a new output stream (writes directly to disc).</para></listitem><listitem><para>write - Write new samples to the output (.raw) file.</para></listitem><listitem><para>close - Close the output (.raw) file.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 02/2013 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="796">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="797">
+        <label>handle</label>
+      </node>
+      <node id="795">
+        <label>ivis::log::IvLog</label>
+        <link refid="classivis_1_1log_1_1_iv_log"/>
+        <childnode refid="796" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="794">
+        <label>ivis::log::IvRawLog</label>
+        <link refid="classivis_1_1log_1_1_iv_raw_log"/>
+        <childnode refid="795" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="800">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="801" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="801">
+        <label>handle</label>
+      </node>
+      <node id="799">
+        <label>ivis::log::IvLog</label>
+        <link refid="classivis_1_1log_1_1_iv_log"/>
+        <childnode refid="800" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>ivis::log::IvRawLog</label>
+        <link refid="classivis_1_1log_1_1_iv_raw_log"/>
+        <childnode refid="799" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvRawLog.m" bodystart="19" bodyend="310"/>
+    <listofallmembers>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a8a689d1e413a162d4fe004600411a93b" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>close</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a8d10fe191ce5ff4ad0d0f61b94b9f90a" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>delete</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1ae7c2dc13cb445ff9967794854c2a1b8c" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>fid</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1aa8adcb057e19c514589e960f8378de69" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>finishUp</name></member>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a2824958e8ad213cb085bdb269d1eb2dd" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>fn</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a2c685a3134efa6beb336136ed53949b6" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>fnPattern</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1abc16043d0a10a7c5bee586fa64653d45" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>fullFn</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a93a717c3dd97d8e4f6c20761316f0fb5" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>getInstanceSingleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a210dd54fa8d37a87b82170d2a3784c65" prot="protected" virt="virtual"><scope>ivis::log::IvRawLog</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a77086270b0c765b296a66f7eadf9122d" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>homeDir</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>isinit</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a5093d3d9174fd8e5606f5bcc1f67463b" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>IvRawLog</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a4a9ff12bd03de817bb906cdfd6e2b368" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>open</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a13a1c44e11209bbee277911fe7975b4e" prot="protected" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>read</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>validateFn</name></member>
+      <member refid="classivis_1_1log_1_1_iv_raw_log_1a8a76b191921d098abb2d2afe74bb8ff5" prot="public" virt="non-virtual"><scope>ivis::log::IvRawLog</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

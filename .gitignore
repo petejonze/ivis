@@ -3,11 +3,13 @@
 #############
 
 admin/
-resources/
-logs/
 .svn/
 __TRASH/
-_private
+_private/
+bin/
 
 *.asv
 *.m~
+*.csv
+*.raw
+*.txt

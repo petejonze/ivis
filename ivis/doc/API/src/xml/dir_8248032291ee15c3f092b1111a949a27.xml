@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_8248032291ee15c3f092b1111a949a27" kind="dir">
+    <compoundname>ivis_util</compoundname>
+    <innerfile refid="blur_figure_8m">blurFigure.m</innerfile>
+    <innerfile refid="_c_circular_buffer_8m">CCircularBuffer.m</innerfile>
+    <innerfile refid="_c_expandable_buffer_8m">CExpandableBuffer.m</innerfile>
+    <innerfile refid="clear_abs_all_8m">clearAbsAll.m</innerfile>
+    <innerfile refid="close_abs_all_8m">closeAbsAll.m</innerfile>
+    <innerfile refid="cmp2pol_8m">cmp2pol.m</innerfile>
+    <innerfile refid="ellipse_8m">ellipse.m</innerfile>
+    <innerfile refid="enable_disable_fig_8m">enableDisableFig.m</innerfile>
+    <innerfile refid="findjobj_8m">findjobj.m</innerfile>
+    <innerfile refid="getjframe_8m">getjframe.m</innerfile>
+    <innerfile refid="get_tween_8m">getTween.m</innerfile>
+    <innerfile refid="hline_8m">hline.m</innerfile>
+    <innerfile refid="_input_handler_8m">InputHandler.m</innerfile>
+    <innerfile refid="_iv_hline_8m">IvHline.m</innerfile>
+    <innerfile refid="_lennard_jones_potential_8m">LennardJonesPotential.m</innerfile>
+    <innerfile refid="logadd_8m">logadd.m</innerfile>
+    <innerfile refid="logsubtract_8m">logsubtract.m</innerfile>
+    <innerfile refid="logsum_8m">logsum.m</innerfile>
+    <innerfile refid="my_flip_8m">myFlip.m</innerfile>
+    <innerfile refid="pol2cmp_8m">pol2cmp.m</innerfile>
+    <innerfile refid="rad2deg_8m">rad2deg.m</innerfile>
+    <innerfile refid="setfigdocked_8m">setfigdocked.m</innerfile>
+    <innerfile refid="_singleton_8m">Singleton.m</innerfile>
+    <innerfile refid="_singleton_manager_8m">SingletonManager.m</innerfile>
+    <innerfile refid="tabpanelexample_8m">tabpanelexample.m</innerfile>
+    <innerfile refid="test_suite_from_static_8m">testSuiteFromStatic.m</innerfile>
+    <innerfile refid="text_loc_8m">textLoc.m</innerfile>
+    <innerfile refid="_truncated_gaussian_8m">TruncatedGaussian.m</innerfile>
+    <innerfile refid="truncnormrnd_8m">truncnormrnd.m</innerfile>
+    <innerfile refid="vline_8m">vline.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/ivis_util/"/>
+  </compounddef>
+</doxygen>

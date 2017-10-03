@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classhandle" kind="class" prot="public">
+    <compoundname>handle</compoundname>
+    <derivedcompoundref refid="class_c_circular_buffer" prot="public" virt="non-virtual">CCircularBuffer</derivedcompoundref>
+    <derivedcompoundref refid="class_c_expandable_buffer" prot="public" virt="non-virtual">CExpandableBuffer</derivedcompoundref>
+    <derivedcompoundref refid="class_c_list" prot="public" virt="non-virtual">CList</derivedcompoundref>
+    <derivedcompoundref refid="class_c_queue" prot="public" virt="non-virtual">CQueue</derivedcompoundref>
+    <derivedcompoundref refid="class_c_stack" prot="public" virt="non-virtual">CStack</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1classifier_1_1_iv_classifier" prot="public" virt="non-virtual">ivis::classifier::IvClassifier</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1graphic_1_1_iv_screen_object" prot="public" virt="non-virtual">ivis::graphic::IvScreenObject</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1main_1_1_iv_main" prot="public" virt="non-virtual">ivis::main::IvMain</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" prot="public" virt="non-virtual">ivis::math::pdf::IvHitFunc</derivedcompoundref>
+    <derivedcompoundref refid="class_lennard_jones_potential" prot="public" virt="non-virtual">LennardJonesPotential</derivedcompoundref>
+    <derivedcompoundref refid="class_singleton" prot="public" virt="non-virtual">Singleton</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classhandle_1aa72d46799b8792edbf8acb7349680c15" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::addlistener</definition>
+        <argsstring></argsstring>
+        <name>addlistener</name>
+        <briefdescription>
+<para>Creates a listener for the specified event and assigns a callback function to execute when the event occurs. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhandle_1a8cfc3dab9d3ecc55b0b3449c2c7afd6f" kindref="member">notify</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="106" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a8cfc3dab9d3ecc55b0b3449c2c7afd6f" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::notify</definition>
+        <argsstring></argsstring>
+        <name>notify</name>
+        <briefdescription>
+<para>Broadcast a notice that a specific event is occurring on a specified handle object or array of handle objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="112" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a1d55d41c7af285b8fe7ab17ed5e176f6" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::delete</definition>
+        <argsstring></argsstring>
+        <name>delete</name>
+        <briefdescription>
+<para>Handle object destructor method that is called when the object&apos;s lifecycle ends. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="117" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1adedb524cfbdf6a5d946cc57ef6745099" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::disp</definition>
+        <argsstring></argsstring>
+        <name>disp</name>
+        <briefdescription>
+<para>Handle object disp method which is called by the display method. See the MATLAB disp function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="122" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="122" bodyend="-1"/>
+        <referencedby refid="class_c_stack_1a560475f9311fc8174e740ff36b08aaee" compoundref="_c_stack_8m" startline="133" endline="142">CStack::display</referencedby>
+        <referencedby refid="class_c_queue_1a09f4c7dbf632d4a5128f64ac3cd3861c" compoundref="_c_queue_8m" startline="183" endline="203">CQueue::display</referencedby>
+        <referencedby refid="class_c_list_1aafd46e7079e9868441261841eca044bb" compoundref="_c_list_8m" startline="195" endline="216">CList::display</referencedby>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3501">findjobj</referencedby>
+        <referencedby refid="ivis_demo002__keyboard_handling_8m_1a61b9e537f5081f54d546db6d05e73fe1" compoundref="ivis_demo002__keyboard_handling_8m" startline="17" endline="94">ivisDemo002_keyboardHandling</referencedby>
+        <referencedby refid="ivis_demo011__advanced_classifiers_8m_1a89a492ec440e442b6ab8caddd9f9e05c" compoundref="ivis_demo011__advanced_classifiers_8m" startline="17" endline="149">ivisDemo011_advancedClassifiers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a2e26be32e99b2b98db18bb538638b814" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::display</definition>
+        <argsstring></argsstring>
+        <name>display</name>
+        <briefdescription>
+<para>Handle object display method called when MATLAB software interprets an expression returning a handle object that is not terminated by a semicolon. See the MATLAB display function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="127" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a000398ac90dd973b4618c739e6fd64a9" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::findobj</definition>
+        <argsstring></argsstring>
+        <name>findobj</name>
+        <briefdescription>
+<para>Finds objects matching the specified conditions from the input array of handle objects. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="132" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1ab4b410e2df940296c9d2563898c951fe" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::findprop</definition>
+        <argsstring></argsstring>
+        <name>findprop</name>
+        <briefdescription>
+<para>Returns a meta.property objects associated with the specified property name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="137" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="137" bodyend="-1"/>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3501">findjobj</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1ad9c0557345e68bd933889c28b2a9484b" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::fields</definition>
+        <argsstring></argsstring>
+        <name>fields</name>
+        <briefdescription>
+<para>Returns a cell array of string containing the names of public properties. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="142" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="142" bodyend="-1"/>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3501">findjobj</referencedby>
+        <referencedby refid="getjframe_8m_1ad0bc460bbca1ba653976170df814b673" compoundref="getjframe_8m" startline="17" endline="117">getjframe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a7086577f3953d4bd9ce17b07c4f6e141" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::fieldnames</definition>
+        <argsstring></argsstring>
+        <name>fieldnames</name>
+        <briefdescription>
+<para>Returns a cell array of string containing the names of public properties. See the MATLAB fieldnames function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="147" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="147" bodyend="-1"/>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3501">findjobj</referencedby>
+        <referencedby refid="getjframe_8m_1ad0bc460bbca1ba653976170df814b673" compoundref="getjframe_8m" startline="17" endline="117">getjframe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a72617e83dc9643b61ed8af63e5058ccf" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::isvalid</definition>
+        <argsstring></argsstring>
+        <name>isvalid</name>
+        <briefdescription>
+<para>Returns a logical array in which elements are true if the corresponding elements in the input array are valid handles. This method is Sealed so you cannot override it in a handle subclass. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="153" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="153" bodyend="-1"/>
+        <referencedby refid="class_singleton_1a97cfe5f890309949b5e9c1eed0cde4f2" compoundref="_singleton_8m" startline="115" endline="130">Singleton::getInstanceSingleton</referencedby>
+        <referencedby refid="class_singleton_1aacbf70cab8562c384c30566e5198c069" compoundref="_singleton_8m" startline="104" endline="112">Singleton::isinit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a2fb018cd603a5ced1783bfb20c6cce86" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::eq</definition>
+        <argsstring></argsstring>
+        <name>eq</name>
+        <briefdescription>
+<para>Relational functions example. See details for more information. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Other possible relational operators:</title><para>-ne -lt -le -gt -ge</para></simplesect>
+Relational functions return a logical array of the same size as the pair of input handle object arrays. Comparisons use a number associated with each handle. You can assume that the same two handles will compare as equal and the repeated comparison of any two handles will yield the same result in the same MATLAB session. Different handles are always not-equal. The order of handles is purely arbitrary, but consistent. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="167" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1acd9b55f206750374c4dfca508cfff084" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::transpose</definition>
+        <argsstring></argsstring>
+        <name>transpose</name>
+        <briefdescription>
+<para>Transposes the elements of the handle object array. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="172" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1a6dc9f59313af54f392d8e273d71ace7b" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::permute</definition>
+        <argsstring></argsstring>
+        <name>permute</name>
+        <briefdescription>
+<para>Rearranges the dimensions of the handle object array. See the MATLAB permute function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="177" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1acef58ae5e52255411835a4fcaf2edd49" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::reshape</definition>
+        <argsstring></argsstring>
+        <name>reshape</name>
+        <briefdescription>
+<para>hanges the dimensions of the handle object array to the specified dimensions. See the MATLAB reshape function. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="182" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhandle_1ad11b0be4c173a9d31122c1298eb96a97" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute handle::sort</definition>
+        <argsstring></argsstring>
+        <name>sort</name>
+        <briefdescription>
+<para>ort the handle objects in any array in ascending or descending order. </para>        </briefdescription>
+        <detaileddescription>
+<para>The order of handles is purely arbitrary, but reproducible in a given MATLAB session. See the MATLAB sort function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="189" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="189" bodyend="-1"/>
+        <referencedby refid="findjobj_8m_1a8311fcd5b4cbed7c1adaac0251cbf4d8" compoundref="findjobj_8m" startline="17" endline="3501">findjobj</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Matlab&apos;s base handle class (documentation generation substitute) </para>    </briefdescription>
+    <detaileddescription>
+<para>As doxygen does not know the class &quot;handle&quot; from itself, many classes do not get rendered within the documentation and the correct root class is not even displayed. This workaround guarantees a correct (also graphical) representation of the class hierarchy.</para><para>Note here that by having the type handle it could also mean to have a vector or matrix of handles. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="575">
+        <label>ivis::classifier::IvClassifierVector</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier_vector"/>
+        <childnode refid="572" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="584">
+        <label>ivis::math::pdf::IvHfGUmix</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="593">
+        <label>ivis::calibration::IvCalibration</label>
+        <link refid="classivis_1_1calibration_1_1_iv_calibration"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="571">
+        <label>CStack</label>
+        <link refid="class_c_stack"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="577">
+        <label>ivis::graphic::IvGraphic</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic"/>
+        <childnode refid="576" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="583">
+        <label>ivis::math::pdf::IvHfGauss2D</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="598">
+        <label>ivis::eyetracker::IvMouse</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_mouse"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>ivis::math::pdf::IvHfGUmix2D</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_g_umix2_d"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="589">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="600">
+        <label>ivis::eyetracker::IvTobii</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_tobii"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>handle</label>
+        <link refid="classhandle"/>
+      </node>
+      <node id="587">
+        <label>ivis::math::pdf::IvHfUniform2D</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>ivis::gui::IvGUIclassifierVector</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_vector"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="574">
+        <label>ivis::classifier::IvClassifierLL</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier_l_l"/>
+        <childnode refid="572" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="588">
+        <label>LennardJonesPotential</label>
+        <link refid="class_lennard_jones_potential"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>ivis::gui::IvGUIeyetrackTemporal</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_temporal"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>ivis::graphic::IvGraphicCompound</label>
+        <link refid="classivis_1_1graphic_1_1_iv_graphic_compound"/>
+        <childnode refid="576" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>MyInputHandler</label>
+        <link refid="class_my_input_handler"/>
+        <childnode refid="590" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="573">
+        <label>ivis::classifier::IvClassifierGrid</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier_grid"/>
+        <childnode refid="572" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>ivis::video::TrackBox</label>
+        <link refid="classivis_1_1video_1_1_track_box"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="606">
+        <label>ivis::gui::IvGUIclassifierGrid</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_grid"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>InputHandler</label>
+        <link refid="class_input_handler"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>ivis::eyetracker::IvManual</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_manual"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>ivis::math::pdf::IvHfGauss</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="594">
+        <label>ivis::eyetracker::IvDataInput</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_data_input"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="570">
+        <label>CQueue</label>
+        <link refid="class_c_queue"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>ivis::eyetracker::IvDummy</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_dummy"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="615">
+        <label>ivis::main::IvBroadcaster</label>
+        <link refid="classivis_1_1main_1_1_iv_broadcaster"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="618">
+        <label>ivis::main::IvParams</label>
+        <link refid="classivis_1_1main_1_1_iv_params"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>ivis::main::IvListener</label>
+        <link refid="classivis_1_1main_1_1_iv_listener"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>ivis::eyetracker::IvSimulator</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_simulator"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="619">
+        <label>ivis::math::IvUnitHandler</label>
+        <link refid="classivis_1_1math_1_1_iv_unit_handler"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="603">
+        <label>ivis::gui::IvGUIcalibration</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_icalibration"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="617">
+        <label>ivis::video::IvWebcam</label>
+        <link refid="classivis_1_1video_1_1_iv_webcam"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>ivis::log::IvLog</label>
+        <link refid="classivis_1_1log_1_1_iv_log"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="581">
+        <label>ivis::math::pdf::IvHitFunc</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="614">
+        <label>ivis::log::IvRawLog</label>
+        <link refid="classivis_1_1log_1_1_iv_raw_log"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>ivis::graphic::IvPrior</label>
+        <link refid="classivis_1_1graphic_1_1_iv_prior"/>
+        <childnode refid="576" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>ivis::gui::IvGUIeyetrackSpatial</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ieyetrack_spatial"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>ivis::log::IvDataLog</label>
+        <link refid="classivis_1_1log_1_1_iv_data_log"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="620">
+        <label>ivis::video::IvVideo</label>
+        <link refid="classivis_1_1video_1_1_iv_video"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="572">
+        <label>ivis::classifier::IvClassifier</label>
+        <link refid="classivis_1_1classifier_1_1_iv_classifier"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>ivis::gui::IvGUIwebcam</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iwebcam"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="568">
+        <label>CExpandableBuffer</label>
+        <link refid="class_c_expandable_buffer"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="569">
+        <label>CList</label>
+        <link refid="class_c_list"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="567">
+        <label>CCircularBuffer</label>
+        <link refid="class_c_circular_buffer"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="607">
+        <label>ivis::gui::IvGUIclassifierLL</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>ivis::eyetracker::IvEyelink</label>
+        <link refid="classivis_1_1eyetracker_1_1_iv_eyelink"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>ivis::audio::IvAudio</label>
+        <link refid="classivis_1_1audio_1_1_iv_audio"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="586">
+        <label>ivis::math::pdf::IvHfUniform</label>
+        <link refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="605">
+        <label>ivis::gui::IvGUIclassifierBox</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier_box"/>
+        <childnode refid="604" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="576">
+        <label>ivis::graphic::IvScreenObject</label>
+        <link refid="classivis_1_1graphic_1_1_iv_screen_object"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>ivis::main::IvMain</label>
+        <link refid="classivis_1_1main_1_1_iv_main"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>ivis::gui::IvGUIelement</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_ielement"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="604">
+        <label>ivis::gui::IvGUIclassifier</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_iclassifier"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>ivis::gui::IvGUI</label>
+        <link refid="classivis_1_1gui_1_1_iv_g_u_i"/>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" line="91" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/admin/config/class_substitutes.c" bodystart="91" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classhandle_1aa72d46799b8792edbf8acb7349680c15" prot="public" virt="non-virtual"><scope>handle</scope><name>addlistener</name></member>
+      <member refid="classhandle_1a1d55d41c7af285b8fe7ab17ed5e176f6" prot="public" virt="non-virtual"><scope>handle</scope><name>delete</name></member>
+      <member refid="classhandle_1adedb524cfbdf6a5d946cc57ef6745099" prot="public" virt="non-virtual"><scope>handle</scope><name>disp</name></member>
+      <member refid="classhandle_1a2e26be32e99b2b98db18bb538638b814" prot="public" virt="non-virtual"><scope>handle</scope><name>display</name></member>
+      <member refid="classhandle_1a2fb018cd603a5ced1783bfb20c6cce86" prot="public" virt="non-virtual"><scope>handle</scope><name>eq</name></member>
+      <member refid="classhandle_1a7086577f3953d4bd9ce17b07c4f6e141" prot="public" virt="non-virtual"><scope>handle</scope><name>fieldnames</name></member>
+      <member refid="classhandle_1ad9c0557345e68bd933889c28b2a9484b" prot="public" virt="non-virtual"><scope>handle</scope><name>fields</name></member>
+      <member refid="classhandle_1a000398ac90dd973b4618c739e6fd64a9" prot="public" virt="non-virtual"><scope>handle</scope><name>findobj</name></member>
+      <member refid="classhandle_1ab4b410e2df940296c9d2563898c951fe" prot="public" virt="non-virtual"><scope>handle</scope><name>findprop</name></member>
+      <member refid="classhandle_1a72617e83dc9643b61ed8af63e5058ccf" prot="public" virt="non-virtual"><scope>handle</scope><name>isvalid</name></member>
+      <member refid="classhandle_1a8cfc3dab9d3ecc55b0b3449c2c7afd6f" prot="public" virt="non-virtual"><scope>handle</scope><name>notify</name></member>
+      <member refid="classhandle_1a6dc9f59313af54f392d8e273d71ace7b" prot="public" virt="non-virtual"><scope>handle</scope><name>permute</name></member>
+      <member refid="classhandle_1acef58ae5e52255411835a4fcaf2edd49" prot="public" virt="non-virtual"><scope>handle</scope><name>reshape</name></member>
+      <member refid="classhandle_1ad11b0be4c173a9d31122c1298eb96a97" prot="public" virt="non-virtual"><scope>handle</scope><name>sort</name></member>
+      <member refid="classhandle_1acd9b55f206750374c4dfca508cfff084" prot="public" virt="non-virtual"><scope>handle</scope><name>transpose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

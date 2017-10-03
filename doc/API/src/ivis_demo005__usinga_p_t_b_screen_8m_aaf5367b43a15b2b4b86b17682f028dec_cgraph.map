@@ -1,5 +1,0 @@
-<map id="ivisDemo005_usingaPTBScreen" name="ivisDemo005_usingaPTBScreen">
-<area shape="rect" id="node2" href="$clear_abs_all_8m.html#acbd9097b185d4a7f5cce6af1d935a29d" title="Clear command window: clc;." alt="" coords="275,12,360,39"/>
-<area shape="rect" id="node4" href="$namespaceivis_1_1broadcaster.html#a035702262427ed8c3b5b3d6d6d025b02" title="SCREEN wrapper for PTB&#39;s Screen command." alt="" coords="253,63,381,105"/>
-<area shape="rect" id="node3" href="$class_c_expandable_buffer.html#af0eeb26f4827cd47e3566c925f9a06ff" title="clear Reset counters and set all elements to NaN (maintain final capacity)." alt="" coords="429,5,568,46"/>
-</map>

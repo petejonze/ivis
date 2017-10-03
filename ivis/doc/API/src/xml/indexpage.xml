@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Ivis 1.4</title>
+    <detaileddescription>
+<para>A toolbox for doing extracting, processing, classifying, visualising, and storing eyetracking data.</para><para><simplesect kind="par"><title>Homepage</title><para><ulink url="http://petejonze.github.io/ivis/">http://petejonze.github.io/ivis/</ulink></para></simplesect>
+<simplesect kind="par"><title>To reference (and for further info)</title><para><ulink url="xxxx">Jones, P.R. (in prep). Ivis v1.0: A Matlab toolkit for eyetracking experiments.</ulink></para></simplesect>
+<simplesect kind="par"><title>For info on code</title><para>ivis - main package, containing the code<linebreak/>
+ ivis_util - additional utility functions<linebreak/>
+ ivisDemos - demos showing how it all works<linebreak/>
+</para></simplesect>
+<simplesect kind="par"><title>To install</title><para>download from the GitHub hompage, and run InstallIvis</para></simplesect>
+<simplesect kind="par"><title>For technical (API) documentation</title><para><ulink url="doc/doxygen/out/index.html">doc/doxygen/out/index.html</ulink></para></simplesect>
+This code is licenced under CC BY-SA 3.0. This permits the code to be used for free, even in commercial applications, as long as: (1) the present work is cited, and (2) the derivative work is licensed under the same terms.</para><para>Copyright 2014 : P R Jones <hruler/>
+ </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

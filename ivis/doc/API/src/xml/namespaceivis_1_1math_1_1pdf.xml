@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis_1_1math_1_1pdf" kind="namespace">
+    <compoundname>ivis::math::pdf</compoundname>
+    <innerclass refid="classivis_1_1math_1_1pdf_1_1_iv_hf_gauss2_d" prot="public">ivis::math::pdf::IvHfGauss2D</innerclass>
+    <innerclass refid="classivis_1_1math_1_1pdf_1_1_iv_hf_uniform2_d" prot="public">ivis::math::pdf::IvHfUniform2D</innerclass>
+    <innerclass refid="classivis_1_1math_1_1pdf_1_1_iv_hit_func" prot="public">ivis::math::pdf::IvHitFunc</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+math/+pdf/IvHfGauss2D.m" line="3"/>
+  </compounddef>
+</doxygen>

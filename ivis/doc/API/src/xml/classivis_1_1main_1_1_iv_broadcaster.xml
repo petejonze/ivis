@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1main_1_1_iv_broadcaster" kind="class" prot="public">
+    <compoundname>ivis::main::IvBroadcaster</compoundname>
+    <basecompoundref refid="class_singleton" prot="public" virt="non-virtual">Singleton</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classivis_1_1main_1_1_iv_broadcaster_1afae759acdda1500644ecc3dc511ceb16" prot="public" static="yes" mutable="no">
+        <type>const matlabtypesubstitute</type>
+        <definition>const matlabtypesubstitute ivis::main::IvBroadcaster::ALLOW_IMPLICIT_CONSTRUCTION</definition>
+        <argsstring></argsstring>
+        <name>ALLOW_IMPLICIT_CONSTRUCTION</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="59" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1main_1_1_iv_broadcaster_1ada043654da202086e22c85f7d07f67db" prot="public" static="no" mutable="no">
+        <type>EVENT</type>
+        <definition>ivis::main::IvBroadcaster::PreFlip</definition>
+        <argsstring></argsstring>
+        <name>PreFlip</name>
+        <briefdescription>
+<para>PreFlip. </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="event_1_event000001"><xreftitle>Events</xreftitle><xrefdescription><para>PreFlip </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="71" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1main_1_1_iv_broadcaster_1abd4b46f849b6693dc036b19c294628e0" prot="public" static="no" mutable="no">
+        <type>EVENT</type>
+        <definition>ivis::main::IvBroadcaster::SaveData</definition>
+        <argsstring></argsstring>
+        <name>SaveData</name>
+        <briefdescription>
+<para>SaveData. </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="event_1_event000002"><xreftitle>Events</xreftitle><xrefdescription><para>SaveData </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="78" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_broadcaster_1a2c27b9d57a6fa22fa21f30079671aa35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ivis::main::IvBroadcaster::IvBroadcaster</definition>
+        <argsstring>()</argsstring>
+        <name>IvBroadcaster</name>
+        <briefdescription>
+<para><ref refid="classivis_1_1main_1_1_iv_broadcaster" kindref="compound">IvBroadcaster</ref> constructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>InH</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>IvVideo </para></simplesect>
+<simplesect kind="version"><para>25/03/13 [PJ] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="97" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="97" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_broadcaster_1ab7ba54b578ebd8968c0a8a3be732c1f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>noret::substitute ivis::main::IvBroadcaster::delete</definition>
+        <argsstring>()</argsstring>
+        <name>delete</name>
+        <briefdescription>
+<para>Object destructor. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="version"><para>25/03/13 [PJ] </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="110" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="110" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-static-func">
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_broadcaster_1a5d659a0a7da526cf01a5f0d0a245619f" prot="protected" static="yes" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::main::IvBroadcaster::getSetSingleton</definition>
+        <argsstring>(matlabtypesubstitute obj)</argsstring>
+        <name>getSetSingleton</name>
+        <reimplements refid="class_singleton_1ae3587fe55ef96e531b75338b4b61b64e">getSetSingleton</reimplements>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="132" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="132" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_broadcaster_1a029498392fa3c6738bd5f99f1595bdde" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, obj &gt;</type>
+        <definition>static mlhsInnerSubst&lt;matlabtypesubstitute,obj&gt; ivis::main::IvBroadcaster::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="140" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="140" bodyend="142"/>
+        <references refid="class_singleton_1a97cfe5f890309949b5e9c1eed0cde4f2" compoundref="_singleton_8m" startline="115" endline="130">Singleton::getInstanceSingleton</references>
+      </memberdef>
+      <memberdef kind="function" id="classivis_1_1main_1_1_iv_broadcaster_1af18b397946731fb60b48460c9e94d83b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>noret::substitute</type>
+        <definition>static noret::substitute ivis::main::IvBroadcaster::finishUp</definition>
+        <argsstring>()</argsstring>
+        <name>finishUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="144" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="144" bodyend="146"/>
+        <references refid="class_singleton_1a4fbb83cfbc5e23be2e5c019530e6f202" compoundref="_singleton_8m" startline="133" endline="144">Singleton::finishUpSingleton</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>dfadsfdasf. </para>    </briefdescription>
+    <detaileddescription>
+<para>dfdfdfdfdfdfdfdfdf</para><para><simplesect kind="par"><title>IvBroadcaster Methods</title><para><itemizedlist>
+<listitem><para><ref refid="classivis_1_1main_1_1_iv_broadcaster" kindref="compound">IvBroadcaster</ref> - Constructor.</para></listitem></itemizedlist>
+</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 03/2013 : first_build<linebreak/>
+</para></simplesect>
+<simplesect kind="par"><title>Todo</title><para>none</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Sealed</computeroutput> and cannot be derived from. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="726">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="727" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="727">
+        <label>handle</label>
+      </node>
+      <node id="725">
+        <label>ivis::main::IvBroadcaster</label>
+        <link refid="classivis_1_1main_1_1_iv_broadcaster"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="729">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="730">
+        <label>handle</label>
+      </node>
+      <node id="728">
+        <label>ivis::main::IvBroadcaster</label>
+        <link refid="classivis_1_1main_1_1_iv_broadcaster"/>
+        <childnode refid="729" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" line="20" bodyfile="/Users/petejonze/Dropbox/MatlabToolkits/ivis_new_tmpwrapper/ivis/src/+ivis/+main/IvBroadcaster.m" bodystart="19" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1afae759acdda1500644ecc3dc511ceb16" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>ALLOW_IMPLICIT_CONSTRUCTION</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1ab7ba54b578ebd8968c0a8a3be732c1f6" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>delete</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1af18b397946731fb60b48460c9e94d83b" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>finishUp</name></member>
+      <member refid="class_singleton_1a4fbb83cfbc5e23be2e5c019530e6f202" prot="protected" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1a029498392fa3c6738bd5f99f1595bdde" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>getInstance</name></member>
+      <member refid="class_singleton_1a97cfe5f890309949b5e9c1eed0cde4f2" prot="protected" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>getInstanceSingleton</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1a5d659a0a7da526cf01a5f0d0a245619f" prot="protected" virt="virtual"><scope>ivis::main::IvBroadcaster</scope><name>getSetSingleton</name></member>
+      <member refid="class_singleton_1ac0bee3e1434e45ae70ae246a1ebe6b43" prot="protected" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>initialise</name></member>
+      <member refid="class_singleton_1aacbf70cab8562c384c30566e5198c069" prot="protected" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>isinit</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1a2c27b9d57a6fa22fa21f30079671aa35" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>IvBroadcaster</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1ada043654da202086e22c85f7d07f67db" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>PreFlip</name></member>
+      <member refid="classivis_1_1main_1_1_iv_broadcaster_1abd4b46f849b6693dc036b19c294628e0" prot="public" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>SaveData</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::main::IvBroadcaster</scope><name>Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

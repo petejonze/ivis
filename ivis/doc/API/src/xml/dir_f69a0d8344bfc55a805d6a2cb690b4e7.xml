@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_f69a0d8344bfc55a805d6a2cb690b4e7" kind="dir">
+    <compoundname>+ivis/+eyetracker</compoundname>
+    <innerfile refid="_iv_data_input_8m">IvDataInput.m</innerfile>
+    <innerfile refid="_iv_dummy_8m">IvDummy.m</innerfile>
+    <innerfile refid="_iv_eyelink_8m">IvEyelink.m</innerfile>
+    <innerfile refid="_iv_eye_tribe_8m">IvEyeTribe.m</innerfile>
+    <innerfile refid="_iv_manual_8m">IvManual.m</innerfile>
+    <innerfile refid="_iv_mouse_8m">IvMouse.m</innerfile>
+    <innerfile refid="_iv_simulator_8m">IvSimulator.m</innerfile>
+    <innerfile refid="_iv_smi_8m">IvSmi.m</innerfile>
+    <innerfile refid="_iv_tobii_8m">IvTobii.m</innerfile>
+    <innerfile refid="_iv_tobii_eye_x_8m">IvTobiiEyeX.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+eyetracker/"/>
+  </compounddef>
+</doxygen>

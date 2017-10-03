@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis" kind="namespace">
+    <compoundname>ivis</compoundname>
+    <innernamespace refid="namespaceivis_1_1audio">ivis::audio</innernamespace>
+    <innernamespace refid="namespaceivis_1_1broadcaster">ivis::broadcaster</innernamespace>
+    <innernamespace refid="namespaceivis_1_1calibration">ivis::calibration</innernamespace>
+    <innernamespace refid="namespaceivis_1_1classifier">ivis::classifier</innernamespace>
+    <innernamespace refid="namespaceivis_1_1eyetracker">ivis::eyetracker</innernamespace>
+    <innernamespace refid="namespaceivis_1_1graphic">ivis::graphic</innernamespace>
+    <innernamespace refid="namespaceivis_1_1gui">ivis::gui</innernamespace>
+    <innernamespace refid="namespaceivis_1_1log">ivis::log</innernamespace>
+    <innernamespace refid="namespaceivis_1_1main">ivis::main</innernamespace>
+    <innernamespace refid="namespaceivis_1_1math">ivis::math</innernamespace>
+    <innernamespace refid="namespaceivis_1_1test">ivis::test</innernamespace>
+    <innernamespace refid="namespaceivis_1_1video">ivis::video</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+audio/IvAudio.m" line="1"/>
+  </compounddef>
+</doxygen>

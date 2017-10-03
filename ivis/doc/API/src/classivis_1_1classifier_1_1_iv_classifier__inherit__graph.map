@@ -1,0 +1,7 @@
+<map id="ivis::classifier::IvClassifier" name="ivis::classifier::IvClassifier">
+<area shape="rect" id="node4" href="$classivis_1_1classifier_1_1_iv_classifier_box.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli..." alt="" coords="513,5,705,32"/>
+<area shape="rect" id="node5" href="$classivis_1_1classifier_1_1_iv_classifier_grid.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the num gaze samples falli..." alt="" coords="512,56,707,83"/>
+<area shape="rect" id="node6" href="$classivis_1_1classifier_1_1_iv_classifier_l_l.html" title="Singleton instantiation of IvClassifier, in which the decision variable is weighted cumulative&#45;loglik..." alt="" coords="517,107,701,133"/>
+<area shape="rect" id="node7" href="$classivis_1_1classifier_1_1_iv_classifier_vector.html" title="Singleton instantiation of IvClassifier, in which the decision variable is the additive movement vect..." alt="" coords="523,158,695,199"/>
+<area shape="rect" id="node2" href="$classivis_1_1broadcaster_1_1_iv_listener.html" title="Methods for pairing (or unpairing) an arbitrary function with a given broadcaster event name..." alt="" coords="115,74,243,115"/>
+</map>

@@ -1,4 +1,0 @@
-<map id="ivis::graphic::IvGraphicCompound" name="ivis::graphic::IvGraphicCompound">
-<area shape="rect" id="node2" href="$classivis_1_1graphic_1_1_iv_screen_object.html" title="Generic object that may appear on the screen (primarily an object of type IvGraphic)." alt="" coords="5,171,195,197"/>
-<area shape="rect" id="node3" href="$classivis_1_1broadcaster_1_1_iv_listener.html" title="Methods for pairing (or unpairing) an arbitrary function with a given broadcaster event name..." alt="" coords="36,81,164,122"/>
-</map>

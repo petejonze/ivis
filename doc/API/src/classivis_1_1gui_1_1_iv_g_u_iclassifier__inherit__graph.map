@@ -1,8 +1,0 @@
-<map id="ivis::gui::IvGUIclassifier" name="ivis::gui::IvGUIclassifier">
-<area shape="rect" id="node9" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_box.html" title="Singleton for displaying box classifier parameters and status." alt="" coords="683,5,875,35"/>
-<area shape="rect" id="node11" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_grid.html" title="Singleton for displaying grid classifier parameters and status." alt="" coords="681,59,877,90"/>
-<area shape="rect" id="node13" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_l_l.html" title="Singleton for displaying log&#45;likelihood classifier parameters and status." alt="" coords="687,114,870,145"/>
-<area shape="rect" id="node15" href="$classivis_1_1gui_1_1_iv_g_u_iclassifier_vector.html" title="Singleton for displaying vector classifier parameters and status." alt="" coords="694,168,863,218"/>
-<area shape="rect" id="node2" href="$classivis_1_1gui_1_1_iv_g_u_ielement.html" title="Generic GUI Java window, to be instantiated by a subclass." alt="" coords="251,87,416,118"/>
-<area shape="rect" id="node4" href="$class_singleton.html" title="A pseudo&#45;singleton class pattern for Matlab." alt="" coords="120,87,202,118"/>
-</map>

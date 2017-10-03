@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="classivis_1_1log_1_1_iv_log" kind="class" prot="public">
+    <compoundname>ivis::log::IvLog</compoundname>
+    <basecompoundref refid="class_singleton" prot="public" virt="non-virtual">Singleton</basecompoundref>
+    <derivedcompoundref refid="classivis_1_1log_1_1_iv_data_log" prot="public" virt="non-virtual">ivis::log::IvDataLog</derivedcompoundref>
+    <derivedcompoundref refid="classivis_1_1log_1_1_iv_raw_log" prot="public" virt="non-virtual">ivis::log::IvRawLog</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classivis_1_1log_1_1_iv_log_1a77086270b0c765b296a66f7eadf9122d" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::log::IvLog::homeDir</definition>
+        <argsstring></argsstring>
+        <name>homeDir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="54" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classivis_1_1log_1_1_iv_log_1a2c685a3134efa6beb336136ed53949b6" prot="public" static="no" mutable="no">
+        <type>matlabtypesubstitute</type>
+        <definition>matlabtypesubstitute ivis::log::IvLog::fnPattern</definition>
+        <argsstring></argsstring>
+        <name>fnPattern</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="55" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>mlhsInnerSubst&lt; matlabtypesubstitute, fullFn &gt;</type>
+        <definition>mlhsInnerSubst&lt; matlabtypesubstitute, fullFn &gt; ivis::log::IvLog::validateFn</definition>
+        <argsstring>(matlabtypesubstitute fullFn, matlabtypesubstitute logType)</argsstring>
+        <name>validateFn</name>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>fullFn</declname>
+        </param>
+        <param>
+          <type>matlabtypesubstitute</type>
+          <declname>logType</declname>
+        </param>
+        <briefdescription>
+<para>Confirm whether file can be found, and append path if necessary. If not initially found based on the specified file name, will search again inside the default logs directory (i.e., in case user omited to supply the path). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fullFn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the file name, either including the path, or will search in the appropriate ivis/logs subdirectory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>raw</computeroutput> or <computeroutput>data</computeroutput> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fullFn the file name, including the path</para></simplesect>
+<simplesect kind="date"><para>26/06/14 </para></simplesect>
+<simplesect kind="author"><para>PRJ </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="65" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="65" bodyend="75"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract interface for data storage. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>IvLog Methods</title><para>none</para></simplesect>
+<simplesect kind="see"><para>none</para></simplesect>
+<simplesect kind="par"><title>Example</title><para>none</para></simplesect>
+<simplesect kind="par"><title>Author</title><para>Pete R Jones <ulink url="mailto:petejonze@gmail.com">petejonze@gmail.com</ulink></para></simplesect>
+<simplesect kind="par"><title>Verinfo</title><para>1.0 PJ 06/2014 : first_build<linebreak/>
+</para></simplesect>
+Copyright 2014 : P R Jones <hruler/>
+</para><para><simplesect kind="note"><para>This class has the class property <computeroutput>Abstract</computeroutput> and needs to be inherited in order to be instantiable. </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="787">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="788" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="788">
+        <label>handle</label>
+      </node>
+      <node id="786">
+        <label>ivis::log::IvLog</label>
+        <link refid="classivis_1_1log_1_1_iv_log"/>
+        <childnode refid="787" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>ivis::log::IvRawLog</label>
+        <link refid="classivis_1_1log_1_1_iv_raw_log"/>
+        <childnode refid="786" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>ivis::log::IvDataLog</label>
+        <link refid="classivis_1_1log_1_1_iv_data_log"/>
+        <childnode refid="786" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="792">
+        <label>Singleton</label>
+        <link refid="class_singleton"/>
+        <childnode refid="793" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="793">
+        <label>handle</label>
+      </node>
+      <node id="791">
+        <label>ivis::log::IvLog</label>
+        <link refid="classivis_1_1log_1_1_iv_log"/>
+        <childnode refid="792" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" line="20" bodyfile="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+log/IvLog.m" bodystart="19" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_singleton_1a2c9595cf36bb535d4109ae28253237c3" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>finishUpSingleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a2c685a3134efa6beb336136ed53949b6" prot="public" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>fnPattern</name></member>
+      <member refid="class_singleton_1ab3469ccad7eaeb94360fdc3b537b3dbb" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>getInstanceSingleton</name></member>
+      <member refid="class_singleton_1a338c7e82475ead2f89a5256391e7e7f3" prot="protected" virt="pure-virtual"><scope>ivis::log::IvLog</scope><name>getSetSingleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a77086270b0c765b296a66f7eadf9122d" prot="public" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>homeDir</name></member>
+      <member refid="class_singleton_1a7001949d1270fb90a10e44f06759edaf" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>initialise</name></member>
+      <member refid="class_singleton_1abbdb598397d4c5455dfb0941400cd8f5" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>isinit</name></member>
+      <member refid="class_singleton_1a0e21dfc9afab45b0a6a70f6665ce5819" prot="protected" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>Singleton</name></member>
+      <member refid="classivis_1_1log_1_1_iv_log_1a54e71e6a66005be148fbc393af4d7247" prot="public" virt="non-virtual"><scope>ivis::log::IvLog</scope><name>validateFn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

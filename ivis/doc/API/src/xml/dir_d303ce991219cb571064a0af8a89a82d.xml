@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="dir_d303ce991219cb571064a0af8a89a82d" kind="dir">
+    <compoundname>+ivis/+calibration</compoundname>
+    <innerfile refid="_iv_calibration_8m">IvCalibration.m</innerfile>
+    <innerfile refid="measure_point_8m">measurePoint.m</innerfile>
+    <innerfile refid="_track_box_8m">TrackBox.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+calibration/"/>
+  </compounddef>
+</doxygen>

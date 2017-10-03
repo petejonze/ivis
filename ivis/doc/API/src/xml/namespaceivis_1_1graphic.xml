@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.3.1">
+  <compounddef id="namespaceivis_1_1graphic" kind="namespace">
+    <compoundname>ivis::graphic</compoundname>
+    <innerclass refid="classivis_1_1graphic_1_1_iv_graphic" prot="public">ivis::graphic::IvGraphic</innerclass>
+    <innerclass refid="classivis_1_1graphic_1_1_iv_graphic_compound" prot="public">ivis::graphic::IvGraphicCompound</innerclass>
+    <innerclass refid="classivis_1_1graphic_1_1_iv_prior" prot="public">ivis::graphic::IvPrior</innerclass>
+    <innerclass refid="classivis_1_1graphic_1_1_iv_screen_object" prot="public">ivis::graphic::IvScreenObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/Dropbox/MatlabToolkits/ivis/src/+ivis/+graphic/IvGraphic.m" line="2"/>
+  </compounddef>
+</doxygen>
