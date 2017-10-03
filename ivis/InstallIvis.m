@@ -9,14 +9,14 @@ ok = true;
 x = ver();
 
 % Check that MATLAB is sufficiently up to date
-v = str2double(x(strcmpi('MATLAB',x.Name)).Version);
+v = str2double(x(strcmpi('MATLAB',{x.Name})).Version);
 if v < 8.5
   	ok = false;
     warning('InstallIvis:missingDependencies','MATALB version older than 8.5 (2015) detected. The ivis toolbox does not work on older platforms (e.g., due to the use of OOP syntax)');
 end
 
 % Check that MATLAB stats toolbox is installed
-if ~ismember('Statistics Toolbox', {x.Name})
+if ~ismember('Statistics and Machine Learning Toolbox', {x.Name})
   	ok = false;
     warning('InstallIvis:missingDependencies','Statistics Toolbox not found. The ivis toolbox will not work without it!');
 else
@@ -118,5 +118,30 @@ else
     fprintf('Add to path success.\n\n');
 end
 
+% create necessary additional subdirectories if required
+% (NB: these may have been lost during the upload/download to GitHub, as
+% Git has no concept of empty directories)
+fullFn = fullfile(ivisdir(), 'logs');
+if ~exist(fullFn, 'dir')
+    fprintf('Directory not found (%s), creating..\n', fullFn);
+    mkdir(fullFn);
+end
+fullFn = fullfile(ivisdir(), 'logs', 'data');
+if ~exist(fullFn, 'dir')
+    fprintf('Directory not found (%s), creating..\n', fullFn);
+    mkdir(fullFn);
+end
+fullFn = fullfile(ivisdir(), 'logs', 'raw');
+if ~exist(fullFn, 'dir')
+    fprintf('Directory not found (%s), creating..\n', fullFn);
+    mkdir(fullFn);
+end
+fullFn = fullfile(ivisdir(), 'logs', 'diary');
+if ~exist(fullFn, 'dir')
+    fprintf('Directory not found (%s), creating..\n', fullFn);
+    mkdir(fullFn);
+end
+
+% finish up
 fprintf('\n\nivis has been successfully installed. Enjoy!\n-------------------\n\n');
 fprintf('New to ivis? Try running some of the demos in "help ivisDemos".\n');
