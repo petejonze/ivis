@@ -9,7 +9,7 @@ ivis a Matlab toolbox for eye-gaze conditional psychophysical experiments. Key f
 The toolkit is written in an Object Oriented style, so should be easy to extend/develop, and it incorporates various 'professional' features, such as doxygen documentation, and unit testing.
 		
 ### Quick Start: Setting up
-1. Download the toolkit (using the link on the left) and unzip it into an appropriate directory (e.g., C:\toolkits\ivis)
+1. Download the toolkit (e.g., by clicking the "Clone or download" button) and unzip it into an appropriate directory (e.g., C:\toolkits\ivis)
 2. Run InstallIvis.m (This will prompt you to install any required 3rd-party toolboxes; see list below)
 3. Test whether it is working by running through the demos in \ivis\demos
 
