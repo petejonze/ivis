@@ -7,9 +7,7 @@ admin/
 __TRASH/
 _private/
 bin/
+logs/
 
 *.asv
 *.m~
-*.csv
-*.raw
-*.txt
