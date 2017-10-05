@@ -26,7 +26,7 @@ function [] = ivisDemo007_classifyingFixations()
     
     % Initialise toolbox
     IvMain.assertVersion(1.5);
-    params = IvMain.initialise(IvParams.getDefaultConfig());
+    params = IvMain.initialise(IvParams.getDefaultConfig('graphics.runScreenChecks',false));
     [eyeTracker, ~, InH, winhandle] = IvMain.launch();
     
     % Prepare graphic
