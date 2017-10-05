@@ -47,11 +47,20 @@ Users familiar with Git can ensure that they are always using the most recent ve
 
 ### FAQ
 **Q** How can I find out more about this code?
+
 **A** E-mail me!
 
 ---------------------------
 
+**Q** Ehat should my directory structure look like?
+
+**A** For me, it looks like this:
+- Dropbox\MatlabToolkits\ivis-master\ivis\Contents.m
+- Dropbox\MatlabToolkits\Psychtoolbox\Contents.m
+
+---------------------------
 **Q** I've noticed a bug in file x, what should I do?  
+
 **A** E-mail and let me know. Better yet, fix it and send me a copy. Or sign up to Git to get direct access to the primary source code.
 
 
