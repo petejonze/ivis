@@ -16,18 +16,17 @@ if ~isempty(AllFig)
 end
 
 % Clear loaded functions:
-warning off
 clear all;
 clear('functions');
 clear('classes');
 clear('global');
+% clear('import');  % Not from inside a function!
 clear('variables');
 clear('java');
-warning on
 
 % Stop and delete timers:
 AllTimer = timerfindall;
-if ~isempty(AllTimer)
+if ~isempty(AllTimer)  % EDITED: added check
    stop(AllTimer);
    delete(AllTimer);
 end
@@ -40,20 +39,16 @@ for iLoadedM = 1:length(LoadedM)
    try
     munlock(aLoadedM);
    catch, end
-    warning off
    clear(aLoadedM);
-    warning on
 end   
 
 % Close open files:
 fclose('all');
 
 % final pass
-warning off
 clear all;
 clear('functions');
 clear('classes');
 clear('global');
 clear('variables');
 clear('java');
-warning on

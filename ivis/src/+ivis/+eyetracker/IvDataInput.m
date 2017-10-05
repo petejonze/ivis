@@ -3,8 +3,7 @@ classdef (Abstract) IvDataInput < Singleton
 	% Handles the crucial data processing task (applying calibration
 	% filtering, interpolating, classifying, sending data to logs, etc.). 
     %
-    % n.b. subclasses should NOT repeated the Singleton blurb (if want to
-    % be able to access generically, via DataInput.getSingleton()
+    % 	NB: subclasses should NOT repeat the Singleton blurb
     %
     % IvDataInput Abstract Methods:
     %   * connect	- Establish a link to the eyetracking hardware.
@@ -25,6 +24,7 @@ classdef (Abstract) IvDataInput < Singleton
     %   * init              - Initialise parameters, create GUIS, etc.
     %   * readDataLog       - Parse data stored in a .csv data file.
     %   * estimateLag       - Estimate expected lag given a specified set of parameters.
+    %   * getTrackerTypes   - Get list of IvDataInput subclasses in the ivis.eyetracker package directory.
     %         
     % See Also:
     %   none
@@ -37,21 +37,20 @@ classdef (Abstract) IvDataInput < Singleton
     %
     % Verinfo:
     %   1.0 PJ 02/2013 : first_build\n
+    %   1.1 PJ 10/2017 : ivis v1.5 build\n
     %
     % @todo discard old points (particularly useful for avoiding
     %       slowdowns/dropped-frames?
     % @todo transfer hardcoded values to IvConfig
     % @todo discard samples where only 1 eye is available? (re: Sam Wass)
-    % @todo make px2deg mapping dynamic based on subject movement?
     % @todo in the long run the eyeball z data should be filtered/buffered
     %       through this class too. At the moment the logic is internal to each
     %       eyetracker, since some trackers don't return this information.
     %       But most do now, and it would be good to deal with it properly.
     %       This would allow proper retrieval (e.g., get last points since
     %       T), and should improve accuracy too (e.g., low pass filtering).
-    % @todo allow setting of trackerInFrontMonitor_mm
     %
-    % Copyright 2014 : P R Jones
+    % Copyright 2017 : P R Jones <petejonze@gmail.com>
     % *********************************************************************
     % 
     
@@ -1097,6 +1096,36 @@ classdef (Abstract) IvDataInput < Singleton
              lag_msec = ivisOverhead + queryTime + (N+.5) * (1/params.eyetracker.sampleRate);
          end
 
+         function trackerTypes = getTrackerTypes()
+             % Get list of IvDataInput subclasses in the ivis.eyetracker
+             % package directory.
+             %
+             % @return 	trackerTypes Cell array of names
+             %
+             % @date   	04/10/17
+             % @author 	PRJ
+             %             
+
+             % list of matlab files in directory
+             files = dir(fullfile(ivisdir(),'src','+ivis','+eyetracker', '*.m'));
+             
+             % find eyetracker classes
+             idx = false(length(files), 1);
+             for i=1:numel(files)
+                 [~,filename,~]=fileparts(files(i).name); % get just the filename
+                 % remove file from list if it is not a subclass of IvDataInput
+                 idx(i) = ~ismember('ivis.eyetracker.IvDataInput', superclasses(sprintf('ivis.eyetracker.%s', filename)));
+             end
+             files(idx) = [];
+             
+             % strip off 'Iv' prefeix, and '.m' suffix, and convert to cell array
+             trackerTypes = regexprep({files.name},'(^Iv)|(\.m)','');
+             
+             % remove Dummy and Manual
+             trackerTypes(ismember(trackerTypes,'Dummy')) = [];
+             trackerTypes(ismember(trackerTypes,'Manual')) = [];
+             trackerTypes(ismember(trackerTypes,'Simulator')) = [];
+         end
      end
      
          

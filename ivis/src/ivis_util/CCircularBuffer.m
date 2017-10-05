@@ -1,9 +1,19 @@
 classdef CCircularBuffer < handle
     % circular-buffer (or: 'ring buffer') data-structure.
     %
-    %   FiFo: first-in first-out
-    %   n.b., columns inputs only!
-    %   for example usage, see: CCircularBuffer.unitTests();
+    % CCircularBuffer is used for working-memory stores. It is a matrix of
+    % fixed length, in which new data overwrites the oldest previous
+    % element. Circular buffers are used extensively as a temporary store
+    % for incoming data, in instances where it is necessary to look ahead
+    % by a number of samples (e.g., to smooth or interpolate data, or
+    % identify saccades). Any old data due to be overwritten are
+    % automatically returned whenever new element(s) are added.
+    %
+    %   NB: FiFo (first-in first-out)
+    %
+    %   NB: columns inputs only!
+    %
+    %   NB: for usage, see: CCircularBuffer.unitTests();
     %
     % CCircularBuffer Methods:
     %   * CCircularBuffer	- Constructor

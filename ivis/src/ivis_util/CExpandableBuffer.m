@@ -1,10 +1,21 @@
 classdef CExpandableBuffer < handle
     % matrix data-structure that expands by a factor when capacity is exceeded.
+    % 
+    % CExpandableBuffer is used for long-term memory stores. It is simply a
+    % matrix that grows by a factor of k (k = 2 by default) whenever it is
+    % >90% full. This is a crude but effective way to minimise processing
+    % overheads from expanding arrays of timeseries data. In practice, it
+    % is hoped that users will allocate sufficient memory to ensure that
+    % expansion is not required (e.g., by default IvDataLog allocates
+    % sufficient memory – 54000 rows -- to permit 15 minutes of continuous
+    % tracking at 60 Hz, before expanding :: implement).         
     %
-    % n.b., columns inputs only!
-    % although it can expand, it is always best to allocate sufficient memory
-    % in advance, where possible.
-    % for example usage, see: CExpandableBuffer.unitTests();
+    %   NB: Only accepts columns inputs!
+    %
+    %   NB: although it can expand, it is always best to allocate
+    %   sufficient memory in advance, where possible.
+    %
+    %   NB: for usage, see: CCircularBuffer.unitTests();
     %
     % CExpandableBuffer Methods:
     %   * CExpandableBuffer	- Constructor
@@ -22,7 +33,8 @@ classdef CExpandableBuffer < handle
     %   CCircularBuffer
     %
     % Example:
-    %   x = CExpandableBuffer(10,3), x.put([1 2 3; 11 12 13]), x.get()
+    %   x = CExpandableBuffer(10,3), x.put([1 2 3; 11 12 13]), x.get();
+    %   CExpandableBuffer.unitTests();
     %
     % Author:
     %   Pete R Jones <petejonze@gmail.com>

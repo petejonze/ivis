@@ -19,11 +19,10 @@ classdef (Sealed) IvParams < Singleton
     %
     % Verinfo:
     %   1.0 PJ 02/2013 : first_build\n
+    %   1.1 PJ 10/2017 : ivis v1.5 build\n
     %
-    % @todo: http://www.mathworks.co.uk/help/matlab/matlab_oop/listening-for-changes-to-property-values.html
     %
-    %
-    % Copyright 2014 : P R Jones
+    % Copyright 2017 : P R Jones <petejonze@gmail.com>
     % *********************************************************************
     % 
 
@@ -356,6 +355,9 @@ classdef (Sealed) IvParams < Singleton
             ivis.main.IvMain.assertVersion(params.main.ivVersion);
             % store toolbox name
             tmp = ver('ivis');
+            if length(tmp)>1
+                error('Multiple copies of the ivis toolbox detected?? Manually remove additional versions from the path, or run InstalIvis.m, before continuing');
+            end
             params.main.ivName = tmp.Name;
             
             % Insert defaults(?) could do with doing properly
