@@ -1,5 +1,5 @@
 ### Project Description
-ivis a Matlab toolbox for eye-gaze conditional psychophysical experiments. Key features include:
+ivis a Matlab toolbox for running gaze-contingent psychophysical experiments. Key features include:
 - A standardised interface for a range of eye-tracking hardware (Tobii, SMI, Eyelink, etc.)
 - Automated buffering, smoothing, and storing of eye-tracking data
 - Support for manual claibration/drift-correction of the eye-tracker
