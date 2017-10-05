@@ -8,7 +8,7 @@ function [] = ivisDemo011_advancedClassifiers(classifiertype)
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo010_readingRawGazeData.m
 %                   ivisDemo012_advancedClassifiers2_logLikelihoods.m

@@ -27,7 +27,7 @@ function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
     try
         % launch ivis
         IvMain.assertVersion(1.5);
-        IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'eyetracker.type','mouse')); % 'mouse' 'TobiiEyeX'));
+        IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'eyetracker.type','mouse', 'saccade.GUIidx',3)); % 'mouse' 'TobiiEyeX'));
         [eyeTracker, ~, InH, winhandle] = IvMain.launch();
         
         % adaptive track
@@ -60,8 +60,9 @@ function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
         
         % run
         while ~aT.isFinished
-
+            
             % WAIT FOR GO KEY
+            fprintf('\nReady. Press SPACE to start trial\n');
             while InH.getInput() ~= InH.INPT_SPACE.code
               	eyeTracker.refresh(false); % false to supress logging
                 WaitSecs(.05);
@@ -84,6 +85,7 @@ function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
                 % poll eyetracker & update classifier
                 [n, saccadeOnTime, blinkTime] = eyeTracker.refresh(); %#ok
                 if ~isempty(saccadeOnTime)  || ~isempty(blinkTime)
+                    fprintf('Blink or saccade detected. Restarting classifier\n');
                     myClassifier.start(false); % restart classifier after a saccade or blink(!)
                 else
                     myClassifier.update();

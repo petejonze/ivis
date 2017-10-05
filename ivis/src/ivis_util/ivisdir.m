@@ -1,3 +1,3 @@
 function dir = ivisdir()
-    dir = [fileparts(which('ivisdir')) filesep];
+    dir = [fileparts(which('InstallIvis')) filesep];
 end

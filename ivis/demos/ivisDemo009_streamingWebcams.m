@@ -5,7 +5,7 @@ function [] = ivisDemo009_streamingWebcams()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo008_playingVideos.m
 %                   ivisDemo010_readingRawGazeData.m

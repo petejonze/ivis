@@ -6,7 +6,7 @@ function [] = ivisDemo005_usingaPTBScreen()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo004_eyeTracking.m
 %                   ivisDemo006_trackboxVisualisation.m

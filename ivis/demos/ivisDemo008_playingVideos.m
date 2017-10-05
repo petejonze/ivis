@@ -17,7 +17,7 @@ function [] = ivisDemo008_playingVideos()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo007_classifyingFixations.m
 %                   ivisDemo009_streamingWebcams.m

@@ -5,7 +5,7 @@ function [] = ivisDemo007_classifyingFixations()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo006_trackboxVisualisation.m
 %                   ivisDemo008_playingVideos.m

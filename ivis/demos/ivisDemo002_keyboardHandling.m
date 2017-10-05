@@ -4,7 +4,7 @@
 %
 % Requires:         ivis toolbox v1.5
 %   
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:       	ivisDemo001_checkInstalled.m
 %                   ivisDemo003_mouseTracking.m

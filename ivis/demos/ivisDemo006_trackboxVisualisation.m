@@ -8,7 +8,7 @@ function [] = ivisDemo006_trackboxVisualisation()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo005_usingaPTBScreen.m
 %                   ivisDemo007_classifyingFixations.m

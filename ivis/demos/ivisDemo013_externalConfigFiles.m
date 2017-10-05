@@ -5,7 +5,7 @@ function [] = ivisDemo013_externalConfigFiles()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo012_advancedClassifiers2_logLikelihoods.m
 %                   ivisDemo014_eyetrackerCalibration.m

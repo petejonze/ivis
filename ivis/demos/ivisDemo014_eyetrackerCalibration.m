@@ -9,7 +9,7 @@ function [] = ivisDemo014_eyetrackerCalibration()
 %
 % Requires:         ivis toolbox v1.5
 %
-% Matlab:           v2012 onwards
+% Matlab:           v2015 onwards
 %
 % See also:         ivisDemo013_externalConfigFiles.m
 %                   ivisDemo015_identifyingSaccades.m
