@@ -1,19 +1,17 @@
-function [] = ivisDemo015_identifyingSaccades()
-% ivisDemo015_identifyingSaccades. Saccade identification.
+function [] = ivisDemo011_externalConfigFiles()
+% ivisDemo011_externalConfigFiles. Launch ivis using parameters stored in an external XML file.
 %
-%     n.b. currently requires the user to manually set
-%     IvDataInput.TAG_AND_CLEAN = true (and requires some pretty vigorous mouse
-%     movements! See: IvParams.getDefaultConfig saccade criteria...
+%   Try editing the XML file stored in the ./demoResources directory
 %
 % Requires:         ivis toolbox v1.5
 %
 % Matlab:           v2015 onwards
 %
-% See also:         ivisDemo014_eyetrackerCalibration.m
-%                   ivisDemo016_audio.m
+% See also:         ivisDemo010_readingRawGazeData.m
+%                   ivisDemo012_eyetrackerCalibration.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
-% 
+%
 % Version History:  1.0.0	PJ  22/06/2013    Initial build.
 %                   1.1.0	PJ  18/10/2013    General tidy up (ivis 1.4).
 %
@@ -22,37 +20,30 @@ function [] = ivisDemo015_identifyingSaccades()
 % *********************************************************************
 % 
 
-
-
     % clear memory and set workspace
     clearAbsAll();
     import ivis.main.* ivis.control.*;
 
-    % verify expected version of ivis toolbox is installed
+    % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
+    fn = fullfile(ivisdir(),'demos','resources','IvConfig_example.xml');
+    IvMain.initialise(fn);
+    [eyetracker, ~, InH, winhandle] = IvMain.launch();
 
-    % initialise ivis
-    IvMain.initialise(IvParams.getSimpleConfig('GUI.useGUI',true, 'eyetracker.GUIidx',2, 'eyetracker.saccade.GUIidx',3, 'eyetracker.saccade.doBeep',true));
-
-    % luanch ivis
-    [eyetracker, ~, InH] = IvMain.launch();
-
-    % run!
     try % wrap in try..catch to ensure a graceful exit
-        
-        % continue until keystroke
+        % Idle until keypress
         fprintf('Try moving the mouse cursor around the target monitor.\nPress SPACE to exit\n');
         while ~any(InH.getInput() == InH.INPT_SPACE.code)
-            eyetracker.refresh(true); % false to suppress data logging
+            DrawFormattedText(winhandle, 'Press SPACE to quit'); % give feedback on PTB screen
+            Screen('Flip', winhandle); % n.b., requires that ivis.broadcaster.* has been imported
+            eyetracker.refresh(false); % false to suppress data logging
             WaitSecs(1/60);
         end
-        
     catch ME
         IvMain.finishUp();
         rethrow(ME);
     end
-    
+
     % that's it! close open windows and release memory
     IvMain.finishUp();
-    
-end    
+end

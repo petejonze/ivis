@@ -1,5 +1,5 @@
-function [] = ivisDemo014_eyetrackerCalibration()
-% ivisDemo014_eyetrackerCalibration. Calibration using polynomial surface fitting and
+function [] = ivisDemo012_eyetrackerCalibration()
+% ivisDemo012_eyetrackerCalibration. Calibration using polynomial surface fitting and
 % drift correction. In this demo the mouse cursor represents the 'true'
 % fixation position, and the white dot texture represents the misaligned
 % 'estimated' position (before and after calibration).
@@ -11,8 +11,8 @@ function [] = ivisDemo014_eyetrackerCalibration()
 %
 % Matlab:           v2015 onwards
 %
-% See also:         ivisDemo013_externalConfigFiles.m
-%                   ivisDemo015_identifyingSaccades.m
+% See also:         ivisDemo011_externalConfigFiles.m
+%                   ivisDemo013_identifyingSaccades.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -31,14 +31,13 @@ function [] = ivisDemo014_eyetrackerCalibration()
 
     % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false, 'graphics.runScreenChecks',false));
+    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false, 'graphics.runScreenChecks',false, 'log.raw.enable',false, 'log.diary.enable',false));
     [eyetracker, log, InH, winhandle] = IvMain.launch();
 
     try % wrap in try..catch to ensure a graceful exit
         
         % initialise
         ShowCursor()
-        eyetracker.updateDriftCorrection([0 0], [100 100], 99);
         calib = IvCalibration.getInstance();
 
         % idle until keypress
@@ -60,6 +59,7 @@ function [] = ivisDemo014_eyetrackerCalibration()
         n = size(targs_xy, 1);
         for i = 1:n
             while ~any(InH.getInput() == InH.INPT_SPACE.code)
+                DrawFormattedText(winhandle, 'Position mouse and press SPACE'); % give feedback on PTB screen
                 eyetracker.refresh(); % logging enabled
                 Screen('DrawDots', winhandle, targs_xy(i,:), 40, [255 0 0]); % , 40, [255 0 0], [], 1);
                 Screen('Flip', winhandle);
@@ -77,7 +77,7 @@ function [] = ivisDemo014_eyetrackerCalibration()
         fprintf('Try moving the mouse cursor around the target monitor.\nPress SPACE to exit\n');
         while ~any(InH.getInput() == InH.INPT_SPACE.code)
             eyetracker.refresh(false); % false to suppress data logging
-            DrawFormattedText(winhandle, 'Calibration complete. Try looking around. Press space to end');
+            DrawFormattedText(winhandle, 'Calibration complete. Try looking around. Press space to end'); % give feedback on PTB screen
             Screen('Flip', winhandle);
             WaitSecs(1/60);
         end

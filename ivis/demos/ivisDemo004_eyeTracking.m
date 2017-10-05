@@ -35,8 +35,8 @@ trackertype = trackertypes{idx};
 
 % verify, initialise, and launch the ivis toolbox
 IvMain.assertVersion(1.5);
-IvMain.initialise(IvParams.getSimpleConfig('graphics.testScreenNum',1, 'GUI.screenNum',1, 'GUI.useGUI',true, 'eyetracker.GUIidx',2, 'saccade.GUIidx',3, 'eyetracker.type',trackertype)); % , 'eyetracker.fixationMarker','cursor'));
-[eyetracker, ~, InH] = IvMain.launch(1);
+IvMain.initialise(IvParams.getSimpleConfig('GUI.useGUI',true, 'eyetracker.GUIidx',2, 'saccade.GUIidx',3, 'eyetracker.type',trackertype, 'log.raw.enable',false, 'log.diary.enable',false));
+[eyetracker, ~, InH] = IvMain.launch();
 
 % run!
 try % wrap in try..catch to ensure a graceful exit

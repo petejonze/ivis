@@ -1,5 +1,5 @@
-function [] = ivisDemo016_audio()
-% ivisDemo016_audio. Shows how to use the IvAudio class to present sounds.
+function [] = ivisDemo014_playingAudio()
+% ivisDemo014_playingAudio. Shows how to use the IvAudio class to present sounds.
 %
 %   Demonstrates the basics of how to synthesise, load, and calibrate
 %   sounds. BE CAREFUL! Don't run this with headphones on unless you're
@@ -9,7 +9,8 @@ function [] = ivisDemo016_audio()
 %   
 % Matlab:           v2015 onwards
 %
-% See also:         ivisDemo015_identifyingSaccades.m
+% See also:         ivisDemo013_identifyingSaccades.m
+%                   ivisDemo015_playingVideos.m
 %
 % Author(S):    	Pete R Jones <petejonze@gmail.com>
 %

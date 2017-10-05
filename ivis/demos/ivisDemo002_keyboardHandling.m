@@ -27,7 +27,7 @@ import ivis.main.* ivis.control.*;
 
 % verify, initialise, and launch the ivis toolbox
 IvMain.assertVersion(1.5);
-IvMain.initialise(IvParams.getSimpleConfig());
+IvMain.initialise(IvParams.getSimpleConfig('log.diary.enable',false));
 [~, ~, InH] = IvMain.launch();
 
 try
@@ -53,7 +53,7 @@ try
     fprintf('Now we''ll try again, using a custom class that has additional keys mapped\n\n');
 
     % Re-load ivis
-    params = IvParams.getSimpleConfig('keyboard.handlerClass','MyDemoInputHandler'); % substitute our custom input handler class (see the resources subdirectory)
+    params = IvParams.getSimpleConfig('keyboard.handlerClass','MyDemoInputHandler', 'log.diary.enable',false); % substitute our custom input handler class (see the resources subdirectory)
     IvMain.initialise(params);
     [~, ~, InH] = IvMain.launch();
 

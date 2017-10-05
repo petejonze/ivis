@@ -25,11 +25,20 @@ function [] = ivisDemo006_trackboxVisualisation()
 
     % clear memory and set workspace
     clearAbsAll();
-    import ivis.main.* ivis.control.* ivis.video.* ivis.calibration.* ivis.broadcaster.*;
+    import ivis.main.* ivis.control.* ivis.video.* ivis.calibration.* ivis.broadcaster.* ivis.eyetracker.*;
+
+    % query user for eyetracker type
+    trackertypes = IvDataInput.getTrackerTypes();
+    fprintf('Which tracker do you want to use?\n');
+    for i = 1:length(trackertypes)
+        fprintf('  [%i] %s\n', i, trackertypes{i});
+    end
+    idx = getIntegerInput('Enter number: ', false, 99, [1 length(trackertypes)]);
+    trackertype = trackertypes{idx};
 
     % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-    IvMain.initialise(IvParams.getDefaultConfig('eyetracker.type','TobiiEyeX', 'graphics.testScreenNum',1, 'graphics.runScreenChecks',false));
+    IvMain.initialise(IvParams.getDefaultConfig('eyetracker.type',trackertype, 'graphics.runScreenChecks',false, 'log.raw.enable',false, 'log.diary.enable',false));
     [eyetracker, ~, InH, winhandle] = IvMain.launch();
 
     try % wrap in try..catch to ensure a graceful exit
@@ -40,6 +49,7 @@ function [] = ivisDemo006_trackboxVisualisation()
         % continue until keystroke
         fprintf('Try looking around the target monitor.\nPress SPACE to exit\n');
         while ~any(InH.getInput() == InH.INPT_SPACE.code)
+          	DrawFormattedText(winhandle, 'press SPACE when done'); % give feedback on PTB screen
             Screen('Flip', winhandle); % n.b., requires that ivis.broadcaster.* has been imported
             eyetracker.refresh(false); % false to suppress data logging
             WaitSecs(1/60);

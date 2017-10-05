@@ -71,7 +71,7 @@ classdef (Sealed) IvMouse < ivis.eyetracker.IvDataInput
             % @author   PRJ
             %
             
-            obj.Fs = 60;
+            obj.Fs = 120;
             obj.resetClock();
             obj.windowPtrOrScreenNumber = ivis.main.IvParams.getInstance().graphics.testScreenNum;
         end

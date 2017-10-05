@@ -6,8 +6,8 @@
 %
 % Matlab:           v2015 onwards
 %
-% See also:         ivisDemo009_streamingWebcams.m
-%                   ivisDemo011_advancedClassifiers.m
+% See also:         ivisDemo009_advancedClassifiers2.m
+%                   ivisDemo011_externalConfigFiles.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 % 

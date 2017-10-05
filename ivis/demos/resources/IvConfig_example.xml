@@ -8,8 +8,9 @@
 
 	<graphics>
 		<useScreen>true</useScreen>
+		<runScreenChecks>false</runScreenChecks>
 		<targFrameRate>30</targFrameRate>
-		<testScreenNum>1</testScreenNum>
+		<testScreenNum>0</testScreenNum>
 		<fullScreen>true</fullScreen>
 		<testScreenWidth></testScreenWidth>
 		<testScreenHeight></testScreenHeight>
@@ -101,11 +102,16 @@
 	</calibration>
 		
 	<log>
+		<diary>
+			<enable>false</enable> 
+		</diary>
 		<raw>
+			<enable>false</enable>
 			<dir>$iv/logs/raw</dir> 
 			<filepattern>IvRaw-$time.raw</filepattern>
 		</raw>
 		<data>
+			<autoSaveOnClose>false</autoSaveOnClose>
 			<dir>$iv/logs/data</dir>
 			<filepattern>IvData-$time.raw</filepattern>
 			<arraySize>10000</arraySize>

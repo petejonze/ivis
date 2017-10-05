@@ -47,16 +47,10 @@ if ~exist('SingletonManager','file')
     error('Could not find example utility function: SingletonManager.m');
 end
 if ~ismember(fullfile(ivisdir(),'demos'), pathCell)
-    error('Could not find ivis/demo subdirectory on the path');
-end
-if ~ismember(fullfile(ivisdir(),'demos'), pathCell)
     error('Could not find ivis/demos subdirectory on the path');
 end
 if ~ismember(fullfile(ivisdir(),'demos','resources'), pathCell)
     error('Could not find ivis/demos/resources subdirectory on the path');
-end
-if ~ismember(fullfile(ivisdir(),'demos'), pathCell)
-    error('Could not find ivis/demos subdirectory on the path');
 end
 if ~exist(fullfile(ivisdir(),'resources'), 'dir')
     error('Could not detect ivis/resources subdirectory');

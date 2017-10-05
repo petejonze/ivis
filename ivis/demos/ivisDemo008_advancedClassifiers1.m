@@ -1,5 +1,5 @@
-function [] = ivisDemo011_advancedClassifiers(classifiertype)
-% ivisDemo011_advancedClassifiers. Various advanced classifiers (box, log-likelihood, direction).
+function [] = ivisDemo008_advancedClassifiers1(classifiertype)
+% ivisDemo008_advancedClassifiers1. Various advanced classifiers (box, log-likelihood, direction).
 %
 %   Edit the "classifiertype" variable to see different functionality
 %
@@ -10,8 +10,8 @@ function [] = ivisDemo011_advancedClassifiers(classifiertype)
 %
 % Matlab:           v2015 onwards
 %
-% See also:         ivisDemo010_readingRawGazeData.m
-%                   ivisDemo012_advancedClassifiers2_logLikelihoods.m
+% See also:         ivisDemo007_classifyingFixations.m
+%                   ivisDemo009_advancedClassifiers2.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -39,7 +39,7 @@ function [] = ivisDemo011_advancedClassifiers(classifiertype)
         % launch ivis
         IvMain.assertVersion(1.5);
         params = IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.runScreenChecks',false));
-        [eyeTracker, ~, InH, winhandle] = IvMain.launch();
+        [eyeTracker, logs, InH, winhandle] = IvMain.launch();
 
         % make graphic texture (black square, 100 x 100 pixels)
         tex = Screen('MakeTexture', params.graphics.winhandle, zeros(100,100,3));
@@ -84,11 +84,19 @@ function [] = ivisDemo011_advancedClassifiers(classifiertype)
         
         % set background colour to white (to make cursor easier to see)     
         Screen('FillRect', winhandle, [255 255 255]);
-
+        DrawFormattedText(winhandle, 'Press SPACE to start'); % give feedback on PTB screen
+        Screen('Flip', winhandle);
+            
+        % handles to outputs
+        dataOutputFiles = {};
+        rawOutputFile = logs.raw.fullFn;
+        diaryFile = params.log.diary.fullFn;
+        
         % #################
         while ~aT.isFinished
 
             % WAIT FOR GO KEY
+            fprintf('\nReady. Press SPACE to start trial\n');
             while InH.getInput() ~= InH.INPT_SPACE.code
               	eyeTracker.refresh(false); % false to supress logging
                 WaitSecs(1/50);
@@ -119,6 +127,7 @@ function [] = ivisDemo011_advancedClassifiers(classifiertype)
               	myClassifier.update();
 
                 % Show rendered image at next vertical retrace:
+                DrawFormattedText(winhandle, 'Look!'); % give feedback on PTB screen
                 Screen('Flip', winhandle);
                 WaitSecs(.01);
             end
@@ -129,19 +138,36 @@ function [] = ivisDemo011_advancedClassifiers(classifiertype)
             % update the track accordingly
             aT.update(anscorrect);
             
-            % tmp: give visual feedback
-            DrawFormattedText(winhandle, whatLookingAt.name());
+            % give feedback on PTB screen
+            txt = sprintf('You looked at: "%s". Press SPACE to continue', whatLookingAt.name());
+            DrawFormattedText(winhandle, txt);
             
             Screen('Flip', winhandle);
             fprintf('You looked at: %s\n', whatLookingAt.name());
             
-            % Reset
-            IvDataLog.getInstance().save();
+            % save and reset data log
+            [~, fullFn] = logs.data.save([], false); % ALT: IvDataLog.getInstance().save();
+            dataOutputFiles{end+1} = fullFn; %#ok<AGROW>
         end
-        
+
         % Finish up
         delete(aT);
         IvMain.finishUp();
+        
+        % Show files & delete if so desired
+        fprintf('The current files were generated:\n')
+        files = [dataOutputFiles rawOutputFile diaryFile];
+        for i = 1:length(files)
+            fprintf('  [%i] %s\n', i, files{i});
+        end
+        % query for deletion
+        commandwindow(); % set focus on command window
+        if getLogicalInput('Delete these files? (y/n): ')
+            for i = 1:length(files)
+                delete(files{i});
+            end
+            fprintf('deleted\n');
+        end
     catch ME
         try
             try

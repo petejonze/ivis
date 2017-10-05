@@ -1,5 +1,5 @@
-function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
-% ivisDemo012_advancedClassifiers2_logLikelihoods. More on the use of
+function [] = ivisDemo009_advancedClassifiers2()
+% ivisDemo009_advancedClassifiers2. More on the use of
 % loglikelihood classifiers, including the option to srt the relative
 % weight given to the x- and y-domain eye-tracking data
 %
@@ -7,8 +7,8 @@ function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
 %
 % Matlab:           v2012 onwards
 %
-% See also:         ivisDemo011_advancedClassifiers.m
-%                   ivisDemo013_externalConfigFiles.m
+% See also:         ivisDemo008_advancedClassifiers1.m
+%                   ivisDemo010_readingRawGazeData.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -27,7 +27,7 @@ function [] = ivisDemo012_advancedClassifiers2_logLikelihoods()
     try
         % launch ivis
         IvMain.assertVersion(1.5);
-        IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'eyetracker.type','mouse', 'saccade.GUIidx',3)); % 'mouse' 'TobiiEyeX'));
+        IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',true, 'graphics.useScreen',false, 'eyetracker.type','mouse', 'saccade.GUIidx',3, 'log.raw.enable',false, 'log.diary.enable',false));
         [eyeTracker, ~, InH, winhandle] = IvMain.launch();
         
         % adaptive track

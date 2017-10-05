@@ -21,6 +21,7 @@ while 1
         break
     end
     
+    % get name
     d = s(demoN).name(1:end-2);
       
     % skip it if it is this file!
@@ -33,8 +34,9 @@ while 1
     fprintf('\n=======================================================\n');
     fprintf('Demo %i: %s\n', demoN, d);
     fprintf('=======================================================\n');
-    fprintf('Press any key to begin\n\n');
+    fprintf('Press any key to begin\n');
     KbWait([],2);
+    fprintf('Launching "%s"...\n\n', d);
     eval(d)
     
     % iterate counter

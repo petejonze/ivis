@@ -99,7 +99,7 @@ classdef (Sealed) IvParams < Singleton
                 eyeObj = [];
                 try
                     eyeObj = ivis.eyetracker.IvDataInput.getInstance();
-                catch %#ok
+                catch
                 end
                 if ~isempty(eyeObj) && isvalid(eyeObj) %isvalid to check not deleted
                     eyeObj.setFixationMarker(obj.eyetracker.fixationMarker)
@@ -215,6 +215,7 @@ classdef (Sealed) IvParams < Singleton
             params.calibration.drift.driftWeight = 1;
 
             params.log.diary.enable = true;
+            params.log.diary.fullFn = []; % NB: cannot be set manually at present
             params.log.raw.enable = true;
             params.log.raw.dir = '$iv/logs/raw';
             params.log.raw.filepattern = 'IvRaw-$time.raw';
@@ -519,7 +520,19 @@ classdef (Sealed) IvParams < Singleton
         end
         
         %% == METHODS =====================================================
-        
+
+        % none
+    end
+    
+    
+ 	%% ====================================================================
+    %  -----IvMain METHODS-----
+    %$ ====================================================================
+
+    methods (Access = ?ivis.main.IvMain)
+        function [] = setDiaryFullFn(obj, fullFn)
+            obj.log.diary.fullFn = fullFn;
+        end
     end
     
 

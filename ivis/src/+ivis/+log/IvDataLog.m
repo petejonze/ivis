@@ -25,7 +25,7 @@ classdef (Sealed) IvDataLog < ivis.log.IvLog
     %   1.0 PJ 02/2013 : first_build\n
     %
     %
-    % Copyright 2014 : P R Jones
+    % Copyright 2017 : P R Jones
     % *********************************************************************
     % 
 

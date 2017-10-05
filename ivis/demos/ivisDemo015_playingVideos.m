@@ -1,5 +1,5 @@
-function [] = ivisDemo008_playingVideos()
-% ivisDemo008_playingVideos. Displaying a video file on a PTB screen.
+function [] = ivisDemo015_playingVideos()
+% ivisDemo015_playingVideos. Displaying a video file on a PTB screen.
 %
 %   How to use IvVideo to play, pause and close videos. Note that we have
 %   now shifted to using function, because otherwise matlab throws errors
@@ -19,8 +19,7 @@ function [] = ivisDemo008_playingVideos()
 %
 % Matlab:           v2015 onwards
 %
-% See also:         ivisDemo007_classifyingFixations.m
-%                   ivisDemo009_streamingWebcams.m
+% See also:         ivisDemo014_playingAudio.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 % 
@@ -32,11 +31,13 @@ function [] = ivisDemo008_playingVideos()
 % *********************************************************************
 % 
     % check if really want to run
-    fprintf('Playing video is currently very buggy and can cause fatal crashes\n');
-    answer=input('Do you wish to continue (y or n)? ','s');
-    if ~strcmpi(answer,'y')
-        fprintf('Demo aborted\n');
-        return;
+    if IsWin()
+        warning('MS WINDOWS DETECTED: Playing video is currently very buggy and can cause fatal crashes\n');
+        answer=input('Do you wish to continue (y or n)? ','s');
+        if ~strcmpi(answer,'y')
+            fprintf('Demo aborted\n');
+            return;
+        end
     end
 
     % clear memory and set workspace
@@ -45,7 +46,7 @@ function [] = ivisDemo008_playingVideos()
 
     % verify, initialise, and launch the ivis toolbox
     IvMain.assertVersion(1.5);
-    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false, 'graphics.runScreenChecks',false));
+    IvMain.initialise(IvParams.getDefaultConfig('GUI.useGUI',false, 'graphics.runScreenChecks',false, 'log.raw.enable',false, 'log.diary.enable',false));
     [eyetracker, ~, InH, winhandle] = IvMain.launch();
 
     try % wrap in try..catch to ensure a graceful exit
@@ -65,6 +66,8 @@ function [] = ivisDemo008_playingVideos()
         % Keep looping until user exits
         fprintf('Space to pause.  Enter to end\n');
         while 1
+            DrawFormattedText(winhandle, 'SPACE to pause; ENTER to quit'); % give feedback on PTB screen
+            
             switch first(InH.getInput())
                 case InH.INPT_SPACE.code
                     IvVideo.getInstance().togglePause(true); % CHANGE TO false TO STOP SHOWING VIDEO WHEN PAUSED

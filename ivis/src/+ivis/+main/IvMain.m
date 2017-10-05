@@ -128,6 +128,7 @@ classdef (Sealed) IvMain < handle
                 fullFn = fullfile(ivisdir(), 'logs', 'diary', fn);       
                 fclose(fopen(fullFn, 'wt')); % make file
                 diary(fullFn); % start diary
+                params.setDiaryFullFn(fullFn); % store filename
             end
         end
         

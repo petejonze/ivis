@@ -8,7 +8,7 @@ function [] = ivisDemo007_classifyingFixations()
 % Matlab:           v2015 onwards
 %
 % See also:         ivisDemo006_trackboxVisualisation.m
-%                   ivisDemo008_playingVideos.m
+%                   ivisDemo008_advancedClassifiers1.m
 %
 % Author(s):    	Pete R Jones <petejonze@gmail.com>
 %
@@ -26,7 +26,7 @@ function [] = ivisDemo007_classifyingFixations()
     
     % Initialise toolbox
     IvMain.assertVersion(1.5);
-    params = IvMain.initialise(IvParams.getDefaultConfig('graphics.runScreenChecks',false));
+    params = IvMain.initialise(IvParams.getDefaultConfig('graphics.runScreenChecks',false, 'log.raw.enable',false, 'log.diary.enable',false));
     [eyeTracker, ~, InH, winhandle] = IvMain.launch();
     
     % Prepare graphic
@@ -40,6 +40,8 @@ function [] = ivisDemo007_classifyingFixations()
 
     % Main loop (run until decision or user quits)
     while myClassifier.getStatus() == myClassifier.STATUS_UNDECIDED
+        % give feedback on PTB screen
+        DrawFormattedText(winhandle, 'Look at the box');
         % poll peripheral devices for valid user inputs
         InH.getInput();
         % draw graphic
@@ -55,7 +57,7 @@ function [] = ivisDemo007_classifyingFixations()
     
     % Report whether it was a hit
     anscorrect = strcmpi('targ', myClassifier.interogate().name());
-    fprintf('look = %g\n', anscorrect);
+    fprintf('You looked at: %s (%g)\n', myClassifier.interogate().name(), anscorrect);
 
     % Finish up
     IvMain.finishUp();
