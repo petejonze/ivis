@@ -52,16 +52,22 @@ Users familiar with Git can ensure that they are always using the most recent ve
 
 ---------------------------
 
-**Q** Ehat should my directory structure look like?
+**Q** What should my directory structure look like?
 
 **A** For me, it looks like this:
 - Dropbox\MatlabToolkits\ivis-master\ivis\Contents.m
 - Dropbox\MatlabToolkits\Psychtoolbox\Contents.m
 
 ---------------------------
+
+**Q** How shold I cite this work?
+
+**A** TBA
+
+---------------------------
 **Q** I've noticed a bug in file x, what should I do?  
 
-**A** E-mail and let me know. Better yet, fix it and send me a copy. Or sign up to Git to get direct access to the primary source code.
+**A** E-mail me a description of the error, including a copy of the MATLAB output if possible. Better yet, fix it and send me the solution. Or best of all, sign up to Git repository and update the primary source code directly.
 
 
 ### Enjoy!
