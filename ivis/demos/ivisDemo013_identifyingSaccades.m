@@ -41,7 +41,7 @@ function [] = ivisDemo013_identifyingSaccades()
     try % wrap in try..catch to ensure a graceful exit
         
         % continue until keystroke
-        fprintf('Try moving the mouse cursor around the target monitor.\nPress SPACE to exit\n');
+        fprintf('Try moving the mouse cursor around the target monitor.\nYou should hear a BEEP when a saccade is dected\nPress SPACE to exit\n');
         while ~any(InH.getInput() == InH.INPT_SPACE.code)
             eyetracker.refresh(true); % false to suppress data logging
             WaitSecs(1/60);

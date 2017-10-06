@@ -31,13 +31,11 @@ function [] = ivisDemo015_playingVideos()
 % *********************************************************************
 % 
     % check if really want to run
-    if IsWin()
-        warning('MS WINDOWS DETECTED: Playing video is currently very buggy and can cause fatal crashes\n');
-        answer=input('Do you wish to continue (y or n)? ','s');
-        if ~strcmpi(answer,'y')
-            fprintf('Demo aborted\n');
-            return;
-        end
+    warning('Playing video is currently very buggy and can cause fatal crashes\n');
+    answer=input('Do you wish to continue (y or n)? ','s');
+    if ~strcmpi(answer,'y')
+        fprintf('Demo aborted\n');
+        return;
     end
 
     % clear memory and set workspace
