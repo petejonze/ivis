@@ -181,7 +181,7 @@ classdef (Sealed) IvParams < Singleton
             params.eyetracker.expectedLatency_ms = 10;
             params.eyetracker.eyes = 2; %0==left, 1==right, 2==both
             
-            params.saccade.enableTagging            = true;
+            params.saccade.enableTagging            = false;
             params.saccade.includeTagsInRawOutput   = false;
             params.saccade.distanceCriterion_deg    = 5; % 7;
             params.saccade.velocityCriterion_degsec = 100; % 250;
