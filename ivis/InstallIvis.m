@@ -1,5 +1,9 @@
+% Script for installing ivis (this mainly involves adding directories to
+% the path, and creating any necessary empty directories that GitHub may
+% have stripped out
+%
 % v0.1 PJ 02/05/2012  largely taken from SetupPsychtoolbox.m
-% v1.5 PJ 03/10/2017  Better dependency checks
+% v1.5 PJ 17/10/2017  Better dependency checks
 
 % Check dependencies
 fprintf('Preliminaries: Checking that required dependencies are present\n');
