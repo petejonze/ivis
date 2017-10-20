@@ -71,11 +71,11 @@ classdef (Abstract) IvListener < handle
             % @date     26/06/14
             % @author   PRJ
             %   
-            
+
             % validate input
-            if ismember(eventName, obj.eventNames)
+            if ismember(eventName, obj.eventNames)            
                 return
-                %error('IvListener:InvalidInput', 'Already listening to %s', eventName);
+                %error('IvListener:InvalidInput', 'Already listening to %s', eventName);    
             end
                 
             % subscribe to broadcaster, store handle
@@ -93,19 +93,22 @@ classdef (Abstract) IvListener < handle
             % @date     26/06/14
             % @author   PRJ
             %      
-            
+                 
           	% validate input
             if ~ismember(eventName, obj.eventNames)
                 return
-                %error('IvListener:InvalidInput', 'Not listening for %s', eventName);
+                %error('IvListener:InvalidInput', 'Cannot stop. Not listening for %s', eventName);
             end
                
-            % get index
+            % get index         
             idx = ismember(obj.eventNames, eventName);
             
             % unsubscribe from broadcaster, remove references
-            %delete(obj.listenerHandles{idx});
-            obj.listenerHandles(idx) = [];
+            try % throws error in ivisDemo005_usingaPTBScreen (?)
+                delete(obj.listenerHandles{idx}); % explicit deletion required to stop listener
+            catch
+            end
+                obj.listenerHandles(idx) = [];
             obj.eventNames(idx) = [];
         end
         

@@ -281,7 +281,7 @@ classdef (Abstract) IvDataInput < Singleton
             end
             
             toolboxHomedir = ivis.main.IvParams.getInstance().toolboxHomedir;
-            texDir = fullfile(toolboxHomedir, 'resources', 'images', 'FixationTextures');
+            texDir = fullfile(toolboxHomedir, 'resources', 'images', 'fixation');
             pattern = fullfile(texDir, fixationMarker);
             d = dir([pattern '.*']);
             if isempty(d)

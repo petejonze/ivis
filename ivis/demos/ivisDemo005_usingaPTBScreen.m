@@ -32,7 +32,8 @@ function [] = ivisDemo005_usingaPTBScreen()
     screenNums = Screen('Screens');
     fprintf('Which screen do you want to use for your stimuli?\n');
     for i = 1:length(screenNums)
-        fprintf('  [%i] %s\n', i-1, screenNums(i));
+        [w,h] = Screen('WindowSize', screenNums(i));
+        fprintf('  [%i] %i  (%i x %i)\n', i-1, screenNums(i), w, h);
     end
     testScreenNum = getIntegerInput('Enter number: ', false, 99, [0 length(screenNums)-1]);
 

@@ -55,6 +55,18 @@ end
 if ~exist(fullfile(ivisdir(),'resources'), 'dir')
     error('Could not detect ivis/resources subdirectory');
 end
+if ~exist(fullfile(ivisdir(),'resources','audio'), 'dir')
+    error('Could not detect ivis/resources/audio subdirectory');
+end
+if ~exist(fullfile(ivisdir(),'resources','audio','wav'), 'dir')
+    error('Could not detect ivis/resources/audio/wav subdirectory');
+end
+if ~exist(fullfile(ivisdir(),'resources','images'), 'dir')
+    error('Could not detect ivis/resources/images subdirectory');
+end
+if ~exist(fullfile(ivisdir(),'resources','images','fixation'), 'dir')
+    error('Could not detect ivis/resources/images/fixation subdirectory');
+end
 
 % feedback
 fprintf('Looks good. All done!\nWhy not try some more demos? ("help demos")\n');
